@@ -1,9 +1,11 @@
 package wrappers;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -55,6 +57,7 @@ public class GenericWrappers {
 		try {
 			prop.load(new FileInputStream(new File("./config.properties")));
 			DesiredCapabilities caps = new DesiredCapabilities();
+			//caps.setCapability("app", "C:/Users/Invcuser_106/Desktop/apk/Android_SZephyr_12431_stg.apk");	
 			caps.setCapability("platformName", prop.getProperty("PLATFORM_NAME"));
 			caps.setCapability("appium:platformVersion", prop.getProperty("PLATFORM_VERSION"));
 			caps.setCapability("appium:udid", prop.getProperty("UDID"));
@@ -137,6 +140,21 @@ public class GenericWrappers {
 
 	} catch (Exception e) {
 			Reporter.reportStep("The Field "+button+" could not be clicked.", "FAIL");
+	}
+	return bReturn;
+
+	}
+	
+	public static boolean clickbyXpathwithoutReport(WebElement xpath, String button) {
+		boolean bReturn = false;
+		try{
+			expWait(xpath);
+			xpath.click();
+			Reporter.reportStep(button+" is clicked Successfully.", "PASS");
+			bReturn = true;
+
+	} catch (Exception e) {
+			//Reporter.reportStep("The Field "+button+" could not be clicked.", "FAIL");
 	}
 	return bReturn;
 
@@ -258,6 +276,17 @@ public class GenericWrappers {
 	
 	public static void expWait(WebElement xpath) {
 		try {
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.visibilityOf(xpath));
+		}
+		catch(Exception e) {
+			System.out.println(e); 
+		}
+	
+	}
+	
+	public static void expWaitforPairing(WebElement xpath) {
+		try {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));
 		wait.until(ExpectedConditions.visibilityOf(xpath));
 		}
@@ -266,4 +295,28 @@ public class GenericWrappers {
 		}
 	
 	}
+	
+	public static void runPythonScript() {
+        try {
+            // Update the path to the Python interpreter and the Python script
+            ProcessBuilder processBuilder = new ProcessBuilder("C:/Python312/python.exe", "C:/Users/Invcuser_106/Desktop/Python code/serialport.py");
+            // Start the process
+            Process process = processBuilder.start();
+
+            // Capture the script output (stdout)
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            System.out.println("Output of the Python script:");
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+
+            // Wait for the process to complete
+            int exitCode = process.waitFor();
+            System.out.println("Python script exited with code: " + exitCode);
+
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

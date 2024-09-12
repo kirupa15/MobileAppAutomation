@@ -21,6 +21,8 @@ public class LandingPage extends GenericWrappers{
 	    @FindBy(id = "loginButton")
 	    private WebElement loginButton;
 	    
+	    //div[text()='Home']//following-sibling::div[1]
+	    
 	    // Constructor
 	    
 	    public LandingPage(AndroidDriver driver) {

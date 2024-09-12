@@ -3,9 +3,11 @@ package testcases;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
+import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.LoginPage;
@@ -20,7 +22,7 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
-	
+	DeviceMenuPage devicemenupage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -30,13 +32,17 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 
 	@Test
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException {
-		
+	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+		login();
+		for(int i=0;i<5;i++) {
+		pairBlewithoutRouter();}
+	}
+
+	public void login() {
 		loginpage = new LoginPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
-		adddevicepage= new AddDevicePage(driver);
-		homepage = new HomePage(driver);
+		
 		landingpage.clickSignInButton();
 		loginpage.enterEmailId("testuser1237@gmail.com");
 		loginpage.clickSignInButton();
@@ -46,21 +52,35 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		
+	}
+	
+	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+		
+		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.enterWiFiPassword("12345678915");
-		adddevicepage.clickEnterButton();		
-		homepage.clickONOFFButton();
 		
-		//clickbyXpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/android.view.ViewGroup"); 
-		/*clickbyXpath("//android.widget.TextView[@text=\"\"]");
-		clickbyXpath("//android.widget.TextView[@text='']");
-		clickbyXpath("//android.widget.TextView[@text='Reset Device']"); 
-		clickbyXpath("//android.widget.Button[@resource-id='android:id/button1']");*/
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		
+		for(int i=0;i<2;i++) {
+		homepage.clickONOFFButton();
+		Thread.sleep(1000);
+		}
+		
+		homepage.clickMenuBarButton();
+		devicemenupage.clickDeviceSettingsButton();
+		devicemenupage.clickResetDeviceButton();
+		devicemenupage.clickResetConfirmationYesButton();
 	}
 
 }

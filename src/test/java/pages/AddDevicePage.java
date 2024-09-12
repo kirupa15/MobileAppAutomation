@@ -42,6 +42,15 @@ public class AddDevicePage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text='Submit']")
 	private WebElement submitBtn;
 	
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='Add_Device_Next_Button']")
+	private WebElement sZephyrInfoNextButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='UserConfig_Submit_Button']")
+	private WebElement deviceSettingSubmitButton;
+	
+	
+	
+	
 	// Constructor to initialize the driver and instantiate elements using
 	
 	public AddDevicePage(AndroidDriver driver) {
@@ -67,11 +76,11 @@ public class AddDevicePage extends GenericWrappers{
 	}
 	
 	public void locationPopUpPermission() {
-		clickbyXpath(locationPopUp, " Location Permission pop up " );
+		clickbyXpathwithoutReport(locationPopUp, " Location Permission pop up " );
 	}
 	
 	public void nearByPermission() {
-		clickbyXpath(nearByPermisson, " Near by devices Permission  " );
+		clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  " );
 	}
 	
 	public void enterWiFiPassword(String password) {
@@ -79,6 +88,7 @@ public class AddDevicePage extends GenericWrappers{
 	}
 	
 	public void clickEnterButton() {
+		
 		clickbyXpath(enterButton, " Enter Button  " );
 	}
 
@@ -89,5 +99,16 @@ public class AddDevicePage extends GenericWrappers{
 	public void submitButton() {
 		clickbyXpath(submitBtn," Submit Button ");
 	}
+	
+
+	public void clickNextButtonsZephyrInfo() {
+		expWaitforPairing(sZephyrInfoNextButton);
+		clickbyXpath(sZephyrInfoNextButton, " Next Button ");
+	}
+	
+	public void clickSubmitButtonDeviceSetting() {
+		clickbyXpath(deviceSettingSubmitButton, " Next Button ");
+	}
+	
 
 }

@@ -5,14 +5,14 @@
     <classes>
       <class name="testcases.TC01_Pairing_BlewithRouter">
         <methods>
-          <include name="afterMethod"/>
           <include name="startTestCase"/>
+          <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
+          <include name="removerepair"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="pairBlewithoutRouter"/>
         </methods>
       </class> <!-- testcases.TC01_Pairing_BlewithRouter -->
     </classes>
