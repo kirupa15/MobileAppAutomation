@@ -12,7 +12,7 @@ public class AddDevicePage extends GenericWrappers{
 
 	// Locate all elements on the page
 
-	@FindBy(xpath = "//android.widget.TextView[@text='Add Device']")
+	@FindBy(xpath = "//*[@resource-id='Add_Devices_ButtonText']")
 	private WebElement addDeviceButton;
 
 	@FindBy(xpath = "//android.widget.CheckBox")
@@ -109,6 +109,11 @@ public class AddDevicePage extends GenericWrappers{
 	public void clickSubmitButtonDeviceSetting() {
 		clickbyXpath(deviceSettingSubmitButton, " Next Button ");
 	}
+	
+	public void verifyAddDevicePage(String title) {
+		verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page " );
+	}
+	
 	
 
 }

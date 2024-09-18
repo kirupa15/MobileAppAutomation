@@ -8,27 +8,33 @@ import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.android.AndroidDriver;
 import wrappers.GenericWrappers;
 
-public class LoginPage extends GenericWrappers {
+public class SignInPage extends GenericWrappers {
 
 	private AndroidDriver driver;
 
 	// Locate all elements on the page
-	@FindBy(xpath = "//android.widget.EditText[@text='Email or User Name']")
+	@FindBy(xpath = "//*[@resource-id='SignIn_Email_or_UserName']")
 	private WebElement userNameField;
 
-	@FindBy(xpath = "//android.widget.TextView[@text='Sign In']")
+	@FindBy(xpath = "//*[@resource-id='SignIn_SignInText']")
 	private WebElement signInButton;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text='User Not Found']")
+	private WebElement userNotFoundToast;
+	
+	
+	
 
 	// Constructor to initialize the driver and instantiate elements using
 	
-	public LoginPage(AndroidDriver driver) {
+	public SignInPage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	// Methods to be used as part of loginpage.
 	
-	public void enterEmailId(String email) {
+	public void enterUserName(String email) {
 		entervaluebyXpath(userNameField, " User Name " , email);
 	}
 
@@ -38,4 +44,8 @@ public class LoginPage extends GenericWrappers {
 		
 	}
 
+	public void checkUserNameNotFoundToast(String content) {
+		verifyTextContainsByXpath(userNotFoundToast, content, " The Toast ");
+		
+	}
 }

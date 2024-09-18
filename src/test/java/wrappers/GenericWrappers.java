@@ -245,18 +245,21 @@ public class GenericWrappers {
 	}
 	
 	
-	public boolean verifyTextContainsByXpath(WebElement xpath, String text){
+	public boolean verifyTextContainsByXpath(WebElement xpath, String text, String field) {
 		boolean bReturn = false;
 		try {
 			expWait(xpath);
-		    String sText = xpath.getText();
-		    if (sText.trim().contains(text)){
-			Reporter.reportStep("The text: "+sText+" contains the value :"+text, "PASS");
-			bReturn = true;
-			System.out.println(sText.replaceAll("[^0-9]", ""));
-		}
+			String sText = xpath.getText();
+			System.out.println(sText);
+			if (sText.trim().contains(text)) {
+				Reporter.reportStep(field +"contains "+ text , "PASS");
+				bReturn = true;
+				}
+			else {
+				Reporter.reportStep(field+" did not contain :" + text, "FAIL");				
+			}
 		} catch (Exception e) {
-				Reporter.reportStep("The text: did not contain the value :"+text, "FAIL");
+			e.printStackTrace();
 		}
 		return bReturn;
 	}

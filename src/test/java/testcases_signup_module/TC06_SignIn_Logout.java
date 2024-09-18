@@ -1,21 +1,17 @@
-package testcases;
+package testcases_signup_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.SignInPage;
 import pages.OtpPage;
+import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-
-public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
+public class TC06_SignIn_Logout extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -26,40 +22,29 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC05 - Login, Pair and logout from device";
+		testDescription = "Check after Login, Pair and logout from device is working";
 	}
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<5;i++) {
-		pairBlewithoutRouter();}
-	}
-
-	public void login() {
+	public void login() throws InterruptedException {
+		
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
+		adddevicepage= new AddDevicePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
 		
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser1237@gmail.com");
+		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();
+		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
-		
-	}
-	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
-		adddevicepage= new AddDevicePage(driver);
-		homepage = new HomePage(driver);
-		devicemenupage= new DeviceMenuPage(driver);
-		
-		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
@@ -67,7 +52,8 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
 		
-		adddevicepage.enterWiFiPassword("12345678908");
+		//adddevicepage.enterWiFiPassword("12345678908");
+		
 		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -82,5 +68,6 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 	}
-
+		
+	
 }
