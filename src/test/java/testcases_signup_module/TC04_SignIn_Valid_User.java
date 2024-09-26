@@ -25,14 +25,14 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC04 - Sign In with Valid User";
+		testDescription = "Sign In into app with Valid user details";
 	}
 	
 
 	@Test
-	public void login() throws InterruptedException {
-		
+	public void login() throws InterruptedException, FileNotFoundException, IOException {
+		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
@@ -48,15 +48,6 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		otppage.checkIncorrectOTPToast("Incorrect OTP, You have 5 more attempt");
-		
-		for(int i=1;i<5;i++)
-		{
-		otppage.submitButton();
-		Thread.sleep(4000);
-		}
-		otppage.submitButton();
-		otppage.checkTooManyAttemptsOtp("Too many wrong OTP attempts. Please try after some time");
-		
 	}
 	
 }

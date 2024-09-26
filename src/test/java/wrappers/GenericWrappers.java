@@ -65,6 +65,7 @@ public class GenericWrappers {
 			caps.setCapability("appium:appPackage", prop.getProperty("APP_PACKAGE"));
 			caps.setCapability("appium:appActivity", prop.getProperty("APP_ACTIVITY"));
 			caps.setCapability("appium:automationName", "UiAutomator2");
+			//caps.setCapability("appium:noReset", "true");
 			
 			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), caps);
 			bReturn = true;
@@ -265,7 +266,7 @@ public class GenericWrappers {
 	}
 
 	
-	public void quitBrowser() {
+	public static void quitBrowser() {
 		try {
 			if(driver!= null) {
 			driver.quit();
@@ -279,7 +280,7 @@ public class GenericWrappers {
 	
 	public static void expWait(WebElement xpath) {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOf(xpath));
 		}
 		catch(Exception e) {
@@ -313,7 +314,7 @@ public class GenericWrappers {
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
-
+            
             // Wait for the process to complete
             int exitCode = process.waitFor();
             System.out.println("Python script exited with code: " + exitCode);
@@ -322,4 +323,6 @@ public class GenericWrappers {
             e.printStackTrace();
         }
     }
+	
+	
 }

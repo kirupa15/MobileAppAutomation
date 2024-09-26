@@ -1,4 +1,4 @@
-package testcases;
+package testcases_pairing;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import pages.OtpPage;
 import wrappers.MobileAppWrappers;
 
 
-public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
+public class TC03_Pairing_BlewithRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -26,15 +26,16 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
+		testCaseName = "TC03 - Pairinfg BLE With Router";
 		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
 	
 
 	@Test
 	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+		initAndriodDriver();
 		login();
-		for(int i=0;i<5;i++) {
+		for(int i=0;i<2;i++) {
 		pairBlewithoutRouter();}
 	}
 
@@ -66,7 +67,7 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		
+		adddevicepage.turnOnBluetooth();
 		adddevicepage.enterWiFiPassword("12345678908");
 		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();

@@ -34,18 +34,21 @@ public class SignInPage extends GenericWrappers {
 
 	// Methods to be used as part of loginpage.
 	
-	public void enterUserName(String email) {
+	public SignInPage enterUserName(String email) {
 		entervaluebyXpath(userNameField, " User Name " , email);
+		return this;
 	}
 
 	
-	public void clickSignInButton() {
+	public SignInPage clickSignInButton() {
 		clickbyXpath(signInButton, " Sign In ");
+		return this;
 		
 	}
 
-	public void checkUserNameNotFoundToast(String content) {
+	public SignInPage checkUserNameNotFoundToast(String content) {
 		verifyTextContainsByXpath(userNotFoundToast, content, " The Toast ");
+		return this;
 		
 	}
 }

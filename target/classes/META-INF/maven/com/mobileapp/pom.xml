@@ -14,13 +14,21 @@
 			<version>5.0.9</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.github.java-native/jssc -->
+		<dependency>
+			<groupId>io.github.java-native</groupId>
+			<artifactId>jssc</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>com.github.stephenc.monte</groupId>
 			<artifactId>monte-screen-recorder</artifactId>
 			<version>0.7.7.0</version>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>

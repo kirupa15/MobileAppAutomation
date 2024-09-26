@@ -1,5 +1,7 @@
 package pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -36,6 +38,10 @@ public class AddDevicePage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text='Enter']")
 	private WebElement enterButton;
 	
+	@FindBy(xpath = "//*[@resource-id='Wifi_RouterPasswerd_Cancel']")
+	private WebElement routerCancelButton;
+	
+	
 	@FindBy(xpath = "//android.widget.TextView[@text='Next']")
 	private WebElement nextButton;
 	
@@ -47,6 +53,13 @@ public class AddDevicePage extends GenericWrappers{
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='UserConfig_Submit_Button']")
 	private WebElement deviceSettingSubmitButton;
+	
+	@FindBy(xpath = "//*[@resource-id='android:id/button1']")
+	private WebElement blePermissionOkButton;
+	
+	@FindBy(xpath = "//*[@resource-id='android:id/button2']")
+	private WebElement blePermissionCancelButton;
+	
 	
 	
 	
@@ -68,7 +81,7 @@ public class AddDevicePage extends GenericWrappers{
 		clickbyXpath(checkBoxPairing, " Pairing Mode Check Box ");
 	}
 	
-	public void nextButtonPairing() {	
+	public void nextButtonPairing() {
 		clickbyXpath(nextButtonPairing, " Pairing mode Next Button ");
 	}
 		public void startPairingButton() {
@@ -86,6 +99,11 @@ public class AddDevicePage extends GenericWrappers{
 	public void enterWiFiPassword(String password) {
 		entervaluebyXpath(enterPasswordField, " Wifi Password  ", password );
 	}
+	
+	public void clickRouterCancelButton() {
+		clickbyXpathwithoutReport(routerCancelButton, " Add router Cancel button" );
+	}
+	
 	
 	public void clickEnterButton() {
 		
@@ -105,13 +123,66 @@ public class AddDevicePage extends GenericWrappers{
 		expWaitforPairing(sZephyrInfoNextButton);
 		clickbyXpath(sZephyrInfoNextButton, " Next Button ");
 	}
-	
+
 	public void clickSubmitButtonDeviceSetting() {
 		clickbyXpath(deviceSettingSubmitButton, " Next Button ");
 	}
 	
+	public void clickBlePermissionCancelbutton() {
+		clickbyXpath(blePermissionCancelButton, " Ble Popup Cancel Button ");
+	}
+	
+	public void clickBlePermissionOkbutton() {
+		expWaitforPairing(blePermissionOkButton);
+		clickbyXpath(blePermissionOkButton, " Ble Popup Cancel Button ");
+	}
+
 	public void verifyAddDevicePage(String title) {
-		verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page " );
+		verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page ");
+	}
+
+	public void turnOnBluetooth() {
+
+		try {
+			Runtime.getRuntime().exec("adb shell svc bluetooth enable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void turnOffBluetooth() {
+
+		try {
+			Runtime.getRuntime().exec("adb shell svc bluetooth disable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	public void turnOnWifi() {
+
+		try {
+			Runtime.getRuntime().exec("adb shell svc wifi enable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public void turnOffWifi() {
+
+		try {
+			Runtime.getRuntime().exec("adb shell svc wifi disable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 	
 	

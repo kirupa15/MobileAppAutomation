@@ -1,4 +1,4 @@
-package testcases_signup_module;
+package testcases_pairing;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-public class TC06_SignIn_Logout extends MobileAppWrappers {
+public class TC04_Pairing_SmartConfig extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -22,59 +22,54 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-	
+
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06 - Login, Pair and logout from device";
-		testDescription = "Check after Login, Pair and logout from device is working";
+		testCaseName = "TC04 - Pairing in Smart Config Mode";
+		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
-	
+
 
 	@Test
-	public void login() throws InterruptedException, FileNotFoundException, IOException {
+	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		homepage=new HomePage(driver);
-		
+
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser1237@gmail.com");
 		loginpage.clickSignInButton();
-		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
-		otppage.submitButton();
+		otppage.submitButton();	
+
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
+		adddevicepage.turnOffBluetooth();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.turnOnBluetooth();
-		//adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickRouterCancelButton();
+		adddevicepage.clickBlePermissionCancelbutton();
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
+		adddevicepage.clickBlePermissionOkbutton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		
 		for(int i=0;i<2;i++) {
-		homepage.clickONOFFButton();
-		Thread.sleep(1000);
+			homepage.clickONOFFButton();
+			Thread.sleep(3000);
 		}
-		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		homepage.clickMenuBarButton();
-		devicemenupage.clickLogoutButtonAfterReset();
-		devicemenupage.clickLogoutConfirmationButton();
-		
 	}
-		
-	
+
 }

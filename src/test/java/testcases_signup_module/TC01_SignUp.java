@@ -24,30 +24,30 @@ public class TC01_SignUp extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
-	
+
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC01 - SignUp with already existing username";
 		testDescription = "Try to Sign Up with already registered username";
 	}
-	
+
 
 	@Test
 	public void signUp() throws FileNotFoundException, IOException, InterruptedException {
-		
-	loginpage = new SignInPage(driver);
-	landingpage = new LandingPage(driver);
-	otppage = new OtpPage(driver);
-	signuppage =new SignUpPage(driver);
-	
-	landingpage.clickSignUpButton();
-	double rand=Math.random()*10000000;
-	signuppage.enterUserName("testuser");
-	signuppage.enterEmailId("testuser@gmail.com");
-	signuppage.clickSignUpTCCheckBox();
-	signuppage.clickSignUpButton();
-	signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
-	
+		initAndriodDriver();
+		loginpage = new SignInPage(driver);
+		landingpage = new LandingPage(driver);
+		otppage = new OtpPage(driver);
+		signuppage =new SignUpPage(driver);
+
+		landingpage.clickSignUpButton();
+		double rand=Math.random()*10000000;
+		signuppage.enterUserName("testuser");
+		signuppage.enterEmailId("testuser@gmail.com");
+		signuppage.clickSignUpTCCheckBox();
+		signuppage.clickSignUpButton();
+		signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
+
 	}
 
 }

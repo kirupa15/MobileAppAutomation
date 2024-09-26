@@ -3,7 +3,8 @@
 <suite name="MobilAppAutomation" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test" verbose="2">
      <packages>
-        <package name="testcases" />
+		<package name="testcases_signup_module" />
+        <package name="testcases_pairing" />
     </packages>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
