@@ -41,7 +41,6 @@ public class Schedularpage extends GenericWrappers {
 	public Schedularpage(AndroidDriver<AndroidElement> driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, 30);
 		this.js = (JavascriptExecutor) driver;
 	}
 

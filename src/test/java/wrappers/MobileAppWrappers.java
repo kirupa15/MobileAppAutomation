@@ -59,7 +59,7 @@ public class MobileAppWrappers extends GenericWrappers {
          String pass = "nw9f2hgo@123";
 
          // Local log files
-         String appLogPath = "C://Users//Invcuser_45//Desktop//React-Log-20240924_182921.txt";
+         String appLogPath = "C://Users//Invcuser_45//Desktop//React-Log-20240930_180049.txt";
          String deviceLogPath = "C://Users//Invcuser_45//Desktop//LiveLog//OLD//teraterm.log";
 
          // FTP paths
@@ -88,7 +88,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	@AfterMethod
 	public void afterMethod(){
 		quitBrowser();
-		driver.quit();
+//		driver.quit();
 	}
 
 	@DataProvider(name="fetchData")
