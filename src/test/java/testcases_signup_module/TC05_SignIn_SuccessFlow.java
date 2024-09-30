@@ -1,5 +1,8 @@
 package testcases_signup_module;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,8 +30,8 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 	
 
 	@Test
-	public void login() throws InterruptedException {
-		
+	public void login() throws InterruptedException, FileNotFoundException, IOException {
+		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
