@@ -67,17 +67,17 @@ public class MobileAppWrappers extends GenericWrappers {
          String newSubDir = "Applogs_" + randomnumbers(4); // Subdirectory name
 
          // Initialize FTP connection
-         FTPUploader ftpUploader = new FTPUploader(server, port, user, pass);
+         FTPUploader(server, port, user, pass);
 
          // Create new subdirectory inside the existing directory
-         ftpUploader.createAndNavigateToSubdirectory(existingDirectory, newSubDir);
+       createAndNavigateToSubdirectory(existingDirectory, newSubDir);
 
          // Upload files to the new subdirectory
-         ftpUploader.uploadFile(appLogPath, "React-Log-20240924_182921.txt");
-         ftpUploader.uploadFile(deviceLogPath, "teraterm.log");
+        uploadFile(appLogPath, "React-Log-20240924_182921.txt");
+         uploadFile(deviceLogPath, "teraterm.log");
 
          // Disconnect from FTP server
-         ftpUploader.disconnect();
+        disconnect();
 
         	} catch (IOException e) {
          e.printStackTrace();

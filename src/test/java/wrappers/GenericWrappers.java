@@ -21,6 +21,7 @@ import org.apache.commons.net.ftp.FTPClient;
 import org.openqa.selenium.NoSuchElementException;
 import org.apache.commons.collections4.QueueUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,6 +36,7 @@ import com.aventstack.extentreports.ExtentTest;
 import utils.Reporter;
 
 public class GenericWrappers {
+
 
 	public static AndroidDriver<AndroidElement> driver;
 	public static WebDriverWait wait;
@@ -70,14 +72,15 @@ public class GenericWrappers {
 			caps.setCapability("appium:platformVersion", prop.getProperty("PLATFORM_VERSION"));
 			caps.setCapability("appium:udid", prop.getProperty("UDID"));
 			caps.setCapability("appium:deviceName", prop.getProperty("DEVICE_NAME"));
-//			caps.setCapability("appium:appPackage", prop.getProperty("APP_PACKAGE"));
-//			caps.setCapability("appium:appActivity", prop.getProperty("APP_ACTIVITY"));
+
+			//			caps.setCapability("appium:appPackage", prop.getProperty("APP_PACKAGE"));
+			//			caps.setCapability("appium:appActivity", prop.getProperty("APP_ACTIVITY"));
 			caps.setCapability("appium:automationName", "uiautomator2");
 			caps.setCapability("newCommandTimeout", 999999);
-//			caps.setCapability("autoGrantPermissions", true);
+			//			caps.setCapability("autoGrantPermissions", true);
 
 			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/"), caps);
-//			keepSessionAlive(driver);
+			//			keepSessionAlive(driver);
 
 			bReturn = true;
 
@@ -100,41 +103,41 @@ public class GenericWrappers {
 		return bReturn;
 	}
 
-//	public boolean invokeApp(String browser,String url) {
-//		boolean bReturn = false;
-//		try {
-//
-//			DesiredCapabilities dc = new DesiredCapabilities();
-//			dc.setBrowserName(browser);
-//			dc.setPlatform(Platform.WINDOWS);
-//			if(browser.equalsIgnoreCase("chrome")){
-//				WebDriverManager.chromedriver().setup();
-//				webDriver = new ChromeDriver();
-//				
-//			} else if(browser.equalsIgnoreCase("Edge")){
-//				WebDriverManager.edgedriver();
-//				webDriver = new EdgeDriver();
-//				
-//			} else if(browser.equalsIgnoreCase("Firefox")) {
-//				WebDriverManager.firefoxdriver();
-//				webDriver = new FirefoxDriver();
-//			}
-//
-//			webDriver.manage().window().maximize();
-//			webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//			webDriver.get(url);
-//
-//			primaryWindowHandle = driver.getWindowHandle();
-//			
-//			Reporter.reportStep("The URL : "+ url + " launched successfully in"+ browser + " browser " , "PASS");
-//			bReturn = true;
-//
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			Reporter.reportStep("The browser:" + browser + " could not be launched", "FAIL");
-//		}
-//		return bReturn;
-//	}
+	//	public boolean invokeApp(String browser,String url) {
+	//		boolean bReturn = false;
+	//		try {
+	//
+	//			DesiredCapabilities dc = new DesiredCapabilities();
+	//			dc.setBrowserName(browser);
+	//			dc.setPlatform(Platform.WINDOWS);
+	//			if(browser.equalsIgnoreCase("chrome")){
+	//				WebDriverManager.chromedriver().setup();
+	//				webDriver = new ChromeDriver();
+	//				
+	//			} else if(browser.equalsIgnoreCase("Edge")){
+	//				WebDriverManager.edgedriver();
+	//				webDriver = new EdgeDriver();
+	//				
+	//			} else if(browser.equalsIgnoreCase("Firefox")) {
+	//				WebDriverManager.firefoxdriver();
+	//				webDriver = new FirefoxDriver();
+	//			}
+	//
+	//			webDriver.manage().window().maximize();
+	//			webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	//			webDriver.get(url);
+	//
+	//			primaryWindowHandle = driver.getWindowHandle();
+	//			
+	//			Reporter.reportStep("The URL : "+ url + " launched successfully in"+ browser + " browser " , "PASS");
+	//			bReturn = true;
+	//
+	//		} catch (Exception e) {
+	//			e.printStackTrace();
+	//			Reporter.reportStep("The browser:" + browser + " could not be launched", "FAIL");
+	//		}
+	//		return bReturn;
+	//	}
 
 	public static void keepSessionAlive(AndroidDriver<AndroidElement> driver) {
 		ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
@@ -290,7 +293,7 @@ public class GenericWrappers {
 		return bReturn;
 	}
 
-	
+
 	public static void quitBrowser() {
 		try {
 			if (driver != null) {
@@ -305,12 +308,12 @@ public class GenericWrappers {
 	public static void expWait(WebElement xpath) {
 		try {
 
-		WebDriverWait wait = new WebDriverWait(driver,15);
+			WebDriverWait wait = new WebDriverWait(driver,15);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
 
-		
+
 
 		}
 
@@ -318,7 +321,7 @@ public class GenericWrappers {
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
- 		WebDriverWait wait = new WebDriverWait(driver,100);
+			WebDriverWait wait = new WebDriverWait(driver,100);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
@@ -351,7 +354,7 @@ public class GenericWrappers {
 		}
 	}
 
-//	========================================
+	//	========================================
 
 	public int extractintvalue(String str) {
 		// Use regular expression to remove all non-digit characters
@@ -360,7 +363,7 @@ public class GenericWrappers {
 		// Convert the extracted string to an integer (optional)
 		int extractedValue = Integer.parseInt(numbersOnly);
 
-//          System.out.println("Extracted numbers: " + numbersOnly);
+		//          System.out.println("Extracted numbers: " + numbersOnly);
 		System.out.println("Extracted integer value: " + extractedValue);
 		return extractedValue;
 	}
@@ -432,93 +435,114 @@ public class GenericWrappers {
 		}
 	}
 
-}
 
-class FTPUploader {
 
-	private FTPClient ftpClient;
-	private String randomDirName;
 
-	String server2="ftp.iinvsys.com";
-	int port2=2121;
-	// Constructor to connect and login to FTP server
-	public FTPUploader(String server, int port, String user, String pass) throws IOException {
-		
-		 ftpClient = new FTPClient();
-	        if (!pingServer(server)) {
-	            System.out.println(server + " is not reachable. Trying " + server2);
-	            connectToServer(server2, port2, user, pass);
-	        } else {
-	            connectToServer(server, port, user, pass);
-	        }
-	    
+		private FTPClient ftpClient;
+		private String randomDirName;
 
-	      
-	}
+		String server2="ftp.iinvsys.com";
+		int port2=2121;
+		// Constructor to connect and login to FTP server
+		public void FTPUploader(String server, int port, String user, String pass) throws IOException {
 
-	  private void connectToServer(String server, int port, String user, String pass) throws IOException {
-          ftpClient.connect(server, port);
-          boolean login = ftpClient.login(user, pass);
-          
-          if (!login) {
-              throw new IOException("FTP login failed for server: " + server);
-          }
+			ftpClient = new FTPClient();
+			if (!pingServer(server)) {
+				System.out.println(server + " is not reachable. Trying " + server2);
+				connectToServer(server2, port2, user, pass);
+			} else {
+				connectToServer(server, port, user, pass);
+			}
 
-	ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
-	ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
-}
-	        private boolean pingServer(String server) {
-	            try {
-	                InetAddress address = InetAddress.getByName(server);
-	                return address.isReachable(2000); // Timeout after 2000 ms
-	            } catch (IOException e) {
-	                return false; // If there's an exception, the server is not reachable
-	            }
-	        }
-	// Method to create a subdirectory and change the working directory to it
-	public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
-		// Navigate to the existing directory
-		if (ftpClient.changeWorkingDirectory(existingDirectory)) {
-			System.out.println("Navigated to directory: " + existingDirectory);
 
-			// Create a new subdirectory
-			if (ftpClient.makeDirectory(newSubDir)) {
-				System.out.println("Created new subdirectory: " + newSubDir);
 
-				// Change the working directory to the new subdirectory
-				if (ftpClient.changeWorkingDirectory(newSubDir)) {
-					System.out.println("Changed to new subdirectory: " + newSubDir);
+		}
+
+		private void connectToServer(String server, int port, String user, String pass) throws IOException {
+			ftpClient.connect(server, port);
+			boolean login = ftpClient.login(user, pass);
+
+			if (!login) {
+				throw new IOException("FTP login failed for server: " + server);
+			}
+
+			ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
+			ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
+		}
+		private boolean pingServer(String server) {
+			try {
+				InetAddress address = InetAddress.getByName(server);
+				return address.isReachable(2000); // Timeout after 2000 ms
+			} catch (IOException e) {
+				return false; // If there's an exception, the server is not reachable
+			}
+		}
+		// Method to create a subdirectory and change the working directory to it
+		public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
+			// Navigate to the existing directory
+			if (ftpClient.changeWorkingDirectory(existingDirectory)) {
+				System.out.println("Navigated to directory: " + existingDirectory);
+
+				// Create a new subdirectory
+				if (ftpClient.makeDirectory(newSubDir)) {
+					System.out.println("Created new subdirectory: " + newSubDir);
+
+					// Change the working directory to the new subdirectory
+					if (ftpClient.changeWorkingDirectory(newSubDir)) {
+						System.out.println("Changed to new subdirectory: " + newSubDir);
+					} else {
+						throw new IOException("Failed to change to the new subdirectory");
+					}
 				} else {
-					throw new IOException("Failed to change to the new subdirectory");
+					throw new IOException("Failed to create new subdirectory: " + newSubDir);
 				}
 			} else {
-				throw new IOException("Failed to create new subdirectory: " + newSubDir);
-			}
-		} else {
-			throw new IOException("Failed to change directory to: " + existingDirectory);
-		}
-	}
-
-	// Method to upload a file to the current directory
-	public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
-		try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
-			boolean success = ftpClient.storeFile(remoteFileName, fis);
-			if (success) {
-				System.out.println("File uploaded successfully to FTP: " + remoteFileName);
-			} else {
-				System.out.println("File upload failed.");
+				throw new IOException("Failed to change directory to: " + existingDirectory);
 			}
 		}
-	}
 
-	// Close the FTP connection
-	public void disconnect() throws IOException {
-		if (ftpClient.isConnected()) {
-			ftpClient.logout();
-			ftpClient.disconnect();
+		// Method to upload a file to the current directory
+		public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
+			try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
+				boolean success = ftpClient.storeFile(remoteFileName, fis);
+				if (success) {
+					System.out.println("File uploaded successfully to FTP: " + remoteFileName);
+				} else {
+					System.out.println("File upload failed.");
+				}
+			}
 		}
 
-	 }
+		// Close the FTP connection
+		public void disconnect() throws IOException {
+			if (ftpClient.isConnected()) {
+				ftpClient.logout();
+				ftpClient.disconnect();
+			}
+
+		}
+
+
+
+
+		public void killAndReopenApp() {
+			try {
+				if (driver != null) {
+					// Kill the app (terminate it)
+					driver.terminateApp("com.iinvsys.szephyr");
+					Reporter.reportStep("The app was killed successfully.", "PASS");
+
+					// Wait for a few seconds before reopening the app
+					Thread.sleep(3000);
+
+					// Reopen the app, it should maintain its previous state (same page)
+					driver.activateApp("com.iinvsys.szephyr");
+					Reporter.reportStep("The app was reopened successfully.", "PASS");
+				}
+			} catch (Exception e) {
+				Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
+			}
+		}
+
 	
-
 }

@@ -28,7 +28,16 @@ public class HomePage extends GenericWrappers{
 		clickbyXpath(menuBarButton, " Menu Bar ");
 	}
 	
+	   public void killandopen() {
 	
+		   killAndReopenApp();
+	   }
 	
+	   public void disableBLE() {
+		   
+		   disableBLE ();
+	   }
+	
+
 
 }

@@ -3,8 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="schedular.TC02_Schedular">
+=======
+<<<<<<< HEAD
+      <class name="testcases.TC_07_ESM_Withconnectivity">
+=======
+<<<<<<< HEAD
+      <class name="schedular.TC02_Schedular">
+=======
+      <class name="testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing">
+>>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
+>>>>>>> ce22f2c5e14a974ef0d312a07f7d813ead91c9c6
+>>>>>>> ea4a3a8480cc130007c26bd255357aa3666dba60
         <methods>
+          <include name="removerepair"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
@@ -14,7 +27,22 @@
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
+      </class> <!-- testcases.TC_07_ESM_Withconnectivity -->
+=======
+<<<<<<< HEAD
+          <include name="beforeSuite"/>
+        </methods>
       </class> <!-- schedular.TC02_Schedular -->
+<<<<<<< HEAD
+=======
+=======
+          <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing -->
+>>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
+>>>>>>> ce22f2c5e14a974ef0d312a07f7d813ead91c9c6
+>>>>>>> ea4a3a8480cc130007c26bd255357aa3666dba60
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
