@@ -32,6 +32,8 @@ public class TC01_Schedular extends MobileAppWrappers {
 	
 	@Test
 	public void schedule() throws Exception {
+		initAndriodDriver();
+
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);

@@ -218,7 +218,6 @@ public class Schedularpage extends GenericWrappers {
 		adddevicepage = new AddDevicePage(driver);
 		otppage = new OtpPage(driver);
 		
-		
 		adddevicepage.pair(mode);
 		clickbyXpath(Schedulebutton, "schedulebutton");
 

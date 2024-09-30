@@ -14,7 +14,7 @@ import pages.Schedularpage;
 import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-public class TC_03_Schedular extends MobileAppWrappers {
+public class TC03_Schedular extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -32,6 +32,8 @@ public class TC_03_Schedular extends MobileAppWrappers {
 
 	@Test
 	public void schedule() throws Exception {
+		initAndriodDriver();
+
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
