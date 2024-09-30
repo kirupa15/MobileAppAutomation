@@ -1,4 +1,4 @@
-package testcases;
+package connectivity;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -6,16 +6,20 @@ import java.io.IOException;
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import io.appium.java_client.MobileBy;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.LoginPage;
+import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
 
-public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
+public class WIfiWithout_router extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	LoginPage loginpage;
@@ -23,28 +27,49 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
+	Szephyr_info_Page szephyrinfoPage;
+	OTA_Status_monitor ota_Status_monitor;
+		
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "CONNECTIVITY_MOD_4_TC_01,CONNECTIVITY_MOD_4_TC_02,CONNECTIVITY_MOD_4_TC_03";
+		testDescription = "OTA update BLE without Router mode";
 	}
 	
 
 	@Test
 	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
+//		login();
+//		for(int i=0;i<1;i++) {
+//		pairBlewithoutRouter();
+//		}
+		
+		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+		szephyrinfoPage= new Szephyr_info_Page(driver);
+		landingpage=new LandingPage(driver);
+		loginpage=new LoginPage(driver);
+		
+		try {
+			adddevicepage.pair(5);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
+
 
 	public void login() {
 		loginpage = new LoginPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
+		ota_Status_monitor=new OTA_Status_monitor(driver);
+		
 		
 		landingpage.clickSignInButton();
-		loginpage.enterEmailId("testuser1237@gmail.com");
+		loginpage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -53,33 +78,50 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		otppage.submitButton();
 		
 	}
+		
 	
+	
+	@SuppressWarnings("deprecation")
 	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		
-		
+		szephyrinfoPage= new Szephyr_info_Page(driver);
+		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
+		homepage.disableBLE();
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
+		
+		
+//			driver.navigate().back();
+		
+		
 		adddevicepage.enterWiFiPassword("12345678908");
 		adddevicepage.clickEnterButton();
+		
+		
+
+//		adddevicepage.clickOkButtonBLEpopUP();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		
-		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
-		Thread.sleep(1000);
-		}
+		homepage.VerifyONdesc();
 		
-		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		/*for(int i=0;i<2;i++) {
+			Thread.sleep(1000);
+			}*/
+		
+		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
+		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		homepage.killandopen();
+		adddevicepage.clickOkButtonBLEpopUP();
+		Thread.sleep(3000);
+		homepage.clickONOFFButton();
+		
 	}
-
-}
+	}

@@ -49,6 +49,12 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='UserConfig_Submit_Button']")
 	private WebElement deviceSettingSubmitButton;
 	
+	@FindBy(xpath ="//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_geyserInfo, com.szephyr:id/menu_text_geyserInfo\"]")
+	private WebElement szephyr_info_button;
+	
+
+	
+	
 	
 	
 	
@@ -72,6 +78,10 @@ public class DeviceMenuPage extends GenericWrappers{
 	public void clickResetConfirmationYesButton() {	
 		clickbyXpath(resetConfirmationYesButton, " Pairing mode Next Button ");
 	}
+	public void clickszephyr_info_button() {	
+		clickbyXpath(szephyr_info_button, " Szphyr_info_menubar");
+	}
+	
 	
 
 }

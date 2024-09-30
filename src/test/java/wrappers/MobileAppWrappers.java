@@ -55,6 +55,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	@AfterMethod
 	public void afterMethod(){
 		quitBrowser();
+		
 	}
 
 	@DataProvider(name="fetchData")

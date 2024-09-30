@@ -2,6 +2,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
 import io.appium.java_client.android.AndroidDriver;
 import wrappers.GenericWrappers;
 
@@ -13,6 +15,16 @@ public class HomePage extends GenericWrappers{
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
 	private WebElement menuBarButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_accounts, com.szephyr:id/menu_text_accounts\"]")
+	private WebElement Accountinfobutton;
+	
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_sharelog, com.szephyr:id/menu_text_sharelog\"]")
+	private WebElement sharelog ;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr and AC turned ON\"]")
+	private WebElement Acturnondesc;
 	
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
@@ -27,7 +39,57 @@ public class HomePage extends GenericWrappers{
 		clickbyXpath(menuBarButton, " Menu Bar ");
 	}
 	
+	public void clickAccountinfobutton() {
+		clickbyXpath(Accountinfobutton, " Account info");
+	}
 	
+	
+	 public void clicksharcelog() {
+		expWaitforPairing(sharelog);
+		clickbyXpath(sharelog, " sharelog button ");
+	 }
+	 
+	 public void VerifyONdesc()
+	 {
+	  verifyTextContainsByXpath(Acturnondesc, "sZephyr and AC turned ON","Home Page");
+	 }
+     public void clicksharcelog1() {
+	   pullLogFileFromDevice();
+     }
+	   
+	   public void clicksharcelog2() 
+	   {
+		   uploadLogToFTP();
+		   
+}
+	   public void killandopen() 
+	   {
+		   killAndReopenApp();
+	   }
+	
+	   public void disableBLE() 
+	   {
+		   turnOffBT();
+	   }
+	   public void enableBLE() 
+	   {
+		   turnOnBT();
+	   }
+	   public void enableWIFI() 
+	   {
+		   enableWiFi();
+	   }
+	   public void disableWIFI() 
+	   {
+		   disableWiFi();
+	   }
+	   
+	   public void WifiSwitch() 
+	   {
+		   
+		   connectToWiFi("realme", "12345222");
+	   }
 	
 
+	
 }

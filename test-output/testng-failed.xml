@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC01_Pairing_BlewithRouter">
+      <class name="connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
         <methods>
-          <include name="startTestCase"/>
+          <include name="removerepair"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="removerepair"/>
+          <include name="startTestCase"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- testcases.TC01_Pairing_BlewithRouter -->
+      </class> <!-- connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

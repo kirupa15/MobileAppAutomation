@@ -37,5 +37,8 @@ public class LoginPage extends GenericWrappers {
 		clickbyXpath(signInButton, " Sign In ");
 		
 	}
+	public void enterUserName(String email) {
+		entervaluebyXpath(userNameField, " User Name " , email);
+	}
 
 }
