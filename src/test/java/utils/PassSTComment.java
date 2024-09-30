@@ -4,7 +4,7 @@ import jssc.SerialPortException;
 
 public class PassSTComment {
 
-	public void stcomment(String comment) {
+	public static void stcomment(String comment) {
 		try {
 
 		// Open the serial port
@@ -14,14 +14,14 @@ public class PassSTComment {
 
 		// Send the comment via UART
 		serialPort.writeBytes(comment.getBytes());
-		System.out.println("Comment sent successfully");
+		System.out.println("Comment sent successfully : "+comment);
 
 		// Read response (if any)
-		byte[] buffer = serialPort.readBytes(1024);
-		String response = new String(buffer).trim();
-		System.out.println("Response: " + response);
+		//byte[] buffer = serialPort.readBytes(1024);
+		//String response = new String(buffer).trim();
+		//System.out.println("Response: " + response);
 
-		// Close the serial port
+		//Close the serial port
 		serialPort.closePort();
 	} catch (SerialPortException e) {
 		System.out.println("Error: " + e.getMessage());

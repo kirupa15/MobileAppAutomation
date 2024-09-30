@@ -11,6 +11,8 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
+
+import org.apache.commons.collections4.QueueUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
