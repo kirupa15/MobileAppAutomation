@@ -12,9 +12,10 @@ import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.SignInPage;
+import pages.SignUpPage;
 import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
@@ -22,14 +23,14 @@ import wrappers.MobileAppWrappers;
 public class  WifiWithRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
-	LoginPage loginpage;
+	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
-		
+		SignUpPage signpupage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -50,7 +51,8 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		landingpage=new LandingPage(driver);
-		loginpage=new LoginPage(driver);
+		loginpage=new SignInPage(driver);
+		signpupage=new SignUpPage(driver);
 		
 		try {
 			adddevicepage.pair(4);
@@ -62,14 +64,10 @@ public class  WifiWithRouter extends MobileAppWrappers {
 
 
 	public void login() {
-		loginpage = new LoginPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
 		
 		
 		landingpage.clickSignInButton();
-		loginpage.enterEmailId("varadharajanram95@gmail.com");
+		signpupage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -112,7 +110,7 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
 		homepage.killandopen();
-		adddevicepage.clickOkButtonBLEpopUP();
+		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		

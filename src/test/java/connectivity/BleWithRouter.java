@@ -1,9 +1,6 @@
 
 package connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,9 +8,10 @@ import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.SignInPage;
+import pages.SignUpPage;
 import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
@@ -21,14 +19,14 @@ import wrappers.MobileAppWrappers;
 public class  BleWithRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
-	LoginPage loginpage;
+	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
-		
+	SignUpPage signUppage;	
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -38,21 +36,21 @@ public class  BleWithRouter extends MobileAppWrappers {
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+	public void removerepair() throws Exception {
 		login();
 		for(int i=0;i<1;i++) {
 		pairBlewithoutRouter();}
 	}
 
 	public void login() {
-		loginpage = new LoginPage(driver);
+		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		ota_Status_monitor=new OTA_Status_monitor(driver);
-		
+		signUppage= new SignUpPage(driver);
 		
 		landingpage.clickSignInButton();
-		loginpage.enterEmailId("varadharajanram95@gmail.com");
+		signUppage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -62,7 +60,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
@@ -103,7 +101,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.ClickCancelButtonWifi();
+		adddevicepage.clickWifiCancelButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
@@ -136,7 +134,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.ClickCancelButtonWifi();
+		adddevicepage.clickWifiCancelButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {

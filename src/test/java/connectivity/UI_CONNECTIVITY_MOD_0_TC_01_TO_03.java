@@ -12,6 +12,8 @@ import pages.LandingPage;
 import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.SignInPage;
+import pages.SignUpPage;
 import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
@@ -19,14 +21,14 @@ import wrappers.MobileAppWrappers;
 public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 
 	LandingPage landingpage;
-	LoginPage loginpage;
+	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
-		
+	SignUpPage signuppage;	
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -43,14 +45,14 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	}
 
 	public void login() {
-		loginpage = new LoginPage(driver);
+		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		ota_Status_monitor=new OTA_Status_monitor(driver);
-		
+		signuppage=new SignUpPage(driver);
 		
 		landingpage.clickSignInButton();
-		loginpage.enterEmailId("varadharajanram95@gmail.com");
+		signuppage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -110,7 +112,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.ClickCancelButtonWifi();
+		adddevicepage.clickWifiCancelButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.LEDquietmode();
 		adddevicepage.Infinitepoweron();

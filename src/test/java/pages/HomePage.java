@@ -32,6 +32,7 @@ public class HomePage extends GenericWrappers{
 	}
 	
 	public void clickONOFFButton() {
+		expWaitforPairing(deviceONOFFButton);
 		clickbyXpath(deviceONOFFButton, " Device ON OFF Button ");
 	}
 	
@@ -43,7 +44,7 @@ public class HomePage extends GenericWrappers{
 		clickbyXpath(Accountinfobutton, " Account info");
 	}
 	
-	
+
 	 public void clicksharcelog() {
 		expWaitforPairing(sharelog);
 		clickbyXpath(sharelog, " sharelog button ");
@@ -53,21 +54,12 @@ public class HomePage extends GenericWrappers{
 	 {
 	  verifyTextContainsByXpath(Acturnondesc, "sZephyr and AC turned ON","Home Page");
 	 }
-     public void clicksharcelog1() {
-	   pullLogFileFromDevice();
-     }
-	   
-	   public void clicksharcelog2() 
-	   {
-		   uploadLogToFTP();
-		   
-}
 	   public void killandopen() 
 	   {
 		   killAndReopenApp();
 	   }
 	
-	   public void disableBLE() 
+	   public void disableBLE() throws Exception 
 	   {
 		   turnOffBT();
 	   }
@@ -89,7 +81,5 @@ public class HomePage extends GenericWrappers{
 		   
 		   connectToWiFi("realme", "12345222");
 	   }
-	
 
-	
 }

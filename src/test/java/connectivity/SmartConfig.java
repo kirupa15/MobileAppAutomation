@@ -1,8 +1,5 @@
 package connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,9 +7,10 @@ import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.SignInPage;
+import pages.SignUpPage;
 import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
@@ -20,13 +18,14 @@ import wrappers.MobileAppWrappers;
 public class  SmartConfig extends MobileAppWrappers {
 
 	LandingPage landingpage;
-	LoginPage loginpage;
+	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
+	SignUpPage signinpage;
 		
 	
 	@BeforeClass
@@ -37,21 +36,21 @@ public class  SmartConfig extends MobileAppWrappers {
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+	public void removerepair() throws Exception {
 		login();
 		for(int i=0;i<1;i++) {
 		pairBlewithoutRouter();}
 	}
 
 	public void login() {
-		loginpage = new LoginPage(driver);
+		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		ota_Status_monitor=new OTA_Status_monitor(driver);
-		
+		signinpage= new SignUpPage(driver);
 		
 		landingpage.clickSignInButton();
-		loginpage.enterEmailId("varadharajanram95@gmail.com");
+		signinpage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -61,7 +60,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
@@ -76,11 +75,11 @@ public class  SmartConfig extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.clickCancelButtonBle();
+		adddevicepage.ClickCancelButtonBle();
 		Thread.sleep(3000);
 		adddevicepage.enterWiFiPassword("12345678908");
 		adddevicepage.clickEnterButton();
-		adddevicepage.clickOkButtonBLEpopUP();
+		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		Thread.sleep(5000);
@@ -95,7 +94,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		
 		homepage.killandopen();
-		adddevicepage.clickOkButtonBLEpopUP();
+		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		//CONNECTIVITY_MOD_3_TC_3///     STA_Device_ON/OFF
@@ -158,7 +157,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 		homepage.killandopen();
 		Thread.sleep(3000);
-		adddevicepage.clickOkButtonBLEpopUP();
+		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
