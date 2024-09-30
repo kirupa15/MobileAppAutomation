@@ -328,7 +328,7 @@ public class GenericWrappers {
 
 	}
 
-	
+
 
 	//	========================================
 
@@ -401,260 +401,260 @@ public class GenericWrappers {
 
 
 
-		private FTPClient ftpClient;
-		private String randomDirName;
+	private FTPClient ftpClient;
+	private String randomDirName;
 
-		String server2="ftp.iinvsys.com";
-		int port2=2121;
-		// Constructor to connect and login to FTP server
-		public void FTPUploader(String server, int port, String user, String pass) throws IOException {
+	String server2="ftp.iinvsys.com";
+	int port2=2121;
+	// Constructor to connect and login to FTP server
+	public void FTPUploader(String server, int port, String user, String pass) throws IOException {
 
-			ftpClient = new FTPClient();
-			if (!pingServer(server)) {
-				System.out.println(server + " is not reachable. Trying " + server2);
-				connectToServer(server2, port2, user, pass);
-			} else {
-				connectToServer(server, port, user, pass);
-			}
-
-
-
+		ftpClient = new FTPClient();
+		if (!pingServer(server)) {
+			System.out.println(server + " is not reachable. Trying " + server2);
+			connectToServer(server2, port2, user, pass);
+		} else {
+			connectToServer(server, port, user, pass);
 		}
 
-		private void connectToServer(String server, int port, String user, String pass) throws IOException {
-			ftpClient.connect(server, port);
-			boolean login = ftpClient.login(user, pass);
 
-			if (!login) {
-				throw new IOException("FTP login failed for server: " + server);
-			}
 
-			ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
-			ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
+	}
+
+	private void connectToServer(String server, int port, String user, String pass) throws IOException {
+		ftpClient.connect(server, port);
+		boolean login = ftpClient.login(user, pass);
+
+		if (!login) {
+			throw new IOException("FTP login failed for server: " + server);
 		}
-		private boolean pingServer(String server) {
-			try {
-				InetAddress address = InetAddress.getByName(server);
-				return address.isReachable(2000); // Timeout after 2000 ms
-			} catch (IOException e) {
-				return false; // If there's an exception, the server is not reachable
-			}
+
+		ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
+		ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
+	}
+	private boolean pingServer(String server) {
+		try {
+			InetAddress address = InetAddress.getByName(server);
+			return address.isReachable(2000); // Timeout after 2000 ms
+		} catch (IOException e) {
+			return false; // If there's an exception, the server is not reachable
 		}
-		// Method to create a subdirectory and change the working directory to it
-		public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
-			// Navigate to the existing directory
-			if (ftpClient.changeWorkingDirectory(existingDirectory)) {
-				System.out.println("Navigated to directory: " + existingDirectory);
+	}
+	// Method to create a subdirectory and change the working directory to it
+	public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
+		// Navigate to the existing directory
+		if (ftpClient.changeWorkingDirectory(existingDirectory)) {
+			System.out.println("Navigated to directory: " + existingDirectory);
 
-				// Create a new subdirectory
-				if (ftpClient.makeDirectory(newSubDir)) {
-					System.out.println("Created new subdirectory: " + newSubDir);
+			// Create a new subdirectory
+			if (ftpClient.makeDirectory(newSubDir)) {
+				System.out.println("Created new subdirectory: " + newSubDir);
 
-					// Change the working directory to the new subdirectory
-					if (ftpClient.changeWorkingDirectory(newSubDir)) {
-						System.out.println("Changed to new subdirectory: " + newSubDir);
-					} else {
-						throw new IOException("Failed to change to the new subdirectory");
-					}
+				// Change the working directory to the new subdirectory
+				if (ftpClient.changeWorkingDirectory(newSubDir)) {
+					System.out.println("Changed to new subdirectory: " + newSubDir);
 				} else {
-					throw new IOException("Failed to create new subdirectory: " + newSubDir);
+					throw new IOException("Failed to change to the new subdirectory");
 				}
 			} else {
-				throw new IOException("Failed to change directory to: " + existingDirectory);
+				throw new IOException("Failed to create new subdirectory: " + newSubDir);
+			}
+		} else {
+			throw new IOException("Failed to change directory to: " + existingDirectory);
+		}
+	}
+
+	// Method to upload a file to the current directory
+	public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
+		try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
+			boolean success = ftpClient.storeFile(remoteFileName, fis);
+			if (success) {
+				System.out.println("File uploaded successfully to FTP: " + remoteFileName);
+			} else {
+				System.out.println("File upload failed.");
 			}
 		}
+	}
 
-		// Method to upload a file to the current directory
-		public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
-			try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
-				boolean success = ftpClient.storeFile(remoteFileName, fis);
-				if (success) {
-					System.out.println("File uploaded successfully to FTP: " + remoteFileName);
-				} else {
-					System.out.println("File upload failed.");
-				}
-			}
+	// Close the FTP connection
+	public void disconnect() throws IOException {
+		if (ftpClient.isConnected()) {
+			ftpClient.logout();
+			ftpClient.disconnect();
 		}
 
-		// Close the FTP connection
-		public void disconnect() throws IOException {
-			if (ftpClient.isConnected()) {
-				ftpClient.logout();
-				ftpClient.disconnect();
+	}
+
+
+
+
+	public void killAndReopenApp() {
+		try {
+			if (driver != null) {
+				// Kill the app (terminate it)
+				driver.terminateApp("com.iinvsys.szephyr");
+				Reporter.reportStep("The app was killed successfully.", "PASS");
+
+				// Wait for a few seconds before reopening the app
+				Thread.sleep(3000);
+
+				// Reopen the app, it should maintain its previous state (same page)
+				driver.activateApp("com.iinvsys.szephyr");
+				Reporter.reportStep("The app was reopened successfully.", "PASS");
 			}
-
+		} catch (Exception e) {
+			Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
 		}
+	}
 
 
-
-
-		public void killAndReopenApp() {
-			try {
-				if (driver != null) {
-					// Kill the app (terminate it)
-					driver.terminateApp("com.iinvsys.szephyr");
-					Reporter.reportStep("The app was killed successfully.", "PASS");
-
-					// Wait for a few seconds before reopening the app
-					Thread.sleep(3000);
-
-					// Reopen the app, it should maintain its previous state (same page)
-					driver.activateApp("com.iinvsys.szephyr");
-					Reporter.reportStep("The app was reopened successfully.", "PASS");
-				}
-			} catch (Exception e) {
-				Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
-			}
-		}
-
-	
 	public static void expWaitforFirmware(WebElement xpath) {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver,300);
-		wait.until(ExpectedConditions.visibilityOf(xpath));
+			WebDriverWait wait = new WebDriverWait(driver,300);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
 		}
 		catch(Exception e) {
 			System.out.println(e); 
 		}
-	
+
 	}
 	public static void expWaitstatusbar(WebElement xpath) {
 		try {
-		WebDriverWait wait = new WebDriverWait(driver,300);
-		wait.until(ExpectedConditions.visibilityOf(xpath));
+			WebDriverWait wait = new WebDriverWait(driver,300);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
 		}
 		catch(Exception e) {
 			System.out.println(e); 
 		}
 	}
-	
-				  
-		
 
 
-		  public void enableWiFi() {
 
-				try {
-					//Runtime.getRuntime().exec("adb shell svc bluetooth disable");
-					Runtime.getRuntime().exec("adb shell svc wifi enable");
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+
+
+	public void enableWiFi() {
+
+		try {
+			//Runtime.getRuntime().exec("adb shell svc bluetooth disable");
+			Runtime.getRuntime().exec("adb shell svc wifi enable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	public void disableWiFi() {
+
+		try {
+			//Runtime.getRuntime().exec("adb shell svc bluetooth disable");
+			Runtime.getRuntime().exec("adb shell svc wifi disable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	public void switchToSpecificWifiUsingCommand() {
+		try {
+			String command = "nmcli dev wifi connect 'realme6' password '12345222'";
+			Process process = Runtime.getRuntime().exec(command);
+			process.waitFor();
+			System.out.println("Switched to Wi-Fi network: YourWiFiSSID");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+
+	@SuppressWarnings("deprecation")
+	public void connectToWiFi(String wifiName, String wifiPassword) {
+		try {
+			// Open WiFi settings on the Android device
+			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
+			//adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity
+			// Wait for the WiFi settings to open
+			Thread.sleep(5000);
+
+			// Scroll to the WiFi network by name
+			WebElement wifiElement = driver.findElement(MobileBy.AndroidUIAutomator(
+					"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
+							+ wifiName + "\"))"));
+
+
+			// Click on the WiFi network
+			clickByXpath(wifiElement, "Clicked on " + wifiName + " on Wi-Fi page");
+
+			// Check if the password entry field is displayed
+			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
+			if (isElementDisplayed(enterPasswordField)) {
+				// Enter the WiFi password
+				enterValueByXpath(enterPasswordField, "Wi-Fi password", wifiPassword);
+
+				// Click on the connect button
+				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); // Replace with the actual XPath
+				clickByXpath(connectButton, "Connect button");
+
+				Thread.sleep(5000);
+
+
+				if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+					driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+					Thread.sleep(7000);
 				}
 
+			} else {
+				System.out.println("Already connected or password is saved.");
 			}
-		  public void disableWiFi() {
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
-				try {
-					//Runtime.getRuntime().exec("adb shell svc bluetooth disable");
-					Runtime.getRuntime().exec("adb shell svc wifi disable");
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+	// Helper method to check if the element is displayed
+	public boolean isElementDisplayed(WebElement element) {
+		try {
+			Thread.sleep(3000);  // Introduce a small delay before checking visibility
+			return element.isDisplayed();
+		} catch (NoSuchElementException | InterruptedException e) {
+			return false;
+		}
+	}
 
-			}
-		  
-		  public void switchToSpecificWifiUsingCommand() {
-		      try {
-		          String command = "nmcli dev wifi connect 'realme6' password '12345222'";
-		          Process process = Runtime.getRuntime().exec(command);
-		          process.waitFor();
-		          System.out.println("Switched to Wi-Fi network: YourWiFiSSID");
-		      } catch (Exception e) {
-		          e.printStackTrace();
-		      }
-		  }
-			
-		 
+	// Example methods for clicking and entering values (to be replaced with your actual implementations)
+	public void clickByXpath(WebElement element, String description) {
+		element.click();
+		System.out.println(description);
+	}
 
-		  @SuppressWarnings("deprecation")
-		public void connectToWiFi(String wifiName, String wifiPassword) {
-		      try {
-		          // Open WiFi settings on the Android device
-		          Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
-                  //adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity
-		          // Wait for the WiFi settings to open
-		          Thread.sleep(5000);
-
-		          // Scroll to the WiFi network by name
-		          WebElement wifiElement = driver.findElement(MobileBy.AndroidUIAutomator(
-		                  "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
-		                          + wifiName + "\"))"));
-
-		          
-		          // Click on the WiFi network
-		          clickByXpath(wifiElement, "Clicked on " + wifiName + " on Wi-Fi page");
-
-		          // Check if the password entry field is displayed
-		          WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
-		          if (isElementDisplayed(enterPasswordField)) {
-		              // Enter the WiFi password
-		              enterValueByXpath(enterPasswordField, "Wi-Fi password", wifiPassword);
-
-		              // Click on the connect button
-		              WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); // Replace with the actual XPath
-		              clickByXpath(connectButton, "Connect button");
-		              
-		               Thread.sleep(5000);
-		               
-		               
-		           	if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-						driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-						Thread.sleep(7000);
-					}
-		               
-		          } else {
-		              System.out.println("Already connected or password is saved.");
-		          }
-		      } catch (Exception e) {
-		          e.printStackTrace();
-		      }
-		  }
-
-		  // Helper method to check if the element is displayed
-		  public boolean isElementDisplayed(WebElement element) {
-		      try {
-		          Thread.sleep(3000);  // Introduce a small delay before checking visibility
-		          return element.isDisplayed();
-		      } catch (NoSuchElementException | InterruptedException e) {
-		          return false;
-		      }
-		  }
-
-		  // Example methods for clicking and entering values (to be replaced with your actual implementations)
-		  public void clickByXpath(WebElement element, String description) {
-		      element.click();
-		      System.out.println(description);
-		  }
-
-		  public void enterValueByXpath(WebElement element, String fieldName, String value) {
-		      element.sendKeys(value);
-		      System.out.println("Entered value in " + fieldName + ": " + value);
-		  }
+	public void enterValueByXpath(WebElement element, String fieldName, String value) {
+		element.sendKeys(value);
+		System.out.println("Entered value in " + fieldName + ": " + value);
+	}
 
 	public static void runPythonScript() {
-        try {
-            // Update the path to the Python interpreter and the Python script
-            ProcessBuilder processBuilder = new ProcessBuilder("C:/Python312/python.exe", "C:/Users/Invcuser_106/Desktop/Python code/serialport.py");
-            // Start the process
-            Process process = processBuilder.start();
+		try {
+			// Update the path to the Python interpreter and the Python script
+			ProcessBuilder processBuilder = new ProcessBuilder("C:/Python312/python.exe", "C:/Users/Invcuser_106/Desktop/Python code/serialport.py");
+			// Start the process
+			Process process = processBuilder.start();
 
-            // Capture the script output (stdout)
-            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line;
-            System.out.println("Output of the Python script:");
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
+			// Capture the script output (stdout)
+			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			String line;
+			System.out.println("Output of the Python script:");
+			while ((line = reader.readLine()) != null) {
+				System.out.println(line);
+			}
 
-            // Wait for the process to complete
-            int exitCode = process.waitFor();
-            System.out.println("Python script exited with code: " + exitCode);
+			// Wait for the process to complete
+			int exitCode = process.waitFor();
+			System.out.println("Python script exited with code: " + exitCode);
 
-        } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 
 }

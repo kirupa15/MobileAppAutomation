@@ -80,12 +80,13 @@ public class  WifiWithRouter extends MobileAppWrappers {
 	
 	
 	@SuppressWarnings("deprecation")
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
+		
 		homepage.disableBLE();
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();

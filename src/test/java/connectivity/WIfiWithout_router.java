@@ -12,7 +12,6 @@ import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;

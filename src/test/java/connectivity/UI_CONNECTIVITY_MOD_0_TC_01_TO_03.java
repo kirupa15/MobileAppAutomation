@@ -9,7 +9,6 @@ import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.LoginPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;
@@ -69,13 +68,13 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		//CONNECTIVITY_MOD_0_TC_01////////////////////////////////////////////////
-		/*adddevicepage.clickAddDeviceButton();
+		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.ClickCancelButtonWifi();
+		adddevicepage.clickWifiCancelButton();
 		Thread.sleep(3000);
 		adddevicepage.aCBrandNameClick();
 		adddevicepage.aCBrandNameCarrierclick();
@@ -102,7 +101,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		homepage.clickMenuBarButton();
 	    devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();*/
+		devicemenupage.clickResetConfirmationYesButton();
 		
 		//CONNECTIVITY_MOD_0_TC_02//
 		

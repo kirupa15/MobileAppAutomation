@@ -35,12 +35,9 @@ public class TC03_Pairing_BlewithRouter extends MobileAppWrappers {
 	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
 		initAndriodDriver();
 		login();
-<<<<<<< HEAD:src/test/java/testcases/TC01_Pairing_BlewithRouter.java
-		for(int i=0;i<1;i++) {
-=======
+
 
 		for(int i=0;i<2;i++) {
->>>>>>> 8d15e6620a0028187a4d774298ea981a16773229:src/test/java/testcases_pairing/TC03_Pairing_BlewithRouter.java
 		pairBlewithoutRouter();}
 		}
 

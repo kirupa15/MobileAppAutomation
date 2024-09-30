@@ -55,30 +55,30 @@ public class TC02_Schedular extends MobileAppWrappers {
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
-//	@Test
+	//	@Test
 	public void openwifipage() throws Exception {
 
 		String text= "ANTA";//TP-Link_6D38(With_Internet)
 		Runtime.getRuntime().exec("adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity");
 		Thread.sleep(5000);
 		AndroidElement element = driver.findElement(
-			    MobileBy.AndroidUIAutomator(
-			        "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))"
-			    )
-			);
+				MobileBy.AndroidUIAutomator(
+						"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))"
+						)
+				);
 		element.click();
 		String text2 = "connect";
 		AndroidElement elements = (AndroidElement) driver.findElement(
-	            MobileBy.AndroidUIAutomator(
-	            		"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text2 + "\"))"));
-//		   WebDriverWait wait = new WebDriverWait(driver, 20);  // 20 seconds timeout, adjust as necessary
-//	        wait.until(ExpectedConditions.visibilityOf(connectbuttonWifipage));
-//	        wait.until(ExpectedConditions.elementToBeClickable(connectbuttonWifipage));
-	
+				MobileBy.AndroidUIAutomator(
+						"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text2 + "\"))"));
+		//		   WebDriverWait wait = new WebDriverWait(driver, 20);  // 20 seconds timeout, adjust as necessary
+		//	        wait.until(ExpectedConditions.visibilityOf(connectbuttonWifipage));
+		//	        wait.until(ExpectedConditions.elementToBeClickable(connectbuttonWifipage));
+
 		adddevicepage.hidekeyboard();
-	        elements.click();
-		
+		elements.click();
+
 	}
 
-	
+
 }

@@ -30,8 +30,8 @@ public class  SmartConfig extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "CONNECTIVITY_MOD_3_TC_01,CONNECTIVITY_MOD_3_TC_02,CONNECTIVITY_MOD_3_TC_03 to CONNECTIVITY_MOD_3_TC_09 ";
+		testDescription = "Smartconfig pairing";
 	}
 	
 

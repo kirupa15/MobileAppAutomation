@@ -31,7 +31,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testDescription = "BLE without Router mode";
 	}
 	
 
