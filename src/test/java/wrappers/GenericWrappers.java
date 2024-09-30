@@ -12,6 +12,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,6 +32,7 @@ public class GenericWrappers {
 
 	public static AndroidDriver driver;
 	public static WebDriver webDriver;
+	public static WebDriverWait wait;
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl,primaryWindowHandle,sHubUrl,sHubPort;
@@ -65,7 +67,8 @@ public class GenericWrappers {
 			caps.setCapability("appium:appPackage", prop.getProperty("APP_PACKAGE"));
 			caps.setCapability("appium:appActivity", prop.getProperty("APP_ACTIVITY"));
 			caps.setCapability("appium:automationName", "UiAutomator2");
-			
+			caps.setCapability("newCommandTimeout", 999999);
+
 			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), caps);
 			bReturn = true;
 		} catch (MalformedURLException e) {
@@ -321,5 +324,80 @@ public class GenericWrappers {
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+        
+        
     }
+	public void turnOffBluetooth() {
+
+		try {
+			Runtime.getRuntime().exec("adb shell svc bluetooth disable");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	 public void killAndReopenApp() {
+		    try {
+		        if (driver != null) {
+		            // Kill the app (terminate it)
+		            driver.terminateApp("com.iinvsys.szephyr");
+		            Reporter.reportStep("The app was killed successfully.", "PASS");
+
+		            // Wait for a few seconds before reopening the app
+		            Thread.sleep(3000);
+
+		            // Reopen the app, it should maintain its previous state (same page)
+		            driver.activateApp("com.iinvsys.szephyr");
+		            Reporter.reportStep("The app was reopened successfully.", "PASS");
+		        }
+		    } catch (Exception e) {
+		        Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
+		    }
+		}
+		public boolean isElementDisplayed(WebElement element) {
+
+			try {
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				return element.isDisplayed();
+			} catch (NoSuchElementException e) {
+				return false;
+			}
+		}
+		public boolean turnOnBT() {
+			boolean bReturn = false;
+
+			try {
+				Runtime.getRuntime().exec("adb shell svc bluetooth enable");
+				Reporter.reportStep("Bluetooth turned on successfully", "PASS");
+				bReturn = true;
+			} catch (IOException e) {
+				e.printStackTrace();
+				Reporter.reportStep("iframe could not be entered :", "FAIL");
+			}
+			return bReturn;
+
+			
+		}
+
+		public boolean turnOffBT() throws Exception {
+
+			boolean bReturn = false;
+			try {
+				Runtime.getRuntime().exec("adb shell svc bluetooth disable");
+				Reporter.reportStep("Bluetooth turned OFF successfully", "PASS");
+				bReturn = true;
+			} catch (IOException e) {
+				e.printStackTrace();
+				Reporter.reportStep("iframe could not be entered :", "FAIL");
+			}
+
+			return bReturn;
+		}
 }

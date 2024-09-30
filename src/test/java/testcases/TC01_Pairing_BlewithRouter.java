@@ -67,6 +67,7 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
 		
+		adddevicepage.ClickCancelButtonBle();
 		adddevicepage.enterWiFiPassword("12345678908");
 		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
