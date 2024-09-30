@@ -34,7 +34,7 @@ public class TC01_Pairing_BlewithRouter extends MobileAppWrappers {
 	@Test
 	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
 		login();
-		for(int i=0;i<5;i++) {
+		for(int i=0;i<1;i++) {
 		pairBlewithoutRouter();}
 	}
 

@@ -1,45 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T18:01:36 IST" name="Default suite" finished-at="2024-09-16T18:01:58 IST" duration-ms="21905">
+  <suite started-at="2024-09-28T17:59:14 IST" name="Default suite" finished-at="2024-09-28T17:59:59 IST" duration-ms="44752">
     <groups>
     </groups>
-    <test started-at="2024-09-16T18:01:36 IST" name="Default test" finished-at="2024-09-16T18:01:58 IST" duration-ms="21905">
-      <class name="testcases_signup_module.TC05_SignIn_SuccessFlow">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:27 IST" name="beforeSuite" finished-at="2024-09-16T18:01:36 IST" duration-ms="8877" status="PASS">
+    <test started-at="2024-09-28T17:59:14 IST" name="Default test" finished-at="2024-09-28T17:59:59 IST" duration-ms="44752">
+      <class name="schedular.TC02_Schedular">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:08 IST" name="beforeSuite" finished-at="2024-09-28T17:59:14 IST" duration-ms="5747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:36 IST" name="beforeTest" finished-at="2024-09-16T18:01:36 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:14 IST" name="beforeTest" finished-at="2024-09-28T17:59:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:36 IST" name="startTestCase" finished-at="2024-09-16T18:01:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:14 IST" name="startTestCase" finished-at="2024-09-28T17:59:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:36 IST" name="beforeMethod" finished-at="2024-09-16T18:01:36 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:14 IST" name="beforeMethod" finished-at="2024-09-28T17:59:14 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:36 IST" name="login" finished-at="2024-09-16T18:01:58 IST" duration-ms="21207" status="PASS">
+        <test-method signature="schedule()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:14 IST" name="schedule" finished-at="2024-09-28T17:59:55 IST" duration-ms="40651" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:46)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:175)
+at pages.Schedularpage.createschedule(Schedularpage.java:224)
+at schedular.TC02_Schedular.schedule(TC02_Schedular.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:58 IST" name="afterMethod" finished-at="2024-09-16T18:01:58 IST" duration-ms="621" status="PASS">
+        </test-method> <!-- schedule -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:55 IST" name="afterMethod" finished-at="2024-09-28T17:59:55 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:58 IST" name="afterTest" finished-at="2024-09-16T18:01:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:55 IST" name="afterTest" finished-at="2024-09-28T17:59:59 IST" duration-ms="3787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_signup_module.TC05_SignIn_SuccessFlow@5745ca0e]" started-at="2024-09-16T18:01:58 IST" name="afterSuite" finished-at="2024-09-16T18:01:59 IST" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:schedular.TC02_Schedular@565f390]" started-at="2024-09-28T17:59:59 IST" name="afterSuite" finished-at="2024-09-28T18:00:00 IST" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases_signup_module.TC05_SignIn_SuccessFlow -->
+      </class> <!-- schedular.TC02_Schedular -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
