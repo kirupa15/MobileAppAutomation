@@ -4,12 +4,18 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+      <class name="testcases.TC_07_ESM_Withconnectivity">
+        <methods>
+          <include name="removerepair"/>
+=======
+<<<<<<< HEAD
       <class name="schedular.TC02_Schedular">
 =======
       <class name="testcases_signup_module.TC04_SignIn_Valid_User">
 >>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
         <methods>
           <include name="login"/>
+>>>>>>> ce22f2c5e14a974ef0d312a07f7d813ead91c9c6
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
@@ -21,10 +27,14 @@
           <include name="startTestCase"/>
         </methods>
 <<<<<<< HEAD
+      </class> <!-- testcases.TC_07_ESM_Withconnectivity -->
+=======
+<<<<<<< HEAD
       </class> <!-- schedular.TC02_Schedular -->
 =======
       </class> <!-- testcases_signup_module.TC04_SignIn_Valid_User -->
 >>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
+>>>>>>> ce22f2c5e14a974ef0d312a07f7d813ead91c9c6
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
