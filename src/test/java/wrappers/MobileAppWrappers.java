@@ -25,15 +25,12 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException{
 		Reporter.startResult();
-		boolean driverInitialized = initAndriodDriver();
-		if (driverInitialized) {
-		 System.out.println("Mobile App lanched Succesfully"); } else {
-		 System.out.println("Issue in Launching Mobile App"); }
+		
 		 
 	}
 
 	@BeforeTest
-	public void beforeTest(){
+	public void beforeTest() throws FileNotFoundException, IOException{
 
 	}
 

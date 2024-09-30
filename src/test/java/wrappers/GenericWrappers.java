@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
@@ -18,6 +19,10 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.openqa.selenium.NoSuchElementException;
+import org.apache.commons.collections4.QueueUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -73,6 +78,7 @@ public class GenericWrappers {
 
 			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/"), caps);
 //			keepSessionAlive(driver);
+
 			bReturn = true;
 
 			String appPackage = prop.getProperty("APP_PACKAGE");
@@ -284,7 +290,8 @@ public class GenericWrappers {
 		return bReturn;
 	}
 
-	public void quitBrowser() {
+	
+	public static void quitBrowser() {
 		try {
 			if (driver != null) {
 				driver.quit();
@@ -297,17 +304,21 @@ public class GenericWrappers {
 
 	public static void expWait(WebElement xpath) {
 		try {
-//			WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+
+		WebDriverWait wait = new WebDriverWait(driver,15);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
+
+		
+
 		}
 
 	}
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
-//		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));
+ 		WebDriverWait wait = new WebDriverWait(driver,100);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);

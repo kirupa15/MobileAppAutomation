@@ -1,20 +1,21 @@
-package testcases_signup_module;
+package testcases_pairing;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.OtpPage;
 import pages.SignInPage;
+import pages.OtpPage;
 import wrappers.MobileAppWrappers;
 
-public class TC06_SignIn_Logout extends MobileAppWrappers {
+
+public class TC03_Pairing_BlewithRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -25,30 +26,42 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06 - Login, Pair and logout from device";
-		testDescription = "Check after Login, Pair and logout from device is working";
+		testCaseName = "TC03 - Pairinfg BLE With Router";
+		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
 	
 
 	@Test
-	public void login() throws InterruptedException, FileNotFoundException, IOException {
+	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
 		initAndriodDriver();
+		login();
+
+		for(int i=0;i<2;i++) {
+		pairBlewithoutRouter();}
+		}
+
+	public void login() {
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
-		adddevicepage= new AddDevicePage(driver);
-		devicemenupage= new DeviceMenuPage(driver);
-		homepage=new HomePage(driver);
 		
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser1237@gmail.com");
 		loginpage.clickSignInButton();
-		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
+		
+	}
+	
+	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+		
+		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
@@ -56,8 +69,8 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
 		adddevicepage.turnOnBluetooth();
-		//adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickRouterCancelButton();
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
@@ -70,11 +83,6 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		homepage.clickMenuBarButton();
-		devicemenupage.clickLogoutButtonAfterReset();
-		devicemenupage.clickLogoutConfirmationButton();
-		
 	}
-		
-	
+
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 12 12:01:11 IST 2024</td>
+<td>Started on:</td><td>Thu Sep 26 16:29:14 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (24 ms)</td>
+<tr><td>Total time:</td><td>622 seconds (622666 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,5 +67,140 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:143)
+	at pages.SignInPage.clickSignInButton(SignInPage.java:44)
+	at testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing.removerepair(TC02_Pairing_BlewithRouter_FirstTimePairing.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1275580924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275580924'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:143)
+	at pages.SignInPage.clickSignInButton(SignInPage.java:44)
+	at testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing.removerepair(TC02_Pairing_BlewithRouter_FirstTimePairing.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>27</td>
+<td>testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing@7eecb5b8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases_signup_module.TC02_SignUp.signUp()'><b>signUp</b><br>Test class: testcases_signup_module.TC02_SignUp</td>
+<td></td>
+<td>27</td>
+<td>testcases_signup_module.TC02_SignUp@47caedad</td></tr>
+<tr>
+<td title='testcases_signup_module.TC06_SignIn_Logout.login()'><b>login</b><br>Test class: testcases_signup_module.TC06_SignIn_Logout</td>
+<td></td>
+<td>162</td>
+<td>testcases_signup_module.TC06_SignIn_Logout@28cda624</td></tr>
+<tr>
+<td title='testcases_signup_module.TC05_SignIn_SuccessFlow.login()'><b>login</b><br>Test class: testcases_signup_module.TC05_SignIn_SuccessFlow</td>
+<td></td>
+<td>23</td>
+<td>testcases_signup_module.TC05_SignIn_SuccessFlow@387a8303</td></tr>
+<tr>
+<td title='testcases_signup_module.TC01_SignUp.signUp()'><b>signUp</b><br>Test class: testcases_signup_module.TC01_SignUp</td>
+<td></td>
+<td>24</td>
+<td>testcases_signup_module.TC01_SignUp@7857fe2</td></tr>
+<tr>
+<td title='testcases_pairing.TC03_Pairing_BlewithRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC03_Pairing_BlewithRouter</td>
+<td></td>
+<td>145</td>
+<td>testcases_pairing.TC03_Pairing_BlewithRouter@126253fd</td></tr>
+<tr>
+<td title='testcases_pairing.TC04_Pairing_SmartConfig.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC04_Pairing_SmartConfig</td>
+<td></td>
+<td>107</td>
+<td>testcases_pairing.TC04_Pairing_SmartConfig@57db2b13</td></tr>
+<tr>
+<td title='testcases_signup_module.TC03_SignIn_Flow.signIn()'><b>signIn</b><br>Test class: testcases_signup_module.TC03_SignIn_Flow</td>
+<td></td>
+<td>12</td>
+<td>testcases_signup_module.TC03_SignIn_Flow@7139992f</td></tr>
+<tr>
+<td title='testcases_signup_module.TC04_SignIn_Valid_User.login()'><b>login</b><br>Test class: testcases_signup_module.TC04_SignIn_Valid_User</td>
+<td></td>
+<td>24</td>
+<td>testcases_signup_module.TC04_SignIn_Valid_User@69504ae9</td></tr>
+<tr>
+<td title='testcases_pairing.TC01_Pairing_BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC01_Pairing_BlewithoutRouter</td>
+<td></td>
+<td>61</td>
+<td>testcases_pairing.TC01_Pairing_BlewithoutRouter@1500b2f3</td></tr>
+</table><p>
 </body>
 </html>

@@ -3,29 +3,18 @@
 <suite name="Failed suite [MobilAppAutomation]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="schedular.TC02_Schedular">
-=======
       <class name="testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing">
->>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="schedule"/>
-          <include name="beforeTest"/>
           <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
           <include name="beforeMethod"/>
-<<<<<<< HEAD
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- schedular.TC02_Schedular -->
-=======
           <include name="removerepair"/>
           <include name="beforeSuite"/>
         </methods>
       </class> <!-- testcases_pairing.TC02_Pairing_BlewithRouter_FirstTimePairing -->
->>>>>>> 3e6ee996c36bad3e577a30e094033d605aaae81c
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [MobilAppAutomation] -->

@@ -20,6 +20,7 @@ public class HomePage extends GenericWrappers{
 	}
 	
 	public void clickONOFFButton() {
+		expWaitforPairing(deviceONOFFButton);
 		clickbyXpath(deviceONOFFButton, " Device ON OFF Button ");
 	}
 	

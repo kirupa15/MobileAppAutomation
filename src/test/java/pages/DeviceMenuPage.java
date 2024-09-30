@@ -50,8 +50,14 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='UserConfig_Submit_Button']")
 	private WebElement deviceSettingSubmitButton;
 	
+	@FindBy(xpath = "//*[@resource-id='menu_icon_logout']")
+	private WebElement logoutButton;
 	
+	@FindBy(xpath = "//*[@resource-id='logoutIcon']")
+	private WebElement logoutButtonAfterReset;
 	
+	@FindBy(xpath = "//*[@resource-id='Logout_LOGOUT']")
+	private WebElement logoutConfirmationButton;
 	
 	// Constructor to initialize the driver and instantiate elements using
 	
@@ -65,7 +71,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	public void clickDeviceSettingsButton() {
 		clickbyXpath(deviceSettingsButton, " Device Settings Button  ");
 	}
-	
+
 	public void clickResetDeviceButton() {
 		clickbyXpath(resetDeviceButtom, " Pairing Mode Check Box ");
 	}
@@ -74,5 +80,16 @@ public class DeviceMenuPage extends GenericWrappers{
 		clickbyXpath(resetConfirmationYesButton, " Pairing mode Next Button ");
 	}
 	
+	public void clickLogoutButton() {
+		clickbyXpath(logoutButton, " Logout button ");
+	}
+	
+	public void clickLogoutButtonAfterReset() {
+		clickbyXpath(logoutButtonAfterReset, " Logout button ");
+	}
+	
+	public void clickLogoutConfirmationButton() {
+		clickbyXpath(logoutConfirmationButton, " Logout button ");
+	}
 
 }
