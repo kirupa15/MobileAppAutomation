@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 30 22:13:40 IST 2024</td>
+<td>Started on:</td><td>Tue Oct 01 22:43:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23922 ms)</td>
+<tr><td>Total time:</td><td>192 seconds (192090 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,12 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='schedular.TC03_Schedular.schedule()'><b>schedule</b><br>Test class: schedular.TC03_Schedular</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:432)
-	at pages.AddDevicePage.verifysigninpage(AddDevicePage.java:366)
-	at pages.AddDevicePage.pair(AddDevicePage.java:360)
-	at pages.Schedularpage.createschedule(Schedularpage.java:222)
-	at schedular.TC03_Schedular.schedule(TC03_Schedular.java:43)
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:175)
+	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:278)
+	at pages.Schedularpage.createschedule(Schedularpage.java:223)
+	at schedular.TC03_Schedular.schedule(TC03_Schedular.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,16 +111,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2083215552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2083215552'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:432)
-	at pages.AddDevicePage.verifysigninpage(AddDevicePage.java:366)
-	at pages.AddDevicePage.pair(AddDevicePage.java:360)
-	at pages.Schedularpage.createschedule(Schedularpage.java:222)
-	at schedular.TC03_Schedular.schedule(TC03_Schedular.java:43)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1387466189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1387466189'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:175)
+	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:278)
+	at pages.Schedularpage.createschedule(Schedularpage.java:223)
+	at schedular.TC03_Schedular.schedule(TC03_Schedular.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,8 +147,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>23</td>
-<td>schedular.TC03_Schedular@4f49f6af</td></tr>
+<td>191</td>
+<td>schedular.TC03_Schedular@2235eaab</td></tr>
 </table><p>
 </body>
 </html>

@@ -42,6 +42,7 @@ public class Schedularpage extends GenericWrappers {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
+		this.wait=new WebDriverWait(driver, 30);
 	}
 
 	
@@ -219,6 +220,8 @@ public class Schedularpage extends GenericWrappers {
 		otppage = new OtpPage(driver);
 		
 		adddevicepage.pair(mode);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
 		clickbyXpath(Schedulebutton, "schedulebutton");
 
 		// Generate schedule times

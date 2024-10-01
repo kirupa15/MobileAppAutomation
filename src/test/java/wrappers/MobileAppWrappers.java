@@ -88,6 +88,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	@AfterMethod
 	public void afterMethod(){
 		quitBrowser();
+
 //		driver.quit();
 	}
 

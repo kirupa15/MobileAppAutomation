@@ -1,17 +1,13 @@
 package pages;
 
-import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
 import java.io.IOException;
 import org.openqa.selenium.WebElement;
 import java.util.HashMap;
 import java.util.Map;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -45,6 +41,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.EditText[@text='Enter Password']")
 	private WebElement enterPasswordField;
 
+
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel\"]")
 	private WebElement cancelButton;
 
@@ -60,12 +57,6 @@ public class AddDevicePage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.widget.TextView[@text='Submit']")
 	private WebElement submitBtn;
-
-	@FindBy(xpath =  "//android.widget.Button[@resource-id=\"android:id/button2\"]")
-	private WebElement ClickCancelButtonBle;
-
-	@FindBy(xpath =  "//android.widget.Button[@resource-id=\"android:id/button1\"]")
-	private WebElement ClickOkButtonBLEpopUP;
 
 	@FindBy(xpath =  "//android.view.ViewGroup[@content-desc=\", Select Brand\"]")
 	private WebElement ClickBrandName;
@@ -113,6 +104,7 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement shellallow;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/message\"]")
 	private WebElement shellmessage;
+
 	@FindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
 	private WebElement Blepopup_afterpairing;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Retrying_header_line\"]")
@@ -128,19 +120,86 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.CircleView[1]")
 	private WebElement deviceONOFFButton;
 
-	@FindBy(xpath = "//*[@resource-id='android:id/button1']")
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel_Text\"]")
+	private WebElement ClickCancelButtonWifi;
+	
+	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_YourDevice\"]")
+	private WebElement szephyrDeviceName;
+	
+	@FindBy(xpath ="//android.view.ViewGroup[@content-desc=\", Select Brand\"]")
+	private WebElement ACBrandNameClick;
+	
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Carrier\"]")
+	private WebElement ACBrandNameCarrier;
+	
+	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Ac_ModelName_Input\"]")
+	private WebElement ACModelName;
+	
+	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Capacity_Input\"]")
+	private WebElement Capacity;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Select room size\"]")
+	private WebElement RoomSizeselect;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Small\"]")
+	private WebElement RoomSizesmall;
+	
+	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch3\"]")
+	private WebElement Ledquietmode;
+	
+	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch4\"]")
+	private WebElement infinitepoweron;
+	
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[1]")
+	private WebElement hoursplusbutton ;
+	
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[2]")
+	private WebElement minutesplusbutton ;
+	
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[2]")
+   	private WebElement minutesminusbutton ;
+	
+	@FindBy(xpath ="//android.widget.Button[@resource-id=\"android:id/button2\"]")
+	private WebElement ClickCancelButtonBle;
+	
+	@FindBy(xpath ="//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	private WebElement ClickOkButtonBLEpopUP;
+	
+	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.CircleView[1]")
+	private WebElement enterpasswordwifipge1;
+	
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_DurationforON, com.szephyr:id/DeviceSetting_DurationforON_Icon\"]")
+	private WebElement durationforON;
+    
+    @FindBy(xpath = "//android.widget.EditText[@text=\"0\"]")
+   	private WebElement hourstextbox ;
+    
+    @FindBy(xpath = "//android.widget.EditText[@text=\"19\"]")
+   	private WebElement minutestextbox; 
+	
+    @FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_DurationforON, com.szephyr:id/DeviceSetting_DurationforON_Icon\"]")
+   	private WebElement clickokdurationON; 
+  
+   	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+   	private WebElement backbuttonDevicesettings; 
+	
+   	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement blePermissionOkButton;
 
-	@FindBy(xpath = "//*[@resource-id='android:id/button2']")
+  //android.widget.Button[@resource-id="android:id/button2"]
+  //android.widget.Button[@resource-id="android:id/button1"]
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
 	private WebElement blePermissionCancelButton;
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")
 	private WebElement enterpasswordwifipge;
 
-	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	@FindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
 	private WebElement BleOKpopup;
 
-	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id='android:id/button2']")
 	private WebElement BLEcancelpopup;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel\"]")
@@ -173,7 +232,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	public void startPairingButton() {
 		clickbyXpath(startPairingButton, " Start Pairing ");
-	}
+		}
 
 	public void locationPopUpPermission() {
 		if (isElementDisplayed(locationPopUp)) {
@@ -218,6 +277,7 @@ public class AddDevicePage extends GenericWrappers {
 		expWaitforPairing(sZephyrInfoNextButton);
 		clickbyXpath(sZephyrInfoNextButton, " Next Button ");
 	}
+
 
 
 	public void ClickBrandName() {
@@ -267,6 +327,7 @@ public class AddDevicePage extends GenericWrappers {
 	public void clickSubmitButtonDeviceSetting() {
 		clickbyXpath(deviceSettingSubmitButton, " Next Button ");
 	}
+
 
 	public void clickBlePermissionCancelbutton() {
 		clickbyXpath(blePermissionCancelButton, " Ble Popup Cancel Button ");
@@ -342,6 +403,85 @@ public class AddDevicePage extends GenericWrappers {
 		clickbyXpath(BLEcancelpopup, "Ble Cancelbutton");
 	}
 
+	
+public void aCBrandNameClick ()
+	
+	{	
+		expWaitforPairing(ACBrandNameClick);
+		clickbyXpath( ACBrandNameClick,"Acbrandname");
+	}
+    public void aCBrandNameCarrierclick()
+	
+	{	
+		expWaitforPairing(ACBrandNameClick);
+		clickbyXpath( ACBrandNameCarrier,"Acbrandname");
+	}
+	
+    public void roomSizeselect()
+    {
+		clickbyXpath(RoomSizeselect, " room Size ");
+	}
+    public void roomSizesmall() 
+    {
+		clickbyXpath(RoomSizesmall, "Select room size ");
+	}
+    
+    public void clickLedquietmode() 
+    {
+		clickbyXpath(Ledquietmode, "LED enable disable ");
+	}
+    
+    public void Alertpopup() 
+    {
+		clickbyXpath(alertpopup, "Inn_alertpopup");
+	}
+    public void LEDquietmode() 
+    {
+		clickbyXpath(Ledquietmode, "enabling LED Quiet mode");
+	}
+	
+    public void Infinitepoweron() 
+    {
+		clickbyXpath(infinitepoweron, "Clicking INFINITE Power On disable");
+	}
+    
+    public void hoursplusbutton () 
+    {
+		clickbyXpath(hoursplusbutton , "Clicking Hours plus button set 0");
+	}
+    
+    public void Minutesminusbutton () 
+    {
+		clickbyXpath(minutesminusbutton , "Clicking Hours plus button set 0");
+	}
+	
+    public void DurationforON () 
+    {
+		clickbyXpath(durationforON , "Clicking Duration for ON");
+	}
+    
+	public void Hourstextbox()
+	{	
+		verifyTextContainsByXpath(hourstextbox , "0", "Hours");
+	}
+	
+	public void Minutestextbox()
+	{	
+		verifyTextContainsByXpath(minutestextbox , "19", "Minutes");
+	}
+	public void ClickokdurationON()
+	{
+		//wait.until(ExpectedConditions.visibilityOf(clickokdurationON));
+		clickbyXpath(clickokdurationON, "OKbutton_Duration for ON");
+	}
+	
+	 public void BackbuttonDevicesettings () 
+	    {
+			clickbyXpath(backbuttonDevicesettings , "back button click");
+		}
+	
+	
+	
 	String serialno = "iinv_smartac";
 
 	LandingPage landingpage;
@@ -479,9 +619,9 @@ public class AddDevicePage extends GenericWrappers {
 				locationPopUpPermission();
 				nearByPermission();
 
-				if (isElementDisplayed(alertpopup)) {
+				if (isElementDisplayed(blePermissionOkButton)) {
 
-					BLEcancelpopup.click();
+					blePermissionCancelButton.click();
 					Thread.sleep(2000);
 					//					driver.navigate().back();
 
@@ -492,6 +632,17 @@ public class AddDevicePage extends GenericWrappers {
 
 				enterWiFiPassword("12345678908");
 				clickEnterButton();
+				
+				Thread.sleep(20000);
+				
+				if (isElementDisplayed(alertpopup)) {
+					BleOKpopup.click();
+					Thread.sleep(2000);
+//					driver.navigate().back();
+				} else {
+					System.out.println("Turn on Bluetooth for connectivity pop-up not displayed");
+				}
+				Thread.sleep(3000);
 
 				break;
 			case 4:
@@ -667,5 +818,9 @@ public class AddDevicePage extends GenericWrappers {
 		params.put("direction", "up");
 		driver.executeScript("mobile: hideKeyboard", params);
 	}
+
+
+	
+
 
 }
