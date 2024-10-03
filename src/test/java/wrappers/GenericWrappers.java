@@ -90,7 +90,7 @@ public class GenericWrappers {
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
 				driver.installApp(
-						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12888_stg.apk");
+						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12965_stg.apk");
 				driver.activateApp(appPackage); // Launch the app after installation
 			}
 

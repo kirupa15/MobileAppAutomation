@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import wrappers.GenericWrappers;
@@ -49,6 +50,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id='UserConfig_Submit_Button']")
 	private WebElement deviceSettingSubmitButton;
+	
 	
 	@FindBy(xpath ="//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_geyserInfo, com.szephyr:id/menu_text_geyserInfo\"]")
 	private WebElement szephyr_info_button;
@@ -108,6 +110,36 @@ public class DeviceMenuPage extends GenericWrappers{
 	
 	@FindBy(xpath = "//*[@resource-id='Logout_LOGOUT']")
 	private WebElement logoutConfirmationButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
+	private WebElement ClickCancelBluetooth;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel\"]")
+	private WebElement ClickCancelWifi;
+	
+	@FindBy(xpath =  "//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	private WebElement ClickOkButtonBLEpopUP;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Add Router, Choosing to add a router will add a router to your device.\"]")
+	private WebElement ClickaddrouterButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	private WebElement ClickDeviceSettingback;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
+	private WebElement clickAddDeviceButton;
+	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/AddDevice_NewDevicePairing_ButtonText\"]")
+	private WebElement clickNewDevicePairingButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"nee_1\"]")
+	private WebElement clickFirstDeviceButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"nee_2\"]")
+	private WebElement clickSecondDeviceButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"nee_3\"]")
+	private WebElement clickThirdDeviceButton;
 	
 	// Constructor to initialize the driver and instantiate elements using
 	
@@ -211,5 +243,50 @@ public class DeviceMenuPage extends GenericWrappers{
 		clickbyXpath(ESMPageBackButton, " Back button ESM page ");
 	}
 	
+	@SuppressWarnings("deprecation")
+	public void ClickaddrouterButton() {
+//		expWaitforPairing(ClickaddrouterButton);
+		driver.findElement(MobileBy.AndroidUIAutomator(
+			    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Add Router\"));"))
+			    .click();
+//		clickbyXpath(ClickaddrouterButton, " add router button ");
+	}
 	
+	public void ClickDeviceSettingback() {	
+		clickbyXpath(ClickDeviceSettingback, " Device setting back button ");
+	}
+	
+	public void clickAddDeviceButton() {	
+		clickbyXpath(clickAddDeviceButton, " Add Device ");
+	}
+	
+	public void clickNewDevicePairingButton() {	
+		clickbyXpath(clickNewDevicePairingButton, " Add New Device ");
+	}
+	
+	public void clickFirstDeviceButton() {	
+		clickbyXpath(clickFirstDeviceButton, " Add First Device ");
+	}
+	
+	public void clickSecondDeviceButton() {	
+		clickbyXpath(clickSecondDeviceButton, " Add Second Device ");
+	}
+	
+	public void clickThirdDeviceButton() {	
+		clickbyXpath(clickThirdDeviceButton, " Add Third Device ");
+	}
+	
+	public void ClickCancelBluetooth() {	
+		clickbyXpath(ClickCancelBluetooth, " Cancel Bluetooth Button ");
+	}
+	
+	public void ClickOkButtonBLEpopUP() {
+		expWaitforPairing(ClickOkButtonBLEpopUP);
+		clickbyXpath(ClickOkButtonBLEpopUP, " Click OK  Bluetooth Button Popup ");
+	}
+	
+	public void ClickCancelWifi() {
+		expWaitforPairing(ClickCancelWifi);
+		clickbyXpath(ClickCancelWifi, " Click Cancel Wifi Popup ");
+	}
 }

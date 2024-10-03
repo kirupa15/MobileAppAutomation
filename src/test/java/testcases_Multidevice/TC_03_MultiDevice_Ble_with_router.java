@@ -1,23 +1,21 @@
-package connectivity;
-
+package testcases_Multidevice;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
-import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
 
-public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
+public class TC_03_MultiDevice_Ble_with_router extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -25,14 +23,12 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-	Szephyr_info_Page szephyrinfoPage;
-	OTA_Status_monitor ota_Status_monitor;
-	SignUpPage signuppage;	
+	SignUpPage signuppage;
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_00,CONNECTIVITY_MOD_0_TC_02,CONNECTIVITY_MOD_0_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "TC01 - Pairinfg BLE With Router";
+		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
 	
 
@@ -47,11 +43,11 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
 		signuppage=new SignUpPage(driver);
+
 		
 		landingpage.clickSignInButton();
-		signuppage.enterEmailId("varadharajanram95@gmail.com");
+		signuppage.enterEmailId("Nee@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -65,71 +61,96 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
-		//CONNECTIVITY_MOD_0_TC_01////////////////////////////////////////////////
+		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
-		Thread.sleep(3000);
-		adddevicepage.aCBrandNameClick();
-		adddevicepage.aCBrandNameCarrierclick();
-		adddevicepage.enterAcModelName("V20");
-		adddevicepage.enterCapacity("2");
-		adddevicepage.roomSizeselect();
-		adddevicepage.roomSizesmall();
+		
+		//adddevicepage.ClickCancelButtonBle();
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
-		
 		Thread.sleep(1000);
 		}
-		homepage.clickMenuBarButton();
-		devicemenupage.ClickSzephyrInfoButton();
-		szephyrinfoPage.brandnametext();
-		szephyrinfoPage.Modelnametext();
-		szephyrinfoPage.Capacity_field();
-		szephyrinfoPage.Roomsize_field();
-		Thread.sleep(3000);
-		szephyrinfoPage.clickbackButton();
-		homepage.clickMenuBarButton();
-	    devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
 		
-		//CONNECTIVITY_MOD_0_TC_02//
-		
-		adddevicepage.clickAddDeviceButton();
+		homepage.clickMenuBarButton();
+		devicemenupage.clickAddDeviceButton();
+		devicemenupage.clickNewDevicePairingButton();
 		adddevicepage.checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		
+		//adddevicepage.ClickCancelButtonBle();
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.LEDquietmode();
-		adddevicepage.Infinitepoweron();
-		Thread.sleep(3000);
-		adddevicepage.Minutesminusbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
+		Thread.sleep(1000);
+		devicemenupage.clickSecondDeviceButton();
+		
+		for(int i=0;i<2;i++) {
+		homepage.clickONOFFButton();
+		Thread.sleep(1000);
+		}
+		
+		devicemenupage.clickFirstDeviceButton();
+		
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
+		Thread.sleep(1000);
+		devicemenupage.clickSecondDeviceButton();
+		
 		homepage.clickMenuBarButton();
-	    devicemenupage.clickDeviceSettingsButton();
-	    adddevicepage.DurationforON();
-	    Thread.sleep(3000);
-	    adddevicepage.Hourstextbox();
-	    adddevicepage.Minutestextbox();
-	    adddevicepage.ClickokdurationON();
-	    Thread.sleep(5000);
-	    devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.clickAddDeviceButton();
+		devicemenupage.clickNewDevicePairingButton();
+		adddevicepage.checkBoxPairing();
+		adddevicepage.nextButtonPairing();
+		adddevicepage.startPairingButton();
+		adddevicepage.locationPopUpPermission();
+		adddevicepage.nearByPermission();
 		
+		//adddevicepage.ClickCancelButtonBle();
+		adddevicepage.enterWiFiPassword("12345678908");
+		adddevicepage.clickEnterButton();
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
+devicemenupage.clickFirstDeviceButton();
 		
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
+devicemenupage.clickThirdDeviceButton();
+		
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
 	}
 }
+		
+		
+		
+		
+		
 		
