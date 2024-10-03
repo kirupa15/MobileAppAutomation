@@ -1,4 +1,4 @@
-package testcases_signup_module;
+package testcases_signIn_up_accountsinfo_module;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,19 +14,18 @@ import pages.OtpPage;
 import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-public class TC04_SignIn_Valid_User extends MobileAppWrappers {
+public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
-	DeviceMenuPage devicemenupage;
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - Sign In with Valid User";
-		testDescription = "Sign In into app with Valid user details";
+		testCaseName = "TC05 - Sign Up or Sign In, enter valid OTP";
+		testDescription = "During Sign Up or Sign In, enter valid OTP";
 	}
 	
 
@@ -36,18 +35,19 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
+		adddevicepage= new AddDevicePage(driver);
 		
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();
-		Thread.sleep(3000);
 		otppage.verifyOTPVerificationTitle("OTP Verification");
-		otppage.enterOTPField1("5");
+		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
-		otppage.checkIncorrectOTPToast("Incorrect OTP, You have 5 more attempt");
+		adddevicepage.verifyAddDevicePage("Add Device");
+		
 	}
 	
 }
