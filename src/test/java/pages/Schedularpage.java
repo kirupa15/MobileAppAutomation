@@ -41,8 +41,8 @@ public class Schedularpage extends GenericWrappers {
 	public Schedularpage(AndroidDriver<AndroidElement> driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		this.wait = new WebDriverWait(driver, 30);
 		this.js = (JavascriptExecutor) driver;
+		this.wait=new WebDriverWait(driver, 30);
 	}
 
 	
@@ -219,8 +219,9 @@ public class Schedularpage extends GenericWrappers {
 		adddevicepage = new AddDevicePage(driver);
 		otppage = new OtpPage(driver);
 		
-		
 		adddevicepage.pair(mode);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
 		clickbyXpath(Schedulebutton, "schedulebutton");
 
 		// Generate schedule times
