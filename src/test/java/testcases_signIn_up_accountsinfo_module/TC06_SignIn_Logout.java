@@ -1,4 +1,4 @@
-package testcases_signup_module;
+package testcases_signIn_up_accountsinfo_module;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package testcases_signup_module;
+package testcases_signIn_up_accountsinfo_module;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import pages.OtpPage;
 import pages.SignUpPage;
 import wrappers.MobileAppWrappers;
 
-public class TC02_SignUp extends MobileAppWrappers {
+public class TC01_SignUp extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -27,8 +27,8 @@ public class TC02_SignUp extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02_Sign Up with new username";
-		testDescription = "Try to Sign Up with new username";
+		testCaseName = "TC01 - SignUp with already existing username";
+		testDescription = "Try to Sign Up with already registered username";
 	}
 
 
@@ -42,15 +42,11 @@ public class TC02_SignUp extends MobileAppWrappers {
 
 		landingpage.clickSignUpButton();
 		double rand=Math.random()*10000000;
-		signuppage.enterUserName("testuser"+(int)rand);
-		signuppage.enterEmailId("testuser"+(int)rand+"@gmail.com");
-		System.out.println("New user: testuser"+(int)rand+"@gmail.com");
-		signuppage.clickSignUpTCButton();
-		signuppage.checkPpContentTitle("Privacy Policy");
-		signuppage.checkPpContent("IINVSYS Private Limited (here is referred as IINVSYS or Company)");
-		signuppage.checkPpContactUsContent("For questions regarding our Privacy Policy, please contact our customer care via email at support@iinvsys.com");
-		signuppage.clicktcPopupCloseButton();
+		signuppage.enterUserName("testuser");
+		signuppage.enterEmailId("testuser@gmail.com");
+		signuppage.clickSignUpTCCheckBox();
 		signuppage.clickSignUpButton();
+		signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
 
 	}
 

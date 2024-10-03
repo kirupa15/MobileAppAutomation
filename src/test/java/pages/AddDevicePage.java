@@ -218,12 +218,14 @@ public class AddDevicePage extends GenericWrappers {
 
 	// Methods to be used as part of loginpage.
 
-	public void clickAddDeviceButton() {
+	public AddDevicePage clickAddDeviceButton() {
 		clickbyXpath(addDeviceButton, " Add Device Button  ");
+		return this;
 	}
 
-	public void checkBoxPairing() {
+	public AddDevicePage checkBoxPairing() {
 		clickbyXpath(checkBoxPairing, " Pairing Mode Check Box ");
+		return this;
 	}
 
 	public void nextButtonPairing() {
@@ -527,6 +529,9 @@ public void aCBrandNameClick ()
 			// Check if device permission popup appears after location permission
 			if (isElementDisplayed(devicepermission)) {
 				clickbyXpath(devicepermission, "Device permission pop-up");
+			}
+			if (isElementDisplayed(blePermissionOkButton)) {
+				clickByXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			}
 			if (acturnoffdesc.isDisplayed()) {
 				System.out.println("Device is already paired..");

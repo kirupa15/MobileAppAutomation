@@ -141,6 +141,11 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"nee_3\"]")
 	private WebElement clickThirdDeviceButton;
 	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/DeviceSetting_highVoltageConfig\"]")
+	private WebElement lowvoltageconfiguration;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	private WebElement DevicesettingsbackButton;
 	// Constructor to initialize the driver and instantiate elements using
 	
 	public DeviceMenuPage(AndroidDriver driver) {
@@ -251,6 +256,14 @@ public class DeviceMenuPage extends GenericWrappers{
 			    .click();
 //		clickbyXpath(ClickaddrouterButton, " add router button ");
 	}
+	public void checkcontentlowvoltage() {	
+		verifyTextContainsByXpath(lowvoltageconfiguration, "Low voltage configuration" , "Device Settings");
+	}
+	
+	public void clickDevicesettingsbackButton() {	
+		clickbyXpath(DevicesettingsbackButton, " Device Setting Back Button ");
+	}
+	
 	
 	public void ClickDeviceSettingback() {	
 		clickbyXpath(ClickDeviceSettingback, " Device setting back button ");

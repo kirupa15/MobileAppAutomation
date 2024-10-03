@@ -25,8 +25,8 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException{
 		Reporter.startResult();
-		
-		 
+
+
 	}
 
 	@BeforeTest
@@ -36,9 +36,9 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@BeforeMethod 
 	public void beforeMethod(){ 
-	Reporter.startTestCase();
-	//initDriver(); 
-	
+		Reporter.startTestCase();
+		//initDriver(); 
+
 	}
 
 	@AfterSuite
@@ -46,50 +46,49 @@ public class MobileAppWrappers extends GenericWrappers {
 		Reporter.endResult();
 	}
 
-	
+
 	@AfterTest
 	public void afterTest() throws IOException{
-		
-        try {
-            // FTP server credentials
-		
-		 String server = "192.168.10.34";//192.168.10.34
-         int port = 21;
-         String user = "qa_usr";
-         String pass = "nw9f2hgo@123";
 
-         // Local log files
-         String appLogPath = "C://Users//Invcuser_45//Desktop//React-Log-20240930_180049.txt";
-         String deviceLogPath = "C://Users//Invcuser_45//Desktop//LiveLog//OLD//teraterm.log";
+		try {
+			// FTP server credentials
 
-         // FTP paths
-         String existingDirectory = "/users/Ashif/";
-         String newSubDir = "Applogs_" + randomnumbers(4); // Subdirectory name
+			String server = "192.168.10.34";//192.168.10.34
+			int port = 21;
+			String user = "qa_usr";
+			String pass = "nw9f2hgo@123";
 
-         // Initialize FTP connection
-         FTPUploader(server, port, user, pass);
+			// Local log files
+			String appLogPath = "C://Users//Invcuser_45//Desktop//React-Log-20240930_180049.txt";
+			String deviceLogPath = "C://Users//Invcuser_45//Desktop//LiveLog//OLD//teraterm.log";
 
-         // Create new subdirectory inside the existing directory
-       createAndNavigateToSubdirectory(existingDirectory, newSubDir);
+			// FTP paths
+			String existingDirectory = "/users/Ashif/";
+			String newSubDir = "Applogs_" + randomnumbers(4); // Subdirectory name
 
-         // Upload files to the new subdirectory
-        uploadFile(appLogPath, "React-Log-20240924_182921.txt");
-         uploadFile(deviceLogPath, "teraterm.log");
+			// Initialize FTP connection
+			FTPUploader(server, port, user, pass);
 
-         // Disconnect from FTP server
-        disconnect();
+			// Create new subdirectory inside the existing directory
+			createAndNavigateToSubdirectory(existingDirectory, newSubDir);
 
-        	} catch (IOException e) {
-         e.printStackTrace();
-     
-        	}
+			// Upload files to the new subdirectory
+			uploadFile(appLogPath, "React-Log-20240924_182921.txt");
+			uploadFile(deviceLogPath, "teraterm.log");
+
+			// Disconnect from FTP server
+			disconnect();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+
+		}
 	}
 
 	@AfterMethod
 	public void afterMethod(){
 		quitBrowser();
-
-//		driver.quit();
+		//driver.quit();
 	}
 
 	@DataProvider(name="fetchData")
