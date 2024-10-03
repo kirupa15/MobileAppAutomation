@@ -161,12 +161,14 @@ public class AddDevicePage extends GenericWrappers {
 
 	// Methods to be used as part of loginpage.
 
-	public void clickAddDeviceButton() {
+	public AddDevicePage clickAddDeviceButton() {
 		clickbyXpath(addDeviceButton, " Add Device Button  ");
+		return this;
 	}
 
-	public void checkBoxPairing() {
+	public AddDevicePage checkBoxPairing() {
 		clickbyXpath(checkBoxPairing, " Pairing Mode Check Box ");
+		return this;
 	}
 
 	public void nextButtonPairing() {

@@ -49,8 +49,7 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();	
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
+		adddevicepage.clickAddDeviceButton().checkBoxPairing();
 		adddevicepage.nextButtonPairing();
 		adddevicepage.startPairingButton();
 		adddevicepage.turnOnBluetooth();
