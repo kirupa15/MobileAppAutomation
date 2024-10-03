@@ -1,4 +1,4 @@
-package connectivity;
+package testcases_connectivity;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

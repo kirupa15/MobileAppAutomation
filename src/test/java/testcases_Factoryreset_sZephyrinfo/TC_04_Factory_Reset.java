@@ -1,4 +1,4 @@
-package testcase_Factoryreset_sZephyrinfo;
+package testcases_Factoryreset_sZephyrinfo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import pages.SignInPage;
 import pages.SignUpPage;
 import wrappers.MobileAppWrappers;
 
-public class TC_05_Ble_Factory_Reset extends MobileAppWrappers {
+public class TC_04_Factory_Reset extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -69,12 +69,11 @@ public void pairBlewithoutRouter() throws FileNotFoundException, IOException, In
 	adddevicepage.locationPopUpPermission();
 	adddevicepage.nearByPermission();
 	
-	//adddevicepage.ClickCancelButtonBle();
-	//adddevicepage.enterWiFiPassword("12345678908");
-	//adddevicepage.clickEnterButton();
-	adddevicepage.cancelButton();
+	adddevicepage.ClickCancelButtonBle();
+	adddevicepage.enterWiFiPassword("12345678908");
+	adddevicepage.clickEnterButton();
 	Thread.sleep(1000);
-	//adddevicepage.ClickOkButtonBLEpopUP();
+	adddevicepage.ClickOkButtonBLEpopUP();
 	adddevicepage.clickNextButtonsZephyrInfo();
 	adddevicepage.clickSubmitButtonDeviceSetting();
 	
@@ -82,9 +81,7 @@ public void pairBlewithoutRouter() throws FileNotFoundException, IOException, In
 	homepage.clickONOFFButton();
 	Thread.sleep(1000);
 	}
-	Thread.sleep(1000);
-	homepage.killandopen();
-	Thread.sleep(1000);
+	
 	homepage.clickMenuBarButton();
 	devicemenupage.clickDeviceSettingsButton();
 	devicemenupage.clickResetDeviceButton();

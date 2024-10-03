@@ -1,4 +1,4 @@
-package connectivity;
+package testcases_connectivity;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -20,7 +20,7 @@ import pages.Szephyr_info_Page;
 import wrappers.MobileAppWrappers;
 
 
-public class  WifiWithRouter extends MobileAppWrappers {
+public class WIfiWithout_router extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -30,11 +30,11 @@ public class  WifiWithRouter extends MobileAppWrappers {
 	DeviceMenuPage devicemenupage;
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
-		SignUpPage signpupage;
+	SignUpPage signuppage;	
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_5_TC_01,CONNECTIVITY_MOD_5_TC_02,CONNECTIVITY_MOD_5_TC_03";
+		testCaseName = "CONNECTIVITY_MOD_4_TC_01,CONNECTIVITY_MOD_4_TC_02,CONNECTIVITY_MOD_4_TC_03";
 		testDescription = "OTA update BLE without Router mode";
 	}
 	
@@ -52,10 +52,9 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		landingpage=new LandingPage(driver);
 		loginpage=new SignInPage(driver);
-		signpupage=new SignUpPage(driver);
-		
+		signuppage=new SignUpPage(driver);
 		try {
-			adddevicepage.pair(4);
+			adddevicepage.pair(5);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -64,10 +63,11 @@ public class  WifiWithRouter extends MobileAppWrappers {
 
 
 	public void login() {
+
 		
 		
 		landingpage.clickSignInButton();
-		signpupage.enterEmailId("varadharajanram95@gmail.com");
+		signuppage.enterEmailId("varadharajanram95@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.enterOTPField1("1");
 		otppage.enterOTPField2("2");
@@ -86,7 +86,6 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		
 		homepage.disableBLE();
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
@@ -94,10 +93,17 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		adddevicepage.startPairingButton();
 		adddevicepage.locationPopUpPermission();
 		adddevicepage.nearByPermission();
-		//driver.navigate().back();
+		
+		
+//			driver.navigate().back();
+		
+		
 		adddevicepage.enterWiFiPassword("12345678908");
 		adddevicepage.clickEnterButton();
-		//adddevicepage.clickOkButtonBLEpopUP();
+		
+		
+
+//		adddevicepage.clickOkButtonBLEpopUP();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		homepage.clickONOFFButton();

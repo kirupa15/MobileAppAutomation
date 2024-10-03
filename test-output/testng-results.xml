@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T15:24:49 IST" name="Default suite" finished-at="2024-10-03T15:25:26 IST" duration-ms="36265">
+  <suite started-at="2024-10-03T15:31:20 IST" name="Default suite" finished-at="2024-10-03T15:32:10 IST" duration-ms="50280">
     <groups>
     </groups>
-    <test started-at="2024-10-03T15:24:49 IST" name="Default test" finished-at="2024-10-03T15:25:26 IST" duration-ms="36265">
+    <test started-at="2024-10-03T15:31:20 IST" name="Default test" finished-at="2024-10-03T15:32:10 IST" duration-ms="50280">
       <class name="schedular.TC02_Schedular">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:24:49 IST" name="beforeSuite" finished-at="2024-10-03T15:24:49 IST" duration-ms="691" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:31:19 IST" name="beforeSuite" finished-at="2024-10-03T15:31:20 IST" duration-ms="715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:24:49 IST" name="beforeTest" finished-at="2024-10-03T15:24:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:31:20 IST" name="beforeTest" finished-at="2024-10-03T15:31:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:24:49 IST" name="startTestCase" finished-at="2024-10-03T15:24:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:31:20 IST" name="startTestCase" finished-at="2024-10-03T15:31:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:24:49 IST" name="beforeMethod" finished-at="2024-10-03T15:24:49 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:31:20 IST" name="beforeMethod" finished-at="2024-10-03T15:31:20 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="schedule()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:24:49 IST" name="schedule" finished-at="2024-10-03T15:25:25 IST" duration-ms="35505" status="FAIL">
+        <test-method signature="schedule()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:31:20 IST" name="schedule" finished-at="2024-10-03T15:32:10 IST" duration-ms="49503" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -32,7 +32,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'DESKTOP-8HN186T', ip: '192.168.10.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: POCO M2 Pro, newCommandTimeout: 999999, platformName: android, platformVersion: 12, udid: 964176695400065}, deviceApiLevel: 33, deviceManufacturer: vivo, deviceModel: V2055, deviceName: 964176695400065, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 964176695400065, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2.75, platform: LINUX, platformName: LINUX, platformVersion: 13, statBarHeight: 88, takesScreenshot: true, udid: 964176695400065, viewportRect: {height: 2312, left: 0, top: 88, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 87e7600a-88e9-4c05-aedb-28be498ba2fe
+Session ID: 9b4f23f8-66fd-4caa-8c67-a35c5e5874a1
 *** Element info: {Using=xpath, value=//android.widget.TextView[@text="Please ensure sZephyr is switched ON prior to operating your AC remote"]}]]>
             </message>
             <full-stacktrace>
@@ -42,7 +42,7 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'DESKTOP-8HN186T', ip: '192.168.10.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: POCO M2 Pro, newCommandTimeout: 999999, platformName: android, platformVersion: 12, udid: 964176695400065}, deviceApiLevel: 33, deviceManufacturer: vivo, deviceModel: V2055, deviceName: 964176695400065, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 964176695400065, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2.75, platform: LINUX, platformName: LINUX, platformVersion: 13, statBarHeight: 88, takesScreenshot: true, udid: 964176695400065, viewportRect: {height: 2312, left: 0, top: 88, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 87e7600a-88e9-4c05-aedb-28be498ba2fe
+Session ID: 9b4f23f8-66fd-4caa-8c67-a35c5e5874a1
 *** Element info: {Using=xpath, value=//android.widget.TextView[@text="Please ensure sZephyr is switched ON prior to operating your AC remote"]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -74,7 +74,7 @@ at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-at pages.AddDevicePage.initiatepairing(AddDevicePage.java:533)
+at pages.AddDevicePage.initiatepairing(AddDevicePage.java:536)
 at pages.AddDevicePage.pair(AddDevicePage.java:503)
 at pages.Schedularpage.createschedule(Schedularpage.java:222)
 at schedular.TC02_Schedular.schedule(TC02_Schedular.java:51)
@@ -112,15 +112,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schedule -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:25:25 IST" name="afterMethod" finished-at="2024-10-03T15:25:25 IST" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:32:10 IST" name="afterMethod" finished-at="2024-10-03T15:32:10 IST" duration-ms="237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:25:25 IST" name="afterTest" finished-at="2024-10-03T15:25:26 IST" duration-ms="430" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:32:10 IST" name="afterTest" finished-at="2024-10-03T15:32:10 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:25:26 IST" name="afterSuite" finished-at="2024-10-03T15:25:26 IST" duration-ms="687" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:schedular.TC02_Schedular@17503f6b]" started-at="2024-10-03T15:32:10 IST" name="afterSuite" finished-at="2024-10-03T15:32:11 IST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -148,6 +148,67 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement DevicesettingsbackButton;
 	// Constructor to initialize the driver and instantiate elements using
 	
+	
+	
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Add Router, Choosing to add a router will add a router to your device.\"]")
+	private WebElement addRouterButton;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Remove router\"]")
+	private WebElement removeRouterButton;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
+	private WebElement removeRouterCancelButton;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"REMOVE\"]")
+	private WebElement removeRouterRemoveButton;
+	
+	@FindBy(xpath = "//android.widget.CheckBox[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_CheckBox\"]")
+	private WebElement addRouterPopCheckBox;
+	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel_Text\"]")
+	private WebElement routerPopCancelButton;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_LEDQuietMode\"]/android.view.ViewGroup")
+	private WebElement quietLEDToggleEnable;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_LEDQuietMode\"]/android.view.ViewGroup")
+	private WebElement quietLEDToggleDisable;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	private WebElement deviceSettingsPageBackButton;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button3\"]")
+	private WebElement shellallow;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
+	private WebElement shelldeny;
+	
+	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch4\"]")
+	private WebElement infiniteToggle ;
+	
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[1]")
+	private WebElement hoursPlusButton ;
+	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/UserConfig_Submit_ButtonText\"]")
+	private WebElement infiniteSubmitButton ;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_DurationforON, com.szephyr:id/DeviceSetting_DurationforON_Icon\"]")
+	private WebElement durationForON;
+	
+	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch3\"]")
+	private WebElement pairingTimeQuietLEDEnable;
+	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_removeDevice, com.szephyr:id/menu_text_removeDevice\"]")
+	private WebElement removeDevice;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"NO\"]")
+	private WebElement removeDevicePopupNoButton;
+	
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"YES\"]")
+	private WebElement removeDevicePopupYesButton;
+	
 	public DeviceMenuPage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -302,4 +363,87 @@ public class DeviceMenuPage extends GenericWrappers{
 		expWaitforPairing(ClickCancelWifi);
 		clickbyXpath(ClickCancelWifi, " Click Cancel Wifi Popup ");
 	}
+	public void clickRemoveRouterButton() {	
+    	clickbyXpath(removeRouterButton, " Click Remove Router Button ");
+	}
+	
+		public void clickRemoveRouterCancelButton() {	
+			clickbyXpath(removeRouterCancelButton, " Click Remove Router Cancel Button ");
+		}
+		
+
+        public void clickRemoveRouterRemoveButton() {	
+	        clickbyXpath(removeRouterRemoveButton, " Click Remove Router Remove Button ");
+       }
+	
+        public void clickAddRouterCheckBox() {	
+	        clickbyXpath(addRouterPopCheckBox, " Click Add Router Pop-up Check Box ");
+        }
+        
+        public void clickRouterPopCancelButton() {	
+	        clickbyXpath(routerPopCancelButton, " Click Add Router Pop-up Cancel Button ");
+        }
+        
+        public void clickQuietLEDToggleForOn() {	
+	        clickbyXpath(quietLEDToggleEnable, " Enable The Quiet LED Toggle ");
+       }
+        
+        public void clickQuietLEDToggleForOff() {	
+	        clickbyXpath(quietLEDToggleDisable, " Disable The Quiet LED Toggle ");
+        }
+
+		public void clickDeviceSettingsBackButton() {
+			clickbyXpath(deviceSettingsPageBackButton, " Click The Device Settings Page Back Button ");
+        }
+		
+		
+		public void clickInfiniteSubmitButton() {
+			clickbyXpath(infiniteSubmitButton, " Click The Submit Button ");
+			
+		}
+		
+		public void clickDurationForONButton() {
+			clickbyXpath(durationForON, " Click The ON Duration Button ");
+			
+		}
+
+		public void clickInfinitePowerToggle() {
+			clickbyXpath(infiniteToggle, " Disable The Infinite Toggle ");
+			
+		}
+
+		public void clickHoursPlusButton() {
+			clickbyXpath(hoursPlusButton, " Click The Hours Plus Button ");
+			
+		}
+		
+		public void clickPairingTimeQuietLEDEnable() {
+			clickbyXpath(pairingTimeQuietLEDEnable, " Click The LED Quiet MOde Toggle ");
+			
+		}
+		
+		public void clickMenuBarRemoveDevice() {
+			clickbyXpath(removeDevice, " Click The Remove Device Button ");
+			
+		}	
+		
+		public void clickRemoveDevicePopupNoButton() {
+			clickbyXpath(removeDevicePopupNoButton, " Click The Remove Device Pop-up ON Button ");
+			
+		}	
+		
+		public void clickRemoveDevicePopupYesButton() {
+			clickbyXpath(removeDevicePopupYesButton, " Click The Remove Device Pop-up YES Button ");
+			
+		}	
+		
+		public void shellAllowpopup() {	
+			expWait(shellallow);
+			clickbyXpath(shellallow, " allow shell ");
+		}
+		public void shellDenypopup() {	
+			clickbyXpath(shelldeny, " deny shell ");
+		}
+		
+		
 }

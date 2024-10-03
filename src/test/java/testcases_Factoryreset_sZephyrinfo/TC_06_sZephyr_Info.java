@@ -1,4 +1,4 @@
-package testcase_Factoryreset_sZephyrinfo;
+package testcases_Factoryreset_sZephyrinfo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import pages.SignInPage;
 import pages.SignUpPage;
 import wrappers.MobileAppWrappers;
 
-public class TC_07_ESM_Withconnectivity extends MobileAppWrappers {
+public class TC_06_sZephyr_Info extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -36,7 +36,7 @@ public class TC_07_ESM_Withconnectivity extends MobileAppWrappers {
 
 @Test
 public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-//	login();
+	login();
 	for(int i=0;i<1;i++) {
 	pairBlewithoutRouter();}
 }
@@ -57,65 +57,55 @@ public void login() {
 	
 }
 
-//String modelname ="G20";
-//String capacity="2";
+String modelname ="G20";
+String capacity="2";
 public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
 	adddevicepage= new AddDevicePage(driver);
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
 	
-//	adddevicepage.clickAddDeviceButton();
-//	adddevicepage.checkBoxPairing();
-//	adddevicepage.nextButtonPairing();
-//	adddevicepage.startPairingButton();
-//	adddevicepage.locationPopUpPermission();
-//	adddevicepage.nearByPermission();
-//	
-//	//adddevicepage.ClickCancelButtonBle();
-//	//adddevicepage.enterWiFiPassword("12345678908");
-//	//adddevicepage.clickEnterButton();
-//	adddevicepage.cancelButton();
-//	Thread.sleep(1000);
-//	adddevicepage.clickNextButtonsZephyrInfo();
-//	adddevicepage.clickSubmitButtonDeviceSetting();
-//	Thread.sleep(1000);
-//	for(int i=0;i<2;i++) {
-//	homepage.clickONOFFButton();
-//	Thread.sleep(1000);
-//	}
-	     try {
-			adddevicepage.pair(4);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}                             //TC_01
+	adddevicepage.clickAddDeviceButton();
+	adddevicepage.checkBoxPairing();
+	adddevicepage.nextButtonPairing();
+	adddevicepage.startPairingButton();
+	adddevicepage.locationPopUpPermission();
+	adddevicepage.nearByPermission();
+	
+	//adddevicepage.ClickCancelButtonBle();
+	//adddevicepage.enterWiFiPassword("12345678908");
+	//adddevicepage.clickEnterButton();
+	adddevicepage.cancelButton();
+	Thread.sleep(1000);
+	//adddevicepage.ClickOkButtonBLEpopUP();
+	adddevicepage.ClickBrandName();
+	adddevicepage.ClickSelectName();
+	adddevicepage.enterAcModelName("G20");
+	adddevicepage.enterCapacity("2");
+	adddevicepage.ClickRoomSizeButton();
+	adddevicepage.SelectRoomSizeOption();
+	Thread.sleep(1000);
+	adddevicepage.clickNextButtonsZephyrInfo();
+	adddevicepage.clickSubmitButtonDeviceSetting();
+	Thread.sleep(1000);
+	for(int i=0;i<2;i++) {
+	homepage.clickONOFFButton();
+	Thread.sleep(1000);
+	}
+	
 	homepage.clickMenuBarButton();
-	devicemenupage.clickDeviceSettingsButton();
-	devicemenupage.CheckEsmButton();
+	devicemenupage.ClickSzephyrInfoButton();
 	Thread.sleep(1000);
-	devicemenupage.ClickToggledisable();
+	devicemenupage.CheckSzephyrInfPageBrandName();
+	devicemenupage.CheckSzephyrInfPageModelName();
+	devicemenupage.CheckSzephyrInfPageCapacity();
+	devicemenupage.CheckSzephyrInfPageRoomSize();
 	Thread.sleep(1000);
-	devicemenupage.ClickEsmOKButton();
-	Thread.sleep(1000);
-	devicemenupage.ClickBackButtonESM();
-	devicemenupage.CheckEsmButton();
-	Thread.sleep(2000);
-	    
-	                                   //TC_02
 	
-	devicemenupage.ClickBackButtonESM();
-	devicemenupage.CheckEsmButton();
-	Thread.sleep(1000);
-	devicemenupage.ClicktoggleButton();
-	devicemenupage.CheckModeratefeature();
-	//devicemenupage.cl
-	Thread.sleep(1000);
-	devicemenupage.checkSuccessfullyToast();
 	
-
-	
-
+	//devicemenupage.clickDeviceSettingsButton();
+	//devicemenupage.clickResetDeviceButton();
+	//devicemenupage.clickResetConfirmationYesButton();
 }
 
 }

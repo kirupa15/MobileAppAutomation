@@ -350,7 +350,6 @@ public class AddDevicePage extends GenericWrappers {
 		try {
 			Runtime.getRuntime().exec("adb shell svc bluetooth enable");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -361,7 +360,6 @@ public class AddDevicePage extends GenericWrappers {
 		try {
 			Runtime.getRuntime().exec("adb shell svc bluetooth disable");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -372,7 +370,6 @@ public class AddDevicePage extends GenericWrappers {
 		try {
 			Runtime.getRuntime().exec("adb shell svc wifi enable");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -383,7 +380,6 @@ public class AddDevicePage extends GenericWrappers {
 		try {
 			Runtime.getRuntime().exec("adb shell svc wifi disable");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -533,7 +529,7 @@ public void aCBrandNameClick ()
 			if (isElementDisplayed(blePermissionOkButton)) {
 				clickByXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			}
-			if (acturnoffdesc.isDisplayed()) {
+			if (isElementDisplayed(acturnoffdesc)) {
 				System.out.println("Device is already paired..");
 			}
 
