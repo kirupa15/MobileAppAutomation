@@ -1,8 +1,5 @@
 package testcases_pairing;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -14,7 +11,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-public class TC04_Pairing_SmartConfig extends MobileAppWrappers {
+public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -31,7 +28,7 @@ public class TC04_Pairing_SmartConfig extends MobileAppWrappers {
 
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+	public void removerepair() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
@@ -40,26 +37,8 @@ public class TC04_Pairing_SmartConfig extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 
-		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser1237@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();	
-
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.turnOffBluetooth();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickBlePermissionCancelbutton();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
-		adddevicepage.clickBlePermissionOkbutton();
+	 
+		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
@@ -71,5 +50,4 @@ public class TC04_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 	}
-
 }

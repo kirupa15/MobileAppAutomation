@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="schedular.TC02_Schedular">
+      <class name="testcases_Multidevice.TC_02_Report_Page">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
-          <include name="schedule"/>
+          <include name="removerepair"/>
           <include name="startTestCase"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- schedular.TC02_Schedular -->
+      </class> <!-- testcases_Multidevice.TC_02_Report_Page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

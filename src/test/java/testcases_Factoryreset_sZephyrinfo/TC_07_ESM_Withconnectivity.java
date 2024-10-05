@@ -1,8 +1,5 @@
 package testcases_Factoryreset_sZephyrinfo;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -35,61 +32,24 @@ public class TC_07_ESM_Withconnectivity extends MobileAppWrappers {
 
 
 @Test
-public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-//	login();
-	for(int i=0;i<1;i++) {
-	pairBlewithoutRouter();}
+public void removerepair() throws Exception {
+	pairBlewithoutRouter();
 }
 
-public void login() {
-	loginpage = new SignInPage(driver);
-	landingpage = new LandingPage(driver);
-	otppage = new OtpPage(driver);
-	
-	landingpage.clickSignInButton();
-	loginpage.enterUserName("Raj");
-	loginpage.clickSignInButton();
-	otppage.enterOTPField1("1");
-	otppage.enterOTPField2("2");
-	otppage.enterOTPField3("3");
-	otppage.enterOTPField4("4");
-	otppage.submitButton();
-	
-}
+
 
 //String modelname ="G20";
 //String capacity="2";
-public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+public void pairBlewithoutRouter() throws Exception {
 	adddevicepage= new AddDevicePage(driver);
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
 	
-//	adddevicepage.clickAddDeviceButton();
-//	adddevicepage.checkBoxPairing();
-//	adddevicepage.nextButtonPairing();
-//	adddevicepage.startPairingButton();
-//	adddevicepage.locationPopUpPermission();
-//	adddevicepage.nearByPermission();
-//	
-//	//adddevicepage.ClickCancelButtonBle();
-//	//adddevicepage.enterWiFiPassword("12345678908");
-//	//adddevicepage.clickEnterButton();
-//	adddevicepage.cancelButton();
-//	Thread.sleep(1000);
-//	adddevicepage.clickNextButtonsZephyrInfo();
-//	adddevicepage.clickSubmitButtonDeviceSetting();
-//	Thread.sleep(1000);
-//	for(int i=0;i<2;i++) {
-//	homepage.clickONOFFButton();
-//	Thread.sleep(1000);
-//	}
-	     try {
-			adddevicepage.pair(4);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}                             //TC_01
+	adddevicepage.pair(4);
+	adddevicepage.clickNextButtonsZephyrInfo();
+	adddevicepage.clickSubmitButtonDeviceSetting();
+	
 	homepage.clickMenuBarButton();
 	devicemenupage.clickDeviceSettingsButton();
 	devicemenupage.CheckEsmButton();

@@ -1,8 +1,9 @@
 package utils;
 import jssc.SerialPort;
 import jssc.SerialPortException;
+import wrappers.GenericWrappers;
 
-public class PassSTComment {
+public class PassSTComment extends GenericWrappers{
 
 	public static void stcomment(String comment) {
 		try {

@@ -11,7 +11,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import wrappers.MobileAppWrappers;
 
-public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
+public class TC05_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -19,13 +19,13 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-	
+
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairing BLE With Router";
+		testCaseName = "TC04 - Pairing in Smart Config Mode";
 		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
-	
+
 
 	@Test
 	public void removerepair() throws Exception {
@@ -36,18 +36,18 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		
-		adddevicepage.pair(1);
+
+	 
+		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
-		homepage.clickONOFFButton();
-		Thread.sleep(1000);
+			homepage.clickONOFFButton();
+			Thread.sleep(3000);
 		}
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 	}
-
 }

@@ -8,15 +8,18 @@ import java.util.Map;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
+import utils.PassSTComment;
 import wrappers.GenericWrappers;
 
 public class AddDevicePage extends GenericWrappers {
 
-	public static AndroidDriver<AndroidElement> driver;
+	public AndroidDriver<AndroidElement> driver;
 
 	// Locate all elements on the page
 
@@ -204,6 +207,12 @@ public class AddDevicePage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel\"]")
 	private WebElement wifiCancel;
+	
+	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/alertTitle\"]")
+	private WebElement alertTitle;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	private WebElement alertok;
 
 
 	// Constructor to initialize the driver and instantiate elements using
@@ -212,6 +221,8 @@ public class AddDevicePage extends GenericWrappers {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
+		this.wait=new WebDriverWait(driver, 30);
+
 	}
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -236,7 +247,7 @@ public class AddDevicePage extends GenericWrappers {
 		clickbyXpath(startPairingButton, " Start Pairing ");
 		}
 
-	public void locationPopUpPermission() {
+	public void locationPopUpPermission() throws InterruptedException {
 		if (isElementDisplayed(locationPopUp)) {
 			clickbyXpath(locationPopUp, "Location pop-up");
 		} else {
@@ -246,7 +257,7 @@ public class AddDevicePage extends GenericWrappers {
 		//		clickbyXpathwithoutReport(locationPopUp, " Location Permission pop up " );
 	}
 
-	public void nearByPermission() {
+	public void nearByPermission() throws InterruptedException {
 		if (isElementDisplayed(nearByPermisson)) {
 
 			clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  ");
@@ -486,15 +497,18 @@ public void aCBrandNameClick ()
 	SignInPage loginpage;
 	HomePage homepage;
 	OtpPage otppage;
-	//	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-
+	PassSTComment passcommand;
+	
 	public void pair(int mode) throws Exception {
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		homepage = new HomePage(driver);
-		//		adddevicepage = new AddDevicePage(driver);
 		otppage = new OtpPage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+		passcommand=new PassSTComment();
+		
+		
 		verifysigninpage();
 		initiatepairing(mode);
 	}
@@ -808,7 +822,21 @@ public void aCBrandNameClick ()
 
 
 		} else {
-			System.out.println("Device is already in paired state");
+			System.out.println("Device is already in paired state removing the device");
+			
+			PassSTComment.stcomment("factory_reset");
+			homepage.clickMenuBarButton();
+			devicemenupage.clickMenuBarRemoveDevice();
+			devicemenupage.clickRemoveDevicePopupYesButton();
+			Thread.sleep(5000);
+			if (isElementDisplayed(alertTitle)) {
+				String text = alertTitle.getText();
+				System.out.println(text+ "  Alert pop-up displayed");
+				clickByXpath(alertok, "Alert ok button");
+			}else {
+				
+				proceedToAddDevice(mode);
+			}
 		}
 	}
 

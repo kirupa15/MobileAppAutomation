@@ -1,8 +1,5 @@
 package testcases_Multidevice;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,7 +13,7 @@ import pages.SignInPage;
 import pages.SignUpPage;
 import wrappers.MobileAppWrappers;
 
-public class TC_08_Report_Page extends MobileAppWrappers {
+public class TC_02_Report_Page extends MobileAppWrappers {
 
 //	private static final String Reportpagexpath = null;
 	LandingPage landingpage;
@@ -36,50 +33,19 @@ public class TC_08_Report_Page extends MobileAppWrappers {
 	}
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for (int i = 0; i < 1; i++) {
+	public void removerepair() throws Exception {
+			initAndriodDriver();
 			pairBlewithoutRouter();
-		}
 	}
 
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		homepage = new HomePage(driver);
-		adddevicepage = new AddDevicePage(driver);
-		devicemenupage = new DeviceMenuPage(driver);
-		reportpage = new Reportpage(driver);
-		signuppage=new SignUpPage(driver);
 
-
-		landingpage.clickSignInButton();
-		signuppage.enterEmailId("Nee@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-
-	}
-
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage = new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage = new DeviceMenuPage(driver);
-
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-
-		//adddevicepage.ClickCancelButtonBle();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
+		reportpage= new Reportpage(driver);
+		
+		adddevicepage.pair(2);
 		//devicemenupage.ClickOkButtonBLEpopUP();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -90,7 +56,7 @@ public class TC_08_Report_Page extends MobileAppWrappers {
 		}
 
 		homepage.clickMenuBarButton();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		reportpage.ClickReportpage();
 		reportpage.Clickissuetype();
 		reportpage.ClickAppissue();

@@ -39,7 +39,8 @@ public class TC_07_Multidevice_Wifi_Without_Router extends MobileAppWrappers {
 
 		
 		adddevicepage.pair(5);
-		
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
@@ -70,7 +71,7 @@ public class TC_07_Multidevice_Wifi_Without_Router extends MobileAppWrappers {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 				}
-	devicemenupage.clickThirdDeviceButton();
+			devicemenupage.clickThirdDeviceButton();
 			
 			for(int i=0;i<2;i++) {
 				homepage.clickONOFFButton();

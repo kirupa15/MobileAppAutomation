@@ -35,7 +35,7 @@ public class GenericWrappers {
 
 
 	public static AndroidDriver<AndroidElement> driver;
-	public static WebDriverWait wait;
+	public WebDriverWait wait;
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
@@ -613,7 +613,7 @@ public class GenericWrappers {
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element) {
 		try {
-			Thread.sleep(3000);  // Introduce a small delay before checking visibility
+			Thread.sleep(5000);  // Introduce a small delay before checking visibility
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
 			return false;

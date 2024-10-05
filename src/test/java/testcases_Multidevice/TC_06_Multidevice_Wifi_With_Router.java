@@ -39,7 +39,8 @@ public class TC_06_Multidevice_Wifi_With_Router extends MobileAppWrappers {
 
 		
 		adddevicepage.pair(4);
-		
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(8000);

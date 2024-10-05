@@ -1,7 +1,4 @@
 package testcases_Multidevice;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,10 +30,8 @@ public class TC_03_MultiDevice_Ble_with_router extends MobileAppWrappers {
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
+	public void removerepair() throws Exception {
+		pairBlewithoutRouter();
 	}
 
 	public void login() {
@@ -57,22 +52,13 @@ public class TC_03_MultiDevice_Ble_with_router extends MobileAppWrappers {
 		
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		
-		//adddevicepage.ClickCancelButtonBle();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		

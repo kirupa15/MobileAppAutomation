@@ -14,7 +14,7 @@ public class Reportpage extends MobileAppWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text='']")
 	private WebElement deviceSettingsButton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\", Report\"]")
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/menu_icon_Report\"]")
 	private WebElement ClickReportpage;
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\", Select issue type\"]")
