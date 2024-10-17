@@ -1,13 +1,8 @@
 package testcases_connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.MobileBy;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
@@ -40,72 +35,27 @@ public class  WifiWithRouter extends MobileAppWrappers {
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-//		login();
-//		for(int i=0;i<1;i++) {
-//		pairBlewithoutRouter();
-//		}
+	public void removerepair() throws Exception {
+
 		
-		adddevicepage= new AddDevicePage(driver);
-		homepage = new HomePage(driver);
-		devicemenupage= new DeviceMenuPage(driver);
-		szephyrinfoPage= new Szephyr_info_Page(driver);
-		landingpage=new LandingPage(driver);
-		loginpage=new SignInPage(driver);
-		signpupage=new SignUpPage(driver);
-		
-		try {
-			adddevicepage.pair(4);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
-
-	public void login() {
-		
-		
-		landingpage.clickSignInButton();
-		signpupage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
-	}
-		
 	
 	
-	@SuppressWarnings("deprecation")
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
-		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		
-		homepage.disableBLE();
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		//driver.navigate().back();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
-		//adddevicepage.clickOkButtonBLEpopUP();
+	
+		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		
-		/*for(int i=0;i<2;i++) {
-			Thread.sleep(1000);
-			}*/
 		
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.clickONOFFButton();

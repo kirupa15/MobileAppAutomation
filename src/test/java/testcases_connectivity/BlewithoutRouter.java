@@ -1,9 +1,6 @@
 
 package testcases_connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -38,45 +35,20 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
-	}
-
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
-		signuppage= new SignUpPage(driver);
-		
-		
-		landingpage.clickSignInButton();
-		signuppage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
+	public void removerepair() throws Exception {
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+	
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
@@ -97,13 +69,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		
 //		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
         
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
@@ -121,13 +87,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		
 //		///CONNECTIVITY_MOD_1_TC_03--5 times App ON/OFF////////////////////////////////////////////////////////////////
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		

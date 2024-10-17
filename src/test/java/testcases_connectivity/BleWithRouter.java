@@ -1,7 +1,6 @@
 
 package testcases_connectivity;
 
-import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -37,28 +36,11 @@ public class  BleWithRouter extends MobileAppWrappers {
 
 	@Test
 	public void removerepair() throws Exception {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
-		signUppage= new SignUpPage(driver);
-		
-		landingpage.clickSignInButton();
-		signUppage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
-	}
+
 	
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
@@ -66,14 +48,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
@@ -95,13 +70,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		
 		///CONNECTIVITY_MOD_2_TC_2--Kill and Open///
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {
@@ -128,13 +97,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		
 		///CONNECTIVITY_MOD_2_TC_4--   Check BLE Connectivity//
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		for(int i=0;i<2;i++) {

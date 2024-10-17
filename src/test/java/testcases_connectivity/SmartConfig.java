@@ -37,29 +37,10 @@ public class  SmartConfig extends MobileAppWrappers {
 
 	@Test
 	public void removerepair() throws Exception {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
-		signinpage= new SignUpPage(driver);
-		
-		landingpage.clickSignInButton();
-		signinpage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
-	}
-	
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
@@ -67,19 +48,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		
-		homepage.disableBLE();
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.ClickCancelButtonBle();
-		Thread.sleep(3000);
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
-		adddevicepage.ClickOkButtonBLEpopUP();
+		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		Thread.sleep(5000);
