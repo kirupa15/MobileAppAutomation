@@ -1,8 +1,5 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -37,45 +34,18 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<5;i++) {
-			pairBlewithoutRouter();}
+	public void removerepair() throws Exception {
+			pairBlewithoutRouter();
 	}
 
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
 
-		landingpage.clickSignInButton();
-		loginpage.enterUserName("mums");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-
-	}
-
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		accountinfopage= new AccountsInfoPage(driver);
 		devicesettingpage= new DeviceMenuPage(driver);
 
-
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		//		adddevicepage.nearByPermission();
-
-		//adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickWifiCancelButton();
-		//adddevicepage.clickEnterButton();
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 

@@ -35,7 +35,7 @@ public class GenericWrappers {
 
 
 	public static AndroidDriver<AndroidElement> driver;
-	public static WebDriverWait wait;
+	public WebDriverWait wait;
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
@@ -88,7 +88,7 @@ public class GenericWrappers {
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
 				driver.installApp(
-						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12888_stg.apk");
+						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12965_stg.apk");
 				driver.activateApp(appPackage); // Launch the app after installation
 			}
 
@@ -613,7 +613,7 @@ public class GenericWrappers {
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element) {
 		try {
-			Thread.sleep(3000);  // Introduce a small delay before checking visibility
+			Thread.sleep(5000);  // Introduce a small delay before checking visibility
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
 			return false;
