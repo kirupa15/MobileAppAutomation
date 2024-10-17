@@ -59,12 +59,12 @@ public class MobileAppWrappers extends GenericWrappers {
 			String pass = "nw9f2hgo@123";
 
 			// Local log files
-			String appLogPath = "C://Users//Invcuser_45//Desktop//React-Log-20240930_180049.txt";
-			String deviceLogPath = "C://Users//Invcuser_45//Desktop//LiveLog//OLD//teraterm.log";
+			String appLogPath = "./serial_log.txt";
+			String deviceLogPath = "./serial_log.txt";
 
 			// FTP paths
-			String existingDirectory = "/users/Ashif/";
-			String newSubDir = "Applogs_" + randomnumbers(4); // Subdirectory name
+			String existingDirectory = "//Internal_Project//FULL_VALIDATION_PACKAGES_LOGS//LOGS//2024//Automation_Logs//";
+			String newSubDir = "Applogs_" + randomnumbers(6); // Subdirectory name
 
 			// Initialize FTP connection
 			FTPUploader(server, port, user, pass);
@@ -74,7 +74,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// Upload files to the new subdirectory
 			uploadFile(appLogPath, "React-Log-20240924_182921.txt");
-			uploadFile(deviceLogPath, "teraterm.log");
+			uploadFile(deviceLogPath, "Devicelog.txt");
 
 			// Disconnect from FTP server
 			disconnect();

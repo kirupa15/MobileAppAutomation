@@ -5,7 +5,7 @@ import wrappers.GenericWrappers;
 
 public class PassSTComment extends GenericWrappers{
 
-	public static void stcomment(String comment) {
+	public void stcomment(String comment) {
 		try {
 
 		// Open the serial port

@@ -1,0 +1,671 @@
+W (14:40:17.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 0 vl_or 0 vs 25
+W (14:40:18.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+I (14:40:18.271) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (14:40:18.271) SKT: Pwr Off State_event rcvd event=30
+W (14:40:18.272) BLE: curr user count 1 index 0
+W (14:40:18.276) BLE: ble curr user count 1 
+W (14:40:18.280) LOCAL_SSL: curr user count 0 index 0
+W (14:40:18.280) TAG_INTF_MTRX: HP_FR 85476 HP_L_FR 32768 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (14:40:18.295) RLY:  temp rly ret var 0:0
+W (14:40:18.299) EX: TF: 0 TZ: 19800 Sys_tm:1728484818
+I (14:40:1
+8.303) EX: get time GMT= 1728465018
+E (14:40:18.308) rmt: rmt_driver_install(1028): RMT driver already installed for channel
+E (14:40:18.315) owb_rmt: failed to install tx driver
+E (14:40:18.320) owb_rmt: _init() failed with status 6
+I (14:40:18.325) TDRV: Find devices:
+W (14:40:18.329) TDRV: ret===1
+E (14:40:18.331) SAC: temp read failed 1
+I (14:40:18.335) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (14:40:18.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+W (14:40:19.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (14:40:19.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+W (14:40:20.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (14:40:20.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+W (14:40:21.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (14:40:21.475) NVM: part erase scs
+W (14:40:21.475) NVM: part erase restart
+W (14:40:21.488) NVM: esp_part_write scs
+W (14:40:21.562) NVM: part erase scs
+W (14:40:21.562) NVM: part erase restart
+W (14:40:21.574) NVM: esp_part_write scs
+W (14:40:21.642) EDRV: hvc 1 nvc 0 lvc 0 V 647914 C 0 P 0 pc 0 vl_or 0 vs 25
+W (14:40:22.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+W (14:40:22.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+W (14:40:23.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (14:40:23.271) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (14:40:23.271) SKT: Pwr Off State_event rcvd event=30
+W (14:40:23.272) BLE: curr user count 1 index 0
+W (14:40:23.276) BLE: ble curr user count 1 
+W (14:40:23.280) LOCAL_SSL: curr user count 0 index 0
+W (14:40:23.280) TAG_INTF_MTRX: HP_FR 85476 HP_L_FR 32768 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (14:40:23.295) RLY:  temp rly ret var 0:0
+W (14:40:23.299) EX: TF: 0 TZ: 19800 Sys_tm:1728484823
+I (14:40:2
+3.303) EX: get time GMT= 1728465023
+E (14:40:23.308) rmt: rmt_driver_install(1028): RMT driver already installed for channel
+E (14:40:23.315) owb_rmt: failed to install tx driver
+E (14:40:23.320) owb_rmt: _init() failed with status 6
+I (14:40:23.325) TDRV: Find devices:
+W (14:40:23.329) TDRV: ret===1
+E (14:40:23.331) SAC: temp read failed 1
+I (14:40:23.335) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (14:40:23.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+W (14:40:24.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (14:40:24.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (14:40:25.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (14:40:25.277) RLY:  temp rly ret var 0:0
+W (14:40:25.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (14:40:26.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 9 vl_or 0 vs 25
+W (14:40:26.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (14:41:01.749) NVM: part erase scs
+W (14:41:01.749) NVM: part erase restart
+W (14:41:01.762) NVM: esp_part_write scs
+W (14:41:01.821) NVM: part erase scs
+W (14:41:01.821) NVM: part erase restart
+W (14:41:01.832) NVM: esp_part_write scs
+W (14:41:02.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (14:41:02.510) RLY:  temp rly ret var 0:0
+W (14:41:02.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (14:41:03.021) BLE: data rcvd short write
+I (14:41:03.021) BLE: ping_tmr_strtd
+I (14:41:03.021) MDEC: rx_len 24
+I (14:41:03.021) IERR: sync byte matched 0x3ffec82e
+W (14:41:03.024) MDEC: frame_len=24
+W (14:41:03.028) IINFO: total len 24 proc len 24
+W (14:41:03.032) MDEC: full frame rcvd
+W (14:41:03.032) IINFO: rcvd_frm 11 num_msg 1 trn_id 20 ack_req 0 frm_len 24 sec_mod 1
+W (14:41:03.043) IMSG: rcvd_msg intf 11 msg_id 18 msg_len 4 msg_type 1
+W (14:41:03.049) IMSG: Sionofd :32768 apid :1 intf 11
+I (14:41:03.054) QSND: INTF_MSG to 7 evnt 27 pld 0x3ffeb4a4 len(w) 8 ctx 0 fre_req 1
+I (14:41:03.062) MDEC: no flow control
+W (14:41:03.065) SKT: Pwr Off State_event rcvd event=27
+W (14:41:03.070) SKT: Inst ON From Pwr Off State_event =27, Rly id=0,Tmr_sts = 0 hv_lv_ov 0 v 223418
+E (14:41:03.079) SKT: Power ON app id:1 32768 0
+I (14:41:03.083) RLY:  temp rly ret var 0:0
+I (14:41:03.087) EDRV: Enrg drv is stpd
+W (14:41:03.091) OST: enrg_con_prdic_tmr,Tmr is not active,Failed Stop
+I (14:41:03.097) SKT: energy driver energy consumption periodic timer  is stoped
+W (14:41:03.104) OST: power_meter_timer,Tmr is not active,Failed Stop
+I (14:41:03.110) QSND: INTF_MSG to 3 evnt 14 pld 0x3ffcd47c len(w) 12 ctx 0 fre_req 0
+W (14:41:03.118) RLY: Rly Ste =0 ON OFF Cmd =1
+I (14:41:03.122) RLY: Rcvd rly on req
+I (14:41:03.125) RLY: Is ON
+I (14:41:03.128) QMEM: mem clr = 27
+I (14:41:03.131) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 27 from intf 199
+W (14:41:03.139) SKT: pwr_on_state_event rcvd event=14
+W (14:41:03.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (14:41:03.150) SKT: In No power state per session data is =0
+I (14:41:03.156) SKT: In No power state per session data is =4
+I (14:41:03.161) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 14 from intf 67
+I (14:41:03.271) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (14:41:03.271) SKT: pwr_on_state_event rcvd event=30
+W (14:41:03.272) PCNT: GPt 201836 Gsp 150377 SPt 155418 SnPt 0  Qdp 0 ocnt 2477 pos 151458 nc 77 ws 0 ltc 822 wtc 0 mlocFl 0 hpFl 0 rhp 85476 bleC 0 mlscnt 0 Rev_ 12877
+W (14:41:03.287) BLE: curr user count 1 index 0
+W (14:41:03.291) BLE: ble curr user count 1 
+W (14:41:03.295) LOCAL_SSL: curr user count 0 index 0
+W (14:41:03.295) TAG_INTF_MTRX: HP_FR 85476 HP_L_FR 32768 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (14:41:03.309) RLY:  temp rly ret var 1:2
+I (14:41:03.313) EDRV: gl:ZERO PWR=0
+W (14:41:03.317) EX: TF: 0 TZ: 19800 Sys_tm:1728484863
+I (14:41:03.321) EX: get time GMT= 1728465063
+E (14:41:03.326) rmt: rmt_driver_install(1028): RMT driver already installed for channel
+E (14:41:03.333) owb_rmt: failed to install tx driver
+E (14:41:03.338) owb_rmt: _init() failed with status 6
+I (14:41:03.343) TDRV: Find devices:
+W (14:41:03.347) TDRV: ret===1
+E (14:41:03.349) SAC: temp read failed 1
+I (14:41:03.353) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 30 from intf 7
+W (14:41:03.642) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0 pc 3 vl_or 0 vs 25
+I (14:41:03.727) RLY: get_id 0
+I (14:41:03.727) RLY: Rly on ste tmr is exp
+I (14:41:03.727) QSND: INTF_MSG to 1 evnt 31 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:03.729) SKT: Rly DRV Event rcvd
+W (14:41:03.733) SKT: pwr_on_state_event rcvd event=31
+W (14:41:03.738) ALARM: 0
+W (14:41:03.740) EX: TF: 0 TZ: 19800 Sys_tm:1728484863
+I (14:41:03.745) EX: get time GMT= 1728465063
+I (14:41:03.749) SKT: gysr_str_tck_cnt 424532
+W (14:41:03.753) SKT: ON time=1728465063
+I (14:41:03.757) SKT: Socket ON Action Factory Details HDWRE Type= 6
+W (14:41:03.763) SKT: rly ste change 1
+I (14:41:03.766) RLY:  temp rly ret var 1:3
+W (14:41:03.770) SKT: dur=0 min
+I (14:41:03.773) SKT: heating duration 0
+W (14:41:03.777) EX: TF: 0 TZ: 19800 Sys_tm:1728484863
+I (14:41:03.782) EX: get time GMT= 1728465063
+W (14:41:03.786) OST: enrg_sv_pattrn_tmr,Tmr is not active,Failed Stop
+I (14:41:03.792) RLY:  temp rly ret var 1:3
+W (14:41:03.796) EX: TF: 0 TZ: 19800 Sys_tm:1728484863
+I (14:41:03.801) EX: get time GMT= 1728465063
+W (14:41:03.805) IMSG: ID 1 RV 1 RSC 1 APPID 1 RSCT 1728465063
+I (14:41:03.810) TXTH: trans_id 0 pld_len 12 intf 19 msg_type 1
+W (14:41:03.816) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (14:41:03.821) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (14:41:03.826) IMSG: send_msg intf 11 msg_id 46 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1
+E (14:41:03.835) IERR: WSS_NCNT
+W (14:41:03.837) BLE: mtu 253
+I (14:41:03.840) BLE: payld_len 24
+I (14:41:03.843) BLE: iteration 1
+I (14:41:03.846) BLE: config tmr uptd strt
+I (14:41:03.851) APP_ID: latest app id write = 1
+W (14:41:03.852) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:03.855) SKT: Rly DRV event is Exe
+W (14:41:03.859) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (14:41:03.863) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 31 from intf 65
+I (14:41:03.868) BLE: gatts config tmr stpd
+W (14:41:04.142) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0 pc 4 vl_or 0 vs 25
+W (14:41:04.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+I (14:41:04.729) RLY: get_id 0
+W (14:41:04.729) RLY: Rly is trnd on
+I (14:41:04.729) QSND: INTF_MSG to 1 evnt 32 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:04.731) SKT: Rly DRV Event rcvd
+W (14:41:04.734) SKT: pwr_on_state_event rcvd event=32
+I (14:41:04.739) RLY:  temp rly ret var 1:1
+I (14:41:04.743) RLY:  temp rly ret var 1:1
+I (14:41:04.743) SKT: Rly Status = 1 0
+I (14:41:04.750) EDRV: Enrg drv strtd
+I (14:41:04.754) SKT: energy driver energy consumption periodic timer  is started
+I (14:41:04.761) RLY:  temp rly ret var 1:1
+W (14:41:04.765) IMSG: R sync_resp 3 resp 1 1 trans_id 20 intf 11
+I (14:41:04.771) TXTH: trans_id 20 pld_len 8 intf 11 msg_type 1
+W (14:41:04.777) IMSG: send_msg intf 11 msg_id 18 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1
+E (14:41:04.785) IERR: WSS_NCNT
+W (14:41:04.788) BLE: mtu 253
+I (14:41:04.790) BLE: payld_len 24
+I (14:41:04.793) BLE: iteration 1
+I (14:41:04.796) BLE: config tmr uptd strt
+I (14:41:04.801) QSND: INTF_MSG to 7 evnt 18 pld 0x1 len(w) 0 ctx 0 fre_re
+q 0
+W (14:41:04.802) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:04.807) SKT: Rly DRV event is Exe
+W (14:41:04.812) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (14:41:04.816) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 32 from intf 65
+I (14:41:04.820) BLE: gatts config tmr stpd
+W (14:41:04.828) SAC: SAC rcvd event=18
+W (14:41:04.836) SKT: gysr_stop_time 1728465054
+W (14:41:04.840) EX: TF: 0 TZ: 19800 Sys_tm:1728484864
+I (14:41:04.845) EX: get time GMT= 1728465064
+W (14:41:04.849) SKT: gysr_stop_time 1728465054
+W (14:41:04.853) EX: TF: 0 TZ: 19800 Sys_tm:1728484864
+I (14:41:04.858) EX: get time GMT= 1728465064
+W (14:41:04.862) SKT: gysr_stop_time 1728465054
+E (14:41:04.862) SAC: skt on action get_time = 1728465064 Gysr stop time = 1728465054
+E (14:41:04.874) SAC: skt on action Read Current = 0 Time = 10
+W (14:41:04.879) SKT: pwr_on_state_event rcvd event=18
+I (14:41:04.884) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 18 from intf 7
+W (14:41:05.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (14:41:05.253) EDRV: gl:ZERO PWR=0
+I (14:41:05.253) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 1 pwr 1000000000
+W (14:41:05.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (14:41:05.753) EDRV: gl:ZERO PWR=0
+I (14:41:05.753) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 2 pwr 1000000000
+W (14:41:06.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (14:41:06.170) BLE: data rcvd short write
+I (14:41:06.171) BLE: ping_tmr_strtd
+I (14:41:06.171) MDEC: rx_len 24
+I (14:41:06.171) IERR: sync byte matched 0x3ffec82e
+W (14:41:06.174) MDEC: frame_len=24
+W (14:41:06.178) IINFO: total len 24 proc len 24
+W (14:41:06.182) MDEC: full frame rcvd
+W (14:41:06.182) IINFO: rcvd_frm 11 num_msg 1 trn_id 21 ack_req 0 frm_len 24 sec_mod 1
+W (14:41:06.193) IMSG: rcvd_msg intf 11 msg_id 18 msg_len 4 msg_type 1
+W (14:41:06.199) IMSG: Sionofd :0 apid :1 intf 11
+I (1
+4:41:06.204) QSND: INTF_MSG to 7 evnt 28 pld 0x3ffeb4a4 len(w) 8 ctx 0 fre_req 1
+I (14:41:06.211) MDEC: no flow control
+W (14:41:06.215) SKT: pwr_on_state_event rcvd event=28
+W (14:41:06.219) SKT: Power OFF app id:1 0
+I (14:41:06.223) RLY:  temp rly ret var 1:1
+I (14:41:06.227) RLY: Rly Ste =1 ON OFF Cmd =0
+W (14:41:06.231) RLY: Rcvd rly off req
+I (14:41:06.235) RLY: Is OFF
+I (14:41:06.237) RLY: get_idf:0
+I (14:41:06.240) QMEM: mem clr = 28
+I (14:41:06.243) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 28 from intf 199
+I (14:41:06.253) EDRV: gl:INV PWR=0
+I (14:41:06.254) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 3 pwr 1000000000
+W (14:41:06.410) NVM: part erase scs
+W (14:41:06.411) NVM: part erase restart
+W (14:41:06.423) NVM: esp_part_write scs
+W (14:41:06.499) NVM: part erase scs
+W (14:41:06.500) NVM: part erase restart
+W (14:41:06.511) NVM: esp_part_write scs
+I (14:41:06.540) RLY: get_id 0
+I (14:41:06.540) RLY: Rly off ste tmr is exp
+I (14:41:06.540) QSND: INTF_MSG to 1 evnt 33 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:06.542) SKT: Rly DRV Event rcvd
+I (14:41:06.546) SKT: relay_off event is rcvd
+W (14:41:06.550) SKT: Pwr Off State_event rcvd event=33
+I (14:41:06.555) EDRV: Enrg drv is stpd
+W (14:41:06.558) OST: enrg_con_prdic_tmr,Tmr Stpd Scsfly
+I (14:41:06.563) SKT: energy driver energy consumption periodic timer  is stoped
+W (14:41:06.571) OST: power_meter_timer,Tmr Stpd Scsfly
+I (14:41:06.576) QSND: INTF_MSG to 3 evnt 14 pld 0x3ffcd47c len(w) 12 ctx 0 fre_req 0
+I (14:41:06.583) SKT: GEYSER CHANGE: 1:
+W (14:41:06.587) SKT: Rly ste change: 1 0:
+I (14:41:06.591) SKT: gyser turned off
+W (14:41:06.594) EX: TF: 0 TZ: 19800 Sys_tm:1728484866
+I (14:41:06.599) EX: get time GMT= 1728465066
+I (14:41:06.603) SKT: gysr_stp_tck_cnt 427386 0
+I (14:41:06.607) SKT: skt_off_heatng_dur 0
+W (14:41:06.611) EX: TF: 0 TZ: 19800 Sys_tm:1728484866
+I (14:41:06.616) EX: get time GMT= 1728465066
+W (14:41:06.620) OST: enrg_sv_pattrn_tmr,Tmr is not active,Failed Stop
+I (14:41:06.626) RLY:  temp rly ret var 0:5
+I (14:41:06.630) RLY:  temp rly ret var 0:5
+I (14:41:06.634) RLY:  temp rly ret var 0:5
+W (14:41:06.638) EX: TF: 0 TZ: 19800 Sys_tm:1728484866
+W (14:41:06.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+I (14:41:06.650) EX: get time GMT= 1728465066
+W (14:41:06.654) IMSG: ID 1 RV 0 RSC 1 APPID 1 RSCT 1728465066
+I (14:41:06.659) TXTH: trans_id 0
+pld_len 12 intf 19 msg_type 1
+W (14:41:06.665) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (14:41:06.670) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (14:41:06.675) IMSG: send_msg intf 11 msg_id 46 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1
+E (14:41:06.684) IERR: WSS_NCNT
+W (14:41:06.686) BLE: mtu 253
+I (14:41:06.689) BLE: payld_len 24
+I (14:41:06.692) BLE: iteration 1
+I (14:41:06.695) BLE: config tmr uptd strt
+W (14:41:06.698) IMSG: R sync_resp 1 resp 1 0 trans_id 21 intf 11
+W (14:41:06.701) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:06.705) TXTH: trans_id 21 pld_len 8 intf 11 msg_type 1
+W (14:41:06.710) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (14:41:06.715) IMSG: send_msg intf 11 msg_id 18 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1
+I (14:41:06.720) BLE: gatts config tmr stpd
+E (14:41:06.728) IERR: WSS_NCNT
+W (14:41:06.735) BLE: mtu 253
+I (14:41:06.738) BLE: payld_len 24
+I (14:41:06.741) BLE: iteration 1
+I (14:41:06.744) BLE: config tmr uptd strt
+I (14:41:06.744) SKT: Skt on action
+sent
+W (14:41:06.750) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:06.752) SKT: App Id in Gyser skt off = 1
+W (14:41:06.756) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (14:41:06.761) EX: TF: 0 TZ: 19800 Sys_tm:1728484866
+I (14:41:06.765) BLE: gatts config tmr stpd
+I (14:41:06.770) EX: get time GMT= 1728465066
+W (14:41:06.778) SKT: gysr_stp_tme_upd 427386 gysr_str_tme_upd 424532
+W (14:41:06.785) SKT: not a valid session dur
+I (14:41:06.789) SKT: gysr_stop_time 1728465066 gysr_strt_time 1728465063
+I (14:41:06.795) QSND: INTF_MSG to 7 evnt 18 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:06.802) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 33 from intf 65
+W (14:41:06.809) SKT: Pwr Off State_event rcvd event=14
+I (14:41:06.814) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 14 from intf 67
+W (14:41:06.822) SAC: SAC rcvd event=18
+W (14:41:06.826) SKT: Pwr Off State_event rcvd event=18
+I (14:41:06.831) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 18 from intf 7
+W (14:41:07.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 10 vl_or 0 vs 25
+I (14:41:07.542) RLY: get_id 0
+W (14:41:07.542) RLY: Rly is trnd off
+W (14:41:07.642) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (14:41:08.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+I (14:41:08.240) BLE: data rcvd short write
+I (14:41:08.241) BLE: ping_tmr_strtd
+I (14:41:08.241) MDEC: rx_len 24
+I (14:41:08.241) IERR: sync byte matched 0x3ffec82e
+W (14:41:08.244) MDEC: frame_len=24
+W (14:41:08.248) IINFO: total len 24 proc len 24
+W (14:41:08.252) MDEC: full frame rcvd
+W (14:41:08.252) IINFO: rcvd_frm 11 num_msg 1 trn_id 22 ack_req 0 frm_len 24 sec_mod 1
+W (14:41:08.263) IMSG: rcvd_msg intf 11 msg_id 18 msg_len 4 msg_type 1
+W (14:41:08.269) IMSG: Sionofd :32768 apid :1 intf 11
+I (14:41:08.271) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+I (14:41:08.281) QSND: INTF_MSG to 7 evnt 27 pld 0x3ffeb4a4 len(w) 8 ctx 0 fre_req 1
+I (14:41:08.288) MDEC: no flow control
+W (14:41:08.292) SKT: Pwr Off State_event rcvd event=30
+W (14:41:08.297) BLE: curr user count 1 index 0
+W (14:41:08.301) BLE: ble curr user count 1 
+W (14:41:08.305) LOCAL_SSL: curr user count 0 index 0
+W (14:41:08.305) TAG_INTF_MTRX: HP_FR 85464 HP_L_FR 32768 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (14:41:08.320) RLY:  temp rly ret var 0:0
+W (14:41:08.324) EX: TF: 0 TZ: 19800 Sys_tm:1728484868
+I (14:41:08.328) EX: get time GMT= 1728465068
+E (14:41:08.333) rmt: rmt_driver_install(1028): RMT driver already installed for channel
+E (14:41:08.340) owb_rmt: failed to install tx driver
+E (14:41:08.345) owb_rmt: _init() failed with status 6
+I (14:41:08.350) TDRV: Find devices:
+W (14:41:08.355) TDRV: ret===1
+E (14:41:08.356) SAC: temp read failed 1
+I (14:41:08.360) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (14:41:08.367) SKT: Pwr Off State_event rcvd event=27
+W (14:41:08.372) SKT: Inst ON From Pwr Off State_event =27, Rly id=0,Tmr_sts = 0 hv_lv_ov 0 v 223418
+E (14:41:08.381) SKT: Power ON app id:1 32768 0
+I (14:41:08.385) RLY:  temp rly ret var 0:0
+I (14:41:08.389) EDRV: Enrg drv is stpd
+W (14:41:08.393) OST: enrg_con_prdic_tmr,Tmr is not active,Failed Stop
+I (14:41:08.399) SKT: energy driver energy consumption periodic timer  is stoped
+W (14:41:08.4
+06) OST: power_meter_timer,Tmr is not active,Failed Stop
+I (14:41:08.412) QSND: INTF_MSG to 3 evnt 14 pld 0x3ffcd47c len(w) 12 ctx 0 fre_req 0
+W (14:41:08.420) RLY: Rly Ste =0 ON OFF Cmd =1
+I (14:41:08.424) RLY: Rcvd rly on req
+I (14:41:08.427) RLY: Is ON
+I (14:41:08.430) QMEM: mem clr = 27
+I (14:41:08.433) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 27 from intf 199
+W (14:41:08.441) SKT: pwr_on_state_event rcvd event=14
+I (14:41:08.446) SKT: In No power state per session data is =0
+I (14:41:08.451) SKT: In No power state per session data is =4
+I (14:41:08.457) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 14 from intf 67
+W (14:41:08.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+I (14:41:09.030) RLY: get_id 0
+I (14:41:09.030) RLY: Rly on ste tmr is exp
+I (14:41:09.030) QSND: INTF_MSG to 1 evnt 31 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:09.032) SKT: Rly DRV Event rcvd
+W (14:41:09.036) SKT: pwr_on_state_event rcvd event=31
+W (14:41:09.041) ALARM: 0
+W (14:41:09.043) EX: TF: 0 TZ: 19800 Sys_tm:1728484869
+I (14:41:09.048) EX: get time GMT= 1728465069
+I (14:41:09.052) SKT: gysr_str_tck_cnt 429835
+W (14:41:09.056) SKT: ON time=1728465069
+I (14:41:09.060) SKT: Socket ON Action Fa
+ctory Details HDWRE Type= 6
+W (14:41:09.066) SKT: rly ste change 1
+I (14:41:09.069) RLY:  temp rly ret var 1:3
+W (14:41:09.073) SKT: dur=0 min
+I (14:41:09.076) SKT: heating duration 0
+W (14:41:09.080) EX: TF: 0 TZ: 19800 Sys_tm:1728484869
+I (14:41:09.085) EX: get time GMT= 1728465069
+W (14:41:09.089) OST: enrg_sv_pattrn_tmr,Tmr is not active,Failed Stop
+I (14:41:09.095) RLY:  temp rly ret var 1:3
+W (14:41:09.099) EX: TF: 0 TZ: 19800 Sys_tm:1728484869
+I (14:41:09.104) EX: get time GMT= 1728465069
+W (14:41:09.108) IMSG: ID 1 RV 1 RSC 1 APPID 1 RSCT 1728465069
+I (14:41:09.113) TXTH: trans_id 0 pld_len 12 intf 19 msg_type 1
+W (14:41:09.119) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (14:41:09.124) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (14:41:09.129) IMSG: send_msg intf 11 msg_id 46 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1
+E (14:41:09.138) IERR: WSS_NCNT
+W (14:41:09.140) BLE: mtu 253
+W (14:41:09.142) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (14:41:09.143) BLE: payld_len 24
+I (14:41:09.143) APP_ID: latest app id write = 1
+I (14:41:09.153) BLE: iteration 1
+I (14:41:09.160) BLE: config tmr uptd strt
+I (14:41:09.165) SKT: Rly DRV event is Exe
+W (14:41:09.166) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:09.168) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 31 from intf 65
+W (14:41:09.173) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (14:41:09.185) BLE: gatts config tmr stpd
+W (14:41:09.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+I (14:41:10.032) RLY: get_id 0
+W (14:41:10.032) RLY: Rly is trnd on
+I (14:41:10.032) QSND: INTF_MSG to 1 evnt 32 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:41:10.034) SKT: Rly DRV Event rcvd
+W (14:41:10.037) SKT: pwr_on_state_event rcvd event=32
+I (14:41:10.042) RLY:  temp rly ret var 1:1
+I (14:41:10.046) RLY:  temp rly ret var 1:1
+I (14:41:10.046) SKT: Rly Status = 1 0
+I (14:41:10.053) EDRV: Enrg drv strtd
+I (14:41:10.057) SKT: energy driver energy consumption periodic timer  is started
+I (14:41:10.064
+) RLY:  temp rly ret var 1:1
+W (14:41:10.068) IMSG: R sync_resp 3 resp 1 1 trans_id 22 intf 11
+I (14:41:10.074) TXTH: trans_id 22 pld_len 8 intf 11 msg_type 1
+W (14:41:10.080) IMSG: send_msg intf 11 msg_id 18 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1
+E (14:41:10.088) IERR: WSS_NCNT
+W (14:41:10.091) BLE: mtu 253
+I (14:41:10.093) BLE: payld_len 24
+I (14:41:10.096) BLE: iteration 1
+I (14:41:10.099) BLE: config tmr uptd strt
+I (14:41:10.104) QSND: INTF_MSG to 7 evnt 18 pld 0x1 len(w) 0 ctx 0 fre_req 0
+W (14:41:10.105) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (14:41:10.110) SKT: Rly DRV event is Exe
+W (14:41:10.115) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (14:41:10.119) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 32 from intf 65
+I (14:41:10.123) BLE: gatts config tmr stpd
+W (14:41:10.131) SAC: SAC rcvd event=18
+W (14:41:10.139) SKT: gysr_stop_time 1728465066
+W (14:41:10.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (14:41:10.150) EX: TF: 0 TZ: 19800 Sys_tm:17284848
+70
+I (14:41:10.154) EX: get time GMT= 1728465070
+W (14:41:10.159) SKT: gysr_stop_time 1728465066
+W (14:41:10.163) EX: TF: 0 TZ: 19800 Sys_tm:1728484870
+I (14:41:10.168) EX: get time GMT= 1728465070
+W (14:41:10.172) SKT: gysr_stop_time 1728465066
+E (14:41:10.172) SAC: skt on action get_time = 1728465070 Gysr stop time = 1728465066
+E (14:41:10.184) SAC: skt on action Read Current = 0 Time = 4
+W (14:41:10.189) SKT: pwr_on_state_event rcvd event=18
+I (14:41:10.194) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 18 from intf 7
+I (14:41:10.556) EDRV: gl:ZERO PWR=0
+I (14:41:10.556) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 1 pwr 1000000000
+W (14:41:10.642) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+W (14:41:10.743) NVM: part erase scs
+W (14:41:10.743) NVM: part erase restart
+W (14:41:10.756) NVM: esp_part_write scs
+W (14:41:10.830) NVM: part erase scs
+W (14:41:10.830) NVM: part erase restart
+W (14:41:10.842) NVM: esp_part_write scs
+I (14:41:11.056) EDRV: gl:ZERO PWR=0
+I (14:41:11.056) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 2 pwr 1000000000
+W (14:41:11.142) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 25
+W (15:39:08.642) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 0 vl_or 0 vs 25
+W (15:39:09.142) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 1 vl_or 0 vs 25
+W (15:39:09.554) NVM: part erase scs
+W (15:39:09.554) NVM: part erase restart
+W (15:39:09.567) NVM: esp_part_write scs
+W (15:39:09.641) NVM: part erase scs
+W (15:39:09.641) NVM: part erase restart
+W (15:39:09.642) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 2 vl_or 0 vs 25
+W (15:39:09.654) NVM: esp_part_write scs
+W (15:39:10.142) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 3 vl_or 0 vs 25
+I (15:39:10.151) RLY:  temp rly ret var 0:0
+W (15:39:10.642) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 4 vl_or 0 vs 25
+W (15:39:11.142) EDRV: hvc 0 nvc 0 lvc 0 V 224154 C 0 P 0 pc 5 vl_or 0 vs 25
+W (10:07:46.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (10:07:46.347
+) EDRV: gl:ZERO PWR=0
+I (10:07:46.347) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 4 pwr 1000000000
+I (10:07:46.388) EMP: POW METER CB FUN IS CALLED
+W (10:07
+:46.685) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0 pc 5 vl_or 0 vs 25
+I (10:07:46.847) EDRV: gl:ZERO PWR=0
+I (10:07:46.847) EDRV: Cur 0 hc_ct 0 lc
+_ct 0 ac_ct 0 pwr 1000000000
+W (10:07:47.185) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0 pc 6 vl_
+or 0 vs 25
+I (10:07:47.347) EDRV: gl:ZERO PWR=0
+I (10:07:4
+7.347) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 1 pwr 1000000000
+W (10:07:47.685) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0
+pc 7 vl_or 0 vs 25
+I (10:07:47.847)
+EDRV: gl:ZERO PWR=0
+I (10:07:47.847) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 2 pwr 1000000000
+W (10:07:48.199) EDRV: hv
+c 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (10:07:48.199) UART TEST: buffer Recv str: button_press
+W (10:07:48.199) NVM: part erase scs
+You entered 'button_press'.button_press
+W (10:07:48.204) NVM: part erase restart
+I (10:
+07:48.207) QSND: INTF_MSG to 7 evnt 2
+9 pld 0 len(w) 0 ctx 0 fre_req 0
+W (10:07:48.223) SKT: pwr_on_state_event rcvd event=29
+W (10:07:48.223) NVM: esp_part_write scs
+I
+(10:07:48.223) TAG_GEYSER: F_hP:90856
+W (10
+:07:48.300) NVM: part erase scs
+I (10:07:48.300) SKT: Rly_id from btn:0
+W (10:07:48.300) NVM: part erase restart
+I (10:07:48.300) RLY:  temp rly ret var 1:1
+W (10:07:48.31
+4) NVM: esp_part_write scs
+I (10:07:48.315) RLY:  temp rly ret var 1:1
+I (10:07:48.315) QSND: INTF_MSG to 7 evnt 28 pld 0x3ffe24b4 len(w) 0 ctx 0 fre_req 1
+I (10:07:48.322) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 29 from intf 7
+W (10:07:48.330) SKT: pwr_on_state_event rcvd event=28
+W (10:07:48.335) SKT: Power OFF app id:253 0
+I (10:07:48.339) RLY:  temp rly ret var 1:1
+I (10:07:48.343) RLY: Rly Ste =1 ON OFF Cmd =0
+I (10:07:48.
+347) EDRV: gl:ZERO PWR=0
+I (10:07:48.350) EDRV: Cur 0 hc_ct 0 lc_ct 0 ac_ct 3 pwr 1000000000
+W (10:07:48.356) RLY: Rcvd rly off req
+I (10:07:48.360) RLY: Is OFF
+I (10:07:48.362) RLY: get_idf:0
+I (10:07:48.365) QMEM: mem clr = 28
+I (10:07:48.368) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 28 from intf 199
+I (10:07:48.665) RLY:
+get_id 0
+I (10:07:48.665) RLY: Rly off ste tmr is exp
+I (10:07:48.665) QSND: INTF_MSG to 1 evnt 33 pld 0 len(w) 0 ctx 0 fre_req 0
+I (10:07:48.667) SKT: Rly DRV Event rcvd
+I (10:07:48.671) SKT: relay_off event is rcvd
+W (10:07:48.675) SKT: Pwr Off State_event rcvd event=33
+I (10:07:48.680) EDRV: Enrg drv is stpd
+W (10:07:48.683) OST: enrg_con_prdic_tmr,Tmr Stpd Scsfly
+W (10:07:48.685) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+I (10:07:48.695) SKT: energy drive
+r energy consumption periodic timer  is stoped
+W (10:07:48.702) OST: power_meter_timer,Tmr Stpd Scsfly
+I (10:07:48.707) QSND: INTF_MSG to 3 evnt 14 pld 0x3ffcd47c len(w) 12 ctx 0 fre_req 0
+I (10:07:48.715) SKT: GEYSER CHANGE: 2:
+W (10:07:48.718) SKT: Rly ste change: 2 0:
+I (10:07:48.722) SKT: gyser turned off
+W (10:07:48.726) EX: TF: 0 TZ: 19800 Sys_tm:1728554868
+I (10:07:48.731) EX: get time GMT= 1728535068
+I (10:07:48.735) SKT: gysr_stp_tck_cnt 3030020 0
+I (10:07:48.739) SKT: skt_off_heatng_dur 0
+W (10:07:48.743) EX: TF: 0 TZ: 19
+800 Sys_tm:1728554868
+I (10:07:48.748) EX: get time GMT= 1728535068
+W (10:07:48.752) OST: enrg_sv_pattrn_tmr,Tmr is not active,Failed Stop
+I (10:07:48.758) RLY:  temp rly ret var 0:5
+I (10:07:48.762) RLY:  temp rly ret var 0:5
+I (10:07:48.766) RLY:  temp rly ret var 0:5
+W (10:07:48.770) EX: TF: 0 TZ: 19800 Sys_tm:1728554868
+I (10:07:48.775) EX: get time GMT= 1728535068
+W (10:07:48.779) IMSG: ID 1 RV 0 RSC 2 APPID 253 RSCT 1728535068
+I (10:07:48.784) TXTH: trans_id
+0 pld_len 12 intf 19 msg_
+type 1
+W (10:07:48.790) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (10:07:48.795) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (10:07:48.800) IMSG: no intf avl to send
+I (10:07:48.804) SKT: Skt on action sent
+I (10:07:48.808) SKT: App Id in Gyser skt off = 253
+W (10:07:48.812) EX: TF: 0 TZ: 19800 Sys_tm:1728554868
+I (10:07:48.817) EX: get time GMT= 1728535068
+W (10:07:48.821) SKT: gysr_stp_tme_upd 3030020 gysr_str_tme_upd 2072128
+I (10:07:48.828) APP_ID: latest app id read =
+253
+I (10:07:48.832) EDRV: energy consumption per session =0
+I (10:07:48.837) RLY:  temp rly ret var 0:5
+W (10:07:48.841) OST: PARTIAL_WRITE,Tmr Stpd Scsfly
+W (10:07:48.846) OFL: skt_ses_cnt 7 usg_ses_cnt 0
+I (10:07:48.850) SKT: Calibration_mode 0
+W (10:07:48.854) CEH: connectivity_sts 0 failed
+W (10:07:48.858) OFL: srvr_not_cntd_skt_ses
+I (10:07:48.862) SKT: gysr_stop_time 1728535068 gysr_strt_time 1728534110
+I (10:07:48.868) QSND: INTF_MSG to 7 evnt 18 pld 0 len(w) 0 ctx 0 fre_req 0
+I (10:07:48
+.875) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 33 from intf 65
+W (10:07:48.883) SKT: Pwr Off State_event rcvd event=14
+I (10:07:48.888) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 14 from intf 67
+W (10:07:48.895) SAC: SAC rcvd event=18
+W (10:07:48.899) SKT: Pwr Off State_event rcvd event=18
+I (10:07:48.904) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 18 from intf 7
+W (10:07:49.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P
+0 pc 10 vl_or 0 vs 25
+I (10:07:49.667) RLY: get_id 0
+W (10:07:49.667) RLY: Rly is trnd off
+W (10:07:49.685) EDRV: hvc 0 nvc
+0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (10:07:50.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C
+0 P 0 pc 1 vl_or 0 vs 25
+W (10:07:50.685) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+W (10:07:51.185) EDRV: hvc 0 nvc 0 lv
+c 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (10:07:51.685) EDRV: hvc 0 nvc 0 lvc
+0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+W (10:07:52.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5
+vl_or 0 vs 25
+W (10:07:52.685) EDRV: hvc 0 nvc 0
+lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (10:07:52.926) NVM: part erase scs
+W (10:07:52.926) NVM: part erase restart
+W (10:07:52.939) NVM: esp_part_write scs
+W (10:07:53.013) NVM: part erase scs
+W (10:07:53.013) NVM: part erase restart
+W (10:07:53.025) NVM: es
+p_part_write scs
+W (10:07:53.185) EDRV: hvc 0 nvc 0
+lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (10:07:53.685) EDRV: hvc 0 nvc
+0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (10:07:54
+.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (10:07:54.6
+85) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+I (10:07:54.685) UART TEST: buffer Recv str: button_press
+You entered 'button_press'.button_press
+I (10:07:54.689) QSND: INTF_MSG to 7 evnt 29 pld 0 len(w) 0 ctx 0 fre_req 0
+W (10:07:54.696) SKT: Pwr Off State_event rcvd event=29
+I (10:07:54.701) TAG_GEYSER: F_hP:90856
+I (10:07:54.705) SKT: Rly_id from btn:0
+I (10:07:54.708) RLY:  temp rly ret var 0:0
+I (10:07:54.712) QSND: INTF_MSG to 7 evnt 27 pld 0x3ffe24b4 len(w) 0 ctx
+0 fre_req 1
+I (10:07:54.719) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 29 from intf 7
+W (10:07:54.727) SKT: Pwr Off State_event rcvd event=27
+W (10:07:54.732) SKT: Inst ON From Pwr Off State_event =27, Rly id=0,Tmr_sts = 0 hv_lv_ov 0 v 223418
+E (10:07:54.741) SKT: Power ON app id:253 0 0
+I (10:07:54.745) RLY:  temp rly ret var 0:0
+I (10:07:54.749) EDRV: Enrg drv is stpd
+W (10:07:54.752) OST: enrg_con_prdic_tmr,Tmr is not active,Failed Stop
+I (10:07:54.759) SKT: energy driver energy cons
+umption periodic timer  is stoped
+W (10:0
+7:54.766) OST: power_meter_timer,Tmr is not active,Failed Stop
+I (10:07:54.772) QSND: INTF_MSG to 3 evnt 14 pld 0x3ffcd47c len(w) 12 ctx 0 fre_req 0
+W (10:07:54.779) RLY: Rly Ste =0 ON OFF Cmd =1
+I (10:07:54.784) RLY: Rcvd rly on req
+I (10:07:54.787) RLY: Is ON
+I (10:07:54.790) QMEM: mem clr = 27
+I (10:07:54.793) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 27 from intf 199
+W (10:07:54.800) SKT: pwr_on_state_event rcvd event=14
+I (10:07:54.805) SKT:
+In No power state per session data is =0
+I (10:07:54.811) SKT: In No power state per ses
+sion data is =4
+I (10:07:54.816) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 14 from intf 67
+W (10:07:55.185) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (10:07:55.389) RL
+Y: get_id 0
+I (10:07:55.389) RLY: Rly on ste tmr is exp
+I (10:07:55.389) QSND: INTF_MSG to 1 evnt 31 pld 0 len(w) 0 ctx 0 fre_req 0
+I (10:07:55.391) SKT: Rly DRV Event rcvd
+W (10:07:55.395) SKT: pwr_on_state_event rcvd event=31
+W (10:07:55.400) ALARM: 0
+W (10:07:55.402) EX: TF: 0 TZ: 19800 Sys_tm:1728554875
+I (10:07:55.407) EX: get time GMT= 1728535075
+I (10:07:55.411) SKT: gysr_str_tck_cnt 3036696
+W (10:07:55.415) SKT: ON time=1728535075
+I (10:07:55.419) SKT: Socket ON Action F
+actory Details HDWRE Type= 6
+W (10:07:
+55.425) SKT: rly ste change 2
+I (10:07:55.428) RLY:  temp rly ret var 1:3
+W (10:07:55.432) SKT: dur=0 min
+I (10:07:55.435) SKT: heating duration 0
+W (10:07:55.439) EX: TF: 0 TZ: 19800 Sys_tm:1728554875
+I (10:07:55.444) EX: get time GMT= 1728535075
+W (10:07:55.448) OST: enrg_sv_pattrn_tmr,Tmr is not active,Failed Stop
+I (10:07:55.454) RLY:  temp rly ret var 1:3
+W (10:07:55.458) EX: TF: 0 TZ: 19800 Sys_tm:1728554875
+I (10:07:55.463) EX: get time GMT= 1728535075
+
+W (10:07:55.467) IMSG: ID 1 RV 1 RSC 2 APPID 253 RSCT 1728535075
+I (10:07:55.472) TXTH: trans_id 0 pld_len 12 intf 19 msg_type 1
+W (10:07:55.478) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (10:07:55.483) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (10:07:55.488) IMSG: no intf avl to send
+I (10:07:55.492) APP_ID: latest app id write = 253
+I (10:07:55.497) SKT: Rly DRV event is Exe
+I (10:07:55.500) SKT: Gys_hdlr_ent_exit GCstate 1 UCstate 0 Event proc 31 from intf 65

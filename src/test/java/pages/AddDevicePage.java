@@ -824,7 +824,8 @@ public void aCBrandNameClick ()
 		} else {
 			System.out.println("Device is already in paired state removing the device");
 			
-			PassSTComment.stcomment("factory_reset");
+			PassSTComment passSTComment = new PassSTComment();
+			passSTComment.stcomment("factory_reset");
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
