@@ -9,7 +9,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-public class ContinuousLogReceiver {
+import org.testng.annotations.Test;
+
+public class ContinuousLogReceiver implements Runnable  {
     private volatile boolean running = true; // Control the running state
     private volatile boolean loggingEnabled = true; // Control the logging state
     private final Path logFilePath = Path.of("serial_log.txt"); // File path for logging
@@ -85,6 +87,11 @@ public class ContinuousLogReceiver {
         }
     }
 
+    @Override
+    public void run() {
+        // When the thread starts, it will execute this method
+        logrReceiver();
+    }
     // Method to stop logging
     public void stopLogging() {
         loggingEnabled = false;
@@ -104,10 +111,11 @@ public class ContinuousLogReceiver {
         }
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void runner() {
         ContinuousLogReceiver receiver = new ContinuousLogReceiver();
-        
-        // Start the logging receiver in a new thread
+        System.out.println("Device Log is started.....");
+        //Start the logging receiver in a new thread
         Thread receiverThread = new Thread(receiver::logrReceiver);
         receiverThread.start();
 

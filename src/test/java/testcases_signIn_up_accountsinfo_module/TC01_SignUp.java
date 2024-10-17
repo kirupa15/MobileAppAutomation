@@ -6,13 +6,16 @@ import java.io.IOException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import jssc.SerialPortException;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
-import pages.SignInPage;
 import pages.OtpPage;
+import pages.SignInPage;
 import pages.SignUpPage;
+import utils.PassSTComment;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC01_SignUp extends MobileAppWrappers {
@@ -33,21 +36,28 @@ public class TC01_SignUp extends MobileAppWrappers {
 
 
 	@Test
-	public void signUp() throws FileNotFoundException, IOException, InterruptedException {
+	public void signUp() throws FileNotFoundException, IOException, InterruptedException, SerialPortException {
+
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-
+		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("button_press\r");
 		landingpage.clickSignUpButton();
-		double rand=Math.random()*10000000;
+		
 		signuppage.enterUserName("testuser");
 		signuppage.enterEmailId("testuser@gmail.com");
 		signuppage.clickSignUpTCCheckBox();
 		signuppage.clickSignUpButton();
+		readwrite.write("button_press\r");
 		signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
-
+		readwrite.closePort();
 	}
 
 }

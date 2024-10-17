@@ -4,7 +4,7 @@ import jssc.SerialPortException;
 
 public class PassSTComment {
 
-	public static void stcomment(String comment) {
+	public void stcomment(String comment) {
 		try {
 
 		// Open the serial port
