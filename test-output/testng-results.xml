@@ -1,86 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-10-12T15:06:06 IST" name="Default suite" finished-at="2024-10-12T15:09:52 IST" duration-ms="226414">
-=======
-<<<<<<< HEAD
-  <suite started-at="2024-10-10T10:07:36 IST" name="Default suite" finished-at="2024-10-10T10:07:57 IST" duration-ms="20266">
+  <suite started-at="2024-10-24T23:00:24 IST" name="Default suite" finished-at="2024-10-24T23:01:36 IST" duration-ms="71780">
     <groups>
     </groups>
-    <test started-at="2024-10-10T10:07:36 IST" name="Default test" finished-at="2024-10-10T10:07:57 IST" duration-ms="20266">
-      <class name="testcases_signIn_up_accountsinfo_module.TC01_SignUp">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:35 IST" name="beforeSuite" finished-at="2024-10-10T10:07:36 IST" duration-ms="1404" status="PASS">
+    <test started-at="2024-10-24T23:00:24 IST" name="Default test" finished-at="2024-10-24T23:01:36 IST" duration-ms="71780">
+      <class name="testcases_pairing.TC01_Pairing_BlewithoutRouter">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="beforeSuite" finished-at="2024-10-24T23:00:24 IST" duration-ms="889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:37 IST" name="beforeTest" finished-at="2024-10-10T10:07:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="beforeTest" finished-at="2024-10-24T23:00:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:37 IST" name="startTestCase" finished-at="2024-10-10T10:07:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="startTestCase" finished-at="2024-10-24T23:00:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:37 IST" name="beforeMethod" finished-at="2024-10-10T10:07:37 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:25 IST" name="beforeMethod" finished-at="2024-10-24T23:00:25 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="signUp()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:37 IST" name="signUp" finished-at="2024-10-10T10:07:56 IST" duration-ms="19691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:56 IST" name="afterMethod" finished-at="2024-10-10T10:07:57 IST" duration-ms="329" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:57 IST" name="afterTest" finished-at="2024-10-10T10:07:57 IST" duration-ms="152" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_signIn_up_accountsinfo_module.TC01_SignUp@13526e59]" started-at="2024-10-10T10:07:57 IST" name="afterSuite" finished-at="2024-10-10T10:07:57 IST" duration-ms="577" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testcases_signIn_up_accountsinfo_module.TC01_SignUp -->
-=======
-  <suite started-at="2024-10-05T17:32:26 IST" name="Default suite" finished-at="2024-10-05T17:34:52 IST" duration-ms="146569">
->>>>>>> 961406385a2672710ef29c2f5839952fe3f0dd75
-    <groups>
-    </groups>
-    <test started-at="2024-10-12T15:06:06 IST" name="Default test" finished-at="2024-10-12T15:09:52 IST" duration-ms="226414">
-      <class name="testcases_connectivity.WIfiWithout_router">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:06:05 IST" name="beforeSuite" finished-at="2024-10-12T15:06:06 IST" duration-ms="684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:06:06 IST" name="beforeTest" finished-at="2024-10-12T15:06:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:06:06 IST" name="startTestCase" finished-at="2024-10-12T15:06:06 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:06:06 IST" name="beforeMethod" finished-at="2024-10-12T15:06:06 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:06:06 IST" name="removerepair" finished-at="2024-10-12T15:09:51 IST" duration-ms="225572" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="removerepair()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:25 IST" name="removerepair" finished-at="2024-10-24T23:01:18 IST" duration-ms="52970" status="FAIL">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@resource-id='android:id/button1']' (tried for 30 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[FAILED]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@resource-id='android:id/button1']' (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:806)
-at pages.AddDevicePage.initiatepairing(AddDevicePage.java:553)
-at pages.AddDevicePage.pair(AddDevicePage.java:513)
-at testcases_connectivity.WIfiWithout_router.pairBlewithoutRouter(WIfiWithout_router.java:63)
-at testcases_connectivity.WIfiWithout_router.removerepair(WIfiWithout_router.java:40)
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:46)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:177)
+at pages.HomePage.clickMenuBarButton(HomePage.java:41)
+at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:973)
+at pages.AddDevicePage.initiatepairing(AddDevicePage.java:609)
+at pages.AddDevicePage.pair(AddDevicePage.java:552)
+at testcases_pairing.TC01_Pairing_BlewithoutRouter.removerepair(TC01_Pairing_BlewithoutRouter.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,75 +65,25 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-8HN186T', ip: '192.168.10.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: POCO M2 Pro, newCommandTimeout: 999999, platformName: android, platformVersion: 12, udid: 964176695400065}, deviceApiLevel: 33, deviceManufacturer: vivo, deviceModel: V2055, deviceName: 964176695400065, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 964176695400065, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2.75, platform: LINUX, platformName: LINUX, platformVersion: 13, statBarHeight: 88, takesScreenshot: true, udid: 964176695400065, viewportRect: {height: 2312, left: 0, top: 88, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9e699c40-239a-4cb2-9287-cd2ee5bd8911
-*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='android:id/button1']}
-at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:686)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:682)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removerepair -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:09:51 IST" name="afterMethod" finished-at="2024-10-12T15:09:52 IST" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:18 IST" name="afterMethod" finished-at="2024-10-24T23:01:19 IST" duration-ms="1225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:09:52 IST" name="afterTest" finished-at="2024-10-12T15:09:52 IST" duration-ms="495" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:19 IST" name="afterTest" finished-at="2024-10-24T23:01:36 IST" duration-ms="17276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_connectivity.WIfiWithout_router@147e2ae7]" started-at="2024-10-12T15:09:52 IST" name="afterSuite" finished-at="2024-10-12T15:09:53 IST" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:36 IST" name="afterSuite" finished-at="2024-10-24T23:01:38 IST" duration-ms="1923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-<<<<<<< HEAD
-      </class> <!-- testcases_connectivity.WIfiWithout_router -->
-=======
-      </class> <!-- testcases_Multidevice.TC_02_Report_Page -->
->>>>>>> 14d85b3371fec4c6ca7c39ff9cf5ec06436d7f69
->>>>>>> 961406385a2672710ef29c2f5839952fe3f0dd75
+      </class> <!-- testcases_pairing.TC01_Pairing_BlewithoutRouter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

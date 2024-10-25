@@ -3,43 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="testcases_connectivity.WIfiWithout_router">
-=======
-<<<<<<< HEAD
-      <class name="testcases_signIn_up_accountsinfo_module.TC01_SignUp">
-=======
-      <class name="testcases_Multidevice.TC_02_Report_Page">
->>>>>>> 14d85b3371fec4c6ca7c39ff9cf5ec06436d7f69
->>>>>>> 961406385a2672710ef29c2f5839952fe3f0dd75
+      <class name="testcases_pairing.TC01_Pairing_BlewithoutRouter">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="signUp"/>
           <include name="afterSuite"/>
-<<<<<<< HEAD
-=======
-          <include name="removerepair"/>
-<<<<<<< HEAD
-=======
-          <include name="startTestCase"/>
->>>>>>> 14d85b3371fec4c6ca7c39ff9cf5ec06436d7f69
->>>>>>> 961406385a2672710ef29c2f5839952fe3f0dd75
           <include name="beforeTest"/>
-          <include name="startTestCase"/>
+          <include name="removerepair"/>
           <include name="beforeMethod"/>
           <include name="startTestCase"/>
           <include name="beforeSuite"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- testcases_connectivity.WIfiWithout_router -->
-=======
-<<<<<<< HEAD
-      </class> <!-- testcases_signIn_up_accountsinfo_module.TC01_SignUp -->
-=======
-      </class> <!-- testcases_Multidevice.TC_02_Report_Page -->
->>>>>>> 14d85b3371fec4c6ca7c39ff9cf5ec06436d7f69
->>>>>>> 961406385a2672710ef29c2f5839952fe3f0dd75
+      </class> <!-- testcases_pairing.TC01_Pairing_BlewithoutRouter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

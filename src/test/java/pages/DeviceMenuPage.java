@@ -1,12 +1,20 @@
 package pages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import wrappers.GenericWrappers;
 
 public class DeviceMenuPage extends GenericWrappers{
@@ -161,7 +169,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement removeRouterCancelButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"REMOVE\"]")
-	private WebElement removeRouterRemoveButton;
+	private WebElement RouterpopupRemoveButton;
 	
 	@FindBy(xpath = "//android.widget.CheckBox[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_CheckBox\"]")
 	private WebElement addRouterPopCheckBox;
@@ -209,9 +217,14 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text=\"YES\"]")
 	private WebElement removeDevicePopupYesButton;
 	
+	
+	@FindBy(xpath = "//*[@resource-id='Add_Devices_ButtonText']")
+	private WebElement addDeviceButton;
+	
 	public DeviceMenuPage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.wait=new WebDriverWait(driver, 30);
 	}
 
 	// Methods to be used as part of loginpage.
@@ -373,7 +386,7 @@ public class DeviceMenuPage extends GenericWrappers{
 		
 
         public void clickRemoveRouterRemoveButton() {	
-	        clickbyXpath(removeRouterRemoveButton, " Click Remove Router Remove Button ");
+	        clickbyXpath(RouterpopupRemoveButton, " Click Remove Router Remove Button ");
        }
 	
         public void clickAddRouterCheckBox() {	
@@ -392,8 +405,9 @@ public class DeviceMenuPage extends GenericWrappers{
 	        clickbyXpath(quietLEDToggleDisable, " Disable The Quiet LED Toggle ");
         }
 
-		public void clickDeviceSettingsBackButton() {
-			clickbyXpath(deviceSettingsPageBackButton, " Click The Device Settings Page Back Button ");
+		public void clickDeviceSettingsBackButton() throws InterruptedException {
+			wait.until(ExpectedConditions.elementToBeClickable(deviceSettingsPageBackButton)).click();
+//			clickbyXpath(deviceSettingsPageBackButton, " Click The Device Settings Page Back Button ");
         }
 		
 		
@@ -438,14 +452,67 @@ public class DeviceMenuPage extends GenericWrappers{
 		}	
 		
 		public void shellAllowpopup() {	
-			expWait(shellallow);
-			clickbyXpath(shellallow, " allow shell ");
+			if (isElementDisplayed(shellallow)) {
+//				expWait(shellallow);
+				clickbyXpath(shellallow, " allow shell ");
+			}
+			
 		}
-		public void shellDenypopup() {	
-			clickbyXpath(shelldeny, " deny shell ");
+		public void shellDenypopup() {
+			if (isElementDisplayed(shelldeny)) {
+				clickbyXpath(shelldeny, " deny shell ");
+				
+			} 
 		}
 		
 		
+//		============================
+				public void enterWiFiPassword(String password) {
+			entervaluebyXpath(enterPasswordField, " Wifi Password  ", password);
+		}
+		public void scrolldown() {
+			TouchAction action = new TouchAction(driver);
+			action
+			    .press(PointOption.point(500, 400)) // Start point (X, Y) near the top
+			    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(1000))) // Duration of press
+			    .moveTo(PointOption.point(500, 1600)) // End point (X, Y) near the bottom
+			    .release() // Release the press
+			    .perform();
+			
+		}
+		
+		public void removerouter() {
+
+			driver.findElement(MobileBy.AndroidUIAutomator(
+				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Router Details\"));"));
+			if (isElementDisplayed(addRouterButton)) {
+				clickbyXpath(addRouterButton, "Add router button ");
+				enterWiFiPassword("12345678908");
+				clickAddRouterCheckBox();
+				clickbyXpath(enterButton, " Enter Button  ");
+			}
+			else if (isElementDisplayed(removeRouterButton)) {
+				clickbyXpath(removeRouterButton, "Remove router button ");
+				clickRemoveRouterCancelButton();
+				clickbyXpath(removeRouterButton, "Remove router button ");
+				clickRemoveRouterRemoveButton();
+				
+				clickDevicesettingsbackButton();
+
+			}
+			else {
+				System.out.println("Add router or remove router button is not clickable");
+			}
+			
+			
+		}
+		
+		public void AddDevicePagedisplayed() {
+
+			if (isElementDisplayed(addDeviceButton)) {
+				System.out.println("Add device page displayed");
+			}
+		}
 		
 		
 }

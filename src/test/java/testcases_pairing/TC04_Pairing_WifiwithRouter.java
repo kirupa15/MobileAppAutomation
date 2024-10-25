@@ -9,6 +9,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
@@ -38,6 +39,12 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 
 	 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -49,5 +56,8 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.AddDevicePagedisplayed();
+		readwrite.closePort();
+
 	}
 }

@@ -1,8 +1,5 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -31,13 +28,14 @@ public class TC03_SignIn_Flow extends MobileAppWrappers {
 
 
 	@Test
-	public void signIn() throws FileNotFoundException, IOException, InterruptedException {
+	public void signIn() throws Exception {
 		initAndriodDriver();
 		signinpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		double rand=Math.random()*100000000;
 		signinpage.enterUserName("user"+(int)rand);

@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_06_sZephyr_Info extends MobileAppWrappers {
@@ -33,6 +34,7 @@ public class TC_06_sZephyr_Info extends MobileAppWrappers {
 
 @Test
 public void removerepair() throws Exception {
+	initAndriodDriver();
 	pairBlewithoutRouter();
 }
 
@@ -44,6 +46,12 @@ public void pairBlewithoutRouter() throws Exception {
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
+	
+	logReadandWrite readwrite=new logReadandWrite("COM4");
+	readwrite.openPort();
+	readwrite.read();
+	Thread.sleep(2000);
+	readwrite.write("factory_reset\r");
 	
 	adddevicepage.pair(1);
 	//adddevicepage.ClickOkButtonBLEpopUP();
@@ -72,9 +80,11 @@ public void pairBlewithoutRouter() throws Exception {
 	Thread.sleep(1000);
 	
 	
-	//devicemenupage.clickDeviceSettingsButton();
-	//devicemenupage.clickResetDeviceButton();
-	//devicemenupage.clickResetConfirmationYesButton();
+	devicemenupage.clickDeviceSettingsButton();
+	devicemenupage.clickResetDeviceButton();
+	devicemenupage.clickResetConfirmationYesButton();
+	devicemenupage.AddDevicePagedisplayed();
+
 }
 
 }

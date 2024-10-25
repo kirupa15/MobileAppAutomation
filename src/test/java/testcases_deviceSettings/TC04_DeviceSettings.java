@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -35,7 +36,13 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
-		adddevicepage.pair(3);
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		devicemenupage.clickPairingTimeQuietLEDEnable();
 		devicemenupage.clickInfinitePowerToggle();
@@ -69,6 +76,8 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			Thread.sleep(2000);
+			devicemenupage.AddDevicePagedisplayed();
+
 	}
 
 }

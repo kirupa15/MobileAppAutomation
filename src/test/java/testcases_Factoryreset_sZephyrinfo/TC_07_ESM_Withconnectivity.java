@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_07_ESM_Withconnectivity extends MobileAppWrappers {
@@ -33,6 +34,7 @@ public class TC_07_ESM_Withconnectivity extends MobileAppWrappers {
 
 @Test
 public void removerepair() throws Exception {
+	initAndriodDriver();
 	pairBlewithoutRouter();
 }
 
@@ -45,6 +47,11 @@ public void pairBlewithoutRouter() throws Exception {
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
+	logReadandWrite readwrite=new logReadandWrite("COM4");
+	readwrite.openPort();
+	readwrite.read();
+	Thread.sleep(2000);
+	readwrite.write("factory_reset\r");
 	
 	adddevicepage.pair(4);
 	adddevicepage.clickNextButtonsZephyrInfo();

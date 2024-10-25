@@ -1,8 +1,5 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -33,13 +30,14 @@ public class TC02_SignUp extends MobileAppWrappers {
 
 
 	@Test
-	public void signUp() throws FileNotFoundException, IOException, InterruptedException {
+	public void signUp() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpButton();
 		double rand=Math.random()*10000000;
 		signuppage.enterUserName("testuser"+(int)rand);
@@ -51,6 +49,8 @@ public class TC02_SignUp extends MobileAppWrappers {
 		signuppage.checkPpContactUsContent("For questions regarding our Privacy Policy, please contact our customer care via email at support@iinvsys.com");
 		signuppage.clicktcPopupCloseButton();
 		signuppage.clickSignUpButton();
+		otppage.verifyOTPVerificationTitle("OTP Verification");
+		
 
 	}
 

@@ -1,12 +1,8 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import jssc.SerialPortException;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
@@ -36,7 +32,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 
 
 	@Test
-	public void signUp() throws FileNotFoundException, IOException, InterruptedException, SerialPortException {
+	public void signUp() throws Exception {
 
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
@@ -49,6 +45,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("button_press\r");
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpButton();
 		
 		signuppage.enterUserName("testuser");

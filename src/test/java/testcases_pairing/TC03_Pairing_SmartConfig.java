@@ -9,6 +9,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
@@ -38,6 +39,11 @@ public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 
 	 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -49,6 +55,8 @@ public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.AddDevicePagedisplayed();
+		readwrite.closePort();
 	}
 
 }

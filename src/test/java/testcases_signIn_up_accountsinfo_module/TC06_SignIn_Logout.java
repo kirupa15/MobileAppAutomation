@@ -1,8 +1,5 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,6 +9,8 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC06_SignIn_Logout extends MobileAppWrappers {
@@ -22,6 +21,7 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
+	SignUpPage signuppage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -31,7 +31,7 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 	
 
 	@Test
-	public void login() throws InterruptedException, FileNotFoundException, IOException {
+	public void login() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
@@ -39,9 +39,17 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		homepage=new HomePage(driver);
+		signuppage =new SignUpPage(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser1237@gmail.com");
+		loginpage.enterUserName("testuser007@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");
@@ -49,22 +57,14 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.turnOnBluetooth();
-		//adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickRouterCancelButton();
+
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		
 		for(int i=0;i<2;i++) {
-		homepage.clickONOFFButton();
-		Thread.sleep(1000);
-		}
+			homepage.clickONOFFButton();
+			Thread.sleep(1000);
+			}
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
@@ -73,6 +73,7 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButtonAfterReset();
 		devicemenupage.clickLogoutConfirmationButton();
+		signuppage.clickSignUpButton();
 		
 	}
 		

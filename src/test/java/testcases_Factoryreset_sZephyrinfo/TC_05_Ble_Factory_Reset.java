@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_05_Ble_Factory_Reset extends MobileAppWrappers {
@@ -32,6 +33,7 @@ public class TC_05_Ble_Factory_Reset extends MobileAppWrappers {
 
 @Test
 public void removerepair() throws Exception {
+	initAndriodDriver();
 	pairBlewithoutRouter();
 }
 
@@ -42,6 +44,11 @@ public void pairBlewithoutRouter() throws Exception {
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
+	logReadandWrite readwrite=new logReadandWrite("COM4");
+	readwrite.openPort();
+	readwrite.read();
+	Thread.sleep(2000);
+	readwrite.write("factory_reset\r");
 	
 	adddevicepage.pair(1);
 	adddevicepage.clickNextButtonsZephyrInfo();
@@ -58,6 +65,8 @@ public void pairBlewithoutRouter() throws Exception {
 	devicemenupage.clickDeviceSettingsButton();
 	devicemenupage.clickResetDeviceButton();
 	devicemenupage.clickResetConfirmationYesButton();
+	devicemenupage.AddDevicePagedisplayed();
+
 }
 
 }

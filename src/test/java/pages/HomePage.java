@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.appmanagement.ApplicationState;
 import wrappers.GenericWrappers;
 
 public class HomePage extends GenericWrappers{
@@ -76,10 +77,16 @@ public class HomePage extends GenericWrappers{
 		   disableWiFi();
 	   }
 	   
-	   public void WifiSwitch() 
+	   public void WifiSwitch(String Wifiname,String Wifipassword) throws Exception 
 	   {
 		   
-		   connectToWiFi("realme", "12345222");
+		   connectToWiFi(Wifiname, Wifipassword);
+			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
+
+		   if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+				driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+				Thread.sleep(7000);
+			}
 	   }
 
 }

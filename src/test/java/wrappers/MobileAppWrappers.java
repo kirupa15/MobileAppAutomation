@@ -12,8 +12,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+
+import jssc.SerialPortException;
 import utils.DataInputProvider;
 import utils.Reporter;
+import utils.logReadandWrite;
 
 public class MobileAppWrappers extends GenericWrappers {
 	protected String browserName;
@@ -22,6 +25,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	protected static String testDescription;
 	GenericWrappers genericwrappers;
 
+	
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException{
 		Reporter.startResult();
@@ -38,6 +42,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	public void beforeMethod(){ 
 		Reporter.startTestCase();
 		//initDriver(); 
+		
 
 	}
 
@@ -64,7 +69,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// FTP paths
 			String existingDirectory = "//Internal_Project//FULL_VALIDATION_PACKAGES_LOGS//LOGS//2024//Automation_Logs//";
-			String newSubDir = "Applogs_" + randomnumbers(6); // Subdirectory name
+			String newSubDir = "logs_" + randomnumbers(6); // Subdirectory name
 
 			// Initialize FTP connection
 			FTPUploader(server, port, user, pass);
@@ -73,8 +78,8 @@ public class MobileAppWrappers extends GenericWrappers {
 			createAndNavigateToSubdirectory(existingDirectory, newSubDir);
 
 			// Upload files to the new subdirectory
-			uploadFile(appLogPath, "React-Log-20240924_182921.txt");
-			uploadFile(deviceLogPath, "Devicelog.txt");
+			uploadFile(appLogPath,  testCaseName+".txt");
+			uploadFile(deviceLogPath, testCaseName+".txt");
 
 			// Disconnect from FTP server
 			disconnect();
@@ -87,8 +92,12 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@AfterMethod
 	public void afterMethod(){
-		quitBrowser();
-		//driver.quit();
+//		quitBrowser();
+		driver.terminateApp("com.iinvsys.szephyr");
+//		driver.closeApp();
+		driver.quit();
+//		logReadandWrite readwrite=new logReadandWrite("COM4");
+//		readwrite.closePort();
 	}
 
 	@DataProvider(name="fetchData")

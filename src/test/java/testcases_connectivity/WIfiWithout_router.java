@@ -12,6 +12,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -39,13 +40,6 @@ public class WIfiWithout_router extends MobileAppWrappers {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 		
-//		adddevicepage= new AddDevicePage(driver);
-//		homepage = new HomePage(driver);
-//		devicemenupage= new DeviceMenuPage(driver);
-//		szephyrinfoPage= new Szephyr_info_Page(driver);
-//		landingpage=new LandingPage(driver);
-//		loginpage=new SignInPage(driver);
-//		signuppage=new SignUpPage(driver);
 		
 	}
 
@@ -59,6 +53,12 @@ public class WIfiWithout_router extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -66,9 +66,6 @@ public class WIfiWithout_router extends MobileAppWrappers {
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		
-		/*for(int i=0;i<2;i++) {
-			Thread.sleep(1000);
-			}*/
 		
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.clickONOFFButton();
@@ -77,6 +74,5 @@ public class WIfiWithout_router extends MobileAppWrappers {
 		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
-		
 	}
 	}

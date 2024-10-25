@@ -1,8 +1,5 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -12,6 +9,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import pages.SignUpPage;
 import wrappers.MobileAppWrappers;
 
 public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
@@ -21,6 +19,7 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
+	SignUpPage signuppage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -30,13 +29,15 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 	
 
 	@Test
-	public void login() throws InterruptedException, FileNotFoundException, IOException {
+	public void login() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		adddevicepage= new AddDevicePage(driver);
+		signuppage =new SignUpPage(driver);
 		
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();

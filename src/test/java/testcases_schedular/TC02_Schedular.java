@@ -34,7 +34,7 @@ public class TC02_Schedular extends MobileAppWrappers {
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC01 - Pairing BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testDescription = "Sign In and Start Pairing BLE with Router mode,Remove router and check ble connectivity ";
 	}
 
 	@Test

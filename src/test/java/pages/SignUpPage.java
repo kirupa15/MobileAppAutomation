@@ -20,6 +20,7 @@ import io.appium.java_client.touch.offset.ElementOption;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
@@ -33,11 +34,12 @@ public class SignUpPage extends GenericWrappers {
 	// Locate all elements on the page
 	@FindBy(xpath = "//*[@resource-id='SignUp_Username']")
 	private WebElement userNameField;
-
+	
 	@FindBy(xpath = "//*[@resource-id='SignUp_Email']")
 	private WebElement userEmailIDField;
 	
-	@FindBy(xpath = "//*[@resource-id='SignUp_SignUpText']")
+	@FindBy(xpath = "//*[@resource-id='Launch_SignUpLink']")
+	//android.widget.TextView[@content-desc="com.szephyr:id/Launch_SignUpLink"]
 	private WebElement signUpButton;
 	
 	@FindBy(xpath = "//*[@resource-id='SignUp_TC']")
@@ -72,6 +74,8 @@ public class SignUpPage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.widget.Toast[@text='Username and Email ID both are already exists']")
 	private WebElement userNameExistToast;
+	
+	
 
 	
 	
@@ -145,6 +149,8 @@ public class SignUpPage extends GenericWrappers {
 		
 	}
 	
+
+	
 	
 	public void scroll() {
 
@@ -173,4 +179,19 @@ public class SignUpPage extends GenericWrappers {
 			driver.perform(List.of(scroll));
 
 }
+		public void uninstall_reinstall() throws Exception {
+
+			
+			if (driver.isAppInstalled("com.iinvsys.szephyr")) {
+			Runtime.getRuntime().exec("adb uninstall com.iinvsys.szephyr");
+			driver.installApp("C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_13254_stg.apk");
+			driver.activateApp("com.iinvsys.szephyr");
+			}
+			else {
+				
+				driver.installApp("C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_13254_stg.apk");
+				driver.activateApp("com.iinvsys.szephyr");
+			}
+		}
+		
 }

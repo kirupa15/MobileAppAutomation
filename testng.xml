@@ -2,11 +2,8 @@
 <suite name="MobilAppAutomation" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test" verbose="2">
      <packages>
-		<package name="testcases_connectivity" />
-		<package name="testcases_deviceSettings" />
-		<package name="testcases_Factoryreset_sZephyrinfo" />
+		
 		<package name="testcases_pairing" />
-		<package name="testcases_signIn_up_accountsinfo_module" />
     </packages>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->

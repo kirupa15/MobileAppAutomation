@@ -12,6 +12,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -47,11 +48,20 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
 		adddevicepage.pair(3);
+		turnOffBT();
+		
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		Thread.sleep(5000);
 		homepage.VerifyONdesc();
@@ -63,8 +73,8 @@ public class  SmartConfig extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		
 		homepage.killandopen();
-		adddevicepage.ClickOkButtonBLEpopUP();
-		Thread.sleep(3000);
+		adddevicepage.ClickCancelButtonBle();
+		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		//CONNECTIVITY_MOD_3_TC_3///     STA_Device_ON/OFF
 		
@@ -76,7 +86,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_4// BLE Connectivity Establishment
 		homepage.enableBLE();
 		homepage.disableWIFI();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		 Thread.sleep(5000);
 	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
@@ -87,45 +97,28 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 		//CONNECTIVITY_MOD_3_TC_6//BLE Device ON_OFF 
 		
+		Thread.sleep(10000);
 		for(int i=0;i<11;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(3000);
 			}
-		//homepage.clickMenuBarButton();
-		//devicemenupage.clickDeviceSettingsButton();
-		//devicemenupage.clickResetDeviceButton();
-		//devicemenupage.clickResetConfirmationYesButton();
+	
 		
 		////Remote_Connectivity_Establishment//
 		
 		homepage.enableWIFI();/// need to connect TP Link//
-		Thread.sleep(5000);
 		homepage.disableBLE();
-		/*adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickCancelButtonBle();
-		Thread.sleep(3000);
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
-		adddevicepage.clickOkButtonBLEpopUP();
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		homepage.clickONOFFButton();*/
-		Thread.sleep(9000);
+		checkappinforeground();
+	
 		//homepage.VerifyONdesc();
-		homepage.WifiSwitch();
+		homepage.WifiSwitch(loadProp().getProperty("REMOTEWIFINAME"),loadProp().getProperty("REMOTEWIFIPASSWORD"));
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		;
 		Thread.sleep(5000);
 	///CONNECTIVITY_MOD_3_TC_5//remote_Kill and Open
 		
 		homepage.killandopen();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
@@ -141,7 +134,8 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		
+		devicemenupage.AddDevicePagedisplayed();
+
 		
 	}
 	 

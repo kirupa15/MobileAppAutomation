@@ -9,6 +9,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
@@ -37,6 +38,11 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -48,6 +54,8 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.AddDevicePagedisplayed();
+        readwrite.closePort();
 	}
 
 }

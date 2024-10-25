@@ -27,19 +27,24 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
+import io.appium.java_client.Setting;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
 import utils.Reporter;
+import utils.logReadandWrite;
 
 public class GenericWrappers {
-
-
+ 
+	
+	
 	public static AndroidDriver<AndroidElement> driver;
 	public WebDriverWait wait;
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
 
+	
 	public Properties loadProp() {
 		Properties prop = new Properties();
 		try {
@@ -56,7 +61,7 @@ public class GenericWrappers {
 	}
 
 	public static boolean initAndriodDriver() throws FileNotFoundException, IOException {
-
+logReadandWrite log = new logReadandWrite("COM4");
 		boolean bReturn = false;
 		Properties prop = new Properties();
 		try {
@@ -75,12 +80,12 @@ public class GenericWrappers {
 			caps.setCapability("newCommandTimeout", 999999);
 			//			caps.setCapability("autoGrantPermissions", true);
 //			caps.setCapability("enforceXPath1", true);
-
+//			driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 10000);
 			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
-			//			keepSessionAlive(driver);
+//						keepSessionAlive(driver);
 
 			bReturn = true;
-
+			
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
 				System.out.println("App is already installed. Launching the app...");
@@ -88,12 +93,11 @@ public class GenericWrappers {
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
 				driver.installApp(
-						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12965_stg.apk");
+						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_13309_stg.apk");
 				driver.activateApp(appPackage); // Launch the app after installation
 			}
 
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			System.out.println("URL is malformed: " + e.getMessage());
 			e.printStackTrace();
 		}
@@ -570,8 +574,8 @@ public class GenericWrappers {
 	public void connectToWiFi(String wifiName, String wifiPassword) {
 		try {
 			// Open WiFi settings on the Android device
+			Runtime.getRuntime().exec("adb shell svc wifi enable");
 			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
-			//adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity
 			// Wait for the WiFi settings to open
 			Thread.sleep(5000);
 
@@ -584,6 +588,7 @@ public class GenericWrappers {
 			// Click on the WiFi network
 			clickByXpath(wifiElement, "Clicked on " + wifiName + " on Wi-Fi page");
 
+		
 			// Check if the password entry field is displayed
 			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
 			if (isElementDisplayed(enterPasswordField)) {
@@ -596,15 +601,11 @@ public class GenericWrappers {
 
 				Thread.sleep(5000);
 
-
-				if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-					driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-					Thread.sleep(7000);
-				}
-
 			} else {
 				System.out.println("Already connected or password is saved.");
+			
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -613,7 +614,7 @@ public class GenericWrappers {
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element) {
 		try {
-			Thread.sleep(5000);  // Introduce a small delay before checking visibility
+			Thread.sleep(1000);  // Introduce a small delay before checking visibility
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
 			return false;
@@ -666,5 +667,15 @@ public class GenericWrappers {
 //			Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
 		}
 
+	}
+	public void close() {
+		driver.terminateApp("com.iinvsys.szephyr");
+		driver.quit();
+	}
+	public void checkappinforeground() throws Exception {
+		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+			Thread.sleep(3000);
+		}
 	}
 }
