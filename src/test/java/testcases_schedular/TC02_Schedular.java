@@ -17,6 +17,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.Schedularpage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 import java.util.HashMap;
 import java.util.Map;
@@ -47,13 +48,19 @@ public class TC02_Schedular extends MobileAppWrappers {
 		devicemenupage = new DeviceMenuPage(driver);
 		schedulepage = new Schedularpage(driver);
 
-		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		schedulepage.createschedule(5, 1, 1);// (2,1,1)select mode,1 time only the loop run,one min gap between each schedules
 
 		schedulepage.disableschedule(1);// to wait for 1 min to check it turn on or in off state
 
+		readwrite.closePort();
 	}
 
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
 	//	@Test

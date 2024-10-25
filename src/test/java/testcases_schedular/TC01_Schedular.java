@@ -12,6 +12,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.Schedularpage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC01_Schedular extends MobileAppWrappers {
@@ -41,13 +42,18 @@ public class TC01_Schedular extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		schedulepage=new Schedularpage(driver);
 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		try {
 			schedulepage.createschedule(4,1,2);//(mode,loopcount,minutesgap between schedules)
 		} catch (IOException | InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		readwrite.closePort();
 	}
 	
 //	@Test

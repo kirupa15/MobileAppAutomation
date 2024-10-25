@@ -95,7 +95,7 @@ public class TC03_DeviceSettings extends MobileAppWrappers {
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			Thread.sleep(2000);
 			devicemenupage.AddDevicePagedisplayed();
-
+			 readwrite.closePort();
 
 	}
 

@@ -45,6 +45,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("button_press\r");
+		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpButton();
 		

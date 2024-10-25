@@ -77,7 +77,7 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			devicemenupage.AddDevicePagedisplayed();
-			
+			 readwrite.closePort();
 	}
 
 }

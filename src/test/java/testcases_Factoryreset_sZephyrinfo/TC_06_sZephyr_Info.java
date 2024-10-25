@@ -84,7 +84,7 @@ public void pairBlewithoutRouter() throws Exception {
 	devicemenupage.clickResetDeviceButton();
 	devicemenupage.clickResetConfirmationYesButton();
 	devicemenupage.AddDevicePagedisplayed();
-
+	 readwrite.closePort();
 }
 
 }

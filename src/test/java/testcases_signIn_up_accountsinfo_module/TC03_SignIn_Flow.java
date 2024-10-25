@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.SignInPage;
 import pages.OtpPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC03_SignIn_Flow extends MobileAppWrappers {
@@ -35,6 +36,12 @@ public class TC03_SignIn_Flow extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		double rand=Math.random()*100000000;
@@ -42,7 +49,7 @@ public class TC03_SignIn_Flow extends MobileAppWrappers {
 		signinpage.clickSignInButton();
 		signinpage.checkUserNameNotFoundToast("User Not Found");
 
-
+		readwrite.closePort();
 	}
 
 }

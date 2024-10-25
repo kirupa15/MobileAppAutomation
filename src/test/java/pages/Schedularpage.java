@@ -106,10 +106,7 @@ public class Schedularpage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Duration_Hours_Minutes\"]")
 	private WebElement duration;
 	
-//	@FindBy(xpath = "")
-//	private WebElement ;
-//	@FindBy(xpath = "")
-//	private WebElement ;
+
 
 	public void createschedule(int mode, int intervals, int gap) throws Exception {
 
@@ -238,30 +235,7 @@ public class Schedularpage extends GenericWrappers {
 
 	}
 
-//			public void removedevice() {
-//				driver.findElement(By.xpath(BaseClass_Z.schedulepagebackbtn)).click();
-//				driver.findElement(By.xpath(BaseClass_Z.menubar)).click();
-//				element = driver.findElement(By.xpath(BaseClass_Z.devicesettings));
-//
-//				wait.until(ExpectedConditions.visibilityOf(element));
-//				element.click();
-//
-//				//	 	       element.findElement(By.xpath(".//android.widget.TextView[@text=='Device settings']")).click();
-//				//	 	       element.findElement(By.xpath(BaseClass_Z.devicesettingsafterpairing)).click();
-//
-//				driver.findElement(By.xpath(BaseClass_Z.resetdevice)).click();
-//				driver.findElement(By.xpath(BaseClass_Z.factoryresetyes)).click();
-//
-//				element = driver.findElement(By.xpath(BaseClass_Z.adddevicebtn));
-//				text = element.getText();
-//
-//				if (text.contentEquals("Add Device")) { 
-//					System.out.println("Add device page displayed");
-//				}
-//				else {
-//					System.out.println("Add device page not displayed");
-//				}     
-//			}
+
 
 	public void disableschedule(int min) throws Exception, IOException, InterruptedException {
 

@@ -64,7 +64,7 @@ public class TC_04_Factory_Reset extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
-
+		 readwrite.closePort();
 	}
 
 }

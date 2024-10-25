@@ -135,7 +135,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
-
+		 readwrite.closePort();
 		
 	}
 	 

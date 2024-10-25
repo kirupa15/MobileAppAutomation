@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.SignInPage;
 import pages.OtpPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC02_SignUp extends MobileAppWrappers {
@@ -37,6 +38,12 @@ public class TC02_SignUp extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpButton();
 		double rand=Math.random()*10000000;
@@ -50,7 +57,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		signuppage.clicktcPopupCloseButton();
 		signuppage.clickSignUpButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
-		
+		readwrite.closePort();
 
 	}
 

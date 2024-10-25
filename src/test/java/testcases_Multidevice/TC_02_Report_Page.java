@@ -11,6 +11,7 @@ import pages.OtpPage;
 import pages.Reportpage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_02_Report_Page extends MobileAppWrappers {
@@ -45,6 +46,12 @@ public class TC_02_Report_Page extends MobileAppWrappers {
 		devicemenupage = new DeviceMenuPage(driver);
 		reportpage= new Reportpage(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(2);
 		//devicemenupage.ClickOkButtonBLEpopUP();
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -76,5 +83,6 @@ public class TC_02_Report_Page extends MobileAppWrappers {
 		reportpage.selectphotos();
 		reportpage.Clickaddoption();
 
+		readwrite.closePort();
 	}
 }

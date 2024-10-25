@@ -72,6 +72,6 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
-		
+		 readwrite.closePort();
 	}
 	}

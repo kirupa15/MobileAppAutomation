@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC04_SignIn_Valid_User extends MobileAppWrappers {
@@ -37,6 +38,12 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser@gmail.com");
@@ -49,6 +56,8 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		otppage.checkIncorrectOTPToast("Incorrect OTP, You have 5 more attempt");
+		
+		readwrite.closePort();
 	}
 	
 }

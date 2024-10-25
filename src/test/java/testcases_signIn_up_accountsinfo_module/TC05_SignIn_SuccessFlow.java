@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
@@ -37,6 +38,12 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		signuppage =new SignUpPage(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser@gmail.com");
@@ -48,7 +55,7 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		adddevicepage.verifyAddDevicePage("Add Device");
-		
+		readwrite.closePort();
 	}
 	
 }

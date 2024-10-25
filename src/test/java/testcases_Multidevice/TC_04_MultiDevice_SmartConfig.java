@@ -9,6 +9,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -42,6 +43,11 @@ public class TC_04_MultiDevice_SmartConfig extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite=new logReadandWrite("COM4");
+		readwrite.openPort();
+		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -120,5 +126,6 @@ devicemenupage.clickThirdDeviceButton();
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
 			}
+		readwrite.closePort();
 	}
 }

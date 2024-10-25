@@ -132,6 +132,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 				}
+		 readwrite.closePort();
 	}
 }
 

@@ -102,7 +102,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	    devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		adddevicepage.verifyAddDevicePage("Adddevice page");
-		
+		 readwrite.closePort();
 	}
 }
 		

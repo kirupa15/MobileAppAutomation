@@ -77,8 +77,8 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 
 		accountinfopage.checkAccountsinfousername_email_Language();
 
+		readwrite.closePort();
 	}
-
 
 
 }	

@@ -68,10 +68,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
         devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		//homepage.clickMenuBarButton();
-		//homepage.clicksharcelog();
-		//homepage.clicksharcelog1();
-		//homepage.clicksharcelog2();
+		
 		
 		
 //		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
@@ -107,7 +104,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
-		
+		 readwrite.closePort();
 	}
 }
 		

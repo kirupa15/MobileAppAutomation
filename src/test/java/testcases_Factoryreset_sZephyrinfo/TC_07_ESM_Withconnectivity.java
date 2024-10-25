@@ -79,7 +79,7 @@ public void pairBlewithoutRouter() throws Exception {
 	//devicemenupage.cl
 	Thread.sleep(1000);
 	devicemenupage.checkSuccessfullyToast();
-	
+	 readwrite.closePort();
 
 	
 

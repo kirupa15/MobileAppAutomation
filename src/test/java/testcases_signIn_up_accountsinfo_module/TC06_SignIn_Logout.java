@@ -74,7 +74,7 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		devicemenupage.clickLogoutButtonAfterReset();
 		devicemenupage.clickLogoutConfirmationButton();
 		signuppage.clickSignUpButton();
-		
+		readwrite.closePort();
 	}
 		
 	
