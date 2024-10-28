@@ -50,6 +50,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -133,6 +134,11 @@ public class  BleWithRouter extends MobileAppWrappers {
 				Thread.sleep(1000);
 				}
 		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 }
 

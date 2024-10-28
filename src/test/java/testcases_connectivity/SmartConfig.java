@@ -48,7 +48,9 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
+		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -136,7 +138,11 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		 readwrite.closePort();
-		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 	 
 }

@@ -84,8 +84,9 @@ public class HomePage extends GenericWrappers{
 			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
 
 		   if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-				driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-				Thread.sleep(7000);
+				driver.activateApp("com.iinvsys.szephyr"); 
+				// Bring it back
+				Thread.sleep(3000);
 			}
 	   }
 

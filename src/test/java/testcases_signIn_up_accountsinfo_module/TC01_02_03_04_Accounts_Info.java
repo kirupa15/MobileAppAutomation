@@ -58,6 +58,7 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 		devicesettingpage= new DeviceMenuPage(driver);
 
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -78,6 +79,11 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 		accountinfopage.checkAccountsinfousername_email_Language();
 
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 
 

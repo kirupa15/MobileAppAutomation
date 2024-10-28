@@ -48,6 +48,7 @@ public void pairBlewithoutRouter() throws Exception {
 	devicemenupage= new DeviceMenuPage(driver);
 	
 	logReadandWrite readwrite=new logReadandWrite("COM4");
+	try {
 	readwrite.openPort();
 	readwrite.read();
 	Thread.sleep(2000);
@@ -80,7 +81,11 @@ public void pairBlewithoutRouter() throws Exception {
 	Thread.sleep(1000);
 	devicemenupage.checkSuccessfullyToast();
 	 readwrite.closePort();
-
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+		readwrite.closePort();
+	}
 	
 
 }

@@ -48,6 +48,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -103,6 +104,11 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		adddevicepage.verifyAddDevicePage("Adddevice page");
 		 readwrite.closePort();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+		readwrite.closePort();
+	}
 	}
 }
 		

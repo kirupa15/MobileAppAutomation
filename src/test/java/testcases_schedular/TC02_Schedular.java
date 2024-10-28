@@ -63,13 +63,13 @@ public class TC02_Schedular extends MobileAppWrappers {
 	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
-	//	@Test
+//		@Test
 	public void openwifipage() throws Exception {
 
-		String text= "ANTA";//TP-Link_6D38(With_Internet)
+		String text= "TP-Link_6D38(With_Internet)";//TP-Link_6D38(With_Internet)
 		Runtime.getRuntime().exec("adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity");
 		Thread.sleep(5000);
-		AndroidElement element = driver.findElement(
+		WebElement element = driver.findElement(
 				MobileBy.AndroidUIAutomator(
 						"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))"
 						)

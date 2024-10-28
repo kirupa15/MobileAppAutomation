@@ -39,6 +39,7 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		signuppage =new SignUpPage(driver);
 
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -58,6 +59,11 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage.checkIncorrectOTPToast("Incorrect OTP, You have 5 more attempt");
 		
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 	
 }

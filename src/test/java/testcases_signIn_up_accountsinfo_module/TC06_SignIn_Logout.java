@@ -42,6 +42,7 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		signuppage =new SignUpPage(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -75,6 +76,11 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		devicemenupage.clickLogoutConfirmationButton();
 		signuppage.clickSignUpButton();
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 		
 	

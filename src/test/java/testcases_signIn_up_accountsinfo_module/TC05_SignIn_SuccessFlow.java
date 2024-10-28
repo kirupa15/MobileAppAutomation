@@ -39,6 +39,7 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		signuppage =new SignUpPage(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -56,6 +57,11 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		otppage.submitButton();
 		adddevicepage.verifyAddDevicePage("Add Device");
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 	
 }

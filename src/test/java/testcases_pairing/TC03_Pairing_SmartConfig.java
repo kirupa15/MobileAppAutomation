@@ -23,8 +23,8 @@ public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - Pairing in Smart Config Mode";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC03 - Pairing in Smart Config Mode";
+		testDescription = "If already Signin skip signin and  Start Pairing Smartconfig mode, else Signin and pair Smartconfig mode";
 	}
 
 
@@ -40,6 +40,7 @@ public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
 
 	 
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		readwrite.write("factory_reset\r");
@@ -57,6 +58,11 @@ public class TC03_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 
 }

@@ -3,7 +3,7 @@
   <test thread-count="5" name="Default test" verbose="2">
      <packages>
 		
-		<package name="testcases_pairing" />
+		<package name="testcases_connectivity" />
     </packages>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->

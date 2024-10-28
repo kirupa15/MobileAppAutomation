@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
@@ -27,7 +28,6 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
-import io.appium.java_client.Setting;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
@@ -61,7 +61,7 @@ public class GenericWrappers {
 	}
 
 	public static boolean initAndriodDriver() throws FileNotFoundException, IOException {
-logReadandWrite log = new logReadandWrite("COM4");
+
 		boolean bReturn = false;
 		Properties prop = new Properties();
 		try {
@@ -80,12 +80,12 @@ logReadandWrite log = new logReadandWrite("COM4");
 			caps.setCapability("newCommandTimeout", 999999);
 			//			caps.setCapability("autoGrantPermissions", true);
 //			caps.setCapability("enforceXPath1", true);
-//			driver.setSetting(Setting.WAIT_FOR_IDLE_TIMEOUT, 10000);
+
 			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
-//						keepSessionAlive(driver);
+			//			keepSessionAlive(driver);
 
 			bReturn = true;
-			
+
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
 				System.out.println("App is already installed. Launching the app...");
@@ -98,6 +98,7 @@ logReadandWrite log = new logReadandWrite("COM4");
 			}
 
 		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
 			System.out.println("URL is malformed: " + e.getMessage());
 			e.printStackTrace();
 		}
@@ -140,7 +141,7 @@ logReadandWrite log = new logReadandWrite("COM4");
 	//		return bReturn;
 	//	}
 
-	public static void keepSessionAlive(AndroidDriver<AndroidElement> driver) {
+	public static void keepSessionAlive(AndroidDriver driver) {
 		ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 		scheduler.scheduleAtFixedRate(() -> {
 			try {
@@ -309,7 +310,7 @@ logReadandWrite log = new logReadandWrite("COM4");
 	public static void expWait(WebElement xpath) {
 		try {
 
-			WebDriverWait wait = new WebDriverWait(driver,15);
+			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
@@ -322,7 +323,7 @@ logReadandWrite log = new logReadandWrite("COM4");
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver,100);
+			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
@@ -570,9 +571,9 @@ logReadandWrite log = new logReadandWrite("COM4");
 
 
 
-	@SuppressWarnings("deprecation")
 	public void connectToWiFi(String wifiName, String wifiPassword) {
 		try {
+			
 			// Open WiFi settings on the Android device
 			Runtime.getRuntime().exec("adb shell svc wifi enable");
 			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");

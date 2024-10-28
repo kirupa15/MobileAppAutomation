@@ -68,6 +68,7 @@ public class  OTA_TC_01_BLE extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -104,6 +105,11 @@ public class  OTA_TC_01_BLE extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		
 	    readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	
 
 }}

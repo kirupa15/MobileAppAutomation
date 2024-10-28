@@ -1,89 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T23:00:24 IST" name="Default suite" finished-at="2024-10-24T23:01:36 IST" duration-ms="71780">
+  <suite started-at="2024-10-28T11:35:05 IST" name="MobilAppAutomation" finished-at="2024-10-28T11:59:21 IST" duration-ms="1456608">
     <groups>
     </groups>
-    <test started-at="2024-10-24T23:00:24 IST" name="Default test" finished-at="2024-10-24T23:01:36 IST" duration-ms="71780">
-      <class name="testcases_pairing.TC01_Pairing_BlewithoutRouter">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="beforeSuite" finished-at="2024-10-24T23:00:24 IST" duration-ms="889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="beforeTest" finished-at="2024-10-24T23:00:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:24 IST" name="startTestCase" finished-at="2024-10-24T23:00:24 IST" duration-ms="0" status="PASS">
+    <test started-at="2024-10-28T11:35:05 IST" name="Default test" finished-at="2024-10-28T11:59:21 IST" duration-ms="1456608">
+      <class name="testcases_connectivity.BleWithRouter">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.BleWithRouter@53f3bdbd]" started-at="2024-10-28T11:40:22 IST" name="startTestCase" finished-at="2024-10-28T11:40:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:25 IST" name="beforeMethod" finished-at="2024-10-24T23:00:25 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.BleWithRouter@53f3bdbd]" started-at="2024-10-28T11:40:22 IST" name="beforeMethod" finished-at="2024-10-28T11:40:22 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="removerepair()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:00:25 IST" name="removerepair" finished-at="2024-10-24T23:01:18 IST" duration-ms="52970" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[FAILED]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: FAILED
-at utils.Reporter.reportStep(Reporter.java:46)
-at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:177)
-at pages.HomePage.clickMenuBarButton(HomePage.java:41)
-at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:973)
-at pages.AddDevicePage.initiatepairing(AddDevicePage.java:609)
-at pages.AddDevicePage.pair(AddDevicePage.java:552)
-at testcases_pairing.TC01_Pairing_BlewithoutRouter.removerepair(TC01_Pairing_BlewithoutRouter.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.BleWithRouter@53f3bdbd]" started-at="2024-10-28T11:40:22 IST" name="removerepair" finished-at="2024-10-28T11:42:20 IST" duration-ms="117995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removerepair -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:18 IST" name="afterMethod" finished-at="2024-10-24T23:01:19 IST" duration-ms="1225" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.BleWithRouter@53f3bdbd]" started-at="2024-10-28T11:42:20 IST" name="afterMethod" finished-at="2024-10-28T11:42:21 IST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:19 IST" name="afterTest" finished-at="2024-10-24T23:01:36 IST" duration-ms="17276" status="PASS">
+      </class> <!-- testcases_connectivity.BleWithRouter -->
+      <class name="testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03@7d61eb55]" started-at="2024-10-28T11:45:01 IST" name="startTestCase" finished-at="2024-10-28T11:45:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03@7d61eb55]" started-at="2024-10-28T11:45:01 IST" name="removerepair" finished-at="2024-10-28T11:46:52 IST" duration-ms="110915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removerepair -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03@7d61eb55]" started-at="2024-10-28T11:45:01 IST" name="beforeMethod" finished-at="2024-10-28T11:45:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03@7d61eb55]" started-at="2024-10-28T11:46:52 IST" name="afterMethod" finished-at="2024-10-28T11:46:53 IST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
+      <class name="testcases_connectivity.WifiWithRouter">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.WifiWithRouter@6c7a164b]" started-at="2024-10-28T11:53:40 IST" name="startTestCase" finished-at="2024-10-28T11:53:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.WifiWithRouter@6c7a164b]" started-at="2024-10-28T11:53:40 IST" name="beforeMethod" finished-at="2024-10-28T11:53:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.WifiWithRouter@6c7a164b]" started-at="2024-10-28T11:53:40 IST" name="removerepair" finished-at="2024-10-28T11:59:18 IST" duration-ms="337793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removerepair -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.WifiWithRouter@6c7a164b]" started-at="2024-10-28T11:59:18 IST" name="afterMethod" finished-at="2024-10-28T11:59:18 IST" duration-ms="888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases_connectivity.WifiWithRouter -->
+      <class name="testcases_connectivity.WIfiWithout_router">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.WIfiWithout_router@222a59e6]" started-at="2024-10-28T11:46:53 IST" name="startTestCase" finished-at="2024-10-28T11:46:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.WIfiWithout_router@222a59e6]" started-at="2024-10-28T11:46:53 IST" name="beforeMethod" finished-at="2024-10-28T11:46:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.WIfiWithout_router@222a59e6]" started-at="2024-10-28T11:46:53 IST" name="removerepair" finished-at="2024-10-28T11:53:39 IST" duration-ms="405626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removerepair -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.WIfiWithout_router@222a59e6]" started-at="2024-10-28T11:53:39 IST" name="afterMethod" finished-at="2024-10-28T11:53:40 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases_connectivity.WIfiWithout_router -->
+      <class name="testcases_connectivity.SmartConfig">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.SmartConfig@34129c78]" started-at="2024-10-28T11:42:21 IST" name="startTestCase" finished-at="2024-10-28T11:42:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.SmartConfig@34129c78]" started-at="2024-10-28T11:42:21 IST" name="removerepair" finished-at="2024-10-28T11:45:00 IST" duration-ms="159383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removerepair -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.SmartConfig@34129c78]" started-at="2024-10-28T11:42:21 IST" name="beforeMethod" finished-at="2024-10-28T11:42:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.SmartConfig@34129c78]" started-at="2024-10-28T11:45:00 IST" name="afterMethod" finished-at="2024-10-28T11:45:01 IST" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases_connectivity.SmartConfig -->
+      <class name="testcases_connectivity.BlewithoutRouter">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:35:04 IST" name="beforeSuite" finished-at="2024-10-28T11:35:05 IST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:35:05 IST" name="beforeTest" finished-at="2024-10-28T11:35:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:35:05 IST" name="startTestCase" finished-at="2024-10-28T11:35:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:35:05 IST" name="beforeMethod" finished-at="2024-10-28T11:35:05 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="removerepair()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:35:05 IST" name="removerepair" finished-at="2024-10-28T11:40:21 IST" duration-ms="316577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removerepair -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:40:21 IST" name="afterMethod" finished-at="2024-10-28T11:40:22 IST" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:59:18 IST" name="afterTest" finished-at="2024-10-28T11:59:21 IST" duration-ms="2857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_pairing.TC01_Pairing_BlewithoutRouter@448c8166]" started-at="2024-10-24T23:01:36 IST" name="afterSuite" finished-at="2024-10-24T23:01:38 IST" duration-ms="1923" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcases_connectivity.BlewithoutRouter@4b86805d]" started-at="2024-10-28T11:59:21 IST" name="afterSuite" finished-at="2024-10-28T11:59:22 IST" duration-ms="585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases_pairing.TC01_Pairing_BlewithoutRouter -->
+      </class> <!-- testcases_connectivity.BlewithoutRouter -->
     </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+  </suite> <!-- MobilAppAutomation -->
 </testng-results>

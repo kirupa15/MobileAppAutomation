@@ -37,6 +37,7 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -78,6 +79,11 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 			Thread.sleep(2000);
 			devicemenupage.AddDevicePagedisplayed();
 			 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 
 }

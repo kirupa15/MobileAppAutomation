@@ -23,7 +23,6 @@ public class MobileAppWrappers extends GenericWrappers {
 	protected String dataSheetName;
 	protected static String testCaseName;
 	protected static String testDescription;
-	GenericWrappers genericwrappers;
 
 	
 	@BeforeSuite

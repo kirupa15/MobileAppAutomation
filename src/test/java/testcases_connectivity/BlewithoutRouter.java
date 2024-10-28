@@ -31,7 +31,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testDescription = "CONNECTIVITY_MOD_1_TC_01-BLE connectivity establishment,CONNECTIVITY_MOD_1_TC_02-APP kill and re Open,CONNECTIVITY_MOD_1_TC_03-5 times App ON/OFF";
 	}
 	
 
@@ -50,6 +50,9 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
 	
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
+			
+		
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -105,6 +108,11 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 }
 		

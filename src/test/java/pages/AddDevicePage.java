@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.JavascriptExecutor;
 import java.io.IOException;
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
 import utils.PassSTComment;
 import utils.logReadandWrite;
@@ -20,11 +21,11 @@ import wrappers.GenericWrappers;
 
 public class AddDevicePage extends GenericWrappers {
 
-	public AndroidDriver<AndroidElement> driver;
+	public AndroidDriver driver;
 
 	public String userName=loadProp().getProperty("USERNAME"); 
 	public String emaId=loadProp().getProperty("EMAILID"); 
-	public String wifiPassword= loadProp().getProperty("WIFI_PASSWORD"); 
+	public String wifiPassword= loadProp().getProperty("WIFIPASSWORD"); 
 	
 	
 	// Locate all elements on the page
@@ -97,7 +98,7 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement devicewifipop_upOK;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/alertTitle\"]")
 	private WebElement devicewifipop_up;
-	@FindBy(xpath = "//android.widget.TextView[@text='Sign In']")
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Launch_SignInText\"]")
 	private WebElement signInButton;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"]")
 	private WebElement locationpermissionpopup;
@@ -226,7 +227,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	// Constructor to initialize the driver and instantiate elements using
 
-	public AddDevicePage(AndroidDriver<AndroidElement> driver) {
+	public AddDevicePage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
@@ -528,7 +529,7 @@ public void aCBrandNameClick ()
 			clickbyXpath(backbuttonDevicesettings , "back button click");
 		}
 	
-	
+
 	
 	String serialno = "iinv_smartac";
 
@@ -553,13 +554,13 @@ public void aCBrandNameClick ()
 	}
 
 	public void verifysigninpage() throws Exception {
+
+		  // Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+		Thread.sleep(5000);
 		if (isElementDisplayed(blePermissionOkButton)) {
 			clickByXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
-			if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-				driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-				Thread.sleep(3000);
-			}
+		checkappinforeground();
 		}
 		if (isElementDisplayed(signInButton)) {
 
@@ -626,10 +627,8 @@ public void aCBrandNameClick ()
 				if (isElementDisplayed(BleOKpopup)) {
 					BleOKpopup.click();
 					Thread.sleep(2000);
-					if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-						driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-						Thread.sleep(3000);
-					}				} else {
+				checkappinforeground();	
+				} else {
 					System.out.println("Ble is in ON state");
 				}
 				locationPopUpPermission();
@@ -639,10 +638,8 @@ public void aCBrandNameClick ()
 				if (isElementDisplayed(BleOKpopup)) {
 					BleOKpopup.click();
 					Thread.sleep(2000);
-					if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-						driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-						Thread.sleep(3000);
-					}
+					checkappinforeground();	
+
 				} else {
 					System.out.println("No alert pop ups displayed");
 				}
@@ -810,12 +807,12 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
-					logReadandWrite readwrite=new logReadandWrite("COM4");
+//					logReadandWrite readwrite=new logReadandWrite("COM4");
 					
 //					readwrite.openPort();
 //					readwrite.read();
 //					Thread.sleep(2000);
-					readwrite.write("factory_reset\r");
+//					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
 					proceedToAddDevice(mode);
@@ -828,7 +825,8 @@ public void aCBrandNameClick ()
 
 							
 					Thread.sleep(5000);
-					AndroidElement element = driver.findElement(MobileBy.AndroidUIAutomator(
+					@SuppressWarnings("deprecation")
+					WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
 							"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
 									+ serialno + "\"))"));
 					wait.until(ExpectedConditions.visibilityOf(element));
@@ -915,7 +913,7 @@ public void aCBrandNameClick ()
 					clickbyXpath(devicewifipop_upOK, "click on Device wifi OK popup");
 					
 					Thread.sleep(5000);
-					AndroidElement element = driver.findElement(MobileBy.AndroidUIAutomator(
+					WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
 							"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
 									+ serialno + "\"))"));
 					wait.until(ExpectedConditions.visibilityOf(element));

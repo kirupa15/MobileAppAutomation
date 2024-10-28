@@ -24,8 +24,8 @@ public class TC02_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC02 - Pairing BLE With Router";
+		testDescription = "If already Signin skip signin and  Start Pairing BLE with Router mode else Signin and pair Ble with router";
 	}
 	
 
@@ -45,6 +45,7 @@ public class TC02_Pairing_BlewithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		readwrite.write("factory_reset\r");
@@ -64,6 +65,11 @@ public class TC02_Pairing_BlewithRouter extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 
 }

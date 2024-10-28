@@ -52,6 +52,7 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 	
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -73,5 +74,10 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	}
 	}

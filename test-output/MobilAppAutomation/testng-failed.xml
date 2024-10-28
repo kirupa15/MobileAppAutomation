@@ -3,30 +3,6 @@
 <suite name="Failed suite [MobilAppAutomation]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases_pairing.TC05_Pairing_WifiwithoutRouter">
-        <methods>
-          <include name="startTestCase"/>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="removerepair"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- testcases_pairing.TC05_Pairing_WifiwithoutRouter -->
-      <class name="testcases_pairing.TC03_Pairing_SmartConfig">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="removerepair"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-          <include name="startTestCase"/>
-        </methods>
-      </class> <!-- testcases_pairing.TC03_Pairing_SmartConfig -->
       <class name="testcases_pairing.TC04_Pairing_WifiwithRouter">
         <methods>
           <include name="startTestCase"/>
@@ -39,7 +15,7 @@
           <include name="beforeSuite"/>
         </methods>
       </class> <!-- testcases_pairing.TC04_Pairing_WifiwithRouter -->
-      <class name="testcases_pairing.TC02_Pairing_BlewithRouter">
+      <class name="testcases_connectivity.BleWithRouter">
         <methods>
           <include name="startTestCase"/>
           <include name="afterMethod"/>
@@ -50,19 +26,91 @@
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- testcases_pairing.TC02_Pairing_BlewithRouter -->
-      <class name="testcases_pairing.TC01_Pairing_BlewithoutRouter">
+      </class> <!-- testcases_connectivity.BleWithRouter -->
+      <class name="testcases_pairing.TC05_Pairing_WifiwithoutRouter">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_pairing.TC05_Pairing_WifiwithoutRouter -->
+      <class name="testcases_deviceSettings.TC04_DeviceSettings">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
+          <include name="startTestCase"/>
+          <include name="beforeMethod"/>
           <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_deviceSettings.TC04_DeviceSettings -->
+      <class name="testcases_connectivity.WifiWithRouter">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+          <include name="removerepair"/>
+        </methods>
+      </class> <!-- testcases_connectivity.WifiWithRouter -->
+      <class name="testcases_deviceSettings.TC02_DeviceSettings">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="removerepair"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_deviceSettings.TC02_DeviceSettings -->
+      <class name="testcases_connectivity.SmartConfig">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="startTestCase"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_connectivity.SmartConfig -->
+      <class name="testcases_connectivity.WIfiWithout_router">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="startTestCase"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- testcases_pairing.TC01_Pairing_BlewithoutRouter -->
+      </class> <!-- testcases_connectivity.WIfiWithout_router -->
+      <class name="testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestCase"/>
+          <include name="afterTest"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [MobilAppAutomation] -->

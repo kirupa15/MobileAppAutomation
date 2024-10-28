@@ -39,6 +39,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		signuppage =new SignUpPage(driver);
 
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -58,6 +59,11 @@ public class TC02_SignUp extends MobileAppWrappers {
 		signuppage.clickSignUpButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 
 	}
 

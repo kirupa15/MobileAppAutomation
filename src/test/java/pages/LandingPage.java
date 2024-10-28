@@ -4,12 +4,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import wrappers.GenericWrappers;
 
 public class LandingPage extends GenericWrappers{
 	    
-	    private AndroidDriver<AndroidElement> driver;
+	    private AndroidDriver driver;
 	    
 	 // Locate all elements on the page
 	    
@@ -26,7 +25,7 @@ public class LandingPage extends GenericWrappers{
 	    
 	    // Constructor
 	    
-	    public LandingPage(AndroidDriver<AndroidElement> driver) {
+	    public LandingPage(AndroidDriver driver) {
 	        this.driver=driver;
 	        PageFactory.initElements(driver, this);
 	    }

@@ -23,8 +23,8 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - Pairing in Smart Config Mode";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC04 - Pairing in Wifi with router mode";
+		testDescription = "If already Signin skip signin and  Start Pairing Wifi with router mode else Signin and pair Wifi with router mode";
 	}
 
 
@@ -40,6 +40,7 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 
 	 
 		logReadandWrite readwrite=new logReadandWrite("COM4");
+		try {
 		readwrite.openPort();
 		readwrite.read();
 		Thread.sleep(2000);
@@ -58,6 +59,11 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 		devicemenupage.clickResetConfirmationYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 
 	}
 }
