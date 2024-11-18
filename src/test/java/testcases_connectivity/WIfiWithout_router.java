@@ -1,5 +1,7 @@
 package testcases_connectivity;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -27,59 +29,69 @@ public class WIfiWithout_router extends MobileAppWrappers {
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
 	SignUpPage signuppage;	
-	
+
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_4_TC_01,CONNECTIVITY_MOD_4_TC_02,CONNECTIVITY_MOD_4_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "WifiWithoutRouter";
+		testDescription = "App kill and re-open and check the connectivity";
 	}
-	
+
 
 	@Test
 	public void removerepair() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
-		
-		
+
+
 	}
 
 
 
-	
-	
+
+
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
-		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
-		readwrite.openPort();
-		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("factory_reset\r");
-		
-		
-		adddevicepage.pair(5);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
-		
-		
-		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
-		homepage.clickONOFFButton();
-		homepage.clickONOFFButton();
-		homepage.killandopen();
-		adddevicepage.ClickOkButtonBLEpopUP();
-		Thread.sleep(3000);
-		homepage.clickONOFFButton();
-		 readwrite.closePort();
+			readwrite.openPort();
+			//		readwrite.read();
+			Thread.sleep(2000);
+			readwrite.write("factory_reset\r");
+
+
+			adddevicepage.pair(5);
+			adddevicepage.clickNextButtonsZephyrInfo();
+			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickSubmitButtonDeviceSetting();
+			adddevicepage.checkdevicesettingstoast();
+			
+			homepage.clickONOFFButton();
+			homepage.VerifyONdesc();
+
+
+			//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
+			homepage.clickONOFFButton();
+			homepage.clickONOFFButton();
+			homepage.killandopen();
+			adddevicepage.ClickOkButtonBLEpopUP();
+			Thread.sleep(3000);
+			homepage.clickONOFFButton();
+			
+			 homepage.clickMenuBarButton();
+				devicemenupage.clickMenuBarRemoveDevice();
+				devicemenupage.clickRemoveDevicePopupYesButton();
+				adddevicepage.checkdeviceremovedtoast();
+				devicemenupage.AddDevicePagedisplayed();
+			readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
-	}
+}

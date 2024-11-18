@@ -11,10 +11,11 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import utils.Retry_analyser;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class TC05_Pairing_WifiwithoutRouter extends MobileAppWrappers {
+public class Overallpairing  extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignInPage loginpage;
@@ -22,15 +23,15 @@ public class TC05_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-
+	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC05 - Pairing in Wifi without router Mode";
-		testDescription = "If already Signin skip signin and  Start Pairing Wifi without router mode else Signin and pair Wifi without router mode";
+		testCaseName = "Overallpairing scenario";
+		testDescription = "Overallpairing if it fails reset device and retry for 3 times";
 	}
+	
 
-
-	@Test
+//	@Test(retryAnalyzer = Retry_analyser.class)
 	public void removerepair() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
@@ -39,61 +40,93 @@ public class TC05_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-
-	 
+		
 		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
 //		readwrite.read();
-		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
-		adddevicepage.pair(5);
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
-		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
+		Thread.sleep(1000);
+		}
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
 		adddevicepage.checkdeviceremovedtoast();
 		devicemenupage.AddDevicePagedisplayed();
+		////
 		
-		adddevicepage.pair(5);
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
 		
+		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
-		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
+		Thread.sleep(1000);
+		}
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		////////
+		
+		adddevicepage.pair(3);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(3000);
+		}
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		devicemenupage.AddDevicePagedisplayed();
+		//////
+		
+		adddevicepage.pair(4);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(3000);
+		}
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		devicemenupage.AddDevicePagedisplayed();
+		/////////
+		
+		adddevicepage.pair(5);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		for(int i=0;i<2;i++) {
+			homepage.clickONOFFButton();
+			Thread.sleep(3000);
+		}
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
 		devicemenupage.AddDevicePagedisplayed();
 		
-		readwrite.closePort();
+		
 		}
 		catch (Exception e) {
+			readwrite.write("factory_reset\r");
 			readwrite.closePort();
 //			e.printStackTrace();
 			fail("Failed due to this exception", e);
+			
 		}
 	}
+		
 }

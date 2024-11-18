@@ -1,5 +1,7 @@
 package testcases_schedular;
 
+import static org.testng.Assert.fail;
+
 import java.io.IOException;
 
 import org.testng.annotations.BeforeClass;
@@ -27,7 +29,7 @@ public class TC01_Schedular extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
+		testCaseName = "TC01_Schedular";
 		testDescription = "Sign In and Start Pairing BLE with Router mode";
 	}
 	
@@ -42,18 +44,20 @@ public class TC01_Schedular extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		schedulepage=new Schedularpage(driver);
 
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		try {
 			schedulepage.createschedule(4,1,2);//(mode,loopcount,minutesgap between schedules)
-		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
+	
+			readwrite.closePort();
+			} catch (IOException | InterruptedException e) {
 			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
-		readwrite.closePort();
 	}
 	
 //	@Test

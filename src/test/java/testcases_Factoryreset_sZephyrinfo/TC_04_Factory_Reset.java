@@ -1,5 +1,7 @@
 package testcases_Factoryreset_sZephyrinfo;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,8 +27,8 @@ public class TC_04_Factory_Reset extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - SignUp with already existing username";
-		testDescription = "Try to Sign Up with already registered username";
+		testCaseName = "TC04_FactoryReset";
+		testDescription = "After paired with device Try to do factory reset using via app";
 	}
 
 
@@ -44,32 +46,39 @@ public class TC_04_Factory_Reset extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 
-		for(int i=0;i<2;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(1000);
-		}
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
 
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
 		devicemenupage.AddDevicePagedisplayed();
 		 readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 

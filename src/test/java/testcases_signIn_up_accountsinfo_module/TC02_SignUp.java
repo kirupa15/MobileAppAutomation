@@ -1,5 +1,7 @@
 package testcases_signIn_up_accountsinfo_module;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,7 +27,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02_Sign Up with new username";
+		testCaseName = "TC02_SignUp";
 		testDescription = "Try to Sign Up with new username";
 	}
 
@@ -38,15 +40,15 @@ public class TC02_SignUp extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
 		signuppage.uninstall_reinstall();
-		landingpage.clickSignUpButton();
+		landingpage.clickSignUpLink();
 		double rand=Math.random()*10000000;
 		signuppage.enterUserName("testuser"+(int)rand);
 		signuppage.enterEmailId("testuser"+(int)rand+"@gmail.com");
@@ -56,6 +58,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		signuppage.checkPpContent("IINVSYS Private Limited (here is referred as IINVSYS or Company)");
 		signuppage.checkPpContactUsContent("For questions regarding our Privacy Policy, please contact our customer care via email at support@iinvsys.com");
 		signuppage.clicktcPopupCloseButton();
+		signuppage.clickSignUpTCCheckBox();
 		signuppage.clickSignUpButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		readwrite.closePort();
@@ -63,6 +66,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 
 	}

@@ -233,11 +233,11 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 
 	public void clickResetDeviceButton() {
-		clickbyXpath(resetDeviceButtom, " Pairing Mode Check Box ");
+		clickbyXpath(resetDeviceButtom, "Reset Button clicked successfully ");
 	}
 	
 	public void clickResetConfirmationYesButton() {	
-		clickbyXpath(resetConfirmationYesButton, " Pairing mode Next Button ");
+		clickbyXpath(resetConfirmationYesButton, "Reset confirmation button clicked successfully");
 	}
 	public void clickszephyr_info_button() {	
 		clickbyXpath(szephyr_info_button, " Szphyr_info_menubar");
@@ -250,11 +250,11 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 	
 	public void clickLogoutButtonAfterReset() {
-		clickbyXpath(logoutButtonAfterReset, " Logout button ");
+		clickbyXpath(logoutButtonAfterReset, " Logout button");
 	}
 	
 	public void clickLogoutConfirmationButton() {
-		clickbyXpath(logoutConfirmationButton, " Logout button ");
+		clickbyXpath(logoutConfirmationButton, " Logout confirmation button ");
 	}
 	public void ClickSzephyrInfoButton() {	
 		clickbyXpath(ClickSzephyrInfoButton, " Szephyr Info ");

@@ -1,5 +1,9 @@
 package testcases_signIn_up_accountsinfo_module;
 
+import static org.testng.Assert.fail;
+
+import java.util.Properties;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,11 +29,10 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06 - Login, Pair and logout from device";
-		testDescription = "Check after Login, Pair and logout from device is working";
+		testCaseName = "TC06_SignIN_Logout";
+		testDescription = "After Login, Pair with device and logout from device is working";
 	}
 	
-
 	@Test
 	public void login() throws Exception {
 		initAndriodDriver();
@@ -41,16 +44,16 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		homepage=new HomePage(driver);
 		signuppage =new SignUpPage(driver);
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser007@gmail.com");
+		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");
@@ -74,12 +77,13 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButtonAfterReset();
 		devicemenupage.clickLogoutConfirmationButton();
-		signuppage.clickSignUpButton();
+		landingpage.clickSignUpLink();
 		readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 		

@@ -7,10 +7,14 @@ import java.time.Duration;
 import org.openqa.selenium.WebElement;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
@@ -22,10 +26,17 @@ import wrappers.GenericWrappers;
 public class AddDevicePage extends GenericWrappers {
 
 	public AndroidDriver driver;
-
+	
+	
 	public String userName=loadProp().getProperty("USERNAME"); 
 	public String emaId=loadProp().getProperty("EMAILID"); 
 	public String wifiPassword= loadProp().getProperty("WIFIPASSWORD"); 
+	public String deviceDetailsUpdated= loadProp().getProperty("deviceDetailsUpdated"); 
+	public String devicesettingsupdatesuccess= loadProp().getProperty("deviceSettingsUpdateSuccess"); 
+	public String   DeviceRemovedSuccessfully= loadProp().getProperty("DeviceRemovedSuccessfully"); 
+	public String  YourDeviceResetSuccessfully= loadProp().getProperty("YourDeviceResetSuccessfully"); 
+	public String  RouterAddedSuccessfully= loadProp().getProperty("RouterAddedSuccessfully"); 
+	
 	
 	
 	// Locate all elements on the page
@@ -224,6 +235,21 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/ExitPairing_Ok_Button\"]")
 	private WebElement exitPairingok_popup;
 
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Device details updated successfully!\"]")
+	private WebElement sZhephyrInfotoast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Device settings updated successfully!\"]")
+	private WebElement Devicesettingstoast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Device removed successfully\"]")
+	private WebElement deviceremovedtoast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Your device reset successfully\"]")
+	private WebElement deviceresettoast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Router added successfully\"]")
+	private WebElement routeraddedsuccessfullytoast;
+	
 
 	// Constructor to initialize the driver and instantiate elements using
 
@@ -553,13 +579,14 @@ public void aCBrandNameClick ()
 		initiatepairing(mode);
 	}
 
+	@Parameters({"os"})
 	public void verifysigninpage() throws Exception {
 
 		  // Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
 		Thread.sleep(5000);
 		if (isElementDisplayed(blePermissionOkButton)) {
-			clickByXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
+			clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 		checkappinforeground();
 		}
 		if (isElementDisplayed(signInButton)) {
@@ -574,11 +601,12 @@ public void aCBrandNameClick ()
 			otppage.submitButton();
 
 		} else {
-			System.out.println("App is already Installed and opening the previous state");
+			System.out.println("App is already logged in and opening the previous state");
 		}
 	}
 
 	public void initiatepairing(int mode) throws Exception {
+		
 		if (isElementDisplayed(locationpermissionpopup)) {
 			clickbyXpath(locationpermissionpopup, "Location pop-up");
 
@@ -587,31 +615,17 @@ public void aCBrandNameClick ()
 				clickbyXpath(devicepermission, "Device permission pop-up");
 			}
 			if (isElementDisplayed(blePermissionOkButton)) {
-				clickByXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
-			}
-			if (isElementDisplayed(acturnoffdesc)) {
-				System.out.println("Device is already paired removing the device..");
-				homepage.clickMenuBarButton();
-				devicemenupage.clickMenuBarRemoveDevice();
-				devicemenupage.clickRemoveDevicePopupYesButton();
-				Thread.sleep(5000);
-				if (isElementDisplayed(alertTitle)) {
-					String text = alertTitle.getText();
-					System.out.println(text+ "  Alert pop-up displayed");
-					clickByXpath(alertok, "Alert ok button");
-					proceedToAddDevice(mode);
-					
-				}
+				clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			}
 
-			// Proceed to add the device if no further permission popups
-		} else {
-			// No location permission popup, proceed to add the device
+			}
+
 			proceedToAddDevice(mode);
-		}
 	}
 
-	//	mode=1-Ble without router ,2-Ble with router,3-Smartconfig,
+
+	//	mode=1-Ble without router ,2-Ble with router,3-Smartconfig,4-wifi with roouter ,5 wifi without router
+	 logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 
 	public void proceedToAddDevice(int mode) throws Exception {
 		if (isElementDisplayed(addDeviceButton)) {
@@ -622,6 +636,7 @@ public void aCBrandNameClick ()
 
 			switch (mode) {
 			case 1:
+				
 				turnOnBT();
 				startPairingButton();
 				if (isElementDisplayed(BleOKpopup)) {
@@ -650,11 +665,7 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
-					logReadandWrite readwrite=new logReadandWrite("COM4");
 					
-//					readwrite.openPort();
-//					readwrite.read();
-//					Thread.sleep(2000);
 					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
@@ -695,11 +706,6 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
-					logReadandWrite readwrite=new logReadandWrite("COM4");
-					
-//					readwrite.openPort();
-//					readwrite.read();
-//					Thread.sleep(2000);
 					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
@@ -710,6 +716,7 @@ public void aCBrandNameClick ()
 				break;
 			case 3:
 				homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+				readwrite.write("reboot\r");
 				turnOffBT();
 				startPairingButton();
 				if (isElementDisplayed(BleOKpopup)) {
@@ -756,11 +763,6 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
-					logReadandWrite readwrite=new logReadandWrite("COM4");
-					
-//					readwrite.openPort();
-//					readwrite.read();
-//					Thread.sleep(2000);
 					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
@@ -807,12 +809,7 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
-//					logReadandWrite readwrite=new logReadandWrite("COM4");
-					
-//					readwrite.openPort();
-//					readwrite.read();
-//					Thread.sleep(2000);
-//					readwrite.write("factory_reset\r");
+					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
 					proceedToAddDevice(mode);
@@ -825,7 +822,6 @@ public void aCBrandNameClick ()
 
 							
 					Thread.sleep(5000);
-					@SuppressWarnings("deprecation")
 					WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
 							"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
 									+ serialno + "\"))"));
@@ -854,7 +850,6 @@ public void aCBrandNameClick ()
 					// Now click the OK button once it is visible and clickable
 
 
-					//					driver.navigate().back();
 
 				} else {
 					System.out.println("unable to connect with device hotspot");
@@ -901,6 +896,7 @@ public void aCBrandNameClick ()
 
 					clickbyXpath(Retrypageretrybutton, "retrypage");
 					
+					readwrite.write("factory_reset\r");
 					driver.navigate().back();
 					clickbyXpath(exitPairingok_popup, "clicking on exit pop-up ");
 					proceedToAddDevice(mode);
@@ -975,7 +971,7 @@ public void aCBrandNameClick ()
 			if (isElementDisplayed(alertTitle)) {
 				String text = alertTitle.getText();
 				System.out.println(text+ "  Alert pop-up displayed");
-				clickByXpath(alertok, "Alert ok button");
+				clickbyXpath(alertok, "Alert ok button");
 				proceedToAddDevice(mode);
 				
 			}else {
@@ -993,8 +989,30 @@ public void aCBrandNameClick ()
 		driver.executeScript("mobile: hideKeyboard", params);
 	}
 
-
 	
+	
+public void checkdevicedetailstoast() {
+
+	verifyTextContainsByXpath(sZhephyrInfotoast, deviceDetailsUpdated, "Device details updated successfully! toast");
+}
+public void checkdevicesettingstoast() {
+	
+	verifyTextContainsByXpath(Devicesettingstoast, devicesettingsupdatesuccess, "Device settings updated successfully! toast");
+}
+public void checkdeviceremovedtoast() {
+	
+	verifyTextContainsByXpath(deviceremovedtoast,DeviceRemovedSuccessfully, "  DeviceRemovedSuccessfully toast");
+}
+
+public void checkdeviceresettoast() {
+	
+	verifyTextContainsByXpath(deviceresettoast,YourDeviceResetSuccessfully, "  YourDeviceResetSuccessfully toast");
+}
+public void checkrouteraddedsuccessfultoast() {
+	
+	verifyTextContainsByXpath(routeraddedsuccessfullytoast,RouterAddedSuccessfully, " RouterAddedSuccessfully toast");
+}
+		
 
 
 }

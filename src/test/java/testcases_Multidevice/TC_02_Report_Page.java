@@ -29,8 +29,8 @@ public class TC_02_Report_Page extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC02_Report Page";
+		testDescription = "After paired with device ,go to menubar report page and do functional testing for all field";
 	}
 
 	@Test
@@ -46,9 +46,9 @@ public class TC_02_Report_Page extends MobileAppWrappers {
 		devicemenupage = new DeviceMenuPage(driver);
 		reportpage= new Reportpage(driver);
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		

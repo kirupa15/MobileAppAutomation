@@ -46,6 +46,12 @@ public class Reporter extends MobileAppWrappers {
 			throw new RuntimeException("FAILED");
 		}else if(tcstatus.toUpperCase().equals("INFO")){
 			test.log(Status.INFO, desc);
+		}else if(tcstatus.toUpperCase().equals("SKIP")) {
+			test.skip(desc,MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+number+".jpg").build());
+//			throw new RuntimeException("SKIPPED");
+		}
+		else if(tcstatus.toUpperCase().equals("FAIL&RUN")) {
+		test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+number+".jpg").build());
 		}
 	}
 

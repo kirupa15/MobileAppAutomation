@@ -1,5 +1,7 @@
 package testcases_connectivity;
 
+import static org.testng.Assert.fail;
+
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -31,8 +33,8 @@ public class  SmartConfig extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_3_TC_01,CONNECTIVITY_MOD_3_TC_02,CONNECTIVITY_MOD_3_TC_03 to CONNECTIVITY_MOD_3_TC_09 ";
-		testDescription = "Smartconfig pairing";
+		testCaseName = "SmartCongif";
+		testDescription = "STA & Remote Connectivity check "+"<br>"+" Check the STA & Remote connectivity stablity after app kill and re-open "+"<br>"+"continusly 5 time turn the relay via app ON/OFF that time check the Connectivity";
 	}
 	
 
@@ -49,10 +51,11 @@ public class  SmartConfig extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
@@ -62,10 +65,12 @@ public class  SmartConfig extends MobileAppWrappers {
 		turnOffBT();
 		
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		Thread.sleep(10000);
+		adddevicepage.checkdevicesettingstoast();
+		Thread.sleep(2000);
 		homepage.clickONOFFButton();
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		homepage.VerifyONdesc();
 		Thread.sleep(5000);
 		/*for(int i=0;i<2;i++) {
@@ -136,12 +141,14 @@ public class  SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
 		devicemenupage.AddDevicePagedisplayed();
 		 readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 	 

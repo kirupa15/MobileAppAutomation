@@ -1,6 +1,10 @@
 
 package testcases_connectivity;
 
+import static org.testng.Assert.fail;
+
+import java.util.Properties;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -30,8 +34,8 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "CONNECTIVITY_MOD_1_TC_01-BLE connectivity establishment,CONNECTIVITY_MOD_1_TC_02-APP kill and re Open,CONNECTIVITY_MOD_1_TC_03-5 times App ON/OFF";
+		testCaseName = "BlewithoutRouter";
+		testDescription = "CONNECTIVITY_MOD_1_TC_01-BLE connectivity establishment"+ "<br>"+"CONNECTIVITY_MOD_1_TC_02-APP kill and re Open "+ "<br>"+"CONNECTIVITY_MOD_1_TC_03-5 times App ON/OFF";
 	}
 	
 
@@ -49,40 +53,53 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
 	
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 			
 		
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
-		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
 		
-		Thread.sleep(1000);
-		}
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 		
 //		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
         
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		for(int i=0;i<2;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(1000);
-			}
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.killandopen();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
@@ -91,27 +108,37 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 //		///CONNECTIVITY_MOD_1_TC_03--5 times App ON/OFF////////////////////////////////////////////////////////////////
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
-		for(int i=0;i<11;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(4000);
-		}
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
 		devicemenupage.AddDevicePagedisplayed();
+		
 		 readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 }

@@ -26,8 +26,8 @@ public class TC_07_Multidevice_Wifi_Without_Router extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE Without Router";
-		testDescription = "Sign In and Start Pairing BLE without Router mode";
+		testCaseName = "TC07_Multidevice Wifi Without Router";
+		testDescription = "Check Pairing with device Wifi Without Router mode for multi device";
 	}
 	
 	@Test
@@ -39,9 +39,9 @@ public class TC_07_Multidevice_Wifi_Without_Router extends MobileAppWrappers {
 		loginpage = new SignInPage(driver);
 
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		

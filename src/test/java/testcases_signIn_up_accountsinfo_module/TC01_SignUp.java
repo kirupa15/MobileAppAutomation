@@ -1,5 +1,7 @@
 package testcases_signIn_up_accountsinfo_module;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -26,7 +28,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - SignUp with already existing username";
+		testCaseName = "TC01_SignUp";
 		testDescription = "Try to Sign Up with already registered username";
 	}
 
@@ -40,15 +42,15 @@ public class TC01_SignUp extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("button_press\r");
 		
 		signuppage.uninstall_reinstall();
-		landingpage.clickSignUpButton();
+		landingpage.clickSignUpLink();
 		
 		signuppage.enterUserName("testuser");
 		signuppage.enterEmailId("testuser@gmail.com");
@@ -61,6 +63,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 

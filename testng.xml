@@ -1,10 +1,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="MobilAppAutomation" guice-stage="DEVELOPMENT">
+
+    <listeners>
+        <listener class-name="utils.RetryListener" />
+    </listeners>
   <test thread-count="5" name="Default test" verbose="2">
+  
      <packages>
 		
+		
+		<package name="testcases_signIn_up_accountsinfo_module" />
+		<package name="testcases_pairing" />
 		<package name="testcases_connectivity" />
-    </packages>
+		<package name="testcases_deviceSettings" />
+		<package name="testcases_Factoryreset_sZephyrinfo" />
+		
+   </packages>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
 

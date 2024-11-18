@@ -1,5 +1,7 @@
 package testcases_signIn_up_accountsinfo_module;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -25,8 +27,8 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - Sign In with Valid User";
-		testDescription = "Sign In into app with Valid user details";
+		testCaseName = "TC04 - SignIn_Valid_User";
+		testDescription = "Try to Sign In into app with Valid user details but invalid OTP ";
 	}
 	
 
@@ -38,10 +40,10 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
@@ -63,6 +65,7 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 	

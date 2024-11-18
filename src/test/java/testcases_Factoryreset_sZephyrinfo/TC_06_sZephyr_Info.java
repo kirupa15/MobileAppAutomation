@@ -1,5 +1,7 @@
 package testcases_Factoryreset_sZephyrinfo;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -22,75 +24,84 @@ public class TC_06_sZephyr_Info extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
-	
+
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06 - Change the few values in the AC Info page and check user can able to save the updated values";
+		testCaseName = "TC06_Szephyr Info";
 		testDescription = " User should be allowed to edit and save the AC Info page values without any issue\r\n"
 				+ "";
 	}
 
 
 
-@Test
-public void removerepair() throws Exception {
-	initAndriodDriver();
-	pairBlewithoutRouter();
-}
+	@Test
+	public void removerepair() throws Exception {
+		initAndriodDriver();
+		pairBlewithoutRouter();
+	}
 
 
-String modelname ="G20";
-String capacity="2";
-public void pairBlewithoutRouter() throws Exception {
-	adddevicepage= new AddDevicePage(driver);
-	homepage = new HomePage(driver);
-	devicemenupage= new DeviceMenuPage(driver);
-	
-	
-	logReadandWrite readwrite=new logReadandWrite("COM4");
-	try {
-	readwrite.openPort();
-	readwrite.read();
-	Thread.sleep(2000);
-	readwrite.write("factory_reset\r");
-	
-	adddevicepage.pair(1);
-	//adddevicepage.ClickOkButtonBLEpopUP();
-	adddevicepage.ClickBrandName();
-	adddevicepage.ClickSelectName();
-	adddevicepage.enterAcModelName("G20");
-	adddevicepage.enterCapacity("2");
-	adddevicepage.ClickRoomSizeButton();
-	adddevicepage.SelectRoomSizeOption();
-	Thread.sleep(1000);
-	adddevicepage.clickNextButtonsZephyrInfo();
-	adddevicepage.clickSubmitButtonDeviceSetting();
-	Thread.sleep(1000);
-	for(int i=0;i<2;i++) {
-	homepage.clickONOFFButton();
-	Thread.sleep(1000);
+	String modelname ="G20";
+	String capacity="2";
+	public void pairBlewithoutRouter() throws Exception {
+		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+
+
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+			readwrite.openPort();
+//			readwrite.read();
+			Thread.sleep(2000);
+			readwrite.write("factory_reset\r");
+
+			adddevicepage.pair(1);
+			//adddevicepage.ClickOkButtonBLEpopUP();
+			adddevicepage.ClickBrandName();
+			adddevicepage.ClickSelectName();
+			adddevicepage.enterAcModelName("G20");
+			adddevicepage.enterCapacity("2");
+			adddevicepage.ClickRoomSizeButton();
+			adddevicepage.SelectRoomSizeOption();
+			Thread.sleep(1000);
+			adddevicepage.clickNextButtonsZephyrInfo();
+			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickSubmitButtonDeviceSetting();
+			adddevicepage.checkdevicesettingstoast();
+			Thread.sleep(1000);
+			homepage.clickONOFFButton();
+			Thread.sleep(2000);
+			homepage.VerifyONdesc();
+			
+			homepage.clickONOFFButton();
+			Thread.sleep(2000);
+			homepage.VerifyOFFdesc();
+
+			homepage.clickMenuBarButton();
+			devicemenupage.ClickSzephyrInfoButton();
+			Thread.sleep(1000);
+			devicemenupage.CheckSzephyrInfPageBrandName();
+			devicemenupage.CheckSzephyrInfPageModelName();
+			devicemenupage.CheckSzephyrInfPageCapacity();
+			devicemenupage.CheckSzephyrInfPageRoomSize();
+			devicemenupage.clickDeviceSettingsBackButton();
+			Thread.sleep(1000);
+
+
+			homepage.clickMenuBarButton();
+			devicemenupage.clickDeviceSettingsButton();
+			devicemenupage.clickResetDeviceButton();
+			devicemenupage.clickResetConfirmationYesButton();
+			adddevicepage.checkdeviceresettoast();
+			devicemenupage.AddDevicePagedisplayed();
+			readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
-	
-	homepage.clickMenuBarButton();
-	devicemenupage.ClickSzephyrInfoButton();
-	Thread.sleep(1000);
-	devicemenupage.CheckSzephyrInfPageBrandName();
-	devicemenupage.CheckSzephyrInfPageModelName();
-	devicemenupage.CheckSzephyrInfPageCapacity();
-	devicemenupage.CheckSzephyrInfPageRoomSize();
-	Thread.sleep(1000);
-	
-	
-	devicemenupage.clickDeviceSettingsButton();
-	devicemenupage.clickResetDeviceButton();
-	devicemenupage.clickResetConfirmationYesButton();
-	devicemenupage.AddDevicePagedisplayed();
-	 readwrite.closePort();
-	}
-	catch (Exception e) {
-		e.printStackTrace();
-		readwrite.closePort();
-	}
-}
 
 }

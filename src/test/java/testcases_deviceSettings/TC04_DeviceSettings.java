@@ -1,5 +1,7 @@
 package testcases_deviceSettings;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -18,7 +20,7 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - DeviceSettings";
+		testCaseName = "TC04_DeviceSettings";
 		testDescription = "Pairing Time Change the Device Setting Value And Check MenuBar Device Settings Page Reflect The Same";
 	}
 	
@@ -36,21 +38,22 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		devicemenupage.clickPairingTimeQuietLEDEnable();
 		devicemenupage.clickInfinitePowerToggle();
 		devicemenupage.clickHoursPlusButton();
 		Thread.sleep(1000);
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		
+		adddevicepage.checkdevicesettingstoast();
 		
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
@@ -73,16 +76,17 @@ public class TC04_DeviceSettings extends MobileAppWrappers {
 			devicemenupage.clickMenuBarRemoveDevice();
 			Thread.sleep(1000);
 			devicemenupage.clickRemoveDevicePopupNoButton();
-			homepage.clickMenuBarButton();
-			devicemenupage.clickMenuBarRemoveDevice();
-			devicemenupage.clickRemoveDevicePopupYesButton();
-			Thread.sleep(2000);
-			devicemenupage.AddDevicePagedisplayed();
+			 homepage.clickMenuBarButton();
+				devicemenupage.clickMenuBarRemoveDevice();
+				devicemenupage.clickRemoveDevicePopupYesButton();
+				adddevicepage.checkdeviceremovedtoast();
+				devicemenupage.AddDevicePagedisplayed();
 			 readwrite.closePort();
 		}
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	}
 

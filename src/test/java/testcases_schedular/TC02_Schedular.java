@@ -34,7 +34,7 @@ public class TC02_Schedular extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairing BLE With Router";
+		testCaseName = "TC02_Schedular";
 		testDescription = "Sign In and Start Pairing BLE with Router mode,Remove router and check ble connectivity ";
 	}
 
@@ -48,9 +48,9 @@ public class TC02_Schedular extends MobileAppWrappers {
 		devicemenupage = new DeviceMenuPage(driver);
 		schedulepage = new Schedularpage(driver);
 
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");	
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		schedulepage.createschedule(5, 1, 1);// (2,1,1)select mode,1 time only the loop run,one min gap between each schedules

@@ -1,5 +1,7 @@
 package testcases_connectivity;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -29,8 +31,8 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_00,CONNECTIVITY_MOD_0_TC_02,CONNECTIVITY_MOD_0_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "UIConnectivity";
+		testDescription = "In Ble without router mode ,change sZephyr info values ,click on submit button and check for same in Szephyr info page";
 	}
 	
 
@@ -47,10 +49,10 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
-		readwrite.read();
+//		readwrite.read();
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
@@ -63,7 +65,9 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage.roomSizeselect();
 		adddevicepage.roomSizesmall();
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
@@ -82,6 +86,8 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	    devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 		//CONNECTIVITY_MOD_0_TC_02//
 		
@@ -102,12 +108,15 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	    Thread.sleep(5000);
 	    devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		adddevicepage.verifyAddDevicePage("Adddevice page");
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
+//		adddevicepage.verifyAddDevicePage("Adddevice page");
 		 readwrite.closePort();
 	}
 	catch (Exception e) {
 		e.printStackTrace();
 		readwrite.closePort();
+		fail("Failed due to this exception", e);
 	}
 	}
 }
