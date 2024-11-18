@@ -14,6 +14,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.GetAppLog;
 import utils.PassSTComment;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
@@ -43,21 +44,22 @@ public class TC01_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
+		GetAppLog applog= new GetAppLog();
+		applog.startLogProcess();
 		
-		logReadandWrite readwrite=new logReadandWrite("COM4");
-		readwrite.openPort();
-		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("button_press\r");
+		/*
+		 * logReadandWrite readwrite=new logReadandWrite("COM4"); readwrite.openPort();
+		 * readwrite.read(); Thread.sleep(2000); readwrite.write("button_press\r");
+		 */
 		landingpage.clickSignUpButton();
 		
 		signuppage.enterUserName("testuser");
 		signuppage.enterEmailId("testuser@gmail.com");
 		signuppage.clickSignUpTCCheckBox();
 		signuppage.clickSignUpButton();
-		readwrite.write("button_press\r");
+		//readwrite.write("button_press\r");
 		signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
-		readwrite.closePort();
+		//readwrite.closePort();
 	}
 
 }
