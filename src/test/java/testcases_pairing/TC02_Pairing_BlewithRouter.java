@@ -1,5 +1,7 @@
 package testcases_pairing;
 
+import static org.testng.Assert.fail;
+
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -8,6 +10,7 @@ import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import pages.OtpPage;
 import wrappers.MobileAppWrappers;
 
@@ -23,8 +26,8 @@ public class TC02_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03 - Pairinfg BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC02 - Pairing BLE With Router";
+		testDescription = "After pairing check ";
 	}
 	
 
@@ -43,20 +46,58 @@ public class TC02_Pairing_BlewithRouter extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
-		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
-		Thread.sleep(1000);
-		}
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+		adddevicepage.pair(2);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		readwrite.closePort();
+		}
+		catch (Exception e) {
+			readwrite.closePort();
+//			e.printStackTrace();
+			fail("Failed due to this exception", e);
+		}
 	}
 
 }

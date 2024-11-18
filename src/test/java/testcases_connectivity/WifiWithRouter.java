@@ -1,13 +1,10 @@
 package testcases_connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.testng.Assert.fail;
 
-import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.appium.java_client.MobileBy;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
@@ -17,6 +14,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -34,78 +32,43 @@ public class  WifiWithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_5_TC_01,CONNECTIVITY_MOD_5_TC_02,CONNECTIVITY_MOD_5_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "WifiWithRouter";
+		testDescription = "App kill and re-open and check the STA connectivity ";
 	}
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-//		login();
-//		for(int i=0;i<1;i++) {
-//		pairBlewithoutRouter();
-//		}
+	public void removerepair() throws Exception {
+
 		
-		adddevicepage= new AddDevicePage(driver);
-		homepage = new HomePage(driver);
-		devicemenupage= new DeviceMenuPage(driver);
-		szephyrinfoPage= new Szephyr_info_Page(driver);
-		landingpage=new LandingPage(driver);
-		loginpage=new SignInPage(driver);
-		signpupage=new SignUpPage(driver);
-		
-		try {
-			adddevicepage.pair(4);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
-
-	public void login() {
-		
-		
-		landingpage.clickSignInButton();
-		signpupage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
-	}
-		
 	
 	
-	@SuppressWarnings("deprecation")
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
-		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
+	
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
-		homepage.disableBLE();
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		//driver.navigate().back();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
-		//adddevicepage.clickOkButtonBLEpopUP();
+		
+		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		
-		/*for(int i=0;i<2;i++) {
-			Thread.sleep(1000);
-			}*/
 		
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.clickONOFFButton();
@@ -115,5 +78,17 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		
+		 homepage.clickMenuBarButton();
+			devicemenupage.clickMenuBarRemoveDevice();
+			devicemenupage.clickRemoveDevicePopupYesButton();
+			adddevicepage.checkdeviceremovedtoast();
+			devicemenupage.AddDevicePagedisplayed();
+		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 	}

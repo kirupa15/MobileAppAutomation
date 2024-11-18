@@ -1,7 +1,6 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.testng.Assert.fail;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -12,6 +11,8 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
@@ -21,22 +22,32 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 	HomePage homepage;
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
+	SignUpPage signuppage;
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC05 - Sign Up or Sign In, enter valid OTP";
+		testCaseName = "TC05 - SignIn_SuccessFlow";
 		testDescription = "During Sign Up or Sign In, enter valid OTP";
 	}
 	
 
 	@Test
-	public void login() throws InterruptedException, FileNotFoundException, IOException {
+	public void login() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		adddevicepage= new AddDevicePage(driver);
+		signuppage =new SignUpPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();
@@ -47,7 +58,13 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		adddevicepage.verifyAddDevicePage("Add Device");
-		
+		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 	
 }

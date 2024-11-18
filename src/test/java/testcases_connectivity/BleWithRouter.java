@@ -1,7 +1,8 @@
 
 package testcases_connectivity;
 
-import org.openqa.selenium.TimeoutException;
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -13,6 +14,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -30,35 +32,18 @@ public class  BleWithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "BLE without Router mode";
+		testCaseName = "BlewithRouter";
+		testDescription = "CONNECTIVITY_MOD_2_TC_02-BLE connectivity establishment"+"<br>"+"CONNECTIVITY_MOD_2_TC_03-APP kill and re Open"+"<br>"+"CONNECTIVITY_MOD_1_TC_04-5 times App ON/OFF";
 	}
 	
-
+	
 	@Test
 	public void removerepair() throws Exception {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
-		signUppage= new SignUpPage(driver);
-		
-		landingpage.clickSignInButton();
-		signUppage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
-	}
+
 	
 	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
@@ -66,16 +51,19 @@ public class  BleWithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.enterWiFiPassword("12345678908");
-		adddevicepage.clickEnterButton();
+
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
@@ -87,56 +75,73 @@ public class  BleWithRouter extends MobileAppWrappers {
 		for(int i=0;i<5;i++) {
 			homepage.clickONOFFButton();
 		}
+		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
+        devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 		
 		///CONNECTIVITY_MOD_2_TC_2--Kill and Open///
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		for(int i=0;i<2;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(1000);
-			}
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.disableBLE();
 		Thread.sleep(5000);
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.killandopen();
+		adddevicepage.ClickOkButtonBLEpopUP();
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		Thread.sleep(5000);
 		///CONNECTIVITY_MOD_2_TC_3--      5 Times ON/OFF ///
 		for(int i=0;i<5;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
 			}
+		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
+        devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 		///CONNECTIVITY_MOD_2_TC_4--   Check BLE Connectivity//
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
+		
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
@@ -161,6 +166,20 @@ public class  BleWithRouter extends MobileAppWrappers {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 				}
+		 
+		 homepage.clickMenuBarButton();
+			devicemenupage.clickMenuBarRemoveDevice();
+			devicemenupage.clickRemoveDevicePopupYesButton();
+			adddevicepage.checkdeviceremovedtoast();
+			devicemenupage.AddDevicePagedisplayed();
+			
+		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 }
 

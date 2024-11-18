@@ -1,7 +1,6 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.testng.Assert.fail;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -13,6 +12,7 @@ import pages.LandingPage;
 import pages.SignInPage;
 import pages.OtpPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC03_SignIn_Flow extends MobileAppWrappers {
@@ -25,26 +25,40 @@ public class TC03_SignIn_Flow extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03_Sign In with unregistered username";
+		testCaseName = "TC03_SignIn_Flow";
 		testDescription = "Try to Sign In with unregistered username";
 	}
 
 
 	@Test
-	public void signIn() throws FileNotFoundException, IOException, InterruptedException {
+	public void signIn() throws Exception {
 		initAndriodDriver();
 		signinpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		double rand=Math.random()*100000000;
 		signinpage.enterUserName("user"+(int)rand);
 		signinpage.clickSignInButton();
 		signinpage.checkUserNameNotFoundToast("User Not Found");
 
-
+		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 
 }

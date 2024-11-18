@@ -1,17 +1,26 @@
 package testcases_signIn_up_accountsinfo_module;
 
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.MobileBy;
 import pages.AccountsInfoPage;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import pages.OtpPage;
 import wrappers.MobileAppWrappers;
+
+import static org.testng.Assert.fail;
+
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -29,13 +38,18 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC_01_Account_Info";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		//check login username and Accounts info username are same or not 
+		//check for language selection 
+		//pair with device try to del account and check for popup and try to remove device and try to del acnt and check add device page .
+
+		testDescription = "change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
 	}
 
 
 	@Test
 	public void removerepair() throws Exception {
-			pairBlewithoutRouter();
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 
 
@@ -45,46 +59,40 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 		accountinfopage= new AccountsInfoPage(driver);
 		devicesettingpage= new DeviceMenuPage(driver);
 
-		adddevicepage.pair(1);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickSubmitButtonDeviceSetting();
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+			readwrite.openPort();
+//			readwrite.read();
+			Thread.sleep(2000);
+			readwrite.write("factory_reset\r");
 
-		for(int i=0;i<2;i++) {
+			adddevicepage.pair(1);
+			adddevicepage.clickNextButtonsZephyrInfo();
+			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickSubmitButtonDeviceSetting();
+			adddevicepage.checkdevicesettingstoast();
+
+
+
+
 			homepage.clickONOFFButton();
-			Thread.sleep(1000);
+			Thread.sleep(2000);
+			homepage.VerifyONdesc();
+			
+			homepage.clickONOFFButton();
+			Thread.sleep(2000);
+			homepage.VerifyOFFdesc();
+
+			accountinfopage.checkAccountsinfousername_email_Language();
+
+			readwrite.closePort();
 		}
-
-		homepage.clickMenuBarButton();
-		accountinfopage.clickAccountsInfoButton();
-		accountinfopage.clickSelectLanguageButton();
-		accountinfopage.clickSelectLanguageTamilButton();
-		Thread.sleep(2000);
-		accountinfopage.clickAccountInfoBackButton();
-		homepage.clickMenuBarButton();
-		devicesettingpage.clickDeviceSettingsButton();
-		devicesettingpage.checkcontentlowvoltage();
-		devicesettingpage.clickDevicesettingsbackButton();
-		homepage.clickMenuBarButton();
-		accountinfopage.clickAccountsInfoButton();
-		//		accountinfopage.clickSelectLanguageButton();
-		accountinfopage.clickSelectLanguageDropDownButton();
-		accountinfopage.clickSelectLanguageEnglishButton();
-		//		Thread.sleep(1000);
-		//			homepage.clickMenuBarButton();
-		//			accountinfopage.clickAccountsInfoButton();
-		accountinfopage.clickDeleteAccountButton();
-		accountinfopage.clickAccountDeleteButton();
-		accountinfopage.clickAccountInfoBackButton();
-		homepage.clickMenuBarButton();
-		accountinfopage.Clickremovedevicebutton();
-		accountinfopage.clickRemoveDeviceYESButton();
-		accountinfopage.Clickmenubaricon();
-		accountinfopage.Clickaccountinfo();
-		accountinfopage.Clickaccountdelete();
-		accountinfopage.Clickaccountdeleteyes();
-
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
-
 
 
 }	

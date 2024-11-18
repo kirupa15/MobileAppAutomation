@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.appmanagement.ApplicationState;
 import wrappers.GenericWrappers;
 
 public class HomePage extends GenericWrappers{
@@ -23,8 +24,18 @@ public class HomePage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_sharelog, com.szephyr:id/menu_text_sharelog\"]")
 	private WebElement sharelog ;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr and AC turned ON\"]")
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_StandByIndication\"]")
 	private WebElement Acturnondesc;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Please ensure sZephyr is switched ON prior to operating your AC remote\"]")
+	private WebElement ActurnOFFdesc;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Searching for sZephyr to establish connection\"]")
+	private WebElement Acofflinedesc;
+	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_StandByIndication\"]")
+	private WebElement Acturnonwithloaddesc;
+	
 	
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
@@ -52,7 +63,11 @@ public class HomePage extends GenericWrappers{
 	 
 	 public void VerifyONdesc()
 	 {
-	  verifyTextContainsByXpath(Acturnondesc, "sZephyr and AC turned ON","Home Page");
+	  verifyTextContainsByXpath(Acturnondesc, "Your AC unit is either in standby or powered OFF at the moment","Device on description ");
+	 }
+	 public void VerifyOFFdesc()
+	 {
+		 verifyTextContainsByXpath(ActurnOFFdesc, "Please ensure sZephyr is switched ON prior to operating your AC remote","Device off description");
 	 }
 	   public void killandopen() 
 	   {
@@ -76,10 +91,74 @@ public class HomePage extends GenericWrappers{
 		   disableWiFi();
 	   }
 	   
-	   public void WifiSwitch() 
+	   public void WifiSwitch(String Wifiname,String Wifipassword) throws Exception 
 	   {
 		   
-		   connectToWiFi("realme", "12345222");
+		   connectToWiFi(Wifiname, Wifipassword);
+			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
+		   if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+				driver.activateApp("com.iinvsys.szephyr"); 
+				// Bring it back
+				Thread.sleep(3000);
+			}
 	   }
 
+//	   String description[]={"Searching for sZephyr to establish connection","Please ensure sZephyr is switched ON prior to operating your AC remote","Your AC unit is either in standby or powered OFF at the moment","sZephyr and AC turned ON"};
+	   
+//	   public void checkforDeviceOffstateDescription() {
+//		   
+//		   String Offstatedescription="Please ensure sZephyr is switched ON prior to operating your AC remote";
+//		   String text = ActurnOFFdesc.getText();
+//	
+//	if (text.contains(Offstatedescription)) {
+//		System.out.println("Device is still present ");
+//		
+//	}
+//	else {
+//		System.out.println("Device not found");
+//	
+//}
+//	}
+//	   public void checkforDeviceOnstateDescriptionwithoutload() {
+//		   
+//		   String Offstatedescription="Your AC unit is either in standby or powered OFF at the moment";
+//		   String text = Acturnondesc.getText();
+//		   
+//		   if (text.contains(Offstatedescription)) {
+//			   System.out.println("Device is still present ");
+//			   
+//		   }
+//		   else {
+//			   System.out.println("Device not found");
+//			   
+//		   }
+//	   }
+//	   public void checkforDeviceOnstateDescriptionwithload() {
+//		   
+//		   String Offstatedescription="sZephyr and AC turned ON";
+//		   String text = ActurnOFFdesc.getText();
+//		   
+//		   if (text.contains(Offstatedescription)) {
+//			   System.out.println("Device is still present ");
+//			   
+//		   }
+//		   else {
+//			   System.out.println("Device not found");
+//			   
+//		   }
+//	   }
+//	   public void checkforDeviceofflineDecription() {
+//		   
+//		   String Offstatedescription="Searching for sZephyr to establish connection";
+//		   String text = ActurnOFFdesc.getText();
+//		   
+//		   if (text.contains(Offstatedescription)) {
+//			   System.out.println("Device is still present ");
+//			   
+//		   }
+//		   else {
+//			   System.out.println("Device not found");
+//			   
+//		   }
+//	   }
 }

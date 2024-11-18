@@ -1,10 +1,14 @@
 package testcases_deviceSettings;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
+import utils.PassSTComment;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -17,8 +21,8 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - RemoveRouter";
-		testDescription = "Added Router Test Case";
+		testCaseName = "TC01_DeviceSettings";
+		testDescription = "Added Router to device ,disbale BLe and check STA connectivity";
 	}
 	
 
@@ -37,32 +41,37 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		
-		
-		for(int i=0;i<2;i++) {
-		homepage.clickONOFFButton();
-		Thread.sleep(1000);
-		}
+		adddevicepage.checkdevicesettingstoast();
 		
 		
 		Thread.sleep(2000);
+		
+
 			homepage.clickMenuBarButton();
 			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsButton();
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 	//Add Router Test Case		
 			devicemenupage.ClickaddrouterButton();
-			Thread.sleep(1000);
-			adddevicepage.enterWiFiPassword("12345678908");
+			Thread.sleep(3000);
+			adddevicepage.enterWiFiPassword(adddevicepage.wifiPassword);
 			devicemenupage.clickAddRouterCheckBox();
 			adddevicepage.clickEnterButton();
 			Thread.sleep(5000);
+			adddevicepage.checkrouteraddedsuccessfultoast();
 			devicemenupage.clickDeviceSettingsBackButton();
 			turnOffBT();
-			devicemenupage.shellAllowpopup();
 			Thread.sleep(20000);
 			
 			for(int i=0;i<2;i++) {
@@ -70,9 +79,18 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 				Thread.sleep(1000);
 				}
 			
-			homepage.clickMenuBarButton();
-			devicemenupage.clickMenuBarRemoveDevice();
-			Thread.sleep(1000);
+			 homepage.clickMenuBarButton();
+				devicemenupage.clickMenuBarRemoveDevice();
+				devicemenupage.clickRemoveDevicePopupYesButton();
+				adddevicepage.checkdeviceremovedtoast();
+				devicemenupage.AddDevicePagedisplayed();
+			 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 
 }

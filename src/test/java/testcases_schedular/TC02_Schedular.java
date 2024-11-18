@@ -17,6 +17,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.Schedularpage;
 import pages.SignInPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 import java.util.HashMap;
 import java.util.Map;
@@ -33,8 +34,8 @@ public class TC02_Schedular extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairing BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC02_Schedular";
+		testDescription = "Sign In and Start Pairing BLE with Router mode,Remove router and check ble connectivity ";
 	}
 
 	@Test
@@ -47,22 +48,28 @@ public class TC02_Schedular extends MobileAppWrappers {
 		devicemenupage = new DeviceMenuPage(driver);
 		schedulepage = new Schedularpage(driver);
 
-		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");	
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		schedulepage.createschedule(5, 1, 1);// (2,1,1)select mode,1 time only the loop run,one min gap between each schedules
 
 		schedulepage.disableschedule(1);// to wait for 1 min to check it turn on or in off state
 
+		readwrite.closePort();
 	}
 
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
-	//	@Test
+//		@Test
 	public void openwifipage() throws Exception {
 
-		String text= "ANTA";//TP-Link_6D38(With_Internet)
+		String text= "TP-Link_6D38(With_Internet)";//TP-Link_6D38(With_Internet)
 		Runtime.getRuntime().exec("adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity");
 		Thread.sleep(5000);
-		AndroidElement element = driver.findElement(
+		WebElement element = driver.findElement(
 				MobileBy.AndroidUIAutomator(
 						"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + text + "\"))"
 						)

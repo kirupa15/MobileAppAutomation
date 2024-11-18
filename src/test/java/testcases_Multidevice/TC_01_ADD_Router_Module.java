@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -25,8 +26,8 @@ public class TC_01_ADD_Router_Module extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE Without Router";
-		testDescription = "Sign In and Start Pairing BLE without Router mode";
+		testCaseName = "TC01_Add Router Module";
+		testDescription = "After paired with device BLE without Router mode, go to device settings page and add the router provision successfully";
 	}
 	
 
@@ -42,6 +43,11 @@ public class TC_01_ADD_Router_Module extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -66,6 +72,7 @@ public class TC_01_ADD_Router_Module extends MobileAppWrappers {
 			Thread.sleep(1000);
 			}
 		//devicemenupage.clickResetConfirmationYesButton();
+		 readwrite.closePort();
 	}
 
 }

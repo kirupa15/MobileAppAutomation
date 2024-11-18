@@ -58,6 +58,8 @@ public class Reportpage extends MobileAppWrappers {
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Report_Submit_Button\"]")
 	private WebElement Clicksubmitbutton;
+
+	private AndroidDriver driver;
 	
 
 		

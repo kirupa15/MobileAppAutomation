@@ -1,44 +1,30 @@
 package pages;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
-import com.ibm.icu.text.DateFormat;
-import com.ibm.icu.text.SimpleDateFormat;
-
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.appmanagement.ApplicationState;
-import io.appium.java_client.touch.WaitOptions;
-import io.appium.java_client.touch.offset.PointOption;
 import wrappers.GenericWrappers;
 
 public class Schedularpage extends GenericWrappers {
-	public static AndroidDriver<AndroidElement> driver;
+	public static AndroidDriver driver;
 
 //	public AndroidElement element;
 
-	public Schedularpage(AndroidDriver<AndroidElement> driver) {
+	public Schedularpage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
@@ -106,10 +92,7 @@ public class Schedularpage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Duration_Hours_Minutes\"]")
 	private WebElement duration;
 	
-//	@FindBy(xpath = "")
-//	private WebElement ;
-//	@FindBy(xpath = "")
-//	private WebElement ;
+
 
 	public void createschedule(int mode, int intervals, int gap) throws Exception {
 
@@ -238,30 +221,7 @@ public class Schedularpage extends GenericWrappers {
 
 	}
 
-//			public void removedevice() {
-//				driver.findElement(By.xpath(BaseClass_Z.schedulepagebackbtn)).click();
-//				driver.findElement(By.xpath(BaseClass_Z.menubar)).click();
-//				element = driver.findElement(By.xpath(BaseClass_Z.devicesettings));
-//
-//				wait.until(ExpectedConditions.visibilityOf(element));
-//				element.click();
-//
-//				//	 	       element.findElement(By.xpath(".//android.widget.TextView[@text=='Device settings']")).click();
-//				//	 	       element.findElement(By.xpath(BaseClass_Z.devicesettingsafterpairing)).click();
-//
-//				driver.findElement(By.xpath(BaseClass_Z.resetdevice)).click();
-//				driver.findElement(By.xpath(BaseClass_Z.factoryresetyes)).click();
-//
-//				element = driver.findElement(By.xpath(BaseClass_Z.adddevicebtn));
-//				text = element.getText();
-//
-//				if (text.contentEquals("Add Device")) { 
-//					System.out.println("Add device page displayed");
-//				}
-//				else {
-//					System.out.println("Add device page not displayed");
-//				}     
-//			}
+
 
 	public void disableschedule(int min) throws Exception, IOException, InterruptedException {
 

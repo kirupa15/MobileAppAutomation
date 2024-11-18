@@ -1,10 +1,13 @@
 package testcases_deviceSettings;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -17,13 +20,14 @@ public class TC03_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03 - DeviceSettings";
-		testDescription = "Enable The Quite LED Mode and Do Relya ON&OFF Check LED Working Or Not";
+		testCaseName = "TC03_DeviceSettings";
+		testDescription = "Enable The Quite LED Mode and Do Relay ON&OFF Check LED Working Or Not";
 	}
 	
 
 	@Test
 	public void removerepair() throws Exception {
+		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
 
@@ -33,10 +37,18 @@ public class TC03_DeviceSettings extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
 		
 		for(int i=0;i<2;i++) {
@@ -83,10 +95,19 @@ public class TC03_DeviceSettings extends MobileAppWrappers {
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupNoButton();
 			Thread.sleep(1000);
-			homepage.clickMenuBarButton();
-			devicemenupage.clickMenuBarRemoveDevice();
-			devicemenupage.clickRemoveDevicePopupYesButton();
-			Thread.sleep(2000);
+			 homepage.clickMenuBarButton();
+				devicemenupage.clickMenuBarRemoveDevice();
+				devicemenupage.clickRemoveDevicePopupYesButton();
+				adddevicepage.checkdeviceremovedtoast();
+				devicemenupage.AddDevicePagedisplayed();
+			 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
+
 	}
 
 }

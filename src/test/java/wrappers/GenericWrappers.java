@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
@@ -29,17 +30,21 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.model.Log;
+
 import utils.Reporter;
+import utils.logReadandWrite;
 
 public class GenericWrappers {
-
-
+ 
+	
+	
 	public static AndroidDriver<AndroidElement> driver;
 	public WebDriverWait wait;
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
-
+	
 	public Properties loadProp() {
 		Properties prop = new Properties();
 		try {
@@ -62,24 +67,34 @@ public class GenericWrappers {
 		try {
 			prop.load(new FileInputStream(new File("./config.properties")));
 			DesiredCapabilities caps = new DesiredCapabilities();
-			// caps.setCapability("app",
-			// "C:/Users/Invcuser_106/Desktop/apk/Android_SZephyr_12431_stg.apk");
 			caps.setCapability("platformName", prop.getProperty("PLATFORM_NAME"));
 			caps.setCapability("appium:platformVersion", prop.getProperty("PLATFORM_VERSION"));
 			caps.setCapability("appium:udid", prop.getProperty("UDID"));
 			caps.setCapability("appium:deviceName", prop.getProperty("DEVICE_NAME"));
 
-			//			caps.setCapability("appium:appPackage", prop.getProperty("APP_PACKAGE"));
-			//			caps.setCapability("appium:appActivity", prop.getProperty("APP_ACTIVITY"));
 			caps.setCapability("appium:automationName", "uiautomator2");
 			caps.setCapability("newCommandTimeout", 999999);
 			//			caps.setCapability("autoGrantPermissions", true);
-//			caps.setCapability("enforceXPath1", true);
-
-			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
 			//			keepSessionAlive(driver);
+			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
+			
 
-			bReturn = true;
+			Reporter.reportStep("Appium server started successfully ", "INFO");
+			Reporter.reportStep(
+				    "Platform name: " + prop.getProperty("PLATFORM_NAME") + "<br>" + 
+				    "Platform version: " + prop.getProperty("PLATFORM_VERSION") + "<br>" + 
+				    "Device UDID: " + prop.getProperty("UDID") + "<br>" + 
+				    "Device Name: " + prop.getProperty("DEVICE_NAME")+ "<br>" +
+				    "App Revision No: "+prop.getProperty("APP_REVISION_NO")+"<br>"+
+				    "Device Revision No: "+prop.getProperty("DEVICE_REVISION_NO")+"<br>"+
+				    "Router Name: "+prop.getProperty("WIFINAME")+"<br>"+
+				    "Remote Router Name: "+prop.getProperty("REMOTEWIFINAME"), 
+				    
+				    "INFO"
+				);
+
+
+			
 
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
@@ -87,15 +102,24 @@ public class GenericWrappers {
 				driver.activateApp(appPackage); // Open the app
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
-				driver.installApp(
-						"C:\\Users\\Invcuser_45\\Desktop\\Ashif\\Automation_Ashif\\Android_SZephyr_12965_stg.apk");
+				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(appPackage); // Launch the app after installation
 			}
+			
+			if (driver.isAppInstalled(appPackage)) {
+				Reporter.reportStep("The app:" + appPackage + " launched successfully", "PASS");
+			}
+			else {
+				Reporter.reportStep("The app:" + appPackage + " not launched", "FAIL");
+				
+			}
+			Reporter.reportStep("App opened successfully", "INFO");
+			bReturn = true;
 
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			System.out.println("URL is malformed: " + e.getMessage());
+			System.out.println("App not launched" + e.getMessage());
 			e.printStackTrace();
+			Reporter.reportStep("The app not launched", "FAIL");
 		}
 		return bReturn;
 	}
@@ -136,7 +160,7 @@ public class GenericWrappers {
 	//		return bReturn;
 	//	}
 
-	public static void keepSessionAlive(AndroidDriver<AndroidElement> driver) {
+	public static void keepSessionAlive(AndroidDriver driver) {
 		ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 		scheduler.scheduleAtFixedRate(() -> {
 			try {
@@ -285,6 +309,7 @@ public class GenericWrappers {
 				Reporter.reportStep(field + " did not contain :" + text, "FAIL");
 			}
 		} catch (Exception e) {
+			Reporter.reportStep(field + " not displayed", "FAIL&RUN");
 			e.printStackTrace();
 		}
 		return bReturn;
@@ -305,7 +330,7 @@ public class GenericWrappers {
 	public static void expWait(WebElement xpath) {
 		try {
 
-			WebDriverWait wait = new WebDriverWait(driver,15);
+			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
@@ -318,7 +343,7 @@ public class GenericWrappers {
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver,100);
+			WebDriverWait wait = new WebDriverWait(driver,30);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);
@@ -468,6 +493,7 @@ public class GenericWrappers {
 			boolean success = ftpClient.storeFile(remoteFileName, fis);
 			if (success) {
 				System.out.println("File uploaded successfully to FTP: " + remoteFileName);
+				
 			} else {
 				System.out.println("File upload failed.");
 			}
@@ -566,12 +592,12 @@ public class GenericWrappers {
 
 
 
-	@SuppressWarnings("deprecation")
 	public void connectToWiFi(String wifiName, String wifiPassword) {
 		try {
+			
 			// Open WiFi settings on the Android device
+			Runtime.getRuntime().exec("adb shell svc wifi enable");
 			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
-			//adb shell am start -n com.android.settings/.Settings\\$WifiSettingsActivity
 			// Wait for the WiFi settings to open
 			Thread.sleep(5000);
 
@@ -582,8 +608,9 @@ public class GenericWrappers {
 
 
 			// Click on the WiFi network
-			clickByXpath(wifiElement, "Clicked on " + wifiName + " on Wi-Fi page");
+			clickbyXpath(wifiElement, "Clicked on " + wifiName + " on Wi-Fi page");
 
+		
 			// Check if the password entry field is displayed
 			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
 			if (isElementDisplayed(enterPasswordField)) {
@@ -592,19 +619,15 @@ public class GenericWrappers {
 
 				// Click on the connect button
 				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); // Replace with the actual XPath
-				clickByXpath(connectButton, "Connect button");
+				clickbyXpath(connectButton, "Connect button");
 
 				Thread.sleep(5000);
 
-
-				if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-					driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-					Thread.sleep(7000);
-				}
-
 			} else {
 				System.out.println("Already connected or password is saved.");
+			
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -613,18 +636,20 @@ public class GenericWrappers {
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element) {
 		try {
-			Thread.sleep(5000);  // Introduce a small delay before checking visibility
+			Thread.sleep(1000);  // Introduce a small delay before checking visibility
+			Reporter.reportStep(element+"Element displayed", "PASS");
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
+			Reporter.reportStep(element+"Element not displayed", "INFO");
 			return false;
 		}
 	}
 
 	// Example methods for clicking and entering values (to be replaced with your actual implementations)
-	public void clickByXpath(WebElement element, String description) {
-		element.click();
-		System.out.println(description);
-	}
+//	public void clickByXpath(WebElement element, String description) {
+//		element.click();
+//		System.out.println(description);
+//	}
 
 	public void enterValueByXpath(WebElement element, String fieldName, String value) {
 		element.sendKeys(value);
@@ -655,16 +680,14 @@ public class GenericWrappers {
 		}
 	}
 
-	public void killsession() {
-		try {
-			if (driver != null) {
-				// Kill the app (terminate it)
-				driver.terminateApp("com.iinvsys.szephyr");
-//				Reporter.reportStep("The app was killed successfully.", "PASS");
-			}
-		} catch (Exception e) {
-//			Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
+	public void close() {
+		driver.terminateApp("com.iinvsys.szephyr");
+		driver.quit();
+	}
+	public void checkappinforeground() throws Exception {
+		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+			Thread.sleep(3000);
 		}
-
 	}
 }

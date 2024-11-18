@@ -1,5 +1,9 @@
 package testcases_pairing;
 
+import static org.testng.Assert.fail;
+
+import java.util.Properties;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -9,6 +13,8 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import utils.Retry_analyser;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
@@ -22,11 +28,14 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairing BLE With Router";
-		testDescription = "Sign In and Start Pairing BLE with Router mode";
+		testCaseName = "TC01 - Pairing BLE Without Router";
+		testDescription = "TC-01-After Pairing check on/off remove device"+"<br>"+
+		"TC-02-After Pairing check on/off remove device ,repair and check on/off "+"<br>"+
+		"TC-03-With internet after Pairing check on/off ,initaite logout and login check for added device ,remove and repair check on/off .";
 	}
 	
-
+	
+//	(retryAnalyzer = Retry_analyser.class)
 	@Test
 	public void removerepair() throws Exception {
 		initAndriodDriver();
@@ -37,17 +46,100 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		readwrite.write("factory_reset\r");
+		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		for(int i=0;i<2;i++) {
+		adddevicepage.checkdevicesettingstoast();
+		
 		homepage.clickONOFFButton();
-		Thread.sleep(1000);
-		}
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+		
+		adddevicepage.pair(1);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
+		homepage.clickMenuBarButton();
+		devicemenupage.clickLogoutButton();
+		devicemenupage.clickLogoutConfirmationButton();
+		landingpage.clickSignInButton();
+		loginpage.enterUserName("testuser007@gmail.com");
+		loginpage.clickSignInButton();
+		otppage.verifyOTPVerificationTitle("OTP Verification");
+		otppage.enterOTPField1("1");
+		otppage.enterOTPField2("2");
+		otppage.enterOTPField3("3");
+		otppage.enterOTPField4("4");
+		otppage.submitButton();
+		homepage.VerifyOFFdesc();
+		
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+		adddevicepage.pair(1);
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+        readwrite.closePort();
+		}
+		catch (Exception e) {
+			readwrite.closePort();
+//			e.printStackTrace();
+			fail("Failed due to this exception", e);
+			
+		}
 	}
 
+	//newly added SKIP in extent report 
+	//newly added toast reader in add device page 
+	//newly added info 
+	
+	//To add toast in all page,need to do
 }

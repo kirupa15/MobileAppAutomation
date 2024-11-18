@@ -10,6 +10,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_06_Multidevice_Wifi_With_Router extends MobileAppWrappers {
@@ -25,8 +26,8 @@ public class TC_06_Multidevice_Wifi_With_Router extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairinfg BLE Without Router";
-		testDescription = "Sign In and Start Pairing BLE without Router mode";
+		testCaseName = "TC06_Multidevice Wifi With Router";
+		testDescription = "Check Pairing with device Wifi With Router mode for multi device";
 	}
 	
 	@Test
@@ -37,6 +38,11 @@ public class TC_06_Multidevice_Wifi_With_Router extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		signuppage=new SignUpPage(driver);
 
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -77,6 +83,7 @@ public class TC_06_Multidevice_Wifi_With_Router extends MobileAppWrappers {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 	}
+			readwrite.closePort();
 	}
 	
 }

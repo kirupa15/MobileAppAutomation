@@ -1,12 +1,10 @@
 package testcases_signIn_up_accountsinfo_module;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.testng.Assert.fail;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import jssc.SerialPortException;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
@@ -31,13 +29,13 @@ public class TC01_SignUp extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - SignUp with already existing username";
+		testCaseName = "TC01_SignUp";
 		testDescription = "Try to Sign Up with already registered username";
 	}
 
 
 	@Test
-	public void signUp() throws FileNotFoundException, IOException, InterruptedException, SerialPortException {
+	public void signUp() throws Exception {
 
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
@@ -47,11 +45,22 @@ public class TC01_SignUp extends MobileAppWrappers {
 		GetAppLog applog= new GetAppLog();
 		applog.startLogProcess();
 		
+
 		/*
 		 * logReadandWrite readwrite=new logReadandWrite("COM4"); readwrite.openPort();
 		 * readwrite.read(); Thread.sleep(2000); readwrite.write("button_press\r");
 		 */
-		landingpage.clickSignUpButton();
+
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("button_press\r");
+		
+		signuppage.uninstall_reinstall();
+		landingpage.clickSignUpLink();
+
 		
 		signuppage.enterUserName("testuser");
 		signuppage.enterEmailId("testuser@gmail.com");
@@ -59,7 +68,14 @@ public class TC01_SignUp extends MobileAppWrappers {
 		signuppage.clickSignUpButton();
 		//readwrite.write("button_press\r");
 		signuppage.checkUserNameExistToast("Username and Email ID both are already exists");
-		//readwrite.closePort();
+		readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
+
 	}
 
 }

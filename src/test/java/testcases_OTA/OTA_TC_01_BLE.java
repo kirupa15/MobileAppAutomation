@@ -1,8 +1,5 @@
 
-package testcases;
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
+package testcases_OTA;
 
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
@@ -16,6 +13,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -33,13 +31,13 @@ public class  OTA_TC_01_BLE extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 -OTA Pairinfg BLE With Router";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "OTA_TC01_Ble";
+		testDescription = "Paired with device BLE without Router mode and do OTA update";
 	}
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
+	public void removerepair() throws Exception {
 		login();
 		for(int i=0;i<1;i++) {
 		pairBlewithoutRouter();}
@@ -63,12 +61,18 @@ public class  OTA_TC_01_BLE extends MobileAppWrappers {
 		
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
 		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
@@ -100,7 +104,12 @@ public class  OTA_TC_01_BLE extends MobileAppWrappers {
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		
-	    
+	    readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+		}
 	
 
 }}

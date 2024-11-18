@@ -1,8 +1,9 @@
 
 package testcases_connectivity;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.testng.Assert.fail;
+
+import java.util.Properties;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -15,6 +16,7 @@ import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.Szephyr_info_Page;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 
@@ -32,84 +34,72 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "CONNECTIVITY_MOD_1_TC_01,CONNECTIVITY_MOD_1_TC_02,CONNECTIVITY_MOD_1_TC_03";
-		testDescription = "OTA update BLE without Router mode";
+		testCaseName = "BlewithoutRouter";
+		testDescription = "CONNECTIVITY_MOD_1_TC_01-BLE connectivity establishment"+ "<br>"+"CONNECTIVITY_MOD_1_TC_02-APP kill and re Open "+ "<br>"+"CONNECTIVITY_MOD_1_TC_03-5 times App ON/OFF";
 	}
 	
 
 	@Test
-	public void removerepair() throws FileNotFoundException, IOException, InterruptedException {
-		login();
-		for(int i=0;i<1;i++) {
-		pairBlewithoutRouter();}
-	}
-
-	public void login() {
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		otppage = new OtpPage(driver);
-		ota_Status_monitor=new OTA_Status_monitor(driver);
-		signuppage= new SignUpPage(driver);
-		
-		
-		landingpage.clickSignInButton();
-		signuppage.enterEmailId("varadharajanram95@gmail.com");
-		loginpage.clickSignInButton();
-		otppage.enterOTPField1("1");
-		otppage.enterOTPField2("2");
-		otppage.enterOTPField3("3");
-		otppage.enterOTPField4("4");
-		otppage.submitButton();
-		
+	public void removerepair() throws Exception {
+		initAndriodDriver();
+		pairBlewithoutRouter();
 	}
 	
-	public void pairBlewithoutRouter() throws FileNotFoundException, IOException, InterruptedException {
+	public void pairBlewithoutRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+	
+		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		try {
+			
+		
+		readwrite.openPort();
+//		readwrite.read();
+		Thread.sleep(2000);
+		readwrite.write("factory_reset\r");
+		
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
-		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
 		
-		Thread.sleep(1000);
-		}
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
-		//homepage.clickMenuBarButton();
-		//homepage.clicksharcelog();
-		//homepage.clicksharcelog1();
-		//homepage.clicksharcelog2();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 		
 //		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
         
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
-		for(int i=0;i<2;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(1000);
-			}
+		adddevicepage.checkdevicesettingstoast();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.killandopen();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
@@ -118,29 +108,38 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
 //		///CONNECTIVITY_MOD_1_TC_03--5 times App ON/OFF////////////////////////////////////////////////////////////////
 		
-		adddevicepage.clickAddDeviceButton();
-		adddevicepage.checkBoxPairing();
-		adddevicepage.nextButtonPairing();
-		adddevicepage.startPairingButton();
-		adddevicepage.locationPopUpPermission();
-		adddevicepage.nearByPermission();
-		adddevicepage.clickWifiCancelButton();
+		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
 		
-		for(int i=0;i<11;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(4000);
-		}
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyONdesc();
+		
+		homepage.clickONOFFButton();
+		Thread.sleep(2000);
+		homepage.VerifyOFFdesc();
+		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
 		
-		
+		 readwrite.closePort();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.closePort();
+			fail("Failed due to this exception", e);
+		}
 	}
 }
 		

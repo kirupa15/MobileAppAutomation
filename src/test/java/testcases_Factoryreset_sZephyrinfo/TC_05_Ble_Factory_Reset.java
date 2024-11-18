@@ -1,5 +1,7 @@
 package testcases_Factoryreset_sZephyrinfo;
 
+import static org.testng.Assert.fail;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,6 +12,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
 public class TC_05_Ble_Factory_Reset extends MobileAppWrappers {
@@ -24,14 +27,15 @@ public class TC_05_Ble_Factory_Reset extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - SignUp with already existing username";
-		testDescription = "Try to Sign Up with already registered username";
+		testCaseName = "TC05_Ble Factory Reset";
+		testDescription = "Paired with device Ble without router mode and try to do factory reset using via app";
 	}
 
 
 
 @Test
 public void removerepair() throws Exception {
+	initAndriodDriver();
 	pairBlewithoutRouter();
 }
 
@@ -42,15 +46,27 @@ public void pairBlewithoutRouter() throws Exception {
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
+	logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+	try {
+	readwrite.openPort();
+//	readwrite.read();
+	Thread.sleep(2000);
+	readwrite.write("factory_reset\r");
 	
 	adddevicepage.pair(1);
 	adddevicepage.clickNextButtonsZephyrInfo();
+	adddevicepage.checkdevicedetailstoast();
 	adddevicepage.clickSubmitButtonDeviceSetting();
+	adddevicepage.checkdevicesettingstoast();
 	
-	for(int i=0;i<2;i++) {
 	homepage.clickONOFFButton();
-	Thread.sleep(1000);
-	}
+	Thread.sleep(2000);
+	homepage.VerifyONdesc();
+	
+	homepage.clickONOFFButton();
+	Thread.sleep(2000);
+	homepage.VerifyOFFdesc();
+	
 	Thread.sleep(1000);
 	homepage.killandopen();
 	Thread.sleep(1000);
@@ -58,6 +74,15 @@ public void pairBlewithoutRouter() throws Exception {
 	devicemenupage.clickDeviceSettingsButton();
 	devicemenupage.clickResetDeviceButton();
 	devicemenupage.clickResetConfirmationYesButton();
+	adddevicepage.checkdeviceresettoast();
+	devicemenupage.AddDevicePagedisplayed();
+	 readwrite.closePort();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+		readwrite.closePort();
+		fail("Failed due to this exception", e);
+	}
 }
 
 }
