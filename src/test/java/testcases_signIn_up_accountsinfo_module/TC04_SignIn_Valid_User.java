@@ -40,7 +40,9 @@ public class TC04_SignIn_Valid_User extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		System.out.println(" COM Availble :: " +loadProp("COM"));
+		
 		try {
 		readwrite.openPort();
 //		readwrite.read();
