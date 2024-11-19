@@ -2,6 +2,8 @@ package testcases_signIn_up_accountsinfo_module;
 
 import static org.testng.Assert.fail;
 
+import java.util.Properties;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -24,6 +26,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
+	
 
 	@BeforeClass
 	public void startTestCase() {
@@ -39,8 +42,8 @@ public class TC02_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		System.out.println(" COM Availble :: " +loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 //		readwrite.read();

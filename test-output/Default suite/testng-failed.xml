@@ -3,26 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="testcases_signIn_up_accountsinfo_module.TC01_SignUp">
-=======
-      <class name="testcases_pairing.TC01_Pairing_BlewithoutRouter">
->>>>>>> f8d581457bdd660bc820b1d89c3dce22c749f4dd
+      <class name="testcases_signIn_up_accountsinfo_module.TC02_SignUp">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
+          <include name="signUp"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
-          <include name="removerepair"/>
-          <include name="startTestCase"/>
           <include name="beforeSuite"/>
+          <include name="startTestCase"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- testcases_signIn_up_accountsinfo_module.TC01_SignUp -->
-=======
-      </class> <!-- testcases_pairing.TC01_Pairing_BlewithoutRouter -->
->>>>>>> f8d581457bdd660bc820b1d89c3dce22c749f4dd
+      </class> <!-- testcases_signIn_up_accountsinfo_module.TC02_SignUp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

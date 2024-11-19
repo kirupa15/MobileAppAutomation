@@ -118,7 +118,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		checkappinforeground();
 	
 		//homepage.VerifyONdesc();
-		homepage.WifiSwitch(loadProp().getProperty("REMOTEWIFINAME"),loadProp().getProperty("REMOTEWIFIPASSWORD"));
+		homepage.WifiSwitch(loadProp("REMOTEWIFINAME"),loadProp("REMOTEWIFIPASSWORD"));
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
 		Thread.sleep(5000);

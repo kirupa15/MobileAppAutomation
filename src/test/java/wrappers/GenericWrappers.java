@@ -45,19 +45,17 @@ public class GenericWrappers {
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
 	
-	public Properties loadProp() {
+	public String loadProp(String property) {
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(new File("./config.properties")));
-			sHubUrl = prop.getProperty("HUB");
-			sHubPort = prop.getProperty("PORT");
-			sUrl = prop.getProperty("URL");
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return prop;
+		return prop.getProperty(property);
 	}
 
 	public static boolean initAndriodDriver() throws FileNotFoundException, IOException {
