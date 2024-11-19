@@ -50,8 +50,7 @@ public class TC01_SignUp extends MobileAppWrappers {
 		 * logReadandWrite readwrite=new logReadandWrite("COM4"); readwrite.openPort();
 		 * readwrite.read(); Thread.sleep(2000); readwrite.write("button_press\r");
 		 */
-
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 //		readwrite.read();
