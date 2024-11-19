@@ -28,14 +28,14 @@ public class AddDevicePage extends GenericWrappers {
 	public AndroidDriver driver;
 	
 	
-	public String userName=loadProp().getProperty("USERNAME"); 
-	public String emaId=loadProp().getProperty("EMAILID"); 
-	public String wifiPassword= loadProp().getProperty("WIFIPASSWORD"); 
-	public String deviceDetailsUpdated= loadProp().getProperty("deviceDetailsUpdated"); 
-	public String devicesettingsupdatesuccess= loadProp().getProperty("deviceSettingsUpdateSuccess"); 
-	public String   DeviceRemovedSuccessfully= loadProp().getProperty("DeviceRemovedSuccessfully"); 
-	public String  YourDeviceResetSuccessfully= loadProp().getProperty("YourDeviceResetSuccessfully"); 
-	public String  RouterAddedSuccessfully= loadProp().getProperty("RouterAddedSuccessfully"); 
+	public String userName=loadProp("USERNAME"); 
+	public String emaId=loadProp("EMAILID"); 
+	public String wifiPassword= loadProp("WIFIPASSWORD"); 
+	public String deviceDetailsUpdated= loadProp("deviceDetailsUpdated"); 
+	public String devicesettingsupdatesuccess= loadProp("deviceSettingsUpdateSuccess"); 
+	public String   DeviceRemovedSuccessfully= loadProp("DeviceRemovedSuccessfully"); 
+	public String  YourDeviceResetSuccessfully= loadProp("YourDeviceResetSuccessfully"); 
+	public String  RouterAddedSuccessfully= loadProp("RouterAddedSuccessfully"); 
 	
 	
 	
@@ -327,7 +327,7 @@ public class AddDevicePage extends GenericWrappers {
 		if (isElementDisplayed(sZephyrInfoNextButton)) {
 			clickbyXpath(sZephyrInfoNextButton, " Next Button ");
 		}else {
-			   driver.activateApp(loadProp().getProperty("APP_PACKAGE"));
+			   driver.activateApp(loadProp("APP_PACKAGE"));
 			   expWaitforPairing(sZephyrInfoNextButton);
 			   clickbyXpath(sZephyrInfoNextButton, " Next Button ");
 
@@ -583,7 +583,7 @@ public void aCBrandNameClick ()
 	public void verifysigninpage() throws Exception {
 
 		  // Backgrounds app for 10 seconds
-		homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 		Thread.sleep(5000);
 		if (isElementDisplayed(blePermissionOkButton)) {
 			clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
@@ -676,7 +676,7 @@ public void aCBrandNameClick ()
 				break;
 
 			case 2:
-				homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOnBT();
 				startPairingButton();
 				if (isElementDisplayed(BleOKpopup)) {
@@ -715,7 +715,7 @@ public void aCBrandNameClick ()
 				}
 				break;
 			case 3:
-				homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				readwrite.write("reboot\r");
 				turnOffBT();
 				startPairingButton();
@@ -772,7 +772,7 @@ public void aCBrandNameClick ()
 				}
 				break;
 			case 4:
-				homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOffBT();
 				startPairingButton();
 				if (isElementDisplayed(BLEcancelpopup)) {
@@ -857,7 +857,7 @@ public void aCBrandNameClick ()
 				break;
 
 			case 5:
-				homepage.WifiSwitch(loadProp().getProperty("WIFINAME"), loadProp().getProperty("WIFIPASSWORD"));
+				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				
 				turnOffBT();
 
@@ -960,10 +960,10 @@ public void aCBrandNameClick ()
 		} else {
 			
 			System.out.println("Device is already in paired state removing the device");
-			
-		
-			
-			
+
+			PassSTComment stcomment= new PassSTComment();
+			stcomment.stcomment("factory_reset");
+
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
