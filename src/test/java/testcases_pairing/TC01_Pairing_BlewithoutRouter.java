@@ -46,8 +46,8 @@ public class TC01_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
-		System.out.println("Hello");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		
 		try {
 		readwrite.openPort();
 //		readwrite.read();
