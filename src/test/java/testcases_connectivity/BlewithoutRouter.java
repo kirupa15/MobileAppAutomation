@@ -53,7 +53,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
 	
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 			
 		
