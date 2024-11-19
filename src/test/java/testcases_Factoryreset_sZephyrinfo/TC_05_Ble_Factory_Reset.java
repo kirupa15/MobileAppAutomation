@@ -46,7 +46,8 @@ public void pairBlewithoutRouter() throws Exception {
 	homepage = new HomePage(driver);
 	devicemenupage= new DeviceMenuPage(driver);
 	
-	logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+	logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+
 	try {
 	readwrite.openPort();
 //	readwrite.read();

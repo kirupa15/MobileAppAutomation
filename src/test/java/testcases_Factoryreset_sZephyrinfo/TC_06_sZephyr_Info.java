@@ -49,7 +49,8 @@ public class TC_06_sZephyr_Info extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 
 
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+
 		try {
 			readwrite.openPort();
 //			readwrite.read();

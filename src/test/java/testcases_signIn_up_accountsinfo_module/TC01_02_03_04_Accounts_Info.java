@@ -59,7 +59,8 @@ public class TC01_02_03_04_Accounts_Info extends MobileAppWrappers {
 		accountinfopage= new AccountsInfoPage(driver);
 		devicesettingpage= new DeviceMenuPage(driver);
 
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+
 		try {
 			readwrite.openPort();
 //			readwrite.read();

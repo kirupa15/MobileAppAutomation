@@ -638,7 +638,7 @@ public class GenericWrappers {
 			Reporter.reportStep(element+"Element displayed", "PASS");
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
-			Reporter.reportStep(element+"Element not displayed", "INFO");
+//			Reporter.reportStep(element+"Element not displayed", "INFO");
 			return false;
 		}
 	}

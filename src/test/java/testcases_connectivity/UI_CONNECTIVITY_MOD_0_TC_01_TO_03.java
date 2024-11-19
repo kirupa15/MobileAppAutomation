@@ -49,7 +49,8 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+
 		try {
 		readwrite.openPort();
 //		readwrite.read();

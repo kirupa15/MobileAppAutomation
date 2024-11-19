@@ -51,8 +51,8 @@ public class  SmartConfig extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		
 		
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 
-		logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
 		try {
 		readwrite.openPort();
 //		readwrite.read();

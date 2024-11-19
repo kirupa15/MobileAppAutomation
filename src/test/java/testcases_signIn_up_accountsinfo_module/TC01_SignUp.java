@@ -51,12 +51,9 @@ public class TC01_SignUp extends MobileAppWrappers {
 		 * readwrite.read(); Thread.sleep(2000); readwrite.write("button_press\r");
 		 */
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		System.out.println(loadProp("COM"));
 		try {
 		readwrite.openPort();
-//		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("button_press\r");
+
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpLink();

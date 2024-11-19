@@ -45,13 +45,9 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		signuppage =new SignUpPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		System.out.println(" COM Availble :: " +loadProp("COM"));
 		
 		try {
 		readwrite.openPort();
-//		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("factory_reset\r");
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();

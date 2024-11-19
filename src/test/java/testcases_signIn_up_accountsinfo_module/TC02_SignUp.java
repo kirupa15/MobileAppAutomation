@@ -42,13 +42,9 @@ public class TC02_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-		System.out.println(" COM Availble :: " +loadProp("COM"));
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
-//		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("factory_reset\r");
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignUpLink();
