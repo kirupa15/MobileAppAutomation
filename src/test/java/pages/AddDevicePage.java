@@ -105,6 +105,10 @@ public class AddDevicePage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
+	
+	@FindBy(xpath = "WebElement savebutton = driver.findElement(MobileBy.xpath(\"//android.widget.TextView[@resource-id=\\\"com.oplus.wirelesssettings:id/menu_save\\\"]\")); ")
+	private WebElement savebuttonWifipage;
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement devicewifipop_upOK;
 	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/alertTitle\"]")
@@ -215,6 +219,9 @@ public class AddDevicePage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")
 	private WebElement enterpasswordwifipge;
+	
+	@FindBy(xpath = "//android.widget.EditText")
+	private WebElement enterpasswordwifipgehighversion;
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
 	private WebElement BleOKpopup;
@@ -249,6 +256,20 @@ public class AddDevicePage extends GenericWrappers {
 	
 	@FindBy(xpath = "//android.widget.Toast[@text=\"Router added successfully\"]")
 	private WebElement routeraddedsuccessfullytoast;
+	
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
+	private WebElement bleConnectivity;
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
+	private WebElement bleNonConnectivity;
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_STA_0_grey']")
+	private WebElement staConnectivity;
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_STA_0_grey']")
+	private WebElement staNonConnectivity;
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
+	private WebElement remoteConnectivity;
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_remote_0_grey']")
+	private WebElement remoteNonConnectivity;
+	
 	
 
 	// Constructor to initialize the driver and instantiate elements using
@@ -364,7 +385,9 @@ public class AddDevicePage extends GenericWrappers {
 
 
 	public void ClickCancelButtonBle() throws Exception {
-		clickbyXpath(ClickCancelButtonBle," Cancel Button ");
+			
+			clickbyXpathwithoutReport(ClickCancelButtonBle," Cancel Button ");
+		
 		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
 			Thread.sleep(3000);
@@ -831,8 +854,16 @@ public void aCBrandNameClick ()
 					if (isElementDisplayed(enterpasswordwifipge)) {
 						entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
 						hidekeyboard();
+							
 						clickbyXpath(connectbuttonWifipage, "connect button");
-					} else {
+						}else if (isElementDisplayed(enterpasswordwifipgehighversion)) {
+							
+							entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
+							hidekeyboard();
+							
+							clickbyXpath(savebuttonWifipage, "save button");
+						}
+					 else {
 						System.out.println("Already password saved ");
 					}
 
@@ -907,7 +938,9 @@ public void aCBrandNameClick ()
 
 				if (isElementDisplayed(devicewifipop_upOK)) {
 					clickbyXpath(devicewifipop_upOK, "click on Device wifi OK popup");
-					
+
+
+							
 					Thread.sleep(5000);
 					WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
 							"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
@@ -917,17 +950,35 @@ public void aCBrandNameClick ()
 					element.click();
 					if (isElementDisplayed(enterpasswordwifipge)) {
 						entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
-
-
 						hidekeyboard();
+							
 						clickbyXpath(connectbuttonWifipage, "connect button");
-					} else {
+						}else if (isElementDisplayed(enterpasswordwifipgehighversion)) {
+							
+							entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
+							hidekeyboard();
+							
+							clickbyXpath(savebuttonWifipage, "save button");
+						}
+					 else {
 						System.out.println("Already password saved ");
 					}
 
+					if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
+						driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+						//						WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+						
+
+					}
+					if (isElementDisplayed(Blepopup_afterpairing)) {
+						
+						clickbyXpath(Blepopup_afterpairing, "oK button of Ble alert pop-up");
+					}
+
+					// Now click the OK button once it is visible and clickable
 
 
-					
+
 				} else {
 					System.out.println("unable to connect with device hotspot");
 				}

@@ -59,7 +59,7 @@ public class GetAppLog {
 	                try (FileWriter fileWriter = new FileWriter(logFile2, true)) {
 	                    while ((line = reader.readLine()) != null) {
 	                        fileWriter.write(line + "\n");
-	                        System.out.println(line);
+//	                        System.out.println(line);
 	                    }
 	                }
 

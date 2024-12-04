@@ -57,8 +57,9 @@ public class  WifiWithRouter extends MobileAppWrappers {
 
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		Thread.sleep(2000);
+		readwrite.write("reboot\r");
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		
@@ -74,10 +75,16 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		homepage.killandopen();
 		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		
 		 homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();

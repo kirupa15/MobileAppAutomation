@@ -45,8 +45,9 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		Thread.sleep(2000);
+		readwrite.write("reboot\r");
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
@@ -73,12 +74,23 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 			adddevicepage.checkrouteraddedsuccessfultoast();
 			devicemenupage.clickDeviceSettingsBackButton();
 			turnOffBT();
-			Thread.sleep(20000);
+			Thread.sleep(10000);
+			homepage.getCurrentvalue();
+			homepage.getVoltvalue();
+			homepage.getPowervalue();
 			
 			for(int i=0;i<2;i++) {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 				}
+			
+			disableWiFi();
+			turnOnBT();
+			Thread.sleep(10000);
+			
+			homepage.getCurrentvalue();
+			homepage.getVoltvalue();
+			homepage.getPowervalue();
 			
 			 homepage.clickMenuBarButton();
 				devicemenupage.clickMenuBarRemoveDevice();

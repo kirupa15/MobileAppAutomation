@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases_signIn_up_accountsinfo_module.TC02_SignUp">
+      <class name="testcases_Factoryreset_sZephyrinfo.Longrun_voltvalue">
         <methods>
           <include name="afterMethod"/>
+          <include name="checkLowvolt"/>
           <include name="afterTest"/>
-          <include name="signUp"/>
           <include name="afterSuite"/>
+          <include name="startTestCase"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="startTestCase"/>
         </methods>
-      </class> <!-- testcases_signIn_up_accountsinfo_module.TC02_SignUp -->
+      </class> <!-- testcases_Factoryreset_sZephyrinfo.Longrun_voltvalue -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

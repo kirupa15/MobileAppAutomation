@@ -44,8 +44,9 @@ public class TC05_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		Thread.sleep(2000);
+		readwrite.write("reboot\r");
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(5);

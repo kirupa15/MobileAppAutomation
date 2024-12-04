@@ -33,7 +33,7 @@ public class  SmartConfig extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "SmartCongif";
+		testCaseName = "SmartConfig";
 		testDescription = "STA & Remote Connectivity check "+"<br>"+" Check the STA & Remote connectivity stablity after app kill and re-open "+"<br>"+"continusly 5 time turn the relay via app ON/OFF that time check the Connectivity";
 	}
 	
@@ -55,8 +55,9 @@ public class  SmartConfig extends MobileAppWrappers {
 
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		Thread.sleep(2000);
+		readwrite.write("reboot\r");
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		
@@ -78,6 +79,9 @@ public class  SmartConfig extends MobileAppWrappers {
 			}*/
 		
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		
 		homepage.killandopen();
 		adddevicepage.ClickCancelButtonBle();
@@ -89,7 +93,9 @@ public class  SmartConfig extends MobileAppWrappers {
 			homepage.clickONOFFButton();
 			Thread.sleep(3000);
 			}
-		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		//CONNECTIVITY_MOD_3_TC_4// BLE Connectivity Establishment
 		homepage.enableBLE();
 		homepage.disableWIFI();
@@ -99,7 +105,10 @@ public class  SmartConfig extends MobileAppWrappers {
 	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
 	    Thread.sleep(5000);
 		///CONNECTIVITY_MOD_3_TC_5//BLE_Kill and Open
-	   
+	    
+	    homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		homepage.killandopen();
 		
 		//CONNECTIVITY_MOD_3_TC_6//BLE Device ON_OFF 
@@ -122,6 +131,9 @@ public class  SmartConfig extends MobileAppWrappers {
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
 		Thread.sleep(5000);
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 	///CONNECTIVITY_MOD_3_TC_5//remote_Kill and Open
 		
 		homepage.killandopen();
@@ -137,6 +149,11 @@ public class  SmartConfig extends MobileAppWrappers {
 			homepage.clickONOFFButton();
 			Thread.sleep(3000);
 			}
+		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
+		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();

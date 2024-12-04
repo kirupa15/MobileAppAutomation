@@ -40,8 +40,9 @@ public class TC02_DeviceSettings extends MobileAppWrappers {
 
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		Thread.sleep(2000);
+		readwrite.write("reboot\r");
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(2);
@@ -67,7 +68,10 @@ public class TC02_DeviceSettings extends MobileAppWrappers {
 			
 //			devicemenupage.clickDeviceSettingsButton();
 		    Thread.sleep(3000);
-			
+		    
+		    homepage.getCurrentvalue();
+			homepage.getVoltvalue();
+			homepage.getPowervalue();
 			for(int i=0;i<2;i++) {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);

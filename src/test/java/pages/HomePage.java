@@ -11,7 +11,8 @@ import wrappers.GenericWrappers;
 public class HomePage extends GenericWrappers{
 	private AndroidDriver driver;
 
-	@FindBy(xpath="//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.CircleView[1]")
+	
+	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"com.szephyr:id/home_main_on_off_swch\"]")
 			private WebElement deviceONOFFButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
@@ -35,6 +36,16 @@ public class HomePage extends GenericWrappers{
 	
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_StandByIndication\"]")
 	private WebElement Acturnonwithloaddesc;
+	
+	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'V')]")
+	private WebElement voltValue;
+	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'W')]")
+	private WebElement wattValue;
+	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'A')]")
+	private WebElement currentValue;
+	
+	@FindBy(xpath = "//com.horcrux.svg.PathView[@content-desc=\"com.szephyr:id/PairedGeyser_Img_svg_ble_0\"]")
+	private WebElement bleSymbol;
 	
 	
 	public HomePage(AndroidDriver driver) {
@@ -103,6 +114,25 @@ public class HomePage extends GenericWrappers{
 			}
 	   }
 
+	   
+	   public void getCurrentvalue() throws InterruptedException {
+		   
+		   verifyTextContainsByXpath(currentValue, "A","Home page current  value" );
+	}
+	   public void getVoltvalue() throws InterruptedException {
+		   verifyTextContainsByXpath(voltValue, "V","Home page Volt value" );
+		   
+		   
+	   }
+	   public void getPowervalue() throws InterruptedException {
+		   verifyTextContainsByXpath(wattValue, "W","Home page WATT value" );
+		   
+	   }
+	   public void getbleSymbol() throws InterruptedException {
+		   String attribute = bleSymbol.getText();
+		   System.out.println(attribute);
+	   }
+	   
 //	   String description[]={"Searching for sZephyr to establish connection","Please ensure sZephyr is switched ON prior to operating your AC remote","Your AC unit is either in standby or powered OFF at the moment","sZephyr and AC turned ON"};
 	   
 //	   public void checkforDeviceOffstateDescription() {

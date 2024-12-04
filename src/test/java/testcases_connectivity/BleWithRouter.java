@@ -55,7 +55,8 @@ public class  BleWithRouter extends MobileAppWrappers {
 
 		try {
 		readwrite.openPort();
-//		readwrite.read();
+		Thread.sleep(3000);
+		readwrite.write("reboot\r");
 		Thread.sleep(2000);
 		readwrite.write("factory_reset\r");
 		
@@ -75,6 +76,10 @@ public class  BleWithRouter extends MobileAppWrappers {
 		for(int i=0;i<5;i++) {
 			homepage.clickONOFFButton();
 		}
+		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
@@ -126,6 +131,9 @@ public class  BleWithRouter extends MobileAppWrappers {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
 			}
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
@@ -153,6 +161,9 @@ public class  BleWithRouter extends MobileAppWrappers {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
 			}
+	    homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 	  ///CONNECTIVITY_MOD_2_TC_5--   Check Kill and Open //
 	    
 	    Thread.sleep(5000);
@@ -166,7 +177,10 @@ public class  BleWithRouter extends MobileAppWrappers {
 				homepage.clickONOFFButton();
 				Thread.sleep(1000);
 				}
-		 
+		 homepage.getCurrentvalue();
+			homepage.getVoltvalue();
+			homepage.getPowervalue();
+			
 		 homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();

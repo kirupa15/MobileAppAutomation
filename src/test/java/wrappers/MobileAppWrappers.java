@@ -69,7 +69,7 @@ public class MobileAppWrappers extends GenericWrappers {
 			String pass = "nw9f2hgo@123";
 
 			// Local log files
-			String appLogPath = "./serial_log.txt";
+			String appLogPath = "./app_log.txt";
 			String deviceLogPath = "./serial_log.txt";
 
 			// FTP paths

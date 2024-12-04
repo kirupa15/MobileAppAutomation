@@ -88,6 +88,12 @@ public class AccountsInfoPage extends GenericWrappers{
 
 	@FindBy(xpath = "//android.widget.Toast[@text=\"User Not Found\"]")
 	private WebElement toast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Device removed successfully\"]")
+	private WebElement deviceremovedtoast;
+	
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Your account has been deleted successfully\"]")
+	private WebElement accountdeletedtoast;
 
 	@FindBy(xpath = "//android.widget.TextView[@text='Sign Up']")
 	private WebElement signUpButton;
@@ -144,9 +150,9 @@ public class AccountsInfoPage extends GenericWrappers{
 
 
 	public String accountdel_Toast="Your account has been deleted successfully";
-	public String device_removed_Toast="Device removed successfully";
-	public String userName="testuser007"; 
-	public String emaId="testuser007@gmail.com";
+	public String device_removed_Toast=loadProp("DeviceRemovedSuccessfully");
+	public String userName=loadProp("USERNAME"); ; 
+	public String emaId=loadProp("EMAILID");
 	// Constructor to initialize the driver and instantiate elements using
 
 	public AccountsInfoPage(AndroidDriver driver) {
@@ -273,35 +279,22 @@ public class AccountsInfoPage extends GenericWrappers{
 		clickbyXpath(removeDevice, " Click The Remove Device Button ");
 		clickbyXpath(removeDevicePopupYesButton, " Click The Remove Device Pop-up YES Button ");
 		
-//		// Print the page source to check for toast message visibility
-//		System.out.println(driver.getPageSource());
-//
-//		// If the toast message is present in the page source, proceed with verification
-//		if (driver.getPageSource().contains("Device removed successfully")) {
-//		    System.out.println("Toast message is visible: Device removed successfully");
-//		} else {
-//		    System.out.println("Toast message not found");
-//		}
 
 
 
-//		WebElement toast = driver.findElement(By.xpath("//android.widget.Toast[@text='"+device_removed_Toast+"']"));
 		
 		
-//		verifyTextContainsByXpath(toast, device_removed_Toast, "Device removed Toast message");
+		verifyTextContainsByXpath(deviceremovedtoast, device_removed_Toast, "Device removed Toast message");
+		
 		clickbyXpath(menuBarButton, " Menu Bar ");
 		clickbyXpath(AccountsinfoButtonbeforeadddevice, " Accounts Info Button");
 		clickDeleteAccountButton();
 		popuphandle();
+		verifyTextContainsByXpath(accountdeletedtoast, accountdel_Toast, "Account deleted Toast message");
 		
-//	 toast = wait.until(ExpectedConditions.presenceOfElementLocated(
-//			    MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.widget.Toast\")")));
-//		 
-//			
-//			 verifyTextContainsByXpath(toast, accountdel_Toast, "Account delete Toast message");		
-		//android.widget.Toast[@text="Device removed successfully"]
 
-		verifyTextContainsByXpath(signUpButton, "SignUp", "SignUp page");
+
+		verifyTextContainsByXpath(signUpButton, "Sign Up", "SignUp page");
 
 		 clickbyXpath(signUpButton, " Sign Up Button " );
 		 entervaluebyXpath(usernamesignup, " User Name " , userName);

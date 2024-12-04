@@ -71,6 +71,7 @@ public class GenericWrappers {
 			caps.setCapability("appium:deviceName", prop.getProperty("DEVICE_NAME"));
 
 			caps.setCapability("appium:automationName", "uiautomator2");
+			caps.setCapability("appium:ignoreHiddenApiPolicyError", "true");
 			caps.setCapability("newCommandTimeout", 999999);
 			//			caps.setCapability("autoGrantPermissions", true);
 			//			keepSessionAlive(driver);
@@ -510,6 +511,31 @@ public class GenericWrappers {
 
 
 
+	public void closeApp() {
+
+		try {
+			if (driver != null) {
+				// Kill the app (terminate it)
+				driver.terminateApp("com.iinvsys.szephyr");
+				Reporter.reportStep("The app was killed successfully.", "PASS");
+			}
+		} catch (Exception e) {
+			Reporter.reportStep("The app could not killed .", "FAIL");
+		}
+	}
+	
+	public void openapp() {
+		try {
+			
+				// Kill the app (terminate it)
+				driver.activateApp("com.iinvsys.szephyr");
+				Reporter.reportStep("The app was opened successfully.", "PASS");
+			
+		} catch (Exception e) {
+			Reporter.reportStep("The app  not opened .", "FAIL");
+		}
+	}
+	
 	public void killAndReopenApp() {
 		try {
 			if (driver != null) {
@@ -611,17 +637,32 @@ public class GenericWrappers {
 		
 			// Check if the password entry field is displayed
 			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
+			WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
 			if (isElementDisplayed(enterPasswordField)) {
 				// Enter the WiFi password
 				enterValueByXpath(enterPasswordField, "Wi-Fi password", wifiPassword);
 
 				// Click on the connect button
-				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); // Replace with the actual XPath
-				clickbyXpath(connectButton, "Connect button");
+				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); 
+				// Replace with the actual XPath
+				if (isElementDisplayed(connectButton)) {
+					
+					clickbyXpath(connectButton, "Connect button");
+					
+					Thread.sleep(5000);}
 
+			}
+			else if (isElementDisplayed(enterPasswordFieldOnePlus)) {
+				enterValueByXpath(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
+				WebElement savebutton = driver.findElement(MobileBy.xpath("//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")); 
+			 if (isElementDisplayed(savebutton)) {
+				clickbyXpath(savebutton, "save button");
+				
 				Thread.sleep(5000);
-
-			} else {
+			}
+				
+			} 
+			else {
 				System.out.println("Already connected or password is saved.");
 			
 			}
@@ -643,11 +684,7 @@ public class GenericWrappers {
 		}
 	}
 
-	// Example methods for clicking and entering values (to be replaced with your actual implementations)
-//	public void clickByXpath(WebElement element, String description) {
-//		element.click();
-//		System.out.println(description);
-//	}
+
 
 	public void enterValueByXpath(WebElement element, String fieldName, String value) {
 		element.sendKeys(value);
@@ -688,4 +725,6 @@ public class GenericWrappers {
 			Thread.sleep(3000);
 		}
 	}
+	
+	
 }

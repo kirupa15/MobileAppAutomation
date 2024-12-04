@@ -42,7 +42,8 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	@Test
 	public void removerepair() throws Exception {
 		initAndriodDriver();
-		pairBlewithoutRouter();
+//		pairBlewithoutRouter();
+		checkble();
 	}
 	
 	public void pairBlewithoutRouter() throws Exception {
@@ -58,8 +59,10 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 			
 		
 		readwrite.openPort();
+		Thread.sleep(3000);
+		readwrite.write("reboot\r");
 //		readwrite.read();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
@@ -100,10 +103,17 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
 		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
+		
 		homepage.killandopen();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
 		homepage.clickMenuBarButton();
 		devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
@@ -127,6 +137,10 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
 		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
+		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
@@ -140,6 +154,21 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}
+	}
+	
+	public void checkble() throws InterruptedException {
+		adddevicepage= new AddDevicePage(driver);
+		homepage = new HomePage(driver);
+		devicemenupage= new DeviceMenuPage(driver);
+		szephyrinfoPage= new Szephyr_info_Page(driver);
+		
+		homepage.getCurrentvalue();
+		homepage.getVoltvalue();
+		homepage.getPowervalue();
+		
+		//com.horcrux.svg.PathView[@content-desc="com.szephyr:id/PairedGeyser_Img_svg_ble_0"]
+		
+		//com.horcrux.svg.PathView[@content-desc="com.szephyr:id/PairedGeyser_Img_svg_STA_0"]
 	}
 }
 		

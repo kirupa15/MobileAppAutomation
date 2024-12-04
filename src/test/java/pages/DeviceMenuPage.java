@@ -206,8 +206,9 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch3\"]")
 	private WebElement pairingTimeQuietLEDEnable;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_removeDevice, com.szephyr:id/menu_text_removeDevice\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_text_removeDevice']")
 	private WebElement removeDevice;
+	
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"NO\"]")
 	private WebElement removeDevicePopupNoButton;

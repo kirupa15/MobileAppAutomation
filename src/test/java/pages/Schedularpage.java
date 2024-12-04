@@ -1,22 +1,26 @@
 package pages;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import wrappers.GenericWrappers;
 
 public class Schedularpage extends GenericWrappers {
@@ -28,52 +32,30 @@ public class Schedularpage extends GenericWrappers {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
-		this.wait=new WebDriverWait(driver, 30);
+		this.wait = new WebDriverWait(driver, 30);
 	}
 
-	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
-	LandingPage landingpage;
-	SignInPage loginpage;
-	HomePage homepage;
-	OtpPage otppage;
-	AddDevicePage adddevicepage;
-	DeviceMenuPage devicemenupage;
-			
-
-
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_Navigation\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Home_Navigation_Button\"]")
 	private WebElement Schedulebutton;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"testuser007_1\"]")
-	private WebElement Username;
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")
 	private WebElement Scehduletitle;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/SCH_ADD_PLUS_ICON\"]")
 	private WebElement plusIcon;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Scheduler_YourSchedules\"]")
+	@FindBy(xpath = "//*[@resource-id='Header']")
 	private WebElement yourScheduleheader;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Scheduler_OtherUsersSchedules\"]")
 	private WebElement otherScheduleheader;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Scheduler_YouDoNotHaveAnySchedules\"]")
 	private WebElement schedulePlaceholder;
 
-	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup")
-	private WebElement scheduletime0;
-	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup")
-	private WebElement scheduletime1;
-	@FindBy(xpath = "//android.widget.TextView[@text=\"PM\"]")
-	private WebElement scheduletime2;
-
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Edit_Schedule_Save_Button\"]")
 	private WebElement savebtn;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Cancel_ButtonText\"]")
 	private WebElement cancelbtn;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Scheduler_Time, com.szephyr:id/Scheduler_Meridian, com.szephyr:id/Scheduler_Switch, Duration:  1 Minutes\r\n"
-			+ "Today\"]/android.view.ViewGroup")
-	private WebElement createdschedule;
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Delete\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/SCH_EDIT_DELETE_BTN\"]")
 	private WebElement deleteBtn;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"]")
 	private WebElement locationpermissionpopup;
@@ -81,170 +63,385 @@ public class Schedularpage extends GenericWrappers {
 	private WebElement devicepermission;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_HeatingDuration\"]")
 	private WebElement durationtext;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Scheduler_Switch\"]/android.view.ViewGroup")
+	@FindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Scheduler_Switch\"])[1]")
 	private WebElement disableschedule;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr and AC turned ON\"]")
 	private WebElement Acturnondesc;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Please ensure sZephyr is switched ON prior to operating your AC remote\"]")
 	private WebElement acturnoffdesc;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Edit_Schedule_Minutes1\"]/android.view.ViewGroup")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Edit_Schedule_Minutes1\"]")
 	private WebElement minute1;
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Duration_Hours_Minutes\"]")
 	private WebElement duration;
-	
+
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Schedule has been deleted\"]")
+	private WebElement scheduleDeletedToast;
+
+//	@FindBy(xpath = "//android.widget.ScrollView/android.view.ViewGroup")
+//	private List allSchedules;
+	@FindBy(xpath = "//*[@resource-id='Scheduler_Time']")
+	private WebElement createdSchedule;
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
+	private WebElement backButton;
+
+	@FindBy(xpath = "//android.widget.TextView[@text=\"testuser007_1\"]")
+	private WebElement userName;
+
+	public String scheduleDeletedtoast = loadProp("thisScheduleHasBeenDeleted");
+
+//	com.iinvsys.szephyr:id/ScrollPicker_Hours
+	String x1 = "//*[@resource-id='ScrollPicker_Hours']";
+	String x2 = "//*[@resource-id='ScrollPicker_Minutes']";
+	String x3 = "//*[@resource-id='ScrollPicker_AM_PM']";
+
+	String resourseId1 = "ScrollPicker_Hours";
+	String resourseId2 = "ScrollPicker_Minutes";
+	String resourseId3 = "ScrollPicker_AM_PM";
 
 
-	public void createschedule(int mode, int intervals, int gap) throws Exception {
 
-		loginpage = new SignInPage(driver);
-		landingpage = new LandingPage(driver);
-		homepage = new HomePage(driver);
-		adddevicepage = new AddDevicePage(driver);
-		otppage = new OtpPage(driver);
-		
-		adddevicepage.pair(mode);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		clickbyXpath(Schedulebutton, "schedulebutton");
-
-		// Generate schedule times
+	public void createSchedules(int timetostart, int intervals, int gapBetweenNextSchedule) {
+		// Get the current time and calculate the start time for the first schedule
 		LocalTime currentTime = LocalTime.now();
-		LocalTime timet = currentTime.plusMinutes(5);
-		List<LocalTime> scheduleTimes = generateSchedule(timet, intervals, gap);
+		LocalTime timet = currentTime.plusMinutes(timetostart);
+
+		// Generate schedule times based on intervals and gap
+		List<LocalTime> scheduleTimes = generateSchedule(timet, intervals, gapBetweenNextSchedule);
 
 		// Loop through each time and create the schedule
 		for (LocalTime time : scheduleTimes) {
 			// Split time into hour, minute, and AM/PM
 			int hour = time.getHour() % 12;
-			if (hour == 0)
+			if (hour == 0) {
 				hour = 12; // Convert 0 hour to 12 for 12-hour format
+			}
 
-			// Store minute as int but format it as two digits when displaying
+			// Format the minute as two digits
 			int minute = time.getMinute();
-			String formattedMinute = String.format("%02d", minute); // Format minute as two digits
+			String formattedMinute = String.format("%02d", minute);
 			String amPm = time.getHour() >= 12 ? "PM" : "AM";
 
 			System.out.println("Creating schedule for: " + hour + ":" + formattedMinute + " " + amPm);
 
-			// Navigate to the screen where you can create a schedule (replace with actual
-			// navigation steps)
-
+			// Navigate to the screen to create a schedule
 			clickbyXpath(plusIcon, "plusbutton");
-			// Select the time (replace with actual steps to select the time)
-			// selectTime(hour, minute, amPm);
+
+			// Scroll to the desired time using the method that scrolls until the element is
+			// visible
 			selectTimeUsingBounds(hour, minute, amPm);
-			// Save the schedule (replace with actual save steps)
-			clickbyXpath(minute1, "1min");
 
-			String text = duration.getText();
-			System.out.println(text);
-
-			int extractintvalue = extractintvalue(text.toString());
-			if (extractintvalue == 1) {
-				System.out.println("schedule created for 1 min ");
-
-			}
+			clickonDuration();
+			// Save the schedule
 			saveSchedule();
 
-			System.out.println("Schedule created for: " + hour + ":" + minute + " " + amPm);
+			System.out.println("Schedule created for: " + hour + ":" + formattedMinute + " " + amPm);
 		}
 	}
 
-	private List<LocalTime> generateSchedule(LocalTime startTime, int intervals, int durationMinutes) {
+	private List<LocalTime> generateSchedule(LocalTime startTime, int intervals, int gap) {
 		List<LocalTime> schedule = new ArrayList<>();
 		for (int i = 0; i < intervals; i++) {
-			schedule.add(startTime.plusMinutes(i * durationMinutes));
+			schedule.add(startTime.plusMinutes(i * gap));
 		}
 		return schedule;
 	}
 
 	private void selectTimeUsingBounds(int hour, int minute, String amPm) {
-		// Ensure the frame is visible before interacting with it
-		By frameLocator = By.xpath(
-				"//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(frameLocator));
 
-		// Scroll to hour and ensure it's centered
-		scrollToTextUsingUiScrollable(hour, 0);
+		// Create an ExecutorService with 3 threads for the three scroll tasks
+		ExecutorService executorService = Executors.newFixedThreadPool(3);
 
-		String formattedMinute = String.format("%02d", minute); // Ensure minute is displayed as 01, 02, etc.
-		scrollToTextUsingUiScrollable(formattedMinute, 1);
+		// Convert Runnable tasks to Callable<Void> to make it compatible with invokeAll
+		Callable<Void> scrollHoursTask = () -> {
+			scrollColumnUntilValueAtIndex0Hour(x1, resourseId1, String.valueOf(hour));
+			return null;
+		};
 
-		// Scroll to AM/PM and ensure it's centered
-		scrollToTextUsingUiScrollable(amPm, 2);
+		Callable<Void> scrollMinutesTask = () -> {
+			scrollColumnUntilValueAtIndex0Min(x2, resourseId2, String.valueOf(minute));
+			return null;
+		};
+
+		Callable<Void> scrollAmPmTask = () -> {
+			scrollColumnUntilValueAtIndex1(x3, resourseId3, String.valueOf(amPm));
+			return null;
+		};
+
+		// Create a list of Callable tasks
+		List<Callable<Void>> tasks = Arrays.asList(scrollHoursTask, scrollMinutesTask, scrollAmPmTask);
+
+		try {
+			// Run all scrolling tasks in parallel
+			executorService.invokeAll(tasks);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} finally {
+			executorService.shutdown();
+		}
 	}
 
-	// Overloaded method for int
-	private void scrollToTextUsingUiScrollable(int value, int instance) {
-		String selector = "new UiScrollable(new UiSelector().scrollable(true).instance(" + instance
-				+ ")).scrollIntoView(new UiSelector().text(\"" + value + "\"))";
-		MobileElement element = (MobileElement) driver.findElementByAndroidUIAutomator(selector);
-		wait.until(ExpectedConditions.visibilityOf(element));
-//		verifyElementPosition(element, String.valueOf(value), instance);
+	private void saveSchedule() {
+		// Click the save button after setting the time
+		clickbyXpath(savebtn, "saveschedule");
+
+		// Validate if the schedule is saved successfully
+		verifyTextContainsByXpath(yourScheduleheader, "Schedule", "Schedule page header");
+
 	}
 
-	// Overloaded method for String
-	private void scrollToTextUsingUiScrollable(String value, int instance) {
-		String selector = "new UiScrollable(new UiSelector().scrollable(true).instance(" + instance
-				+ ")).scrollIntoView(new UiSelector().text(\"" + value + "\"))";
-		MobileElement element = (MobileElement) driver.findElementByAndroidUIAutomator(selector);
-		wait.until(ExpectedConditions.visibilityOf(element));
-//		verifyElementPosition(element, value, instance);
+	private void scrollColumnUntilValueAtIndex0Hour(String xpath, String resourceId, String expectedValue) {
+
+		// Find the container element using resourceId
+		WebElement columnElement = driver.findElement(By.xpath(xpath));
+
+		boolean valueAtIndex1 = false;
+
+		while (!valueAtIndex1) {
+			// Get the list of elements in the column (assuming TextView contains the
+			// displayed values)
+			List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+
+			// Check if the expected value is at index 1 (typically the visible element)
+			int centerIndex = elements.size() / 2;
+			WebElement elAtCenter = elements.get(centerIndex);
+			String currentValue = elAtCenter.getText();
+
+			WebElement firstIndex = elements.get(0);
+			String elFirst = firstIndex.getText();
+			System.out.println("First index 0 value" + elFirst);
+
+			if (extractintvalue(currentValue) == extractintvalue(expectedValue)) {
+				valueAtIndex1 = true;
+				System.out.println("Element with value " + expectedValue + " is now at centre index ");
+			} else {
+				// Compare current value with expected value to decide scroll direction
+				int compareResult = comparePickerValues(resourceId, currentValue, expectedValue);
+
+				if (compareResult < 0) {
+					// Scroll forward (expected value is greater)
+					System.out.println("Scrolling forward for: " + resourceId);
+					swipeElement(xpath, true);
+				} else {
+					// Scroll backward (expected value is smaller)
+					System.out.println("Scrolling backward for: " + resourceId);
+					swipeElement(xpath, false);
+				}
+			}
+			if (extractintvalue(elFirst) == 1) {
+				valueAtIndex1 = true;
+				System.out.println("Element with value " + expectedValue + " is now at index 0.");
+			}
+		}
+
 	}
 
-	private void verifyElementPosition(MobileElement element, String value, int instance) {
-		By frameLocator = By.xpath(
-				"//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup[1]/android.widget.TextView[@text='"
-						+ value + "']");
-		List<AndroidElement> elements = driver.findElements(frameLocator);
+	private void scrollColumnUntilValueAtIndex0Min(String xpath, String resourceId, String expectedValue) {
 
-		for (int i = 0; i < elements.size(); i++) {
-			if (elements.get(i).getText().equals(value)) {
-				if (i == instance) {
-					element.click();
-					break;
+		// Find the container element using resourceId
+		WebElement columnElement = driver.findElement(By.xpath(xpath));
+
+		boolean valueAtIndex1 = false;
+
+		while (!valueAtIndex1) {
+			// Get the list of elements in the column (assuming TextView contains the
+			// displayed values)
+			List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+
+			int centerIndex = elements.size() / 2;
+			WebElement elAtCenter = elements.get(centerIndex);
+			String currentValue = elAtCenter.getText();
+
+			WebElement firstIndex = elements.get(0);
+			String elFirst = firstIndex.getText();
+
+			if (extractintvalue(currentValue) == extractintvalue(expectedValue)) {
+
+				valueAtIndex1 = true;
+				System.out.println("Element with value " + expectedValue + " is now at correct index .");
+			} else {
+				// Compare current value with expected value to decide scroll direction
+				int compareResult = comparePickerValues(resourceId, currentValue, expectedValue);
+
+				if (compareResult < 0) {
+					// Scroll forward (expected value is greater)
+					System.out.println("Scrolling forward for: " + resourceId);
+					swipeElement(xpath, true);
+				} else {
+					// Scroll backward (expected value is smaller)
+					System.out.println("Scrolling backward for: " + resourceId);
+					swipeElement(xpath, false);
+				}
+			}
+			if (extractintvalue(elFirst) == 00) {
+				valueAtIndex1 = true;
+				System.out.println("Element with value " + expectedValue + " is now at index 1.");
+			}
+		}
+
+	}
+
+	private void scrollColumnUntilValueAtIndex1(String xpath, String resourceId, String expectedValue) {
+		// Find the container element using resourceId
+		WebElement columnElement = driver.findElement(By.xpath(xpath));
+
+		boolean valueAtIndex1 = false;
+
+		while (!valueAtIndex1) {
+			// Get the list of elements in the column (assuming TextView contains the
+			// displayed values)
+			List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+
+			 int centerIndex = elements.size() / 2;
+	            WebElement elAtCenter = elements.get(centerIndex);
+	            String currentValue = elAtCenter.getText();
+
+			if (currentValue.equals(expectedValue)) {
+				valueAtIndex1 = true;
+				System.out.println("Element with value " + expectedValue + " is now at index 1.");
+			} else {
+				// Compare current value with expected value to decide scroll direction
+				int compareResult = comparePickerValues(resourceId, currentValue, expectedValue);
+
+				if (compareResult < 0) {
+					// Scroll forward (expected value is greater)
+					System.out.println("Scrolling forward for: " + resourceId);
+					swipeElement(xpath, true);
+				} else {
+					// Scroll backward (expected value is smaller)
+					System.out.println("Scrolling backward for: " + resourceId);
+					swipeElement(xpath, false);
 				}
 			}
 		}
 	}
 
-	private void saveSchedule() {
-
-		clickbyXpath(savebtn, "saveschedule");
-		String text = yourScheduleheader.getText();
-		System.out.println(text);
-		if (text.contentEquals("Schedule")) {
-			System.out.println("Schedule heading displayed ");
+	private int comparePickerValues(String resourceId, String currentValue, String expectedValue) {
+		if (resourceId.equals(resourseId1)) { // Hour comparison
+			int currentHour = Integer.parseInt(currentValue);
+			int expectedHour = Integer.parseInt(expectedValue);
+			return Integer.compare(currentHour, expectedHour);
+		} else if (resourceId.equals(resourseId2)) { // Minute comparison
+			int currentMinute = Integer.parseInt(currentValue);
+			int expectedMinute = Integer.parseInt(expectedValue);
+			return Integer.compare(currentMinute, expectedMinute);
+		} else if (resourceId.equals(resourseId3)) { // AM/PM comparison
+			// Handle AM/PM comparison manually
+			return compareAmPm(currentValue, expectedValue);
 		} else {
-			System.out.println("Schedule page not displayed ");
+			throw new IllegalArgumentException("Unknown resource ID: " + resourceId);
 		}
-
 	}
 
-
+	private int compareAmPm(String currentValue, String expectedValue) {
+		if (currentValue.equals("AM") && expectedValue.equals("PM")) {
+			return -1; // AM is less than PM
+		} else if (currentValue.equals("PM") && expectedValue.equals("AM")) {
+			return 1; // PM is greater than AM
+		} else {
+			return 0; // Both are the same
+		}
+	}
 
 	public void disableschedule(int min) throws Exception, IOException, InterruptedException {
 
 		clickbyXpath(disableschedule, "disable schedule");
-
+		Thread.sleep(min * 60 * 1000);
 		driver.navigate().back();
-//				verifyTextContainsByXpath(Acturnondesc, "sZephyr and AC turned ON", "AC truned ON description");
-
-		driver.manage().timeouts().implicitlyWait(min, TimeUnit.MINUTES);
 		verifyTextContainsByXpath(acturnoffdesc,
 				"Please ensure sZephyr is switched ON prior to operating your AC remote", "AC truned OFF description");
 
 	}
 
-	// checking on/off state of relay after schedule completion.
-	public void checkon_off(int min) {
-		driver.navigate().back();
-		verifyTextContainsByXpath(Acturnondesc, "sZephyr and AC turned ON", "AC truned ON description");
 
-		driver.manage().timeouts().implicitlyWait(min, TimeUnit.MINUTES);
-		verifyTextContainsByXpath(Acturnondesc,
-				"Please ensure sZephyr is switched ON prior to operating your AC remote", "AC truned OFF description");
 
+	public void clickSchedulebtn() {
+
+		clickbyXpath(Schedulebutton, "schedulebutton");
+	}
+
+	public void clickonDuration() {
+
+		clickbyXpath(minute1, "1 min on duration minutes ");
+
+	}
+
+	public void clickondeletebutton() {
+
+		clickbyXpath(deleteBtn, "Delete schedule button ");
+
+	}
+
+	public void checktoast() {
+		verifyTextContainsByXpath(scheduleDeletedToast, scheduleDeletedtoast, "schedule Deleted Toast");
+	}
+
+	public void clickplusbtn() {
+		clickbyXpath(plusIcon, "plusicon");
+	}
+
+	public void deleteschedule() {
+
+		try {
+
+			while (createdSchedule.isDisplayed()) {
+
+				clickbyXpath(createdSchedule, "created schedules");
+				clickbyXpath(deleteBtn, "deleteButton");
+				checktoast();
+
+			}
+
+		} catch (Exception e) {
+			System.out.println("All created schedules are deleted");
+		}
+
+	}
+
+	public void backToHomepage() {
+
+		clickbyXpath(backButton, "back button");
+		verifyTextContainsByXpath(userName, loadProp("USERNAMEINAPP"), "DeviceName");
+
+	}
+
+	public void swipeElement(String columnXPath, boolean forward) {
+		WebElement columnElement = driver.findElement(By.xpath(columnXPath));
+
+		// Get the location and size of the column
+		int columnCenterX = columnElement.getLocation().getX() + (columnElement.getSize().getWidth() / 2);
+		int startY = forward ? columnElement.getLocation().getY() + (int) (columnElement.getSize().getHeight() * 0.6) // Swipe
+																														// up
+																														// if
+																														// forward
+				: columnElement.getLocation().getY() + (int) (columnElement.getSize().getHeight() * 0.2); // Swipe down
+																											// if
+																											// backward
+		int endY = forward ? columnElement.getLocation().getY() + (int) (columnElement.getSize().getHeight() * 0.2) // End
+																													// at
+																													// top
+																													// for
+																													// forward
+																													// swipe
+				: columnElement.getLocation().getY() + (int) (columnElement.getSize().getHeight() * 0.6); // End at
+																											// bottom
+																											// for
+																											// backward
+																											// swipe
+
+		PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+		Sequence swipe = new Sequence(finger, 1)
+				.addAction(
+						finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), columnCenterX, startY))
+				.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg())).addAction(finger
+						.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), columnCenterX, endY))
+				.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+		driver.perform(Arrays.asList(swipe));
+	}
+	
+	public void checkOffState() {
+
+		verifyTextContainsByXpath(acturnoffdesc, "Please ensure sZephyr is switched ON prior to operating your AC remote", "OFF state");
 	}
 
 }
