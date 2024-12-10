@@ -42,8 +42,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 	@Test
 	public void removerepair() throws Exception {
 		initAndriodDriver();
-//		pairBlewithoutRouter();
-		checkble();
+		pairBlewithoutRouter();
 	}
 	
 	public void pairBlewithoutRouter() throws Exception {
@@ -71,6 +70,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -87,7 +87,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.AddDevicePagedisplayed();
 		
 		
-//		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
+		///CONNECTIVITY_MOD_1_TC_02//////APP kill and re Open//////////////////////////////////////////////////////////
         
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -95,6 +95,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -129,6 +130,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -156,19 +158,7 @@ public class  BlewithoutRouter extends MobileAppWrappers {
 		}
 	}
 	
-	public void checkble() throws InterruptedException {
-		adddevicepage= new AddDevicePage(driver);
-		homepage = new HomePage(driver);
-		devicemenupage= new DeviceMenuPage(driver);
-		szephyrinfoPage= new Szephyr_info_Page(driver);
-		
-		homepage.getCurrentvalue();
-		homepage.getVoltvalue();
-		homepage.getPowervalue();
-		
-		//com.horcrux.svg.PathView[@content-desc="com.szephyr:id/PairedGeyser_Img_svg_ble_0"]
-		
-		//com.horcrux.svg.PathView[@content-desc="com.szephyr:id/PairedGeyser_Img_svg_STA_0"]
-	}
+	
+
 }
 		

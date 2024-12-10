@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/13/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 21 16:01:09 IST 2024</td>
+<td>Started on:</td><td>Tue Dec 10 22:09:00 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>4637 seconds (4637623 ms)</td>
+<tr><td>Total time:</td><td>596 seconds (596305 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,256 +75,6 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
-<tr>
-<td title='testcases_deviceSettings.TC02_DeviceSettings.removerepair()'><b>removerepair</b><br>Test class: testcases_deviceSettings.TC02_DeviceSettings</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_deviceSettings.TC02_DeviceSettings.pairBlewithoutRouter(TC02_DeviceSettings.java:94)
-	at testcases_deviceSettings.TC02_DeviceSettings.removerepair(TC02_DeviceSettings.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_deviceSettings.TC02_DeviceSettings.pairBlewithoutRouter(TC02_DeviceSettings.java:49)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace704267866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace704267866'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_deviceSettings.TC02_DeviceSettings.pairBlewithoutRouter(TC02_DeviceSettings.java:94)
-	at testcases_deviceSettings.TC02_DeviceSettings.removerepair(TC02_DeviceSettings.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_deviceSettings.TC02_DeviceSettings.pairBlewithoutRouter(TC02_DeviceSettings.java:49)
-	... 29 more
-</pre></div></td>
-<td>134</td>
-<td>testcases_deviceSettings.TC02_DeviceSettings@389b0789</td></tr>
-<tr>
-<td title='testcases_connectivity.SmartConfig.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.SmartConfig</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.SmartConfig.pairBlewithoutRouter(SmartConfig.java:168)
-	at testcases_connectivity.SmartConfig.removerepair(SmartConfig.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.ClickCancelButtonBle(AddDevicePage.java:374)
-	at testcases_connectivity.SmartConfig.pairBlewithoutRouter(SmartConfig.java:87)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1352464186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1352464186'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.SmartConfig.pairBlewithoutRouter(SmartConfig.java:168)
-	at testcases_connectivity.SmartConfig.removerepair(SmartConfig.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.ClickCancelButtonBle(AddDevicePage.java:374)
-	at testcases_connectivity.SmartConfig.pairBlewithoutRouter(SmartConfig.java:87)
-	... 29 more
-</pre></div></td>
-<td>231</td>
-<td>testcases_connectivity.SmartConfig@7de62196</td></tr>
-<tr>
-<td title='testcases_connectivity.WifiWithRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.WifiWithRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:99)
-	at testcases_connectivity.WifiWithRouter.removerepair(WifiWithRouter.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at pages.AddDevicePage.verifysigninpage(AddDevicePage.java:604)
-	at pages.AddDevicePage.pair(AddDevicePage.java:585)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:66)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace505344183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace505344183'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:99)
-	at testcases_connectivity.WifiWithRouter.removerepair(WifiWithRouter.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at pages.AddDevicePage.verifysigninpage(AddDevicePage.java:604)
-	at pages.AddDevicePage.pair(AddDevicePage.java:585)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:66)
-	... 29 more
-</pre></div></td>
-<td>70</td>
-<td>testcases_connectivity.WifiWithRouter@7905a0b8</td></tr>
 <tr>
 <td title='testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login()'><b>login</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout</td>
 <td><div><pre>java.lang.AssertionError: Failed due to this exception
@@ -360,12 +110,12 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login(TC06_SignIn_Logout.java:57)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
+	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:353)
+	at testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login(TC06_SignIn_Logout.java:64)
 	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2103434580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2103434580'><pre>java.lang.AssertionError: Failed due to this exception
+</pre></div><a href='#' onClick='toggleBox("stack-trace1912609905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1912609905'><pre>java.lang.AssertionError: Failed due to this exception
 	at org.testng.Assert.fail(Assert.java:99)
 	at testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login(TC06_SignIn_Logout.java:84)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -398,499 +148,13 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login(TC06_SignIn_Logout.java:57)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
+	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:353)
+	at testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout.login(TC06_SignIn_Logout.java:64)
 	... 28 more
 </pre></div></td>
-<td>92</td>
-<td>testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout@2ca26d77</td></tr>
-<tr>
-<td title='testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login()'><b>login</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login(TC05_SignIn_SuccessFlow.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login(TC05_SignIn_SuccessFlow.java:53)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace715982304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace715982304'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login(TC05_SignIn_SuccessFlow.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.OtpPage.enterOTPField1(OtpPage.java:54)
-	at testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login(TC05_SignIn_SuccessFlow.java:53)
-	... 28 more
-</pre></div></td>
-<td>92</td>
-<td>testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow@1169afe1</td></tr>
-<tr>
-<td title='testcases_pairing.TC02_Pairing_BlewithRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC02_Pairing_BlewithRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:101)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.removerepair(TC02_Pairing_BlewithRouter.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:78)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1969217453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1969217453'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:101)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.removerepair(TC02_Pairing_BlewithRouter.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:78)
-	... 29 more
-</pre></div></td>
-<td>358</td>
-<td>testcases_pairing.TC02_Pairing_BlewithRouter@70e38ce1</td></tr>
-<tr>
-<td title='testcases_connectivity.WIfiWithout_router.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.WIfiWithout_router</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.WIfiWithout_router.pairBlewithoutRouter(WIfiWithout_router.java:103)
-	at testcases_connectivity.WIfiWithout_router.removerepair(WIfiWithout_router.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_connectivity.WIfiWithout_router.pairBlewithoutRouter(WIfiWithout_router.java:69)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace761191341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace761191341'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.WIfiWithout_router.pairBlewithoutRouter(WIfiWithout_router.java:103)
-	at testcases_connectivity.WIfiWithout_router.removerepair(WIfiWithout_router.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_connectivity.WIfiWithout_router.pairBlewithoutRouter(WIfiWithout_router.java:69)
-	... 29 more
-</pre></div></td>
-<td>291</td>
-<td>testcases_connectivity.WIfiWithout_router@51bf5add</td></tr>
-<tr>
-<td title='testcases_deviceSettings.TC04_DeviceSettings.removerepair()'><b>removerepair</b><br>Test class: testcases_deviceSettings.TC04_DeviceSettings</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_deviceSettings.TC04_DeviceSettings.pairBlewithoutRouter(TC04_DeviceSettings.java:91)
-	at testcases_deviceSettings.TC04_DeviceSettings.removerepair(TC04_DeviceSettings.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_deviceSettings.TC04_DeviceSettings.pairBlewithoutRouter(TC04_DeviceSettings.java:51)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1713649905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1713649905'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_deviceSettings.TC04_DeviceSettings.pairBlewithoutRouter(TC04_DeviceSettings.java:91)
-	at testcases_deviceSettings.TC04_DeviceSettings.removerepair(TC04_DeviceSettings.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_deviceSettings.TC04_DeviceSettings.pairBlewithoutRouter(TC04_DeviceSettings.java:51)
-	... 29 more
-</pre></div></td>
-<td>305</td>
-<td>testcases_deviceSettings.TC04_DeviceSettings@478db956</td></tr>
-<tr>
-<td title='testcases_pairing.TC05_Pairing_WifiwithoutRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC05_Pairing_WifiwithoutRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC05_Pairing_WifiwithoutRouter.removerepair(TC05_Pairing_WifiwithoutRouter.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC05_Pairing_WifiwithoutRouter.removerepair(TC05_Pairing_WifiwithoutRouter.java:53)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1814976184", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1814976184'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC05_Pairing_WifiwithoutRouter.removerepair(TC05_Pairing_WifiwithoutRouter.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC05_Pairing_WifiwithoutRouter.removerepair(TC05_Pairing_WifiwithoutRouter.java:53)
-	... 28 more
-</pre></div></td>
-<td>303</td>
-<td>testcases_pairing.TC05_Pairing_WifiwithoutRouter@1ebea008</td></tr>
-<tr>
-<td title='testcases_pairing.TC04_Pairing_WifiwithRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC04_Pairing_WifiwithRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC04_Pairing_WifiwithRouter.removerepair(TC04_Pairing_WifiwithRouter.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC04_Pairing_WifiwithRouter.removerepair(TC04_Pairing_WifiwithRouter.java:53)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace2122454169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2122454169'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC04_Pairing_WifiwithRouter.removerepair(TC04_Pairing_WifiwithRouter.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_pairing.TC04_Pairing_WifiwithRouter.removerepair(TC04_Pairing_WifiwithRouter.java:53)
-	... 28 more
-</pre></div></td>
-<td>300</td>
-<td>testcases_pairing.TC04_Pairing_WifiwithRouter@13df2a8c</td></tr>
+<td>165</td>
+<td>testcases_signIn_up_accountsinfo_module.TC06_SignIn_Logout@536dbea0</td></tr>
 <tr>
 <td title='testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info.removerepair()'><b>removerepair</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info</td>
 <td><div><pre>java.lang.AssertionError: Failed due to this exception
@@ -925,14 +189,49 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AccountsInfoPage.checkAccountsinfousername_email_Language(AccountsInfoPage.java:292)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8HN186T&apos;, ip: &apos;192.168.10.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 3057caec-0cdd-4197-92ed-67d225e0ac7c
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id=&quot;android:id/button1&quot;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at pages.AccountsInfoPage.popuphandle(AccountsInfoPage.java:249)
+	at pages.AccountsInfoPage.checkAccountsinfousername_email_Language(AccountsInfoPage.java:274)
 	at testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info.pairBlewithoutRouter(TC01_02_03_04_Accounts_Info.java:88)
 	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1099248281", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1099248281'><pre>java.lang.AssertionError: Failed due to this exception
+</pre></div><a href='#' onClick='toggleBox("stack-trace812609309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace812609309'><pre>java.lang.AssertionError: Failed due to this exception
 	at org.testng.Assert.fail(Assert.java:99)
 	at testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info.pairBlewithoutRouter(TC01_02_03_04_Accounts_Info.java:95)
 	at testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info.removerepair(TC01_02_03_04_Accounts_Info.java:52)
@@ -964,177 +263,50 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AccountsInfoPage.checkAccountsinfousername_email_Language(AccountsInfoPage.java:292)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-8HN186T&apos;, ip: &apos;192.168.10.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 3057caec-0cdd-4197-92ed-67d225e0ac7c
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id=&quot;android:id/button1&quot;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at pages.AccountsInfoPage.popuphandle(AccountsInfoPage.java:249)
+	at pages.AccountsInfoPage.checkAccountsinfousername_email_Language(AccountsInfoPage.java:274)
 	at testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info.pairBlewithoutRouter(TC01_02_03_04_Accounts_Info.java:88)
 	... 29 more
 </pre></div></td>
-<td>149</td>
-<td>testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info@1f760b47</td></tr>
-<tr>
-<td title='testcases_connectivity.BleWithRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.BleWithRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.BleWithRouter.pairBlewithoutRouter(BleWithRouter.java:195)
-	at testcases_connectivity.BleWithRouter.removerepair(BleWithRouter.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_connectivity.BleWithRouter.pairBlewithoutRouter(BleWithRouter.java:64)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace860422228", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace860422228'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.BleWithRouter.pairBlewithoutRouter(BleWithRouter.java:195)
-	at testcases_connectivity.BleWithRouter.removerepair(BleWithRouter.java:43)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:196)
-	at pages.AddDevicePage.clickNextButtonsZephyrInfo(AddDevicePage.java:339)
-	at testcases_connectivity.BleWithRouter.pairBlewithoutRouter(BleWithRouter.java:64)
-	... 29 more
-</pre></div></td>
-<td>135</td>
-<td>testcases_connectivity.BleWithRouter@1787f2a0</td></tr>
-<tr>
-<td title='testcases_pairing.TC03_Pairing_SmartConfig.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC03_Pairing_SmartConfig</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC03_Pairing_SmartConfig.removerepair(TC03_Pairing_SmartConfig.java:113)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.SignInPage.enterUserName(SignInPage.java:38)
-	at testcases_pairing.TC03_Pairing_SmartConfig.removerepair(TC03_Pairing_SmartConfig.java:93)
-	... 28 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace218904467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace218904467'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_pairing.TC03_Pairing_SmartConfig.removerepair(TC03_Pairing_SmartConfig.java:113)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:46)
-	at wrappers.GenericWrappers.entervaluebyXpath(GenericWrappers.java:259)
-	at pages.SignInPage.enterUserName(SignInPage.java:38)
-	at testcases_pairing.TC03_Pairing_SmartConfig.removerepair(TC03_Pairing_SmartConfig.java:93)
-	... 28 more
-</pre></div></td>
-<td>307</td>
-<td>testcases_pairing.TC03_Pairing_SmartConfig@2ca923bb</td></tr>
+<td>132</td>
+<td>testcases_signIn_up_accountsinfo_module.TC01_02_03_04_Accounts_Info@62656be4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1145,65 +317,30 @@ Caused by: java.lang.RuntimeException: FAILED
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases_Factoryreset_sZephyrinfo.TC_05_Ble_Factory_Reset.removerepair()'><b>removerepair</b><br>Test class: testcases_Factoryreset_sZephyrinfo.TC_05_Ble_Factory_Reset</td>
+<td title='testcases_signIn_up_accountsinfo_module.TC01_SignUp.signUp()'><b>signUp</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC01_SignUp</td>
 <td></td>
-<td>127</td>
-<td>testcases_Factoryreset_sZephyrinfo.TC_05_Ble_Factory_Reset@c667f46</td></tr>
+<td>68</td>
+<td>testcases_signIn_up_accountsinfo_module.TC01_SignUp@4ef74c30</td></tr>
 <tr>
-<td title='testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03</td>
+<td title='testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow.login()'><b>login</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow</td>
 <td></td>
-<td>306</td>
-<td>testcases_connectivity.UI_CONNECTIVITY_MOD_0_TC_01_TO_03@163370c2</td></tr>
-<tr>
-<td title='testcases_deviceSettings.TC03_DeviceSettings.removerepair()'><b>removerepair</b><br>Test class: testcases_deviceSettings.TC03_DeviceSettings</td>
-<td></td>
-<td>201</td>
-<td>testcases_deviceSettings.TC03_DeviceSettings@13d9cbf5</td></tr>
-<tr>
-<td title='testcases_pairing.TC01_Pairing_BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_pairing.TC01_Pairing_BlewithoutRouter</td>
-<td></td>
-<td>355</td>
-<td>testcases_pairing.TC01_Pairing_BlewithoutRouter@4808bc9b</td></tr>
+<td>49</td>
+<td>testcases_signIn_up_accountsinfo_module.TC05_SignIn_SuccessFlow@3f1d2e23</td></tr>
 <tr>
 <td title='testcases_signIn_up_accountsinfo_module.TC03_SignIn_Flow.signIn()'><b>signIn</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC03_SignIn_Flow</td>
 <td></td>
-<td>31</td>
-<td>testcases_signIn_up_accountsinfo_module.TC03_SignIn_Flow@81d9a72</td></tr>
-<tr>
-<td title='testcases_deviceSettings.TC01_DeviceSettings.removerepair()'><b>removerepair</b><br>Test class: testcases_deviceSettings.TC01_DeviceSettings</td>
-<td></td>
-<td>185</td>
-<td>testcases_deviceSettings.TC01_DeviceSettings@35a3d49f</td></tr>
-<tr>
-<td title='testcases_Factoryreset_sZephyrinfo.TC_06_sZephyr_Info.removerepair()'><b>removerepair</b><br>Test class: testcases_Factoryreset_sZephyrinfo.TC_06_sZephyr_Info</td>
-<td></td>
-<td>145</td>
-<td>testcases_Factoryreset_sZephyrinfo.TC_06_sZephyr_Info@51bd8b5c</td></tr>
-<tr>
-<td title='testcases_signIn_up_accountsinfo_module.TC01_SignUp.signUp()'><b>signUp</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC01_SignUp</td>
-<td></td>
-<td>34</td>
-<td>testcases_signIn_up_accountsinfo_module.TC01_SignUp@2e570ded</td></tr>
-<tr>
-<td title='testcases_Factoryreset_sZephyrinfo.TC_04_Factory_Reset.removerepair()'><b>removerepair</b><br>Test class: testcases_Factoryreset_sZephyrinfo.TC_04_Factory_Reset</td>
-<td></td>
-<td>156</td>
-<td>testcases_Factoryreset_sZephyrinfo.TC_04_Factory_Reset@6ca18a14</td></tr>
+<td>32</td>
+<td>testcases_signIn_up_accountsinfo_module.TC03_SignIn_Flow@638ef7ed</td></tr>
 <tr>
 <td title='testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User.login()'><b>login</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User</td>
 <td></td>
-<td>48</td>
-<td>testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User@747f281</td></tr>
-<tr>
-<td title='testcases_connectivity.BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: testcases_connectivity.BlewithoutRouter</td>
-<td></td>
-<td>107</td>
-<td>testcases_connectivity.BlewithoutRouter@72d6b3ba</td></tr>
+<td>50</td>
+<td>testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User@4bff7da0</td></tr>
 <tr>
 <td title='testcases_signIn_up_accountsinfo_module.TC02_SignUp.signUp()'><b>signUp</b><br>Test class: testcases_signIn_up_accountsinfo_module.TC02_SignUp</td>
 <td></td>
-<td>56</td>
-<td>testcases_signIn_up_accountsinfo_module.TC02_SignUp@b86de0d</td></tr>
+<td>89</td>
+<td>testcases_signIn_up_accountsinfo_module.TC02_SignUp@7283d3eb</td></tr>
 </table><p>
 </body>
 </html>

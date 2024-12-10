@@ -68,6 +68,7 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
+		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		
@@ -80,7 +81,7 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		homepage.getPowervalue();
 		homepage.killandopen();
 		adddevicepage.ClickOkButtonBLEpopUP();
-		Thread.sleep(3000);
+		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();

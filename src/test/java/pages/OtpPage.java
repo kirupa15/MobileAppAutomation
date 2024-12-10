@@ -37,6 +37,12 @@ public class OtpPage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.Toast[@text='Too many wrong OTP attempts. Please try after some time']")
 	private WebElement tooManyAttemptsToast;
 	
+	@FindBy(xpath = "//android.widget.Toast[@text='Please enter correct OTP']")
+	private WebElement pleaseEntercorrectOTPToast;
+	
+	@FindBy(xpath = "//*[@resource-id='OTP_ResendLink']")
+	private WebElement resendButton;
+	
 	// Constructor to initialize the driver and instantiate elements using
 	
 	public OtpPage(AndroidDriver driver) {

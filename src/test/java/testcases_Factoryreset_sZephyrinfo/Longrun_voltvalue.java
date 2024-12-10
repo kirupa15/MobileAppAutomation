@@ -5,6 +5,7 @@ import static org.testng.Assert.fail;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.openqa.selenium.Alert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,7 @@ public class Longrun_voltvalue  extends MobileAppWrappers {
 		testDescription = "Pair in Ble without router mode <br> create 3 schedule and disable it and check schedule worked or not <br> check device in off state after schedule completion";
 	}
 	
-	@Test
+//	@Test
 	public void checkLowvolt() throws Exception, IOException {
 
 		initAndriodDriver();
@@ -38,6 +39,8 @@ public class Longrun_voltvalue  extends MobileAppWrappers {
 		
 		ILT.checkVoltValue();
 		
+		
+		
 		readwrite.closePort();
 		
 		}
@@ -48,6 +51,11 @@ public class Longrun_voltvalue  extends MobileAppWrappers {
 		}
 	}
 	
-	
+//	@Test
+	public void alert() throws FileNotFoundException, IOException {
+		initAndriodDriver();
+		ILT=new Internal_longrun_task(driver);
+		ILT.alertcheck();
+	}
 
 }

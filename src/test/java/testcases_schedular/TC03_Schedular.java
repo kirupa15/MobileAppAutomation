@@ -39,8 +39,9 @@ public class TC03_Schedular extends MobileAppWrappers {
 	public void schedule() throws Exception {
 		initAndriodDriver();
 
-		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
+		loginpage = new SignInPage(driver);
+		homepage=new HomePage(driver);
 		otppage = new OtpPage(driver);
 		adddevicepage = new AddDevicePage(driver);
 		devicemenupage = new DeviceMenuPage(driver);
@@ -69,7 +70,7 @@ public class TC03_Schedular extends MobileAppWrappers {
 		schedulepage.createSchedules(3, 1, 1);//mention the time to start ,how many schedules need to keep,interval between next schedule
 		schedulepage.backToHomepage();
 		
-		Thread.sleep(2*60*1000);//set thread values based on schedule duration kept .
+		Thread.sleep(5*60*1000);//set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
 		analytics.checkenrgyduration(1);
 		schedulepage.backToHomepage();

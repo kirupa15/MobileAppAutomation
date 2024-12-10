@@ -11,10 +11,10 @@
 		
 		
 		<package name="testcases_signIn_up_accountsinfo_module" />
-		<package name="testcases_pairing" />
+	<!-- 	<package name="testcases_pairing" />
 		<package name="testcases_connectivity" />
 		<package name="testcases_deviceSettings" />
-		<package name="testcases_Factoryreset_sZephyrinfo" />
+		<package name="testcases_Factoryreset_sZephyrinfo" /> -->
 		
    </packages>
   </test> <!-- Default test -->

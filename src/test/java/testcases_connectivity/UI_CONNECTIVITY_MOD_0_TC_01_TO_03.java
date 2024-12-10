@@ -71,6 +71,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
 		
@@ -100,6 +101,7 @@ public class  UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		Thread.sleep(3000);
 		adddevicepage.Minutesminusbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickMenuBarButton();
 	    devicemenupage.clickDeviceSettingsButton();
 	    adddevicepage.DurationforON();

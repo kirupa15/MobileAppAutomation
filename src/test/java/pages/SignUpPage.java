@@ -42,10 +42,9 @@ public class SignUpPage extends GenericWrappers {
 	private WebElement userEmailIDField;
 	
 	@FindBy(xpath = "//*[@resource-id='Launch_SignUpLink']")
-	//android.widget.TextView[@content-desc="com.szephyr:id/Launch_SignUpLink"]
 	private WebElement signUpLink;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/SignUp_SignUpText\"]")
+	@FindBy(xpath = "//*[@resource-id='SignUp_SignUpText']")
 	private WebElement signUpButton;
 	
 	

@@ -40,8 +40,6 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeMethod 
 	public void beforeMethod(){ 
 		Reporter.startTestCase();
-		//initDriver(); 
-		
 
 	}
 
@@ -82,7 +80,7 @@ public class MobileAppWrappers extends GenericWrappers {
 			createAndNavigateToSubdirectory(existingDirectory, newSubDir);
 
 			// Upload files to the new subdirectory
-			uploadFile(appLogPath,  testCaseName+".txt");
+			uploadFile(appLogPath,  testCaseName+"App.txt");
 			uploadFile(deviceLogPath, testCaseName+".txt");
 			
 
@@ -91,6 +89,7 @@ public class MobileAppWrappers extends GenericWrappers {
 			Reporter.reportStep(" FTP Path : "+ remotefilepath +
 					"<br>"
 					+"Device Log File name:"+Filename, "INFO");
+			
 			// Disconnect from FTP server
 			disconnect();
 

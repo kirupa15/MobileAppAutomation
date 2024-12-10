@@ -67,7 +67,7 @@ public class Analytics  extends GenericWrappers {
 
 		clickbyXpath(BackButton, "Back button");
 	}
-	public boolean checkenrgyduration(int value) {	
+	public boolean checkenrgyduration(int value) throws Exception {	
 		boolean bReturn = false;
 		expWait(enrgyDurationmin);
 //		clickbyXpath(enrgyDurationmin, "energy duration");

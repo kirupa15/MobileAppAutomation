@@ -40,12 +40,12 @@ public class  BleWithRouter extends MobileAppWrappers {
 	@Test
 	public void removerepair() throws Exception {
 		initAndriodDriver();
-		pairBlewithoutRouter();
+		pairBlewithRouter();
 	}
 
 
 	
-	public void pairBlewithoutRouter() throws Exception {
+	public void pairBlewithRouter() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
@@ -65,13 +65,14 @@ public class  BleWithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
+		adddevicepage.bleConnectivityCheck();
 		
 		for(int i=0;i<2;i++) {
 		homepage.clickONOFFButton();
 		Thread.sleep(1000);
 		}
 		homepage.disableBLE();
-        Thread.sleep(5000);
+		adddevicepage.staConnectivityCheck();
 		//homepage.enableBLE();
 		for(int i=0;i<5;i++) {
 			homepage.clickONOFFButton();
@@ -97,6 +98,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -106,6 +108,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		homepage.VerifyOFFdesc();
 		
 		homepage.disableBLE();
+		adddevicepage.staConnectivityCheck();
 		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
@@ -117,6 +120,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 		
 		homepage.killandopen();
 		adddevicepage.ClickOkButtonBLEpopUP();
+		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -150,11 +154,13 @@ public class  BleWithRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		adddevicepage.bleConnectivityCheck();
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
 			}
 	    homepage.disableWIFI();
+	    adddevicepage.bleConnectivityCheck();
 	    Thread.sleep(2000);
 	    for(int i=0;i<2;i++) 
 	    {
@@ -168,6 +174,7 @@ public class  BleWithRouter extends MobileAppWrappers {
 	    
 	    Thread.sleep(5000);
 		homepage.killandopen();
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
 		Thread.sleep(5000);

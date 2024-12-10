@@ -339,6 +339,19 @@ public class GenericWrappers {
 		}
 
 	}
+	public static void expshortWait(WebElement xpath) {
+		try {
+			
+			WebDriverWait wait = new WebDriverWait(driver,1);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
+		} catch (Exception e) {
+			System.out.println(e);
+			
+			
+			
+		}
+		
+	}
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
@@ -638,24 +651,24 @@ public class GenericWrappers {
 			// Check if the password entry field is displayed
 			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
 			WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
-			if (isElementDisplayed(enterPasswordField)) {
+			if (isElementDisplayed(enterPasswordField,"Password field of wifipage")) {
 				// Enter the WiFi password
-				enterValueByXpath(enterPasswordField, "Wi-Fi password", wifiPassword);
+				enterValueByXpathwifipage(enterPasswordField, "Wi-Fi password", wifiPassword);
 
 				// Click on the connect button
 				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); 
 				// Replace with the actual XPath
-				if (isElementDisplayed(connectButton)) {
+				if (isElementDisplayed(connectButton,"Connect button")) {
 					
 					clickbyXpath(connectButton, "Connect button");
 					
 					Thread.sleep(5000);}
 
 			}
-			else if (isElementDisplayed(enterPasswordFieldOnePlus)) {
-				enterValueByXpath(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
+			else if (isElementDisplayed(enterPasswordFieldOnePlus,"Password field of wifipage -ONE plus")) {
+				enterValueByXpathwifipage(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
 				WebElement savebutton = driver.findElement(MobileBy.xpath("//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")); 
-			 if (isElementDisplayed(savebutton)) {
+			 if (isElementDisplayed(savebutton,"Save button")) {
 				clickbyXpath(savebutton, "save button");
 				
 				Thread.sleep(5000);
@@ -673,9 +686,28 @@ public class GenericWrappers {
 	}
 
 	// Helper method to check if the element is displayed
-	public boolean isElementDisplayed(WebElement element) {
+	public boolean isElementDisplayed(WebElement element,String Field) {
 		try {
-			Thread.sleep(1000);  // Introduce a small delay before checking visibility
+			expshortWait(element);// Introduce a small delay before checking visibility
+			  
+			if (element.isDisplayed()) {
+				
+				Reporter.reportStep(Field +"  Element displayed", "PASS");
+			}
+			else {
+			Reporter.reportStep(Field+"Element not displayed", "WARNING");
+				
+			}
+			return true;
+		} catch (NoSuchElementException e) {
+			Reporter.reportStep(Field+"Element not displayed", "WARNING");
+			return false;
+		}
+	}
+
+	public boolean retryWait(WebElement element) {
+		try {
+			Thread.sleep(80*1000);  // Introduce a small delay before checking visibility
 			Reporter.reportStep(element+"Element displayed", "PASS");
 			return element.isDisplayed();
 		} catch (NoSuchElementException | InterruptedException e) {
@@ -685,8 +717,7 @@ public class GenericWrappers {
 	}
 
 
-
-	public void enterValueByXpath(WebElement element, String fieldName, String value) {
+	public void enterValueByXpathwifipage(WebElement element, String fieldName, String value) {
 		element.sendKeys(value);
 		System.out.println("Entered value in " + fieldName + ": " + value);
 	}
@@ -723,6 +754,24 @@ public class GenericWrappers {
 		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
 			Thread.sleep(3000);
+		}
+	}
+	public boolean isiconDisplayed(WebElement element,String field) {
+		try {
+			expshortWait(element);// Introduce a small delay before checking visibility
+			  
+			if (element.isDisplayed()) {
+				
+				Reporter.reportStep(field +"  Element displayed", "PASS");
+			}
+			else {
+			Reporter.reportStep(field+"Element not displayed", "INFO");
+				
+			}
+			return true;
+		} catch (NoSuchElementException e) {
+			Reporter.reportStep(field+"Element not displayed", "INFO");
+			return false;
 		}
 	}
 	

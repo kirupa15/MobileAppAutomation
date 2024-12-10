@@ -71,6 +71,7 @@ public class WIfiWithout_router extends MobileAppWrappers {
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
 			
+			adddevicepage.bleConnectivityCheck();
 			homepage.clickONOFFButton();
 			homepage.VerifyONdesc();
 
@@ -84,7 +85,7 @@ public class WIfiWithout_router extends MobileAppWrappers {
 			
 			homepage.killandopen();
 			adddevicepage.ClickOkButtonBLEpopUP();
-			Thread.sleep(3000);
+			adddevicepage.bleConnectivityCheck();
 			homepage.clickONOFFButton();
 			homepage.getCurrentvalue();
 			homepage.getVoltvalue();

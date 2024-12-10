@@ -13,12 +13,20 @@ public class Internal_longrun_task extends GenericWrappers{
 
 	private AndroidDriver driver;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Home_VOLT_Box\"]")
+	@FindBy(xpath = "//*[@resource-id='Home_VOLT_Box']")
 	private WebElement voltBoxValue;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Home_VOLT_Box\"]")
-	private WebElement voltValue;
+	@FindBy(xpath = "//*[@resource-id='Home_WATT_Box']")
+	private WebElement powerValue;
+	@FindBy(xpath = "//*[@resource-id='Home_AMP_Box']")
+	private WebElement currentValue;
+	
 	@FindBy(xpath = "")
 	private WebElement  onOffButton;
+	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr device is offline\"]")
+	private WebElement alertTitle;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
+	private WebElement alertok;
 
 	public Internal_longrun_task(AndroidDriver driver) {
 		this.driver = driver;
@@ -35,22 +43,18 @@ public class Internal_longrun_task extends GenericWrappers{
 
 		boolean bReturn = false;
 		try {
-			int value =1000;
-//			int value =2222;
-			String val="100.0V";
-			String valueOf = String.valueOf(value);
+			double val=100.0;
+			String stringvalue="100.0V";
 
-			while (value>0) {
+			while (val>0) {
 				expWait(element);
 				String text = element.getText();
-				int elevalue = extractintvalue(text);
+				String numericPart = text.replaceAll("[^0-9.]", "");
 				
+				double displayedValue = Double.parseDouble(numericPart);
 				
-				
-				
-				if (elevalue<=value) {
-					verifyTextContainsByXpath(element,val, "lowvolt");
-					System.out.println("nope");
+				if (displayedValue<=val) {
+					verifyTextContainsByXpath(element,stringvalue, "lowvolt");
 					bReturn = true;
 					break;
 				}
@@ -58,9 +62,15 @@ public class Internal_longrun_task extends GenericWrappers{
 				Thread.sleep(1000);
 			}
 		} catch (Exception e) {
-			System.out.println("Low volt not detected");
+			System.out.println("someone closed the app ");
 		}
 		return bReturn;
 	} 
+	
+	public void alertcheck() {
+
+		alertTitle.isDisplayed();
+		alertok.click();
+	}
 
 }

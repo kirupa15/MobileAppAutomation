@@ -20,7 +20,7 @@ public class AccountsInfoPage extends GenericWrappers{
 
 	// Locate all elements on the page
 
-	@FindBy(xpath = "//*[@resource-id='accountsText']")
+	@FindBy(xpath = "//*[@resource-id='menu_text_accounts']")
 	private WebElement  AccountsinfoButtonbeforeadddevice;
 	
 	@FindBy(xpath = "//*[@resource-id='menu_text_accounts']")
@@ -44,8 +44,8 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Accounts_DeleteAccount_SubTitle\"]")
 	private WebElement DeleteAccountButton;
 
-	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button")
-	private WebElement AccountDeleteButton;
+	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
+	private WebElement AccountDeleteButton;	
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
 	private WebElement AccountInfoBackButton;
@@ -82,6 +82,13 @@ public class AccountsInfoPage extends GenericWrappers{
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement accountsdelpop_up;
+	
+	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
+	private WebElement accountsdelpop_up_withdevice;
+	
+	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	private WebElement accountsdelpop_up_withoutdevice;
+	
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
 	private WebElement accountspop_upcancelbtn;
@@ -257,6 +264,19 @@ public class AccountsInfoPage extends GenericWrappers{
 			System.out.println("No-popup displayed");
 		}
 	}
+	public void popuphandlewithdevice() {
+		
+		if (accountsdelpop_up_withdevice.isDisplayed()) {
+			clickbyXpath(accountsdelpop_up_withdevice, "Acceptpop_up");
+		}
+		//		else if (accountspop_upcancelbtn.isDisplayed()) {
+		//			clickbyXpath(accountspop_upcancelbtn, "Acceptpop_up");
+		//			
+		//		} 
+		else {
+			System.out.println("No-popup displayed");
+		}
+	}
 
 	public void checkAccountsinfousername_email_Language() throws Exception {
 
@@ -271,7 +291,7 @@ public class AccountsInfoPage extends GenericWrappers{
 		clickbyXpath(SelectLanguageEnglishButton, " Select English Button ");
 		verifyTextContainsByXpath(languagesubtitle,"Select Language" , "Languagesubtitle");
 		clickDeleteAccountButton();
-		popuphandle();
+		popuphandlewithdevice();
 		
 		clickbyXpath(DevicesettingsbackButton, " Device Setting Back Button ");
        
@@ -307,7 +327,7 @@ public class AccountsInfoPage extends GenericWrappers{
 			enterOTPField4("4");
 	
 		 clickbyXpath(submitBtn, "OTPsubmitbutton");
-		 if (isElementDisplayed(addDeviceButton)) {
+		 if (isElementDisplayed(addDeviceButton,"Add device button")) {
 			 System.out.println("SignUp successfull");
 		 }
 

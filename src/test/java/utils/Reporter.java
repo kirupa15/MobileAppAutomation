@@ -53,6 +53,9 @@ public class Reporter extends MobileAppWrappers {
 		else if(tcstatus.toUpperCase().equals("FAIL&RUN")) {
 		test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../reports/images/"+number+".jpg").build());
 		}
+		else if(tcstatus.toUpperCase().equals("WARNING")) {
+			test.log(Status.WARNING, desc);
+		}
 	}
 
 	
@@ -60,6 +63,7 @@ public class Reporter extends MobileAppWrappers {
 		htmlReporter = new ExtentSparkReporter("./reports/Spark_"+time+".html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
+		
 	}
 	
 	public static void startTestCase(){

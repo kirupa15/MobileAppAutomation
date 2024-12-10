@@ -62,13 +62,13 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 		
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		adddevicepage.pair(3);
-		turnOffBT();
-		
+		adddevicepage.pair(3);		
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
+		
+		adddevicepage.staConnectivityCheck();
 		Thread.sleep(2000);
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
@@ -85,6 +85,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 		homepage.killandopen();
 		adddevicepage.ClickCancelButtonBle();
+		adddevicepage.staConnectivityCheck();
 		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		//CONNECTIVITY_MOD_3_TC_3///     STA_Device_ON/OFF
@@ -99,6 +100,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_4// BLE Connectivity Establishment
 		homepage.enableBLE();
 		homepage.disableWIFI();
+		adddevicepage.bleConnectivityCheck();
 		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		 Thread.sleep(5000);
@@ -128,7 +130,7 @@ public class  SmartConfig extends MobileAppWrappers {
 	
 		//homepage.VerifyONdesc();
 		homepage.WifiSwitch(loadProp("REMOTEWIFINAME"),loadProp("REMOTEWIFIPASSWORD"));
-		Thread.sleep(8000);
+		adddevicepage.remoteConnectivityCheck();
 		homepage.clickONOFFButton();
 		Thread.sleep(5000);
 		homepage.getCurrentvalue();
@@ -139,6 +141,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		homepage.killandopen();
 		Thread.sleep(10000);
 		adddevicepage.ClickOkButtonBLEpopUP();
+		adddevicepage.remoteConnectivityCheck();
 		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
