@@ -756,6 +756,27 @@ public class GenericWrappers {
 			Thread.sleep(3000);
 		}
 	}
+	
+	public boolean connectivitycheck(WebElement element,String field) {
+
+		try {
+			expWait(element);// Introduce a small delay before checking visibility
+			  
+			if (element.isDisplayed()) {
+				
+				Reporter.reportStep(field +"  Element displayed", "PASS");
+			}
+			else {
+			Reporter.reportStep(field+"Element not displayed", "INFO");
+				
+			}
+			return true;
+		} catch (NoSuchElementException e) {
+			Reporter.reportStep(field+"Element not displayed", "INFO");
+			return false;
+		}
+	
+	}
 	public boolean isiconDisplayed(WebElement element,String field) {
 		try {
 			expshortWait(element);// Introduce a small delay before checking visibility

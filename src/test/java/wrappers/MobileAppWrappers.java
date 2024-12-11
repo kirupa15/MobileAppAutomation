@@ -15,6 +15,7 @@ import org.testng.annotations.DataProvider;
 
 import jssc.SerialPortException;
 import utils.DataInputProvider;
+import utils.GetAppLog;
 import utils.Reporter;
 import utils.logReadandWrite;
 
@@ -28,13 +29,14 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException{
 		Reporter.startResult();
-
+        
 
 	}
 
 	@BeforeTest
-	public void beforeTest() throws FileNotFoundException, IOException{
-
+	public void beforeTest() throws FileNotFoundException, IOException, Exception{
+		GetAppLog applog= new GetAppLog();
+		applog.startLogProcess();
 	}
 
 	@BeforeMethod 

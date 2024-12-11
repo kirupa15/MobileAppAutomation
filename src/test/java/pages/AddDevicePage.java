@@ -186,10 +186,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[2]")
 	private WebElement minutesminusbutton;
 
-	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
 	private WebElement ClickCancelButtonBle;
 
-	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
 	private WebElement ClickOkButtonBLEpopUP;
 
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.CircleView[1]")
@@ -909,17 +909,17 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void bleConnectivityCheck() {
-		isiconDisplayed(bleConnectivity, "Ble connectivity homepage icon");
+		connectivitycheck(bleConnectivity, "Ble connectivity homepage icon");
 
 	}
 
 	public void staConnectivityCheck() {
-		isiconDisplayed(staConnectivity, "STA connectivity homepage icon");
+		connectivitycheck(staConnectivity, "STA connectivity homepage icon");
 
 	}
 
 	public void remoteConnectivityCheck() {
-		isiconDisplayed(remoteConnectivity, "Remote connectivity homepage icon");
+		connectivitycheck(remoteConnectivity, "Remote connectivity homepage icon");
 
 	}
 

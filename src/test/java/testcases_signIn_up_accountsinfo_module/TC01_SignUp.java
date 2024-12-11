@@ -42,8 +42,8 @@ public class TC01_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-		GetAppLog applog= new GetAppLog();
-		applog.startLogProcess();
+//		GetAppLog applog= new GetAppLog();
+//		applog.startLogProcess();
 		
 
 		/*

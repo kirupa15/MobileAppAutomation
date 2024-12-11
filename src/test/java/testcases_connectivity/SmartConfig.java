@@ -62,7 +62,8 @@ public class  SmartConfig extends MobileAppWrappers {
 		
 		
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		adddevicepage.pair(3);		
+		adddevicepage.pair(3);	
+		turnOffBT();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -84,6 +85,7 @@ public class  SmartConfig extends MobileAppWrappers {
 		homepage.getPowervalue();
 		
 		homepage.killandopen();
+		turnOffBT();
 		adddevicepage.ClickCancelButtonBle();
 		adddevicepage.staConnectivityCheck();
 		Thread.sleep(10000);
@@ -139,6 +141,7 @@ public class  SmartConfig extends MobileAppWrappers {
 	///CONNECTIVITY_MOD_3_TC_5//remote_Kill and Open
 		
 		homepage.killandopen();
+		turnOffBT();
 		Thread.sleep(10000);
 		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.remoteConnectivityCheck();

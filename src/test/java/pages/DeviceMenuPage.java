@@ -118,7 +118,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement logoutButtonAfterReset;
 
 	
-	@FindBy(xpath = "//*[@resource-id='Logout_LOGOUT']")
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"Logout\"])[2]")
 	private WebElement logoutConfirmationButton;
 	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
@@ -166,22 +166,22 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Remove router\"]")
 	private WebElement removeRouterButton;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
 	private WebElement removeRouterCancelButton;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"REMOVE\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Remove\"]")
 	private WebElement RouterpopupRemoveButton;
 	
-	@FindBy(xpath = "//android.widget.CheckBox[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_CheckBox\"]")
+	@FindBy(xpath = "//android.widget.CheckBox")
 	private WebElement addRouterPopCheckBox;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel_Text\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
 	private WebElement routerPopCancelButton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_LEDQuietMode\"]/android.view.ViewGroup")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/settingDevice_toggle_switch\"]")
 	private WebElement quietLEDToggleEnable;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_LEDQuietMode\"]/android.view.ViewGroup")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/settingDevice_toggle_switch\"]")
 	private WebElement quietLEDToggleDisable;
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
@@ -212,7 +212,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement removeDevice;
 	
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"NO\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
 	private WebElement removeDevicePopupNoButton;
 	
 	
@@ -490,8 +490,8 @@ public class DeviceMenuPage extends GenericWrappers{
 			if (isElementDisplayed(addRouterButton,"Add router button")) {
 				clickbyXpath(addRouterButton, "Add router button ");
 				enterWiFiPassword("12345678908");
-				clickAddRouterCheckBox();
-				clickbyXpath(enterButton, " Enter Button  ");
+//				clickAddRouterCheckBox();
+				clickbyXpath(submitBtn, " Enter Button  ");
 			}
 			else if (isElementDisplayed(removeRouterButton,"Remove router  button")) {
 				clickbyXpath(removeRouterButton, "Remove router button ");

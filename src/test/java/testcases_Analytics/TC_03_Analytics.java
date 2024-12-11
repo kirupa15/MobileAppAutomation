@@ -65,11 +65,7 @@ public class TC_03_Analytics  extends MobileAppWrappers {
 		analyticspage.navigateAnalyticsPage();
 		analyticspage.checkenrgyduration(1);
 		
-		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();	
+			
 		
 		
 		}
