@@ -214,7 +214,7 @@ public class logReadandWrite {
     private final Path logFilePath = Path.of("serial_log.txt");
     private Thread logThread;  // Thread to handle logging
 
-    private logReadandWrite(String portName) {
+    public logReadandWrite(String portName) {
         serialPort = new SerialPort(portName);
     }
 

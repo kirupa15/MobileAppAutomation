@@ -41,8 +41,7 @@ public class TC01_DeviceSettings extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);

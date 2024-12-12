@@ -38,7 +38,7 @@ public class TC03_SignIn_Flow extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		try {
 		readwrite.openPort();
 //		readwrite.read();

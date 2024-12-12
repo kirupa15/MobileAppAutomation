@@ -40,7 +40,7 @@ public class TC05_SignIn_SuccessFlow extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		signuppage =new SignUpPage(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		
 		try {
 		readwrite.openPort();

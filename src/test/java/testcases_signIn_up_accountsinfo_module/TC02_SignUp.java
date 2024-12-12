@@ -42,7 +42,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		

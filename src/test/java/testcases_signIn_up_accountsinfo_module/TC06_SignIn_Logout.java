@@ -44,8 +44,8 @@ public class TC06_SignIn_Logout extends MobileAppWrappers {
 		homepage=new HomePage(driver);
 		signuppage =new SignUpPage(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		
+
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		

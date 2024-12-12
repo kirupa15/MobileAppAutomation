@@ -27,16 +27,17 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	
 	@BeforeSuite
-	public void beforeSuite() throws FileNotFoundException, IOException{
+	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		Reporter.startResult();
-        
+		GetAppLog applog= new GetAppLog();
+		applog.startLogProcess();
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		readwrite.openPort();
 
 	}
 
 	@BeforeTest
 	public void beforeTest() throws FileNotFoundException, IOException, Exception{
-		GetAppLog applog= new GetAppLog();
-		applog.startLogProcess();
 	}
 
 	@BeforeMethod 

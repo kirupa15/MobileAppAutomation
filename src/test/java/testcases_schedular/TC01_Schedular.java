@@ -48,8 +48,7 @@ public class TC01_Schedular extends MobileAppWrappers {
 		schedulepage=new Schedularpage(driver);
 		analytics=new Analytics(driver);
 		
-		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-
+		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);
