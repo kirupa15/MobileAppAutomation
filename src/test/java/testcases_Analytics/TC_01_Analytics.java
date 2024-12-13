@@ -38,7 +38,7 @@ public class TC_01_Analytics  extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		analyticspage= new Analytics(driver);
 		
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 
 		try {
 		readwrite.openPort();

@@ -46,7 +46,7 @@ public class TC_04_Factory_Reset extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);

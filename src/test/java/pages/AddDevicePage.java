@@ -27,6 +27,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	public AndroidDriver driver;
 
+	
 	public String userName = loadProp("USERNAME");
 	public String emaId = loadProp("EMAILID");
 	public String wifiPassword = loadProp("WIFIPASSWORD");
@@ -385,24 +386,24 @@ public class AddDevicePage extends GenericWrappers {
 
 		clickbyXpathwithoutReport(ClickCancelButtonBle, " Cancel Button ");
 
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
 	public void cancelButton() throws Exception {
 		expWaitforPairing(cancelButton);
 		clickbyXpathwithoutReport(cancelButton, " Wifi cancel Button ");
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
 	public void ClickOkButtonBLEpopUP() throws Exception {
 		expWaitforPairing(ClickOkButtonBLEpopUP);
 		clickbyXpathwithoutReport(ClickOkButtonBLEpopUP, " Ok Ble Button ");
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
@@ -467,24 +468,24 @@ public class AddDevicePage extends GenericWrappers {
 	public void clickWifiCancelButton() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(wifiCancel));
 		clickbyXpath(wifiCancel, "Wificancel button");
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
 	public void clickBleokbutton() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BleOKpopup));
 		clickbyXpath(BleOKpopup, "Ble okbutton");
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
 	public void clickBleCancelbutton() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BLEcancelpopup));
 		clickbyXpath(BLEcancelpopup, "Ble Cancelbutton");
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 		}
 	}
 
@@ -581,7 +582,7 @@ public class AddDevicePage extends GenericWrappers {
 
 		// Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		if (isElementDisplayed(blePermissionOkButton, "BLE permission pop-up")) {
 			clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			checkappinforeground();
@@ -604,25 +605,25 @@ public class AddDevicePage extends GenericWrappers {
 
 	public void initiatepairing(int mode) throws Exception {
 
-		if (isElementDisplayed(locationpermissionpopup, "Location permission pop-up ")) {
-			clickbyXpath(locationpermissionpopup, "Location pop-up");
-
-			// Check if device permission popup appears after location permission
-			if (isElementDisplayed(devicepermission, "Device permission pop-up ")) {
-				clickbyXpath(devicepermission, "Device permission pop-up");
-			}
+//		if (isElementDisplayed(locationpermissionpopup, "Location permission pop-up ")) {
+//			clickbyXpath(locationpermissionpopup, "Location pop-up");
+//
+//			// Check if device permission popup appears after location permission
+//			if (isElementDisplayed(devicepermission, "Device permission pop-up ")) {
+//				clickbyXpath(devicepermission, "Device permission pop-up");
+//			}
 			if (isElementDisplayed(blePermissionOkButton, "Ble permission pop-up OK button")) {
 				clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			}
 
-		}
+//		}
 
 		proceedToAddDevice(mode);
 	}
 
 	// mode=1-Ble without router ,2-Ble with router,3-Smartconfig,4-wifi with
 	// roouter ,5 wifi without router
-	logReadandWrite readwrite = logReadandWrite.getInstance("COM4");
+	logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 
 	public void proceedToAddDevice(int mode) throws Exception {
 
@@ -637,10 +638,10 @@ public class AddDevicePage extends GenericWrappers {
 				turnOnBT();
 				startPairingButton();
 				blepermissionokpopup();
-				locationPopUpPermission();
-				nearByPermission();
+//				locationPopUpPermission();
+//				nearByPermission();
 
-				Thread.sleep(3000);
+//				Thread.sleep(3000);
 				blepermissionokpopup();
 
 				clickWifiCancelButton();
@@ -654,8 +655,8 @@ public class AddDevicePage extends GenericWrappers {
 				turnOnBT();
 				startPairingButton();
 				blepermissionokpopup();
-				locationPopUpPermission();
-				nearByPermission();
+//				locationPopUpPermission();
+//				nearByPermission();
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
@@ -667,8 +668,8 @@ public class AddDevicePage extends GenericWrappers {
 				readwrite.write("reboot\r");
 				turnOffBT();
 				startPairingButton();
-				blepermissionokpopup();
-				locationPopUpPermission();
+//				blepermissionokpopup();
+//				locationPopUpPermission();
 				nearByPermission();
 
 				blepermissionokpopup();
@@ -688,14 +689,14 @@ public class AddDevicePage extends GenericWrappers {
 				turnOffBT();
 				startPairingButton();
 				blepermissioncancelpopup();
-				Thread.sleep(3000);
-				locationPopUpPermission();
-				nearByPermission();
+//				Thread.sleep(3000);
+//				locationPopUpPermission();
+//				nearByPermission();
 
 				Thread.sleep(1000 * 5 * 1);
 				blepermissionokpopup();
 
-				Thread.sleep(1000 * 10 * 1);
+				Thread.sleep(1000 * 10 * 3);
 
 				enterWiFiPassword("12345678911");
 				clickEnterButton();
@@ -716,15 +717,15 @@ public class AddDevicePage extends GenericWrappers {
 				startPairingButton();
 
 			    blepermissioncancelpopup();
-				Thread.sleep(3000);
-				locationPopUpPermission();
-				nearByPermission();
+//				Thread.sleep(3000);
+//				locationPopUpPermission();
+//				nearByPermission();
 
 				Thread.sleep(1000 * 5 * 1);
 //				if (isElementDisplayed(BLEcancelpopup, "Ble cancel pop-up")) {
 //					clickBleCancelbutton();
-//					if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-//						driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+//					if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+//						driver.activateApp(packages); // Bring it back
 //						Thread.sleep(3000);
 //					}
 //				} else {
@@ -742,8 +743,8 @@ public class AddDevicePage extends GenericWrappers {
 				
 				Thread.sleep(5000);
 				Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
-				if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-					driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+				if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+					driver.activateApp(packages); // Bring it back
 
 				}
 				Thread.sleep(5000);
@@ -765,7 +766,7 @@ public class AddDevicePage extends GenericWrappers {
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
-			Thread.sleep(5000);
+			Thread.sleep(2000);//or5000
 			if (isElementDisplayed(deviceofflinealertTitle, "Device offline Alert pop-up")) {
 				String text = deviceofflinealertTitle.getText();
 				System.out.println(text + "  Alert pop-up displayed");
@@ -790,7 +791,7 @@ public class AddDevicePage extends GenericWrappers {
 		if (isElementDisplayed(devicewifipop_upOK, "Device Wifi page OK button")) {
 			clickbyXpath(devicewifipop_upOK, "click on Device wifi OK popup");
 
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
 					"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
 							+ serialno + "\"))"));
@@ -813,8 +814,8 @@ public class AddDevicePage extends GenericWrappers {
 				System.out.println("Already password saved ");
 			}
 
-			if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-				driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+			if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+				driver.activateApp(packages); // Bring it back
 				// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 			}
@@ -865,9 +866,9 @@ public class AddDevicePage extends GenericWrappers {
 	private void blepermissioncancelpopup() throws Exception {
 		if (isElementDisplayed(BLEcancelpopup, "BLE pop-up cancel button")) {
 			BLEcancelpopup.click();
-			if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-				driver.activateApp("com.iinvsys.szephyr"); // Bring it back
-				Thread.sleep(3000);
+			if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+				driver.activateApp(packages); // Bring it back
+				Thread.sleep(2000);
 			}
 		} else {
 			System.out.println("Alert pop-up not displayed");

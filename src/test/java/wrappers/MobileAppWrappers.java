@@ -31,8 +31,6 @@ public class MobileAppWrappers extends GenericWrappers {
 		Reporter.startResult();
 		GetAppLog applog= new GetAppLog();
 		applog.startLogProcess();
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
-		readwrite.openPort();
 
 	}
 
@@ -100,7 +98,7 @@ public class MobileAppWrappers extends GenericWrappers {
 			e.printStackTrace();
 
 		}
-		driver.terminateApp("com.iinvsys.szephyr");
+		driver.terminateApp(packages);
 //		driver.closeApp();
 		driver.quit();
 //		logReadandWrite readwrite=new logReadandWrite("COM4");

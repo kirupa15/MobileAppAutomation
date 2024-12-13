@@ -59,7 +59,7 @@ public class TC02_Schedular extends MobileAppWrappers {
 		schedulepage = new Schedularpage(driver);
 		analytics=new Analytics(driver);
 		
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);
@@ -76,7 +76,7 @@ public class TC02_Schedular extends MobileAppWrappers {
 		analytics.getenergydurationvalue();
 		schedulepage.backToHomepage();
 		schedulepage.clickSchedulebtn();
-		schedulepage.createSchedules(3, 3, 2);//mention the time to start ,how many schedules need to keep,interval between next schedule
+		schedulepage.createSchedules(5, 3, 2);//mention the time to start ,how many schedules need to keep,interval between next schedule
 		schedulepage.backToHomepage();
 		
 		Thread.sleep(12*60*1000);//set thread values based on schedule duration kept .

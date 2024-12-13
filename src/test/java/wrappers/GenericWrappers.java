@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.Time;
 import java.time.Duration;
 import java.util.List;
 import java.util.Properties;
@@ -31,6 +32,7 @@ import io.appium.java_client.appmanagement.ApplicationState;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.model.Log;
+import com.google.common.collect.ImmutableMap;
 
 import utils.Reporter;
 import utils.logReadandWrite;
@@ -38,7 +40,7 @@ import utils.logReadandWrite;
 public class GenericWrappers {
  
 	
-	
+	public String packages=loadProp("APP_PACKAGE");
 	public static AndroidDriver<AndroidElement> driver;
 	public WebDriverWait wait;
 	static ExtentTest test;
@@ -73,10 +75,12 @@ public class GenericWrappers {
 			caps.setCapability("appium:automationName", "uiautomator2");
 			caps.setCapability("appium:ignoreHiddenApiPolicyError", "true");
 			caps.setCapability("newCommandTimeout", 999999);
-			//			caps.setCapability("autoGrantPermissions", true);
-			//			keepSessionAlive(driver);
-			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
+//			caps.setCapability("appium:autoGrantPermissions", true);
 			
+
+			//			keepSessionAlive(driver);
+			
+			driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), caps);
 
 			Reporter.reportStep("Appium server started successfully ", "INFO");
 			Reporter.reportStep(
@@ -94,6 +98,7 @@ public class GenericWrappers {
 
 
 			
+
 
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
@@ -113,6 +118,9 @@ public class GenericWrappers {
 				
 			}
 			Reporter.reportStep("App opened successfully", "INFO");
+			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
+			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
+			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
 			bReturn = true;
 
 		} catch (MalformedURLException e) {
@@ -529,7 +537,7 @@ public class GenericWrappers {
 		try {
 			if (driver != null) {
 				// Kill the app (terminate it)
-				driver.terminateApp("com.iinvsys.szephyr");
+				driver.terminateApp(packages);
 				Reporter.reportStep("The app was killed successfully.", "PASS");
 			}
 		} catch (Exception e) {
@@ -541,7 +549,7 @@ public class GenericWrappers {
 		try {
 			
 				// Kill the app (terminate it)
-				driver.activateApp("com.iinvsys.szephyr");
+				driver.activateApp(packages);
 				Reporter.reportStep("The app was opened successfully.", "PASS");
 			
 		} catch (Exception e) {
@@ -553,14 +561,14 @@ public class GenericWrappers {
 		try {
 			if (driver != null) {
 				// Kill the app (terminate it)
-				driver.terminateApp("com.iinvsys.szephyr");
+				driver.terminateApp(packages);
 				Reporter.reportStep("The app was killed successfully.", "PASS");
 
 				// Wait for a few seconds before reopening the app
 				Thread.sleep(3000);
 
 				// Reopen the app, it should maintain its previous state (same page)
-				driver.activateApp("com.iinvsys.szephyr");
+				driver.activateApp(packages);
 				Reporter.reportStep("The app was reopened successfully.", "PASS");
 			}
 		} catch (Exception e) {
@@ -695,12 +703,12 @@ public class GenericWrappers {
 				Reporter.reportStep(Field +"  Element displayed", "PASS");
 			}
 			else {
-			Reporter.reportStep(Field+"Element not displayed", "WARNING");
+			Reporter.reportStep(Field+"Element not displayed", "INFO");
 				
 			}
 			return true;
 		} catch (NoSuchElementException e) {
-			Reporter.reportStep(Field+"Element not displayed", "WARNING");
+			Reporter.reportStep(Field+"Element not displayed", "INFO");
 			return false;
 		}
 	}
@@ -747,12 +755,12 @@ public class GenericWrappers {
 	}
 
 	public void close() {
-		driver.terminateApp("com.iinvsys.szephyr");
+		driver.terminateApp(packages);
 		driver.quit();
 	}
 	public void checkappinforeground() throws Exception {
-		if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-			driver.activateApp("com.iinvsys.szephyr"); // Bring it back
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
 			Thread.sleep(3000);
 		}
 	}

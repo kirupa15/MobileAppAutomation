@@ -54,7 +54,7 @@ public class  WifiWithRouter extends MobileAppWrappers {
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 	
 
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);

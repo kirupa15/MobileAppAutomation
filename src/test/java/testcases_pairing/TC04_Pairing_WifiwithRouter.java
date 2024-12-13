@@ -41,7 +41,7 @@ public class TC04_Pairing_WifiwithRouter extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 
 		
-		logReadandWrite readwrite = new logReadandWrite(loadProp("COM"));
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);

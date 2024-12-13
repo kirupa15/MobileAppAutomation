@@ -33,7 +33,7 @@ import java.util.Properties;
 public class SignUpPage extends GenericWrappers {
 
 	private AndroidDriver driver;
-
+	
 	// Locate all elements on the page
 	@FindBy(xpath = "//*[@resource-id='SignUp_Username']")
 	private WebElement userNameField;
@@ -191,15 +191,15 @@ public class SignUpPage extends GenericWrappers {
 			Properties prop =new Properties();
 			prop.load(new FileInputStream(new File("./config.properties")));
 			
-			if (driver.isAppInstalled("com.iinvsys.szephyr")) {
+			if (driver.isAppInstalled(packages)) {
 			Runtime.getRuntime().exec("adb uninstall com.iinvsys.szephyr");
 			driver.installApp(prop.getProperty("APP_PATH"));
-			driver.activateApp("com.iinvsys.szephyr");
+			driver.activateApp(packages);
 			}
 			else {
 				
 				driver.installApp(prop.getProperty("APP_PATH"));
-				driver.activateApp("com.iinvsys.szephyr");
+				driver.activateApp(packages);
 			}
 		}
 		

@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User">
+      <class name="testcases_connectivity.WifiWithRouter">
         <methods>
-          <include name="login"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
-          <include name="startTestCase"/>
           <include name="beforeMethod"/>
+          <include name="startTestCase"/>
           <include name="beforeSuite"/>
+          <include name="removerepair"/>
         </methods>
-      </class> <!-- testcases_signIn_up_accountsinfo_module.TC04_SignIn_Valid_User -->
+      </class> <!-- testcases_connectivity.WifiWithRouter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

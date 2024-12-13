@@ -11,7 +11,6 @@ import wrappers.GenericWrappers;
 public class HomePage extends GenericWrappers{
 	private AndroidDriver driver;
 
-	
 	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"com.szephyr:id/home_main_on_off_swch\"]")
 			private WebElement deviceONOFFButton;
 	
@@ -107,8 +106,8 @@ public class HomePage extends GenericWrappers{
 		   
 		   connectToWiFi(Wifiname, Wifipassword);
 			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
-		   if (driver.queryAppState("com.iinvsys.szephyr") != ApplicationState.RUNNING_IN_FOREGROUND) {
-				driver.activateApp("com.iinvsys.szephyr"); 
+		   if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+				driver.activateApp(packages); 
 				// Bring it back
 				Thread.sleep(3000);
 			}
