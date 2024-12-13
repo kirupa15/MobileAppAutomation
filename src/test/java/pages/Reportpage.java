@@ -14,7 +14,7 @@ public class Reportpage extends MobileAppWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text='']")
 	private WebElement deviceSettingsButton;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/menu_icon_Report\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_Report']")
 	private WebElement ClickReportpage;
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\", Select issue type\"]")
@@ -29,7 +29,7 @@ public class Reportpage extends MobileAppWrappers {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"nee_1\"]")
 	private WebElement ClickIssuename;
 	
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Report_Your_Issue\"]")
+	@FindBy(xpath = "//*[@resource-id='Report_Your_Issue']")
 	private WebElement ClickIssuedescription;
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@resource-id=\"Report_FewTimes_Button\"]")
@@ -44,7 +44,7 @@ public class Reportpage extends MobileAppWrappers {
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement Clickokbutton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Report_UploadScreenshot_plus\"]/android.view.ViewGroup")
+	@FindBy(xpath = "//*[@resource-id='Report_UploadScreenshot_plus']")
 	private WebElement Uploadscreenshort;
 	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_all_button\"]")
@@ -56,7 +56,7 @@ public class Reportpage extends MobileAppWrappers {
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.google.android.providers.media.module:id/button_add\"]")
 	private WebElement Clickaddoption;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Report_Submit_Button\"]")
+	@FindBy(xpath = "//*[@resource-id='Report_Submit_ButtonText']")
 	private WebElement Clicksubmitbutton;
 
 	private AndroidDriver driver;
@@ -136,7 +136,7 @@ public class Reportpage extends MobileAppWrappers {
 
 			driver.findElement(MobileBy.AndroidUIAutomator(
 				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"+\"));"));
-			driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Report_UploadScreenshot_plus\"]/android.view.ViewGroup"))
+			driver.findElement(By.xpath("//*[@resource-id='Report_UploadScreenshot_plus']"))
 		    .click();
 		}
 

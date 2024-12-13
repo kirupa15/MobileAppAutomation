@@ -41,16 +41,16 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Accounts_FirmwareAutoUpdate\"]/android.view.ViewGroup/android.view.ViewGroup")
 	private WebElement FirmwareUpdateSettingButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Accounts_DeleteAccount_SubTitle\"]")
+	@FindBy(xpath = "//*[@resource-id='Accounts_DeleteAccount_SubTitle']")
 	private WebElement DeleteAccountButton;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
 	private WebElement AccountDeleteButton;	
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement AccountInfoBackButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/menu_text_removeDevice\"] ")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
 	private WebElement Clickremovedevicebutton;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"YES\"]")
@@ -59,10 +59,10 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Options_Icon\"]")
 	private WebElement Clickmenubaricon;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/accountsText\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_accounts']")
 	private WebElement Clickaccountinfo;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Accounts_DeleteAccount_SubTitle, com.szephyr:id/Accounts_DeleteAccount_SubTitle1\"]")
+	@FindBy(xpath = "//*[@resource-id='Accounts_DeleteAccount_SubTitle']")
 	private WebElement Clickaccountdelete;
 
 	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]")
@@ -71,13 +71,13 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
 	private WebElement menuBarButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Accounts_YourName\"]")
+	@FindBy(xpath = "//*[@resource-id='Accounts_YourName']")
 	private WebElement Usernamefield;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Accounts_YourEmail\"]")
+	@FindBy(xpath = "//*[@resource-id='Accounts_YourEmail']")
 	private WebElement emailIdfield;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Accounts_Language_Sub_Title\"]")
+	@FindBy(xpath = "//*[@resource-id='Accounts_Language_Sub_Title']")
 	private WebElement languagesubtitle;
 
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
@@ -105,16 +105,16 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text='Sign Up']")
 	private WebElement signUpButton;
 	
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/SignUp_Username\"]")
+	@FindBy(xpath = "//*[@resource-id='SignUp_Username']")
 	private WebElement usernamesignup;
 	
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/SignUp_Email\"]")
+	@FindBy(xpath = "//*[@resource-id='SignUp_Email']")
 	private WebElement emailidsignup;
 	
-	@FindBy(xpath = "//android.widget.CheckBox[@content-desc=\"com.szephyr:id/SignUp_Checkbox\"]")
+	@FindBy(xpath = "//*[@resource-id='SignUp_Checkbox']")
 	private WebElement checkboxsignup;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/SignUp_SignUpText\"]")
+	@FindBy(xpath = "//*[@resource-id='SignUp_SignUpText']")
 	private WebElement signUptxt;
 	
 	@FindBy(xpath = "//*[@resource-id='OTP_ButtonText']")
@@ -123,13 +123,13 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='Add_Devices_ButtonText']")
 	private WebElement addDeviceButton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement DevicesettingsbackButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"YES\"]")
 	private WebElement removeDevicePopupYesButton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_removeDevice, com.szephyr:id/menu_text_removeDevice\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
 	private WebElement removeDevice;
 	
 	@FindBy(xpath = "//*[@resource-id='OTP_VerifyText']")

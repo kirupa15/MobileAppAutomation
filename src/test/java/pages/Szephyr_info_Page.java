@@ -30,7 +30,7 @@ public class Szephyr_info_Page extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement OTA_OK_Button;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement backButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Carrier\"]")

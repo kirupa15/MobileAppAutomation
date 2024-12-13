@@ -84,10 +84,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Carrier\"]")
 	private WebElement ClickSelectName;
 
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Ac_ModelName_Input\"]")
+	@FindBy(xpath = "//*[@resource-id='Add_Device_Ac_ModelName_Input']")
 	private WebElement enterAcModelName;
 
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Capacity_Input\"]")
+	@FindBy(xpath = "//*[@resource-id='Add_Device_Capacity_Input']")
 	private WebElement enterCapacity;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Select room size\"]")
@@ -116,7 +116,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Please Connect Manually\"]")
 	private WebElement devicewifipop_up;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Launch_SignInText\"]")
+	@FindBy(xpath = "//*[@resource-id='Launch_SignInText']")
 	private WebElement signInButton;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"]")
 	private WebElement locationpermissionpopup;
@@ -136,22 +136,22 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.Button[@resource-id='android:id/button1']")
 	private WebElement Blepopup_afterpairing;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Retrying_header_line\"]")
+	@FindBy(xpath = "//*[@resource-id='Retrying_header_line']")
 	private WebElement Retrypagetext;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Retrying_Retry_Button_Text\"]")
+	@FindBy(xpath = "//*[@resource-id='Retrying_Retry_Button_Text']")
 	private WebElement Retrypageretrybutton;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Retrying_Cancel_Button_Text\"]")
+	@FindBy(xpath = "//*[@resource-id='Retrying_Cancel_Button_Text']")
 	private WebElement Retrypagecancelbutton;
 
 	@FindBy(xpath = "//*[@resource-id='home_main_on_off_swch']")
 	private WebElement deviceONOFFButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Wifi_RouterPasswerd_Cancel_Text\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
 	private WebElement ClickCancelButtonWifi;
 
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_YourDevice\"]")
+	@FindBy(xpath = "//*[@resource-id='Add_Device_YourDevice']")
 	private WebElement szephyrDeviceName;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\", Select Brand\"]")
@@ -160,10 +160,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Carrier\"]")
 	private WebElement ACBrandNameCarrier;
 
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Ac_ModelName_Input\"]")
+	@FindBy(xpath = "//*[@resource-id='Add_Device_Ac_ModelName_Input']")
 	private WebElement ACModelName;
 
-	@FindBy(xpath = "//android.widget.EditText[@content-desc=\"com.szephyr:id/Add_Device_Capacity_Input\"]")
+	@FindBy(xpath = "//*[@resource-id='Add_Device_Capacity_Input']")
 	private WebElement Capacity;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Select room size\"]")
@@ -172,10 +172,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Small\"]")
 	private WebElement RoomSizesmall;
 
-	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch3\"]")
+	@FindBy(xpath = "//*[@resource-id='UserConfig_Switch3']")
 	private WebElement Ledquietmode;
 
-	@FindBy(xpath = "//android.widget.Switch[@content-desc=\"com.szephyr:id/UserConfig_Switch4\"]")
+	@FindBy(xpath = "//*[@resource-id='UserConfig_Switch4']")
 	private WebElement infinitepoweron;
 
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[1]")
@@ -196,7 +196,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[7]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.CircleView[1]")
 	private WebElement enterpasswordwifipge1;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/DeviceSetting_DurationforON, com.szephyr:id/DeviceSetting_DurationforON_Icon\"]")
+	@FindBy(xpath = "//*[@resource-id='DeviceSetting_DurationforON']")
 	private WebElement durationforON;
 
 	@FindBy(xpath = "//android.widget.EditText[@text=\"0\"]")
@@ -205,10 +205,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.EditText[@text=\"19\"]")
 	private WebElement minutestextbox;
 
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/DurationForON_Ok_ButtonText\"]")
+	@FindBy(xpath = "//*[@resource-id='DurationForON_Ok_Button']")
 	private WebElement clickokdurationON;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement backbuttonDevicesettings;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")

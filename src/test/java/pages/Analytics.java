@@ -34,7 +34,7 @@ public class Analytics  extends GenericWrappers {
 	private WebElement deviceONOFFButton;
 	@FindBy(xpath = "//*[@resource-id='Home_Analytics_Button']")
 	private WebElement analyticsButton;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Device_BackIcon\"]")
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement BackButton;
 //	@FindBy(xpath = "")
 //	private WebElement ;

@@ -11,20 +11,20 @@ import wrappers.GenericWrappers;
 public class HomePage extends GenericWrappers{
 	private AndroidDriver driver;
 
-	@FindBy(xpath="//android.view.ViewGroup[@content-desc=\"com.szephyr:id/home_main_on_off_swch\"]")
+	@FindBy(xpath="//*[@resource-id='home_main_on_off_swch']")
 			private WebElement deviceONOFFButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
 	private WebElement menuBarButton;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_accounts, com.szephyr:id/menu_text_accounts\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_accounts']")
 	private WebElement Accountinfobutton;
 	
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/menu_icon_sharelog, com.szephyr:id/menu_text_sharelog\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_sharelog']")
 	private WebElement sharelog ;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_StandByIndication\"]")
+	@FindBy(xpath = "//*[@resource-id='Home_StandByIndication']")
 	private WebElement Acturnondesc;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Please ensure sZephyr is switched ON prior to operating your AC remote\"]")
@@ -33,17 +33,17 @@ public class HomePage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Searching for sZephyr to establish connection\"]")
 	private WebElement Acofflinedesc;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Home_StandByIndication\"]")
+	@FindBy(xpath = "//*[@resource-id='Home_StandByIndication']")
 	private WebElement Acturnonwithloaddesc;
 	
-	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'V')]")
+	@FindBy(xpath = "//android.widget.TextView[contains(@text, 'V')]")
 	private WebElement voltValue;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'W')]")
+	@FindBy(xpath = "//android.widget.TextView[contains(@text, 'W')]")
 	private WebElement wattValue;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc='com.szephyr:id/undefined' and contains(@text, 'A')]")
+	@FindBy(xpath = "//android.widget.TextView[contains(@text, 'A')]")
 	private WebElement currentValue;
 	
-	@FindBy(xpath = "//com.horcrux.svg.PathView[@content-desc=\"com.szephyr:id/PairedGeyser_Img_svg_ble_0\"]")
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
 	private WebElement bleSymbol;
 	
 	

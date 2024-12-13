@@ -37,41 +37,41 @@ public class Schedularpage extends GenericWrappers {
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Home_Navigation_Button\"]")
+	@FindBy(xpath = "//*[@resource-id='Home_Navigation_Button']")
 	private WebElement Schedulebutton;
 
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")
 	private WebElement Scehduletitle;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/SCH_ADD_PLUS_ICON\"]")
+	@FindBy(xpath = "//*[@resource-id='SCH_ADD_PLUS_ICON']")
 	private WebElement plusIcon;
 	@FindBy(xpath = "//*[@resource-id='Header']")
 	private WebElement yourScheduleheader;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Scheduler_OtherUsersSchedules\"]")
+	@FindBy(xpath = "//*[@resource-id='Scheduler_OtherUsersSchedules']")
 	private WebElement otherScheduleheader;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Scheduler_YouDoNotHaveAnySchedules\"]")
+	@FindBy(xpath = "//*[@resource-id='Scheduler_YouDoNotHaveAnySchedules']")
 	private WebElement schedulePlaceholder;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Edit_Schedule_Save_Button\"]")
+	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Save_ButtonText']")
 	private WebElement savebtn;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Cancel_ButtonText\"]")
+	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Cancel_Button']")
 	private WebElement cancelbtn;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/SCH_EDIT_DELETE_BTN\"]")
+	@FindBy(xpath = "//*[@resource-id='SCH_EDIT_DELETE_BTN']")
 	private WebElement deleteBtn;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"]")
 	private WebElement locationpermissionpopup;
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_button\"]")
 	private WebElement devicepermission;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_HeatingDuration\"]")
+	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_HeatingDuration']")
 	private WebElement durationtext;
-	@FindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Scheduler_Switch\"])[1]")
+	@FindBy(xpath = "//*[@resource-id='Scheduler_Switch']")
 	private WebElement disableschedule;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr and AC turned ON\"]")
 	private WebElement Acturnondesc;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Please ensure sZephyr is switched ON prior to operating your AC remote\"]")
 	private WebElement acturnoffdesc;
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.szephyr:id/Edit_Schedule_Minutes1\"]")
+	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Minutes1']")
 	private WebElement minute1;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/Edit_Schedule_Duration_Hours_Minutes\"]")
+	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Duration_Hours_Minutes']")
 	private WebElement duration;
 
 	@FindBy(xpath = "//android.widget.Toast[@text=\"Schedule has been deleted\"]")

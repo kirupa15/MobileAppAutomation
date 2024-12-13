@@ -15,14 +15,13 @@ public class LandingPage extends GenericWrappers{
 	    @FindBy(xpath = "//android.widget.TextView[@text='Sign In']")
 	    private WebElement signInButton;
 	    
-	    @FindBy(xpath = "//android.widget.TextView[@content-desc=\\\"com.szephyr:id/SignUp_SignUpText\\\"]")
+	    @FindBy(xpath = "//*[@resource-id='SignUp_SignUpText']")
 	    private WebElement signUpButton;
 	    
 	    @FindBy(id = "loginButton")
 	    private WebElement loginButton;
 	
 	    @FindBy(xpath = "//*[@resource-id='Launch_SignUpLink']")
-		//android.widget.TextView[@content-desc="com.szephyr:id/Launch_SignUpLink"]
 		private WebElement signUpLink;
 	    //div[text()='Home']//following-sibling::div[1]
 	    

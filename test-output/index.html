@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Invcuser_45\AppData\Local\Temp\testng-eclipse-1720560271\testng-customsuite.xml</span>
+                    <span>C:\Users\Invcuser_45\AppData\Local\Temp\testng-eclipse--1914927299\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases_connectivity.WifiWithRouter" class="method navigator-link" hash-for-method="removerepair">removerepair</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases_pairing.TC02_Pairing_BlewithRouter" class="method navigator-link" hash-for-method="removerepair">removerepair</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,7 +121,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases_connectivity.WifiWithRouter</span>
+              <span class="class-name">testcases_pairing.TC02_Pairing_BlewithRouter</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -131,8 +131,8 @@
                   <span class="method-name">removerepair</span>
                   <div class="stack-trace">java.lang.AssertionError: Failed due to this exception
 	at org.testng.Assert.fail(Assert.java:99)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:100)
-	at testcases_connectivity.WifiWithRouter.removerepair(WifiWithRouter.java:45)
+	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:101)
+	at testcases_pairing.TC02_Pairing_BlewithRouter.removerepair(TC02_Pairing_BlewithRouter.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -161,51 +161,11 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-8HN186T&apos;, ip: &apos;192.168.1.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 51fd7c79-476c-4758-b3cc-44bd6e198894
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&quot;⚠️ Unregistered Device Detected&quot;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:701)
-	at pages.AddDevicePage.unregistereddevicepopup(AddDevicePage.java:835)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:707)
-	at pages.AddDevicePage.retrypagecheck(AddDevicePage.java:848)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:706)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:621)
-	at pages.AddDevicePage.pair(AddDevicePage.java:577)
-	at testcases_connectivity.WifiWithRouter.pairBlewithoutRouter(WifiWithRouter.java:66)
+Caused by: java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:46)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:204)
+	at pages.DeviceMenuPage.clickMenuBarRemoveDevice(DeviceMenuPage.java:442)
+	at testcases_pairing.TC02_Pairing_BlewithRouter.pairBlewithoutRouter(TC02_Pairing_BlewithRouter.java:72)
 	... 29 more
 
 </div> <!-- stack-trace -->
@@ -216,7 +176,7 @@ Session ID: 51fd7c79-476c-4758-b3cc-44bd6e198894
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Invcuser_45\AppData\Local\Temp\testng-eclipse-1720560271\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Invcuser_45\AppData\Local\Temp\testng-eclipse--1914927299\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,11 +185,11 @@ Session ID: 51fd7c79-476c-4758-b3cc-44bd6e198894
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases_connectivity.WifiWithRouter&quot;&gt;
+      &lt;class name=&quot;testcases_pairing.TC02_Pairing_BlewithRouter&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;removerepair&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testcases_connectivity.WifiWithRouter --&gt;
+      &lt;/class&gt; &lt;!-- testcases_pairing.TC02_Pairing_BlewithRouter --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -272,13 +232,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'removerepair')
-data.setCell(0, 2, 'testcases_connectivity.WifiWithRouter')
-data.setCell(0, 3, 389725);
+data.setCell(0, 2, 'testcases_pairing.TC02_Pairing_BlewithRouter')
+data.setCell(0, 3, 238677);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -304,40 +264,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases_connectivity.WifiWithRouter</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases_pairing.TC02_Pairing_BlewithRouter</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">801 ms</span>
+                <span class="method-start">955 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">838 ms</span>
+                <span class="method-start">984 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">870 ms</span>
+                <span class="method-start">1013 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">removerepair</span>
-                <span class="method-start">892 ms</span>
+                <span class="method-start">1029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">390628 ms</span>
+                <span class="method-start">239713 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">418574 ms</span>
+                <span class="method-start">244351 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">418658 ms</span>
+                <span class="method-start">244410 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
