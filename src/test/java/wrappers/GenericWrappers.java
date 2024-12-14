@@ -350,7 +350,7 @@ public class GenericWrappers {
 	public static void expshortWait(WebElement xpath) {
 		try {
 			
-			WebDriverWait wait = new WebDriverWait(driver,1);
+			WebDriverWait wait = new WebDriverWait(driver,10);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
 			System.out.println(e);

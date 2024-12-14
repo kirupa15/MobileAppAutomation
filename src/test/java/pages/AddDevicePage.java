@@ -842,12 +842,12 @@ public class AddDevicePage extends GenericWrappers {
 
 			clickbyXpath(Retrypageretrybutton, "retrypage");
 
-			readwrite.write("factory_reset\r");
+//			readwrite.write("factory_reset\r");
 			driver.navigate().back();
 			clickbyXpath(alertok, "clicking on exit pop-up ");
-			proceedToAddDevice(mode);
+//			proceedToAddDevice(mode);
 		} else {
-			System.out.println("Retry page not displayed proceed to connect with wifi page");
+			System.out.println("Retry page not displayed proceeding to next step");
 		}
 		
 	}

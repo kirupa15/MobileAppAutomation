@@ -178,10 +178,10 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
 	private WebElement routerPopCancelButton;
 	
-	@FindBy(xpath = "//*[@resource-id='UserConfig_Switch3']")
+	@FindBy(xpath = "//*[@resource-id='settingDevice_toggle_switch']")
 	private WebElement quietLEDToggleEnable;
 	
-	@FindBy(xpath = "//*[@resource-id='UserConfig_Switch3']")
+	@FindBy(xpath = "//*[@resource-id='settingDevice_toggle_switch']")
 	private WebElement quietLEDToggleDisable;
 	
 	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
