@@ -291,9 +291,11 @@ public class Schedularpage extends GenericWrappers {
 			// displayed values)
 			List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
 
-			 int centerIndex = elements.size() / 2;
+			 int centerIndex = elements.size();
+			 System.out.println(centerIndex);
 	            WebElement elAtCenter = elements.get(centerIndex);
 	            String currentValue = elAtCenter.getText();
+	            System.out.println(currentValue);
 
 			if (currentValue.equals(expectedValue)) {
 				valueAtIndex1 = true;
