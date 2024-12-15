@@ -54,8 +54,8 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		readwrite.openPort();
 		Thread.sleep(2000);
 		readwrite.write("reboot\r");
-		Thread.sleep(3000);
-		readwrite.write("factory_reset\r");
+//		Thread.sleep(3000);
+//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
 		Thread.sleep(3000);
@@ -118,6 +118,10 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	}
 	catch (Exception e) {
 		e.printStackTrace();
+		readwrite.write("factory_reset\r");
+		killAndReopenApp();
+		Thread.sleep(3000);
+		adddevicepage.removingDevice();			
 		readwrite.closePort();
 		fail("Failed due to this exception", e);
 	}

@@ -262,6 +262,8 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"⚠️ Unregistered Device Detected\"]")
 	private WebElement unregisteredpopup;
 
+	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
+	private WebElement menuBarButton;
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
 	private WebElement bleConnectivity;
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_grey']")
@@ -274,6 +276,8 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement remoteConnectivity;
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_remote_0_grey']")
 	private WebElement remoteNonConnectivity;
+	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
+	private WebElement removeDevice;
 
 	// Constructor to initialize the driver and instantiate elements using
 
@@ -923,5 +927,39 @@ public class AddDevicePage extends GenericWrappers {
 		connectivitycheck(remoteConnectivity, "Remote connectivity homepage icon");
 
 	}
+public void removingDevice() throws InterruptedException {
+
+	while (1>0) {
+		
+		if (isElementDisplayed(menuBarButton,"Menu Bar button")) {
+			homepage.clickMenuBarButton();
+			if (isElementDisplayed(removeDevice, "Remove device button")) {
+				devicemenupage.clickMenuBarRemoveDevice();
+				devicemenupage.clickRemoveDevicePopupYesButton();
+				checkdeviceremovedtoast();
+				Thread.sleep(2000);//or5000
+				if (isElementDisplayed(deviceofflinealertTitle, "Device offline Alert pop-up")) {
+					String text = deviceofflinealertTitle.getText();
+					System.out.println(text + "  Alert pop-up displayed");
+					clickbyXpath(alertok, "Alert ok button");
+
+				} else if (isElementDisplayed(buttonPressAlert, "Button press Alert pop-up")) {
+					String text = buttonPressAlert.getText();
+					System.out.println(text + "  Alert pop-up displayed");
+					clickbyXpath(alertok, "Alert ok button");
+
+				} else {
+					System.out.println("removed");
+				}
+			}
+			
+			devicemenupage.AddDevicePagedisplayed();
+			break;
+		} else {
+			System.out.println("something went wrong");
+		}
+		
+	}
+}
 
 }

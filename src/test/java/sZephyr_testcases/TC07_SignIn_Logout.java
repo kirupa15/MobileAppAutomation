@@ -46,6 +46,7 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		homepage=new HomePage(driver);
 		signuppage =new SignUpPage(driver);
 		
+		
 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -53,6 +54,9 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
+		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
+		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
+		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
 		loginpage.enterUserName("testuser@gmail.com");
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
@@ -62,13 +66,11 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
          
-		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
-		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
-		driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickSubmitButtonDeviceSetting();
+		
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(1000);
@@ -86,6 +88,10 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}

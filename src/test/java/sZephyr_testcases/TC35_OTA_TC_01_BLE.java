@@ -1,6 +1,8 @@
 
 package sZephyr_testcases;
 
+import static org.testng.Assert.fail;
+
 import org.openqa.selenium.TimeoutException;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -71,8 +73,8 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		try {
 		readwrite.openPort();
 //		readwrite.read();
-		Thread.sleep(2000);
-		readwrite.write("factory_reset\r");
+//		Thread.sleep(2000);
+//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.clickAddDeviceButton();
 		adddevicepage.checkBoxPairing();
@@ -108,7 +110,12 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
+			fail("Failed due to this exception", e);
 		}
 	
 

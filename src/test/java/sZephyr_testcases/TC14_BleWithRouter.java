@@ -56,8 +56,8 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		readwrite.openPort();
 		Thread.sleep(3000);
 		readwrite.write("reboot\r");
-		Thread.sleep(2000);
-		readwrite.write("factory_reset\r");
+//		Thread.sleep(2000);
+//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -200,6 +200,10 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}

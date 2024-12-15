@@ -69,6 +69,10 @@ public class TC02_SignUp extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}

@@ -22,6 +22,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 	HomePage homepage;
 	OtpPage otppage;
 	SignUpPage signuppage;
+	AddDevicePage adddevicepage;
 
 	@BeforeClass
 	public void startTestCase() {
@@ -37,11 +38,11 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
-
+		adddevicepage=new AddDevicePage(driver);
+		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
-//		readwrite.read();
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
@@ -54,6 +55,10 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}

@@ -227,10 +227,12 @@ public class Schedularpage extends GenericWrappers {
 					swipeElement(xpath, false);
 				}
 			}
-			if (extractintvalue(elFirst) == 1) {
+			
+			if (extractintvalue(expectedValue) == 1) {
 				valueAtIndex1 = true;
-				System.out.println("Element with value " + expectedValue + " is now at index 0.");
+				System.out.println("Element with value " + expectedValue + " is now at index 1.");
 			}
+		
 		}
 
 	}
@@ -272,7 +274,7 @@ public class Schedularpage extends GenericWrappers {
 					swipeElement(xpath, false);
 				}
 			}
-			if (extractintvalue(elFirst) == 00) {
+			if (extractintvalue(expectedValue) == 00) {
 				valueAtIndex1 = true;
 				System.out.println("Element with value " + expectedValue + " is now at index 1.");
 			}

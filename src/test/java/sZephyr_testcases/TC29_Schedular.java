@@ -64,8 +64,8 @@ public class TC29_Schedular extends MobileAppWrappers {
 		readwrite.openPort();
 		Thread.sleep(2000);
 		readwrite.write("reboot\r");
-		Thread.sleep(3000);
-		readwrite.write("factory_reset\r");
+//		Thread.sleep(3000);
+//		readwrite.write("factory_reset\r");
 
 		
 		adddevicepage.pair(3);
@@ -79,7 +79,7 @@ public class TC29_Schedular extends MobileAppWrappers {
 		schedulepage.createSchedules(5, 3, 2);//mention the time to start ,how many schedules need to keep,interval between next schedule
 		schedulepage.backToHomepage();
 		
-		Thread.sleep(12*60*1000);//set thread values based on schedule duration kept .
+		Thread.sleep(9*60*1000);//set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
 		analytics.checkenrgyduration(3);
 		schedulepage.backToHomepage();
@@ -98,6 +98,10 @@ public class TC29_Schedular extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail("Failed due to this exception", e);
 		}

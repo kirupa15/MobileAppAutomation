@@ -46,8 +46,8 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		readwrite.openPort();
 		Thread.sleep(2000);
 		readwrite.write("reboot\r");
-		Thread.sleep(3000);
-		readwrite.write("factory_reset\r");
+//		Thread.sleep(3000);
+//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -92,8 +92,12 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
+			e.printStackTrace();
+			readwrite.write("factory_reset\r");
+			killAndReopenApp();
+			Thread.sleep(3000);
+			adddevicepage.removingDevice();			
 			readwrite.closePort();
-//			e.printStackTrace();
 			fail("Failed due to this exception", e);
 		}
 	}
