@@ -142,7 +142,7 @@ public class SignUpPage extends GenericWrappers {
 	}
 	
 	public void checkPpContactUsContent(String content) {
-		for(int i=1;i<8;i++) {
+		for(int i=1;i<9;i++) {
 		scroll2();
 		Reporter.reportStep("The Page is "+ i + " time scrolled", "PASS");
 	}

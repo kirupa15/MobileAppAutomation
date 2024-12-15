@@ -31,7 +31,8 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		testDescription = "If already Signin skip signin and  Start Pairing Smartconfig mode, else Signin and pair Smartconfig mode";
 	}
 
-	Properties prop= new Properties();
+//	Properties prop= new Properties();
+	
 	@Test(priority = 9)
 	public void removerepair() throws Exception {
 		initAndriodDriver();
@@ -90,7 +91,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage.clickLogoutButton();
 		devicemenupage.clickLogoutConfirmationButton();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName(prop.getProperty("EMAILID"));
+		loginpage.enterUserName(loadProp("EMAILID"));
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");

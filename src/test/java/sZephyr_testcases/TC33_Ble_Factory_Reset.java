@@ -70,7 +70,7 @@ public void pairBlewithoutRouter() throws Exception {
 	
 	Thread.sleep(1000);
 	homepage.killandopen();
-	Thread.sleep(1000);
+	Thread.sleep(5000);
 	homepage.clickMenuBarButton();
 	devicemenupage.clickDeviceSettingsButton();
 	devicemenupage.clickResetDeviceButton();

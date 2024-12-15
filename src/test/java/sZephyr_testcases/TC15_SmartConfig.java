@@ -140,8 +140,8 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 	///CONNECTIVITY_MOD_3_TC_5//remote_Kill and Open
 		
 		homepage.killandopen();
+		Thread.sleep(5000);
 		turnOffBT();
-		Thread.sleep(10000);
 		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.remoteConnectivityCheck();
 		Thread.sleep(3000);
