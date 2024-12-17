@@ -195,7 +195,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpath(WebElement xpath, String button) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expshortWait(xpath);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -259,7 +259,7 @@ public class GenericWrappers {
 	public boolean entervaluebyXpath(WebElement xpath, String fieldname, String value) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expshortWait(xpath);
 			xpath.sendKeys(value);
 			Reporter.reportStep(fieldname + " field is entered with value : " + value, "PASS");
 

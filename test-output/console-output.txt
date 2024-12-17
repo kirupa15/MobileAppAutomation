@@ -1,9 +1,14 @@
 Test suite started. Output is redirected to file.
 No adb device is connected
-192.168.10.34 is not reachable. Trying ftp.iinvsys.com
+Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
+Created new subdirectory: logs_179746
+Changed to new subdirectory: logs_179746
+File uploaded successfully to FTP: TC_01_Account_InfoApp.txt
+File uploaded successfully to FTP: TC_01_Account_Info.txt
 FAILED CONFIGURATION: @AfterMethod wrappers.MobileAppWrappers.afterMethod
-java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.terminateApp(String)" because "wrappers.MobileAppWrappers.driver" is null
-	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:113)
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+	at utils.Reporter.reportStep(Reporter.java:33)
+	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:97)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -41,7 +46,7 @@ java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.And
 FAILED: sZephyr_testcases.TC01_Accounts_Info.removerepair
 org.openqa.selenium.WebDriverException: Connection refused: no further information
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-8HN186T', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+System info: host: 'DESKTOP-8HN186T', ip: '192.168.10.189', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
 	at java.base/java.util.Optional.orElseGet(Optional.java:364)
