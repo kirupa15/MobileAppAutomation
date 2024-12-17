@@ -1,6 +1,9 @@
 package pages;
 
 import org.openqa.selenium.JavascriptExecutor;
+
+import static org.testng.Assert.fail;
+
 import java.io.IOException;
 import java.time.Duration;
 
@@ -641,6 +644,7 @@ public class AddDevicePage extends GenericWrappers {
 			case 1:
 				turnOnBT();
 				startPairingButton();
+				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 //				locationPopUpPermission();
 //				nearByPermission();
@@ -649,7 +653,6 @@ public class AddDevicePage extends GenericWrappers {
 //				blepermissionokpopup();
 
 				clickWifiCancelButton();
-				readwrite.write("factory_reset\r");
 
 				retrypagecheck(mode);
 				unregistereddevicepopup();
@@ -662,10 +665,10 @@ public class AddDevicePage extends GenericWrappers {
 //				blepermissionokpopup();
 //				locationPopUpPermission();
 //				nearByPermission();
+				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
-				readwrite.write("factory_reset\r");
 				retrypagecheck(mode);
 				unregistereddevicepopup();
 				break;
@@ -678,12 +681,12 @@ public class AddDevicePage extends GenericWrappers {
 //				locationPopUpPermission();
 //				nearByPermission();
 
+				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
 				
-				readwrite.write("factory_reset\r");
 				
 				Thread.sleep(1000 * 2 * 10);
 
@@ -696,11 +699,11 @@ public class AddDevicePage extends GenericWrappers {
 				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOffBT();
 				startPairingButton();
+				readwrite.write("factory_reset\r");
 				blepermissioncancelpopup();
 //				Thread.sleep(3000);
 //				locationPopUpPermission();
 //				nearByPermission();
-				readwrite.write("factory_reset\r");
 
 				Thread.sleep(1000 * 5 * 1);
 				blepermissionokpopup();
@@ -846,13 +849,14 @@ public class AddDevicePage extends GenericWrappers {
 		}
 	}
 	private void retrypagecheck(int mode) throws Exception {
-		if (isElementDisplayed(Retrypagetext, "Retry page")) {
+		if (isiconDisplayed(Retrypagetext, "Retry page")) {
 
-			clickbyXpath(Retrypageretrybutton, "retrypage");
+			fail();
+//			clickbyXpath(Retrypageretrybutton, "retrypage");
 
 //			readwrite.write("factory_reset\r");
-			driver.navigate().back();
-			clickbyXpath(alertok, "clicking on exit pop-up ");
+//			driver.navigate().back();
+//			clickbyXpath(alertok, "clicking on exit pop-up ");
 //			proceedToAddDevice(mode);
 		} else {
 			System.out.println("Retry page not displayed proceeding to next step");

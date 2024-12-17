@@ -644,7 +644,7 @@ public class GenericWrappers {
 			Runtime.getRuntime().exec("adb shell svc wifi enable");
 			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
 			// Wait for the WiFi settings to open
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 
 			// Scroll to the WiFi network by name
 			WebElement wifiElement = driver.findElement(MobileBy.AndroidUIAutomator(
@@ -670,7 +670,7 @@ public class GenericWrappers {
 					
 					clickbyXpath(connectButton, "Connect button");
 					
-					Thread.sleep(5000);}
+					Thread.sleep(3000);}
 
 			}
 			else if (isElementDisplayed(enterPasswordFieldOnePlus,"Password field of wifipage -ONE plus")) {
@@ -679,7 +679,7 @@ public class GenericWrappers {
 			 if (isElementDisplayed(savebutton,"Save button")) {
 				clickbyXpath(savebutton, "save button");
 				
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 			}
 				
 			} 
@@ -787,7 +787,7 @@ public class GenericWrappers {
 	}
 	public boolean isiconDisplayed(WebElement element,String field) {
 		try {
-			expshortWait(element);// Introduce a small delay before checking visibility
+			expWaitforPairing(element);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
