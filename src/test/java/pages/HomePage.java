@@ -109,7 +109,7 @@ public class HomePage extends GenericWrappers{
 		   if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 				driver.activateApp(packages); 
 				// Bring it back
-				Thread.sleep(3000);
+//				Thread.sleep(3000);
 			}
 	   }
 

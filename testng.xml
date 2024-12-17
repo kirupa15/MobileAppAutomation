@@ -7,13 +7,13 @@
     
   <test thread-count="5" name="Default test" verbose="2">
   
-     <packages>
-		
-		
-		<package name="sZephyr_testcases" />
-	 	  
-		
-   </packages>
+     <classes>
+            <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter"/>
+            <class name="sZephyr_testcases.TC09_Pairing_BlewithRouter"/>
+            <class name="sZephyr_testcases.TC10_Pairing_SmartConfig"/>
+            <class name="sZephyr_testcases.TC11_Pairing_WifiwithRouter"/>
+            <class name="sZephyr_testcases.TC12_Pairing_WifiwithoutRouter"/>
+        </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
 

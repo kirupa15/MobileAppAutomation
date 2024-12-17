@@ -31,7 +31,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	        // Redirect console output to a file
 	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
-	        System.setOut(fileOut);
+//	        System.setOut(fileOut);
 	        System.out.println("Test suite started. Output is redirected to file.");
 		GetAppLog applog= new GetAppLog();
 		applog.startLogProcess();

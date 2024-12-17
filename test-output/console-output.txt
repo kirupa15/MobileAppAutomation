@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Test suite started. Output is redirected to file.
 No adb device is connected
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
@@ -137,3 +138,5 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 ===============================================
 
 Test suite finished. Closing output redirection.
+=======
+>>>>>>> 364760014454d63f6ca65f1318246fd71bd4653a
