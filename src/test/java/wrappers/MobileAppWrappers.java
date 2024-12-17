@@ -1,10 +1,9 @@
 package wrappers;
 
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.UUID;
-
-import org.apache.commons.net.ftp.FTPClient;
+import java.io.PrintStream;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -13,22 +12,27 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
-import jssc.SerialPortException;
 import utils.DataInputProvider;
 import utils.GetAppLog;
 import utils.Reporter;
-import utils.logReadandWrite;
 
 public class MobileAppWrappers extends GenericWrappers {
 	protected String browserName;
 	protected String dataSheetName;
 	protected static String testCaseName;
 	protected static String testDescription;
-
+	private PrintStream originalOut;
+    private PrintStream fileOut;
 	
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		Reporter.startResult();
+		 originalOut = System.out;
+
+	        // Redirect console output to a file
+	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
+	        System.setOut(fileOut);
+	        System.out.println("Test suite started. Output is redirected to file.");
 		GetAppLog applog= new GetAppLog();
 		applog.startLogProcess();
 
@@ -47,6 +51,9 @@ public class MobileAppWrappers extends GenericWrappers {
 	@AfterSuite
 	public void afterSuite(){
 		Reporter.endResult();
+		System.out.println("Test suite finished. Closing output redirection.");
+        fileOut.close();
+        System.setOut(originalOut);
 	}
 
 
@@ -99,10 +106,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 		}
 		driver.terminateApp(packages);
-//		driver.closeApp();
 		driver.quit();
-//		logReadandWrite readwrite=new logReadandWrite("COM4");
-//		readwrite.closePort();
 	}
 
 	@DataProvider(name="fetchData")

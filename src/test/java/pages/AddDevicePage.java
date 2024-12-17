@@ -285,7 +285,7 @@ public class AddDevicePage extends GenericWrappers {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.js = (JavascriptExecutor) driver;
-		this.wait = new WebDriverWait(driver, 30);
+		this.wait = new WebDriverWait(driver, 10);
 
 	}
 
@@ -646,9 +646,10 @@ public class AddDevicePage extends GenericWrappers {
 //				nearByPermission();
 
 //				Thread.sleep(3000);
-				blepermissionokpopup();
+//				blepermissionokpopup();
 
 				clickWifiCancelButton();
+				readwrite.write("factory_reset\r");
 
 				retrypagecheck(mode);
 				unregistereddevicepopup();
@@ -658,12 +659,13 @@ public class AddDevicePage extends GenericWrappers {
 				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOnBT();
 				startPairingButton();
-				blepermissionokpopup();
+//				blepermissionokpopup();
 //				locationPopUpPermission();
 //				nearByPermission();
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
+				readwrite.write("factory_reset\r");
 				retrypagecheck(mode);
 				unregistereddevicepopup();
 				break;
@@ -674,13 +676,15 @@ public class AddDevicePage extends GenericWrappers {
 				startPairingButton();
 //				blepermissionokpopup();
 //				locationPopUpPermission();
-				nearByPermission();
+//				nearByPermission();
 
 				blepermissionokpopup();
 
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
-
+				
+				readwrite.write("factory_reset\r");
+				
 				Thread.sleep(1000 * 2 * 10);
 
 				blepermissionokpopup();
@@ -696,6 +700,7 @@ public class AddDevicePage extends GenericWrappers {
 //				Thread.sleep(3000);
 //				locationPopUpPermission();
 //				nearByPermission();
+				readwrite.write("factory_reset\r");
 
 				Thread.sleep(1000 * 5 * 1);
 				blepermissionokpopup();
@@ -725,7 +730,6 @@ public class AddDevicePage extends GenericWrappers {
 //				locationPopUpPermission();
 //				nearByPermission();
 
-				Thread.sleep(1000 * 5 * 1);
 //				if (isElementDisplayed(BLEcancelpopup, "Ble cancel pop-up")) {
 //					clickBleCancelbutton();
 //					if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
@@ -737,7 +741,7 @@ public class AddDevicePage extends GenericWrappers {
 //				}
 
 				clickWifiCancelButton();
-
+				readwrite.write("factory_reset\r");
 				Thread.sleep(2*60*1000);
 
 				retrypagecheck(mode);
@@ -929,7 +933,8 @@ public class AddDevicePage extends GenericWrappers {
 	}
 public void removingDevice() throws InterruptedException {
 
-	while (1>0) {
+	int n=5;
+	while (n>0) {
 		
 		if (isElementDisplayed(menuBarButton,"Menu Bar button")) {
 			homepage.clickMenuBarButton();
@@ -955,8 +960,14 @@ public void removingDevice() throws InterruptedException {
 			
 			devicemenupage.AddDevicePagedisplayed();
 			break;
-		} else {
+		}
+		else if (isElementDisplayed(signInButton,"signin button displayed")) {
+			System.out.println("signin page displayed");
+			break;
+		}
+		else {
 			System.out.println("something went wrong");
+			n--;
 		}
 		
 	}
