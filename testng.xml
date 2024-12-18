@@ -1,16 +1,22 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="MobilAppAutomation" guice-stage="DEVELOPMENT">
 
-     <listeners>
-        <listener class-name="utils.RetryListener" />
-    </listeners> 
-    
-  <test thread-count="5" name="Default test" verbose="2">
-  
-     <packages>
-     <package name="sZephyr_testcases"/>
+	<listeners>
+		<listener class-name="utils.RetryListener" />
+	</listeners>
 
-     </packages>
-  </test> <!-- Default test -->
-</suite> <!-- Default suite -->
+	<test thread-count="5" name="Default test" verbose="2">
+	
+	<classes>
+            <class name="sZephyr_testcases.TC02_SignUp"/>
+            <class name="sZephyr_testcases.TC03_SignUp"/>
+            <class name="sZephyr_testcases.TC04_SignIn_Flow"/>
+            <class name="sZephyr_testcases.TC05_SignIn_Valid_User"/>
+            <class name="sZephyr_testcases.TC06_SignIn_SuccessFlow"/>
+            <class name="sZephyr_testcases.TC07_SignIn_Logout"/>
+        </classes>
+	</test> <!--
+	Default test -->
+</suite> <!--
+Default suite -->
 
