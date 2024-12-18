@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
@@ -11,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.Time;
 import java.time.Duration;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
@@ -19,6 +21,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -444,91 +447,6 @@ public class GenericWrappers {
 
 
 
-	private FTPClient ftpClient;
-	private String randomDirName;
-
-	String server2="ftp.iinvsys.com";
-	int port2=2121;
-	// Constructor to connect and login to FTP server
-	public void FTPUploader(String server, int port, String user, String pass) throws IOException {
-
-		ftpClient = new FTPClient();
-		if (!pingServer(server)) {
-			System.out.println(server + " is not reachable. Trying " + server2);
-			connectToServer(server2, port2, user, pass);
-		} else {
-			connectToServer(server, port, user, pass);
-		}
-
-
-
-	}
-
-	private void connectToServer(String server, int port, String user, String pass) throws IOException {
-		ftpClient.connect(server, port);
-		boolean login = ftpClient.login(user, pass);
-
-		if (!login) {
-			throw new IOException("FTP login failed for server: " + server);
-		}
-
-		ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
-		ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
-	}
-	private boolean pingServer(String server) {
-		try {
-			InetAddress address = InetAddress.getByName(server);
-			return address.isReachable(2000); // Timeout after 2000 ms
-		} catch (IOException e) {
-			return false; // If there's an exception, the server is not reachable
-		}
-	}
-	// Method to create a subdirectory and change the working directory to it
-	public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
-		// Navigate to the existing directory
-		if (ftpClient.changeWorkingDirectory(existingDirectory)) {
-			System.out.println("Navigated to directory: " + existingDirectory);
-
-			// Create a new subdirectory
-			if (ftpClient.makeDirectory(newSubDir)) {
-				System.out.println("Created new subdirectory: " + newSubDir);
-
-				// Change the working directory to the new subdirectory
-				if (ftpClient.changeWorkingDirectory(newSubDir)) {
-					System.out.println("Changed to new subdirectory: " + newSubDir);
-				} else {
-					throw new IOException("Failed to change to the new subdirectory");
-				}
-			} else {
-				throw new IOException("Failed to create new subdirectory: " + newSubDir);
-			}
-		} else {
-			throw new IOException("Failed to change directory to: " + existingDirectory);
-		}
-	}
-
-	// Method to upload a file to the current directory
-	public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
-		try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
-			boolean success = ftpClient.storeFile(remoteFileName, fis);
-			if (success) {
-				System.out.println("File uploaded successfully to FTP: " + remoteFileName);
-				
-			} else {
-				System.out.println("File upload failed.");
-			}
-		}
-	}
-
-	// Close the FTP connection
-	public void disconnect() throws IOException {
-		if (ftpClient.isConnected()) {
-			ftpClient.logout();
-			ftpClient.disconnect();
-		}
-
-	}
-
 
 
 
@@ -806,5 +724,185 @@ public class GenericWrappers {
 	
 	
 	
+	private FTPClient ftpClient;
+
+	String server2="ftp.iinvsys.com";
+	int port2=2121;
+	// Constructor to connect and login to FTP server
+	public void FTPUploader(String server, int port, String user, String pass) throws IOException {
+
+		ftpClient = new FTPClient();
+		if (!pingServer(server)) {
+			System.out.println(server + " is not reachable. Trying " + server2);
+			connectToServer(server2, port2, user, pass);
+		} else {
+			connectToServer(server, port, user, pass);
+		}
+
+
+
+	}
+
+	private void connectToServer(String server, int port, String user, String pass) throws IOException {
+		ftpClient.connect(server, port);
+		boolean login = ftpClient.login(user, pass);
+
+		if (!login) {
+			throw new IOException("FTP login failed for server: " + server);
+		}
+
+		ftpClient.enterLocalPassiveMode(); // Set passive mode for FTP
+		ftpClient.setFileType(FTP.BINARY_FILE_TYPE); // Use binary file type
+	}
+	private boolean pingServer(String server) {
+		try {
+			InetAddress address = InetAddress.getByName(server);
+			return address.isReachable(2000); // Timeout after 2000 ms
+		} catch (IOException e) {
+			return false; // If there's an exception, the server is not reachable
+		}
+	}
+	// Method to create a subdirectory and change the working directory to it
+	public void createAndNavigateToSubdirectory(String existingDirectory, String newSubDir) throws IOException {
+		// Navigate to the existing directory
+		if (ftpClient.changeWorkingDirectory(existingDirectory)) {
+			System.out.println("Navigated to directory: " + existingDirectory);
+
+			// Create a new subdirectory
+			if (ftpClient.makeDirectory(newSubDir)) {
+				System.out.println("Created new subdirectory: " + newSubDir);
+
+				// Change the working directory to the new subdirectory
+				if (ftpClient.changeWorkingDirectory(newSubDir)) {
+					System.out.println("Changed to new subdirectory: " + newSubDir);
+				} else {
+					throw new IOException("Failed to change to the new subdirectory");
+				}
+			} else {
+				throw new IOException("Failed to create new subdirectory: " + newSubDir);
+			}
+		} else {
+			throw new IOException("Failed to change directory to: " + existingDirectory);
+		}
+	}
+
+	// Method to upload a file to the current directory
+	public void uploadFile(String localFilePath, String remoteFileName) throws IOException {
+		try (FileInputStream fis = new FileInputStream(new File(localFilePath))) {
+			boolean success = ftpClient.storeFile(remoteFileName, fis);
+			if (success) {
+				System.out.println("File uploaded successfully to FTP: " + remoteFileName);
+				
+			} else {
+				System.out.println("File upload failed.");
+			}
+		}
+	}
+	
+	
+	
+
+	// Close the FTP connection
+	public void disconnect() throws IOException {
+		if (ftpClient.isConnected()) {
+			ftpClient.logout();
+			ftpClient.disconnect();
+		}
+
+	}
+
+	
+	public void getLatestApk(String baseRemotePath,String localDirectory,String newFileName) throws IOException {
+		// Add current week to the path
+        String weekFolder = getCurrentWeekFolder();
+        String remotePathWithWeek = baseRemotePath+weekFolder+"/";
+        System.out.println("Looking in directory: " + remotePathWithWeek);
+
+        // Get the latest folder within the week directory
+        String latestFolder = getLatestFolder(ftpClient, remotePathWithWeek);
+        if (latestFolder != null) {
+            String targetDirectory = remotePathWithWeek + latestFolder + "/";
+            System.out.println("Latest folder found: " + targetDirectory);
+
+            File localFolder = new File(localDirectory);
+            deleteAllFilesInFolder(localFolder);
+            
+            // Search for the file containing "szhephyr" in the latest folder
+            FTPFile[] files = ftpClient.listFiles(targetDirectory);
+            for (FTPFile file : files) {
+            	System.out.println(file);//////////////////////
+                if (file.isFile() && file.getName().contains("Android_SZephyr")) {
+                    String downloadedFileName = file.getName();
+                    File localFile = new File(localDirectory + File.separator + downloadedFileName);
+
+                    // Download the file
+                    try (FileOutputStream outputStream = new FileOutputStream(localFile)) {
+                        boolean success = ftpClient.retrieveFile(targetDirectory + downloadedFileName, outputStream);
+                        if (success) {
+                            System.out.println("Downloaded: " + downloadedFileName);
+                        } else {
+                            System.out.println("Failed to download: " + downloadedFileName);
+                        }
+                    }
+
+                    // Rename the downloaded file
+                    File renamedFile = new File(localDirectory + File.separator + newFileName);
+                    boolean renamed = localFile.renameTo(renamedFile);
+                    if (renamed) {
+                        System.out.println("File renamed to: " + newFileName);
+                    } else {
+                        System.out.println("Failed to rename file.");
+                    }
+
+                    break;
+                }
+            }
+        } else {
+            System.out.println("No latest folder found for the week.");
+        }
+	}
+	
+	
+	// Get the latest folder from a given directory on the FTP server
+    private static String getLatestFolder(FTPClient ftpClient, String directoryPath) throws IOException {
+    	
+    	
+    	
+        FTPFile[] directories = ftpClient.listDirectories(directoryPath);
+
+        if (directories.length == 0) {
+            return null;
+        }
+
+        FTPFile latestDir = null;
+        for (FTPFile dir : directories) {
+            if (dir.isDirectory()) {
+                if (latestDir == null || dir.getTimestamp().getTime().after(latestDir.getTimestamp().getTime())) {
+                    latestDir = dir;
+                }
+            }
+        }
+
+        return latestDir != null ? latestDir.getName() : null;
+    }
+    private static String getCurrentWeekFolder() {
+        Calendar calendar = Calendar.getInstance();
+        int weekOfYear = calendar.get(Calendar.WEEK_OF_YEAR);
+        
+        return "W"+(weekOfYear-1);
+    }
+    
+    private static void deleteAllFilesInFolder(File folder) {
+        if (folder.isDirectory()) {
+            File[] files = folder.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    if (file.isFile()) {
+                        file.delete();
+                    }
+                }
+            }
+        }
+    }
 	
 }

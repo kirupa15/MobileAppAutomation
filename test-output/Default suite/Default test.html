@@ -55,17 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Tue Dec 17 20:40:39 IST 2024</td>
+<td>Started on:</td><td>Wed Dec 18 22:28:48 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1528 ms)</td>
-=======
-<td>Started on:</td><td>Tue Dec 17 20:40:43 IST 2024</td>
-</tr>
-<tr><td>Total time:</td><td>490 seconds (490510 ms)</td>
->>>>>>> 364760014454d63f6ca65f1318246fd71bd4653a
+<tr><td>Total time:</td><td>1 seconds (1831 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -73,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -82,11 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<<<<<<< HEAD
 <td title='sZephyr_testcases.TC01_Accounts_Info.afterMethod()'><b>afterMethod</b><br>Test class: sZephyr_testcases.TC01_Accounts_Info</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ts&quot; is null
 	at utils.Reporter.reportStep(Reporter.java:33)
-	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:97)
+	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:115)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,10 +113,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace161118423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace161118423'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ts&quot; is null
+</pre></div><a href='#' onClick='toggleBox("stack-trace1466717494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1466717494'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;ts&quot; is null
 	at utils.Reporter.reportStep(Reporter.java:33)
-	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:97)
+	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:115)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +152,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>sZephyr_testcases.TC01_Accounts_Info@18f8cd79</td></tr>
+<td>sZephyr_testcases.TC01_Accounts_Info@6bb4dd34</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -189,7 +182,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:83)
+	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:86)
 	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -255,8 +248,8 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
 	... 41 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1526296937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1526296937'><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
+</pre></div><a href='#' onClick='toggleBox("stack-trace1846568576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1846568576'><pre>org.openqa.selenium.WebDriverException: Connection refused: no further information
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-8HN186T&apos;, ip: &apos;192.168.10.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: driver.version: AndroidDriver
@@ -274,7 +267,7 @@ Driver info: driver.version: AndroidDriver
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
 	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:83)
+	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:86)
 	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -342,13 +335,7 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	... 41 more
 </pre></div></td>
 <td>1</td>
-<td>sZephyr_testcases.TC01_Accounts_Info@18f8cd79</td></tr>
-=======
-<td title='sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td>
-<td></td>
-<td>488</td>
-<td>sZephyr_testcases.TC08_Pairing_BlewithoutRouter@18317edc</td></tr>
->>>>>>> 364760014454d63f6ca65f1318246fd71bd4653a
+<td>sZephyr_testcases.TC01_Accounts_Info@6bb4dd34</td></tr>
 </table><p>
 </body>
 </html>
