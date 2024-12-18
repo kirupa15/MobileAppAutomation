@@ -23,19 +23,40 @@ public class MobileAppWrappers extends GenericWrappers {
 	protected static String testDescription;
 	private PrintStream originalOut;
     private PrintStream fileOut;
+    String baseRemotePath = loadProp("BASEREMOTEPATH");  // Base FTP directory path
+    String localDirectory =loadProp("LOCALAPPPATH") ;  // Local directory to save file
+    String newFileName = loadProp("NEWFILENAME");  // New file name
+    
+    
+    String server = "192.168.10.34";//192.168.10.34
+	int port = 21;
+	String user = "qa_usr";
+	String pass = "nw9f2hgo@123";
 	
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
-		Reporter.startResult();
-		 originalOut = System.out;
-
+		
+		
+		//get app from FTP
+		FTPUploader(server, port, user, pass);
+		getLatestApk(baseRemotePath, localDirectory, newFileName);
+		
+		disconnect();
+		
+		
+		Reporter.startResult();//START TESTNG RESULT
+		
 	        // Redirect console output to a file
+		originalOut = System.out;
 	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
 //	        System.setOut(fileOut);
-	        System.out.println("Test suite started. Output is redirected to file.");
+//	        System.out.println("Test suite started. Output is redirected to file.");
+	        
+	        //START GETTING APP LOG
 		GetAppLog applog= new GetAppLog();
 		applog.startLogProcess();
 
+		
 	}
 
 	@BeforeTest
@@ -69,10 +90,7 @@ public class MobileAppWrappers extends GenericWrappers {
 		try {
 			// FTP server credentials
 
-			String server = "192.168.10.34";//192.168.10.34
-			int port = 21;
-			String user = "qa_usr";
-			String pass = "nw9f2hgo@123";
+			
 
 			// Local log files
 			String appLogPath = "./app_log.txt";
