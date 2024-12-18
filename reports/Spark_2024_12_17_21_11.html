@@ -1,0 +1,4715 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 17, 2024 09:11:41 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01 - Pairing BLE Without Router</p>
+            <p class="text-sm">
+              <span>9:11:42 pm</span> / <span>00:06:52:763</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01 - Pairing BLE Without Router</h5>
+<span class='badge badge-success'>12.17.2024 9:11:42 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:18:34 pm</span>
+<span class='badge badge-default'>00:06:52:763</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">TC-01-After Pairing check on/off remove device<br>TC-02-After Pairing check on/off remove device ,repair and check on/off <br>TC-03-With internet after Pairing check on/off ,initaite logout and login check for added device ,remove and repair check on/off .</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:11:49 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:11:50 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:11:52 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/87979417.jpg' src="./../reports/images/87979417.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:11:52 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:03 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/841524378.jpg' src="./../reports/images/841524378.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:12:20 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:12:32 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:12:43 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:45 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/469738177.jpg' src="./../reports/images/469738177.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:48 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/235831584.jpg' src="./../reports/images/235831584.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:49 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/559968678.jpg' src="./../reports/images/559968678.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:50 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/267896169.jpg' src="./../reports/images/267896169.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:51 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/675670379.jpg' src="./../reports/images/675670379.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:12:52 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/373572295.jpg' src="./../reports/images/373572295.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:13:04 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:06 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/102997980.jpg' src="./../reports/images/102997980.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:13:38 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:13:49 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:50 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/19502258.jpg' src="./../reports/images/19502258.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:52 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/476744984.jpg' src="./../reports/images/476744984.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:53 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/429890356.jpg' src="./../reports/images/429890356.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:55 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/643997565.jpg' src="./../reports/images/643997565.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:13:58 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/778129964.jpg' src="./../reports/images/778129964.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:01 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/564662677.jpg' src="./../reports/images/564662677.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:05 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/46965151.jpg' src="./../reports/images/46965151.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:08 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/723810270.jpg' src="./../reports/images/723810270.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:12 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/665293416.jpg' src="./../reports/images/665293416.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:14 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/492322409.jpg' src="./../reports/images/492322409.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:17 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/714558340.jpg' src="./../reports/images/714558340.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:18 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/618514460.jpg' src="./../reports/images/618514460.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:21 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/303032249.jpg' src="./../reports/images/303032249.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:23 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/581017959.jpg' src="./../reports/images/581017959.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:14:28 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/711785450.jpg' src="./../reports/images/711785450.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:14:44 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:14:55 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:15:07 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:08 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/754932053.jpg' src="./../reports/images/754932053.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:11 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/649712496.jpg' src="./../reports/images/649712496.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:13 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/712948650.jpg' src="./../reports/images/712948650.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:14 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/348313814.jpg' src="./../reports/images/348313814.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:15 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/587749782.jpg' src="./../reports/images/587749782.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:16 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/807272805.jpg' src="./../reports/images/807272805.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:15:27 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:15:28 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/343796103.jpg' src="./../reports/images/343796103.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:16:01 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:16:13 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:14 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/179504466.jpg' src="./../reports/images/179504466.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:16 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/338058683.jpg' src="./../reports/images/338058683.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:18 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/668851761.jpg' src="./../reports/images/668851761.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:19 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/418271060.jpg' src="./../reports/images/418271060.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:22 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/92575170.jpg' src="./../reports/images/92575170.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:25 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/732729165.jpg' src="./../reports/images/732729165.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:29 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/698995382.jpg' src="./../reports/images/698995382.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:32 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/736697422.jpg' src="./../reports/images/736697422.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:36 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/772003732.jpg' src="./../reports/images/772003732.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:39 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/169740684.jpg' src="./../reports/images/169740684.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:41 pm</td>
+        <td>
+           Logout button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/524334195.jpg' src="./../reports/images/524334195.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:43 pm</td>
+        <td>
+           Logout confirmation button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/812623652.jpg' src="./../reports/images/812623652.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:44 pm</td>
+        <td>
+           Sign In Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/119862696.jpg' src="./../reports/images/119862696.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:46 pm</td>
+        <td>
+           User Name  field is entered with value : testuser007@gmail.com
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/835473234.jpg' src="./../reports/images/835473234.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:48 pm</td>
+        <td>
+           Sign In  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/620312251.jpg' src="./../reports/images/620312251.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:50 pm</td>
+        <td>
+           OTP verification Page contains OTP Verification
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/472479050.jpg' src="./../reports/images/472479050.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:52 pm</td>
+        <td>
+           OTP Box 1  field is entered with value : 1
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/416035104.jpg' src="./../reports/images/416035104.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:55 pm</td>
+        <td>
+           OTP Box 2  field is entered with value : 2
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/895957318.jpg' src="./../reports/images/895957318.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:57 pm</td>
+        <td>
+           OTP Box 3  field is entered with value : 3
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/569186298.jpg' src="./../reports/images/569186298.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:16:59 pm</td>
+        <td>
+           OTP Box 4  field is entered with value : 4
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/97716657.jpg' src="./../reports/images/97716657.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:03 pm</td>
+        <td>
+           Submit Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/376164640.jpg' src="./../reports/images/376164640.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:10 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/252816056.jpg' src="./../reports/images/252816056.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:13 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/114306401.jpg' src="./../reports/images/114306401.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:16 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/201028616.jpg' src="./../reports/images/201028616.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:17 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/834164224.jpg' src="./../reports/images/834164224.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:20 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/747219090.jpg' src="./../reports/images/747219090.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:22 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/166043568.jpg' src="./../reports/images/166043568.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:17:27 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/842566952.jpg' src="./../reports/images/842566952.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:17:42 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:17:53 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:05 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:06 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/85074519.jpg' src="./../reports/images/85074519.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:09 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/450352683.jpg' src="./../reports/images/450352683.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:11 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/708692976.jpg' src="./../reports/images/708692976.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:12 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/646380725.jpg' src="./../reports/images/646380725.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:12 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/257240452.jpg' src="./../reports/images/257240452.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:14 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/543523443.jpg' src="./../reports/images/543523443.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:25 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:26 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/436695026.jpg' src="./../reports/images/436695026.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:34 pm</td>
+        <td>
+          Retry page  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/793130006.jpg' src="./../reports/images/793130006.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:34 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_983381<br>Device Log File name:/TC01 - Pairing BLE Without Router.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC01 - Pairing BLE Without Router</p>
+            <p class="text-sm">
+              <span>9:18:35 pm</span> / <span>00:08:10:050</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC01 - Pairing BLE Without Router</h5>
+<span class='badge badge-success'>12.17.2024 9:18:35 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:26:45 pm</span>
+<span class='badge badge-default'>00:08:10:050</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">TC-01-After Pairing check on/off remove device<br>TC-02-After Pairing check on/off remove device ,repair and check on/off <br>TC-03-With internet after Pairing check on/off ,initaite logout and login check for added device ,remove and repair check on/off .</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:42 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:43 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:45 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/242198455.jpg' src="./../reports/images/242198455.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:18:45 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:18:56 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/542766821.jpg' src="./../reports/images/542766821.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:19:14 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:19:25 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:19:36 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:38 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/163390685.jpg' src="./../reports/images/163390685.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:41 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/17925872.jpg' src="./../reports/images/17925872.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:42 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/186087416.jpg' src="./../reports/images/186087416.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:44 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/830557728.jpg' src="./../reports/images/830557728.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:44 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/734789678.jpg' src="./../reports/images/734789678.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:46 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/521584437.jpg' src="./../reports/images/521584437.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:19:57 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:19:59 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/489042800.jpg' src="./../reports/images/489042800.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:20:30 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:20:42 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:43 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/415488075.jpg' src="./../reports/images/415488075.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:44 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/506223252.jpg' src="./../reports/images/506223252.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:46 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/729135089.jpg' src="./../reports/images/729135089.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:47 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/776684929.jpg' src="./../reports/images/776684929.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:51 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/672324374.jpg' src="./../reports/images/672324374.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:54 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/146184363.jpg' src="./../reports/images/146184363.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:20:59 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/650466056.jpg' src="./../reports/images/650466056.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:02 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/820712811.jpg' src="./../reports/images/820712811.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:06 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/325139419.jpg' src="./../reports/images/325139419.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:09 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/235539941.jpg' src="./../reports/images/235539941.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:12 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/822513201.jpg' src="./../reports/images/822513201.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:13 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/752246097.jpg' src="./../reports/images/752246097.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:16 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/792152211.jpg' src="./../reports/images/792152211.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:17 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/594394597.jpg' src="./../reports/images/594394597.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:21:23 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/675703270.jpg' src="./../reports/images/675703270.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:21:39 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:21:51 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:22:03 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:04 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/275195002.jpg' src="./../reports/images/275195002.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:06 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/908513995.jpg' src="./../reports/images/908513995.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:08 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/113521155.jpg' src="./../reports/images/113521155.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:09 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/514230764.jpg' src="./../reports/images/514230764.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:10 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/852910557.jpg' src="./../reports/images/852910557.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:12 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/256299595.jpg' src="./../reports/images/256299595.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:22:23 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:22:25 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/275361912.jpg' src="./../reports/images/275361912.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:22:57 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:23:09 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:10 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/766388644.jpg' src="./../reports/images/766388644.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:12 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/210742460.jpg' src="./../reports/images/210742460.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:14 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/607381470.jpg' src="./../reports/images/607381470.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:15 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/259726317.jpg' src="./../reports/images/259726317.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:19 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/844921714.jpg' src="./../reports/images/844921714.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:21 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/335749135.jpg' src="./../reports/images/335749135.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:25 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/272496234.jpg' src="./../reports/images/272496234.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:29 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/242926064.jpg' src="./../reports/images/242926064.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:33 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/808486394.jpg' src="./../reports/images/808486394.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:36 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/466767621.jpg' src="./../reports/images/466767621.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:38 pm</td>
+        <td>
+           Logout button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/604717398.jpg' src="./../reports/images/604717398.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:39 pm</td>
+        <td>
+           Logout confirmation button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/695943538.jpg' src="./../reports/images/695943538.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:41 pm</td>
+        <td>
+           Sign In Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/545872171.jpg' src="./../reports/images/545872171.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:43 pm</td>
+        <td>
+           User Name  field is entered with value : testuser007@gmail.com
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/757803548.jpg' src="./../reports/images/757803548.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:44 pm</td>
+        <td>
+           Sign In  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/845759016.jpg' src="./../reports/images/845759016.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:46 pm</td>
+        <td>
+           OTP verification Page contains OTP Verification
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/678602746.jpg' src="./../reports/images/678602746.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:49 pm</td>
+        <td>
+           OTP Box 1  field is entered with value : 1
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/565874472.jpg' src="./../reports/images/565874472.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:52 pm</td>
+        <td>
+           OTP Box 2  field is entered with value : 2
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/819720960.jpg' src="./../reports/images/819720960.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:54 pm</td>
+        <td>
+           OTP Box 3  field is entered with value : 3
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/391981446.jpg' src="./../reports/images/391981446.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:56 pm</td>
+        <td>
+           OTP Box 4  field is entered with value : 4
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/833905292.jpg' src="./../reports/images/833905292.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:23:59 pm</td>
+        <td>
+           Submit Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/57187976.jpg' src="./../reports/images/57187976.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:07 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/905020930.jpg' src="./../reports/images/905020930.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:11 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/548486265.jpg' src="./../reports/images/548486265.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:13 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/19343957.jpg' src="./../reports/images/19343957.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:14 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/157681334.jpg' src="./../reports/images/157681334.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:17 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/893515414.jpg' src="./../reports/images/893515414.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:18 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/168448137.jpg' src="./../reports/images/168448137.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:24:24 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/495399319.jpg' src="./../reports/images/495399319.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:40 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:51 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:25:03 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:04 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/466095769.jpg' src="./../reports/images/466095769.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:07 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/696045083.jpg' src="./../reports/images/696045083.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:09 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/542257397.jpg' src="./../reports/images/542257397.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:10 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/333214699.jpg' src="./../reports/images/333214699.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:11 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/439246741.jpg' src="./../reports/images/439246741.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:12 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/41056274.jpg' src="./../reports/images/41056274.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:25:23 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:25:25 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/528745010.jpg' src="./../reports/images/528745010.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:25:57 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:08 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:10 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/187356142.jpg' src="./../reports/images/187356142.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:11 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/781939709.jpg' src="./../reports/images/781939709.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:13 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/169482405.jpg' src="./../reports/images/169482405.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:14 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/525099950.jpg' src="./../reports/images/525099950.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:18 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/681826973.jpg' src="./../reports/images/681826973.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:21 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/68966040.jpg' src="./../reports/images/68966040.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:25 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/105326516.jpg' src="./../reports/images/105326516.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:29 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/405227257.jpg' src="./../reports/images/405227257.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:33 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/254688188.jpg' src="./../reports/images/254688188.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:36 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/349974377.jpg' src="./../reports/images/349974377.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:38 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/680406562.jpg' src="./../reports/images/680406562.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:40 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/105777340.jpg' src="./../reports/images/105777340.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:43 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/590873776.jpg' src="./../reports/images/590873776.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:44 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/805859755.jpg' src="./../reports/images/805859755.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:45 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_649872<br>Device Log File name:/TC01 - Pairing BLE Without Router.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC02 - Pairing BLE With Router</p>
+            <p class="text-sm">
+              <span>9:26:46 pm</span> / <span>00:05:23:238</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC02 - Pairing BLE With Router</h5>
+<span class='badge badge-success'>12.17.2024 9:26:46 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:32:10 pm</span>
+<span class='badge badge-default'>00:05:23:238</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">After pairing check </div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:53 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:55 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:26:56 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/624152328.jpg' src="./../reports/images/624152328.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:26:57 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:05 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/64866053.jpg' src="./../reports/images/64866053.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:27:22 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:27:34 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:27:46 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:47 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/373680191.jpg' src="./../reports/images/373680191.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:49 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/483390730.jpg' src="./../reports/images/483390730.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:51 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/570503524.jpg' src="./../reports/images/570503524.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:52 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/829382557.jpg' src="./../reports/images/829382557.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:57 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/676574421.jpg' src="./../reports/images/676574421.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:27:58 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/176681074.jpg' src="./../reports/images/176681074.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:01 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/464941076.jpg' src="./../reports/images/464941076.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:12 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:14 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/316793483.jpg' src="./../reports/images/316793483.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:15 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/461911903.jpg' src="./../reports/images/461911903.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:47 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:58 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:59 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/127682358.jpg' src="./../reports/images/127682358.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:02 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/842804259.jpg' src="./../reports/images/842804259.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:03 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/243755162.jpg' src="./../reports/images/243755162.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:05 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/236496557.jpg' src="./../reports/images/236496557.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:08 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/90527334.jpg' src="./../reports/images/90527334.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:12 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/327931059.jpg' src="./../reports/images/327931059.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:16 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/720703740.jpg' src="./../reports/images/720703740.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:20 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/268241964.jpg' src="./../reports/images/268241964.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:24 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/763860248.jpg' src="./../reports/images/763860248.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:26 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/595026182.jpg' src="./../reports/images/595026182.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:29 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/515779121.jpg' src="./../reports/images/515779121.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:30 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/755361282.jpg' src="./../reports/images/755361282.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:33 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/36645656.jpg' src="./../reports/images/36645656.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:35 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/603893579.jpg' src="./../reports/images/603893579.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:41 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/145268579.jpg' src="./../reports/images/145268579.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:57 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:08 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:20 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:21 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/779030244.jpg' src="./../reports/images/779030244.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:24 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/178688992.jpg' src="./../reports/images/178688992.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:25 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/268578806.jpg' src="./../reports/images/268578806.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:26 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/662727053.jpg' src="./../reports/images/662727053.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:31 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/556584548.jpg' src="./../reports/images/556584548.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:32 pm</td>
+        <td>
+          Bluetooth turned on successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/766614829.jpg' src="./../reports/images/766614829.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:34 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/582844550.jpg' src="./../reports/images/582844550.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:45 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:47 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/381640565.jpg' src="./../reports/images/381640565.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:48 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/747505004.jpg' src="./../reports/images/747505004.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:20 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:31:32 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:33 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/148307483.jpg' src="./../reports/images/148307483.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:35 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/471403323.jpg' src="./../reports/images/471403323.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:37 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/280118737.jpg' src="./../reports/images/280118737.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:38 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/845958605.jpg' src="./../reports/images/845958605.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:42 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/349213524.jpg' src="./../reports/images/349213524.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:44 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/673619782.jpg' src="./../reports/images/673619782.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:49 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/847044310.jpg' src="./../reports/images/847044310.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:52 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/367227187.jpg' src="./../reports/images/367227187.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:31:56 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/890853310.jpg' src="./../reports/images/890853310.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:00 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/43952851.jpg' src="./../reports/images/43952851.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:03 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/773532191.jpg' src="./../reports/images/773532191.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:04 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/286317520.jpg' src="./../reports/images/286317520.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:07 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/494706405.jpg' src="./../reports/images/494706405.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:08 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/476358589.jpg' src="./../reports/images/476358589.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:10 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_173222<br>Device Log File name:/TC02 - Pairing BLE With Router.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03 - Pairing in Smart Config Mode</p>
+            <p class="text-sm">
+              <span>9:32:10 pm</span> / <span>00:07:43:845</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC03 - Pairing in Smart Config Mode</h5>
+<span class='badge badge-success'>12.17.2024 9:32:10 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:39:54 pm</span>
+<span class='badge badge-default'>00:07:43:845</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Smartconfig mode, else Signin and pair Smartconfig mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:17 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:19 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:20 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/557907369.jpg' src="./../reports/images/557907369.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:21 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:32:29 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/454811305.jpg' src="./../reports/images/454811305.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:46 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:32:58 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:33:10 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:12 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/434605123.jpg' src="./../reports/images/434605123.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:14 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/263645864.jpg' src="./../reports/images/263645864.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:16 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/466554001.jpg' src="./../reports/images/466554001.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:18 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/471112073.jpg' src="./../reports/images/471112073.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:22 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/546744259.jpg' src="./../reports/images/546744259.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:24 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/648149994.jpg' src="./../reports/images/648149994.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:26 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/290801477.jpg' src="./../reports/images/290801477.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:27 pm</td>
+        <td>
+          BLE pop-up OK button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/753397633.jpg' src="./../reports/images/753397633.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:34 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/76650318.jpg' src="./../reports/images/76650318.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:33:36 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/524614569.jpg' src="./../reports/images/524614569.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:07 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:34:59 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:35:10 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:12 pm</td>
+        <td>
+          sZephyr info Next button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/333398290.jpg' src="./../reports/images/333398290.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:14 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/323541004.jpg' src="./../reports/images/323541004.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:15 pm</td>
+        <td>
+          Device details updated successfully! toastcontains Device details updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/325566887.jpg' src="./../reports/images/325566887.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:17 pm</td>
+        <td>
+           Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/208969657.jpg' src="./../reports/images/208969657.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:20 pm</td>
+        <td>
+          Device settings updated successfully! toastcontains Device settings updated successfully!
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/307397723.jpg' src="./../reports/images/307397723.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:23 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/29352576.jpg' src="./../reports/images/29352576.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:28 pm</td>
+        <td>
+          Device on description contains Your AC unit is either in standby or powered OFF at the moment
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/76736444.jpg' src="./../reports/images/76736444.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:31 pm</td>
+        <td>
+           Device ON OFF Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/727957142.jpg' src="./../reports/images/727957142.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:35 pm</td>
+        <td>
+          Device off descriptioncontains Please ensure sZephyr is switched ON prior to operating your AC remote
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/854856065.jpg' src="./../reports/images/854856065.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:39 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/620401012.jpg' src="./../reports/images/620401012.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:41 pm</td>
+        <td>
+           Click The Remove Device Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/93665308.jpg' src="./../reports/images/93665308.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:42 pm</td>
+        <td>
+           Click The Remove Device Pop-up YES Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/508406413.jpg' src="./../reports/images/508406413.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:45 pm</td>
+        <td>
+            DeviceRemovedSuccessfully toastcontains Device removed successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/20475490.jpg' src="./../reports/images/20475490.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:47 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/496738167.jpg' src="./../reports/images/496738167.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:35:52 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/251989256.jpg' src="./../reports/images/251989256.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:36:08 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:36:20 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:36:31 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:32 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/90927472.jpg' src="./../reports/images/90927472.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:35 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/601090530.jpg' src="./../reports/images/601090530.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:36 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/455855927.jpg' src="./../reports/images/455855927.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:37 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/272475093.jpg' src="./../reports/images/272475093.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:42 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/178690975.jpg' src="./../reports/images/178690975.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:43 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/484356935.jpg' src="./../reports/images/484356935.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:46 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/662780149.jpg' src="./../reports/images/662780149.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:46 pm</td>
+        <td>
+          BLE pop-up OK button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/808472159.jpg' src="./../reports/images/808472159.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:54 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/767557810.jpg' src="./../reports/images/767557810.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:36:55 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/597302121.jpg' src="./../reports/images/597302121.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:37:28 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:38:20 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:38:32 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:38:43 pm</td>
+        <td>
+          sZephyr info Next button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:39:26 pm</td>
+        <td>
+          The Field  Next Button  could not be clicked.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/579840710.jpg' src="./../reports/images/579840710.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:28 pm</td>
+        <td>
+          The app was killed successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/331353074.jpg' src="./../reports/images/331353074.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:32 pm</td>
+        <td>
+          The app was reopened successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/407969428.jpg' src="./../reports/images/407969428.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:37 pm</td>
+        <td>
+          Menu Bar button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/332639707.jpg' src="./../reports/images/332639707.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:39 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/447231455.jpg' src="./../reports/images/447231455.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:39:51 pm</td>
+        <td>
+          Remove device buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:39:53 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/673955475.jpg' src="./../reports/images/673955475.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:39:54 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_475331<br>Device Log File name:/TC03 - Pairing in Smart Config Mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC03 - Pairing in Smart Config Mode</p>
+            <p class="text-sm">
+              <span>9:39:55 pm</span> / <span>00:04:24:285</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC03 - Pairing in Smart Config Mode</h5>
+<span class='badge badge-success'>12.17.2024 9:39:55 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:44:19 pm</span>
+<span class='badge badge-default'>00:04:24:285</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Smartconfig mode, else Signin and pair Smartconfig mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:03 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:05 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:06 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/902521011.jpg' src="./../reports/images/902521011.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:07 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:15 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/738450092.jpg' src="./../reports/images/738450092.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:32 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:43 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:40:55 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:56 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/423670960.jpg' src="./../reports/images/423670960.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:40:59 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/109514604.jpg' src="./../reports/images/109514604.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:01 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/164767772.jpg' src="./../reports/images/164767772.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:02 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/58948361.jpg' src="./../reports/images/58948361.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:07 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/271492430.jpg' src="./../reports/images/271492430.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:08 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/128852863.jpg' src="./../reports/images/128852863.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:10 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/540155100.jpg' src="./../reports/images/540155100.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:11 pm</td>
+        <td>
+          BLE pop-up OK button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/89406211.jpg' src="./../reports/images/89406211.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:18 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/738099992.jpg' src="./../reports/images/738099992.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:41:20 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/631244803.jpg' src="./../reports/images/631244803.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:41:52 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:42:44 pm</td>
+        <td>
+          Retry pageElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:42:56 pm</td>
+        <td>
+          unregistered device pop-up Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:43:09 pm</td>
+        <td>
+          sZephyr info Next button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:43:51 pm</td>
+        <td>
+          The Field  Next Button  could not be clicked.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/177411973.jpg' src="./../reports/images/177411973.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:43:54 pm</td>
+        <td>
+          The app was killed successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/444452269.jpg' src="./../reports/images/444452269.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:43:58 pm</td>
+        <td>
+          The app was reopened successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/699049937.jpg' src="./../reports/images/699049937.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:44:02 pm</td>
+        <td>
+          Menu Bar button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/38307092.jpg' src="./../reports/images/38307092.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:44:04 pm</td>
+        <td>
+           Menu Bar  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/837778268.jpg' src="./../reports/images/837778268.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:16 pm</td>
+        <td>
+          Remove device buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:44:18 pm</td>
+        <td>
+          Add device button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/711797689.jpg' src="./../reports/images/711797689.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:19 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_642886<br>Device Log File name:/TC03 - Pairing in Smart Config Mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04 - Pairing in Wifi with router mode</p>
+            <p class="text-sm">
+              <span>9:44:20 pm</span> / <span>00:04:08:972</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04 - Pairing in Wifi with router mode</h5>
+<span class='badge badge-success'>12.17.2024 9:44:20 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:48:29 pm</span>
+<span class='badge badge-default'>00:04:08:972</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Wifi with router mode else Signin and pair Wifi with router mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:27 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:28 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:44:30 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/607965194.jpg' src="./../reports/images/607965194.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:31 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:44:39 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/479400702.jpg' src="./../reports/images/479400702.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:44:55 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:45:07 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:45:19 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:21 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/239893307.jpg' src="./../reports/images/239893307.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:24 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/176659251.jpg' src="./../reports/images/176659251.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:26 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/435308042.jpg' src="./../reports/images/435308042.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:27 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/849951593.jpg' src="./../reports/images/849951593.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:32 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/609784971.jpg' src="./../reports/images/609784971.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:34 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/771615792.jpg' src="./../reports/images/771615792.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:36 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/430071248.jpg' src="./../reports/images/430071248.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:45:37 pm</td>
+        <td>
+          BLE pop-up cancel button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/179896927.jpg' src="./../reports/images/179896927.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:45:53 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:46:26 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/633328384.jpg' src="./../reports/images/633328384.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:46:27 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/611190644.jpg' src="./../reports/images/611190644.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:48:28 pm</td>
+        <td>
+          Retry page  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/714594287.jpg' src="./../reports/images/714594287.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:48:29 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_185594<br>Device Log File name:/TC04 - Pairing in Wifi with router mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC04 - Pairing in Wifi with router mode</p>
+            <p class="text-sm">
+              <span>9:48:30 pm</span> / <span>00:04:07:421</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC04 - Pairing in Wifi with router mode</h5>
+<span class='badge badge-success'>12.17.2024 9:48:30 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:52:38 pm</span>
+<span class='badge badge-default'>00:04:07:421</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Wifi with router mode else Signin and pair Wifi with router mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:48:37 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:48:38 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:48:40 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/743538594.jpg' src="./../reports/images/743538594.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:48:41 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:48:48 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/191295678.jpg' src="./../reports/images/191295678.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:49:06 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:49:17 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:49:29 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:31 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/840964249.jpg' src="./../reports/images/840964249.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:32 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/846717218.jpg' src="./../reports/images/846717218.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:35 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/347636298.jpg' src="./../reports/images/347636298.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:36 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/172212220.jpg' src="./../reports/images/172212220.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:40 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/342157971.jpg' src="./../reports/images/342157971.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:42 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/283900322.jpg' src="./../reports/images/283900322.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:44 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/795561989.jpg' src="./../reports/images/795561989.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:49:45 pm</td>
+        <td>
+          BLE pop-up cancel button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/288465664.jpg' src="./../reports/images/288465664.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:50:02 pm</td>
+        <td>
+          BLE pop-up OK button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:50:34 pm</td>
+        <td>
+           Wifi Password   field is entered with value : 12345678911
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/853124566.jpg' src="./../reports/images/853124566.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:50:35 pm</td>
+        <td>
+           Enter Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/444127863.jpg' src="./../reports/images/444127863.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:52:36 pm</td>
+        <td>
+          Retry page  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/112928240.jpg' src="./../reports/images/112928240.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:52:38 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_672258<br>Device Log File name:/TC04 - Pairing in Wifi with router mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05 - Pairing in Wifi without router Mode</p>
+            <p class="text-sm">
+              <span>9:52:39 pm</span> / <span>00:03:20:441</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05 - Pairing in Wifi without router Mode</h5>
+<span class='badge badge-success'>12.17.2024 9:52:39 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:55:59 pm</span>
+<span class='badge badge-default'>00:03:20:441</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Wifi without router mode else Signin and pair Wifi without router mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:52:45 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:52:47 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:52:48 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/686482874.jpg' src="./../reports/images/686482874.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:52:49 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:52:57 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/364475375.jpg' src="./../reports/images/364475375.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:14 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:26 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:53:38 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:39 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/878899195.jpg' src="./../reports/images/878899195.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:41 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/90402680.jpg' src="./../reports/images/90402680.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:43 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/805935673.jpg' src="./../reports/images/805935673.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:44 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/443779906.jpg' src="./../reports/images/443779906.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:49 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/150298684.jpg' src="./../reports/images/150298684.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:51 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/825957192.jpg' src="./../reports/images/825957192.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:52 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/689991051.jpg' src="./../reports/images/689991051.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:54 pm</td>
+        <td>
+          BLE pop-up cancel button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/629035917.jpg' src="./../reports/images/629035917.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:53:56 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/256718411.jpg' src="./../reports/images/256718411.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:55:57 pm</td>
+        <td>
+          Retry page  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/217897349.jpg' src="./../reports/images/217897349.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:55:59 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_334979<br>Device Log File name:/TC05 - Pairing in Wifi without router Mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC05 - Pairing in Wifi without router Mode</p>
+            <p class="text-sm">
+              <span>9:56:00 pm</span> / <span>00:03:19:546</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">TC05 - Pairing in Wifi without router Mode</h5>
+<span class='badge badge-success'>12.17.2024 9:56:00 pm</span>
+<span class='badge badge-danger'>12.17.2024 9:59:19 pm</span>
+<span class='badge badge-default'>00:03:19:546</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5">If already Signin skip signin and Start Pairing Wifi without router mode else Signin and pair Wifi without router mode</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:07 pm</td>
+        <td>
+          Appium server started successfully 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:08 pm</td>
+        <td>
+          Platform name: Android<br>Platform version: 13<br>Device UDID: BLZPCS22JB056558<br>Device Name: lava<br>App Revision No: Android_SZephyr_14162_stg.apk<br>Device Revision No: REL_device_bin_14071_prt_enbl.zip<br>Router Name: TP-LINK_6D38(With_Internet)<br>Remote Router Name: POCO M2 PRO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:56:10 pm</td>
+        <td>
+          The app:com.iinvsys.szephyr launched successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/456595056.jpg' src="./../reports/images/456595056.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:10 pm</td>
+        <td>
+          App opened successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:56:18 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/670599638.jpg' src="./../reports/images/670599638.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:35 pm</td>
+        <td>
+          BLE permission pop-upElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:47 pm</td>
+        <td>
+          Sign In button Element not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:56:59 pm</td>
+        <td>
+          Ble permission pop-up OK buttonElement not displayed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:00 pm</td>
+        <td>
+          Add Device Button   Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/481398224.jpg' src="./../reports/images/481398224.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:02 pm</td>
+        <td>
+           Add Device Button   is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/329018319.jpg' src="./../reports/images/329018319.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:04 pm</td>
+        <td>
+           Pairing Mode Check Box  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/78012172.jpg' src="./../reports/images/78012172.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:05 pm</td>
+        <td>
+           Pairing mode Next Button  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/566498682.jpg' src="./../reports/images/566498682.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:10 pm</td>
+        <td>
+          Clicked on TP-LINK_6D38(With_Internet) on Wi-Fi page is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/90543263.jpg' src="./../reports/images/90543263.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:11 pm</td>
+        <td>
+          Bluetooth turned OFF successfully
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/543960336.jpg' src="./../reports/images/543960336.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:13 pm</td>
+        <td>
+           Start Pairing  is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/829380584.jpg' src="./../reports/images/829380584.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:14 pm</td>
+        <td>
+          BLE pop-up cancel button  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/352808370.jpg' src="./../reports/images/352808370.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:57:16 pm</td>
+        <td>
+          Wificancel button is clicked Successfully.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/255324904.jpg' src="./../reports/images/255324904.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:59:18 pm</td>
+        <td>
+          Retry page  Element displayed
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./../reports/images/78083755.jpg' src="./../reports/images/78083755.jpg">
+    
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:59:19 pm</td>
+        <td>
+           FTP Path : /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/logs_552438<br>Device Log File name:/TC05 - Pairing in Wifi without router Mode.txt
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 17, 2024 09:11:41 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 17, 2024 09:59:20 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>7</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='77%'>
+<b>7</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='22%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'><b>305</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>2</b> events failed,
+<b data-tooltip='%'>118</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"TC01 - Pairing BLE Without Router":412.763,"TC01 - Pairing BLE Without Router":490.05,"TC02 - Pairing BLE With Router":323.238,"TC03 - Pairing in Smart Config Mode":463.845,"TC03 - Pairing in Smart Config Mode":264.285,"TC04 - Pairing in Wifi with router mode":248.972,"TC04 - Pairing in Wifi with router mode":247.421,"TC05 - Pairing in Wifi without router Mode":200.441,"TC05 - Pairing in Wifi without router Mode":199.546
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 7,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 305,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 118
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
