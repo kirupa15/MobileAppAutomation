@@ -125,6 +125,7 @@ public class MobileAppWrappers extends GenericWrappers {
 		}
 		driver.terminateApp(packages);
 		driver.quit();
+		
 	}
 
 	@DataProvider(name="fetchData")
