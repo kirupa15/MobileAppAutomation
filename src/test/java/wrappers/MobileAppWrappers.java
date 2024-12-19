@@ -49,7 +49,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	        // Redirect console output to a file
 		originalOut = System.out;
 	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
-//	        System.setOut(fileOut);
+	        System.setOut(fileOut);
 //	        System.out.println("Test suite started. Output is redirected to file.");
 	        
 	        //START GETTING APP LOG
