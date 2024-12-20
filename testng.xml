@@ -6,10 +6,11 @@
 	</listeners>
 
 	<test thread-count="5" name="Default test" verbose="2">
-	
-	<classes>
-            <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter"/>
-      </classes>
+		<packages>
+
+			<package name="sZephyr_testcases" />
+			
+		</packages>
 	</test> <!--
 	Default test -->
 </suite> <!--

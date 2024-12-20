@@ -1,1 +1,129 @@
 app_log.txt
+App is not installed. Installing and launching...
+Port opened successfully.
+Comment sent: reboot
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+No alert pop ups displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Retrying_header_line']' (tried for 30 second(s) with 500 milliseconds interval)
+Retry page not displayed proceeding to next step
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="⚠️ Unregistered Device Detected"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device details updated successfully!
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device settings updated successfully!
+Your AC unit is either in standby or powered OFF at the moment
+Please ensure sZephyr is switched ON prior to operating your AC remote
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device removed successfully
+Add device page displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
+App is already logged in and opening the previous state
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+No alert pop ups displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Retrying_header_line']' (tried for 30 second(s) with 500 milliseconds interval)
+Retry page not displayed proceeding to next step
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="⚠️ Unregistered Device Detected"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device details updated successfully!
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device settings updated successfully!
+Your AC unit is either in standby or powered OFF at the moment
+Please ensure sZephyr is switched ON prior to operating your AC remote
+OTP Verification
+Please ensure sZephyr is switched ON prior to operating your AC remote
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device removed successfully
+Add device page displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
+App is already logged in and opening the previous state
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+No alert pop ups displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Retrying_header_line']' (tried for 30 second(s) with 500 milliseconds interval)
+Retry page not displayed proceeding to next step
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="⚠️ Unregistered Device Detected"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device details updated successfully!
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device settings updated successfully!
+Your AC unit is either in standby or powered OFF at the moment
+Please ensure sZephyr is switched ON prior to operating your AC remote
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 707b8fbb-7bfe-4f91-84fb-ad9db4b807d4
+Device removed successfully
+Add device page displayed
+Port closed successfully.
+Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
+Created new subdirectory: logs_544212
+Changed to new subdirectory: logs_544212
+File uploaded successfully to FTP: TC01 - Pairing BLE Without RouterApp.txt
+File uploaded successfully to FTP: TC01 - Pairing BLE Without Router.txt
+PASSED: sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+Test suite finished. Closing output redirection.
