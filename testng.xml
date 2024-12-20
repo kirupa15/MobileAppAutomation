@@ -8,9 +8,8 @@
 	<test thread-count="5" name="Default test" verbose="2">
 	
 	<classes>
-            <class name="sZephyr_testcases.TC02_SignUp"/>
-            <class name="sZephyr_testcases.TC03_SignUp"/>
-        </classes>
+            <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter"/>
+      </classes>
 	</test> <!--
 	Default test -->
 </suite> <!--
