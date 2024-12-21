@@ -25,7 +25,7 @@ import com.aventstack.extentreports.Status;
 	    private static LocalDateTime now = LocalDateTime.now();
 	    private static String time = now.format(formatter);
 	    private static String reportPath = "./reports/Spark_" + time + ".html";
-	    private static String imagePath = "./reports/images/";
+	    private static String imagePath = "./../reports/images/";
 
 	    public static void reportStep(String desc, String tcstatus) {
 
@@ -47,16 +47,16 @@ import com.aventstack.extentreports.Status;
 
 	        // Write if it is successful or failure or information
 	        if (tcstatus.toUpperCase().equals("PASS")) {
-	            test.pass(desc, MediaEntityBuilder.createScreenCaptureFromPath(screenshotFile).build());
+	            test.pass(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("FAIL")) {
-	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath(screenshotFile).build());
+	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	            throw new RuntimeException("FAILED");
 	        } else if (tcstatus.toUpperCase().equals("INFO")) {
 	            test.log(Status.INFO, desc);
 	        } else if (tcstatus.toUpperCase().equals("SKIP")) {
-	            test.skip(desc, MediaEntityBuilder.createScreenCaptureFromPath(screenshotFile).build());
+	            test.skip(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("FAIL&RUN")) {
-	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath(screenshotFile).build());
+	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("WARNING")) {
 	            test.log(Status.WARNING, desc);
 	        }
