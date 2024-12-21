@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MobilAppAutomation]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utils.RetryListener"/>
-  </listeners>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
@@ -11,8 +8,8 @@
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="startTestCase"/>
-          <include name="afterSuite"/>
           <include name="removerepair"/>
+          <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
@@ -20,4 +17,4 @@
       </class> <!-- sZephyr_testcases.TC08_Pairing_BlewithoutRouter -->
     </classes>
   </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [MobilAppAutomation] -->
+</suite> <!-- Failed suite [Default suite] -->

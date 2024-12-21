@@ -10,7 +10,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import wrappers.MobileAppWrappers;
-import java.util.Base64;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -26,33 +25,38 @@ import com.aventstack.extentreports.Status;
 	    private static LocalDateTime now = LocalDateTime.now();
 	    private static String time = now.format(formatter);
 	    private static String reportPath = "./reports/Spark_" + time + ".html";
+	    private static String imagePath = "./../reports/images/";
 
 	    public static void reportStep(String desc, String tcstatus) {
 
-	    	
-	    	String screenshotBase64 = null;
+	        // Ensure the screenshot folder exists
+	        File screenshotDir = new File(imagePath);
+	        if (!screenshotDir.exists()) {
+	            screenshotDir.mkdirs(); // Create the directory if it doesn't exist
+	        }
+
+	        long number = (long) Math.floor(Math.random() * 900000000L) + 10000000L;
+	        String screenshotFile = imagePath + number + ".jpg";
 
 	        try {
 	            TakesScreenshot ts = (TakesScreenshot) driver;
-	            File screenshot = ts.getScreenshotAs(OutputType.FILE);
-	            byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
-	            screenshotBase64 = Base64.getEncoder().encodeToString(fileContent);
+	            FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE), new File(screenshotFile));
 	        } catch (WebDriverException | IOException e) {
 	            e.printStackTrace();
 	        }
 
 	        // Write if it is successful or failure or information
 	        if (tcstatus.toUpperCase().equals("PASS")) {
-	            test.pass(desc, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
+	            test.pass(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("FAIL")) {
-	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
+	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	            throw new RuntimeException("FAILED");
 	        } else if (tcstatus.toUpperCase().equals("INFO")) {
 	            test.log(Status.INFO, desc);
 	        } else if (tcstatus.toUpperCase().equals("SKIP")) {
-	            test.skip(desc, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
+	            test.skip(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("FAIL&RUN")) {
-	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromBase64String(screenshotBase64).build());
+	            test.fail(desc, MediaEntityBuilder.createScreenCaptureFromPath("./../"+screenshotFile).build());
 	        } else if (tcstatus.toUpperCase().equals("WARNING")) {
 	            test.log(Status.WARNING, desc);
 	        }
