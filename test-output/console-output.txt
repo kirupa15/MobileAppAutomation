@@ -6,17 +6,100 @@ org.openqa.selenium.TimeoutException: Expected condition failed: waiting for vis
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
 App is already logged in and opening the previous state
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Pairing_mode_ButtonText']' (tried for 10 second(s) with 500 milliseconds interval)
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+No alert pop ups displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Retrying_header_line']' (tried for 30 second(s) with 500 milliseconds interval)
+Retry page not displayed proceeding to next step
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="⚠️ Unregistered Device Detected"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Toast[@text="Device details updated successfully!"]' (tried for 30 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Toast[@text="Device settings updated successfully!"]' (tried for 30 second(s) with 500 milliseconds interval)
+Your AC unit is either in standby or powered OFF at the moment
+Please ensure sZephyr is switched ON prior to operating your AC remote
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: d4504f3e-4a29-45b1-8d29-e0aa0c18b6dc
+Device removed successfully
+Add device page displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
+App is already logged in and opening the previous state
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Add_Devices_ButtonText']' (tried for 10 second(s) with 500 milliseconds interval)
+Device is already in paired state removing the device
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text=""]' (tried for 10 second(s) with 500 milliseconds interval)
 Comment sent: factory_reset
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='menu_icon_removeDevice']' (tried for 10 second(s) with 500 milliseconds interval)
 Add device page displayed
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_722218
-Changed to new subdirectory: logs_722218
+Created new subdirectory: logs_235812
+Changed to new subdirectory: logs_235812
+File uploaded successfully to FTP: TC01 - Pairing BLE Without RouterApp.txt
+File uploaded successfully to FTP: TC01 - Pairing BLE Without Router.txt
+App is already installed. Launching the app...
+Port opened successfully.
+Comment sent: reboot
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
+App is already logged in and opening the previous state
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Start_Pairing_Button_Text']' (tried for 10 second(s) with 500 milliseconds interval)
+Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='menu_icon_removeDevice']' (tried for 10 second(s) with 500 milliseconds interval)
+Add device page displayed
+Port closed successfully.
+Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
+Created new subdirectory: logs_749866
+Changed to new subdirectory: logs_749866
 File uploaded successfully to FTP: TC01 - Pairing BLE Without RouterApp.txt
 File uploaded successfully to FTP: TC01 - Pairing BLE Without Router.txt
 FAILED: sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair
+java.lang.AssertionError: Failed due to this exception
+	at org.testng.Assert.fail(Assert.java:99)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:53)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
+	at pages.AddDevicePage.startPairingButton(AddDevicePage.java:314)
+	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:646)
+	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
+	at pages.AddDevicePage.pair(AddDevicePage.java:584)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
+	... 26 more
+
+RETRIED: sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair
 java.lang.AssertionError: Failed due to this exception
 	at org.testng.Assert.fail(Assert.java:99)
 	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
@@ -49,17 +132,17 @@ java.lang.AssertionError: Failed due to this exception
 Caused by: java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:53)
 	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.AddDevicePage.nextButtonPairing(AddDevicePage.java:310)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:641)
+	at pages.HomePage.clickMenuBarButton(HomePage.java:61)
+	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:777)
 	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
 	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:79)
 	... 26 more
 
 
 ===============================================
     Default test
-    Tests run: 1, Failures: 1, Skips: 0
+    Tests run: 1, Failures: 1, Skips: 0, Retries: 1
 ===============================================
 
 Test suite finished. Closing output redirection.

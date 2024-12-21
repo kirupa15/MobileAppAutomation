@@ -8,12 +8,51 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">109,103</td><td></td><td></td></tr>
+<tr><th colspan="8">MobilAppAutomation</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">435,817</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td><td><a href="#m0">removerepair</a></td><td rowspan="1">1734781761998</td><td rowspan="1">107375</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MobilAppAutomation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td><td><a href="#m0">removerepair</a></td><td rowspan="1">1734783138677</td><td rowspan="1">110318</td></tr><tr><th colspan="4">Default test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td><td><a href="#m1">removerepair</a></td><td rowspan="1">1734782814999</td><td rowspan="1">321782</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">sZephyr_testcases.TC08_Pairing_BlewithoutRouter#removerepair</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed due to this exception
+	at org.testng.Assert.fail(Assert.java:99)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:53)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
+	at pages.AddDevicePage.startPairingButton(AddDevicePage.java:314)
+	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:646)
+	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
+	at pages.AddDevicePage.pair(AddDevicePage.java:584)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
+	... 26 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter#removerepair</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed due to this exception
 	at org.testng.Assert.fail(Assert.java:99)
 	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -45,11 +84,11 @@
 Caused by: java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:53)
 	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.AddDevicePage.nextButtonPairing(AddDevicePage.java:310)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:641)
+	at pages.HomePage.clickMenuBarButton(HomePage.java:61)
+	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:777)
 	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
 	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:79)
 	... 26 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
