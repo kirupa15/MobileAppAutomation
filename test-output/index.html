@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-301690139\testng-customsuite.xml</span>
+                    <span>C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1255824532\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,9 +129,14 @@
                   <a name="removerepair">
                   </a> <!-- removerepair -->
                   <span class="method-name">removerepair</span>
-                  <div class="stack-trace">java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at pages.AddDevicePage.retrypagecheck(AddDevicePage.java:854)
+	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:657)
+	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
+	at pages.AddDevicePage.pair(AddDevicePage.java:584)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -158,57 +163,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //android.view.ViewGroup[@content-desc=&quot;Cancel&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at pages.AddDevicePage.clickWifiCancelButton(AddDevicePage.java:476)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:655)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
-	... 26 more
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.10.20&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: a720d9d5-a72b-4f0e-b32e-ba7a46ffff13
-*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc=&quot;Cancel&quot;]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -218,7 +172,7 @@ Session ID: a720d9d5-a72b-4f0e-b32e-ba7a46ffff13
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-301690139\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1255824532\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -275,12 +229,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'removerepair')
 data.setCell(0, 2, 'sZephyr_testcases.TC08_Pairing_BlewithoutRouter')
-data.setCell(0, 3, 124397);
+data.setCell(0, 3, 287595);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -313,33 +267,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">8772 ms</span>
+                <span class="method-start">9323 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">8784 ms</span>
+                <span class="method-start">9338 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">8790 ms</span>
+                <span class="method-start">9349 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">removerepair</span>
-                <span class="method-start">8796 ms</span>
+                <span class="method-start">9354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">133196 ms</span>
+                <span class="method-start">296952 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">134959 ms</span>
+                <span class="method-start">298729 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">134982 ms</span>
+                <span class="method-start">298755 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
