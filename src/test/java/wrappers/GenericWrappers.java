@@ -36,6 +36,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.model.Log;
 import com.google.common.collect.ImmutableMap;
+import org.testng.Assert;
 
 import utils.Reporter;
 import utils.logReadandWrite;
@@ -858,6 +859,9 @@ public class GenericWrappers {
                 }
             }
         } else {
+        	 System.out.println("APK file not found at: " + localDirectory);
+             // Fail the entire suite if APK is missing
+             Assert.fail("APK file is required to run the test suite but was not found.");
             System.out.println("No latest folder found for the week.");
         }
 	}
@@ -889,7 +893,7 @@ public class GenericWrappers {
         Calendar calendar = Calendar.getInstance();
         int weekOfYear = calendar.get(Calendar.WEEK_OF_YEAR);
         
-        return "W"+(weekOfYear-1);
+        return "W"+(weekOfYear);
     }
     
     private static void deleteAllFilesInFolder(File folder) {

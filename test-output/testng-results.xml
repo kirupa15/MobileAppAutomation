@@ -2,36 +2,61 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-23T18:05:00 IST" name="Default suite" finished-at="2024-12-23T18:07:03 IST" duration-ms="122832">
+  <suite started-at="2024-12-25T12:02:13 IST" name="Default suite" finished-at="2024-12-25T12:02:28 IST" duration-ms="14934">
     <groups>
     </groups>
-    <test started-at="2024-12-23T18:05:00 IST" name="Default test" finished-at="2024-12-23T18:07:03 IST" duration-ms="122832">
+    <test started-at="2024-12-25T12:02:13 IST" name="Default test" finished-at="2024-12-25T12:02:28 IST" duration-ms="14934">
       <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:04:51 IST" name="beforeSuite" finished-at="2024-12-23T18:05:00 IST" duration-ms="9157" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:13 IST" name="beforeSuite" finished-at="2024-12-25T12:02:13 IST" duration-ms="462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:05:00 IST" name="beforeTest" finished-at="2024-12-23T18:05:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:13 IST" name="beforeTest" finished-at="2024-12-25T12:02:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:05:00 IST" name="startTestCase" finished-at="2024-12-23T18:05:00 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:13 IST" name="startTestCase" finished-at="2024-12-25T12:02:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:05:00 IST" name="beforeMethod" finished-at="2024-12-23T18:05:00 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:13 IST" name="beforeMethod" finished-at="2024-12-25T12:02:13 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="removerepair()[pri:7, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:05:00 IST" name="removerepair" finished-at="2024-12-23T18:07:01 IST" duration-ms="121160" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="removerepair()[pri:7, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:13 IST" name="removerepair" finished-at="2024-12-25T12:02:25 IST" duration-ms="12349" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed due to this exception]]>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\QA Automation\Desktop\APK\Android_SZephyr.apk' does not exist or is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 9bfc790f-392f-43f2-a325-ff2e08c01dd4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed due to this exception
-at org.testng.Assert.fail(Assert.java:99)
-at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\QA Automation\Desktop\APK\Android_SZephyr.apk' does not exist or is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 9bfc790f-392f-43f2-a325-ff2e08c01dd4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:74)
+at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:59)
+at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:112)
+at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:41)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -58,72 +83,21 @@ at org.testng.TestNG.run(TestNG.java:1101)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.view.ViewGroup[@content-desc="Cancel"]' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at pages.AddDevicePage.clickWifiCancelButton(AddDevicePage.java:476)
-at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:655)
-at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-at pages.AddDevicePage.pair(AddDevicePage.java:584)
-at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
-... 26 more
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: ee8ec0c8-0ded-4457-876a-18db76fddc83
-*** Element info: {Using=xpath, value=//android.view.ViewGroup[@content-desc="Cancel"]}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removerepair -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:07:01 IST" name="afterMethod" finished-at="2024-12-23T18:07:03 IST" duration-ms="1641" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:25 IST" name="afterMethod" finished-at="2024-12-25T12:02:28 IST" duration-ms="2550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:07:03 IST" name="afterTest" finished-at="2024-12-23T18:07:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:28 IST" name="afterTest" finished-at="2024-12-25T12:02:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-23T18:07:03 IST" name="afterSuite" finished-at="2024-12-23T18:07:03 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@17d919b6]" started-at="2024-12-25T12:02:28 IST" name="afterSuite" finished-at="2024-12-25T12:02:28 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
