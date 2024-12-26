@@ -856,6 +856,10 @@ public class GenericWrappers {
                     }
 
                     break;
+                } else {
+                	 System.out.println("APK file not found at: " + localDirectory);
+                     // Fail the entire suite if APK is missing
+                     Assert.fail("APK file is required to run the test suite but was not found.");
                 }
             }
         } else {
