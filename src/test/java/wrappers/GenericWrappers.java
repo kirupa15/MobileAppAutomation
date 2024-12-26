@@ -893,7 +893,7 @@ public class GenericWrappers {
         Calendar calendar = Calendar.getInstance();
         int weekOfYear = calendar.get(Calendar.WEEK_OF_YEAR);
         
-        return "W"+(weekOfYear);
+        return "W"+(weekOfYear-1);
     }
     
     private static void deleteAllFilesInFolder(File folder) {
