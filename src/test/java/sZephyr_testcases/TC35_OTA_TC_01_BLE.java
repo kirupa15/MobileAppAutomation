@@ -33,7 +33,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "OTA_TC01_Ble";
+		testCaseName = "TC35_OTA_Update_check_Ble";
 		testDescription = "Paired with device BLE without Router mode and do OTA update";
 	}
 	
@@ -115,7 +115,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	
 

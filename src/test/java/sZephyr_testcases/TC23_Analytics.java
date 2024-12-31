@@ -21,7 +21,7 @@ public class TC23_Analytics  extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_01_Analytics";
+		testCaseName = "TC_23_Analytics_BLE withoutRouter_App Open";
 		testDescription = "Pairing mode=Ble without router <br> Connectivity :BLE <br>Turn on device for 5min using relay  <br> check for analytivs value<br>Energy duration and Energy used for 5 min should update";
 	}
 	
@@ -74,7 +74,7 @@ public class TC23_Analytics  extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

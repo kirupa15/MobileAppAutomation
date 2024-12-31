@@ -47,7 +47,7 @@ public class Longrun_voltvalue  extends MobileAppWrappers {
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail( e);
 		}
 	}
 	

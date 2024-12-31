@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 21 17:36:54 IST 2024</td>
+<td>Started on:</td><td>Sat Dec 28 10:17:20 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>435 seconds (435817 ms)</td>
+<tr><td>Total time:</td><td>116 seconds (116863 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,10 +76,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+<td title='sZephyr_testcases.TC01_Accounts_Info.removerepair()'><b>removerepair</b><br>Test class: sZephyr_testcases.TC01_Accounts_Info</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:49)
+	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:638)
+	at pages.AddDevicePage.removingDevice(AddDevicePage.java:966)
+	at sZephyr_testcases.TC01_Accounts_Info.pairBlewithoutRouter(TC01_Accounts_Info.java:95)
+	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -106,19 +109,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:53)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.AddDevicePage.startPairingButton(AddDevicePage.java:314)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:646)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
-	... 26 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1616673438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1616673438'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+</pre></div><a href='#' onClick='toggleBox("stack-trace632115057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace632115057'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:49)
+	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:638)
+	at pages.AddDevicePage.removingDevice(AddDevicePage.java:966)
+	at sZephyr_testcases.TC01_Accounts_Info.pairBlewithoutRouter(TC01_Accounts_Info.java:95)
+	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -145,18 +142,9 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:53)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.AddDevicePage.startPairingButton(AddDevicePage.java:314)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:646)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:58)
-	... 26 more
 </pre></div></td>
-<td>110</td>
-<td>sZephyr_testcases.TC08_Pairing_BlewithoutRouter@9cb8225</td></tr>
+<td>55</td>
+<td>sZephyr_testcases.TC01_Accounts_Info@38af9828</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -167,10 +155,13 @@ Caused by: java.lang.RuntimeException: FAILED
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair()'><b>removerepair</b><br>Test class: sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td>
-<td><div><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+<td title='sZephyr_testcases.TC01_Accounts_Info.removerepair()'><b>removerepair</b><br>Test class: sZephyr_testcases.TC01_Accounts_Info</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:49)
+	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:638)
+	at pages.AddDevicePage.removingDevice(AddDevicePage.java:966)
+	at sZephyr_testcases.TC01_Accounts_Info.pairBlewithoutRouter(TC01_Accounts_Info.java:95)
+	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -197,19 +188,13 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:53)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.HomePage.clickMenuBarButton(HomePage.java:61)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:777)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:79)
-	... 26 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace881280045", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace881280045'><pre>java.lang.AssertionError: Failed due to this exception
-	at org.testng.Assert.fail(Assert.java:99)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:142)
+</pre></div><a href='#' onClick='toggleBox("stack-trace832322085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace832322085'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:49)
+	at wrappers.GenericWrappers.isElementDisplayed(GenericWrappers.java:638)
+	at pages.AddDevicePage.removingDevice(AddDevicePage.java:966)
+	at sZephyr_testcases.TC01_Accounts_Info.pairBlewithoutRouter(TC01_Accounts_Info.java:95)
+	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -236,18 +221,9 @@ Caused by: java.lang.RuntimeException: FAILED
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:53)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:207)
-	at pages.HomePage.clickMenuBarButton(HomePage.java:61)
-	at pages.AddDevicePage.proceedToAddDevice(AddDevicePage.java:777)
-	at pages.AddDevicePage.initiatepairing(AddDevicePage.java:628)
-	at pages.AddDevicePage.pair(AddDevicePage.java:584)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:79)
-	... 26 more
 </pre></div></td>
-<td>321</td>
-<td>sZephyr_testcases.TC08_Pairing_BlewithoutRouter@9cb8225</td></tr>
+<td>56</td>
+<td>sZephyr_testcases.TC01_Accounts_Info@38af9828</td></tr>
 </table><p>
 </body>
 </html>

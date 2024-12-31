@@ -32,7 +32,7 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "WifiWithoutRouter";
+		testCaseName = "TC17_WifiWithoutRouter_CONNECTIVITY";
 		testDescription = "App kill and re-open and check the connectivity";
 	}
 
@@ -98,13 +98,9 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 			readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 }

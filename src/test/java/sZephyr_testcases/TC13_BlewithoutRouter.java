@@ -5,6 +5,7 @@ import static org.testng.Assert.fail;
 
 import java.util.Properties;
 
+import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AddDevicePage;
@@ -34,7 +35,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "BlewithoutRouter";
+		testCaseName = "TC13_BlewithoutRouter_CONNECTIVITY";
 		testDescription = "CONNECTIVITY_MOD_1_TC_01-BLE connectivity establishment"+ "<br>"+"CONNECTIVITY_MOD_1_TC_02-APP kill and re Open "+ "<br>"+"CONNECTIVITY_MOD_1_TC_03-5 times App ON/OFF";
 	}
 	
@@ -152,13 +153,9 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		 readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 	

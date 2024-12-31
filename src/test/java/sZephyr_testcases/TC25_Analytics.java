@@ -21,7 +21,7 @@ public class TC25_Analytics  extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_03_Analytics";
+		testCaseName = "TC_25_Analytics_SmartConfig Mode";
 		testDescription = "Pairing mode=Smartconfig <br> Connectivity :Remote <br>Turn on device for 5min using relay  <br> check for analytivs value<br>Energy duration and Energy used for 5 min should update";
 	}
 	
@@ -75,7 +75,7 @@ public class TC25_Analytics  extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

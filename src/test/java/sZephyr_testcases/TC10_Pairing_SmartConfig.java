@@ -27,7 +27,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03 - Pairing in Smart Config Mode";
+		testCaseName = "TC10 - Pairing in Smart Config Mode";
 		testDescription = "If already Signin skip signin and  Start Pairing Smartconfig mode, else Signin and pair Smartconfig mode";
 	}
 
@@ -48,10 +48,6 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		try {
 		readwrite.openPort();
 		Thread.sleep(2000);
-		readwrite.write("reboot\r");
-//		Thread.sleep(3000);
-//		readwrite.write("factory_reset\r");
-		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
@@ -109,13 +105,9 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

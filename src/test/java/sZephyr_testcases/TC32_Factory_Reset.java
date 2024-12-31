@@ -27,7 +27,7 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04_FactoryReset";
+		testCaseName = "TC32_FactoryReset check";
 		testDescription = "After paired with device Try to do factory reset using via app";
 	}
 
@@ -83,7 +83,7 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

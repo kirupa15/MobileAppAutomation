@@ -26,7 +26,7 @@ public class TC06_SignIn_SuccessFlow extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC05 - SignIn_SuccessFlow";
+		testCaseName = "TC06 - During Sign Up or Sign In, enter valid OTP";
 		testDescription = "During Sign Up or Sign In, enter valid OTP";
 	}
 	
@@ -59,13 +59,9 @@ public class TC06_SignIn_SuccessFlow extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 	

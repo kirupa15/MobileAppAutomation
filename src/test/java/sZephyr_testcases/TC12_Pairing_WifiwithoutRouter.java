@@ -25,7 +25,7 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC05 - Pairing in Wifi without router Mode";
+		testCaseName = "TC12 - Pairing in Wifi without router Mode";
 		testDescription = "If already Signin skip signin and  Start Pairing Wifi without router mode else Signin and pair Wifi without router mode";
 	}
 
@@ -92,13 +92,9 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 }

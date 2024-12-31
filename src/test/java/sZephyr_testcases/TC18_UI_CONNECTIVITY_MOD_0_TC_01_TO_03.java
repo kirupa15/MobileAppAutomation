@@ -31,7 +31,7 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "UIConnectivity";
+		testCaseName = "TC18_UI Check_Check sZephyr Info values";
 		testDescription = "In Ble without router mode ,change sZephyr info values ,click on submit button and check for same in Szephyr info page";
 	}
 	
@@ -117,13 +117,9 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		 readwrite.closePort();
 	}
 	catch (Exception e) {
-		e.printStackTrace();
-		readwrite.write("factory_reset\r");
-		killAndReopenApp();
-		Thread.sleep(3000);
-		adddevicepage.removingDevice();			
+		readwrite.write("factory_reset\r");		
 		readwrite.closePort();
-		fail("Failed due to this exception", e);
+		fail(e);
 	}
 	}
 }

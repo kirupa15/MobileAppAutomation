@@ -31,7 +31,7 @@ public class TC30_Schedular extends MobileAppWrappers {
     
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03_Schedular";
+		testCaseName = "TC30_Schedular_BLE without router";
 		testDescription = "Paired in Blewithoutrouter mode <br>create a schedule and disable it <br> check schedule should not work";
 	}
 
@@ -93,7 +93,7 @@ public class TC30_Schedular extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
  }
 }

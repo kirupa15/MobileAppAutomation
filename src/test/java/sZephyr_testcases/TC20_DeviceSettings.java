@@ -20,7 +20,7 @@ public class TC20_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02_DeviceSettings";
+		testCaseName = "TC20_DeviceSettings_Remove Router";
 		testDescription = "Remove the Added Router Details Test Case";
 	}
 	
@@ -89,13 +89,9 @@ public class TC20_DeviceSettings extends MobileAppWrappers {
 			 readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

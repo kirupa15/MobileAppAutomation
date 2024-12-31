@@ -20,7 +20,7 @@ public class TC21_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03_DeviceSettings";
+		testCaseName = "TC21_DeviceSettings_LED Quite Mode";
 		testDescription = "Enable The Quite LED Mode and Do Relay ON&OFF Check LED Working Or Not";
 	}
 	
@@ -111,7 +111,7 @@ public class TC21_DeviceSettings extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 
 	}

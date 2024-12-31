@@ -37,12 +37,12 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_01_Account_Info";
+		testCaseName = "TC_01_Account_Info_Change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
 		//check login username and Accounts info username are same or not 
 		//check for language selection 
 		//pair with device try to del account and check for popup and try to remove device and try to del acnt and check add device page .
 
-		testDescription = "change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
+		testDescription = "Change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
 	}
 
 
@@ -88,13 +88,9 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 			readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

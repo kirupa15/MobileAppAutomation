@@ -454,14 +454,14 @@ public class DeviceMenuPage extends GenericWrappers{
 		}	
 		
 		public void shellAllowpopup() {	
-			if (isElementDisplayed(shellallow,"Shell allow alert pop-up")) {
+			if (isElementDisplayedCheck(shellallow)) {
 //				expWait(shellallow);
 				clickbyXpath(shellallow, " allow shell ");
 			}
 			
 		}
 		public void shellDenypopup() {
-			if (isElementDisplayed(shelldeny,"Shell deny alert pop-up")) {
+			if (isElementDisplayedCheck(shelldeny)) {
 				clickbyXpath(shelldeny, " deny shell ");
 				
 			} 

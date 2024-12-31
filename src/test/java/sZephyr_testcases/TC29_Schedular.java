@@ -43,7 +43,7 @@ public class TC29_Schedular extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02_Schedular";
+		testCaseName = "TC29_Schedular_Smartconfig_app_close";
 		testDescription = "Pair in Smartconfig mode <br> create 3 schedule and check schedule worked or not <br> check device in off state after schedule completion";
 	}
 
@@ -103,7 +103,7 @@ public class TC29_Schedular extends MobileAppWrappers {
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 	
