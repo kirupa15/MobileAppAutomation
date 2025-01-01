@@ -37,7 +37,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_01_Account_Info_Change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
+		testCaseName = "TC_01_Account_Info_Changes";
 		//check login username and Accounts info username are same or not 
 		//check for language selection 
 		//pair with device try to del account and check for popup and try to remove device and try to del acnt and check add device page .

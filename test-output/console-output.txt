@@ -1,57 +1,60 @@
 app_log.txt
 App is already installed. Launching the app...
 Port opened successfully.
-WIFI Password is Already Provided, continuing to the next step.
-WIFI Password is Already Provided, continuing to the next step.
 Comment sent: reboot
+WIFI Password is Already Provided, continuing to the next step.
 Comment sent: factory_reset
-No alert pop ups displayed
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Retrying_header_line']' (tried for 30 second(s) with 500 milliseconds interval)
-Retry page not displayed proceeding to next step
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Add_Device_Next_Button_Text']' (tried for 10 second(s) with 500 milliseconds interval)
-Comment sent: factory_reset
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: efd17815-624d-49b0-bce2-130a9caad3dc
+Device details updated successfully!
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: efd17815-624d-49b0-bce2-130a9caad3dc
+Device settings updated successfully!
+Your AC unit is either in standby or powered OFF at the moment
+Please ensure sZephyr is switched ON prior to operating your AC remote
+testuser007
+testuser007@gmail.com
+மொழியை தேர்ந்தெடுங்கள்
+Select Language
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: efd17815-624d-49b0-bce2-130a9caad3dc
+Device removed successfully
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: efd17815-624d-49b0-bce2-130a9caad3dc
+Your account has been deleted successfully
+Sign Up
+SignUp successfull
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_261321
-Changed to new subdirectory: logs_261321
-File uploaded successfully to FTP: TC03 - Pairing in Smart Config ModeApp.txt
-File uploaded successfully to FTP: TC03 - Pairing in Smart Config Mode.txt
-FAILED: sZephyr_testcases.TC10_Pairing_SmartConfig.removerepair
-java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:49)
-	at wrappers.GenericWrappers.fail(GenericWrappers.java:942)
-	at sZephyr_testcases.TC10_Pairing_SmartConfig.removerepair(TC10_Pairing_SmartConfig.java:110)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
+Created new subdirectory: logs_512564
+Changed to new subdirectory: logs_512564
+File uploaded successfully to FTP: TC_01_Account_Info_ChangesApp.txt
+File uploaded successfully to FTP: TC_01_Account_Info_Changes.txt
+PASSED: sZephyr_testcases.TC01_Accounts_Info.removerepair
 
 ===============================================
     Default test
-    Tests run: 1, Failures: 1, Skips: 0
+    Tests run: 1, Failures: 0, Skips: 0
 ===============================================
 
 Test suite finished. Closing output redirection.
