@@ -589,7 +589,7 @@ public class AddDevicePage extends GenericWrappers {
 
 		// Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 		if (isElementDisplayed(blePermissionOkButton, "BLE permission pop-up")) {
 			clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
 			checkappinforeground();
