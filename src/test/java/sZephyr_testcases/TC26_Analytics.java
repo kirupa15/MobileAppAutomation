@@ -21,7 +21,7 @@ public class TC26_Analytics  extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_04_Analytics_Smartconfig_App close";
+		testCaseName = "TC_26_Analytics_Smartconfig_App close";
 		testDescription = "Pairing mode=Smartconfig <br> Connectivity :Remote <br>After connectivity established close application<br>Turn on device for 5min using device button  <br> check for analytivs value<br>Energy duration and Energy used for 5 min should update";
 	}
 	
