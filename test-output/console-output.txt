@@ -3,22 +3,19 @@ App is already installed. Launching the app...
 Port opened successfully.
 Comment sent: reboot
 WIFI Password is Already Provided, continuing to the next step.
-Device is already in paired state removing the device
-Comment sent: factory_reset
-sZephyr device is offline  Alert pop-up displayed
 WIFI Password is Already Provided, continuing to the next step.
 Comment sent: factory_reset
 No alert pop ups displayed
 Comment sent: factory_reset
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_141287
-Changed to new subdirectory: logs_141287
+Created new subdirectory: logs_255414
+Changed to new subdirectory: logs_255414
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router modeApp.txt
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router mode.txt
 FAILED: sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair
 java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:49)
+	at utils.Reporter.reportStep(Reporter.java:50)
 	at wrappers.GenericWrappers.fail(GenericWrappers.java:942)
 	at sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair(TC11_Pairing_WifiwithRouter.java:97)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
