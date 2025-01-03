@@ -3,14 +3,17 @@ App is already installed. Launching the app...
 Port opened successfully.
 Comment sent: reboot
 WIFI Password is Already Provided, continuing to the next step.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 20 second(s) with 500 milliseconds interval)
 WIFI Password is Already Provided, continuing to the next step.
 Comment sent: factory_reset
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.TextView[@text="OK"]' (tried for 20 second(s) with 500 milliseconds interval)
 No alert pop ups displayed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.EditText[@resource-id="com.android.settings:id/password"]' (tried for 20 second(s) with 500 milliseconds interval)
 Comment sent: factory_reset
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_432188
-Changed to new subdirectory: logs_432188
+Created new subdirectory: logs_647132
+Changed to new subdirectory: logs_647132
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router modeApp.txt
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router mode.txt
 FAILED: sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair

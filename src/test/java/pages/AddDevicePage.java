@@ -114,7 +114,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button1\"]")
 	private WebElement connectbuttonWifipage;
 
-	@FindBy(xpath = "WebElement savebutton = driver.findElement(MobileBy.xpath(\"//android.widget.TextView[@resource-id=\\\"com.oplus.wirelesssettings:id/menu_save\\\"]\")); ")
+	@FindBy(xpath = "//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")
 	private WebElement savebuttonWifipage;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
@@ -600,7 +600,7 @@ public class AddDevicePage extends GenericWrappers {
 		 */	
 		
 		try {
-			Thread.sleep(5000);
+//			Thread.sleep(5000);
 			if(isElementDisplayedCheck(signInButton)) {
 				landingpage.clickSignInButton();
 				loginpage.enterUserName(userName);
@@ -827,6 +827,10 @@ public class AddDevicePage extends GenericWrappers {
 	private void connectwithmobilewifipage() throws Exception {
 		if (isElementDisplayedCheck(devicewifipop_upOK)) {
 			clickbyXpath(devicewifipop_upOK, "click on Device wifi OK popup");
+			
+			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
+			Thread.sleep(5000);
+			Runtime.getRuntime().exec("adb shell am start -a android.settings.WIFI_SETTINGS");
 
 			Thread.sleep(3000);
 			WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
@@ -835,13 +839,13 @@ public class AddDevicePage extends GenericWrappers {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
-			if (isElementDisplayed(enterpasswordwifipge, "Password field of wifi page")) {
+			if (isElementDisplayedCheck(enterpasswordwifipge)) {
 				entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
 				hidekeyboard();
 
 				clickbyXpath(connectbuttonWifipage, "connect button");
-			} else if (isElementDisplayed(enterpasswordwifipgehighversion,
-					"Password field of wifi page high version")) {
+			} else if (isElementDisplayedCheck(enterpasswordwifipgehighversion
+					)) {
 
 				entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
 				hidekeyboard();

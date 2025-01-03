@@ -5,11 +5,11 @@
     <classes>
       <class name="sZephyr_testcases.TC11_Pairing_WifiwithRouter">
         <methods>
-          <include name="startTestCase"/>
           <include name="afterMethod"/>
+          <include name="startTestCase"/>
           <include name="afterTest"/>
-          <include name="removerepair"/>
           <include name="afterSuite"/>
+          <include name="removerepair"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
