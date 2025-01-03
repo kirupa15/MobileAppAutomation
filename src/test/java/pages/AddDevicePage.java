@@ -645,7 +645,7 @@ public class AddDevicePage extends GenericWrappers {
 	public void proceedToAddDevice(int mode) throws Exception {
 		
 
-		if (isElementDisplayed(addDeviceButton, "Add Device Button ")) {
+		if (isElementDisplayedCheck(addDeviceButton)) {
 
 			clickAddDeviceButton();
 			checkBoxPairing();

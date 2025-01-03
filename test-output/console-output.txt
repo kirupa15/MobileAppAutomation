@@ -3,48 +3,24 @@ App is already installed. Launching the app...
 Port opened successfully.
 Comment sent: reboot
 WIFI Password is Already Provided, continuing to the next step.
+Device is already in paired state removing the device
 Comment sent: factory_reset
-org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 9815ae86-ae41-439f-9a76-bafa507d8095
-Device details updated successfully!
-org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 9815ae86-ae41-439f-9a76-bafa507d8095
-Device settings updated successfully!
-Your AC unit is either in standby or powered OFF at the moment
-Please ensure sZephyr is switched ON prior to operating your AC remote
-org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-MN86ODD', ip: '192.168.10.20', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 13, udid: BLZPCS22JB056558}, deviceApiLevel: 33, deviceManufacturer: LAVA, deviceModel: LAVA LZX404, deviceName: BLZPCS22JB056558, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: BLZPCS22JB056558, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 48, takesScreenshot: true, udid: BLZPCS22JB056558, viewportRect: {height: 1552, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
-Session ID: 9815ae86-ae41-439f-9a76-bafa507d8095
-Device removed successfully
-Add device page displayed
+sZephyr device is offline  Alert pop-up displayed
 WIFI Password is Already Provided, continuing to the next step.
 Comment sent: factory_reset
+No alert pop ups displayed
 Comment sent: factory_reset
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_276729
-Changed to new subdirectory: logs_276729
-File uploaded successfully to FTP: TC08 - Pairing BLE Without RouterApp.txt
-File uploaded successfully to FTP: TC08 - Pairing BLE Without Router.txt
-FAILED: sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair
+Created new subdirectory: logs_141287
+Changed to new subdirectory: logs_141287
+File uploaded successfully to FTP: TC11 - Pairing in Wifi with router modeApp.txt
+File uploaded successfully to FTP: TC11 - Pairing in Wifi with router mode.txt
+FAILED: sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair
 java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:49)
 	at wrappers.GenericWrappers.fail(GenericWrappers.java:942)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:138)
+	at sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair(TC11_Pairing_WifiwithRouter.java:97)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
