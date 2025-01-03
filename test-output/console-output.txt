@@ -9,8 +9,8 @@ No alert pop ups displayed
 Comment sent: factory_reset
 Port closed successfully.
 Navigated to directory: /Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/
-Created new subdirectory: logs_255414
-Changed to new subdirectory: logs_255414
+Created new subdirectory: logs_432188
+Changed to new subdirectory: logs_432188
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router modeApp.txt
 File uploaded successfully to FTP: TC11 - Pairing in Wifi with router mode.txt
 FAILED: sZephyr_testcases.TC11_Pairing_WifiwithRouter.removerepair

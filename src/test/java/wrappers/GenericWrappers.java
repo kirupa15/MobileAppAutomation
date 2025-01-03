@@ -945,9 +945,9 @@ public class GenericWrappers {
     
     public boolean isElementDisplayedCheck(WebElement element) {
         try {
-        	Thread.sleep(5000);
+        	expshortWait(element);
             return element.isDisplayed();
-        } catch (NoSuchElementException | StaleElementReferenceException | InterruptedException e) {
+        } catch (NoSuchElementException | StaleElementReferenceException e) {
             return false;
         }
     }
