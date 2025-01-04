@@ -600,7 +600,7 @@ public class AddDevicePage extends GenericWrappers {
 		 */	
 		
 		try {
-//			Thread.sleep(5000);
+			Thread.sleep(5000);
 			if(isElementDisplayedCheck(signInButton)) {
 				landingpage.clickSignInButton();
 				loginpage.enterUserName(userName);

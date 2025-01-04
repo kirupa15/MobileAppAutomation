@@ -38,10 +38,10 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 		
 		//get app from FTP
-		FTPUploader(server, port, user, pass);
+//		FTPUploader(server, port, user, pass);
 		//getLatestApk(baseRemotePath, localDirectory, newFileName);
 		
-		disconnect();
+//		disconnect();
 		
 		
 		Reporter.startResult();//START TESTNG RESULT
