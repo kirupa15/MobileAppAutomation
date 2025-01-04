@@ -356,7 +356,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void clickNextButtonsZephyrInfo() {
-		if (isElementDisplayed(sZephyrInfoNextButton, "sZephyr info Next button ")) {
+		if (isElementDisplayednext(sZephyrInfoNextButton, "sZephyr info Next button ")) {
 			clickbyXpath(sZephyrInfoNextButton, " Next Button ");
 		} else {
 			driver.activateApp(loadProp("APP_PACKAGE"));
@@ -737,13 +737,20 @@ public class AddDevicePage extends GenericWrappers {
 				enterWiFiPassword("12345678911");
 				clickEnterButton();
 
-				Thread.sleep(2*60*1000);
+				Thread.sleep(5*20*1000);
 				
 				if(!isElementDisplayedCheck(devicewifipop_upOK)) {
 					retrypagecheck(mode);
 					unregistereddevicepopup();
 				}
 				connectwithmobilewifipage();
+				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+				
+				if(isElementDisplayednext(devicewifipop_upOK,"Could not connect with router popup"))  {
+					
+					clickbyXpath(devicewifipop_upOK, "Cliked on not connected with router pop-up");
+				}
+				
 				break;
 
 			case 5:
@@ -770,7 +777,7 @@ public class AddDevicePage extends GenericWrappers {
 
 				clickWifiCancelButton();
 				readwrite.write("factory_reset\r");
-				Thread.sleep(2*60*1000);
+				Thread.sleep(5*20*1000);
 
 				if(!isElementDisplayedCheck(devicewifipop_upOK))  {
 					retrypagecheck(mode);

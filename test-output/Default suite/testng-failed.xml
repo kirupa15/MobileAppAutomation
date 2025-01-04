@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sZephyr_testcases.TC11_Pairing_WifiwithRouter">
+      <class name="sZephyr_testcases.TC12_Pairing_WifiwithoutRouter">
         <methods>
           <include name="afterMethod"/>
-          <include name="startTestCase"/>
           <include name="afterTest"/>
-          <include name="afterSuite"/>
+          <include name="startTestCase"/>
           <include name="removerepair"/>
+          <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC11_Pairing_WifiwithRouter -->
+      </class> <!-- sZephyr_testcases.TC12_Pairing_WifiwithoutRouter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

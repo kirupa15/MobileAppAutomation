@@ -61,6 +61,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@BeforeTest
 	public void beforeTest() throws FileNotFoundException, IOException, Exception{
+		
 	}
 
 	@BeforeMethod 

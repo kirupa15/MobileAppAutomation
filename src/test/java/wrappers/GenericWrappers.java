@@ -355,6 +355,19 @@ public class GenericWrappers {
 	public static void expshortWait(WebElement xpath) {
 		try {
 			
+			WebDriverWait wait = new WebDriverWait(driver,10);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
+		} catch (Exception e) {
+			System.out.println(e);
+			
+			
+			
+		}
+		
+	}
+	public static void expshortWaittwenty(WebElement xpath) {
+		try {
+			
 			WebDriverWait wait = new WebDriverWait(driver,20);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
 		} catch (Exception e) {
@@ -632,6 +645,24 @@ public class GenericWrappers {
 			}
 			else {
 			Reporter.reportStep(Field+"Element not displayed", "FAIL");
+				
+			}
+			return true;
+		} catch (NoSuchElementException e) {
+			Reporter.reportStep(Field+"Element not displayed", "FAIL");
+			return false;
+		}
+	}
+	public boolean isElementDisplayednext(WebElement element,String Field) {
+		try {
+			expshortWaittwenty(element);// Introduce a small delay before checking visibility
+			
+			if (element.isDisplayed()) {
+				
+				Reporter.reportStep(Field +"  Element displayed", "PASS");
+			}
+			else {
+				Reporter.reportStep(Field+"Element not displayed", "FAIL");
 				
 			}
 			return true;
