@@ -89,11 +89,7 @@ public class TC31_Schedular extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
 			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
 			readwrite.closePort();
 			fail(e);
 		}

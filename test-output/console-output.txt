@@ -1,1 +1,3 @@
 app_log.txt
+App is already installed. Launching the app...
+Port opened successfully.

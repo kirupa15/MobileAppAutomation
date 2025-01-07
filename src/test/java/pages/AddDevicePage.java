@@ -746,6 +746,7 @@ public class AddDevicePage extends GenericWrappers {
 				connectwithmobilewifipage();
 				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				
+				Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
 				if(isElementDisplayednext(devicewifipop_upOK,"Could not connect with router popup"))  {
 					
 					clickbyXpath(devicewifipop_upOK, "Cliked on not connected with router pop-up");
