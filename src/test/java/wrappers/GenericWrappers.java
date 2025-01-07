@@ -23,6 +23,7 @@ import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -36,6 +37,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.model.Log;
 import com.google.common.collect.ImmutableMap;
+import org.testng.Assert;
 
 import utils.Reporter;
 import utils.logReadandWrite;
@@ -363,6 +365,19 @@ public class GenericWrappers {
 		}
 		
 	}
+	public static void expshortWaittwenty(WebElement xpath) {
+		try {
+			
+			WebDriverWait wait = new WebDriverWait(driver,20);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
+		} catch (Exception e) {
+			System.out.println(e);
+			
+			
+			
+		}
+		
+	}
 
 	public void expWaitforPairing(WebElement xpath) {
 		try {
@@ -575,36 +590,44 @@ public class GenericWrappers {
 
 		
 			// Check if the password entry field is displayed
-			WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
-			WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
-			if (isElementDisplayed(enterPasswordField,"Password field of wifipage")) {
-				// Enter the WiFi password
-				enterValueByXpathwifipage(enterPasswordField, "Wi-Fi password", wifiPassword);
+			try {
+				WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
+				WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
+				if (isElementDisplayedCheck(enterPasswordField)) {
+					// Enter the WiFi password
+					enterValueByXpathwifipage(enterPasswordField, "Wi-Fi password", wifiPassword);
 
-				// Click on the connect button
-				WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); 
-				// Replace with the actual XPath
-				if (isElementDisplayed(connectButton,"Connect button")) {
-					
-					clickbyXpath(connectButton, "Connect button");
-					
-					Thread.sleep(3000);}
+					// Click on the connect button
+					WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); 
+					// Replace with the actual XPath
+					if (isElementDisplayedCheck(connectButton)) {
+						
+						clickbyXpath(connectButton, "Connect button");
+						
+						Thread.sleep(3000);}
 
-			}
-			else if (isElementDisplayed(enterPasswordFieldOnePlus,"Password field of wifipage -ONE plus")) {
-				enterValueByXpathwifipage(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
-				WebElement savebutton = driver.findElement(MobileBy.xpath("//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")); 
-			 if (isElementDisplayed(savebutton,"Save button")) {
-				clickbyXpath(savebutton, "save button");
+				}
 				
-				Thread.sleep(3000);
-			}
+				else if (isElementDisplayedCheck(enterPasswordFieldOnePlus)) {
+					enterValueByXpathwifipage(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
+					WebElement savebutton = driver.findElement(MobileBy.xpath("//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")); 
+				 if (isElementDisplayedCheck(savebutton)) {
+					clickbyXpath(savebutton, "save button");
+					
+					Thread.sleep(3000);
+				}
+					
+				} 
+				else {
+					System.out.println("Already connected or password is saved.");
 				
-			} 
-			else {
-				System.out.println("Already connected or password is saved.");
+				}
+			} catch (NoSuchElementException e) {
+			    System.out.println("WIFI Password is Already Provided, continuing to the next step.");
+			}
 			
-			}
+			
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -621,15 +644,35 @@ public class GenericWrappers {
 				Reporter.reportStep(Field +"  Element displayed", "PASS");
 			}
 			else {
-			Reporter.reportStep(Field+"Element not displayed", "INFO");
+			Reporter.reportStep(Field+"Element not displayed", "FAIL");
 				
 			}
 			return true;
 		} catch (NoSuchElementException e) {
-			Reporter.reportStep(Field+"Element not displayed", "INFO");
+			Reporter.reportStep(Field+"Element not displayed", "FAIL");
 			return false;
 		}
 	}
+	public boolean isElementDisplayednext(WebElement element,String Field) {
+		try {
+			expshortWaittwenty(element);// Introduce a small delay before checking visibility
+			
+			if (element.isDisplayed()) {
+				
+				Reporter.reportStep(Field +"  Element displayed", "PASS");
+			}
+			else {
+				Reporter.reportStep(Field+"Element not displayed", "FAIL");
+				
+			}
+			return true;
+		} catch (NoSuchElementException e) {
+			Reporter.reportStep(Field+"Element not displayed", "FAIL");
+			return false;
+		}
+	}
+	
+	
 
 	public boolean retryWait(WebElement element) {
 		try {
@@ -721,6 +764,19 @@ public class GenericWrappers {
 			return false;
 		}
 	}
+	
+	public WebElement scrollToText(String text) {
+        try {
+            return driver.findElement(MobileBy.AndroidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"" + text + "\"));"
+            ));
+            
+        } catch (Exception e) {
+            System.out.println("Unable to scroll to text: " + text);
+            Reporter.reportStep("Unable to scroll to Field"+text, "FAIL");
+            return null;
+        }
+    }
 	
 	
 	
@@ -814,7 +870,7 @@ public class GenericWrappers {
 	
 	public void getLatestApk(String baseRemotePath,String localDirectory,String newFileName) throws IOException {
 		// Add current week to the path
-        String weekFolder = getCurrentWeekFolder();
+        String weekFolder = "W52"; //getCurrentWeekFolder();
         String remotePathWithWeek = baseRemotePath+weekFolder+"/";
         System.out.println("Looking in directory: " + remotePathWithWeek);
 
@@ -855,9 +911,16 @@ public class GenericWrappers {
                     }
 
                     break;
+                } else {
+                	 System.out.println("APK file not found at: " + localDirectory);
+                     // Fail the entire suite if APK is missing
+                     Assert.fail("APK file is required to run the test suite but was not found.");
                 }
             }
         } else {
+        	 System.out.println("APK file not found at: " + localDirectory);
+             // Fail the entire suite if APK is missing
+             Assert.fail("APK file is required to run the test suite but was not found.");
             System.out.println("No latest folder found for the week.");
         }
 	}
@@ -905,4 +968,19 @@ public class GenericWrappers {
         }
     }
 	
+    public void fail(Exception e) {
+    	 System.err.println("Failure occurred: " + e.getMessage());
+    	 Reporter.reportStep(e+"Testcase failed", "FAIL");
+    	 throw new RuntimeException(e);
+	}
+    
+    public boolean isElementDisplayedCheck(WebElement element) {
+        try {
+        	expshortWait(element);
+            return element.isDisplayed();
+        } catch (NoSuchElementException | StaleElementReferenceException e) {
+            return false;
+        }
+    }
+
 }

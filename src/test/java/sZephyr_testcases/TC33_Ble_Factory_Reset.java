@@ -27,7 +27,7 @@ public class TC33_Ble_Factory_Reset extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC05_Ble Factory Reset";
+		testCaseName = "TC33_Ble Without Router Factory Reset";
 		testDescription = "Paired with device Ble without router mode and try to do factory reset using via app";
 	}
 
@@ -80,13 +80,9 @@ public void pairBlewithoutRouter() throws Exception {
 	 readwrite.closePort();
 	}
 	catch (Exception e) {
-		e.printStackTrace();
 		readwrite.write("factory_reset\r");
-		killAndReopenApp();
-		Thread.sleep(3000);
-		adddevicepage.removingDevice();			
 		readwrite.closePort();
-		fail("Failed due to this exception", e);
+		fail(e);
 	}
 }
 

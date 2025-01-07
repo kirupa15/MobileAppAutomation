@@ -27,7 +27,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06_Szephyr Info";
+		testCaseName = "TC34_Szephyr Info check";
 		testDescription = " User should be allowed to edit and save the AC Info page values without any issue\r\n"
 				+ "";
 	}
@@ -99,13 +99,9 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 			readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
 			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

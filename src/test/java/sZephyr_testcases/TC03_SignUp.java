@@ -30,7 +30,7 @@ public class TC03_SignUp extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02_SignUp";
+		testCaseName = "TC03_SignUp_Try to Sign Up with new username";
 		testDescription = "Try to Sign Up with new username";
 	}
 
@@ -63,13 +63,9 @@ public class TC03_SignUp extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 
 	}

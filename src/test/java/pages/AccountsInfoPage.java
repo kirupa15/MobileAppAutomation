@@ -214,8 +214,7 @@ public class AccountsInfoPage extends GenericWrappers{
 
 	@SuppressWarnings("deprecation")
 	public void clickDeleteAccountButton() {
-		driver.findElement(MobileBy.AndroidUIAutomator(
-				"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Delete Account\"));"));
+		scrollToText("Delete Account");
 		clickbyXpath(DeleteAccountButton, " Delete Account click Button ");
 	}
 

@@ -20,7 +20,7 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04_DeviceSettings";
+		testCaseName = "TC22_DeviceSettings_Pairing TIme Settings change";
 		testDescription = "Pairing Time Change the Device Setting Value And Check MenuBar Device Settings Page Reflect The Same";
 	}
 	
@@ -86,13 +86,9 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 			 readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
 			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

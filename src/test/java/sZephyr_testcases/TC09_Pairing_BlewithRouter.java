@@ -26,7 +26,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC02 - Pairing BLE With Router";
+		testCaseName = "TC09 - Pairing BLE With Router";
 		testDescription = "After pairing check ";
 	}
 	
@@ -59,7 +59,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		
+		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -79,7 +79,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		
+		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
 		homepage.VerifyONdesc();
@@ -96,13 +96,9 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

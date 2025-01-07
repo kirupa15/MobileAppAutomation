@@ -21,7 +21,7 @@ public class TC24_Analytics  extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_02_Analytics";
+		testCaseName = "TC_24_Analytics_BLE without Router_App Close";
 		testDescription = "Pairing mode=Ble without router <br> Connectivity :Ble <br>After connectivity established close application<br>Turn on device for 5min using device button  <br> check for analytivs value<br>Energy duration and Energy used for 5 min should update";
 	}
 	
@@ -66,13 +66,9 @@ public class TC24_Analytics  extends MobileAppWrappers {
 		
 		}
 		catch (Exception e) {
-			e.printStackTrace();
 			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

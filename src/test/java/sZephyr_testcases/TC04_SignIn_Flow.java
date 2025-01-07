@@ -26,7 +26,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC03_SignIn_Flow";
+		testCaseName = "TC04_SignIn_Try to Sign In with unregistered username";
 		testDescription = "Try to Sign In with unregistered username";
 	}
 
@@ -54,13 +54,9 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

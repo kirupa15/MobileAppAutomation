@@ -6,138 +6,18 @@
   </listeners>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sZephyr_testcases.TC16_WifiWithRouter">
+      <class name="sZephyr_testcases.TC01_Accounts_Info">
         <methods>
-          <include name="startTestCase"/>
           <include name="afterMethod"/>
           <include name="afterTest"/>
+          <include name="startTestCase"/>
           <include name="removerepair"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC16_WifiWithRouter -->
-      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="removerepair"/>
-          <include name="startTestCase"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC10_Pairing_SmartConfig -->
-      <class name="sZephyr_testcases.TC31_Schedular">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="startTestCase"/>
-          <include name="afterTest"/>
-          <include name="schedule"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC31_Schedular -->
-      <class name="sZephyr_testcases.TC12_Pairing_WifiwithoutRouter">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="startTestCase"/>
-          <include name="afterTest"/>
-          <include name="removerepair"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC12_Pairing_WifiwithoutRouter -->
-      <class name="sZephyr_testcases.TC17_WIfiWithout_router">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="removerepair"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="startTestCase"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC17_WIfiWithout_router -->
-      <class name="sZephyr_testcases.TC27_Analytics">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="removerepair"/>
-          <include name="startTestCase"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC27_Analytics -->
-      <class name="sZephyr_testcases.TC11_Pairing_WifiwithRouter">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="startTestCase"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="removerepair"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC11_Pairing_WifiwithRouter -->
-      <class name="sZephyr_testcases.TC22_DeviceSettings">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="removerepair"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="startTestCase"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC22_DeviceSettings -->
-      <class name="sZephyr_testcases.TC25_Analytics">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="startTestCase"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-          <include name="removerepair"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC25_Analytics -->
-      <class name="sZephyr_testcases.TC15_SmartConfig">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="removerepair"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="startTestCase"/>
-          <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC15_SmartConfig -->
-      <class name="sZephyr_testcases.TC13_BlewithoutRouter">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="removerepair"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="startTestCase"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC13_BlewithoutRouter -->
+      </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [MobilAppAutomation] -->

@@ -31,7 +31,7 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC06_SignIN_Logout";
+		testCaseName = "TC07_Logout_After Login, Pair with device and logout from device is working";
 		testDescription = "After Login, Pair with device and logout from device is working";
 	}
 	
@@ -87,13 +87,9 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 		

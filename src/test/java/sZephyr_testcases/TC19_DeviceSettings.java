@@ -21,7 +21,7 @@ public class TC19_DeviceSettings extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01_DeviceSettings";
+		testCaseName = "TC19_DeviceSettings_Add_Router";
 		testDescription = "Added Router to device ,disbale BLe and check STA connectivity";
 	}
 	
@@ -99,13 +99,9 @@ public class TC19_DeviceSettings extends MobileAppWrappers {
 			 readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

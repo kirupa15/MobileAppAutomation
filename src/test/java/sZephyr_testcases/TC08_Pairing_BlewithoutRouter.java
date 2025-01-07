@@ -28,7 +28,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC01 - Pairing BLE Without Router";
+		testCaseName = "TC08 - Pairing BLE Without Router";
 		testDescription = "TC-01-After Pairing check on/off remove device"+"<br>"+
 		"TC-02-After Pairing check on/off remove device ,repair and check on/off "+"<br>"+
 		"TC-03-With internet after Pairing check on/off ,initaite logout and login check for added device ,remove and repair check on/off .";
@@ -133,13 +133,9 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
         readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 

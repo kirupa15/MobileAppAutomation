@@ -32,7 +32,7 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "WifiWithRouter";
+		testCaseName = "TC16_WifiWithRouter_CONNECTIVITY";
 		testDescription = "App kill and re-open and check the STA connectivity ";
 	}
 	
@@ -95,13 +95,9 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 		 readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 	}

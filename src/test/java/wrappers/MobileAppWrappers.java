@@ -38,10 +38,10 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 		
 		//get app from FTP
-		FTPUploader(server, port, user, pass);
-		getLatestApk(baseRemotePath, localDirectory, newFileName);
+//		FTPUploader(server, port, user, pass);
+		//getLatestApk(baseRemotePath, localDirectory, newFileName);
 		
-		disconnect();
+//		disconnect();
 		
 		
 		Reporter.startResult();//START TESTNG RESULT
@@ -61,6 +61,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@BeforeTest
 	public void beforeTest() throws FileNotFoundException, IOException, Exception{
+		
 	}
 
 	@BeforeMethod 

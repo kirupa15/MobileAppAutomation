@@ -25,7 +25,7 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - Pairing in Wifi with router mode";
+		testCaseName = "TC11 - Pairing in Wifi with router mode";
 		testDescription = "If already Signin skip signin and  Start Pairing Wifi with router mode else Signin and pair Wifi with router mode";
 	}
 
@@ -92,13 +92,9 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 
 	}

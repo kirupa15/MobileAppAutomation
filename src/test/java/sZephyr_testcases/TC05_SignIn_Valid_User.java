@@ -27,7 +27,7 @@ public class TC05_SignIn_Valid_User extends MobileAppWrappers {
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04 - SignIn_Valid_User";
+		testCaseName = "TC05 - Try to Sign In into app with Valid user details but invalid OTP ";
 		testDescription = "Try to Sign In into app with Valid user details but invalid OTP ";
 	}
 	
@@ -60,13 +60,9 @@ public class TC05_SignIn_Valid_User extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			e.printStackTrace();
-			readwrite.write("factory_reset\r");
-			killAndReopenApp();
-			Thread.sleep(3000);
-			adddevicepage.removingDevice();			
+			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
-			fail("Failed due to this exception", e);
+			fail(e);
 		}
 	}
 	
