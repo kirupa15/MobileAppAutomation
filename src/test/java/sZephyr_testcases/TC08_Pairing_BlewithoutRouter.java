@@ -82,14 +82,12 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
-		
+				
 		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButton();
 		devicemenupage.clickLogoutConfirmationButton();
@@ -115,15 +113,11 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
-		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();

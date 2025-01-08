@@ -80,11 +80,8 @@ public class TC21_DeviceSettings extends MobileAppWrappers {
 			
 //Disable The Quiet LED Mode Test Case
 			homepage.clickMenuBarButton();
-			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsButton();
-			Thread.sleep(1000);
 			devicemenupage.clickQuietLEDToggleForOff();
-			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsBackButton();
 			
 //Relay ON/OFF Time Device LED Was Working Expected Scenario 
@@ -96,7 +93,6 @@ public class TC21_DeviceSettings extends MobileAppWrappers {
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupNoButton();
-			Thread.sleep(1000);
 			 homepage.clickMenuBarButton();
 				devicemenupage.clickMenuBarRemoveDevice();
 				devicemenupage.clickRemoveDevicePopupYesButton();

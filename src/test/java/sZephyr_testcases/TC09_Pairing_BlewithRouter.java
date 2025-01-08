@@ -59,14 +59,12 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
+		
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
@@ -79,13 +77,10 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();

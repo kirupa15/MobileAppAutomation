@@ -55,14 +55,12 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
-		
+				
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
@@ -75,14 +73,12 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
-		
+				
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();

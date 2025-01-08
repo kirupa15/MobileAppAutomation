@@ -57,6 +57,7 @@ public class Analytics  extends GenericWrappers {
 	public String getenergydurationvalue() {
            expWait(enrgyDurationmin);
 		 oldvalue = enrgyDurationmin.getText();
+		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
 	return oldvalue;
 	}
@@ -77,7 +78,7 @@ public class Analytics  extends GenericWrappers {
 		String text = enrgyDurationmin.getText();
 		if (extractintvalue( enrgyDurationmin.getText())==newvalue) {
 			
-			Reporter.reportStep("Analytics value updated: " + text, "PASS");
+			Reporter.reportStep("Analytics value updated after session : " + text, "PASS");
 			bReturn = true;
 		}
 		else {

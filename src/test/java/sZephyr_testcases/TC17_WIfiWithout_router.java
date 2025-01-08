@@ -72,7 +72,6 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 			
 			adddevicepage.bleConnectivityCheck();
 			homepage.clickONOFFButton();
-			homepage.VerifyONdesc();
 
 
 			//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open

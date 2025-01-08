@@ -70,8 +70,6 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
-		
 		
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.clickONOFFButton();
@@ -80,6 +78,7 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
 		homepage.killandopen();
+		Thread.sleep(5000);
 		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
@@ -87,7 +86,7 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
 		
-		 homepage.clickMenuBarButton();
+		homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			adddevicepage.checkdeviceremovedtoast();

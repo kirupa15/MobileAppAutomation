@@ -60,16 +60,12 @@ public class TC19_DeviceSettings extends MobileAppWrappers {
 		
 
 			homepage.clickMenuBarButton();
-			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsButton();
-			Thread.sleep(3000);
 	//Add Router Test Case		
 			devicemenupage.ClickaddrouterButton();
-			Thread.sleep(3000);
 			adddevicepage.enterWiFiPassword(adddevicepage.wifiPassword);
 			devicemenupage.clickAddRouterCheckBox();
 			adddevicepage.clickEnterButton();
-			Thread.sleep(5000);
 			adddevicepage.checkrouteraddedsuccessfultoast();
 			devicemenupage.clickDeviceSettingsBackButton();
 			turnOffBT();

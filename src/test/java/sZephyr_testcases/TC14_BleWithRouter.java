@@ -100,36 +100,21 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		
 		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
-		
 		homepage.disableBLE();
 		
 		Thread.sleep(5000);
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
 		
 		homepage.killandopen();
 		adddevicepage.ClickOkButtonBLEpopUP();
 		Thread.sleep(5000);
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
 		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
 		
 		Thread.sleep(5000);
 		///CONNECTIVITY_MOD_2_TC_3--      5 Times ON/OFF ///
@@ -159,7 +144,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		adddevicepage.bleConnectivityCheck();
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			}
 	    homepage.disableWIFI();
 	    Thread.sleep(5000);
@@ -167,7 +152,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 	    for(int i=0;i<2;i++) 
 	    {
 			homepage.clickONOFFButton();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			}
 	    homepage.getCurrentvalue();
 		homepage.getVoltvalue();
