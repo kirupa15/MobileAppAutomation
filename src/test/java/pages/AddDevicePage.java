@@ -592,6 +592,7 @@ public class AddDevicePage extends GenericWrappers {
 
 		// Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+
 		turnOnBT();
 		/*
 		 * if (isElementDisplayedCheck(blePermissionOkButton)) {
