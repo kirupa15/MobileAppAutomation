@@ -39,8 +39,8 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 		//get app from FTP
 //		FTPUploader(server, port, user, pass);
-		//getLatestApk(baseRemotePath, localDirectory, newFileName);
-		
+//		getLatestApk(baseRemotePath, localDirectory, newFileName);
+//		
 //		disconnect();
 		
 		

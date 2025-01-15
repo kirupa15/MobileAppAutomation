@@ -90,6 +90,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
+		Thread.sleep(5000);
 		homepage.VerifyOFFdesc();
 
 		homepage.clickMenuBarButton();
