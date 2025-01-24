@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
+import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
 import utils.GetAppLog;
 import utils.Reporter;
@@ -37,12 +38,16 @@ public class MobileAppWrappers extends GenericWrappers {
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		
 		
-		//get app from FTP
+		// Enable below two lines of code to Get app from FTP
 //		FTPUploader(server, port, user, pass);
 //		getLatestApk(baseRemotePath, localDirectory, newFileName);
 //		
 //		disconnect();
 		
+		// Enable below 2 lines of code to check out latest app from Sharepath
+		
+		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
+		build.buildAPK();
 		
 		Reporter.startResult();//START TESTNG RESULT
 		
