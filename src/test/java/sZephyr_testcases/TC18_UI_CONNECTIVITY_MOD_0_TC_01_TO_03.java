@@ -97,23 +97,19 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.LEDquietmode();
 		adddevicepage.Infinitepoweron();
-		Thread.sleep(3000);
 		adddevicepage.Minutesminusbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.bleConnectivityCheck();
 		homepage.clickMenuBarButton();
 	    devicemenupage.clickDeviceSettingsButton();
 	    adddevicepage.DurationforON();
-	    Thread.sleep(3000);
 	    adddevicepage.Hourstextbox();
 	    adddevicepage.Minutestextbox();
 	    adddevicepage.ClickokdurationON();
-	    Thread.sleep(5000);
 	    devicemenupage.clickResetDeviceButton();
 		devicemenupage.clickResetConfirmationYesButton();
 		adddevicepage.checkdeviceresettoast();
 		devicemenupage.AddDevicePagedisplayed();
-//		adddevicepage.verifyAddDevicePage("Adddevice page");
 		 readwrite.closePort();
 	}
 	catch (Exception e) {

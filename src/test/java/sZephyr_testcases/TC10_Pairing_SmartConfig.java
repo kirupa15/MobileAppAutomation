@@ -54,13 +54,10 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 
-
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
@@ -75,14 +72,12 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
 		homepage.VerifyOFFdesc();
-		
+				
 		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButton();
 		devicemenupage.clickLogoutConfirmationButton();
@@ -95,6 +90,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
+		Thread.sleep(5000);
 		homepage.VerifyOFFdesc();
 
 		homepage.clickMenuBarButton();

@@ -870,7 +870,7 @@ public class GenericWrappers {
 	
 	public void getLatestApk(String baseRemotePath,String localDirectory,String newFileName) throws IOException {
 		// Add current week to the path
-        String weekFolder = "W52"; //getCurrentWeekFolder();
+        String weekFolder = getCurrentWeekFolder();
         String remotePathWithWeek = baseRemotePath+weekFolder+"/";
         System.out.println("Looking in directory: " + remotePathWithWeek);
 

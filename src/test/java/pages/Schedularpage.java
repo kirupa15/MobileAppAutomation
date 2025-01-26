@@ -42,35 +42,49 @@ public class Schedularpage extends GenericWrappers {
 
 	@FindBy(xpath = "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]")
 	private WebElement Scehduletitle;
+	
 	@FindBy(xpath = "//*[@resource-id='SCH_ADD_PLUS_ICON']")
 	private WebElement plusIcon;
+	
 	@FindBy(xpath = "//*[@resource-id='Header']")
 	private WebElement yourScheduleheader;
+	
 	@FindBy(xpath = "//*[@resource-id='Scheduler_OtherUsersSchedules']")
 	private WebElement otherScheduleheader;
+	
 	@FindBy(xpath = "//*[@resource-id='Scheduler_YouDoNotHaveAnySchedules']")
 	private WebElement schedulePlaceholder;
 
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Save_ButtonText']")
 	private WebElement savebtn;
+	
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Cancel_Button']")
 	private WebElement cancelbtn;
-	@FindBy(xpath = "//*[@resource-id='SCH_EDIT_DELETE_BTN']")
+	
+	@FindBy(xpath = "//android.widget.TextView[@text='Delete']")
 	private WebElement deleteBtn;
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_foreground_only_button\"]")
 	private WebElement locationpermissionpopup;
+	
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_button\"]")
 	private WebElement devicepermission;
+	
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_HeatingDuration']")
 	private WebElement durationtext;
+	
 	@FindBy(xpath = "//*[@resource-id='Scheduler_Switch']")
 	private WebElement disableschedule;
+	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr and AC turned ON\"]")
 	private WebElement Acturnondesc;
+	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Please ensure sZephyr is switched ON prior to operating your AC remote\"]")
 	private WebElement acturnoffdesc;
+	
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Minutes1']")
 	private WebElement minute1;
+	
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_Duration_Hours_Minutes']")
 	private WebElement duration;
 

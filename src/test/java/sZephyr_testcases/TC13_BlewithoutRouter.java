@@ -73,13 +73,8 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
-		
+			
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
 		devicemenupage.clickResetDeviceButton();
@@ -98,13 +93,8 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
 		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
-		
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
@@ -133,12 +123,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
 		
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();

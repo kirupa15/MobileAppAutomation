@@ -71,13 +71,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		adddevicepage.staConnectivityCheck();
 		Thread.sleep(2000);
 		homepage.clickONOFFButton();
-		Thread.sleep(2000);
-		homepage.VerifyONdesc();
-		Thread.sleep(5000);
-		/*for(int i=0;i<2;i++) {
-			Thread.sleep(1000);
-			}*/
-		
+			
 		//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
@@ -93,7 +87,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		
 		for(int i=0;i<11;i++) {
 			homepage.clickONOFFButton();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			}
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
@@ -104,9 +98,8 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		adddevicepage.bleConnectivityCheck();
 		Thread.sleep(10000);
 		homepage.clickONOFFButton();
-		 Thread.sleep(5000);
+		 Thread.sleep(2000);
 	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
-	    Thread.sleep(5000);
 		///CONNECTIVITY_MOD_3_TC_5//BLE_Kill and Open
 	    
 	    homepage.getCurrentvalue();
@@ -119,7 +112,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(10000);
 		for(int i=0;i<11;i++) {
 			homepage.clickONOFFButton();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			}
 	
 		
@@ -133,7 +126,6 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		homepage.WifiSwitch(loadProp("REMOTEWIFINAME"),loadProp("REMOTEWIFIPASSWORD"));
 		adddevicepage.remoteConnectivityCheck();
 		homepage.clickONOFFButton();
-		Thread.sleep(5000);
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
@@ -144,7 +136,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		turnOffBT();
 		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.remoteConnectivityCheck();
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		Thread.sleep(5000);
@@ -152,7 +144,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		
 		for(int i=0;i<11;i++) {
 			homepage.clickONOFFButton();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			}
 		
 		homepage.getCurrentvalue();

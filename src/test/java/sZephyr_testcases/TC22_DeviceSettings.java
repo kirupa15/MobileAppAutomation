@@ -63,20 +63,13 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 		}
 		
 //Pairing Time Changed Data Should Reflected In Device Settings Page Duration For ON	
-		
-		    Thread.sleep(2000);
 			homepage.clickMenuBarButton();
-			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsButton();
-			Thread.sleep(1000);
 			devicemenupage.clickDurationForONButton();
-			Thread.sleep(2000);
 			devicemenupage.clickDeviceSettingsBackButton();
-			Thread.sleep(1000);
 			devicemenupage.clickDeviceSettingsBackButton();
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
-			Thread.sleep(1000);
 			devicemenupage.clickRemoveDevicePopupNoButton();
 			 homepage.clickMenuBarButton();
 				devicemenupage.clickMenuBarRemoveDevice();
