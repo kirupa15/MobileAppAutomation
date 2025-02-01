@@ -1,1 +1,11 @@
-No adb device is connected
+app_log.txt
+App is already installed. Launching the app...
+Port opened successfully.
+Comment sent: reboot
+WIFI Password is Already Provided, continuing to the next step.
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Launch_SignInText']' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //*[@resource-id='Add_Devices_ButtonText']' (tried for 10 second(s) with 500 milliseconds interval)
+Device is already in paired state removing the device
+Comment sent: factory_reset
+sZephyr device is offline  Alert pop-up displayed
+Comment sent: factory_reset

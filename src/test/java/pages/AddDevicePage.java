@@ -268,7 +268,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"⚠️ Unregistered Device Detected\"]")
 	private WebElement unregisteredpopup;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
+	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
 	private WebElement menuBarButton;
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
 	private WebElement bleConnectivity;
@@ -809,7 +809,7 @@ public class AddDevicePage extends GenericWrappers {
 
 			readwrite.write("factory_reset\r");
 
-			homepage.clickMenuBarButton();
+			homepage.clickMenuBarButtonafterpairing();
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			Thread.sleep(2000);//or5000

@@ -46,15 +46,15 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 		// Enable below 2 lines of code to check out latest app from Sharepath
 		
-		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
-		build.buildAPK();
+//		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
+//		build.buildAPK();
 		
 		Reporter.startResult();//START TESTNG RESULT
 		
 	        // Redirect console output to a file
-		originalOut = System.out;
-	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
-	        System.setOut(fileOut);
+//		originalOut = System.out;
+//	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));
+//	        System.setOut(fileOut);
 //	        System.out.println("Test suite started. Output is redirected to file.");
 	        
 	        //START GETTING APP LOG

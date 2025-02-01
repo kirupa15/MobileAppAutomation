@@ -68,8 +68,12 @@ public class AccountsInfoPage extends GenericWrappers{
 	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]")
 	private WebElement Clickaccountdeleteyes;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"\"]")
+	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
 	private WebElement menuBarButton;
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\" and @text=\"\"]")
+	private WebElement menuBarButtonafterpairing;
+	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\"]")
+	private WebElement menuBarButtonafterpairing_withoutconnectivity;
 
 	@FindBy(xpath = "//*[@resource-id='Accounts_YourName']")
 	private WebElement Usernamefield;
@@ -235,7 +239,7 @@ public class AccountsInfoPage extends GenericWrappers{
 	}
 
 	public void Clickmenubaricon() {	 
-		clickbyXpath(Clickmenubaricon, " Click menubaricon ");
+		clickbyXpath(menuBarButton, " Click menubaricon ");
 	}
 
 	public void Clickaccountinfo() {	 
@@ -279,7 +283,7 @@ public class AccountsInfoPage extends GenericWrappers{
 
 	public void checkAccountsinfousername_email_Language() throws Exception {
 
-		clickbyXpath(menuBarButton, " Menu Bar ");
+		clickbyXpath(menuBarButtonafterpairing, " Menu Bar ");
 		clickbyXpath(AccountsinfoButton, " Accounts Info Button");
 		verifyTextContainsByXpath(Usernamefield,userName , "Accounts_info_UserName_field");
 		verifyTextContainsByXpath(emailIdfield,emaId , "Accounts_info_EmailId_field");
@@ -294,7 +298,7 @@ public class AccountsInfoPage extends GenericWrappers{
 		
 		clickbyXpath(DevicesettingsbackButton, " Device Setting Back Button ");
        
-		clickbyXpath(menuBarButton, " Menu Bar ");
+		clickbyXpath(menuBarButtonafterpairing, " Menu Bar ");
 		clickbyXpath(removeDevice, " Click The Remove Device Button ");
 		clickbyXpath(removeDevicePopupYesButton, " Click The Remove Device Pop-up YES Button ");
 		
