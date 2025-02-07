@@ -61,8 +61,17 @@ public class HomePage extends GenericWrappers{
 		clickbyXpath(deviceONOFFButton, " Device ON OFF Button ");
 	}
 	
-	public void clickMenuBarButton() {
-		clickbyXpath(menuBarButton, " Menu Bar ");
+	public void clickMenuBarButton() throws InterruptedException {
+		if (isiconDisplayed(menuBarButton, "menu bar element displayed")) {
+			clickbyXpath(menuBarButton, " Menu Bar ");
+			}
+		else if (isiconDisplayed(menuBarButtonafterpairing, "menu bar after pairing element displayed")) {
+			clickbyXpath(menuBarButtonafterpairing, " Menu Bar ");
+			}else if (isiconDisplayed(menuBarButtonafterpairing_withoutconnectivity, "without connectivity menu bar icon")) {
+				clickbyXpath(menuBarButtonafterpairing_withoutconnectivity, " Menu Bar ");
+				
+			}
+	
 	}
 	
 	public void clickAccountinfobutton() {

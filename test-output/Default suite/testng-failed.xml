@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sZephyr_testcases.TC01_Accounts_Info">
+      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="startTestCase"/>
-          <include name="removerepair"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
+          <include name="removerepair"/>
           <include name="beforeMethod"/>
+          <include name="startTestCase"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
+      </class> <!-- sZephyr_testcases.TC10_Pairing_SmartConfig -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
