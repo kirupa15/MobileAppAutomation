@@ -62,10 +62,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 			readwrite.openPort();
-			Thread.sleep(2000);
-			readwrite.write("reboot\r");
-			Thread.sleep(3000);
-
+			
 			adddevicepage.pair(1);
 			adddevicepage.clickNextButtonsZephyrInfo();
 			adddevicepage.checkdevicedetailstoast();
@@ -84,7 +81,6 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 			homepage.VerifyOFFdesc();
 
 			accountinfopage.checkAccountsinfousername_email_Language();
-
 			readwrite.closePort();
 		}
 		catch (Exception e) {

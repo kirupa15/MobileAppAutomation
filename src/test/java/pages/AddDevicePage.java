@@ -601,7 +601,6 @@ public class AddDevicePage extends GenericWrappers {
 		 */	
 		
 		try {
-			Thread.sleep(5000);
 			if(isElementDisplayedCheck(signInButton)) {
 				landingpage.clickSignInButton();
 				loginpage.enterUserName(userName);
@@ -661,7 +660,7 @@ public class AddDevicePage extends GenericWrappers {
 //				locationPopUpPermission();
 //				nearByPermission();
 
-//				Thread.sleep(3000);
+				Thread.sleep(5000);
 //				blepermissionokpopup();
           
 				clickWifiCancelButton();
@@ -726,7 +725,7 @@ public class AddDevicePage extends GenericWrappers {
 				startPairingButton();
 				readwrite.write("factory_reset\r");
 				blepermissioncancelpopup();
-//				Thread.sleep(3000);
+				Thread.sleep(3000);
 //				locationPopUpPermission();
 //				nearByPermission();
 
@@ -763,7 +762,7 @@ public class AddDevicePage extends GenericWrappers {
 				startPairingButton();
 
 			    blepermissioncancelpopup();
-//				Thread.sleep(3000);
+				Thread.sleep(3000);
 //				locationPopUpPermission();
 //				nearByPermission();
 
@@ -934,29 +933,30 @@ public class AddDevicePage extends GenericWrappers {
 
 	public void checkdevicedetailstoast() {
 
-		verifyTextContainsByXpath(sZhephyrInfotoast, deviceDetailsUpdated,
+		verifyDynamicContentByXpath("//android.widget.Toast[@text=\\\"Device settings updated successfully!\\\"]", deviceDetailsUpdated,
 				"Device details updated successfully! toast");
 	}
 
 	public void checkdevicesettingstoast() {
 
-		verifyTextContainsByXpath(Devicesettingstoast, devicesettingsupdatesuccess,
+		verifyDynamicContentByXpath("//android.widget.Toast[@text=\"Device settings updated successfully!\"]", devicesettingsupdatesuccess,
 				"Device settings updated successfully! toast");
 	}
 
 	public void checkdeviceremovedtoast() {
+		
+		verifyDynamicContentByXpath("//android.widget.Toast[@text=\"Device removed successfully\"]", DeviceRemovedSuccessfully, "  DeviceRemovedSuccessfully toast");
 
-		verifyTextContainsByXpath(deviceremovedtoast, DeviceRemovedSuccessfully, "  DeviceRemovedSuccessfully toast");
 	}
 
 	public void checkdeviceresettoast() {
 
-		verifyTextContainsByXpath(deviceresettoast, YourDeviceResetSuccessfully, "  YourDeviceResetSuccessfully toast");
+		verifyDynamicContentByXpath("//android.widget.Toast[@text=\"Your device reset successfully\"]",YourDeviceResetSuccessfully, "  YourDeviceResetSuccessfully toast");
 	}
 
 	public void checkrouteraddedsuccessfultoast() {
 
-		verifyTextContainsByXpath(routeraddedsuccessfullytoast, RouterAddedSuccessfully,
+		verifyDynamicContentByXpath("//android.widget.Toast[@text=\\\"Router added successfully\\\"]",RouterAddedSuccessfully,
 				" RouterAddedSuccessfully toast");
 	}
 

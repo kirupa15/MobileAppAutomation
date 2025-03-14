@@ -100,7 +100,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// Local log files
 			String appLogPath = "./app_log.txt";
-			String deviceLogPath = "./serial_log.txt";
+			String deviceLogPath = "./device.log";
 
 			// FTP paths
 			String existingDirectory = "/Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/";
@@ -113,7 +113,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// Upload files to the new subdirectory
 			uploadFile(appLogPath,  testCaseName+"App.txt");
-			uploadFile(deviceLogPath, testCaseName+".txt");
+			uploadFile(deviceLogPath, testCaseName+".log");
 			
 
 			String remotefilepath =existingDirectory+newSubDir;

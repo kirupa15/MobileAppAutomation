@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
@@ -982,5 +983,25 @@ public class GenericWrappers {
             return false;
         }
     }
+    
+ public boolean verifyDynamicContentByXpath(String xpath, String text, String field) {
+    	
+		boolean bReturn = false;
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+			String sText = driver.findElement(By.xpath(xpath)).getText();
+			if (sText.trim().contains(text)) {
+				Reporter.reportStep(field +" contains "+ text , "PASS");
+				bReturn = true;
+				}
+			else {
+				Reporter.reportStep(field+" did not contain :" + text, "FAIL");				
+			}
+		} catch (Exception e) {
+			//
+		}
+		return bReturn;
+	}
 
 }
