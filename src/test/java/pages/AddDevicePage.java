@@ -45,6 +45,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	// Locate all elements on the page
 
+	
 	@FindBy(xpath = "//*[@resource-id='Add_Devices_ButtonText']")
 	private WebElement addDeviceButton;
 

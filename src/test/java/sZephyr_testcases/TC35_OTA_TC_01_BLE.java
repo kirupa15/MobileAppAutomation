@@ -111,7 +111,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		catch (Exception e) {
 			e.printStackTrace();
 			readwrite.write("factory_reset\r");
-			killAndReopenApp();
+//			killAndReopenApp();
 			Thread.sleep(3000);
 			adddevicepage.removingDevice();			
 			readwrite.closePort();

@@ -491,7 +491,7 @@ public class GenericWrappers {
 		}
 	}
 	
-	public void killAndReopenApp() {
+	public void killAndReopenApp(WebElement xpath,String text) {
 		try {
 			if (driver != null) {
 				// Kill the app (terminate it)
@@ -503,6 +503,7 @@ public class GenericWrappers {
 
 				// Reopen the app, it should maintain its previous state (same page)
 				driver.activateApp(packages);
+				verifyTextContainsByXpath(xpath, text, "Devicename");
 				Reporter.reportStep("The app was reopened successfully.", "PASS");
 			}
 		} catch (Exception e) {

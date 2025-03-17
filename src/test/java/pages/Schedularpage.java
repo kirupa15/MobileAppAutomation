@@ -98,7 +98,7 @@ public class Schedularpage extends GenericWrappers {
 	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement backButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"testuser007_1\"]")
+	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_name_0']")
 	private WebElement userName;
 
 	public String scheduleDeletedtoast = loadProp("thisScheduleHasBeenDeleted");

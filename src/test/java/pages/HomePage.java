@@ -2,6 +2,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -13,6 +14,8 @@ public class HomePage extends GenericWrappers{
 
 	@FindBy(xpath="//*[@resource-id='home_main_on_off_swch']")
 			private WebElement deviceONOFFButton;
+	@FindBy(xpath = "//android.widget.TextView[@text=\"sanity07_1\"]")
+	private WebElement devicename;
 	
 	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
 	private WebElement menuBarButton;
@@ -50,6 +53,10 @@ public class HomePage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
 	private WebElement bleSymbol;
 	
+	@FindBy(xpath = "//*[@resource-id='Device_on_off_btn_temp_degree']")
+	private WebElement tempDegree;
+	
+	public String userName = loadProp("USERNAME");
 	
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
@@ -62,11 +69,11 @@ public class HomePage extends GenericWrappers{
 	}
 	
 	public void clickMenuBarButton() throws InterruptedException {
-		if (isiconDisplayed(menuBarButton, "menu bar element displayed")) {
-			clickbyXpath(menuBarButton, " Menu Bar ");
-			}
-		else if (isiconDisplayed(menuBarButtonafterpairing, "menu bar after pairing element displayed")) {
+		if (isiconDisplayed(menuBarButtonafterpairing, "menu bar After Pairing displayed")) {
 			clickbyXpath(menuBarButtonafterpairing, " Menu Bar ");
+			}
+		else if (isiconDisplayed(menuBarButton, "menu bar element displayed")) {
+			clickbyXpath(menuBarButton, " Menu Bar ");
 			}else if (isiconDisplayed(menuBarButtonafterpairing_withoutconnectivity, "without connectivity menu bar icon")) {
 				clickbyXpath(menuBarButtonafterpairing_withoutconnectivity, " Menu Bar ");
 				
@@ -94,7 +101,7 @@ public class HomePage extends GenericWrappers{
 	 }
 	   public void killandopen() 
 	   {
-		   killAndReopenApp();
+		   killAndReopenApp(devicename,userName);
 	   }
 	
 	   public void disableBLE() throws Exception 
@@ -156,6 +163,28 @@ public class HomePage extends GenericWrappers{
 					
 				}
 		}
+	   
+	   public void checkBLEConnectivity() {
+		   try {
+			  expWait(bleSymbol);
+			  if(bleSymbol.isDisplayed()) {
+				   utils.Reporter.reportStep("BLE Connectivity is etsablished Successfully.", "PASS");
+			   }
+		   } catch (Exception e) {
+			   utils.Reporter.reportStep("BLE Connectivity is not etsablished Successfully.", "FAIL");
+		}
+	   }
+	   
+	   public void checkTempSensorWorking() {
+		   try {
+			  expWait(tempDegree);
+			  if(tempDegree.isDisplayed()) {
+				   utils.Reporter.reportStep("Temperature Sensor working fine and shows current temp: "+tempDegree.getText(), "PASS");
+			   }
+		   } catch (Exception e) {
+			   utils.Reporter.reportStep("Temperature Sensor not working. Check Manually once ", "FAIL");
+		}
+	   }
 //	   String description[]={"Searching for sZephyr to establish connection","Please ensure sZephyr is switched ON prior to operating your AC remote","Your AC unit is either in standby or powered OFF at the moment","sZephyr and AC turned ON"};
 	   
 //	   public void checkforDeviceOffstateDescription() {
