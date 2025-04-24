@@ -20,6 +20,8 @@ public class DeviceMenuPage extends GenericWrappers{
 
 	private AndroidDriver driver;
 
+	public String wifiPassword = loadProp("WIFIPASSWORD");
+	
 	// Locate all elements on the page
 
 	@FindBy(xpath = "//android.widget.TextView[@text='']")
@@ -163,7 +165,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Add Router, Choosing to add a router will add a router to your device.\"]")
 	private WebElement addRouterButton;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Remove router\"]")
+	@FindBy(xpath = "//*[@resource-id='RemoveRouterContx']") 
 	private WebElement removeRouterButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
@@ -327,9 +329,8 @@ public class DeviceMenuPage extends GenericWrappers{
 	@SuppressWarnings("deprecation")
 	public void ClickaddrouterButton() {
 //		expWaitforPairing(ClickaddrouterButton);
-		driver.findElement(MobileBy.AndroidUIAutomator(
-			    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Add Router\"));"))
-			    .click();
+		WebElement element = driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Add Router\"))"));
+		element.click();
 //		clickbyXpath(ClickaddrouterButton, " add router button ");
 	}
 	public void checkcontentlowvoltage() {	
@@ -486,14 +487,20 @@ public class DeviceMenuPage extends GenericWrappers{
 		public void removerouter() {
 
 			driver.findElement(MobileBy.AndroidUIAutomator(
-				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Router Details\"));"));
-			if (isElementDisplayed(addRouterButton,"Add router button")) {
+				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Router Details\"))"));
+			if (isElementDisplayedCheck(addRouterButton)) {
 				clickbyXpath(addRouterButton, "Add router button ");
-				enterWiFiPassword("12345678908");
-//				clickAddRouterCheckBox();
+				enterWiFiPassword(wifiPassword);
+				clickAddRouterCheckBox();
 				clickbyXpath(submitBtn, " Enter Button  ");
-			}
-			else if (isElementDisplayed(removeRouterButton,"Remove router  button")) {
+				scrollToText("Remove Router");
+				clickbyXpath(removeRouterButton, "Remove router button ");
+				clickRemoveRouterCancelButton();
+				clickbyXpath(removeRouterButton, "Remove router button ");
+				clickRemoveRouterRemoveButton();
+				
+				clickDevicesettingsbackButton();
+			}else if (isElementDisplayedCheck(removeRouterButton)) {
 				clickbyXpath(removeRouterButton, "Remove router button ");
 				clickRemoveRouterCancelButton();
 				clickbyXpath(removeRouterButton, "Remove router button ");
@@ -511,8 +518,11 @@ public class DeviceMenuPage extends GenericWrappers{
 		
 		public void AddDevicePagedisplayed() {
 
-			if (isElementDisplayed(addDeviceButton,"Add device button")) {
+			if (!isElementDisplayed(addDeviceButton,"Add device button")) {
+				ClickOkButtonBLEpopUP();
+			}else {
 				System.out.println("Add device page displayed");
+				
 			}
 		}
 		

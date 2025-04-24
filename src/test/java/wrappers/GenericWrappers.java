@@ -1004,5 +1004,25 @@ public class GenericWrappers {
 		}
 		return bReturn;
 	}
+ public void killAndReopenApp() {
+		try {
+			if (driver != null) {
+				// Kill the app (terminate it)
+				driver.terminateApp(packages);
+				Reporter.reportStep("The app was killed successfully.", "PASS");
+
+				// Wait for a few seconds before reopening the app
+				Thread.sleep(3000);
+
+				// Reopen the app, it should maintain its previous state (same page)
+				driver.activateApp(packages);
+				Thread.sleep(5000);
+
+				Reporter.reportStep("The app was reopened successfully.", "PASS");
+			}
+		} catch (Exception e) {
+			Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
+		}
+	}
 
 }

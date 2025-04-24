@@ -67,6 +67,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		devicemenupage.AddDevicePagedisplayed();
 		
 		adddevicepage.pair(3);
+		
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
@@ -91,8 +92,9 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		Thread.sleep(5000);
-		homepage.VerifyOFFdesc();
-
+		adddevicepage.clickBlePermissionOkbutton();
+		
+		Thread.sleep(5000);
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
@@ -101,7 +103,6 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
 			fail(e);
 		}

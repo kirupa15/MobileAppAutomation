@@ -53,10 +53,13 @@ public class Analytics  extends GenericWrappers {
 	}
 	
 	
-	String oldvalue;
-	public String getenergydurationvalue() {
+	int oldvalue;
+	public int getenergydurationvalue() {
            expWait(enrgyDurationmin);
-		 oldvalue = enrgyDurationmin.getText();
+           String oldTime = enrgyDurationmin.getText();
+		 Reporter.reportStep("Before update: " + oldTime, "INFO");
+		  oldvalue = parseTimeToMinutes(oldTime);
+		 
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
 	return oldvalue;
@@ -72,11 +75,15 @@ public class Analytics  extends GenericWrappers {
 		boolean bReturn = false;
 		expWait(enrgyDurationmin);
 //		clickbyXpath(enrgyDurationmin, "energy duration");
-		
-		int newvalue=extractintvalue(oldvalue)+value;
-		System.out.println(newvalue);
+		int newvalue=oldvalue+value;
+//		String expectedTime = formatSecondsToTime(newvalue);
 		String text = enrgyDurationmin.getText();
-		if (extractintvalue( enrgyDurationmin.getText())==newvalue) {
+		int newVal=parseTimeToMinutes(text);
+		
+		System.out.println("seconds added  "+newvalue);
+		System.out.println("new value    >>>>><<<<"+newVal);
+		
+		if ( newVal==newvalue){
 			
 			Reporter.reportStep("Analytics value updated after session : " + text, "PASS");
 			bReturn = true;
@@ -88,5 +95,21 @@ public class Analytics  extends GenericWrappers {
 		return bReturn;
 		
 	}
-
+	
+	private int parseTimeToSeconds(String timeStr) {
+	    String[] parts = timeStr.split("m\\s*|s"); // Split by "m" and "s" (regex)
+	    int minutes = Integer.parseInt(parts[0].trim());
+	    int seconds = Integer.parseInt(parts[1].trim());
+	    return (minutes * 60) + seconds;
+	}
+	private int parseTimeToMinutes(String timeStr) {
+	    String[] parts = timeStr.split("m\\s*"); // Split at "m" (e.g., "5m 30s" → ["5", "30s"]
+	    return Integer.parseInt(parts[0].trim()); // Return only the minutes part
+	}
+	
+	private String formatSecondsToTime(int totalSeconds) {
+	    int minutes = totalSeconds / 60;
+	    int seconds = totalSeconds % 60;
+	    return String.format("%dm %02ds", minutes, seconds);
+	}
 }

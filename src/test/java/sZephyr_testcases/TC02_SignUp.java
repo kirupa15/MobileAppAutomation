@@ -27,6 +27,9 @@ public class TC02_SignUp extends MobileAppWrappers {
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
 
+	public String userName=loadProp("USERNAME"); ; 
+	public String emaId=loadProp("EMAILID");
+	
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC02_Sign Up with already registered username";
@@ -59,8 +62,9 @@ public class TC02_SignUp extends MobileAppWrappers {
 		landingpage.clickSignUpLink();
 
 		
-		signuppage.enterUserName("testuser");
-		signuppage.enterEmailId("testuser@gmail.com");
+		
+		signuppage.enterUserName(userName);
+		signuppage.enterEmailId(emaId);
 		signuppage.clickSignUpTCCheckBox();
 		signuppage.clickSignUpButton();
 		//readwrite.write("button_press\r");
@@ -68,7 +72,6 @@ public class TC02_SignUp extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
 			fail(e);
 		}

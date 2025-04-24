@@ -269,7 +269,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"⚠️ Unregistered Device Detected\"]")
 	private WebElement unregisteredpopup;
 
-	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
+	@FindBy(xpath = "//*[@resource-id='menu_bar']")
 	private WebElement menuBarButton;
 	@FindBy(xpath = "//*[@resource-id='PairedGeyser_Img_svg_ble_0_blue']")
 	private WebElement bleConnectivity;
@@ -367,6 +367,12 @@ public class AddDevicePage extends GenericWrappers {
 		}
 
 	}
+	public void waitForNextBtn() {
+		if (isElementDisplayednext(sZephyrInfoNextButton, "sZephyr info Next button ")) {
+			System.out.println("Verifying completed");
+		}
+		
+	}
 
 	public void ClickBrandName() {
 		expWaitforPairing(ClickBrandName);
@@ -394,7 +400,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void ClickCancelButtonBle() throws Exception {
-
+		
 		clickbyXpathwithoutReport(ClickCancelButtonBle, " Cancel Button ");
 
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
@@ -662,19 +668,20 @@ public class AddDevicePage extends GenericWrappers {
 //				nearByPermission();
 
 				Thread.sleep(5000);
+				clickWifiCancelButton();
 //				blepermissionokpopup();
           
-				clickWifiCancelButton();
 				Thread.sleep(30000);
 				
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
-				retrypagecheck(mode);
-				unregistereddevicepopup();
+					blepermissionokpopup();
+					unregistereddevicepopup();
+					retrypagecheck(mode);
 				}
 				break;
 
 			case 2:
-				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOnBT();
 				startPairingButton();
 //				blepermissionokpopup();
@@ -683,17 +690,18 @@ public class AddDevicePage extends GenericWrappers {
 				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
+				Thread.sleep(5000);
 				clickEnterButton();
 				Thread.sleep(30000);
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton))  {
-				retrypagecheck(mode);
-				unregistereddevicepopup();
+					blepermissionokpopup();
+					unregistereddevicepopup();
+					retrypagecheck(mode);
 				}
 				break;
 				
 			case 3:
-				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-				readwrite.write("reboot\r");
+//				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOffBT();
 				startPairingButton();
 //				blepermissionokpopup();
@@ -714,19 +722,20 @@ public class AddDevicePage extends GenericWrappers {
 				Thread.sleep(30000);
 				
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
-					retrypagecheck(mode);
 					unregistereddevicepopup();
+					retrypagecheck(mode);
 				}
+				blepermissionokpopup();
 				
 				break;
 				
 			case 4:
-				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				turnOffBT();
 				startPairingButton();
 				readwrite.write("factory_reset\r");
 				blepermissioncancelpopup();
-				Thread.sleep(3000);
+//				Thread.sleep(3000);
 //				locationPopUpPermission();
 //				nearByPermission();
 
@@ -735,16 +744,20 @@ public class AddDevicePage extends GenericWrappers {
 
 				Thread.sleep(1000 * 10 * 3);
 
-				enterWiFiPassword("12345678911");
+				enterWiFiPassword(wifiPassword);
+				Thread.sleep(5000);
 				clickEnterButton();
 
 				Thread.sleep(5*20*1000);
 				
 				if(!isElementDisplayedCheck(devicewifipop_upOK)) {
-					retrypagecheck(mode);
+
+					blepermissionokpopup();
 					unregistereddevicepopup();
+					retrypagecheck(mode);
 				}
 				connectwithmobilewifipage();
+				waitForNextBtn();
 				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				
 				Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
@@ -756,14 +769,15 @@ public class AddDevicePage extends GenericWrappers {
 				break;
 
 			case 5:
-				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 
 				turnOffBT();
 
 				startPairingButton();
+				readwrite.write("factory_reset\r");
 
 			    blepermissioncancelpopup();
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 //				locationPopUpPermission();
 //				nearByPermission();
 
@@ -778,12 +792,12 @@ public class AddDevicePage extends GenericWrappers {
 //				}
 
 				clickWifiCancelButton();
-				readwrite.write("factory_reset\r");
 				Thread.sleep(5*20*1000);
 
 				if(!isElementDisplayedCheck(devicewifipop_upOK))  {
-					retrypagecheck(mode);
+					blepermissionokpopup();
 					unregistereddevicepopup();
+					retrypagecheck(mode);
 				}
 				connectwithmobilewifipage();
 				
@@ -796,6 +810,7 @@ public class AddDevicePage extends GenericWrappers {
 				Thread.sleep(5000);
 				blepermissionokpopup();
 				turnOnBT();
+				waitForNextBtn();
 				break;
 
 			default:
@@ -975,6 +990,8 @@ public class AddDevicePage extends GenericWrappers {
 		connectivitycheck(remoteConnectivity, "Remote connectivity homepage icon");
 
 	}
+	
+
 public void removingDevice() throws InterruptedException {
 
 	int n=5;
@@ -1016,5 +1033,12 @@ public void removingDevice() throws InterruptedException {
 		
 	}
 }
+public void Turnonmobiledata() throws Exception {
 
+	Runtime.getRuntime().exec("adb shell svc data enable");
+}
+public void TurnOffmobiledata() throws Exception {
+	
+	Runtime.getRuntime().exec("adb shell svc data enable");
+}
 }
