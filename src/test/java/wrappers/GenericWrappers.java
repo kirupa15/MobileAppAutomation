@@ -499,7 +499,7 @@ public class GenericWrappers {
 				Reporter.reportStep("The app was killed successfully.", "PASS");
 
 				// Wait for a few seconds before reopening the app
-				Thread.sleep(3000);
+				Thread.sleep(60000);
 
 				// Reopen the app, it should maintain its previous state (same page)
 				driver.activateApp(packages);
