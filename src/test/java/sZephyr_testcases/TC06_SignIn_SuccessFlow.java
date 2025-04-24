@@ -47,7 +47,7 @@ public class TC06_SignIn_SuccessFlow extends MobileAppWrappers {
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser007@gmail.com");
+		loginpage.enterUserName( loadProp("USERNAME"));
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");

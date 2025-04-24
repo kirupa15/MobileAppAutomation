@@ -46,7 +46,7 @@ public class TC05_SignIn_Valid_User extends MobileAppWrappers {
 		
 		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser@gmail.com");
+		loginpage.enterUserName( loadProp("USERNAME"));
 		loginpage.clickSignInButton();
 		Thread.sleep(3000);
 		otppage.verifyOTPVerificationTitle("OTP Verification");

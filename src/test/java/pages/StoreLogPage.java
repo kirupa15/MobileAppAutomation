@@ -103,7 +103,7 @@ public class StoreLogPage extends GenericWrappers{
 			
 			
 		}
-		public void takeAppLog() throws FileNotFoundException, IOException {
+		public void takeAppLog() throws FileNotFoundException, IOException, Exception {
 			File f= new File(".//sZephyrLOG.txt");
 			if (f.exists()) {
 				f.delete();
@@ -112,7 +112,11 @@ public class StoreLogPage extends GenericWrappers{
 		    storeLogToDownloads();
 		    
 			String projectRoot = System.getProperty("user.dir");
-		    Runtime.getRuntime().exec("adb pull /storage/emulated/0/Download/sZephyrLOG.txt "+projectRoot+"/sZephyrLOG.txt");
+			Thread.sleep(5000);
+			String pullCommand = "adb pull /storage/emulated/0/Download/sZephyrLOG.txt \"" + projectRoot + "\\sZephyrLOG.txt\"";
+			Runtime.getRuntime().exec(pullCommand);
+
+//		    Runtime.getRuntime().exec("adb pull /storage/emulated/0/Download/sZephyrLOG.txt "+projectRoot+"/sZephyrLOG.txt");
 		    if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 				driver.activateApp(packages); 
 			}

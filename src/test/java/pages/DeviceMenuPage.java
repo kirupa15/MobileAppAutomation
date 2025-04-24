@@ -327,9 +327,10 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 	
 	@SuppressWarnings("deprecation")
-	public void ClickaddrouterButton() {
+	public void ClickaddrouterButton() throws Exception {
 //		expWaitforPairing(ClickaddrouterButton);
 		WebElement element = driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Add Router\"))"));
+		Thread.sleep(2000);
 		element.click();
 //		clickbyXpath(ClickaddrouterButton, " add router button ");
 	}

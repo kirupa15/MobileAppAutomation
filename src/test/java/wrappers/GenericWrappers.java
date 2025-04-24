@@ -491,7 +491,7 @@ public class GenericWrappers {
 		}
 	}
 	
-	public void killAndReopenApp(WebElement xpath,String text) {
+	public void killAndReopenApp() {
 		try {
 			if (driver != null) {
 				// Kill the app (terminate it)
@@ -499,11 +499,12 @@ public class GenericWrappers {
 				Reporter.reportStep("The app was killed successfully.", "PASS");
 
 				// Wait for a few seconds before reopening the app
-				Thread.sleep(60000);
+				Thread.sleep(3000);
 
 				// Reopen the app, it should maintain its previous state (same page)
 				driver.activateApp(packages);
-				verifyTextContainsByXpath(xpath, text, "Devicename");
+				
+				
 				Reporter.reportStep("The app was reopened successfully.", "PASS");
 			}
 		} catch (Exception e) {
@@ -511,7 +512,7 @@ public class GenericWrappers {
 		}
 	}
 
-
+	
 	public static void expWaitforFirmware(WebElement xpath) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver,300);
@@ -1004,25 +1005,5 @@ public class GenericWrappers {
 		}
 		return bReturn;
 	}
- public void killAndReopenApp() {
-		try {
-			if (driver != null) {
-				// Kill the app (terminate it)
-				driver.terminateApp(packages);
-				Reporter.reportStep("The app was killed successfully.", "PASS");
-
-				// Wait for a few seconds before reopening the app
-				Thread.sleep(3000);
-
-				// Reopen the app, it should maintain its previous state (same page)
-				driver.activateApp(packages);
-				Thread.sleep(5000);
-
-				Reporter.reportStep("The app was reopened successfully.", "PASS");
-			}
-		} catch (Exception e) {
-			Reporter.reportStep("The app could not be killed and reopened.", "FAIL");
-		}
-	}
-
+ 
 }

@@ -62,8 +62,8 @@ public class MobileAppWrappers extends GenericWrappers {
 //	        System.out.println("Test suite started. Output is redirected to file.");
 	        
 	        //START GETTING APP LOG
-		GetAppLog applog= new GetAppLog();
-		applog.startLogProcess();
+	//	GetAppLog applog= new GetAppLog();
+	//	applog.startLogProcess();
 
 		
 	}
@@ -95,7 +95,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	}
 
 	@AfterMethod
-	public void afterMethod() throws FileNotFoundException, IOException{
+	public void afterMethod() throws Exception{
 //		quitBrowser();
 		
 		LocalDateTime now = LocalDateTime.now();
@@ -127,7 +127,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// Upload files to the new subdirectory
 			uploadFile(appLogPath, testCaseName + "  AppLog.txt");
-			uploadFile(deviceLogPath, testCaseName + "  DeviceLog.txt");
+			uploadFile(deviceLogPath, testCaseName + "  DeviceLog.log");
 
 			String remotefilepath = existingDirectory + newSubDir;
 			String Filename = "/" + testCaseName + ".txt";

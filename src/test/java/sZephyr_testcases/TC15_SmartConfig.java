@@ -57,7 +57,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		
 		
 		///CONNECTIVITY_MOD_3_TC_1///   STA_connectivity establishment
-		adddevicepage.pair(3);	
+		adddevicepage.pair(3);
 		turnOffBT();
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();

@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <packages>
       <package name="sZephyr_testcases"/>
-      <package name="utils"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -88,7 +88,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		devicemenupage.clickLogoutButton();
 		devicemenupage.clickLogoutConfirmationButton();
 		landingpage.clickSignInButton();
-		loginpage.enterUserName("testuser007@gmail.com");
+		loginpage.enterUserName( loadProp("USERNAME"));
 		loginpage.clickSignInButton();
 		otppage.verifyOTPVerificationTitle("OTP Verification");
 		otppage.enterOTPField1("1");

@@ -114,9 +114,12 @@ public class HomePage extends GenericWrappers{
 	 }
 	   public void killandopen() 
 	   {
-		   killAndReopenApp(devicenameDeviceSettingsPage(loadProp("USERNAMEINAPP")), loadProp("USERNAME"));
+		   killAndReopenApp();
 	   }
-	
+	   
+	   public void verifyusername() {
+		   verifyTextContainsByXpath(devicenameDeviceSettingsPage(loadProp("USERNAMEINAPP")), loadProp("USERNAMEINAPP"),"Username");
+	}
 	   public void disableBLE() throws Exception 
 	   {
 		   turnOffBT();

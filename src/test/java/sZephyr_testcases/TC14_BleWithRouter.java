@@ -106,6 +106,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		
 		homepage.killandopen();
 		adddevicepage.ClickOkButtonBLEpopUP();
+		homepage.verifyusername();
 		Thread.sleep(5000);
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
