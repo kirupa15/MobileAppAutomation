@@ -84,7 +84,6 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 			readwrite.closePort();
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
 			fail(e);
 		}

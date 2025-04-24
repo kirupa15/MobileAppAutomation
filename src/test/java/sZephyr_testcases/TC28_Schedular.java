@@ -64,7 +64,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 
 		schedulepage.backToHomepage();
 
-		Thread.sleep(5 * 60 * 1000);// set thread values based on schedule duration kept .
+		Thread.sleep(3 * 60 * 1000);// set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
 		analytics.checkenrgyduration(1);
 		schedulepage.backToHomepage();
@@ -82,7 +82,6 @@ public class TC28_Schedular extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");
 			readwrite.closePort();
 			fail(e);
 		}

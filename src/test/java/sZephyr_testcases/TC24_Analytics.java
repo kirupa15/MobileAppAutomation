@@ -40,10 +40,6 @@ public class TC24_Analytics  extends MobileAppWrappers {
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
-		Thread.sleep(2000);
-		readwrite.write("reboot\r");
-//		Thread.sleep(3000);
-//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
@@ -66,7 +62,6 @@ public class TC24_Analytics  extends MobileAppWrappers {
 		
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");
 			readwrite.closePort();
 			fail(e);
 		}

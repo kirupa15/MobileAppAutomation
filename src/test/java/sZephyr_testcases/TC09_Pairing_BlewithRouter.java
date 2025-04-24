@@ -49,17 +49,13 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 		readwrite.openPort();
-		Thread.sleep(2000);
-		readwrite.write("reboot\r");
-//		Thread.sleep(3000);
-//		readwrite.write("factory_reset\r");
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
@@ -77,7 +73,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
@@ -91,7 +87,6 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		readwrite.closePort();
 		}
 		catch (Exception e) {
-			readwrite.write("factory_reset\r");		
 			readwrite.closePort();
 			fail(e);
 		}

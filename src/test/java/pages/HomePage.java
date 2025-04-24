@@ -1,4 +1,5 @@
 package pages;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,11 +18,18 @@ public class HomePage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sanity07_1\"]")
 	private WebElement devicename;
 	
-	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
+//	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
+//	private WebElement menuBarButton;
+//	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\" and @text=\"\"]")
+//	private WebElement menuBarButtonafterpairing;
+//	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\"]")
+//	private WebElement menuBarButtonafterpairing_withoutconnectivity;
+	@FindBy(xpath = "//*[@resource-id='menu_bar']")
 	private WebElement menuBarButton;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\" and @text=\"\"]")
+	
+	@FindBy(xpath = "//*[@resource-id='menu_bar']")
 	private WebElement menuBarButtonafterpairing;
-	@FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.szephyr:id/undefined\"]")
+	@FindBy(xpath = "//*[@resource-id='menu_bar']")
 	private WebElement menuBarButtonafterpairing_withoutconnectivity;
 	
 	@FindBy(xpath = "//*[@resource-id='menu_icon_accounts']")
@@ -55,6 +63,11 @@ public class HomePage extends GenericWrappers{
 	
 	@FindBy(xpath = "//*[@resource-id='Device_on_off_btn_temp_degree']")
 	private WebElement tempDegree;
+	
+	private WebElement devicenameDeviceSettingsPage(String username) {
+		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
+		
+	}
 	
 	public String userName = loadProp("USERNAME");
 	
@@ -101,7 +114,7 @@ public class HomePage extends GenericWrappers{
 	 }
 	   public void killandopen() 
 	   {
-		   killAndReopenApp(devicename,userName);
+		   killAndReopenApp(devicenameDeviceSettingsPage(loadProp("USERNAMEINAPP")), loadProp("USERNAME"));
 	   }
 	
 	   public void disableBLE() throws Exception 

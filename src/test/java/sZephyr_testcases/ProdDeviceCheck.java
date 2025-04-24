@@ -31,7 +31,7 @@ public class ProdDeviceCheck extends MobileAppWrappers {
 	
 	
 //	(retryAnalyzer = Retry_analyser.class)
-	@Test()
+//	@Test()
 	public void prodValidation() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);

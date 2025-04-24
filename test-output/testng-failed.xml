@@ -8,8 +8,8 @@
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="startTestCase"/>
-          <include name="removerepair"/>
           <include name="afterSuite"/>
+          <include name="removerepair"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
