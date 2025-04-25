@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.google.common.collect.ImmutableMap;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.appmanagement.ApplicationState;
 import wrappers.GenericWrappers;
@@ -27,11 +29,11 @@ public class StoreLogPage extends GenericWrappers{
 	 
 		@FindBy(xpath = "//*[@resource-id='menu_icon_sharelog']")
 		private WebElement shareLogbtn;
-		@FindBy(xpath = "//android.widget.TextView[@resource-id=\"android:id/text1\" and @text=\"File Manager +\"]")
+		@FindBy(xpath = "//android.widget.TextView[@text='File Manager +']")
 		private WebElement FTPicon;
-		@FindBy(xpath = "//android.widget.TextView[@resource-id=\"com.alphainventor.filemanager:id/name\" and @text=\"Downloads\"]")
+		@FindBy(xpath = "//android.widget.TextView[@text='Downloads']")
 		private WebElement FTPDownloads;
-		@FindBy(xpath = "//android.widget.TextView[@resource-id=\"com.alphainventor.filemanager:id/text\" and @text=\"Save\"]")
+		@FindBy(xpath = "//android.widget.TextView[@text='Save']")
 		private WebElement FTPsaveBtn;
 		@FindBy(xpath = "//*[@resource-id='menu_bar']")
 		private WebElement menuBarButton;
@@ -82,16 +84,19 @@ public class StoreLogPage extends GenericWrappers{
 				entervaluebyXpath(otpField4, " OTP Box 4 " , "4");
 				clickbyXpath(submitBtn," Submit Button ");
 				
-				if (isElementDisplayedCheck(locationPopUp)) {
-					clickbyXpath(locationPopUp, "Location pop-up");
-				} else {
-					System.out.println("not asked for precise or approx location");
-
-				}
-				if (isElementDisplayedCheck(nearByPermisson)) {
-
-					clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  ");
-				}
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+//				if (isElementDisplayedCheck(locationPopUp)) {
+//					clickbyXpath(locationPopUp, "Location pop-up");
+//				} else {
+//					System.out.println("not asked for precise or approx location");
+//
+//				}
+//				if (isElementDisplayedCheck(nearByPermisson)) {
+//
+//					clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  ");
+//				}
 				
 				clickbyXpath(menuBarButton, " Menu Bar ");
 				clickbyXpath(shareLogbtn, "ShareLog Button");
