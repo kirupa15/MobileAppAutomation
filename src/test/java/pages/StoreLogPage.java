@@ -67,6 +67,7 @@ public class StoreLogPage extends GenericWrappers{
 		
 		public void storeLogToDownloads() {
 			killAndReopenApp();
+			turnOnBT();
 			if (isElementDisplayedCheck(menuBarButton)) {
 				
 				clickbyXpath(menuBarButton, " Menu Bar ");

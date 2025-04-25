@@ -24,7 +24,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	
 	// Locate all elements on the page
 
-	@FindBy(xpath = "//android.widget.TextView[@text='']")
+	@FindBy(xpath = "//*[@resource-id='menu_icon_deviceSettings']")
 	private WebElement deviceSettingsButton;
 
 	@FindBy(xpath = "//*[@resource-id='DeviceSetting_resetDevice']")

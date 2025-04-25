@@ -1,0 +1,69 @@
+kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"otp":"6217","associative_devices":[],"createdAt":"2025-04-25T13:00:00.974Z","updatedAt":"2025-04-25T13:12:49.111Z","__v":0},"status":"success","message":"user login successfully"}
+
+[D: 25/4/2025 T: 18:42:49:96 PM ]  [Tc:  ] "INFO""API""274" SEND API_ID: 3 Data: User getAssociativeDevices API payload {"user_id":"680b8750274058014ca23a59"}
+
+[D: 25/4/2025 T: 18:42:49:157 PM ]  [Tc:  ] "INFO""API""274" RECV API_ID: 3 Data: User getAssociativeDevices API response {"status":"success","message":"combine user details","user":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}}
+
+[D: 25/4/2025 T: 18:42:49:158 PM ]  [Tc:  ] "[info] ""sign in data "{"status":"success","message":"combine user details","user":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}} 680b8750274058014ca23a59
+
+[D: 25/4/2025 T: 18:42:49:159 PM ]  [Tc:  ] "appStateHandler.js:lineNo login_Data_Handler "{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}"680b8750274058014ca23a59" []
+
+[D: 25/4/2025 T: 18:42:49:179 PM ]  [Tc:  ] "INFO""COMMUNICATION""111" establish communication triggered []
+
+[D: 25/4/2025 T: 18:42:49:181 PM ]  [Tc:  ] "Sign details after modification, user_Details, associative_devices"{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""}[] undefined
+
+[D: 25/4/2025 T: 18:42:49:251 PM ]  [Tc:  ] "Home.js LoginState ==>"{"isLoading":false,"userDetails":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""},"guestDetails":null,"userToken":"680b8750274058014ca23a59","deviceOnOffStatus":true,"deviceConnnectedStatus":false,"associative_devices":[],"language":"English","guestAssociativeDevices":null}undefined undefined
+
+[D: 25/4/2025 T: 18:42:49:251 PM ]  [Tc:  ] "Home.js associative_devices ==> "[]undefined undefined
+
+[D: 25/4/2025 T: 18:42:49:785 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
+
+[D: 25/4/2025 T: 18:42:49:785 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
+
+[D: 25/4/2025 T: 18:42:49:786 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
+
+[D: 25/4/2025 T: 18:42:49:786 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
+
+[D: 25/4/2025 T: 18:44:44:71 PM ]  [Tc:  ] "INFO""GENERAL_INFO""267" Data: FCM-TOKEN Created cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4
+
+[D: 25/4/2025 T: 18:44:44:71 PM ]  [Tc:  ] "INFO""GENERAL_INFO""268" Data: FCM-TOKEN Type string
+
+[D: 25/4/2025 T: 18:44:44:72 PM ]  [Tc:  ] "INFO""GENERAL_INFO""269" Data: Stored FCM-TOKEN Locally Success cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4
+
+[D: 25/4/2025 T: 18:44:44:76 PM ]  [Tc:  ] "Guest associative device data ====> "nullnull null
+
+[D: 25/4/2025 T: 18:44:44:76 PM ]  [Tc:  ] "app.js else block line 565, userToken != null"undefinedundefined undefined
+
+[D: 25/4/2025 T: 18:45:5:764 PM ]  [Tc:  ] "INFO""API""272" SEND API_ID: 202 Data: User login API Payload {"field":"UserName","value":"testuser007"}
+
+[D: 25/4/2025 T: 18:45:5:957 PM ]  [Tc:  ] "INFO""API""272" RECV API_ID: 202 Data: User login API response {"EmailId":"testuser007@gmail.com","MobileNumber":null,"_id":"680b8750274058014ca23a59","message":"found correct user","status":"success"}
+
+[D: 25/4/2025 T: 18:45:18:767 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2612" Data: Retrieved FCM-TOKEN Locally Success cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4
+
+[D: 25/4/2025 T: 18:45:18:790 PM ]  [Tc:  ] "INFO""API""273" SEND API_ID: 203 Data: User otpVerify API payload {"otp1":"1234","_id":"680b8750274058014ca23a59","pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4"}
+
+[D: 25/4/2025 T: 18:45:18:818 PM ]  [Tc:  ] "INFO""API""273" RECV API_ID: 203 Data: User otpVerify API response {"user":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"otp":"4108","associative_devices":[],"createdAt":"2025-04-25T13:00:00.974Z","updatedAt":"2025-04-25T13:15:18.838Z","__v":0},"status":"success","message":"user login successfully"}
+
+[D: 25/4/2025 T: 18:45:18:819 PM ]  [Tc:  ] "INFO""API""274" SEND API_ID: 3 Data: User getAssociativeDevices API payload {"user_id":"680b8750274058014ca23a59"}
+
+[D: 25/4/2025 T: 18:45:18:882 PM ]  [Tc:  ] "INFO""API""274" RECV API_ID: 3 Data: User getAssociativeDevices API response {"status":"success","message":"combine user details","user":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}}
+
+[D: 25/4/2025 T: 18:45:18:884 PM ]  [Tc:  ] "[info] ""sign in data "{"status":"success","message":"combine user details","user":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}} 680b8750274058014ca23a59
+
+[D: 25/4/2025 T: 18:45:18:886 PM ]  [Tc:  ] "appStateHandler.js:lineNo login_Data_Handler "{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"associative_devices":[],"__v":0}"680b8750274058014ca23a59" []
+
+[D: 25/4/2025 T: 18:45:18:910 PM ]  [Tc:  ] "INFO""COMMUNICATION""111" establish communication triggered []
+
+[D: 25/4/2025 T: 18:45:18:913 PM ]  [Tc:  ] "Sign details after modification, user_Details, associative_devices"{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""}[] undefined
+
+[D: 25/4/2025 T: 18:45:18:983 PM ]  [Tc:  ] "Home.js LoginState ==>"{"isLoading":false,"userDetails":{"verified":true,"pushNotifyToken":"cg2GlghGQpSvMp-lhiovM3:APA91bH8jAgtPJ-ON6IPdYCc1jEAz0fM4KTi-YkPLNb9UR09StONeI0r4m54kyrX7sQ_uvS7to-JlYRp_ZZCWHPKFy80KjPt4P3KP2lGdiSBOi8RYzVrAe4","_id":"680b8750274058014ca23a59","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""},"guestDetails":null,"userToken":"680b8750274058014ca23a59","deviceOnOffStatus":true,"deviceConnnectedStatus":false,"associative_devices":[],"language":"English","guestAssociativeDevices":null}undefined undefined
+
+[D: 25/4/2025 T: 18:45:18:983 PM ]  [Tc:  ] "Home.js associative_devices ==> "[]undefined undefined
+
+[D: 25/4/2025 T: 18:45:25:351 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
+
+[D: 25/4/2025 T: 18:45:25:351 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
+
+[D: 25/4/2025 T: 18:45:25:352 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
+
+[D: 25/4/2025 T: 18:45:25:352 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined

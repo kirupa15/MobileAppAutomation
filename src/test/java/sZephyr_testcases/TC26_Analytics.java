@@ -58,7 +58,7 @@ public class TC26_Analytics  extends MobileAppWrappers {
 		Thread.sleep(1*60*1000);
 		readwrite.write("button_press\r");
 		openapp();
-		
+		adddevicepage.ClickOkButtonBLEpopUP();
 		analyticspage.navigateAnalyticsPage();
 		analyticspage.checkenrgyduration(1);
 		
