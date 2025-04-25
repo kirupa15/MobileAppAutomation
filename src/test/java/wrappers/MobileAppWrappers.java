@@ -118,7 +118,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// FTP paths
 			String existingDirectory = "/Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/";
-			String newSubDir = testDescription+" Logs" +formattedDateTime ; // Subdirectory name
+			String newSubDir = testCaseName+" Logs" +formattedDateTime ; // Subdirectory name
 			// Initialize FTP connection
 			FTPUploader(server, port, user, pass);
 
