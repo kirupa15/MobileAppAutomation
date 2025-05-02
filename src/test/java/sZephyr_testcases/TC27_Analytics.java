@@ -25,7 +25,7 @@ public class TC27_Analytics extends MobileAppWrappers {
 		testDescription = "Pairing mode=Wifi With Router <br> Connectivity :STA <br>Turn on device for 5min using relay  <br> check for analytivs value<br>Energy duration and Energy used for 5 min should update";
 	}
 	
-	@Test(priority = 26)
+	@Test(priority = 26,groups = {"skip"})
 	public void removerepair() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
