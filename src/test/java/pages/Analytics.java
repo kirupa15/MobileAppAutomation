@@ -53,16 +53,15 @@ public class Analytics  extends GenericWrappers {
 	}
 	
 	
-	int oldvalue;
-	public int getenergydurationvalue() {
-           expWait(enrgyDurationmin);
-           String oldTime = enrgyDurationmin.getText();
-		 Reporter.reportStep("Before update: " + oldTime, "INFO");
-		  oldvalue = parseTimeToMinutes(oldTime);
-		 
+	String oldvalue;
+	public String getenergydurationvalue() {
+
+        expWait(enrgyDurationmin);
+		 oldvalue = enrgyDurationmin.getText();
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
 	return oldvalue;
+	
 	}
 	
 
@@ -73,17 +72,14 @@ public class Analytics  extends GenericWrappers {
 	}
 	public boolean checkenrgyduration(int value) throws Exception {	
 		boolean bReturn = false;
-		expWait(enrgyDurationmin);
+		expshortWaittwenty(enrgyDurationmin);
 //		clickbyXpath(enrgyDurationmin, "energy duration");
-		int newvalue=oldvalue+value;
-//		String expectedTime = formatSecondsToTime(newvalue);
+		
+		int newvalue=extractMinutes(oldvalue)+value;
+		System.out.println("new value :"+newvalue);
 		String text = enrgyDurationmin.getText();
-		int newVal=parseTimeToMinutes(text);
-		
-		System.out.println("seconds added  "+newvalue);
-		System.out.println("new value    >>>>><<<<"+newVal);
-		
-		if ( newVal==newvalue){
+		System.out.println("after analytics :"+text);
+		if (extractMinutes( enrgyDurationmin.getText())==newvalue) {
 			
 			Reporter.reportStep("Analytics value updated after session : " + text, "PASS");
 			bReturn = true;
@@ -96,20 +92,20 @@ public class Analytics  extends GenericWrappers {
 		
 	}
 	
-	private int parseTimeToSeconds(String timeStr) {
-	    String[] parts = timeStr.split("m\\s*|s"); // Split by "m" and "s" (regex)
-	    int minutes = Integer.parseInt(parts[0].trim());
-	    int seconds = Integer.parseInt(parts[1].trim());
-	    return (minutes * 60) + seconds;
-	}
-	private int parseTimeToMinutes(String timeStr) {
-	    String[] parts = timeStr.split("m\\s*"); // Split at "m" (e.g., "5m 30s" → ["5", "30s"]
-	    return Integer.parseInt(parts[0].trim()); // Return only the minutes part
-	}
-	
-	private String formatSecondsToTime(int totalSeconds) {
-	    int minutes = totalSeconds / 60;
-	    int seconds = totalSeconds % 60;
-	    return String.format("%dm %02ds", minutes, seconds);
-	}
+//	private int parseTimeToSeconds(String timeStr) {
+//	    String[] parts = timeStr.split("m\\s*|s"); // Split by "m" and "s" (regex)
+//	    int minutes = Integer.parseInt(parts[0].trim());
+//	    int seconds = Integer.parseInt(parts[1].trim());
+//	    return (minutes * 60) + seconds;
+//	}
+//	private int parseTimeToMinutes(String timeStr) {
+//	    String[] parts = timeStr.split("m\\s*"); // Split at "m" (e.g., "5m 30s" → ["5", "30s"]
+//	    return Integer.parseInt(parts[0].trim()); // Return only the minutes part
+//	}
+//	
+//	private String formatSecondsToTime(int totalSeconds) {
+//	    int minutes = totalSeconds / 60;
+//	    int seconds = totalSeconds % 60;
+//	    return String.format("%dm %02ds", minutes, seconds);
+//	}
 }

@@ -407,6 +407,19 @@ public class GenericWrappers {
 		System.out.println("Extracted integer value: " + extractedValue);
 		return extractedValue;
 	}
+	public static int extractMinutes(String timeText) {
+	    // Regular expression to find digits followed by 'm'
+	    java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("(\\d+)m").matcher(timeText);
+	    
+	    if (matcher.find()) {
+	        // group(1) is the captured number before 'm'
+	        return Integer.parseInt(matcher.group(1));
+	    } else {
+	        // If 'm' not found, you can decide what to return (0 or -1)
+	        return 0;
+	    }
+	}
+
 
 	public String randomnumbers(int num) {
 
