@@ -36,10 +36,12 @@ import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.appmanagement.ApplicationState;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.model.Log;
 import com.google.common.collect.ImmutableMap;
 import org.testng.Assert;
 
+import utils.ADBconnections;
 import utils.Reporter;
 import utils.logReadandWrite;
 
@@ -114,6 +116,9 @@ public class GenericWrappers {
 				System.out.println("App is not installed. Installing and launching...");
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(appPackage); // Launch the app after installation
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
+				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
 			}
 			
 			if (driver.isAppInstalled(appPackage)) {
@@ -405,6 +410,19 @@ public class GenericWrappers {
 		System.out.println("Extracted integer value: " + extractedValue);
 		return extractedValue;
 	}
+	public static int extractMinutes(String timeText) {
+	    // Regular expression to find digits followed by 'm'
+	    java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("(\\d+)m").matcher(timeText);
+	    
+	    if (matcher.find()) {
+	        // group(1) is the captured number before 'm'
+	        return Integer.parseInt(matcher.group(1));
+	    } else {
+	        // If 'm' not found, you can decide what to return (0 or -1)
+	        return 0;
+	    }
+	}
+
 
 	public String randomnumbers(int num) {
 
@@ -601,7 +619,7 @@ public class GenericWrappers {
 					enterValueByXpathwifipage(enterPasswordField, "Wi-Fi password", wifiPassword);
 
 					// Click on the connect button
-					WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@resource-id='android:id/button1']")); 
+					WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@text=\"Connect\"]")); 
 					// Replace with the actual XPath
 					if (isElementDisplayedCheck(connectButton)) {
 						
@@ -1005,5 +1023,34 @@ public class GenericWrappers {
 		}
 		return bReturn;
 	}
+ 
+ public void ABDconnection() {
+		try {
+         if (!ADBconnections.isDeviceConnected()) {
+        	 String errorMsg = "No ADB devices connected. Test execution stopped.";
+             System.out.println(errorMsg);
+             if (test != null) {
+                Reporter.reportStep("No ADB devices connected. Test execution stopped.", "WARNING");
+                Reporter.endResult();
+            } 
+         	throw new RuntimeException(errorMsg);
+         } else {
+             List<String> devices = ADBconnections.getConnectedDevices();
+             System.out.println(devices);
+             if (test != null) {
+                 Reporter.reportStep("Connected devices: " + String.join(", ", devices), "INFO");
+             } 
+         }
+     } catch (Exception e) {
+    	 if (test != null) {
+             Reporter.reportStep(e.getMessage(), "WARNING");
+             Reporter.endResult();
+         } 
+         throw new RuntimeException("ADB device check failed", e);
+         
+     }
+ }
+	
+ 
  
 }

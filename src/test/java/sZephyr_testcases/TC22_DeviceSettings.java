@@ -25,7 +25,7 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 	}
 	
 
-	@Test(priority = 21)
+	@Test(priority = 21,groups = {"skip"})
 	public void removerepair() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();

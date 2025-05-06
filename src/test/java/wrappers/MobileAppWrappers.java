@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -15,7 +16,11 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import pages.StoreLogPage;
+import utils.ADBconnections;
 import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
 import utils.GetAppLog;
@@ -28,6 +33,11 @@ public class MobileAppWrappers extends GenericWrappers {
 	protected static String testDescription;
 	private PrintStream originalOut;
     private PrintStream fileOut;
+    
+    
+    
+    
+    
     String baseRemotePath = loadProp("BASEREMOTEPATH");  // Base FTP directory path
     String localDirectory =loadProp("LOCALAPPPATH") ;  // Local directory to save file
     String newFileName = loadProp("NEWFILENAME");  // New file name
@@ -41,6 +51,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		
+//		ADBconnections AdbUtils = new ADBconnections();
 		
 		// Enable below two lines of code to Get app from FTP
 //		FTPUploader(server, port, user, pass);
@@ -63,10 +74,13 @@ public class MobileAppWrappers extends GenericWrappers {
 	        
 	        //START GETTING APP LOG
 	//	GetAppLog applog= new GetAppLog();
-	//	applog.startLogProcess();
-
+//		applog.startLogProcess();
+		
+		ABDconnection();
 		
 	}
+		
+
 
 	@BeforeTest
 	public void beforeTest() throws FileNotFoundException, IOException, Exception{
@@ -118,7 +132,7 @@ public class MobileAppWrappers extends GenericWrappers {
 
 			// FTP paths
 			String existingDirectory = "/Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/";
-			String newSubDir = testDescription+" Logs" +formattedDateTime ; // Subdirectory name
+			String newSubDir = testCaseName+" Logs" +formattedDateTime ; // Subdirectory name
 			// Initialize FTP connection
 			FTPUploader(server, port, user, pass);
 

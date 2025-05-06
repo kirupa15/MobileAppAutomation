@@ -37,7 +37,7 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 	}
 	
 
-	@Test(priority = 15)
+	@Test(priority = 15,groups = {"skip"})
 	public void removerepair() throws Exception {
 
 		

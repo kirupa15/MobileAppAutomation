@@ -15,8 +15,8 @@ public class HomePage extends GenericWrappers{
 
 	@FindBy(xpath="//*[@resource-id='home_main_on_off_swch']")
 			private WebElement deviceONOFFButton;
-	@FindBy(xpath = "//android.widget.TextView[@text=\"sanity07_1\"]")
-	private WebElement devicename;
+//	@FindBy(xpath = "//android.widget.TextView[@text=\"sanity07_1\"]")
+//	private WebElement devicename;
 	
 //	@FindBy(xpath = "//*[@resource-id='Options_Icon']")
 //	private WebElement menuBarButton;

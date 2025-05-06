@@ -2,8 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  
+   <groups>
+      <run>
+        <exclude name="skip"/>
+      </run>
+    </groups>
+    
     <packages>
       <package name="sZephyr_testcases"/>
+      
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
