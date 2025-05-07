@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -16,7 +17,7 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 	HomePage homepage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-	
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -37,6 +38,7 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
+		logpage= new StoreLogPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		
@@ -62,7 +64,11 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 			homepage.clickMenuBarButton();
 			devicemenupage.clickDeviceSettingsButton();
 			devicemenupage.clickDurationForONButton();
-			devicemenupage.clickDeviceSettingsBackButton();
+			adddevicepage.Hourstextbox("1");
+		    adddevicepage.Minutestextbox("20");
+		    adddevicepage.ClickokdurationON();
+		    
+//			devicemenupage.clickDeviceSettingsBackButton();
 			devicemenupage.clickDeviceSettingsBackButton();
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
@@ -76,6 +82,7 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

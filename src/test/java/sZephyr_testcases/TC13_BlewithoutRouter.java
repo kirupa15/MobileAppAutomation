@@ -16,6 +16,7 @@ import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import pages.Szephyr_info_Page;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
@@ -32,6 +33,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
 	SignUpPage signuppage;	
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -51,7 +53,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
-		
+		logpage= new StoreLogPage(driver);
 		//CONNECTIVITY_MOD_1_TC_01//////////BLE connectivity establishment//////////////////////////////////////
 	
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
@@ -135,6 +137,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

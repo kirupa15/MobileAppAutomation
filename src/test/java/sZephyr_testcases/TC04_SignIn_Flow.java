@@ -12,6 +12,7 @@ import pages.LandingPage;
 import pages.SignInPage;
 import pages.OtpPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -23,6 +24,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 	OtpPage otppage;
 	SignUpPage signuppage;
 	AddDevicePage adddevicepage;
+	StoreLogPage logpage;
 
 	@BeforeClass
 	public void startTestCase() {
@@ -39,6 +41,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
 		adddevicepage=new AddDevicePage(driver);
+		logpage= new StoreLogPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -55,6 +58,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

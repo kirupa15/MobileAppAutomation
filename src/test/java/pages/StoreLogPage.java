@@ -3,6 +3,9 @@ package pages;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.PrintStream;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +15,7 @@ import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.appmanagement.ApplicationState;
+import utils.Reporter;
 import wrappers.GenericWrappers;
 
 public class StoreLogPage extends GenericWrappers{
@@ -66,8 +70,8 @@ public class StoreLogPage extends GenericWrappers{
 			private WebElement nearByPermisson;
 		
 		public void storeLogToDownloads() {
-			killAndReopenApp();
 			turnOnBT();
+			killAndReopenApp();
 			if (isElementDisplayedCheck(menuBarButton)) {
 				
 				clickbyXpath(menuBarButton, " Menu Bar ");
@@ -129,4 +133,66 @@ public class StoreLogPage extends GenericWrappers{
 			}
 		
 		
+		
+		protected static String testCaseName;
+		protected static String testDescription;
+  
+	    
+	    
+	    
+	    String baseRemotePath = loadProp("BASEREMOTEPATH");  // Base FTP directory path
+	    String localDirectory =loadProp("LOCALAPPPATH") ;  // Local directory to save file
+	    String newFileName = loadProp("NEWFILENAME");  // New file name
+	    
+	    
+	    String server = "192.168.10.34";//192.168.10.34
+		int port = 21;
+		String user = "qa_usr";
+		String pass = "nw9f2hgo@123";
+		
+		public void CollectLogOnFailure() throws FileNotFoundException, IOException, Exception {
+
+		
+		LocalDateTime now = LocalDateTime.now();
+
+        // Format date and time
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        // Convert to string and print
+        String formattedDateTime = now.format(formatter);
+        
+		takeAppLog();
+		try {
+		    
+			// FTP server credentials
+
+			// Local log files
+			String appLogPath = "./sZephyrLOG.txt";
+			String deviceLogPath = "./device.log";
+
+			// FTP paths
+			String existingDirectory = "/Internal_Project/FULL_VALIDATION_PACKAGES_LOGS/LOGS/2024/Automation_Logs/";
+			String newSubDir = testCaseName+" Logs" +formattedDateTime ; // Subdirectory name
+			// Initialize FTP connection
+			FTPUploader(server, port, user, pass);
+
+			// Create new subdirectory inside the existing directory
+			createAndNavigateToSubdirectory(existingDirectory, newSubDir);
+
+			// Upload files to the new subdirectory
+			uploadFile(appLogPath, testCaseName + "  AppLog.txt");
+			uploadFile(deviceLogPath, testCaseName + "  DeviceLog.log");
+
+			String remotefilepath = existingDirectory + newSubDir;
+			String Filename = "/" + testCaseName + ".txt";
+			Reporter.reportStep(" FTP Path : " + remotefilepath + "<br>" + "Device Log File name:" + Filename, "INFO");
+
+			// Disconnect from FTP server
+			disconnect();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+
+		}
+		}
 }

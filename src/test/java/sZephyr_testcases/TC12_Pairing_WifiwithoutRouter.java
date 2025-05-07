@@ -11,6 +11,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -22,7 +23,8 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
-
+	StoreLogPage logpage;
+	
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC12 - Pairing in Wifi without router Mode";
@@ -39,7 +41,7 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-
+		logpage= new StoreLogPage(driver);
 	 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -85,6 +87,7 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

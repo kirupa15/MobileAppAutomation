@@ -14,6 +14,7 @@ import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import pages.Szephyr_info_Page;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
@@ -30,6 +31,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
 	SignUpPage signuppage;
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -51,6 +53,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		otppage = new OtpPage(driver);
 		ota_Status_monitor=new OTA_Status_monitor(driver);
 		signuppage = new SignUpPage(driver);
+		logpage= new StoreLogPage(driver);
 		
 		landingpage.clickSignInButton();
 		signuppage.enterEmailId("varadharajanram95@gmail.com");
@@ -107,6 +110,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	
