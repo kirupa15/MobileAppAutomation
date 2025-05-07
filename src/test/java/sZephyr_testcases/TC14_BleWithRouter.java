@@ -63,6 +63,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
+		
 		adddevicepage.bleConnectivityCheck();
 		
 		for(int i=0;i<2;i++) {

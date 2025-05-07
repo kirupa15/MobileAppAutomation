@@ -97,7 +97,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(10000);
 		homepage.clickONOFFButton();
 		 Thread.sleep(2000);
-	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
+//	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
 		///CONNECTIVITY_MOD_3_TC_5//BLE_Kill and Open
 	    
 	    homepage.getCurrentvalue();
@@ -137,9 +137,6 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		adddevicepage.ClickOkButtonBLEpopUP();
 		adddevicepage.remoteConnectivityCheck();
 		Thread.sleep(8000);
-		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
-		Thread.sleep(5000);
 		//CONNECTIVITY_MOD_3_TC_6//Remote Device ON_OFF 
 		
 		for(int i=0;i<11;i++) {

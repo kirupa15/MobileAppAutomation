@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sZephyr_testcases.TC02_SignUp">
+      <class name="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
@@ -11,10 +11,10 @@
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="removerepair"/>
           <include name="beforeSuite"/>
-          <include name="signUp"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC02_SignUp -->
+      </class> <!-- sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

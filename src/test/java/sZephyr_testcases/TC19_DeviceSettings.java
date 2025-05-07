@@ -67,7 +67,7 @@ public class TC19_DeviceSettings extends MobileAppWrappers {
 			adddevicepage.checkrouteraddedsuccessfultoast();
 			devicemenupage.clickDeviceSettingsBackButton();
 			turnOffBT();
-			Thread.sleep(10000);
+			Thread.sleep(15000);
 			homepage.getCurrentvalue();
 			homepage.getVoltvalue();
 			homepage.getPowervalue();

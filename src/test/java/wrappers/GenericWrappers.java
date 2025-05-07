@@ -111,9 +111,11 @@ public class GenericWrappers {
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
 				System.out.println("App is already installed. Launching the app...");
+				turnOnBT();
 				driver.activateApp(appPackage); // Open the app
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
+				turnOnBT();
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(appPackage); // Launch the app after installation
 				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
@@ -446,7 +448,7 @@ public class GenericWrappers {
 		return randomString;
 	}
 
-	public boolean turnOnBT() {
+	public static boolean turnOnBT() {
 		boolean bReturn = false;
 
 		try {

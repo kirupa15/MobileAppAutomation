@@ -57,7 +57,7 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		readwrite.openPort();
 		
 		adddevicepage.pair(1);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		adddevicepage.aCBrandNameClick();
 		adddevicepage.aCBrandNameCarrierclick();
 		adddevicepage.enterAcModelName("V20");

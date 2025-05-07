@@ -44,6 +44,7 @@ public class TC26_Analytics  extends MobileAppWrappers {
 		try {
 		readwrite.openPort();
 		
+		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.checkdevicedetailstoast();

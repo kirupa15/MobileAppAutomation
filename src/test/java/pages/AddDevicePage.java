@@ -531,7 +531,7 @@ public class AddDevicePage extends GenericWrappers {
 	public void aCBrandNameCarrierclick()
 
 	{
-		expWaitforPairing(ACBrandNameClick);
+		expWaitforPairing(ACBrandNameCarrier);
 		clickbyXpath(ACBrandNameCarrier, "Acbrandname");
 	}
 
