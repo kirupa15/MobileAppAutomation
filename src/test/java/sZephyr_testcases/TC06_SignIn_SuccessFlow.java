@@ -63,7 +63,7 @@ public class TC06_SignIn_SuccessFlow extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

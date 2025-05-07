@@ -66,7 +66,7 @@ public class TC27_Analytics extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

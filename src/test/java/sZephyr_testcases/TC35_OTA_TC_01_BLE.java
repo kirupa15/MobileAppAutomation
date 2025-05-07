@@ -110,7 +110,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	

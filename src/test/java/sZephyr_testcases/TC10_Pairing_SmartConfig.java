@@ -107,7 +107,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

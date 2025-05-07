@@ -134,8 +134,8 @@ public class StoreLogPage extends GenericWrappers{
 		
 		
 		
-		protected static String testCaseName;
-		protected static String testDescription;
+//		protected static String testCaseName;
+//		protected static String testDescription;
   
 	    
 	    
@@ -150,7 +150,7 @@ public class StoreLogPage extends GenericWrappers{
 		String user = "qa_usr";
 		String pass = "nw9f2hgo@123";
 		
-		public void CollectLogOnFailure() throws FileNotFoundException, IOException, Exception {
+		public void CollectLogOnFailure(String testCaseName,String testDescription) throws FileNotFoundException, IOException, Exception {
 
 		
 		LocalDateTime now = LocalDateTime.now();

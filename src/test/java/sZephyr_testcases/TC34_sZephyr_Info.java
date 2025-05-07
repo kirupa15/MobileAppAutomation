@@ -97,7 +97,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

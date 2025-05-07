@@ -46,7 +46,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 		testDescription = "Change language and check changed language ,before removing device try to delete account then try to remove device and delete account";
 	}
 
-
+	
 	@Test(priority = 0)
 	public void removerepair() throws Exception {
 		initAndriodDriver();
@@ -87,7 +87,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			logpage.CollectLogOnFailure();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}
