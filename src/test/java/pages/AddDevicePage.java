@@ -615,7 +615,7 @@ public class AddDevicePage extends GenericWrappers {
 		// Backgrounds app for 10 seconds
 		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 
-		turnOnBT();
+//		turnOnBT();
 		/*
 		 * if (isElementDisplayedCheck(blePermissionOkButton)) {
 		 * clickbyXpath(blePermissionOkButton, "Allowing Ble permission pop-up");
@@ -649,7 +649,7 @@ public class AddDevicePage extends GenericWrappers {
 //			if (isElementDisplayedCheck(devicepermission)) {
 //				clickbyXpath(devicepermission, "Device permission pop-up");
 //			}
-		turnOnBT();
+//		turnOnBT();
 		/*
 		 * if (isElementDisplayedCheck(blePermissionOkButton)) { clickbyXpath(blePermissionOkButton,
 		 * "Allowing Ble permission pop-up"); }
@@ -675,7 +675,7 @@ public class AddDevicePage extends GenericWrappers {
 
 			switch (mode) {
 			case 1:
-				turnOnBT();
+//				turnOnBT();
 				startPairingButton();
 				readwrite.write("factory_reset\r");
 //				blepermissionokpopup();
@@ -697,7 +697,7 @@ public class AddDevicePage extends GenericWrappers {
 
 			case 2:
 //				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-				turnOnBT();
+//				turnOnBT();
 				startPairingButton();
 //				blepermissionokpopup();
 //				locationPopUpPermission();
