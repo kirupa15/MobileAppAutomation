@@ -12,6 +12,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import utils.GetAppLog;
 import utils.PassSTComment;
 import utils.logReadandWrite;
@@ -26,6 +27,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
+	StoreLogPage logpage;
 
 	public String userName=loadProp("USERNAME"); ; 
 	public String emaId=loadProp("EMAILID");
@@ -45,6 +47,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		landingpage = new LandingPage(driver);
 		otppage = new OtpPage(driver);
 		signuppage =new SignUpPage(driver);
+		logpage= new StoreLogPage(driver);
 //		GetAppLog applog= new GetAppLog();
 //		applog.startLogProcess();
 		
@@ -73,6 +76,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 

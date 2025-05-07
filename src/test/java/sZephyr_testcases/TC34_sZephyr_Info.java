@@ -12,6 +12,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -24,7 +25,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
-
+	StoreLogPage logpage;
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC34_Szephyr Info check";
@@ -47,7 +48,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-
+		logpage= new StoreLogPage(driver);
 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -96,6 +97,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

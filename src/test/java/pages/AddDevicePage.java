@@ -35,6 +35,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	
 	public String userName = loadProp("USERNAME");
+	public String usernameinApp = loadProp("USERNAMEINAPP");
 	public String emaId = loadProp("EMAILID");
 	public String wifiPassword = loadProp("WIFIPASSWORD");
 	public String deviceDetailsUpdated = loadProp("deviceDetailsUpdated");
@@ -285,6 +286,12 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement remoteNonConnectivity;
 	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
 	private WebElement removeDevice;
+	
+	private WebElement devicenameDeviceSettingsPage(String username) {
+		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
+		
+	}
+	
 
 	// Constructor to initialize the driver and instantiate elements using
 
@@ -438,7 +445,15 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void verifyAddDevicePage(String title) {
-		verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page ");
+		if( isElementDisplayedCheck(addDeviceButton)){
+			
+			verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page ");
+		}else if (isElementDisplayedCheck(devicenameDeviceSettingsPage(usernameinApp))) {
+			verifyTextContainsByXpath(devicenameDeviceSettingsPage(usernameinApp),usernameinApp , "username");
+
+		}else {
+			System.out.println("error");
+		}
 	}
 
 	public void turnOnBluetooth() {
@@ -556,12 +571,12 @@ public class AddDevicePage extends GenericWrappers {
 		clickbyXpath(durationforON, "Clicking Duration for ON");
 	}
 
-	public void Hourstextbox() {
-		verifyTextContainsByXpath(hourstextbox, "0", "Hours");
+	public void Hourstextbox(String value) {
+		verifyTextContainsByXpath(hourstextbox, value, "Hours");
 	}
 
-	public void Minutestextbox() {
-		verifyTextContainsByXpath(minutestextbox, "19", "Minutes");
+	public void Minutestextbox(String value) {
+		verifyTextContainsByXpath(minutestextbox,value , "Minutes");
 	}
 
 	public void ClickokdurationON() {

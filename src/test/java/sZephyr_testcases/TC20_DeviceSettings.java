@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
 import pages.HomePage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -16,6 +17,7 @@ public class TC20_DeviceSettings extends MobileAppWrappers {
 	HomePage homepage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
+	StoreLogPage logpage;
 	
 	
 	@BeforeClass
@@ -35,7 +37,7 @@ public class TC20_DeviceSettings extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		
+		logpage= new StoreLogPage(driver);
 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -86,6 +88,7 @@ public class TC20_DeviceSettings extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

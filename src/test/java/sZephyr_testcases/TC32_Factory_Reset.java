@@ -12,6 +12,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -24,7 +25,8 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
 	SignUpPage signuppage;
-
+	StoreLogPage logpage;
+	
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC32_FactoryReset check";
@@ -45,6 +47,7 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
+		logpage= new StoreLogPage(driver);
 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -74,6 +77,7 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

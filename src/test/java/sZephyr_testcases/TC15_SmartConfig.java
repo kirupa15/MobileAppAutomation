@@ -13,6 +13,7 @@ import pages.OTA_Status_monitor;
 import pages.OtpPage;
 import pages.SignInPage;
 import pages.SignUpPage;
+import pages.StoreLogPage;
 import pages.Szephyr_info_Page;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
@@ -29,7 +30,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 	Szephyr_info_Page szephyrinfoPage;
 	OTA_Status_monitor ota_Status_monitor;
 	SignUpPage signinpage;
-		
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -49,7 +50,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
-		
+		logpage= new StoreLogPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -160,6 +161,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

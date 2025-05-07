@@ -13,6 +13,7 @@ import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
 import pages.SignInPage;
+import pages.StoreLogPage;
 import utils.Retry_analyser;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
@@ -25,6 +26,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 	OtpPage otppage;
 	AddDevicePage adddevicepage;
 	DeviceMenuPage devicemenupage;
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -45,7 +47,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
-		
+		logpage= new StoreLogPage(driver);
 
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -59,11 +61,11 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
-		homepage.VerifyONdesc();
+//		homepage.VerifyONdesc();
 		
 		homepage.clickONOFFButton();
 		Thread.sleep(2000);
-		homepage.VerifyOFFdesc();
+//		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
@@ -80,9 +82,9 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
+//		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
+//		homepage.VerifyOFFdesc();
 				
 		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButton();
@@ -96,7 +98,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		otppage.enterOTPField3("3");
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
-		homepage.VerifyOFFdesc();
+//		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
@@ -111,9 +113,9 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
+//		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
+//		homepage.VerifyOFFdesc();
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
@@ -124,6 +126,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}

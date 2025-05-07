@@ -15,6 +15,7 @@ import pages.LandingPage;
 import pages.OtpPage;
 import pages.Schedularpage;
 import pages.SignInPage;
+import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -28,6 +29,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 	DeviceMenuPage devicemenupage;
 	Schedularpage schedulepage;
 	Analytics analytics;
+	StoreLogPage logpage;
 	
 	@BeforeClass
 	public void startTestCase() {
@@ -47,6 +49,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 		devicemenupage= new DeviceMenuPage(driver);
 		schedulepage=new Schedularpage(driver);
 		analytics=new Analytics(driver);
+		logpage= new StoreLogPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -83,6 +86,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 		}
 		catch (Exception e) {
 			readwrite.closePort();
+			logpage.CollectLogOnFailure();
 			fail(e);
 		}
 	}
