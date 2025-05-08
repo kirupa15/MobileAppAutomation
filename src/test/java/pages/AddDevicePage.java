@@ -675,7 +675,7 @@ public class AddDevicePage extends GenericWrappers {
 
 			switch (mode) {
 			case 1:
-//				turnOnBT();
+				turnOnBT();
 				startPairingButton();
 				readwrite.write("factory_reset\r");
 //				blepermissionokpopup();
@@ -697,7 +697,7 @@ public class AddDevicePage extends GenericWrappers {
 
 			case 2:
 //				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-//				turnOnBT();
+				turnOnBT();
 				startPairingButton();
 //				blepermissionokpopup();
 //				locationPopUpPermission();

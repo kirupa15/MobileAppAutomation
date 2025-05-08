@@ -56,6 +56,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 
 			adddevicepage.pair(1);
 			//adddevicepage.ClickOkButtonBLEpopUP();
+			Thread.sleep(10000);
 			adddevicepage.ClickBrandName();
 			adddevicepage.ClickSelectName();
 			adddevicepage.enterAcModelName("G20");

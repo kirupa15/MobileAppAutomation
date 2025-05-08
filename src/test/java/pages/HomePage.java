@@ -85,12 +85,6 @@ public class HomePage extends GenericWrappers{
 		if (isiconDisplayed(menuBarButtonafterpairing, "menu bar After Pairing displayed")) {
 			clickbyXpath(menuBarButtonafterpairing, " Menu Bar ");
 			}
-		else if (isiconDisplayed(menuBarButton, "menu bar element displayed")) {
-			clickbyXpath(menuBarButton, " Menu Bar ");
-			}else if (isiconDisplayed(menuBarButtonafterpairing_withoutconnectivity, "without connectivity menu bar icon")) {
-				clickbyXpath(menuBarButtonafterpairing_withoutconnectivity, " Menu Bar ");
-				
-			}
 	
 	}
 	
