@@ -837,8 +837,7 @@ public class AddDevicePage extends GenericWrappers {
 		} else {
 
 			System.out.println("Device is already in paired state removing the device");
-
-			readwrite.write("factory_reset\r");
+			blepermissionokpopup();
 
 			homepage.clickMenuBarButtonafterpairing();
 			devicemenupage.clickMenuBarRemoveDevice();
