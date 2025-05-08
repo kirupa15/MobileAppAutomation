@@ -683,7 +683,7 @@ public class AddDevicePage extends GenericWrappers {
 //				locationPopUpPermission();
 //				nearByPermission();
 
-				Thread.sleep(5000);
+				Thread.sleep(10000);
 				clickWifiCancelButton();
 //				blepermissionokpopup();
           
@@ -706,7 +706,7 @@ public class AddDevicePage extends GenericWrappers {
 				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
-				Thread.sleep(5000);
+				Thread.sleep(10000);
 				clickEnterButton();
 				Thread.sleep(30000);
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton))  {
@@ -726,7 +726,7 @@ public class AddDevicePage extends GenericWrappers {
 
 				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
-				Thread.sleep(5000);
+				Thread.sleep(10000);
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
 				
