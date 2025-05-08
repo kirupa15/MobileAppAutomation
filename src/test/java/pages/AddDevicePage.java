@@ -83,7 +83,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text='Submit']")
 	private WebElement submitBtn;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\", Select Brand\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text='Select Brand']")
 	private WebElement ClickBrandName;
 
 	@FindBy(xpath = "//*[@resource-id='Add_Device_YourDevice']")
@@ -366,12 +366,13 @@ public class AddDevicePage extends GenericWrappers {
 	public void clickNextButtonsZephyrInfo() {
 		if (isElementDisplayednext(sZephyrInfoNextButton, "sZephyr info Next button ")) {
 			clickbyXpath(sZephyrInfoNextButton, " Next Button ");
-		} else {
-			driver.activateApp(loadProp("APP_PACKAGE"));
-			expWaitforPairing(sZephyrInfoNextButton);
-			clickbyXpath(sZephyrInfoNextButton, " Next Button ");
-
-		}
+		} 
+//		else {
+//			driver.activateApp(loadProp("APP_PACKAGE"));
+//			expWaitforPairing(sZephyrInfoNextButton);
+//			clickbyXpath(sZephyrInfoNextButton, " Next Button ");
+//
+//		}
 
 	}
 	public void waitForNextBtn() {
