@@ -11,18 +11,18 @@
       </run>
     </groups>
     <classes>
-      <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
+      <class name="sZephyr_testcases.TC02_SignUp">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="startTestCase"/>
           <include name="afterSuite"/>
-          <include name="removerepair"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="signUp"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC08_Pairing_BlewithoutRouter -->
+      </class> <!-- sZephyr_testcases.TC02_SignUp -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

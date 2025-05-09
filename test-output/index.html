@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC08_Pairing_BlewithoutRouter" class="method navigator-link" hash-for-method="removerepair">removerepair</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC02_SignUp" class="method navigator-link" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content skipped suite-Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC08_Pairing_BlewithoutRouter" class="method navigator-link" hash-for-method="removerepair">removerepair</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC02_SignUp" class="method navigator-link" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
@@ -135,36 +135,81 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</span>
+              <span class="class-name">sZephyr_testcases.TC02_SignUp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="removerepair">
-                  </a> <!-- removerepair -->
-                  <span class="method-name">removerepair</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The application at &apos;C:\Users\QA Automation\Desktop\APK\Android_SZephyr.apk&apos; does not exist or is not accessible
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.98&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava T2, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 14, udid: d26694530621}, deviceApiLevel: 31, deviceManufacturer: Xiaomi, deviceModel: M2010J19SI, deviceName: d26694530621, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: d26694530621, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 78, takesScreenshot: true, udid: d26694530621, viewportRect: {height: 2262, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 7a5af2c5-39ca-4d0f-9b60-a41ddacc6d18
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+    at getResponseForW3CError (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
-	at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:74)
-	at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:59)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:119)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:91)
+	at sZephyr_testcases.TC02_SignUp.signUp(TC02_SignUp.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 41 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+    at getResponseForW3CError (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 43 more
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -173,36 +218,81 @@ Session ID: 7a5af2c5-39ca-4d0f-9b60-a41ddacc6d18
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</span>
+              <span class="class-name">sZephyr_testcases.TC02_SignUp</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="removerepair">
-                  </a> <!-- removerepair -->
-                  <span class="method-name">removerepair</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The application at &apos;C:\Users\QA Automation\Desktop\APK\Android_SZephyr.apk&apos; does not exist or is not accessible
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.98&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {automationName: uiautomator2, databaseEnabled: false, desired: {automationName: uiautomator2, deviceName: lava T2, ignoreHiddenApiPolicyError: true, newCommandTimeout: 999999, platformName: android, platformVersion: 14, udid: d26694530621}, deviceApiLevel: 31, deviceManufacturer: Xiaomi, deviceModel: M2010J19SI, deviceName: d26694530621, deviceScreenDensity: 440, deviceScreenSize: 1080x2340, deviceUDID: d26694530621, ignoreHiddenApiPolicyError: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 999999, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 78, takesScreenshot: true, udid: d26694530621, viewportRect: {height: 2262, left: 0, top: 78, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 5a4aec80-2c20-4b0c-b5ed-94d77d1782f6
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+    at getResponseForW3CError (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
-	at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:74)
-	at io.appium.java_client.InteractsWithApps.installApp(InteractsWithApps.java:59)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:119)
-	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.removerepair(TC08_Pairing_BlewithoutRouter.java:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
+	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:91)
+	at sZephyr_testcases.TC02_SignUp.signUp(TC02_SignUp.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	... 41 more
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN&apos;, ip: &apos;192.168.10.238&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;C:\\Users\\Invcuser_71\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s RZ8W10B8SJA shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
+This adb server&apos;s $ADB_VENDOR_KEYS is not set
+Try &apos;adb kill-server&apos; if that seems wrong.
+Otherwise check for a confirmation dialog on your device.
+
+    at getResponseForW3CError (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1143:9)
+    at asyncHandler (C:\Users\Invcuser_71\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:487:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	... 43 more
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -228,7 +318,7 @@ Session ID: 5a4aec80-2c20-4b0c-b5ed-94d77d1782f6
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;sZephyr_testcases.TC08_Pairing_BlewithoutRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC02_SignUp&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -270,18 +360,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'removerepair')
-data.setCell(0, 2, 'sZephyr_testcases.TC08_Pairing_BlewithoutRouter')
-data.setCell(0, 3, 28563);
+data.setCell(0, 1, 'signUp')
+data.setCell(0, 2, 'sZephyr_testcases.TC02_SignUp')
+data.setCell(0, 3, 437);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'removerepair')
-data.setCell(1, 2, 'sZephyr_testcases.TC08_Pairing_BlewithoutRouter')
-data.setCell(1, 3, 28363);
+data.setCell(1, 1, 'signUp')
+data.setCell(1, 2, 'sZephyr_testcases.TC02_SignUp')
+data.setCell(1, 3, 126);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <span class="suite-total-time">Total running time: 563 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,52 +397,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sZephyr_testcases.TC02_SignUp</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">291 ms</span>
+                <span class="method-start">276 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">301 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">307 ms</span>
+                <span class="method-start">291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">removerepair</span>
-                <span class="method-start">310 ms</span>
+                <span class="method-name">signUp</span>
+                <span class="method-start">295 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">28877 ms</span>
+                <span class="method-start">738 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">29207 ms</span>
+                <span class="method-start">744 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">removerepair</span>
-                <span class="method-start">29208 ms</span>
+                <span class="method-name">signUp</span>
+                <span class="method-start">745 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">57573 ms</span>
+                <span class="method-start">873 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">57892 ms</span>
+                <span class="method-start">876 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">57917 ms</span>
+                <span class="method-start">903 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

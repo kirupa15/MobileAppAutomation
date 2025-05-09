@@ -193,20 +193,33 @@
 
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version> <!-- Latest milestone version -->
-				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
+	
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M7</version> <!-- or latest -->
+            <configuration>
+                <properties>
+                    <property>
+                        <name>usedefaultlisteners</name>
+                        <value>false</value>
+                    </property>
+                </properties>
+                <reportFormat>brief</reportFormat>
+                <useFile>true</useFile>
+                <systemProperties>
+                    <property>
+                        <name>surefire.reportFormat</name>
+                        <value>xml</value>
+                    </property>
+                </systemProperties>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
 
 </project>
