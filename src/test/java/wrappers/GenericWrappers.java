@@ -334,6 +334,24 @@ public class GenericWrappers {
 		}
 		return bReturn;
 	}
+	public boolean verifyTextContainsByXpath_Toast(WebElement xpath, String text, String field) {
+		boolean bReturn = false;
+		try {
+			expWait(xpath);
+			String sText = xpath.getText();
+			System.out.println(sText);
+			if (sText.trim().contains(text)) {
+				Reporter.reportStep(field + "contains " + text, "PASS");
+				bReturn = true;
+			} else {
+				Reporter.reportStep(field + " did not contain :" + text, "WARNING");
+			}
+		} catch (Exception e) {
+			Reporter.reportStep(field + " not displayed", "FAIL&RUN");
+			e.printStackTrace();
+		}
+		return bReturn;
+	}
 
 
 	public static void quitBrowser() {

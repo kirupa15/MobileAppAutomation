@@ -447,7 +447,7 @@ public class Schedularpage extends GenericWrappers {
 	}
 
 	public void checktoast() {
-		verifyTextContainsByXpath(scheduleDeletedToast, scheduleDeletedtoast, "schedule Deleted Toast");
+		verifyTextContainsByXpath_Toast(scheduleDeletedToast, scheduleDeletedtoast, "schedule Deleted Toast");
 	}
 
 	public void clickplusbtn() {

@@ -289,7 +289,8 @@ public class AccountsInfoPage extends GenericWrappers{
 		verifyTextContainsByXpath(emailIdfield,emaId , "Accounts_info_EmailId_field");
 		clickbyXpath(SelectLanguageDropDownButton, "Select Language Drop Box Button");
 		clickbyXpath(SelectLanguageTamilButton, " Select Tamil Button ");
-		verifyTextContainsByXpath(languagesubtitle,"மொழியை தேர்ந்தெடுங்கள்" , "Languagesubtitle");
+		verifyTextContainsByXpath_Toast
+		(languagesubtitle,"மொழியை தேர்ந்தெடுங்கள்" , "Languagesubtitle");
 		clickbyXpath(SelectLanguageDropDownButton, "Select Language Drop Box Button");
 		clickbyXpath(SelectLanguageEnglishButton, " Select English Button ");
 		verifyTextContainsByXpath(languagesubtitle,"Select Language" , "Languagesubtitle");

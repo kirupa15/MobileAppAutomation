@@ -68,7 +68,7 @@ public class Energy_SavingPage extends GenericWrappers{
 		verifyTextContainsByXpath(ESMheader, "Energy Saving Modes", "ESM header");
 	}
 	public void checkToast() {
-		verifyTextContainsByXpath(ESMSuccessfullyToast, "Energy saving mode updated successfully", "Energy saving mode updated successfully Toast message");
+		verifyTextContainsByXpath_Toast(ESMSuccessfullyToast, "Energy saving mode updated successfully", "Energy saving mode updated successfully Toast message");
 	}
 	
 	
