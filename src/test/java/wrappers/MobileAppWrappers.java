@@ -76,7 +76,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	//	GetAppLog applog= new GetAppLog();
 //		applog.startLogProcess();
 		
-		ABDconnection();
+//		ABDconnection();
 		
 	}
 		
