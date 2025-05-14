@@ -1,0 +1,445 @@
+W (00:00:16.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 9 v
+l_or 0 vs 25
+I (00:00:16.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:1
+6.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:16.531) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:16.537) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:16.542) SAC: Temp conv cb 
+Exe
+W (00:00:16.546) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:16
+.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:16.557) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:16.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 10 
+vl_or 0 vs 25
+W (00:00:16.791) EX: TF: 0 TZ: 0
+ Sys_tm:16
+I (00:00:16.791) EX:
+ get time GMT= 16
+W (00:00:16.887) NVM: part erase
+ scs
+W (00:00:16.887) NVM: part
+ erase restart
+W (00:00:16.905) NVM: esp_part_w
+rite scs
+W (00:00:17.003) NVM: part erase
+ scs
+W (00:00:17.003) NVM: part
+ erase restart
+W (00:00:17.020) NVM: esp_part_w
+rite scs
+W (00:00:17.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 0 v
+l_or 0 vs 25
+W (00:00:17.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 1 v
+l_or 0 vs 25
+I (00:00:17.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:18.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 2 v
+l_or 0 vs 25
+I (00:00:18.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:18.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:18.532) T
+DRV: p_tmp1=23.957001 c_tmp1=23.957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:18.537) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:18.542) SAC: Temp conv cb 
+Exe
+W (00:00:18.545) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:18
+.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:18.557) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:18.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 3 v
+l_or 0 vs 25
+W (00:00:19.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 4 v
+l_or 0 vs 25
+W (00:00:19.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 5 v
+l_or 0 vs 25
+I (00:00:19.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:20.152) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 v
+l_or 0 vs 25
+I (00:00:20.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:2
+0.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:20.531) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:20.536) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:20.542) SAC: Temp conv cb 
+Exe
+W (00:00:20.545) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:20
+.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:20.556) SAC: Thres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:20.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 7 v
+l_or 0 vs 25
+W (00:00:21.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:21.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+I (00:00:21.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:22.020) EX: TF: 0 TZ: 0
+ Sys_tm:22
+I (00:00:22.021) EX:
+ get time GMT= 22
+W (00:00:22.122) NVM: part erase
+ scs
+W (00:00:22.122) NVM: part
+ erase restart
+W (00:00:22.139) NVM: esp_part_w
+rite scs
+W (00:00:22.232) NVM: part erase
+ scs
+W (00:00:22.232) NVM: part
+ erase restart
+W (00:00:22.248) NVM: esp_part_w
+rite scs
+W (00:00:22.252) EDRV:
+ hvc 0 nvc 0 lvc 0 V 223418 C 0 
+P 0 pc 10 vl_or 0 vs 25
+I (00:00:22.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:2
+2.530) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:22.531) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:22.537) TDRV: p_tmp2=23.957001 c_tmp2=23.957001
+W (
+00:00:22.541) SAC: Temp conv cb 
+Exe
+W (00:00:22.544) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:22.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:22.556) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:22.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:23.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:23.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 2 v
+l_or 0 vs 25
+I (00:00:23.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:24.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 3 v
+l_or 0 vs 25
+I (00:00:24.531) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:2
+4.532) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:24.532) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:24.538) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (00:00:24.545) SAC: Temp conv cb 
+Exe
+W (00:00:24.546) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:24
+.550) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp State 0
+I (00:00:24.557) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:24.652) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 v
+l_or 0 vs 25
+W (00:00:25.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 5 v
+l_or 0 vs 25
+W (00:00:25.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 6 v
+l_or 0 vs 25
+I (00:00:25.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:26.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 7 v
+l_or 0 vs 25
+I (00:00:26.531) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:2
+6.533) TDRV: B_LUT=24.500000 A_LUT=23.957001
+W (00:00:26.533) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:26.538) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (00:00:26.543) SAC: Temp conv cb 
+Exe
+W (00:00:26.547) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:26
+.551) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:26.558) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:26.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 8 v
+l_or 0 vs 25
+W (00:00:27.152) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 v
+l_or 0 vs 25
+W (00:00:27.250) EX: TF: 0 TZ: 0
+ Sys_tm:27
+I (00:00:27.250) EX:
+ get time GMT= 27
+W (00:00:27.346) NVM: part erase
+ scs
+W (00:00:27.346) NVM: part
+ erase restart
+W (00:00:27.363) NVM: esp_part_w
+rite scs
+W (00:00:27.452) NVM: part erase
+ scs
+W (00:00:27.452) NVM: part
+ erase restart
+W (00:00:27.469) NVM: esp_part_w
+rite scs
+W (00:00:27.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 10 
+vl_or 0 vs 25
+I (00:00:27.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:28.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:28.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:2
+8.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:28.532) T
+DRV: p_tmp1=23.957001 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:28.537) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:28.542) SAC: Temp conv cb 
+Exe
+W (00:00:28.545) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:28
+.550) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:28.557) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:28.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 1 v
+l_or 0 vs 25
+W (00:00:29.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 2 v
+l_or 0 vs 25
+W (00:00:29.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 3 v
+l_or 0 vs 25
+I (00:00:29.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:30.154) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 4 v
+l_or 0 vs 25
+I (00:00:30.530) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:3
+0.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:30.531) T
+DRV: p_tmp1=23.957001 c_tmp1=23.957001 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:30.537) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:30.542) SAC: Temp conv cb 
+Exe
+W (00:00:30.545) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:30
+.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:30.557) SAC: Thres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:30.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 5 v
+l_or 0 vs 25
+W (00:00:31.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 6 v
+l_or 0 vs 25
+W (00:00:31.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:31.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:32.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 8 v
+l_or 0 vs 25
+W (00:00:32.470) EX: TF: 0 TZ: 0
+ Sys_tm:32
+I (00:00:32.470) EX:
+ get time GMT= 32
+W (00:00:32.566) NVM: part erase
+ scs
+W (00:00:32.566) NVM: part
+ erase restart
+W (00:00:32.582) NVM: esp_part_write scs
+W (00:00:32.672) NVM: part erase
+ scs
+W (00:00:32.672) NVM: part
+ erase restart
+W (00:00:32.688) NVM: esp_part_w
+rite scs
+I (00:00:32.697) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:3
+2.697) TDRV: B_LUT=24.562500 A_L
+UT=24.019501
+W (00:00:32.698) T
+DRV: p_tmp1=23.957001 c_tmp1=24.
+019501 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:32.703) TDRV: p_tmp2
+=24.019501 c_tmp2=24.019501
+W (
+00:00:32.710) SAC: Temp conv cb 
+Exe
+W (00:00:32.712) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:32
+.716) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+W (00:00:32.743) EDRV: hvc 1 nvc
+ 0 lvc 0 V 292606 C 0 P 0 pc 0 v
+l_or 0 vs 25
+W (00:00:33.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 1 v
+l_or 0 vs 25
+W (00:00:33.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:33.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:34.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 3 v
+l_or 0 vs 25
+I (00:00:34.531) TDRV: result: -
+0.543000 minus_val 1
+W (00:00:3
+4.532) TDRV: B_LUT=24.562500 A_L
+UT=24.019501
+W (00:00:34.533) T
+DRV: p_tmp1=24.019501 c_tmp1=24.
+019501 inv_cnt=0 prv_neg 0.00000
+0
+W (00:00:34.538) TDRV: p_tmp2
+=24.019501 c_tmp2=24.019501
+W (
+00:00:34.543) SAC: Temp conv cb 
+Exe
+W (00:00:34.547) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:34
+.551) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+W (00:00:34.653) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 4 v
+l_or 0 vs 25
+W (00:00:35.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:35.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 6 v
+l_or 0 vs 25
+I (00:00:35.768) TDRV: Temp peri
+odic tmr exp
+W (00:00:36.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:36.530) TDRV: result: -0.543000 minus_val 1
+W (00:00:3
+6.531) TDRV: B_LUT=24.500000 A_L
+UT=23.957001
+W (00:00:36.531) T
+DRV: p_tmp1=24.019501 c_tmp1=23.
+957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:36.536) TDRV: p_tmp2
+=23.957001 c_tmp2=23.957001
+W (
+00:00:36.542) SAC: Temp conv cb 
+Exe
+W (00:00:36.545) SAC: Scs V
+al = 0 Read Sts = 0
+I (00:00:36
+.549) SAC: Thres Comparison Exec
+uted Gysr Temp State 0 Low Temp 
+State 0
+I (00:00:36.557) SAC: T
+hres Comparison Executed Gysr Te
+mp State 0 Low Temp State 0
+W (00:00:36.652) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 8 v
+l_or 0 vs 25
+W (00:00:37.152) EDRV: hvc 0 nvc
+ 0 lvc 0 V 223418 C 0 P 0 pc 9 v
+l_or 0 vs 25
+W (00:00:37.652) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 
+vl_or 0 vs 25
+W (00:00:37.690) EX: TF: 0 TZ: 0
+ Sys_tm:37
+I (00:00:37.690) EX:
+ get time GMT= 37
+W (00:00:37.786) NVM: part erase
+ scs
+I (00:00:37.786) TDRV: Temp periodic tmr exp
+W (00:00:37.
+786) NVM: part erase restart
+W (00:00:37.803) NVM: esp_part_w
+rite scs

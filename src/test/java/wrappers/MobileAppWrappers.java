@@ -25,6 +25,7 @@ import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
 import utils.GetAppLog;
 import utils.Reporter;
+import utils.RunRelayFromPython;
 
 public class MobileAppWrappers extends GenericWrappers {
 	protected String browserName;
@@ -51,6 +52,7 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		
+		RunRelayFromPython.powerOndeviceViaRelay("on");
 //		ADBconnections AdbUtils = new ADBconnections();
 		
 		// Enable below two lines of code to Get app from FTP
@@ -99,6 +101,7 @@ public class MobileAppWrappers extends GenericWrappers {
 		System.out.println("Test suite finished. Closing output redirection.");
 //        fileOut.close();
 //        System.setOut(originalOut);
+		RunRelayFromPython.powerOndeviceViaRelay("off");
 	}
 
 
