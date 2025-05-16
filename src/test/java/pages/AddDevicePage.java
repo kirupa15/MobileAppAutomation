@@ -956,7 +956,7 @@ public class AddDevicePage extends GenericWrappers {
 		}
 	}
 	public void hidekeyboard() {
-		// Scroll up
+//		 Scroll up
 		Map<String, Object> params = new HashMap<>();
 		params.put("direction", "up");
 		driver.executeScript("mobile: hideKeyboard", params);
