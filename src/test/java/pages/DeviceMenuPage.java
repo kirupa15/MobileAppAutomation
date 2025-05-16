@@ -214,7 +214,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement removeDevice;
 	
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement removeDevicePopupNoButton;
 	
 	
@@ -446,7 +446,7 @@ public class DeviceMenuPage extends GenericWrappers{
 		}	
 		
 		public void clickRemoveDevicePopupNoButton() {
-			clickbyXpath(removeDevicePopupNoButton, " Click The Remove Device Pop-up ON Button ");
+			clickbyXpath(removeDevicePopupNoButton, " Click The Remove Device Pop-up No Button ");
 			
 		}	
 		
