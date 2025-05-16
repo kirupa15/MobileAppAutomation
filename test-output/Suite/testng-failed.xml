@@ -11,6 +11,138 @@
       </run>
     </groups>
     <classes>
+      <class name="sZephyr_testcases.TC34_sZephyr_Info">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC34_sZephyr_Info -->
+      <class name="sZephyr_testcases.TC32_Factory_Reset">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC32_Factory_Reset -->
+      <class name="sZephyr_testcases.TC13_BlewithoutRouter">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC13_BlewithoutRouter -->
+      <class name="sZephyr_testcases.TC06_SignIn_SuccessFlow">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC06_SignIn_SuccessFlow -->
+      <class name="sZephyr_testcases.TC33_Ble_Factory_Reset">
+        <methods>
+          <include name="removerepair"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC33_Ble_Factory_Reset -->
+      <class name="sZephyr_testcases.TC25_Analytics">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="startTestCase"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="removerepair"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC25_Analytics -->
+      <class name="sZephyr_testcases.TC31_Schedular">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="schedule"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC31_Schedular -->
+      <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC08_Pairing_BlewithoutRouter -->
+      <class name="sZephyr_testcases.TC05_SignIn_Valid_User">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="login"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC05_SignIn_Valid_User -->
+      <class name="sZephyr_testcases.TC24_Analytics">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC24_Analytics -->
+      <class name="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
       <class name="sZephyr_testcases.TC02_SignUp">
         <methods>
           <include name="afterMethod"/>
@@ -19,10 +151,214 @@
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
-          <include name="signUp"/>
           <include name="beforeSuite"/>
+          <include name="signUp"/>
         </methods>
       </class> <!-- sZephyr_testcases.TC02_SignUp -->
+      <class name="sZephyr_testcases.TC19_DeviceSettings">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC19_DeviceSettings -->
+      <class name="sZephyr_testcases.TC21_DeviceSettings">
+        <methods>
+          <include name="removerepair"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC21_DeviceSettings -->
+      <class name="sZephyr_testcases.TC23_Analytics">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC23_Analytics -->
+      <class name="sZephyr_testcases.TC28_Schedular">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="startTestCase"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="schedule"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC28_Schedular -->
+      <class name="sZephyr_testcases.TC14_BleWithRouter">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC14_BleWithRouter -->
+      <class name="sZephyr_testcases.TC09_Pairing_BlewithRouter">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="removerepair"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC09_Pairing_BlewithRouter -->
+      <class name="sZephyr_testcases.TC29_Schedular">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="schedule"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC29_Schedular -->
+      <class name="sZephyr_testcases.TC30_Schedular">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="schedule"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC30_Schedular -->
+      <class name="sZephyr_testcases.TC07_SignIn_Logout">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="login"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC07_SignIn_Logout -->
+      <class name="sZephyr_testcases.TC01_Accounts_Info">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
+      <class name="sZephyr_testcases.TC03_SignUp">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="startTestCase"/>
+          <include name="signUp"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC03_SignUp -->
+      <class name="sZephyr_testcases.TC15_SmartConfig">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="removerepair"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="startTestCase"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC15_SmartConfig -->
+      <class name="sZephyr_testcases.TC26_Analytics">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="removerepair"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC26_Analytics -->
+      <class name="sZephyr_testcases.TC20_DeviceSettings">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="removerepair"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC20_DeviceSettings -->
+      <class name="sZephyr_testcases.TC04_SignIn_Flow">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="signIn"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="startTestCase"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC04_SignIn_Flow -->
+      <class name="sZephyr_testcases.TC36_ESMmode">
+        <methods>
+          <include name="pairBlewithoutRouter"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC36_ESMmode -->
+      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="removerepair"/>
+          <include name="startTestCase"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC10_Pairing_SmartConfig -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

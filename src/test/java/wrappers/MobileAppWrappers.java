@@ -25,7 +25,9 @@ import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
 import utils.GetAppLog;
 import utils.Reporter;
+import utils.RunFlashScript;
 import utils.RunRelayFromPython;
+import utils.SwitchWiFi;
 
 public class MobileAppWrappers extends GenericWrappers {
 	protected String browserName;
@@ -53,6 +55,15 @@ public class MobileAppWrappers extends GenericWrappers {
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		
 		RunRelayFromPython.powerOndeviceViaRelay("on");
+		
+		// Switch Tp Link Wifi for Flashing
+		
+			SwitchWiFi.switchwifi(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+			// Flash 1 for Smazer, 2 - Smamax, 3 - sZphyer
+			RunFlashScript.runFlashScript("3");
+			
+			// Switch to IINVSYS Wifi After Flashing
+			SwitchWiFi.switchwifi(loadProp("REMOTEWIFINAME"), loadProp("REMOTEWIFIPASSWORD"));
 //		ADBconnections AdbUtils = new ADBconnections();
 		
 		// Enable below two lines of code to Get app from FTP
@@ -65,7 +76,6 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 //		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
 //		build.buildAPK();
-		
 		Reporter.startResult();//START TESTNG RESULT
 		
 	        // Redirect console output to a file
@@ -86,10 +96,10 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@BeforeTest
 	public void beforeTest() throws FileNotFoundException, IOException, Exception{
-		
+	System.out.println("before test");	
 	}
 
-	@BeforeMethod 
+	@BeforeMethod
 	public void beforeMethod(){ 
 		Reporter.startTestCase();
 
