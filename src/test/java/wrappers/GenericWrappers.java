@@ -55,7 +55,7 @@ public class GenericWrappers {
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
 	
-	public String loadProp(String property) {
+	public static String loadProp(String property) {
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream(new File("./config.properties")));
