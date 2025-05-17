@@ -68,13 +68,13 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.EditText[@text='Enter Password']")
 	private WebElement enterPasswordField;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"CANCEL\"]")
 	private WebElement cancelButton;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Submit\"]")
 	private WebElement enterButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@text='Cancel']")
+	@FindBy(xpath = "//android.widget.TextView[@text='CANCEL']")
 	private WebElement routerCancelButton;
 
 	@FindBy(xpath = "//android.widget.TextView[@text='Next']")
@@ -195,7 +195,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"\"])[2]")
 	private WebElement minutesminusbutton;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement ClickCancelButtonBle;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
@@ -222,7 +222,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
 	private WebElement blePermissionOkButton;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement blePermissionCancelButton;
 
 	@FindBy(xpath = "//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")
@@ -234,10 +234,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"OK\"]")
 	private WebElement BleOKpopup;
 
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement BLEcancelpopup;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"CANCEL\"]")
 	private WebElement wifiCancel;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr device is offline\"]")
