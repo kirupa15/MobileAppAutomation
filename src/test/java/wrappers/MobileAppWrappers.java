@@ -89,7 +89,6 @@ public class MobileAppWrappers extends GenericWrappers {
 //		applog.startLogProcess();
 		
 //		ABDconnection();
-		
 	}
 		
 

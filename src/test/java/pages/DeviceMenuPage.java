@@ -126,7 +126,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.Button[@resource-id=\"android:id/button2\"]")
 	private WebElement ClickCancelBluetooth;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement ClickCancelWifi;
 	
 	@FindBy(xpath =  "//android.widget.Button[@resource-id=\"android:id/button1\"]")
@@ -168,7 +168,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='RemoveRouterContx']") 
 	private WebElement removeRouterButton;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement removeRouterCancelButton;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Remove\"]")
@@ -177,7 +177,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	@FindBy(xpath = "//android.widget.CheckBox")
 	private WebElement addRouterPopCheckBox;
 	
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"CANCEL\"]")
 	private WebElement routerPopCancelButton;
 	
 	@FindBy(xpath = "//*[@resource-id='settingDevice_toggle_switch']")
@@ -214,7 +214,7 @@ public class DeviceMenuPage extends GenericWrappers{
 	private WebElement removeDevice;
 	
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Cancel\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement removeDevicePopupNoButton;
 	
 	
@@ -446,7 +446,7 @@ public class DeviceMenuPage extends GenericWrappers{
 		}	
 		
 		public void clickRemoveDevicePopupNoButton() {
-			clickbyXpath(removeDevicePopupNoButton, " Click The Remove Device Pop-up ON Button ");
+			clickbyXpath(removeDevicePopupNoButton, " Click The Remove Device Pop-up No Button ");
 			
 		}	
 		
