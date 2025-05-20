@@ -3,27 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="sZephyr_testcases.TC02_SignUp">
-=======
       <class name="sZephyr_testcases.TC01_Accounts_Info">
->>>>>>> a169d3755342a06183bcb69f17e24e6cd45a32ea
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
           <include name="startTestCase"/>
-          <include name="afterSuite"/>
           <include name="removerepair"/>
+          <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
-          <include name="signUp"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- sZephyr_testcases.TC02_SignUp -->
-=======
       </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
->>>>>>> a169d3755342a06183bcb69f17e24e6cd45a32ea
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
