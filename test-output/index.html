@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-158783449\testng-customsuite.xml</span>
+                    <span>C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1793236948\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,40 +129,11 @@
                   <a name="removerepair">
                   </a> <!-- removerepair -->
                   <span class="method-name">removerepair</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.10.136&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-    at getResponseForW3CError (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1145:9)
-    at asyncHandler (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:485:57)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.10.136&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:91)
-	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1014)
+	at sZephyr_testcases.TC01_Accounts_Info.pairBlewithoutRouter(TC01_Accounts_Info.java:91)
+	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -189,44 +160,6 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 41 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.10.136&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-    at getResponseForW3CError (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1145:9)
-    at asyncHandler (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:485:57)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	... 43 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -236,7 +169,7 @@ Otherwise check for a confirmation dialog on your device.
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-158783449\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1793236948\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -293,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'removerepair')
 data.setCell(0, 2, 'sZephyr_testcases.TC01_Accounts_Info')
-data.setCell(0, 3, 700);
+data.setCell(0, 3, 93962);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 700 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -331,35 +264,33 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">55643 ms</span>
+                <span class="method-start">749 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">55651 ms</span>
+                <span class="method-start">757 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">55657 ms</span>
+                <span class="method-start">765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">removerepair</span>
-                <span class="method-start">55661 ms</span>
+                <span class="method-start">769 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">56365 ms</span>
+                <span class="method-start">94734 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">56369 ms</span>
+                <span class="method-start">95312 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">56406 ms</span>
+                <span class="method-start">95335 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
