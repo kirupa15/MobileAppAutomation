@@ -89,7 +89,7 @@ public class MobileAppWrappers extends GenericWrappers {
 //		applog.startLogProcess();
 		
 //		ABDconnection();
-		
+		SwitchWiFi.switchwifi(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 	}
 		
 
