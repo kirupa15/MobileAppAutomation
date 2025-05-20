@@ -237,7 +237,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
 	private WebElement BLEcancelpopup;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"CANCEL\"]")
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Cancel\"]")
 	private WebElement wifiCancel;
 
 	@FindBy(xpath = "//android.widget.TextView[@text=\"sZephyr device is offline\"]")
