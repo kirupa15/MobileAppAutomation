@@ -67,7 +67,19 @@ public class GenericWrappers {
 		}
 		return prop.getProperty(property);
 	}
+	public static void updateProperty( String key, String newValue) throws IOException {
+        Properties props = new Properties();
+        try (FileInputStream in = new FileInputStream("./config.properties")) {
+            props.load(in);
+        }
 
+        // Update the value
+        props.setProperty(key, newValue);
+
+        try (FileOutputStream out = new FileOutputStream("./config.properties")) {
+            props.store(out, null);
+        }
+    }
 	public static boolean initAndriodDriver() throws FileNotFoundException, IOException {
 
 		boolean bReturn = false;

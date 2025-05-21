@@ -12,6 +12,9 @@ public class RunFlashScript extends MobileAppWrappers {
 
         try {
         	
+        	ChangeLastTwoDigits twodigit = new ChangeLastTwoDigits();
+        	twodigit.updateLastTwoDigitsSequentially();
+        	
         	//String productId = "1";
             // Step 1: Start the Python process
             ProcessBuilder pb = new ProcessBuilder("python", "-u", pythonScriptPath);
@@ -28,14 +31,15 @@ public class RunFlashScript extends MobileAppWrappers {
             //Product ID 2 - Auto Flashing for SmAmp_Max product
             //Product ID 3 - Auto Flashing for SZephyr product
             
-
+            String[] a = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+            
             String[][] promptResponses = {
                 {"Select the product ID", productId + "\n"},
                 {"Select the Board Version", "5\n"},
                 {"Do you want flash OTA BIN?", "N\n"},
                 {"Select the Server Type", "2\n"},
                 {"Select the flash type", "1\n"},
-                {"Enter your last two digits", "KA\n"},
+                {"Enter your last two digits", loadProp("LASTTWODIGITS") +"\n"},
                 {"Flash / Erase Selection", "1\n"},
                 {"Enter Serial Port", loadProp("COM") + "\n"},
                 {"Press Enter to continue after switching to "
