@@ -99,7 +99,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
