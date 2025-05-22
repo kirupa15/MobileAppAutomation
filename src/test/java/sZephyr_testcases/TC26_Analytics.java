@@ -56,6 +56,7 @@ public class TC26_Analytics  extends MobileAppWrappers {
 		homepage.WifiSwitch(loadProp("REMOTEWIFINAME"),loadProp("REMOTEWIFIPASSWORD"));
 		
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analyticspage.getenergydurationvalue();
 		closeApp();
 		readwrite.write("button_press\r");
@@ -64,6 +65,7 @@ public class TC26_Analytics  extends MobileAppWrappers {
 		openapp();
 		adddevicepage.ClickOkButtonBLEpopUP();
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analyticspage.checkenrgyduration(1);
 		
 				

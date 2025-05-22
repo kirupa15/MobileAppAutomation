@@ -97,7 +97,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(5000);
 		adddevicepage.clickBlePermissionOkbutton();
 		
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();

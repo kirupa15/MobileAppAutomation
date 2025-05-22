@@ -51,6 +51,7 @@ public class TC27_Analytics extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(2000);
 		analyticspage.getenergydurationvalue();
 		analyticspage.navigatehomepage();
 		Thread.sleep(2000);
@@ -58,6 +59,7 @@ public class TC27_Analytics extends MobileAppWrappers {
 		Thread.sleep(1*60*1000);
 		homepage.clickONOFFButton();
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(2000);
 		analyticspage.checkenrgyduration(1);
 		
 			

@@ -71,6 +71,7 @@ public class TC30_Schedular extends MobileAppWrappers {
 		
 		Thread.sleep(5*60*1000);//set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
+		Thread.sleep(2000);
 		analytics.checkenrgyduration(1);
 		schedulepage.backToHomepage();
 		schedulepage.clickSchedulebtn();
