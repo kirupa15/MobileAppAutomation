@@ -359,7 +359,7 @@ public class GenericWrappers {
 				Reporter.reportStep(field + " did not contain :" + text, "WARNING");
 			}
 		} catch (Exception e) {
-			Reporter.reportStep(field + " not displayed", "WARNING");
+			Reporter.reportStep(field + " not displayed", "INFO");
 			e.printStackTrace();
 		}
 		return bReturn;
