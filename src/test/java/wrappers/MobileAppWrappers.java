@@ -58,12 +58,12 @@ public class MobileAppWrappers extends GenericWrappers {
 		
 		// Switch Tp Link Wifi for Flashing
 		
-			SwitchWiFi.switchwifi(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-			// Flash 1 for Smazer, 2 - Smamax, 3 - sZphyer
-			RunFlashScript.runFlashScript("3");
-			
-			// Switch to IINVSYS Wifi After Flashing
-			SwitchWiFi.switchwifi(loadProp("REMOTEWIFINAME"), loadProp("REMOTEWIFIPASSWORD"));
+//			SwitchWiFi.switchwifi(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//			// Flash 1 for Smazer, 2 - Smamax, 3 - sZphyer
+//			RunFlashScript.runFlashScript("3");
+//			
+//			// Switch to IINVSYS Wifi After Flashing
+//			SwitchWiFi.switchwifi(loadProp("REMOTEWIFINAME"), loadProp("REMOTEWIFIPASSWORD"));
 //		ADBconnections AdbUtils = new ADBconnections();
 		
 		// Enable below two lines of code to Get app from FTP

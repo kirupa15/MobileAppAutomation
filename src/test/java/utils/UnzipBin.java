@@ -18,12 +18,6 @@ import java.util.zip.ZipInputStream;
 
 public class UnzipBin {
 
-    /**
-     * Main method to find a zip file in a predefined source directory,
-     * extract it, find a 'bin' folder within the extracted contents,
-     * and move this 'bin' folder to a predefined destination directory.
-     * If a 'bin' folder already exists at the destination, it will be deleted first.
-     */
     public static void unzip() {
         // Define source and destination directories using platform-independent Path objects
         Path sourceDirectoryPath = Paths.get(System.getProperty("user.home"), "Desktop", "APK");
