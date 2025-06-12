@@ -3,6 +3,7 @@
 <suite name="Suite">
 <listeners>
     <listener class-name="utils.RetryListener" />
+    <listener class-name="com.utils.ResultListener"/>
 </listeners>
   <test thread-count="5" name="Test">
   
