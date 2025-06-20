@@ -65,6 +65,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 		try {
 			readwrite.openPort();
 			
+			readwrite.write("factory_reset\r");
 			adddevicepage.pair(1);
 			adddevicepage.clickNextButtonsZephyrInfo();
 			adddevicepage.checkdevicedetailstoast();
