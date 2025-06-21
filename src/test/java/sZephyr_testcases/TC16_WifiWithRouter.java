@@ -39,7 +39,7 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 
 
 	@Test(priority = 15,groups = {"skip"})
-	public void removerepair() throws Exception {
+	public void TC16_WifiWithRouter_CONNECTIVITY() throws Exception {
 
 
 		initAndriodDriver();

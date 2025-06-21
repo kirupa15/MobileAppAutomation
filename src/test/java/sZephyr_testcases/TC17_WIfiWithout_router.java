@@ -40,7 +40,7 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 
 
 	@Test(priority = 16,groups = {"skip"})
-	public void removerepair() throws Exception {
+	public void TC17_WifiWithoutRouter_CONNECTIVITY() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 

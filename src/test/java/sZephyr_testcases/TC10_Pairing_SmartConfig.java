@@ -35,7 +35,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 //	Properties prop= new Properties();
 	
 	@Test(priority = 9)
-	public void removerepair() throws Exception {
+	public void TC10_Pairing_in_SmartConfig_Mode() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);
@@ -97,7 +97,7 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(5000);
 		adddevicepage.clickBlePermissionOkbutton();
 		
-		Thread.sleep(8000);
+		Thread.sleep(10000);
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();

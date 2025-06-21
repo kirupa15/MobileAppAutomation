@@ -36,7 +36,7 @@ public class TC32_Factory_Reset extends MobileAppWrappers {
 
 
 	@Test(priority = 31)
-	public void removerepair() throws Exception {
+	public void TC32_FactoryReset_check() throws Exception {
 			initAndriodDriver();
 			pairBlewithoutRouter();
 	}

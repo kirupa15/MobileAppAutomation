@@ -34,7 +34,7 @@ public class TC04_SignIn_Flow extends MobileAppWrappers {
 
 
 	@Test(priority = 3)
-	public void signIn() throws Exception {
+	public void TC04_SignIn_Try_to_SignIn_with_unregistered_username() throws Exception {
 		initAndriodDriver();
 		signinpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);

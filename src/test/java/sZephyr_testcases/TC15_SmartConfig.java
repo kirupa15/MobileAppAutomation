@@ -40,7 +40,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 	
 
 	@Test(priority = 14)
-	public void removerepair() throws Exception {
+	public void TC15_SmartConfig_CONNECTIVITY() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
@@ -65,6 +65,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
+		Thread.sleep(10000);
 		adddevicepage.staConnectivityCheck();
 		Thread.sleep(2000);
 		homepage.clickONOFFButton();
@@ -78,12 +79,13 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		turnOffBT();
 //		adddevicepage.ClickCancelButtonBle();
 		adddevicepage.ClickOkButtonBLEpopUP();
-		adddevicepage.staConnectivityCheck();
 		Thread.sleep(10000);
+		adddevicepage.staConnectivityCheck();
+		Thread.sleep(3000);
 		homepage.clickONOFFButton();
 		//CONNECTIVITY_MOD_3_TC_3///     STA_Device_ON/OFF
 		
-		for(int i=0;i<11;i++) {
+		for(int i=1;i<10;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(2000);
 			}
@@ -93,8 +95,9 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		//CONNECTIVITY_MOD_3_TC_4// BLE Connectivity Establishment
 		homepage.enableBLE();
 		homepage.disableWIFI();
-		adddevicepage.bleConnectivityCheck();
+		
 		Thread.sleep(10000);
+		adddevicepage.bleConnectivityCheck();
 		homepage.clickONOFFButton();
 		 Thread.sleep(2000);
 //	    homepage.VerifyONdesc(); ///Connectivity Confirmation description check//
@@ -104,11 +107,12 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
 		homepage.killandopen();
+		homepage.clickONOFFButton();
 		
 		//CONNECTIVITY_MOD_3_TC_6//BLE Device ON_OFF 
 		
 		Thread.sleep(10000);
-		for(int i=0;i<11;i++) {
+		for(int i=1;i<10;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(2000);
 			}
@@ -124,6 +128,7 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		homepage.WifiSwitch(loadProp("REMOTEWIFINAME"),loadProp("REMOTEWIFIPASSWORD"));
 //		disableWiFi();
 //		adddevicepage.Turnonmobiledata();
+		Thread.sleep(10000);
 		adddevicepage.remoteConnectivityCheck();
 		homepage.clickONOFFButton();
 		homepage.getCurrentvalue();
@@ -135,11 +140,12 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(5000);
 		turnOffBT();
 		adddevicepage.ClickOkButtonBLEpopUP();
+		Thread.sleep(10000);
 		adddevicepage.remoteConnectivityCheck();
-		Thread.sleep(8000);
+		homepage.clickONOFFButton();
 		//CONNECTIVITY_MOD_3_TC_6//Remote Device ON_OFF 
 		
-		for(int i=0;i<11;i++) {
+		for(int i=1;i<10;i++) {
 			homepage.clickONOFFButton();
 			Thread.sleep(2000);
 			}

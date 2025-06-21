@@ -38,7 +38,7 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 	}
 	
 	@Test(priority = 6)
-	public void login() throws Exception {
+	public void TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);

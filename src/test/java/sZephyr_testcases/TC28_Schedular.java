@@ -38,7 +38,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 	}
 	
 	@Test(priority = 27)
-	public void schedule() throws Exception {
+	public void TC28_Schedular_SmartConfig_Mode() throws Exception {
 		initAndriodDriver();
 
 		homepage=new HomePage(driver);
@@ -61,6 +61,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		
 		analytics.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analytics.getenergydurationvalue();
 		schedulepage.backToHomepage();
 		schedulepage.clickSchedulebtn();
@@ -71,6 +72,7 @@ public class TC28_Schedular extends MobileAppWrappers {
 
 		Thread.sleep(5 * 60 * 1000);// set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analytics.checkenrgyduration(1);
 		schedulepage.backToHomepage();
 		schedulepage.clickSchedulebtn();

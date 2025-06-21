@@ -28,7 +28,7 @@ public class TC19_DeviceSettings extends MobileAppWrappers {
 	
 
 	@Test(priority = 18)
-	public void removerepair() throws Exception {
+	public void TC19_DeviceSettings_Add_Router() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}

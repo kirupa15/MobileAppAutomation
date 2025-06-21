@@ -48,7 +48,7 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 
 	
 	@Test(priority = 0)
-	public void removerepair() throws Exception {
+	public void TC_01_Account_Info_page_check() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}

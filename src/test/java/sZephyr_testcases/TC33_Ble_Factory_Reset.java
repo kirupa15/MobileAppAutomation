@@ -36,7 +36,7 @@ public class TC33_Ble_Factory_Reset extends MobileAppWrappers {
 
 
 @Test(priority = 32)
-public void removerepair() throws Exception {
+public void TC33_BleWithoutRouter_Factory_Reset() throws Exception {
 	initAndriodDriver();
 	pairBlewithoutRouter();
 }
