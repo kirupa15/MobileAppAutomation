@@ -197,17 +197,21 @@ public class SignUpPage extends GenericWrappers {
 			Runtime.getRuntime().exec("adb uninstall com.iinvsys.szephyr");
 			driver.installApp(prop.getProperty("APP_PATH"));
 			driver.activateApp(packages);
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
 			}
 			else {
 				
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(packages);
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
 			}
 		}
 		

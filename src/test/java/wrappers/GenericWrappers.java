@@ -130,9 +130,16 @@ public class GenericWrappers {
 				turnOnBT();
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(appPackage); // Launch the app after installation
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
-				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+//				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
+//				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
+//				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+				
+				
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
+				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
 			}
 			
 			if (driver.isAppInstalled(appPackage)) {
@@ -143,9 +150,11 @@ public class GenericWrappers {
 				
 			}
 			Reporter.reportStep("App opened successfully", "INFO");
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION"));
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN"));
-			driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT"));
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
+			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
 			bReturn = true;
 
 		} catch (MalformedURLException e) {
