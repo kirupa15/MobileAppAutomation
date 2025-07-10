@@ -34,7 +34,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 	
 
 	@Test(priority = 8)
-	public void removerepair() throws Exception {
+	public void TC09_Pairing_BLE_With_Router() throws Exception {
 		initAndriodDriver();
 
 

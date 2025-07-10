@@ -39,7 +39,7 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 	
 //	(retryAnalyzer = Retry_analyser.class)
 	@Test(priority = 7)
-	public void removerepair() throws Exception {
+	public void TC08_Pairing_BLE_Without_Router() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);

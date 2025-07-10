@@ -35,7 +35,7 @@ public class TC36_ESMmode extends MobileAppWrappers {
 
 
 	@Test(priority = 34)
-	public void pairBlewithoutRouter() throws Exception {
+	public void TC36_ESM_mode_button_check() throws Exception {
 		initAndriodDriver();
 		
 		adddevicepage= new AddDevicePage(driver);

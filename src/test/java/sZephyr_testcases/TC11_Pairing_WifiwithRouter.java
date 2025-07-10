@@ -33,7 +33,7 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 
 
 	@Test(priority = 10,groups = {"skip"})
-	public void removerepair() throws Exception {
+	public void TC11_Pairing_in_Wifiwithrouter_mode() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);

@@ -28,7 +28,7 @@ public class TC27_Analytics extends MobileAppWrappers {
 	}
 	
 	@Test(priority = 26,groups = {"skip"})
-	public void removerepair() throws Exception {
+	public void TC_27_Analytics_Wifi_with_Router() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
@@ -51,15 +51,15 @@ public class TC27_Analytics extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		
 		analyticspage.navigateAnalyticsPage();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		analyticspage.getenergydurationvalue();
 		analyticspage.navigatehomepage();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		homepage.clickONOFFButton();
 		Thread.sleep(1*60*1000);
 		homepage.clickONOFFButton();
 		analyticspage.navigateAnalyticsPage();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		analyticspage.checkenrgyduration(1);
 		
 			

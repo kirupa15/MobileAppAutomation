@@ -41,7 +41,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 	
 
 //	@Test(priority = 34)
-	public void removerepair() throws Exception {
+	public void TC35_OTA_Update_check_Ble() throws Exception {
 		login();
 		for(int i=0;i<1;i++) {
 		pairBlewithoutRouter();}

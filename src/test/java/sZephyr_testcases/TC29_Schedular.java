@@ -50,7 +50,7 @@ public class TC29_Schedular extends MobileAppWrappers {
 	}
 
 	@Test(priority = 28)
-	public void schedule() throws Exception {
+	public void TC29_Schedular_Smartconfig_app_close() throws Exception {
 		initAndriodDriver();
 		landingpage = new LandingPage(driver);
 		loginpage = new SignInPage(driver);

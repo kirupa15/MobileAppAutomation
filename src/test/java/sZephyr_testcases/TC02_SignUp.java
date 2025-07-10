@@ -40,7 +40,7 @@ public class TC02_SignUp extends MobileAppWrappers {
 
 
 	@Test(priority = 1)
-	public void signUp() throws Exception {
+	public void TC02_SignUp_with_already_registered_username() throws Exception {
 
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);

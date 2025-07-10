@@ -43,7 +43,7 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 	
 
 	@Test(priority = 12)
-	public void removerepair() throws Exception {
+	public void TC13_BlewithoutRouter_CONNECTIVITY() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}

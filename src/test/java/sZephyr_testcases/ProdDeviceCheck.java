@@ -32,7 +32,7 @@ public class ProdDeviceCheck extends MobileAppWrappers {
 	
 //	(retryAnalyzer = Retry_analyser.class)
 //	@Test()
-	public void prodValidation() throws Exception {
+	public void Prod_Device_Sanity_Check() throws Exception {
 		initAndriodDriver();
 		loginpage = new SignInPage(driver);
 		landingpage = new LandingPage(driver);

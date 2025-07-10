@@ -28,7 +28,7 @@ public class TC21_DeviceSettings extends MobileAppWrappers {
 	
 
 	@Test(priority = 20)
-	public void removerepair() throws Exception {
+	public void TC21_DeviceSettings_LED_Quite_Mode() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}

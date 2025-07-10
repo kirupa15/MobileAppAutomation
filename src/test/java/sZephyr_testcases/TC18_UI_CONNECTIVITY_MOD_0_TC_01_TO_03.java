@@ -39,7 +39,7 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 	
 
 	@Test(priority = 17)
-	public void removerepair() throws Exception {
+	public void TC18_UI_Check_sZephyr_Info_values() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}

@@ -40,7 +40,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 	
 	
 	@Test(priority = 13)
-	public void removerepair() throws Exception {
+	public void TC14_BlewithRouter_CONNECTIVITY() throws Exception {
 		initAndriodDriver();
 		pairBlewithRouter();
 	}

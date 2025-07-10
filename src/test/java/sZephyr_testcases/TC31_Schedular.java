@@ -42,7 +42,7 @@ public class TC31_Schedular extends MobileAppWrappers {
 	}
 
 	@Test(priority = 30)
-	public void schedule() throws Exception {
+	public void TC31_Schedular_BLEWithoutRouter_App_close_mode() throws Exception {
 		initAndriodDriver();
 		landingpage = new LandingPage(driver);
 		loginpage = new SignInPage(driver);

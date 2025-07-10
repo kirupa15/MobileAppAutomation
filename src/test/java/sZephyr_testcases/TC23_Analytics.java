@@ -28,7 +28,7 @@ public class TC23_Analytics  extends MobileAppWrappers {
 	}
 	
 	@Test(priority = 22)
-	public void removerepair() throws Exception {
+	public void TC_23_Analytics_BLE_withoutRouter_App_Open() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
@@ -53,6 +53,7 @@ public class TC23_Analytics  extends MobileAppWrappers {
 		adddevicepage.checkdevicesettingstoast();
 		
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analyticspage.getenergydurationvalue();
 		analyticspage.navigatehomepage();
 		Thread.sleep(2000);
@@ -60,6 +61,7 @@ public class TC23_Analytics  extends MobileAppWrappers {
 		Thread.sleep(1*60*1000);
 		homepage.clickONOFFButton();
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analyticspage.checkenrgyduration(1);
 		
 		

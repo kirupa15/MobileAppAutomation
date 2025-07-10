@@ -28,7 +28,7 @@ public class TC24_Analytics  extends MobileAppWrappers {
 	}
 	
 	@Test(priority = 23)
-	public void removerepair() throws Exception {
+	public void TC_24_Analytics_BLE_without_Router_App_Close() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
@@ -59,6 +59,7 @@ public class TC24_Analytics  extends MobileAppWrappers {
 		openapp();
 		
 		analyticspage.navigateAnalyticsPage();
+		Thread.sleep(5000);
 		analyticspage.checkenrgyduration(1);
 		
 				

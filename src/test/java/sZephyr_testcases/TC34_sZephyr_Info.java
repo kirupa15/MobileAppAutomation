@@ -36,7 +36,7 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 
 
 	@Test(priority = 33)
-	public void removerepair() throws Exception {
+	public void TC34_Szephyr_Info_check() throws Exception {
 		initAndriodDriver();
 		pairBlewithoutRouter();
 	}
