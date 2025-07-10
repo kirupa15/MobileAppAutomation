@@ -72,9 +72,6 @@ public class TC01_Accounts_Info extends MobileAppWrappers {
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
 
-
-
-
 			homepage.clickONOFFButton();
 			Thread.sleep(2000);
 			homepage.VerifyONdesc();
