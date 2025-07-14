@@ -1,565 +1,163 @@
-tage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685bcc3776fcd0b43f49901b","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
+:0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:73 PM ]  [Tc:  ] "INFO""socketsetConnectionFunc"{"data":false,"serial_no":"SAC00020250625KW"} undefined
+[D: 14/7/2025 T: 22:0:18:999 PM ]  [Tc:  ] {"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}"analytics_Session_data==============>"undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:73 PM ]  [Tc:  ] "[warn] ""Home_helper.js""trying to update connection twice in server connection" 
+[D: 14/7/2025 T: 22:0:19:0 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:74 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
+[D: 14/7/2025 T: 22:2:29:251 PM ]  [Tc:  ] "INFO""GENERAL_INFO""267" Data: FCM-TOKEN Created do0038KwRCu8Ei3HJ7qtuy:APA91bEX8Bn1ue1225ubyytoSqeMa7gKMwE0mejZ9WPGURA6srughnSA7W2ll_SAd-JhtAjZk3EP9ui7ufETSNfiyQ4qWcWz7JeRLsBOvVY6Ga2Qgzd_sME
 
-[D: 27/6/2025 T: 16:0:43:74 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
+[D: 14/7/2025 T: 22:2:29:251 PM ]  [Tc:  ] "INFO""GENERAL_INFO""268" Data: FCM-TOKEN Type string
 
-[D: 27/6/2025 T: 16:0:43:74 PM ]  [Tc:  ] "INFO""COMMUNICATION""113" communication Setup step-2 trying to turn ON BLE
+[D: 14/7/2025 T: 22:2:29:251 PM ]  [Tc:  ] "INFO""GENERAL_INFO""269" Data: Stored FCM-TOKEN Locally Success do0038KwRCu8Ei3HJ7qtuy:APA91bEX8Bn1ue1225ubyytoSqeMa7gKMwE0mejZ9WPGURA6srughnSA7W2ll_SAd-JhtAjZk3EP9ui7ufETSNfiyQ4qWcWz7JeRLsBOvVY6Ga2Qgzd_sME
 
-[D: 27/6/2025 T: 16:0:43:130 PM ]  [Tc:  ] "INFO""COMMUNICATION""118" communication Setup step-3 trying to turn ON Necessary Listner
+[D: 14/7/2025 T: 22:2:29:258 PM ]  [Tc:  ] "app state retrieve data55============>""68751d2764485d8c86bae853"{"verified":true,"pushNotifyToken":"do0038KwRCu8Ei3HJ7qtuy:APA91bEX8Bn1ue1225ubyytoSqeMa7gKMwE0mejZ9WPGURA6srughnSA7W2ll_SAd-JhtAjZk3EP9ui7ufETSNfiyQ4qWcWz7JeRLsBOvVY6Ga2Qgzd_sME","_id":"68751d2764485d8c86bae853","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""} 
 
-[D: 27/6/2025 T: 16:0:43:134 PM ]  [Tc:  ] "INFO""COMMUNICATION""119" listners enable successfully [{},{},{}]
+[D: 14/7/2025 T: 22:2:29:365 PM ]  [Tc:  ] "INFO""COMMUNICATION""111" establish communication triggered []
 
-[D: 27/6/2025 T: 16:0:43:134 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" communication Setup step-4 communication setup completed trying to proceed communication
+[D: 14/7/2025 T: 22:2:29:402 PM ]  [Tc:  ] "Home.js associative_devices ==> "[]undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:134 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" Proceed communication with BLE: undefined
+[D: 14/7/2025 T: 22:2:31:462 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:151 PM ]  [Tc:  ] "INFO""COMMUNICATION""1150" BLE POWER Status: PoweredOn
+[D: 14/7/2025 T: 22:2:31:463 PM ]  [Tc:  ] "GET getGeyserSocketTemp"nullundefined undefined
 
-[D: 27/6/2025 T: 16:0:43:152 PM ]  [Tc:  ] "INFO""COMMUNICATION""1151" BLE POWER ON triggering BLE communication PoweredOn
+[D: 14/7/2025 T: 22:2:31:463 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:153 PM ]  [Tc:  ] "INFO""COMMUNICATION""1111" proceed BLE Communication step-0 checking BLE permission  deviceMAC true
+[D: 14/7/2025 T: 22:2:31:463 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:155 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
+[D: 14/7/2025 T: 22:2:31:463 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:169 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
+[D: 14/7/2025 T: 22:5:10:31 PM ]  [Tc:  ] "app state retrieve data55============>""68751d2764485d8c86bae853"{"verified":true,"pushNotifyToken":"do0038KwRCu8Ei3HJ7qtuy:APA91bEX8Bn1ue1225ubyytoSqeMa7gKMwE0mejZ9WPGURA6srughnSA7W2ll_SAd-JhtAjZk3EP9ui7ufETSNfiyQ4qWcWz7JeRLsBOvVY6Ga2Qgzd_sME","_id":"68751d2764485d8c86bae853","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""} [object Object]
 
-[D: 27/6/2025 T: 16:0:43:172 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
+[D: 14/7/2025 T: 22:5:10:139 PM ]  [Tc:  ] "INFO""COMMUNICATION""111" establish communication triggered [{"serial_no":"SAC00020250714DA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"40:3F:8C:B7:6D:38","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"Select Brand","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392741,"longitude":79.8084004,"cur_firm_vrs":"2.3","hw_vrs":"0.6","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:9D:F4:76","app_id":0,"token_key":0,"build_number":71,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"localConnection":false,"serverConnection":false,"connection":false}]
 
-[D: 27/6/2025 T: 16:0:43:173 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
+[D: 14/7/2025 T: 22:5:10:140 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""SOCKET.IO" Pre condition : Server connection demolished true
 
-[D: 27/6/2025 T: 16:0:43:174 PM ]  [Tc:  ] "INFO""COMMUNICATION""1112" proceed BLE Communication step-1 auto connection
+[D: 14/7/2025 T: 22:5:10:140 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""SOCKET.IO" Create a socket.io for serial number: SAC00020250714DA
 
-[D: 27/6/2025 T: 16:0:43:175 PM ]  [Tc:  ] "INFO""COMMUNICATION""1113" avaliable BLE mac address {"SAC00020250625KW":"34:98:7A:66:1C:F6"} disconnected device ["SAC00020250625KW"]
+[D: 14/7/2025 T: 22:5:10:143 PM ]  [Tc:  ] "INFO""COMMUNICATION""11126" serial number to router mapping: {"SAC00020250714DA":""}
 
-[D: 27/6/2025 T: 16:0:43:175 PM ]  [Tc:  ] "INFO""COMMUNICATION""1114" auto connect {"mode":1,"address":"34:98:7A:66:1C:F6","serial_no":"SAC00020250625KW"}
+[D: 14/7/2025 T: 22:5:10:143 PM ]  [Tc:  ] "INFO""COMMUNICATION""11127" serial number to IP address mapping: {"SAC00020250714DA":""}
 
-[D: 27/6/2025 T: 16:0:43:176 PM ]  [Tc:  ] "INFO""COMMUNICATION""1127" establish connection with device for data:  {"mode":1,"address":"34:98:7A:66:1C:F6","serial_no":"SAC00020250625KW"}
+[D: 14/7/2025 T: 22:5:10:143 PM ]  [Tc:  ] "INFO""COMMUNICATION""11128" all routers to verify for communication: []
 
-[D: 27/6/2025 T: 16:0:43:179 PM ]  [Tc:  ] "INFO""COMMUNICATION""1128" all connection status: false
+[D: 14/7/2025 T: 22:5:10:144 PM ]  [Tc:  ] "INFO""COMMUNICATION""112" communication Setup step-1 Checking permission
 
-[D: 27/6/2025 T: 16:0:43:179 PM ]  [Tc:  ] "INFO""COMMUNICATION""1129" all message sending status :  false
+[D: 14/7/2025 T: 22:5:10:243 PM ]  [Tc:  ] "GET getGeyserSocketTemp"nullundefined undefined
 
-[D: 27/6/2025 T: 16:0:43:180 PM ]  [Tc:  ] "INFO""COMMUNICATION""1131" proceed BLE Communication step-3 initiate the BLE connect for ID: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:10:245 PM ]  [Tc:  ] "Home.js associative_devices ==> "[{"serial_no":"SAC00020250714DA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"40:3F:8C:B7:6D:38","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"Select Brand","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392741,"longitude":79.8084004,"cur_firm_vrs":"2.3","hw_vrs":"0.6","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:9D:F4:76","app_id":0,"token_key":0,"build_number":71,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:181 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Bluetooth connect function iniitated in Pairing for mac: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:10:250 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
 
-[D: 27/6/2025 T: 16:0:43:184 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Checking the BLE current state PoweredOn
+[D: 14/7/2025 T: 22:5:10:253 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1712" Date : [{"data":{"is_admin":true,"id":"68751d2764485d8c86bae853","serial_no":"SAC00020250714KA","cur_firm_vrs":"2.3","hw_vrs":"0.6","svr_ota":false,"BLE_mac":"34:98:7A:66:1C:F6","latitude":11.9392741,"longitude":79.8084004,"router_ssid":"","router_mac":"40:3F:8C:B7:6D:38","name":"device1","build_number":71},"id":1}] buffer.length : 1 buffer[i]?.id : 1
 
-[D: 27/6/2025 T: 16:0:43:366 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
+[D: 14/7/2025 T: 22:5:10:253 PM ]  [Tc:  ] "INFO""API""1751" SEND API_ID: 1 Data: addDevice API payload {"is_admin":true,"id":"68751d2764485d8c86bae853","serial_no":"SAC00020250714KA","cur_firm_vrs":"2.3","hw_vrs":"0.6","svr_ota":false,"BLE_mac":"34:98:7A:66:1C:F6","latitude":11.9392741,"longitude":79.8084004,"router_ssid":"","router_mac":"40:3F:8C:B7:6D:38","name":"device1","build_number":71}
 
-[D: 27/6/2025 T: 16:0:43:366 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
+[D: 14/7/2025 T: 22:5:10:254 PM ]  [Tc:  ] "SET geyserSocketTemp:"{"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}undefined undefined
 
-[D: 27/6/2025 T: 16:0:43:367 PM ]  [Tc:  ] {}"analytics_Session_data==============>"undefined undefined
+[D: 14/7/2025 T: 22:5:10:256 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1617" Analytics step 19 : Filter the selected serial number from the application state for getting the respective device ID mappingSAC00020250714KAIndex :-1
 
-[D: 27/6/2025 T: 16:0:43:367 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
+[D: 14/7/2025 T: 22:5:10:256 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1625" Analytics step 24 : Serial number not foun in application state -1
 
-[D: 27/6/2025 T: 16:4:10:630 PM ]  [Tc:  ] "app state retrieve data55============>""685b9f222afb11b42e74d860"{"verified":true,"pushNotifyToken":"fAUByhCDQSOTAAQHcmbCSV:APA91bEUbUSuNAWHRGP2AnUQoTZMAoyhwHWbKQkPTKy5HWGKADbM2UOCG7l3alX8vKWxqlSmVE8wnEm8LfboW_6J01EBAVrKciglNgZ-Lqkw6ksLtZo_oRQ","_id":"685b9f222afb11b42e74d860","UserName":"testuser007","EmailId":"testuser007@gmail.com","MobileNumber":null,"__v":0,"firmwareAutoUpload":false,"firmwareAutoDownload":false,"svr_ota":false,"currentOTAIndex":0,"curCacheBuildNum":0,"latest_Bin_File_Length":null,"latest_firmware_vrs":null,"age":"","gender":""} [object Object]
+[D: 14/7/2025 T: 22:5:10:449 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
 
-[D: 27/6/2025 T: 16:4:10:741 PM ]  [Tc:  ] "INFO""COMMUNICATION""111" establish communication triggered [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]
+[D: 14/7/2025 T: 22:5:10:452 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
 
-[D: 27/6/2025 T: 16:4:10:742 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""SOCKET.IO" Pre condition : Server connection demolished true
+[D: 14/7/2025 T: 22:5:10:452 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
 
-[D: 27/6/2025 T: 16:4:10:742 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""SOCKET.IO" Create a socket.io for serial number: SAC00020250627KA
+[D: 14/7/2025 T: 22:5:10:452 PM ]  [Tc:  ] "INFO""COMMUNICATION""113" communication Setup step-2 trying to turn ON BLE
 
-[D: 27/6/2025 T: 16:4:10:743 PM ]  [Tc:  ] "INFO""COMMUNICATION""11126" serial number to router mapping: {"SAC00020250627KA":""}
+[D: 14/7/2025 T: 22:5:10:458 PM ]  [Tc:  ] "INFO""COMMUNICATION""118" communication Setup step-3 trying to turn ON Necessary Listner
 
-[D: 27/6/2025 T: 16:4:10:743 PM ]  [Tc:  ] "INFO""COMMUNICATION""11127" serial number to IP address mapping: {"SAC00020250627KA":""}
+[D: 14/7/2025 T: 22:5:10:459 PM ]  [Tc:  ] "INFO""COMMUNICATION""119" listners enable successfully [{},{},{}]
 
-[D: 27/6/2025 T: 16:4:10:744 PM ]  [Tc:  ] "INFO""COMMUNICATION""11128" all routers to verify for communication: []
+[D: 14/7/2025 T: 22:5:10:460 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" communication Setup step-4 communication setup completed trying to proceed communication
 
-[D: 27/6/2025 T: 16:4:10:744 PM ]  [Tc:  ] "INFO""COMMUNICATION""112" communication Setup step-1 Checking permission
+[D: 14/7/2025 T: 22:5:10:460 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" Proceed communication with BLE: undefined
 
-[D: 27/6/2025 T: 16:4:10:819 PM ]  [Tc:  ] "Home.js associative_devices ==> "[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
+[D: 14/7/2025 T: 22:5:10:462 PM ]  [Tc:  ] "INFO""COMMUNICATION""1150" BLE POWER Status: PoweredOn
 
-[D: 27/6/2025 T: 16:4:10:823 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
+[D: 14/7/2025 T: 22:5:10:464 PM ]  [Tc:  ] "INFO""COMMUNICATION""1151" BLE POWER ON triggering BLE communication PoweredOn
 
-[D: 27/6/2025 T: 16:4:10:825 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1621" Analytics step 25 : No session data is stored in the application's local storage 
+[D: 14/7/2025 T: 22:5:10:465 PM ]  [Tc:  ] "INFO""COMMUNICATION""1111" proceed BLE Communication step-0 checking BLE permission  deviceMAC true
 
-[D: 27/6/2025 T: 16:4:10:931 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
+[D: 14/7/2025 T: 22:5:10:468 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
 
-[D: 27/6/2025 T: 16:4:10:944 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
+[D: 14/7/2025 T: 22:5:10:475 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
 
-[D: 27/6/2025 T: 16:4:10:944 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
+[D: 14/7/2025 T: 22:5:10:477 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
 
-[D: 27/6/2025 T: 16:4:10:944 PM ]  [Tc:  ] "INFO""COMMUNICATION""113" communication Setup step-2 trying to turn ON BLE
+[D: 14/7/2025 T: 22:5:10:478 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
 
-[D: 27/6/2025 T: 16:4:10:950 PM ]  [Tc:  ] "INFO""COMMUNICATION""118" communication Setup step-3 trying to turn ON Necessary Listner
+[D: 14/7/2025 T: 22:5:10:478 PM ]  [Tc:  ] "INFO""COMMUNICATION""1112" proceed BLE Communication step-1 auto connection
 
-[D: 27/6/2025 T: 16:4:10:950 PM ]  [Tc:  ] "INFO""COMMUNICATION""119" listners enable successfully [{},{},{}]
+[D: 14/7/2025 T: 22:5:10:478 PM ]  [Tc:  ] "INFO""COMMUNICATION""1113" avaliable BLE mac address {"SAC00020250714DA":"34:98:7A:9D:F4:76"} disconnected device ["SAC00020250714DA"]
 
-[D: 27/6/2025 T: 16:4:10:950 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" communication Setup step-4 communication setup completed trying to proceed communication
+[D: 14/7/2025 T: 22:5:10:478 PM ]  [Tc:  ] "INFO""COMMUNICATION""1114" auto connect {"mode":1,"address":"34:98:7A:9D:F4:76","serial_no":"SAC00020250714DA"}
 
-[D: 27/6/2025 T: 16:4:10:951 PM ]  [Tc:  ] "INFO""COMMUNICATION""1110" Proceed communication with BLE: undefined
+[D: 14/7/2025 T: 22:5:10:478 PM ]  [Tc:  ] "INFO""COMMUNICATION""1127" establish connection with device for data:  {"mode":1,"address":"34:98:7A:9D:F4:76","serial_no":"SAC00020250714DA"}
 
-[D: 27/6/2025 T: 16:4:10:952 PM ]  [Tc:  ] "INFO""COMMUNICATION""1150" BLE POWER Status: PoweredOn
+[D: 14/7/2025 T: 22:5:10:479 PM ]  [Tc:  ] "INFO""COMMUNICATION""1128" all connection status: false
 
-[D: 27/6/2025 T: 16:4:10:952 PM ]  [Tc:  ] "INFO""COMMUNICATION""1151" BLE POWER ON triggering BLE communication PoweredOn
+[D: 14/7/2025 T: 22:5:10:479 PM ]  [Tc:  ] "INFO""COMMUNICATION""1129" all message sending status :  false
 
-[D: 27/6/2025 T: 16:4:10:952 PM ]  [Tc:  ] "INFO""COMMUNICATION""1111" proceed BLE Communication step-0 checking BLE permission  deviceMAC true
+[D: 14/7/2025 T: 22:5:10:479 PM ]  [Tc:  ] "INFO""COMMUNICATION""1131" proceed BLE Communication step-3 initiate the BLE connect for ID: 34:98:7A:9D:F4:76
 
-[D: 27/6/2025 T: 16:4:10:953 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
+[D: 14/7/2025 T: 22:5:10:480 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Bluetooth connect function iniitated in Pairing for mac: 34:98:7A:9D:F4:76
 
-[D: 27/6/2025 T: 16:4:10:968 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
+[D: 14/7/2025 T: 22:5:10:481 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Checking the BLE current state PoweredOn
 
-[D: 27/6/2025 T: 16:4:10:969 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
+[D: 14/7/2025 T: 22:5:10:487 PM ]  [Tc:  ] "WARN""HARDWARE_INFO""SOCKET.IO" room id emited to device server: SAC00020250714DA
 
-[D: 27/6/2025 T: 16:4:10:969 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
+[D: 14/7/2025 T: 22:5:10:490 PM ]  [Tc:  ] "INFO""API""1751" RECV API_ID: 1 Data: addDevice API response {"data":{"device_Id":"687501e257815362016a703d","serial_no":"SAC00020250714KA"},"message":"Successfully Mapped user_id and device_id to corresponding tables ","status":"success"}
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1112" proceed BLE Communication step-1 auto connection
+[D: 14/7/2025 T: 22:5:10:490 PM ]  [Tc:  ] "INFO""API""1713" RECV API_ID: 1 Data : {"data":{"device_Id":"687501e257815362016a703d","serial_no":"SAC00020250714KA"},"message":"Successfully Mapped user_id and device_id to corresponding tables ","status":"success"}
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1113" avaliable BLE mac address {"SAC00020250627KA":"34:98:7A:66:1C:F6"} disconnected device ["SAC00020250627KA"]
+[D: 14/7/2025 T: 22:5:10:491 PM ]  [Tc:  ] "INFO""GENERAL_INFO""3399" Data : [object Object] Data2 :[object Object] Data3 :-1
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1114" auto connect {"mode":1,"address":"34:98:7A:66:1C:F6","serial_no":"SAC00020250627KA"}
+[D: 14/7/2025 T: 22:5:10:492 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1715" Data : []
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1127" establish connection with device for data:  {"mode":1,"address":"34:98:7A:66:1C:F6","serial_no":"SAC00020250627KA"}
+[D: 14/7/2025 T: 22:5:10:507 PM ]  [Tc:  ] "WARN""HARDWARE_INFO""SOCKET.IO" device connection data from server: {"data":false,"serial_no":"SAC00020250714DA"}
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1128" all connection status: false
+[D: 14/7/2025 T: 22:5:10:507 PM ]  [Tc:  ] "setconnectionFunc function called"{"data":false,"serial_no":"SAC00020250714DA"}undefined undefined
 
-[D: 27/6/2025 T: 16:4:10:970 PM ]  [Tc:  ] "INFO""COMMUNICATION""1129" all message sending status :  false
+[D: 14/7/2025 T: 22:5:10:508 PM ]  [Tc:  ] "setconnectionFunc AllDeviceData===================>"[{"serial_no":"SAC00020250714DA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"40:3F:8C:B7:6D:38","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"Select Brand","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392741,"longitude":79.8084004,"cur_firm_vrs":"2.3","hw_vrs":"0.6","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:9D:F4:76","app_id":0,"token_key":0,"build_number":71,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
 
-[D: 27/6/2025 T: 16:4:10:971 PM ]  [Tc:  ] "INFO""COMMUNICATION""1131" proceed BLE Communication step-3 initiate the BLE connect for ID: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:10:509 PM ]  [Tc:  ] "INFO""socketsetConnectionFunc"{"data":false,"serial_no":"SAC00020250714DA"} undefined
 
-[D: 27/6/2025 T: 16:4:10:971 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Bluetooth connect function iniitated in Pairing for mac: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:10:509 PM ]  [Tc:  ] "[warn] ""Home_helper.js""trying to update connection twice in server connection" 
 
-[D: 27/6/2025 T: 16:4:10:972 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Checking the BLE current state PoweredOn
+[D: 14/7/2025 T: 22:5:14:481 PM ]  [Tc:  ] "GET getGeyserSocketTemp"{"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}undefined undefined
 
-[D: 27/6/2025 T: 16:4:11:166 PM ]  [Tc:  ] "WARN""HARDWARE_INFO""SOCKET.IO" room id emited to device server: SAC00020250627KA
+[D: 14/7/2025 T: 22:5:14:492 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1617" Analytics step 19 : Filter the selected serial number from the application state for getting the respective device ID mappingSAC00020250714KAIndex :-1
 
-[D: 27/6/2025 T: 16:4:11:189 PM ]  [Tc:  ] "WARN""HARDWARE_INFO""SOCKET.IO" device connection data from server: {"data":false,"serial_no":"SAC00020250627KA"}
+[D: 14/7/2025 T: 22:5:14:493 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1625" Analytics step 24 : Serial number not foun in application state -1
 
-[D: 27/6/2025 T: 16:4:11:190 PM ]  [Tc:  ] "setconnectionFunc function called"{"data":false,"serial_no":"SAC00020250627KA"}undefined undefined
+[D: 14/7/2025 T: 22:5:15:467 PM ]  [Tc:  ] "INFO""COMMUNICATION""1167" proceed MDNS Communication step-0 initiate the MDNS permission check
 
-[D: 27/6/2025 T: 16:4:11:190 PM ]  [Tc:  ] "setconnectionFunc AllDeviceData===================>"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
+[D: 14/7/2025 T: 22:5:15:478 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
 
-[D: 27/6/2025 T: 16:4:11:191 PM ]  [Tc:  ] "INFO""socketsetConnectionFunc"{"data":false,"serial_no":"SAC00020250627KA"} undefined
+[D: 14/7/2025 T: 22:5:15:489 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
 
-[D: 27/6/2025 T: 16:4:11:191 PM ]  [Tc:  ] "[warn] ""Home_helper.js""trying to update connection twice in server connection" 
+[D: 14/7/2025 T: 22:5:15:494 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
 
-[D: 27/6/2025 T: 16:4:11:299 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" BLE is connected to mac: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:15:498 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
 
-[D: 27/6/2025 T: 16:4:11:309 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" Connected mac address: 34:98:7A:66:1C:F6 status: true
+[D: 14/7/2025 T: 22:5:15:501 PM ]  [Tc:  ] "INFO""COMMUNICATION""1170" proceed MDNS Communication step-1 initiate the MDNS Initilization
 
-[D: 27/6/2025 T: 16:4:11:910 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" MTU size of Mobile: 512
+[D: 14/7/2025 T: 22:5:15:504 PM ]  [Tc:  ] "INFO""COMMUNICATION""1171" Trying to initilize zeroconfig
 
-[D: 27/6/2025 T: 16:4:11:971 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" MTU after, negotiation with device: 256
+[D: 14/7/2025 T: 22:5:19:157 PM ]  [Tc:  ] "GET getGeyserSocketTemp"{"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}undefined undefined
 
-[D: 27/6/2025 T: 16:4:12:70 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""BLE" BLE connected device and with MTU of34:98:7A:66:1C:F6 with mtu of 256
+[D: 14/7/2025 T: 22:5:19:169 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1617" Analytics step 19 : Filter the selected serial number from the application state for getting the respective device ID mappingSAC00020250714KAIndex :-1
 
-[D: 27/6/2025 T: 16:4:12:73 PM ]  [Tc:  ] "INFO""COMMUNICATION""1132" BLE connect resolved for MAC: 34:98:7A:66:1C:F6 {"listner":"Listener","mtu":256}
+[D: 14/7/2025 T: 22:5:19:170 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1625" Analytics step 24 : Serial number not foun in application state -1
 
-[D: 27/6/2025 T: 16:4:12:74 PM ]  [Tc:  ] "INFO""COMMUNICATION""1144" proceed BLE Communication step-4 initiate the BLE connectivity establishment: 34:98:7A:66:1C:F6
+[D: 14/7/2025 T: 22:5:19:302 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
 
-[D: 27/6/2025 T: 16:4:12:76 PM ]  [Tc:  ] "INFO""COMMUNICATION""1145" Connected to device through BLE: 34:98:7A:66:1C:F6 serial_Number: SAC00020250627KA
+[D: 14/7/2025 T: 22:5:19:303 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
 
-[D: 27/6/2025 T: 16:4:12:78 PM ]  [Tc:  ] "INFO""COMMUNICATION""1146" Trying to establish security for the device: 34:98:7A:66:1C:F6 serial_Number: SAC00020250627KA
+[D: 14/7/2025 T: 22:5:19:303 PM ]  [Tc:  ] "GET getGeyserSocketTemp"{"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}undefined undefined
 
-[D: 27/6/2025 T: 16:4:12:79 PM ]  [Tc:  ] "INFO""GENERAL_INFO""243" Data: POJO Input Data {"serial_Number":"SAC00020250627KA","randomNumber":false,"securityStatus":false} Action 1
+[D: 14/7/2025 T: 22:5:19:304 PM ]  [Tc:  ] {"SAC00020250714KA":[{"energy_used":0,"skt_on_time":1752510076,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510165,"skt_on_off_dur":26,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510217,"skt_on_off_dur":13,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2539,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510302,"skt_on_off_dur":41,"active_duration":0,"synced":true,"start_temp":2539,"end_temp":2551,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"},{"energy_used":0,"skt_on_time":1752510369,"skt_on_off_dur":6,"active_duration":0,"synced":true,"start_temp":2545,"end_temp":2545,"user_id":"68751d2764485d8c86bae853","device_Id":"687501e257815362016a703d"}]}"analytics_Session_data==============>"undefined undefined
 
-[D: 27/6/2025 T: 16:4:12:80 PM ]  [Tc:  ] "INFO""GENERAL_INFO""244" Data: POJO Output Data {"SAC00020250627KA":{"serial_Number":"SAC00020250627KA","randomNumber":false,"securityStatus":false}}
-
-[D: 27/6/2025 T: 16:4:12:83 PM ]  [Tc:  ] "INFO""GENERAL_INFO""243" Data: POJO Input Data {"serial_Number":"SAC00020250627KA","randomNumber":"1f62388fe73efd6f6f1ff824b3b1c4b2"} Action 0
-
-[D: 27/6/2025 T: 16:4:12:83 PM ]  [Tc:  ] "INFO""GENERAL_INFO""244" Data: POJO Output Data {"SAC00020250627KA":{"serial_Number":"SAC00020250627KA","randomNumber":"1f62388fe73efd6f6f1ff824b3b1c4b2","securityStatus":false}}
-
-[D: 27/6/2025 T: 16:4:12:83 PM ]  [Tc:  ] "INFO""GENERAL_INFO""341" Data: Send message in retries function 170,6,1,33,167,5,0,0,1,0,16,0,31,98,56,143,231,62,253,111,111,31,248,36,179,177,196,178,215,14,23,168 SAC00020250627KA 1 39 1
-
-[D: 27/6/2025 T: 16:4:12:84 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""120" SEND Serial_No:SAC00020250627KA Msg_Id: 39 Frame: 170,6,1,33,167,5,0,0,1,0,16,0,31,98,56,143,231,62,253,111,111,31,248,36,179,177,196,178,215,14,23,168 Trans_Id: 1 InterFace: 1 Auth: 1 forceInterface: 1 Data:""
-
-[D: 27/6/2025 T: 16:4:12:84 PM ]  [Tc:  ] "INFO""GENERAL_INFO""121" Data: Current_Connectivity_Mode: 1
-
-[D: 27/6/2025 T: 16:4:12:84 PM ]  [Tc:  ] "INFO""GENERAL_INFO""348" file: retry_Message.js:154 , Retry_Message_Timer, message_Queue_Manager: 1751020452084 false
-
-[D: 27/6/2025 T: 16:4:12:84 PM ]  [Tc:  ] "INFO""GENERAL_INFO""122" Data: Sending BLE write message in connectivity 34:98:7A:66:1C:F6 [170,6,1,33,167,5,0,0,1,0,16,0,31,98,56,143,231,62,253,111,111,31,248,36,179,177,196,178,215,14,23,168]
-
-[D: 27/6/2025 T: 16:4:12:84 PM ]  [Tc:  ] "INFO""GENERAL_INFO""342" Data: retry_Message.js:34 , Retry_Message_Timer , timerID: 1751020452084 142 170,6,1,33,167,5,0,0,1,0,16,0,31,98,56,143,231,62,253,111,111,31,248,36,179,177,196,178,215,14,23,168 SAC00020250627KA 1 39 true 1
-
-[D: 27/6/2025 T: 16:4:12:85 PM ]  [Tc:  ] "WARN""COMMUNICATION""1147" Sending BLE security frame {"frame":[170,6,1,33,167,5,0,0,1,0,16,0,31,98,56,143,231,62,253,111,111,31,248,36,179,177,196,178,215,14,23,168],"trancact":1} serial_Number: SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:12:314 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,33,167,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,242,250,254,222]
-
-[D: 27/6/2025 T: 16:4:12:318 PM ]  [Tc:  ] "INFO""GENERAL_INFO""243" Data: POJO Input Data {"serial_Number":"SAC00020250627KA","securityStatus":true} Action 0
-
-[D: 27/6/2025 T: 16:4:12:318 PM ]  [Tc:  ] "INFO""GENERAL_INFO""244" Data: POJO Output Data {"SAC00020250627KA":{"serial_Number":"SAC00020250627KA","randomNumber":"1f62388fe73efd6f6f1ff824b3b1c4b2","securityStatus":true}}
-
-[D: 27/6/2025 T: 16:4:12:319 PM ]  [Tc:  ] "INFO""GENERAL_INFO""343" Data: file: retry_Message.js Timer cleared 39 SAC00020250627KA 1
-
-[D: 27/6/2025 T: 16:4:12:321 PM ]  [Tc:  ] "localsetConnectionFunc function called"{"data":true,"serial_no":"SAC00020250627KA"}undefined undefined
-
-[D: 27/6/2025 T: 16:4:12:322 PM ]  [Tc:  ] "INFO""COMMUNICATION""1153" Handshake successful for BLE
-
-[D: 27/6/2025 T: 16:4:12:323 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 39 Trans_Id: 1 InterFace: 1 SetOrQuery: 1 Data: {"app_id":0,"handshake_status":0}
-
-[D: 27/6/2025 T: 16:4:12:324 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""122" Error: ERROR Invalid Message ID in message Distributor 39
-
-[D: 27/6/2025 T: 16:4:12:325 PM ]  [Tc:  ] "All_Devices && All_Devices?.length"1undefined undefined
-
-[D: 27/6/2025 T: 16:4:12:428 PM ]  [Tc:  ] "Local set connection function -connection parameter"falsefalse false
-
-[D: 27/6/2025 T: 16:4:12:428 PM ]  [Tc:  ] "INFO""Home_helper.js""attempt to destroy server connectivity since device is connected locally" 
-
-[D: 27/6/2025 T: 16:4:12:428 PM ]  [Tc:  ] "INFO""HARDWARE_INFO""SOCKET.IO" socket disconnect trigger for serial number: 
-
-[D: 27/6/2025 T: 16:4:12:429 PM ]  [Tc:  ] "WARN""HARDWARE_INFO""SOCKET.IO" socket disconnected from server io client disconnect
-
-[D: 27/6/2025 T: 16:4:12:429 PM ]  [Tc:  ] "setconnectionFunc function called"{"data":false,"serial_no":"SAC00020250627KA"}undefined undefined
-
-[D: 27/6/2025 T: 16:4:12:429 PM ]  [Tc:  ] "setconnectionFunc AllDeviceData===================>"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
-
-[D: 27/6/2025 T: 16:4:12:430 PM ]  [Tc:  ] "INFO""socketsetConnectionFunc"{"data":false,"serial_no":"SAC00020250627KA"} undefined
-
-[D: 27/6/2025 T: 16:4:12:430 PM ]  [Tc:  ] "[warn] ""Home_helper.js""trying to update connection twice in server connection" 
-
-[D: 27/6/2025 T: 16:4:12:431 PM ]  [Tc:  ] "INFO""All_Devices before updateAllDeviceStatus"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] [object Object]
-
-[D: 27/6/2025 T: 16:4:12:432 PM ]  [Tc:  ] "INFO""localsetConnectionFunc"{"data":true,"serial_no":"SAC00020250627KA"} undefined
-
-[D: 27/6/2025 T: 16:4:12:433 PM ]  [Tc:  ] "checkfunctionname""localsetConnectionFunc"undefined 
-
-[D: 27/6/2025 T: 16:4:12:433 PM ]  [Tc:  ] "INFO""Home_helper.js""ALLDevice inside device Loading control" [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]
-
-[D: 27/6/2025 T: 16:4:12:433 PM ]  [Tc:  ] "INFO""Home_helper.js""params of deviceLoading control " SAC00020250627KA true undefined
-
-[D: 27/6/2025 T: 16:4:12:463 PM ]  [Tc:  ] "INFO""GENERAL_INFO""233" Data: Authendication Frame before send via local connection [170,8,1,34,163,7,0,0,15,0,0,0,164,115,94,104,1,1,83,65,67,48,48,48,50,48,50,53,48,54,50,55,75,65,0,0,86,245,195,198]
-
-[D: 27/6/2025 T: 16:4:12:463 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""120" SEND Serial_No:SAC00020250627KA Msg_Id: 35 Frame: 170,8,1,34,163,7,0,0,15,0,0,0,164,115,94,104,1,1,83,65,67,48,48,48,50,48,50,53,48,54,50,55,75,65,0,0,86,245,195,198 Trans_Id: 2 InterFace: undefined Auth: 1 forceInterface: undefined Data:{"app_id":1,"token_key":15,"is_admin":true,"serial_no":"SAC00020250627KA"}
-
-[D: 27/6/2025 T: 16:4:12:463 PM ]  [Tc:  ] "INFO""GENERAL_INFO""121" Data: Current_Connectivity_Mode: 1
-
-[D: 27/6/2025 T: 16:4:12:468 PM ]  [Tc:  ] "INFO""GENERAL_INFO""122" Data: Sending BLE write message in connectivity 34:98:7A:66:1C:F6 [170,12,1,34,203,42,207,27,90,246,233,104,224,125,150,163,176,80,3,199,71,249,55,57,252,156,37,43,143,4,114,14,112,154,67,18,104,37,70,129,201,91,19,222,114,146,210,186,88,173,220,232,91,184,53,201]
-
-[D: 27/6/2025 T: 16:4:13:195 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,34,154,237,4,224,233,184,102,151,253,171,248,112,102,6,17,0,189,3,117,218]
-
-[D: 27/6/2025 T: 16:4:13:209 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 35 Trans_Id: 2 InterFace: 1 SetOrQuery: 1 Data: {"key_verified_sts":true,"prime_mode_enable":false,"sts":2}
-
-[D: 27/6/2025 T: 16:4:13:216 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2320" Data: Authentication message response from the device {"key_verified_sts":true,"prime_mode_enable":false,"sts":2,"transactionBit":2,"serial_no":"SAC00020250627KA","interFace":1} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:13:218 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2321" Data: Authentication success response {"key_verified_sts":true,"prime_mode_enable":false,"sts":2,"transactionBit":2,"serial_no":"SAC00020250627KA","interFace":1} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:13:222 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2321" Data: Application initiate the initial query [170,12,10,35,154,2,48,1,47,1,46,1,68,0,11,0,61,0,69,0,177,2,14,0,0,0,0,0,0,0,0,0,1,0,0,4,1,2,0,0,1,2,3,0,1,5,0,1,5,200,0,50,45,63,168,235] SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:13:223 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2322" Data: Admin provision payload info {} undefined
-
-[D: 27/6/2025 T: 16:4:13:223 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13151"  checking for ota update undefined
-
-[D: 27/6/2025 T: 16:4:13:224 PM ]  [Tc:  ] "checkfunctionname"undefinedundefined 
-
-[D: 27/6/2025 T: 16:4:13:225 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""120" SEND Serial_No:SAC00020250627KA Msg_Id: 26,48,47,46,11 Frame: 170,12,10,35,154,2,48,1,47,1,46,1,68,0,11,0,61,0,69,0,177,2,14,0,0,0,0,0,0,0,0,0,1,0,0,4,1,2,0,0,1,2,3,0,1,5,0,1,5,200,0,50,45,63,168,235 Trans_Id: 3 InterFace: 1 Auth: 1 forceInterface: undefined Data:""
-
-[D: 27/6/2025 T: 16:4:13:226 PM ]  [Tc:  ] "INFO""GENERAL_INFO""121" Data: Current_Connectivity_Mode: 1
-
-[D: 27/6/2025 T: 16:4:13:227 PM ]  [Tc:  ] "INFO""Home_helper.js""ALLDevice inside device Loading control" [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]
-
-[D: 27/6/2025 T: 16:4:13:228 PM ]  [Tc:  ] "INFO""Home_helper.js""params of deviceLoading control " SAC00020250627KA false undefined
-
-[D: 27/6/2025 T: 16:4:13:304 PM ]  [Tc:  ] "error in device buffer"{}undefined undefined
-
-[D: 27/6/2025 T: 16:4:13:304 PM ]  [Tc:  ] "INFO""GENERAL_INFO""undefined15" Data: AI_ML_RequestCheck function SAC00020250627KA {"SAC00020250625KW":{"TimeStamp":"2025-06-25T10:43:53.422Z"},"SAC00020250627KA":{"TimeStamp":"2025-06-27T10:32:31.676Z"}}
-
-[D: 27/6/2025 T: 16:4:13:304 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13153"  ota_resume_status ==> null
-
-[D: 27/6/2025 T: 16:4:13:305 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13155"  findFirmwareUpdateIndex func called
-
-[D: 27/6/2025 T: 16:4:13:305 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13156"  if block NotUpdated
-
-[D: 27/6/2025 T: 16:4:13:305 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13166"  OTA_handler function called 0
-
-[D: 27/6/2025 T: 16:4:13:305 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13167"  deviceVersionCheck API data ==> {"product_type":"6","build_number":51}
-
-[D: 27/6/2025 T: 16:4:13:305 PM ]  [Tc:  ] "INFO""API""" SEND API_ID: 553 Data: POST API call to https://ftp.iinvsys.com:55576/core1/status/build_number_check
-
-[D: 27/6/2025 T: 16:4:13:306 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""13180"  OTA_handler else firmwareAutoUpload ==>   false
-
-[D: 27/6/2025 T: 16:4:13:312 PM ]  [Tc:  ] "INFO""GENERAL_INFO""122" Data: Sending BLE write message in connectivity 34:98:7A:66:1C:F6 [170,16,10,35,152,204,99,179,138,200,59,84,123,6,188,97,31,74,176,98,206,132,160,234,109,253,35,201,124,175,159,180,49,179,202,199,10,220,126,59,177,19,73,199,25,199,14,87,146,148,246,125,205,222,103,94,6,52,253,136,183,85,187,223,102,139,181,38,231,106,44,145]
-
-[D: 27/6/2025 T: 16:4:13:356 PM ]  [Tc:  ] "INFO""API""" RECV API_ID: 553 Data: POST API response {"status":"success","software_upt_version":"updates available","vers_sts":1,"bin_file_name":"https://ftp.iinvsys.com:55569/files/6_67.bin","bin_file_size":1556320,"currentBinVers":{"app_upt_version":"true","version_priority_value":true,"bin_file_size":1556320,"_id":"67da9d3c1fd115cdadda4013","product_type":"6","build_number":67,"createdAt":"2025-03-19T10:32:28.862Z","updatedAt":"2025-04-24T11:29:14.135Z"},"otaparms":{"setorquery":1,"message":"frimwareUpdateInfo","modeOfdata":0,"total_bin_size":1556320,"build_num":67,"url":"https://ftp.iinvsys.com:55569/files/6_67.bin","internet_mode":0,"app_id":253},"parms":{"type":"6"}}
-
-[D: 27/6/2025 T: 16:4:13:357 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13168"  OTA_handler deviceVersionCheck resp ==> [object Object]
-
-[D: 27/6/2025 T: 16:4:13:358 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13169"  OTA_handler deviceVersionCheck All_Devices.length ==> {"status":"success","software_upt_version":"updates available","vers_sts":1,"bin_file_name":"https://ftp.iinvsys.com:55569/files/6_67.bin","bin_file_size":1556320,"currentBinVers":{"app_upt_version":"true","version_priority_value":true,"bin_file_size":1556320,"_id":"67da9d3c1fd115cdadda4013","product_type":"6","build_number":67,"createdAt":"2025-03-19T10:32:28.862Z","updatedAt":"2025-04-24T11:29:14.135Z"},"otaparms":{"setorquery":1,"message":"frimwareUpdateInfo","modeOfdata":0,"total_bin_size":1556320,"build_num":67,"url":"https://ftp.iinvsys.com:55569/files/6_67.bin","internet_mode":0,"app_id":253},"parms":{"type":"6"}}
-
-[D: 27/6/2025 T: 16:4:13:358 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13170"   OTA_handler deviceVersionCheck serial_no SAC00020250627KA 0
-
-[D: 27/6/2025 T: 16:4:13:359 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"device_OTA_State":0,"update_Status":"NotUpdated"} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:13:360 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"device_OTA_State":0,"update_Status":"NotUpdated"} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:13:474 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13171"  OTA_handler latestbinVersion server resp ==>  67
-
-[D: 27/6/2025 T: 16:4:13:481 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""" Error reading file from path /data/user/0/com.iinvsys.szephyr/cache/deviceBin67.txt: Error: ENOENT: /data/user/0/com.iinvsys.szephyr/cache/deviceBin67.txt: open failed: ENOENT (No such file or directory), open '/data/user/0/com.iinvsys.szephyr/cache/deviceBin67.txt'
-
-[D: 27/6/2025 T: 16:4:13:481 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""13173"  OTA_handler deviceVersionCheck retrieve_binData Firmware not available ==>  Error: ENOENT: /data/user/0/com.iinvsys.szephyr/cache/deviceBin67.txt: open failed: ENOENT (No such file or directory), open '/data/user/0/com.iinvsys.szephyr/cache/deviceBin67.txt'
-
-[D: 27/6/2025 T: 16:4:13:481 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""13174" OTA_handler deviceVersionCheck retrieve_binData firmwareAutoDownload ==>  false
-
-[D: 27/6/2025 T: 16:4:13:534 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,34,244,4,135,215,93,24,232,6,48,4,158,97,123,38,15,43,183,197,0,70]
-
-[D: 27/6/2025 T: 16:4:13:537 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 34 Trans_Id: 2 InterFace: 1 SetOrQuery: 0 Data: {"err_type":0,"srv_certi_sts":0,"err_code":0,"is_set_res":false}
-
-[D: 27/6/2025 T: 16:4:13:537 PM ]  [Tc:  ] "certLog Home.js:1 server_Cert_Resp_Handler msg_id 34 resp ==> "{"err_type":0,"srv_certi_sts":0,"err_code":0,"is_set_res":false,"msg_id":34,"serial_no":"SAC00020250627KA"}false 
-
-[D: 27/6/2025 T: 16:4:13:538 PM ]  [Tc:  ] "certLog Home.js:2 getDynamicCertInProgress ==> "{}"" 
-
-[D: 27/6/2025 T: 16:4:13:538 PM ]  [Tc:  ] "certLog Home.js:2 server_Cert_Resp_Handler msg_id 34 all device details ==> "0[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] 
-
-[D: 27/6/2025 T: 16:4:13:540 PM ]  [Tc:  ] "certLog Home.js:8 server_Cert_Resp_Handler msg_id 34 case 0: Unverified certificate""""" 
-
-[D: 27/6/2025 T: 16:4:13:540 PM ]  [Tc:  ] "certLog Home.js:1 factory default query frame ==> "[170,1,1,36,11,0,0,0,94,254,254,219]"object" 
-
-[D: 27/6/2025 T: 16:4:13:541 PM ]  [Tc:  ] "certLog Home.js:9.1 inProgressStatus"{}"" 
-
-[D: 27/6/2025 T: 16:4:13:541 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""120" SEND Serial_No:SAC00020250627KA Msg_Id: undefined Frame: 170,1,1,36,11,0,0,0,94,254,254,219 Trans_Id: undefined InterFace: undefined Auth: 1 forceInterface: undefined Data:undefined
-
-[D: 27/6/2025 T: 16:4:13:541 PM ]  [Tc:  ] "INFO""GENERAL_INFO""121" Data: Current_Connectivity_Mode: 1
-
-[D: 27/6/2025 T: 16:4:13:543 PM ]  [Tc:  ] "INFO""GENERAL_INFO""122" Data: Sending BLE write message in connectivity 34:98:7A:66:1C:F6 [170,4,1,36,249,9,163,35,70,71,3,9,201,217,166,156,10,89,76,83,41,53,180,62]
-
-[D: 27/6/2025 T: 16:4:13:551 PM ]  [Tc:  ] "certLog Home.js:2 server_Cert_Resp_Handler 11 query sent success""BLE Sent Success || if condition || BLEWriteMessages 1""" 
-
-[D: 27/6/2025 T: 16:4:13:777 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,220,24,171,190,191,252,74,187,45,40,30,201,255,76,75,29,228,123,74,13]
-
-[D: 27/6/2025 T: 16:4:13:788 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 48 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameterID":1,"auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"high_temp_thrs":28,"low_temp_thrs":24}
-
-[D: 27/6/2025 T: 16:4:13:792 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1840" Data: {"serial_no":"SAC00020250627KA","data":{"parameterID":1,"auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"high_temp_thrs":28,"low_temp_thrs":24}}
-
-[D: 27/6/2025 T: 16:4:13:795 PM ]  [Tc:  ] "INFO""APP_STATE""1841" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"high_temp_thrs":28,"low_temp_thrs":24} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:13:800 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"high_temp_thrs":28,"low_temp_thrs":24} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:13:965 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,36,152,105,100,16,140,130,77,113,199,89,109,35,245,235,139,51,221,167,19]
-
-[D: 27/6/2025 T: 16:4:13:971 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,8,1,32,109,226,85,2,195,11,60,60,115,51,97,156,37,229,56,242,255,52,184,106,240,19,254,129,0,197,79,138,146,33,15,161,48,11,200,79]
-
-[D: 27/6/2025 T: 16:4:13:976 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 48 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameterID":4,"dev_led_quiet_mode":false}
-
-[D: 27/6/2025 T: 16:4:13:976 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1840" Data: {"serial_no":"SAC00020250627KA","data":{"parameterID":4,"dev_led_quiet_mode":false}}
-
-[D: 27/6/2025 T: 16:4:13:976 PM ]  [Tc:  ] "INFO""APP_STATE""1841" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"dev_led_quiet_mode":false} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:13:977 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":false,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"dev_led_quiet_mode":false} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:54 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 47 Trans_Id: 0 InterFace: 1 SetOrQuery: 0 Data: {"parameterID":1,"voltage":238287,"current":0,"power":0,"rly_sts":true,"energyIC_prd_time":6839923}
-
-[D: 27/6/2025 T: 16:4:14:54 PM ]  [Tc:  ] "inside periodic data "undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:54 PM ]  [Tc:  ] "periodic_data data.........."{"parameterID":1,"voltage":238287,"current":0,"power":0,"rly_sts":true,"energyIC_prd_time":6839923}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:77 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,32,165,129,19,127,81,32,109,227,78,246,24,181,72,18,201,132,167,190,81,114]
-
-[D: 27/6/2025 T: 16:4:14:80 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 47 Trans_Id: 0 InterFace: 1 SetOrQuery: 0 Data: {"parameterID":2,"temp":24437,"temp_prd_time":1751020451}
-
-[D: 27/6/2025 T: 16:4:14:80 PM ]  [Tc:  ] "inside periodic data "undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:81 PM ]  [Tc:  ] "periodic_data data.........."{"parameterID":2,"temp":24437,"temp_prd_time":1751020451}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:127 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,181,67,79,24,135,217,9,2,164,69,101,85,224,250,112,151,35,222,173,4]
-
-[D: 27/6/2025 T: 16:4:14:130 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 47 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameterID":2,"temp":24437,"temp_prd_time":17}
-
-[D: 27/6/2025 T: 16:4:14:130 PM ]  [Tc:  ] "inside periodic data "undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:131 PM ]  [Tc:  ] "periodic_data data.........."{"parameterID":2,"temp":24437,"temp_prd_time":17}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:215 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,196,48,15,110,250,219,38,39,86,183,173,67,68,248,187,142,121,95,193,88]
-
-[D: 27/6/2025 T: 16:4:14:226 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 46 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameter_ID":1,"relay_sts":0,"malfunction_error":false,"state":0,"app_id":1,"relay_sts_chg_time":1751020452,"query_notify":0}
-
-[D: 27/6/2025 T: 16:4:14:226 PM ]  [Tc:  ] "INFO""GENERAL_INFO""284" Data : {"serial_no":"SAC00020250627KA","relay_status":0,"state":0,"app_id":1,"query_notify":0}
-
-[D: 27/6/2025 T: 16:4:14:244 PM ]  [Tc:  ] "INFO""GENERAL_INFO""285" Data : [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]
-
-[D: 27/6/2025 T: 16:4:14:285 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2110" Preparing the list of notifications device detected error [] Maintenance [] allDevices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"parameter_ID":1,"relay_sts":0,"malfunction_error":false,"state":0,"app_id":1,"relay_sts_chg_time":1751020452,"query_notify":0,"serial_no":"SAC00020250627KA"} device name device1
-
-[D: 27/6/2025 T: 16:4:14:286 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,236,20,136,133,223,24,183,12,208,55,0,38,119,123,198,150,193,187,7,229]
-
-[D: 27/6/2025 T: 16:4:14:299 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 46 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameter_ID":3,"last_sched_updt_time":0,"query_notify":false}
-
-[D: 27/6/2025 T: 16:4:14:302 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2110" Preparing the list of notifications device detected error [] Maintenance [] allDevices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"parameter_ID":3,"last_sched_updt_time":0,"query_notify":false,"serial_no":"SAC00020250627KA"} device name device1
-
-[D: 27/6/2025 T: 16:4:14:362 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,196,48,15,110,250,219,38,39,86,183,173,67,68,248,187,142,121,95,193,88]
-
-[D: 27/6/2025 T: 16:4:14:369 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 46 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"parameter_ID":1,"relay_sts":0,"malfunction_error":false,"state":0,"app_id":1,"relay_sts_chg_time":1751020452,"query_notify":0}
-
-[D: 27/6/2025 T: 16:4:14:370 PM ]  [Tc:  ] "INFO""GENERAL_INFO""284" Data : {"serial_no":"SAC00020250627KA","relay_status":0,"state":0,"app_id":1,"query_notify":0}
-
-[D: 27/6/2025 T: 16:4:14:399 PM ]  [Tc:  ] "INFO""GENERAL_INFO""285" Data : [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]
-
-[D: 27/6/2025 T: 16:4:14:442 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,61,173,211,135,72,165,191,167,25,81,248,145,19,143,53,0,42,45,95,109]
-
-[D: 27/6/2025 T: 16:4:14:443 PM ]  [Tc:  ] "INFO""GENERAL_INFO""2110" Preparing the list of notifications device detected error [] Maintenance [] allDevices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"parameter_ID":1,"relay_sts":0,"malfunction_error":false,"state":0,"app_id":1,"relay_sts_chg_time":1751020452,"query_notify":0,"serial_no":"SAC00020250627KA"} device name device1
-
-[D: 27/6/2025 T: 16:4:14:457 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 68 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"device_ip_address":"0.0.0.0"}
-
-[D: 27/6/2025 T: 16:4:14:460 PM ]  [Tc:  ] "[info] ""callBack.js ""The application has received the Device_IP from the device" 0
-
-[D: 27/6/2025 T: 16:4:14:460 PM ]  [Tc:  ] "[info] ""callBack.js ""Verifying the previous Device_IP in the application state." 0.0.0.0
-
-[D: 27/6/2025 T: 16:4:14:460 PM ]  [Tc:  ] "[info] ""callBack.js ""The application recieved the same Device_IP from device, So application skipped to update." undefined
-
-[D: 27/6/2025 T: 16:4:14:507 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,12,1,35,67,11,4,17,101,172,22,235,235,215,109,13,228,94,103,91,254,149,116,86,55,246,4,210,68,250,15,176,207,21,85,98,197,72,195,159,122,212,73,246,243,235,48,253,16,32,61,126,98,6,75,204]
-
-[D: 27/6/2025 T: 16:4:14:511 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 11 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"serial_no":"SAC00020250627KA","blu_addr":"34:98:7a:66:1c:f6","hw_vrs":"0.5","cur_firm_vrs":"1.10","hardware_type":6,"max_alaram_supported":16,"build_number":51,"full_status":0,"srv_typ":1,"srv_vrs":0,"cert_vrs":2}
-
-[D: 27/6/2025 T: 16:4:14:512 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13103"  constupdated_firm_status_handler= , updated_firm_status_handler: {"serial_no":"SAC00020250627KA","blu_addr":"34:98:7a:66:1c:f6","hardware_vrs":"0.5","cur_firm_vrs":"1.10","hardware_type":6,"srv_typ":1,"srv_vrs":0,"cert_vrs":2,"build_number":51}
-
-[D: 27/6/2025 T: 16:4:14:512 PM ]  [Tc:  ] "OTA Home.js:1 binVersionUpdateAfterOTAUpdate ==>"{"cur_firm_vrs":"1.10","build_number":51,"index":0,"srv_typ":1,"srv_vrs":0,"cert_vrs":2}[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] [object Object]
-
-[D: 27/6/2025 T: 16:4:14:516 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13181"  binVersionUpdateAfterOTAUpdate ==>  [object Object]
-
-[D: 27/6/2025 T: 16:4:14:517 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13182"  binVersionUpdateAfterOTAUpdate  [object Object]
-
-[D: 27/6/2025 T: 16:4:14:517 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"cur_firm_vrs":"1.10","build_number":51,"update_Status":"NotUpdated","srv_vrs":0,"cert_vrs":2,"srv_typ":1} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:519 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"cur_firm_vrs":"1.10","build_number":51,"update_Status":"NotUpdated","srv_vrs":0,"cert_vrs":2,"srv_typ":1} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:619 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""13185"  binVersionUpdateAfterOTAUpdate else 
-
-[D: 27/6/2025 T: 16:4:14:619 PM ]  [Tc:  ] "certLog:1 checkCertVersCompareAPI function called ===>""SAC00020250627KA"0 [object Object]
-
-[D: 27/6/2025 T: 16:4:14:620 PM ]  [Tc:  ] "INFO""API""https://ftp.iinvsys.com:55576/core1/cert/certCompare" SEND API_ID: 553 Data: certVersCompare API call
-
-[D: 27/6/2025 T: 16:4:14:621 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,146,31,205,131,1,146,253,11,70,211,200,103,248,245,237,123,120,80,235,72]
-
-[D: 27/6/2025 T: 16:4:14:630 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 61 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false}
-
-[D: 27/6/2025 T: 16:4:14:631 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:631 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:711 PM ]  [Tc:  ] "INFO""API""https://ftp.iinvsys.com:55576/core1/cert/certCompare" RECV API_ID: 553 Data: certVersCompare API response "{\"status\":\"success\",\"data\":[{\"_id\":\"67c83c65a8bf241c0307c476\",\"Cert_ver\":2,\"expiration\":\"2125-05-02T18:30:00.000Z\",\"server_ver\":0,\"servertype\":1,\"createdAt\":\"2025-03-05T11:58:29.603Z\",\"updatedAt\":\"2025-03-05T11:58:29.603Z\"}]}"
-
-[D: 27/6/2025 T: 16:4:14:711 PM ]  [Tc:  ] "certLog:2 certVersCompare API resp ==> "{"status":"success","data":[{"_id":"67c83c65a8bf241c0307c476","Cert_ver":2,"expiration":"2125-05-02T18:30:00.000Z","server_ver":0,"servertype":1,"createdAt":"2025-03-05T11:58:29.603Z","updatedAt":"2025-03-05T11:58:29.603Z"}]}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:711 PM ]  [Tc:  ] "certLog:2.1 certVersCompare API resp ===> "{"srv_typ":1,"srv_vrs":0,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z"}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:712 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"latest_cert_vrs":2,"srv_vrs":0,"srv_typ":1,"cert_expiry":"2125-05-02T18:30:00.000Z"} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:712 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"latest_cert_vrs":2,"srv_vrs":0,"srv_typ":1,"cert_expiry":"2125-05-02T18:30:00.000Z"} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "11 undefined
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "00 undefined
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "22 undefined
-
-[D: 27/6/2025 T: 16:4:14:794 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:795 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,1,141,162,67,149,152,28,201,48,171,0,149,92,121,228,60,173,60,164,255]
-
-[D: 27/6/2025 T: 16:4:14:797 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,4,1,35,185,92,75,63,210,134,157,74,49,223,30,128,57,129,79,11,54,127,121,34]
-
-[D: 27/6/2025 T: 16:4:14:800 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 61 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false}
-
-[D: 27/6/2025 T: 16:4:14:801 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:801 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":160,"high_volt_thrsh":275,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:881 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 69 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"energy_config_mode":0,"initial_dur":0,"rly_off_dur":0,"rly_on_dur":0,"low_tmp":0,"high_tmp":0}
-
-[D: 27/6/2025 T: 16:4:14:882 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"energy_config_mode":0} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:882 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"energy_config_mode":0} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:14:969 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,12,1,35,176,231,174,48,82,94,166,209,64,213,120,208,16,120,237,164,103,67,5,31,176,159,39,176,91,71,31,52,144,55,158,58,29,249,249,209,155,195,240,111,213,223,212,130,209,253,56,186,121,83,37,110]
-
-[D: 27/6/2025 T: 16:4:14:976 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 14 Trans_Id: 3 InterFace: 1 SetOrQuery: 0 Data: {"ssid_length":32,"ssid":"","router_index":0,"app_id":1,"app_id_rtr_prov_sts":false,"dev_rtr_prov_sts":false,"force_remove_flag":true,"router_conn_success":0,"router_signal_strength":0,"wifi_config_time":1751020452,"connect_state":255,"msg_stquery":false}
-
-[D: 27/6/2025 T: 16:4:14:976 PM ]  [Tc:  ] "Home_helper.js device_parameter_update function, data"{"msg_id":14,"serial_no":"SAC00020250627KA","app_id":1,"ssid":"","router_index":0,"dev_rtr_prov_sts":false,"app_id_rtr_prov_sts":false,"force_remove_flag":true,"router_conn_success":0,"router_signal_strength":0,"wifi_config_time":1751020452,"connect_state":255,"msg_stquery":false}undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:977 PM ]  [Tc:  ] "router connection success response from the device""SAC00020250627KA"{"msg_id":14,"serial_no":"SAC00020250627KA","app_id":1,"ssid":"","router_index":0,"dev_rtr_prov_sts":false,"app_id_rtr_prov_sts":false,"force_remove_flag":true,"router_conn_success":0,"router_signal_strength":0,"wifi_config_time":1751020452,"connect_state":255,"msg_stquery":false} undefined
-
-[D: 27/6/2025 T: 16:4:14:977 PM ]  [Tc:  ] "Verifying the router connection status received from the device."0undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:977 PM ]  [Tc:  ] "Home_helper.js home.js:1122 , setAllDevices , associative_devices:"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]undefined undefined
-
-[D: 27/6/2025 T: 16:4:14:978 PM ]  [Tc:  ] "Home_helper.js Checking SSID found are not"trueundefined undefined
-
-[D: 27/6/2025 T: 16:4:14:979 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"router_ssid":"","router_mac":""} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:14:979 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"router_ssid":"","router_mac":""} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:15:62 PM ]  [Tc:  ] "Router connection success update into application communication state"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z"}]undefined undefined
-
-[D: 27/6/2025 T: 16:4:15:63 PM ]  [Tc:  ] "INFO""COMMUNICATION""11126" serial number to router mapping: {"SAC00020250627KA":""}
-
-[D: 27/6/2025 T: 16:4:15:64 PM ]  [Tc:  ] "INFO""COMMUNICATION""11127" serial number to IP address mapping: {"SAC00020250627KA":""}
-
-[D: 27/6/2025 T: 16:4:15:64 PM ]  [Tc:  ] "INFO""COMMUNICATION""11128" all routers to verify for communication: []
-
-[D: 27/6/2025 T: 16:4:15:64 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""1152" Raw data from ble [170,12,1,36,67,11,4,17,101,172,22,235,235,215,109,13,228,94,103,91,254,149,116,86,55,246,4,210,68,250,15,176,207,21,85,98,72,149,102,36,225,127,192,31,134,188,200,223,77,203,91,39,92,204,249,226]
-
-[D: 27/6/2025 T: 16:4:15:66 PM ]  [Tc:  ] "INFO""MESSAGE_TRANSFER""121" RECV Serial_No: SAC00020250627KA Msg_Id: 11 Trans_Id: 4 InterFace: 1 SetOrQuery: 0 Data: {"serial_no":"SAC00020250627KA","blu_addr":"34:98:7a:66:1c:f6","hw_vrs":"0.5","cur_firm_vrs":"1.10","hardware_type":6,"max_alaram_supported":16,"build_number":51,"full_status":0,"srv_typ":1,"srv_vrs":0,"cert_vrs":2}
-
-[D: 27/6/2025 T: 16:4:15:67 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13103"  constupdated_firm_status_handler= , updated_firm_status_handler: {"serial_no":"SAC00020250627KA","blu_addr":"34:98:7a:66:1c:f6","hardware_vrs":"0.5","cur_firm_vrs":"1.10","hardware_type":6,"srv_typ":1,"srv_vrs":0,"cert_vrs":2,"build_number":51}
-
-[D: 27/6/2025 T: 16:4:15:67 PM ]  [Tc:  ] "OTA Home.js:1 binVersionUpdateAfterOTAUpdate ==>"{"cur_firm_vrs":"1.10","build_number":51,"index":0,"srv_typ":1,"srv_vrs":0,"cert_vrs":2}[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] [object Object]
-
-[D: 27/6/2025 T: 16:4:15:68 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13181"  binVersionUpdateAfterOTAUpdate ==>  [object Object]
-
-[D: 27/6/2025 T: 16:4:15:69 PM ]  [Tc:  ] "INFO""GENERAL_INFO""13182"  binVersionUpdateAfterOTAUpdate  [object Object]
-
-[D: 27/6/2025 T: 16:4:15:69 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"cur_firm_vrs":"1.10","build_number":51,"update_Status":"NotUpdated","srv_vrs":0,"cert_vrs":2,"srv_typ":1} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:15:69 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"cur_firm_vrs":"1.10","build_number":51,"update_Status":"NotUpdated","srv_vrs":0,"cert_vrs":2,"srv_typ":1} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:15:170 PM ]  [Tc:  ] "ERROR""GENERAL_INFO""13185"  binVersionUpdateAfterOTAUpdate else 
-
-[D: 27/6/2025 T: 16:4:15:171 PM ]  [Tc:  ] "certLog:1 checkCertVersCompareAPI function called ===>""SAC00020250627KA"0 [object Object]
-
-[D: 27/6/2025 T: 16:4:15:172 PM ]  [Tc:  ] "INFO""API""https://ftp.iinvsys.com:55576/core1/cert/certCompare" SEND API_ID: 553 Data: certVersCompare API call
-
-[D: 27/6/2025 T: 16:4:15:184 PM ]  [Tc:  ] "INFO""API""https://ftp.iinvsys.com:55576/core1/cert/certCompare" RECV API_ID: 553 Data: certVersCompare API response "{\"status\":\"success\",\"data\":[{\"_id\":\"67c83c65a8bf241c0307c476\",\"Cert_ver\":2,\"expiration\":\"2125-05-02T18:30:00.000Z\",\"server_ver\":0,\"servertype\":1,\"createdAt\":\"2025-03-05T11:58:29.603Z\",\"updatedAt\":\"2025-03-05T11:58:29.603Z\"}]}"
-
-[D: 27/6/2025 T: 16:4:15:184 PM ]  [Tc:  ] "certLog:2 certVersCompare API resp ==> "{"status":"success","data":[{"_id":"67c83c65a8bf241c0307c476","Cert_ver":2,"expiration":"2125-05-02T18:30:00.000Z","server_ver":0,"servertype":1,"createdAt":"2025-03-05T11:58:29.603Z","updatedAt":"2025-03-05T11:58:29.603Z"}]}undefined undefined
-
-[D: 27/6/2025 T: 16:4:15:185 PM ]  [Tc:  ] "certLog:2.1 certVersCompare API resp ===> "{"srv_typ":1,"srv_vrs":0,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z"}undefined undefined
-
-[D: 27/6/2025 T: 16:4:15:185 PM ]  [Tc:  ] "INFO""APP_STATE""" Data: received in deviceStateUpdate Associative devices [{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}] data {"latest_cert_vrs":2,"srv_vrs":0,"srv_typ":1,"cert_expiry":"2125-05-02T18:30:00.000Z"} serial noSAC00020250627KA 
-
-[D: 27/6/2025 T: 16:4:15:186 PM ]  [Tc:  ] "entering into device deviceStateUpdate"[{"serial_no":"SAC00020250627KA","name":"device1","is_admin":true,"router_ssid":"","router_mac":"","heating_dur_usg_limit":0,"inverse_schedule_dur":20,"infinityOn_Toggle":true,"brand_name":"","model_name":"","capacity":"","room_size":"","auto_onoff_enable":false,"sch_ovr_auto_onoff":false,"dev_led_quiet_mode":false,"high_temp_thrs":28,"low_temp_thrs":24,"latitude":11.9392683,"longitude":79.808401,"cur_firm_vrs":"1.10","hw_vrs":"0.5","product_type":"6","svr_ota":false,"max_alaram_supported":16,"device_OTA_State":0,"update_Status":"NotUpdated","BLE_mac":"34:98:7A:66:1C:F6","app_id":1,"token_key":15,"build_number":51,"IP_add":"","energy_config_mode":0,"low_volt_thrs":0,"high_volt_thrsh":0,"enable_low_volt":false,"enable_high_volt":false,"onOffStatus":0,"current":"","voltage":"","power":"","is_appid_exist":true,"temp":"","temp_connect_status":false,"loading":false,"auth_status":2,"temperQueryStatus":false,"eleTempQueryStatus":false,"device_Id":"685e72306967a9b450c55541","srv_vrs":0,"cert_vrs":2,"srv_typ":1,"latest_cert_vrs":2,"cert_expiry":"2125-05-02T18:30:00.000Z","localConnection":false,"serverConnection":false,"connection":false}]{"latest_cert_vrs":2,"srv_vrs":0,"srv_typ":1,"cert_expiry":"2125-05-02T18:30:00.000Z"} SAC00020250627KA
-
-[D: 27/6/2025 T: 16:4:15:268 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "11 undefined
-
-[D: 27/6/2025 T: 16:4:15:268 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:15:269 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "00 undefined
-
-[D: 27/6/2025 T: 16:4:15:269 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:15:269 PM ]  [Tc:  ] "certLog:3 certVersCompare API resp ===> "22 undefined
-
-[D: 27/6/2025 T: 16:4:15:269 PM ]  [Tc:  ] "certLog:5 certVersCompare cert version details are matched. || device does not have router"undefinedundefined undefined
-
-[D: 27/6/2025 T: 16:4:15:969 PM ]  [Tc:  ] "INFO""COMMUNICATION""1167" proceed MDNS Communication step-0 initiate the MDNS permission check
-
-[D: 27/6/2025 T: 16:4:15:974 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of airplane mode false
-
-[D: 27/6/2025 T: 16:4:15:985 PM ]  [Tc:  ] "INFO""PERMISSION""32" Verifying the current status of location : "already-enabled"
-
-[D: 27/6/2025 T: 16:4:15:988 PM ]  [Tc:  ] "INFO""PERMISSION""32" permission grant of the request: [true]
-
-[D: 27/6/2025 T: 16:4:15:988 PM ]  [Tc:  ] "INFO""PERMISSION""32" Permission resolved for connectivity
-
-[D: 27/6/2025 T: 16:4:15:988 PM ]  [Tc:  ] "INFO""COMMUNICATION""1170" proceed MDNS Communication step-1 initiate the MDNS Initilization
-
-[D: 27/6/2025 T: 16:4:15:989 PM ]  [Tc:  ] "INFO""COMMUNICATION""1171" Trying to initilize zeroconfig
-
-[D: 27/6/2025 T: 16:4:18:781 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1621" Analytics step 25 : No session data is stored in the application's local storage 
-
-[D: 27/6/2025 T: 16:4:21:230 PM ]  [Tc:  ] "INFO""GENERAL_INFO""1621" Analytics step 25 : No session data is stored in the application's local storage 
-
-[D: 27/6/2025 T: 16:4:21:301 PM ]  [Tc:  ] "deep linking =====================>"""undefined undefined
-
-[D: 27/6/2025 T: 16:4:21:301 PM ]  [Tc:  ] "addEventListener""background"undefined undefined
-
-[D: 27/6/2025 T: 16:4:21:302 PM ]  [Tc:  ] {}"analytics_Session_data==============>"undefined undefined
-
-[D: 27/6/2025 T: 16:4:21:302 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined
+[D: 14/7/2025 T: 22:5:19:312 PM ]  [Tc:  ] null"analytics_Session_data==============>"undefined undefined

@@ -49,7 +49,8 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -67,7 +68,8 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

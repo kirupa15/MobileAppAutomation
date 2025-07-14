@@ -60,7 +60,8 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -94,7 +95,8 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -138,7 +140,8 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

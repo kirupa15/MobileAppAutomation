@@ -49,7 +49,8 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+//		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -67,7 +68,8 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(4);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

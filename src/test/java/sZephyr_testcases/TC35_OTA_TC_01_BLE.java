@@ -86,6 +86,7 @@ public class  TC35_OTA_TC_01_BLE extends MobileAppWrappers {
 		//adddevicepage.enterWiFiPassword("12345678908");
 		//adddevicepage.clickEnterButton();
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickBleokbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
 		//for(int i=0;i<2;i++) {

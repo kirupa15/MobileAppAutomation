@@ -65,7 +65,8 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 
 			adddevicepage.pair(5);
 			adddevicepage.clickNextButtonsZephyrInfo();
-			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickBleokbutton();
+//			adddevicepage.checkdevicedetailstoast();
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
 			

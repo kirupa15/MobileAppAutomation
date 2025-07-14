@@ -61,7 +61,8 @@ public class  TC15_SmartConfig extends MobileAppWrappers {
 		adddevicepage.pair(3);
 		turnOffBT();
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

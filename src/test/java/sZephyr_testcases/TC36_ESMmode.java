@@ -49,6 +49,7 @@ public class TC36_ESMmode extends MobileAppWrappers {
 			
 			adddevicepage.pair(1);
 			adddevicepage.clickNextButtonsZephyrInfo();
+			adddevicepage.clickBleokbutton();
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			
 			//60 percent mode check 

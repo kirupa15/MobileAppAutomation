@@ -8,143 +8,90 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">501</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">27</td><td class="num">0</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">11,179,720</td><td></td><td>skip</td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">sZephyr_testcases.TC01_Accounts_Info</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1751024436264</td><td rowspan="1">1</td></tr><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sZephyr_testcases.TC01_Accounts_Info</td><td><a href="#m1">removerepair</a></td><td rowspan="1">1751024435790</td><td rowspan="1">469</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">sZephyr_testcases.TC07_SignIn_Logout</td><td><a href="#m0">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</a></td><td rowspan="1">1752506167487</td><td rowspan="1">263674</td></tr><tr class="failedodd"><td rowspan="1">sZephyr_testcases.TC09_Pairing_BlewithRouter</td><td><a href="#m1">TC09_Pairing_BLE_With_Router</a></td><td rowspan="1">1752507310171</td><td rowspan="1">157452</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">sZephyr_testcases.TC07_SignIn_Logout</td><td><a href="#m2">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</a></td><td rowspan="1">1752505947743</td><td rowspan="1">218871</td></tr><tr class="retriedodd"><td rowspan="1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td><td><a href="#m3">TC08_Pairing_BLE_Without_Router</a></td><td rowspan="1">1752506432002</td><td rowspan="1">217532</td></tr><tr class="retriedeven"><td rowspan="1">sZephyr_testcases.TC09_Pairing_BlewithRouter</td><td><a href="#m4">TC09_Pairing_BLE_With_Router</a></td><td rowspan="1">1752507088847</td><td rowspan="1">220646</td></tr><tr class="retriedodd"><td rowspan="1">sZephyr_testcases.TC13_BlewithoutRouter</td><td><a href="#m5">TC13_BlewithoutRouter_CONNECTIVITY</a></td><td rowspan="1">1752507980765</td><td rowspan="1">344059</td></tr><tr class="retriedeven"><td rowspan="1">sZephyr_testcases.TC14_BleWithRouter</td><td><a href="#m6">TC14_BlewithRouter_CONNECTIVITY</a></td><td rowspan="1">1752508779032</td><td rowspan="1">395553</td></tr><tr class="retriedodd"><td rowspan="1">sZephyr_testcases.TC19_DeviceSettings</td><td><a href="#m7">TC19_DeviceSettings_Add_Router</a></td><td rowspan="1">1752510740994</td><td rowspan="1">199828</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC01_Accounts_Info</td><td><a href="#m8">TC_01_Account_Info_page_check</a></td><td rowspan="1">1752505436959</td><td rowspan="1">228021</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC02_SignUp</td><td><a href="#m9">TC02_SignUp_with_already_registered_username</a></td><td rowspan="1">1752505665659</td><td rowspan="1">39470</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC03_SignUp</td><td><a href="#m10">TC03_SignUp_Try_to_Sign_Up_with_new_username</a></td><td rowspan="1">1752505705857</td><td rowspan="1">96026</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC04_SignIn_Flow</td><td><a href="#m11">TC04_SignIn_Try_to_SignIn_with_unregistered_username</a></td><td rowspan="1">1752505802814</td><td rowspan="1">35270</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC05_SignIn_Valid_User</td><td><a href="#m12">TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</a></td><td rowspan="1">1752505839051</td><td rowspan="1">57435</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC06_SignIn_SuccessFlow</td><td><a href="#m13">TC06_During_SignUp_or_SignIn_enter_valid_OTP</a></td><td rowspan="1">1752505897414</td><td rowspan="1">49544</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td><td><a href="#m14">TC08_Pairing_BLE_Without_Router</a></td><td rowspan="1">1752506650264</td><td rowspan="1">437845</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC10_Pairing_SmartConfig</td><td><a href="#m15">TC10_Pairing_in_SmartConfig_Mode</a></td><td rowspan="1">1752507468293</td><td rowspan="1">511661</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC13_BlewithoutRouter</td><td><a href="#m16">TC13_BlewithoutRouter_CONNECTIVITY</a></td><td rowspan="1">1752508325479</td><td rowspan="1">452778</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC14_BleWithRouter</td><td><a href="#m17">TC14_BlewithRouter_CONNECTIVITY</a></td><td rowspan="1">1752509175473</td><td rowspan="1">738228</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC15_SmartConfig</td><td><a href="#m18">TC15_SmartConfig_CONNECTIVITY</a></td><td rowspan="1">1752509914359</td><td rowspan="1">514892</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03</td><td><a href="#m19">TC18_UI_Check_sZephyr_Info_values</a></td><td rowspan="1">1752510429942</td><td rowspan="1">310330</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC19_DeviceSettings</td><td><a href="#m20">TC19_DeviceSettings_Add_Router</a></td><td rowspan="1">1752510941658</td><td rowspan="1">264045</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC20_DeviceSettings</td><td><a href="#m21">TC20_DeviceSettings_Remove_Router</a></td><td rowspan="1">1752511206435</td><td rowspan="1">277964</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC21_DeviceSettings</td><td><a href="#m22">TC21_DeviceSettings_LED_Quite_Mode</a></td><td rowspan="1">1752511485187</td><td rowspan="1">213879</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC23_Analytics</td><td><a href="#m23">TC_23_Analytics_BLE_withoutRouter_App_Open</a></td><td rowspan="1">1752511699798</td><td rowspan="1">198146</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC24_Analytics</td><td><a href="#m24">TC_24_Analytics_BLE_without_Router_App_Close</a></td><td rowspan="1">1752511898619</td><td rowspan="1">252698</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC25_Analytics</td><td><a href="#m25">TC_25_Analytics_SmartConfig_Mode</a></td><td rowspan="1">1752512152020</td><td rowspan="1">309948</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC26_Analytics</td><td><a href="#m26">TC_26_Analytics_Smartconfig_App_close</a></td><td rowspan="1">1752512462661</td><td rowspan="1">304452</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC28_Schedular</td><td><a href="#m27">TC28_Schedular_SmartConfig_Mode</a></td><td rowspan="1">1752512767864</td><td rowspan="1">644415</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC29_Schedular</td><td><a href="#m28">TC29_Schedular_Smartconfig_app_close</a></td><td rowspan="1">1752513412997</td><td rowspan="1">1018226</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC30_Schedular</td><td><a href="#m29">TC30_Schedular_BLE_without_router</a></td><td rowspan="1">1752514431968</td><td rowspan="1">531954</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC31_Schedular</td><td><a href="#m30">TC31_Schedular_BLEWithoutRouter_App_close_mode</a></td><td rowspan="1">1752514964667</td><td rowspan="1">938582</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC32_Factory_Reset</td><td><a href="#m31">TC32_FactoryReset_check</a></td><td rowspan="1">1752515903979</td><td rowspan="1">182274</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC33_Ble_Factory_Reset</td><td><a href="#m32">TC33_BleWithoutRouter_Factory_Reset</a></td><td rowspan="1">1752516087055</td><td rowspan="1">164204</td></tr><tr class="passedodd"><td rowspan="1">sZephyr_testcases.TC34_sZephyr_Info</td><td><a href="#m33">TC34_Szephyr_Info_check</a></td><td rowspan="1">1752516252176</td><td rowspan="1">196964</td></tr><tr class="passedeven"><td rowspan="1">sZephyr_testcases.TC36_ESMmode</td><td><a href="#m34">TC36_ESM_mode_button_check</a></td><td rowspan="1">1752516449889</td><td rowspan="1">165939</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">sZephyr_testcases.TC01_Accounts_Info#afterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;io.appium.java_client.android.AndroidDriver.terminateApp(String)&quot; because &quot;wrappers.MobileAppWrappers.driver&quot; is null
-	at wrappers.MobileAppWrappers.afterMethod(MobileAppWrappers.java:127)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>Test</h2><h3 id="m0">sZephyr_testcases.TC07_SignIn_Logout#TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:91)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">sZephyr_testcases.TC01_Accounts_Info#removerepair</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.14.73&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-    at getResponseForW3CError (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1145:9)
-    at asyncHandler (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:485:57)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.14.73&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:88)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:98)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:94)
-	at wrappers.GenericWrappers.initAndriodDriver(GenericWrappers.java:103)
-	at sZephyr_testcases.TC01_Accounts_Info.removerepair(TC01_Accounts_Info.java:52)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">sZephyr_testcases.TC09_Pairing_BlewithRouter#TC09_Pairing_BLE_With_Router</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:99)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
-	... 41 more
-Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-MN86ODD&apos;, ip: &apos;192.168.14.73&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: driver.version: AndroidDriver
-remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error getting device API level. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\QA Automation\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe&apos; -P 5037 -s 10BDCS1L9Q0012R shell getprop ro.build.version.sdk&apos; exited with code 1&apos;; Command output: adb.exe: device unauthorized.
-This adb server&apos;s $ADB_VENDOR_KEYS is not set
-Try &apos;adb kill-server&apos; if that seems wrong.
-Otherwise check for a confirmation dialog on your device.
-
-    at getResponseForW3CError (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\errors.js:1145:9)
-    at asyncHandler (C:\Users\QA Automation\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\protocol\protocol.js:485:57)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1034)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	... 43 more
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">sZephyr_testcases.TC07_SignIn_Logout#TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">sZephyr_testcases.TC08_Pairing_BlewithoutRouter#TC08_Pairing_BLE_Without_Router</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC08_Pairing_BlewithoutRouter.TC08_Pairing_BLE_Without_Router(TC08_Pairing_BlewithoutRouter.java:133)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">sZephyr_testcases.TC09_Pairing_BlewithRouter#TC09_Pairing_BLE_With_Router</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:99)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">sZephyr_testcases.TC13_BlewithoutRouter#TC13_BlewithoutRouter_CONNECTIVITY</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC13_BlewithoutRouter.pairBlewithoutRouter(TC13_BlewithoutRouter.java:144)
+	at sZephyr_testcases.TC13_BlewithoutRouter.TC13_BlewithoutRouter_CONNECTIVITY(TC13_BlewithoutRouter.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">sZephyr_testcases.TC14_BleWithRouter#TC14_BlewithRouter_CONNECTIVITY</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC14_BleWithRouter.pairBlewithRouter(TC14_BleWithRouter.java:193)
+	at sZephyr_testcases.TC14_BleWithRouter.TC14_BlewithRouter_CONNECTIVITY(TC14_BleWithRouter.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">sZephyr_testcases.TC19_DeviceSettings#TC19_DeviceSettings_Add_Router</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.fail(GenericWrappers.java:1035)
+	at sZephyr_testcases.TC19_DeviceSettings.pairBlewithoutRouter(TC19_DeviceSettings.java:99)
+	at sZephyr_testcases.TC19_DeviceSettings.TC19_DeviceSettings_Add_Router(TC19_DeviceSettings.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">sZephyr_testcases.TC01_Accounts_Info#TC_01_Account_Info_page_check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">sZephyr_testcases.TC02_SignUp#TC02_SignUp_with_already_registered_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">sZephyr_testcases.TC03_SignUp#TC03_SignUp_Try_to_Sign_Up_with_new_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">sZephyr_testcases.TC04_SignIn_Flow#TC04_SignIn_Try_to_SignIn_with_unregistered_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">sZephyr_testcases.TC05_SignIn_Valid_User#TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">sZephyr_testcases.TC06_SignIn_SuccessFlow#TC06_During_SignUp_or_SignIn_enter_valid_OTP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">sZephyr_testcases.TC08_Pairing_BlewithoutRouter#TC08_Pairing_BLE_Without_Router</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">sZephyr_testcases.TC10_Pairing_SmartConfig#TC10_Pairing_in_SmartConfig_Mode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">sZephyr_testcases.TC13_BlewithoutRouter#TC13_BlewithoutRouter_CONNECTIVITY</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">sZephyr_testcases.TC14_BleWithRouter#TC14_BlewithRouter_CONNECTIVITY</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">sZephyr_testcases.TC15_SmartConfig#TC15_SmartConfig_CONNECTIVITY</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03#TC18_UI_Check_sZephyr_Info_values</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">sZephyr_testcases.TC19_DeviceSettings#TC19_DeviceSettings_Add_Router</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">sZephyr_testcases.TC20_DeviceSettings#TC20_DeviceSettings_Remove_Router</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">sZephyr_testcases.TC21_DeviceSettings#TC21_DeviceSettings_LED_Quite_Mode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">sZephyr_testcases.TC23_Analytics#TC_23_Analytics_BLE_withoutRouter_App_Open</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">sZephyr_testcases.TC24_Analytics#TC_24_Analytics_BLE_without_Router_App_Close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">sZephyr_testcases.TC25_Analytics#TC_25_Analytics_SmartConfig_Mode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">sZephyr_testcases.TC26_Analytics#TC_26_Analytics_Smartconfig_App_close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">sZephyr_testcases.TC28_Schedular#TC28_Schedular_SmartConfig_Mode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">sZephyr_testcases.TC29_Schedular#TC29_Schedular_Smartconfig_app_close</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">sZephyr_testcases.TC30_Schedular#TC30_Schedular_BLE_without_router</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">sZephyr_testcases.TC31_Schedular#TC31_Schedular_BLEWithoutRouter_App_close_mode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">sZephyr_testcases.TC32_Factory_Reset#TC32_FactoryReset_check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">sZephyr_testcases.TC33_Ble_Factory_Reset#TC33_BleWithoutRouter_Factory_Reset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">sZephyr_testcases.TC34_sZephyr_Info#TC34_Szephyr_Info_check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">sZephyr_testcases.TC36_ESMmode#TC36_ESM_mode_button_check</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

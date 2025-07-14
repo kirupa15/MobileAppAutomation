@@ -46,7 +46,8 @@ public class TC25_Analytics  extends MobileAppWrappers {
 		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

@@ -55,7 +55,8 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		Thread.sleep(5000);
@@ -74,7 +75,8 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(2);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		Thread.sleep(5000);

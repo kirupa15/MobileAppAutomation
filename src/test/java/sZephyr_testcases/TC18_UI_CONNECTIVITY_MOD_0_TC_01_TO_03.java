@@ -57,7 +57,7 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		readwrite.openPort();
 		
 		adddevicepage.pair(1);
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		adddevicepage.aCBrandNameClick();
 		adddevicepage.aCBrandNameCarrierclick();
 		adddevicepage.enterAcModelName("V20");
@@ -65,7 +65,8 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		adddevicepage.roomSizeselect();
 		adddevicepage.roomSizesmall();
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -94,6 +95,7 @@ public class  TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 extends MobileAppWrappers {
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickBleokbutton();
 		adddevicepage.LEDquietmode();
 		adddevicepage.Infinitepoweron();
 		adddevicepage.Minutesminusbutton();

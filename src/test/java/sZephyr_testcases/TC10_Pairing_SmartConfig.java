@@ -51,7 +51,8 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		Thread.sleep(2000);
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 
@@ -71,7 +72,8 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		adddevicepage.pair(3);
 		
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

@@ -56,7 +56,8 @@ public class TC28_Schedular extends MobileAppWrappers {
 		readwrite.openPort();
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

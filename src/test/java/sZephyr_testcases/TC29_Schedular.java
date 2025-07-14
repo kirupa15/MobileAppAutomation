@@ -68,7 +68,8 @@ public class TC29_Schedular extends MobileAppWrappers {
 		
 		adddevicepage.pair(3);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+//		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		

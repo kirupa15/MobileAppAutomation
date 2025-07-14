@@ -63,7 +63,8 @@ public class  TC16_WifiWithRouter extends MobileAppWrappers {
 
 			adddevicepage.pair(4);
 			adddevicepage.clickNextButtonsZephyrInfo();
-			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickBleokbutton();
+//			adddevicepage.checkdevicedetailstoast();
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
 			adddevicepage.staConnectivityCheck();

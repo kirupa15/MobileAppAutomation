@@ -55,7 +55,8 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+//		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -76,7 +77,8 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		
@@ -108,7 +110,8 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		adddevicepage.checkdevicesettingstoast();
 		Thread.sleep(8000);

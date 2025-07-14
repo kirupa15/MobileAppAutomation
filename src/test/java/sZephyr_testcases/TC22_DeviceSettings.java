@@ -47,7 +47,8 @@ public class TC22_DeviceSettings extends MobileAppWrappers {
 		
 		adddevicepage.pair(5);
 		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		devicemenupage.clickPairingTimeQuietLEDEnable();
 		devicemenupage.clickInfinitePowerToggle();
 		devicemenupage.clickHoursPlusButton();

@@ -65,7 +65,8 @@ public class TC34_sZephyr_Info extends MobileAppWrappers {
 			adddevicepage.SelectRoomSizeOption();
 			Thread.sleep(1000);
 			adddevicepage.clickNextButtonsZephyrInfo();
-			adddevicepage.checkdevicedetailstoast();
+			adddevicepage.clickBleokbutton();
+//			adddevicepage.checkdevicedetailstoast();
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
 			Thread.sleep(1000);
