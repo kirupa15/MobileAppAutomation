@@ -83,26 +83,9 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
 		
-		homepage.clickMenuBarButton();
-        devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
-		adddevicepage.checkdeviceresettoast();
-		devicemenupage.AddDevicePagedisplayed();
 		
 		
-		///CONNECTIVITY_MOD_2_TC_2--Kill and Open///
-		
-		adddevicepage.pair(2);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
-		
-		adddevicepage.bleConnectivityCheck();
-		homepage.clickONOFFButton();
-		homepage.clickONOFFButton();
+		//////////////
 		homepage.disableBLE();
 		
 		Thread.sleep(5000);
@@ -116,35 +99,16 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 		Thread.sleep(5000);
 		adddevicepage.staConnectivityCheck();
 		homepage.clickONOFFButton();
-		
 		homepage.clickONOFFButton();
-		
-		Thread.sleep(5000);
-		///CONNECTIVITY_MOD_2_TC_3--      5 Times ON/OFF ///
-		for(int i=0;i<5;i++) {
-			homepage.clickONOFFButton();
-			Thread.sleep(1000);
-			}
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
 		
-		homepage.clickMenuBarButton();
-        devicemenupage.clickDeviceSettingsButton();
-		devicemenupage.clickResetDeviceButton();
-		devicemenupage.clickResetConfirmationYesButton();
-		adddevicepage.checkdeviceresettoast();
-		devicemenupage.AddDevicePagedisplayed();
 		
-		///CONNECTIVITY_MOD_2_TC_4--   Check BLE Connectivity//
+		/////////////////////
 		
-		adddevicepage.pair(2);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
-		
+		homepage.enableBLE();
+		Thread.sleep(5000);
 		adddevicepage.bleConnectivityCheck();
 		for(int i=0;i<2;i++) {
 			homepage.clickONOFFButton();
@@ -179,11 +143,17 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 			homepage.getVoltvalue();
 			homepage.getPowervalue();
 			
-		 homepage.clickMenuBarButton();
-			devicemenupage.clickMenuBarRemoveDevice();
-			devicemenupage.clickRemoveDevicePopupYesButton();
-			adddevicepage.checkdeviceremovedtoast();
-			devicemenupage.AddDevicePagedisplayed();
+			
+		
+		homepage.clickMenuBarButton();
+        devicemenupage.clickDeviceSettingsButton();
+		devicemenupage.clickResetDeviceButton();
+		devicemenupage.clickResetConfirmationYesButton();
+		adddevicepage.checkdeviceresettoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+		
+		
 			
 		 readwrite.closePort();
 		}

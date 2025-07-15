@@ -3,18 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
+      <class name="sZephyr_testcases.TC14_BleWithRouter">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
-          <include name="startTestCase"/>
-          <include name="TC18_UI_Check_sZephyr_Info_values"/>
           <include name="afterSuite"/>
+          <include name="TC14_BlewithRouter_CONNECTIVITY"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="startTestCase"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
+      </class> <!-- sZephyr_testcases.TC14_BleWithRouter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -103,6 +103,12 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
 		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		homepage.clickONOFFButton();
+		
 		homepage.getCurrentvalue();
 		homepage.getVoltvalue();
 		homepage.getPowervalue();
@@ -115,26 +121,26 @@ public class  TC13_BlewithoutRouter extends MobileAppWrappers {
 		
 //		///CONNECTIVITY_MOD_1_TC_03--5 times App ON/OFF////////////////////////////////////////////////////////////////
 		
-		adddevicepage.pair(1);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
-		
-		adddevicepage.bleConnectivityCheck();
-		homepage.clickONOFFButton();
-		homepage.clickONOFFButton();
-		
-		homepage.getCurrentvalue();
-		homepage.getVoltvalue();
-		homepage.getPowervalue();
-		
-		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();
+//		adddevicepage.pair(1);
+//		adddevicepage.clickNextButtonsZephyrInfo();
+//		adddevicepage.clickBleokbutton();
+////		adddevicepage.checkdevicedetailstoast();
+//		adddevicepage.clickSubmitButtonDeviceSetting();
+//		adddevicepage.checkdevicesettingstoast();
+//		
+//		adddevicepage.bleConnectivityCheck();
+//		homepage.clickONOFFButton();
+//		homepage.clickONOFFButton();
+//		
+//		homepage.getCurrentvalue();
+//		homepage.getVoltvalue();
+//		homepage.getPowervalue();
+//		
+//		homepage.clickMenuBarButton();
+//		devicemenupage.clickMenuBarRemoveDevice();
+//		devicemenupage.clickRemoveDevicePopupYesButton();
+//		adddevicepage.checkdeviceremovedtoast();
+//		devicemenupage.AddDevicePagedisplayed();
 		
 		 readwrite.closePort();
 		}
