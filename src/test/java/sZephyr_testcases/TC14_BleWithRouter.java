@@ -143,7 +143,7 @@ public class  TC14_BleWithRouter extends MobileAppWrappers {
 			homepage.getVoltvalue();
 			homepage.getPowervalue();
 			
-			
+		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 		
 		homepage.clickMenuBarButton();
         devicemenupage.clickDeviceSettingsButton();
