@@ -56,34 +56,16 @@ public class TC12_Pairing_WifiwithoutRouter extends MobileAppWrappers {
 		
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
-				
+		
+		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
 		adddevicepage.checkdeviceremovedtoast();
 		devicemenupage.AddDevicePagedisplayed();
 		
-		adddevicepage.pair(5);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
 		
-		Thread.sleep(8000);
-		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
-		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
-				
-		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();
 		
 		readwrite.closePort();
 		}

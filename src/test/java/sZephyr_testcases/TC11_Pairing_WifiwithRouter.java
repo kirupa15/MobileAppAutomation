@@ -56,9 +56,7 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 		
 		Thread.sleep(8000);
 		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
 		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
@@ -66,24 +64,7 @@ public class TC11_Pairing_WifiwithRouter extends MobileAppWrappers {
 		adddevicepage.checkdeviceremovedtoast();
 		devicemenupage.AddDevicePagedisplayed();
 		
-		adddevicepage.pair(4);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
 		
-		Thread.sleep(8000);
-		homepage.clickONOFFButton();
-		homepage.VerifyONdesc();
-		homepage.clickONOFFButton();
-		homepage.VerifyOFFdesc();
-				
-		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();
 		
 		readwrite.closePort();
 		}

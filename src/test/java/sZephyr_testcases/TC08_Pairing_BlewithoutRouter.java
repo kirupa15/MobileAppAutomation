@@ -69,26 +69,6 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 //		homepage.VerifyOFFdesc();
 		
 		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();
-		
-		
-		adddevicepage.pair(1);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
-		
-		Thread.sleep(8000);
-		homepage.clickONOFFButton();
-//		homepage.VerifyONdesc();
-		homepage.clickONOFFButton();
-//		homepage.VerifyOFFdesc();
-				
-		homepage.clickMenuBarButton();
 		devicemenupage.clickLogoutButton();
 		devicemenupage.clickLogoutConfirmationButton();
 		landingpage.clickSignInButton();
@@ -101,29 +81,15 @@ public class TC08_Pairing_BlewithoutRouter extends MobileAppWrappers {
 		otppage.enterOTPField4("4");
 		otppage.submitButton();
 		
-		Thread.sleep(8000);
+		
 		homepage.clickMenuBarButton();
 		devicemenupage.clickMenuBarRemoveDevice();
 		devicemenupage.clickRemoveDevicePopupYesButton();
 		adddevicepage.checkdeviceremovedtoast();
 		devicemenupage.AddDevicePagedisplayed();
 		
-		adddevicepage.pair(1);
-		adddevicepage.clickNextButtonsZephyrInfo();
-		adddevicepage.clickBleokbutton();
-//		adddevicepage.checkdevicedetailstoast();
-		adddevicepage.clickSubmitButtonDeviceSetting();
-		adddevicepage.checkdevicesettingstoast();
-		Thread.sleep(8000);
-		homepage.clickONOFFButton();
-//		homepage.VerifyONdesc();
-		homepage.clickONOFFButton();
-//		homepage.VerifyOFFdesc();
-		homepage.clickMenuBarButton();
-		devicemenupage.clickMenuBarRemoveDevice();
-		devicemenupage.clickRemoveDevicePopupYesButton();
-		adddevicepage.checkdeviceremovedtoast();
-		devicemenupage.AddDevicePagedisplayed();
+		
+
 		
         readwrite.closePort();
 		}

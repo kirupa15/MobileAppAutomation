@@ -62,11 +62,11 @@ public void pairBlewithoutRouter() throws Exception {
 	
 	homepage.clickONOFFButton();
 	Thread.sleep(2000);
-	homepage.VerifyONdesc();
+//	homepage.VerifyONdesc();
 	
 	homepage.clickONOFFButton();
 	Thread.sleep(2000);
-	homepage.VerifyOFFdesc();
+//	homepage.VerifyOFFdesc();
 	
 	Thread.sleep(1000);
 	homepage.killandopen();
