@@ -62,7 +62,7 @@ public class SignUpPage extends GenericWrappers {
 	@FindBy(xpath = "//*[@resource-id='SignUp_Checkbox']")
 	private WebElement signUpCheckbox;
 	
-	@FindBy(xpath = "//com.horcrux.svg.ImageView")
+	@FindBy(xpath = "//*[@resource-id='SingUp_PP_cancel_Icon']")
 	private WebElement tcPopupCloseButton;
 	
 	@FindBy(xpath = "//*[@resource-id='SignUp_UserName_Error']")
