@@ -12,6 +12,90 @@
       </run>
     </groups>
     <classes>
+      <class name="sZephyr_testcases.TC20_DeviceSettings">
+        <methods>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="TC20_DeviceSettings_Remove_Router"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC20_DeviceSettings -->
+      <class name="sZephyr_testcases.TC26_Analytics">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
+          <include name="TC_26_Analytics_Smartconfig_App_close"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC26_Analytics -->
+      <class name="sZephyr_testcases.TC15_SmartConfig">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="startTestCase"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="TC15_SmartConfig_CONNECTIVITY"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC15_SmartConfig -->
+      <class name="sZephyr_testcases.TC31_Schedular">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestCase"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="TC31_Schedular_BLEWithoutRouter_App_close_mode"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC31_Schedular -->
+      <class name="sZephyr_testcases.TC21_DeviceSettings">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="startTestCase"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="TC21_DeviceSettings_LED_Quite_Mode"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC21_DeviceSettings -->
+      <class name="sZephyr_testcases.TC28_Schedular">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="TC28_Schedular_SmartConfig_Mode"/>
+          <include name="afterSuite"/>
+          <include name="startTestCase"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC28_Schedular -->
+      <class name="sZephyr_testcases.TC32_Factory_Reset">
+        <methods>
+          <include name="TC32_FactoryReset_check"/>
+          <include name="startTestCase"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC32_Factory_Reset -->
       <class name="sZephyr_testcases.TC14_BleWithRouter">
         <methods>
           <include name="afterMethod"/>
@@ -24,43 +108,31 @@
           <include name="beforeSuite"/>
         </methods>
       </class> <!-- sZephyr_testcases.TC14_BleWithRouter -->
-      <class name="sZephyr_testcases.TC19_DeviceSettings">
-        <methods>
-          <include name="startTestCase"/>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="TC19_DeviceSettings_Add_Router"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- sZephyr_testcases.TC19_DeviceSettings -->
-      <class name="sZephyr_testcases.TC07_SignIn_Logout">
+      <class name="sZephyr_testcases.TC25_Analytics">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
+          <include name="TC_25_Analytics_SmartConfig_Mode"/>
           <include name="afterSuite"/>
-          <include name="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working"/>
           <include name="beforeTest"/>
-          <include name="beforeMethod"/>
           <include name="startTestCase"/>
+          <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC07_SignIn_Logout -->
-      <class name="sZephyr_testcases.TC13_BlewithoutRouter">
+      </class> <!-- sZephyr_testcases.TC25_Analytics -->
+      <class name="sZephyr_testcases.TC23_Analytics">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
+          <include name="TC_23_Analytics_BLE_withoutRouter_App_Open"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
-          <include name="startTestCase"/>
           <include name="beforeSuite"/>
-          <include name="TC13_BlewithoutRouter_CONNECTIVITY"/>
+          <include name="startTestCase"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC13_BlewithoutRouter -->
-      <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
+      </class> <!-- sZephyr_testcases.TC23_Analytics -->
+      <class name="sZephyr_testcases.TC01_Accounts_Info">
         <methods>
           <include name="afterMethod"/>
           <include name="afterTest"/>
@@ -68,22 +140,34 @@
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
-          <include name="TC08_Pairing_BLE_Without_Router"/>
+          <include name="beforeSuite"/>
+          <include name="TC_01_Account_Info_page_check"/>
+        </methods>
+      </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
+      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig">
+        <methods>
+          <include name="TC10_Pairing_in_SmartConfig_Mode"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+          <include name="startTestCase"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC08_Pairing_BlewithoutRouter -->
-      <class name="sZephyr_testcases.TC09_Pairing_BlewithRouter">
+      </class> <!-- sZephyr_testcases.TC10_Pairing_SmartConfig -->
+      <class name="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
         <methods>
           <include name="afterMethod"/>
-          <include name="TC09_Pairing_BLE_With_Router"/>
           <include name="afterTest"/>
           <include name="startTestCase"/>
+          <include name="TC18_UI_Check_sZephyr_Info_values"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- sZephyr_testcases.TC09_Pairing_BlewithRouter -->
+      </class> <!-- sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

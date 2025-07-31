@@ -69,6 +69,7 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		adddevicepage.pair(1);
 		adddevicepage.clickNextButtonsZephyrInfo();
 		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
 		adddevicepage.clickSubmitButtonDeviceSetting();
 		
 		for(int i=0;i<2;i++) {

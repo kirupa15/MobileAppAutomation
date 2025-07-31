@@ -1,390 +1,2967 @@
-:00:16.046) NVM: part erase restart
-W (00:00:16.066) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-W (00:00:16.067) NVM: esp_part_write scs
-W (00:00:16.485) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 0 vl_or 0 vs 25
-I (00:00:16.606) TDRV: Temp periodic tmr exp
-W (00:00:16.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:16.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-I (00:00:17.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:17.367) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:17.368) TDRV: p_tmp1=25.457001 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:17.373) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:17.378) SAC: Temp conv cb Exe
-W (00:00:17.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:17.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:17.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-W (00:00:17.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-W (00:00:18.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-I (00:00:18.606) TDRV: Temp periodic tmr exp
-W (00:00:18.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:18.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-I (00:00:19.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:19.367) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:19.367) TDRV: p_tmp1=25.457001 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:19.373) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:19.378) SAC: Temp conv cb Exe
-W (00:00:19.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:19.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:19.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-W (00:00:19.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-W (00:00:20.485) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 8 vl_or 0 vs 25
-I (00:00:20.606) TDRV: Temp periodic tmr exp
-W (00:00:20.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:20.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-W (00:00:21.066) EX: TF: 0 TZ: 19800 Sys_tm:1577836821
-I (00:00:21.067) EX: get time GMT= 1577817021
-W (00:00:21.201) NVM: part erase scs
-W (00:00:21.202) NVM: part erase restart
-W (00:00:21.222) NVM: esp_part_write scs
-W (00:00:21.337) NVM: part erase scs
-W (00:00:21.337) NVM: part erase restart
-W (00:00:21.359) NVM: esp_part_write scs
-I (00:00:21.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:21.368) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:21.368) TDRV: p_tmp1=25.457001 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:21.373) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:21.378) SAC: Temp conv cb Exe
-W (00:00:21.382) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:21.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:21.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-W (00:00:21.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:22.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-I (00:00:22.606) TDRV: Temp periodic tmr exp
-W (00:00:22.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:22.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:23.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:23.367) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:23.367) TDRV: p_tmp1=25.457001 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:23.373) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:23.378) SAC: Temp conv cb Exe
-W (00:00:23.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:23.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:23.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-W (00:00:23.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:24.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-I (00:00:24.606) TDRV: Temp periodic tmr exp
-W (00:00:24.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:24.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:25.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:25.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:25.367) TDRV: p_tmp1=25.457001 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:25.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:25.378) SAC: Temp conv cb Exe
-W (00:00:25.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:25.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:25.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-W (00:00:25.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:26.358) EX: TF: 0 TZ: 19800 Sys_tm:1577836826
-I (00:00:26.359) EX: get time GMT= 1577817026
-W (00:00:26.478) NVM: part erase scs
-W (00:00:26.478) NVM: part erase restart
-W (00:00:26.498) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-W (00:00:26.498) NVM: esp_part_write scs
-I (00:00:26.612) TDRV: Temp periodic tmr exp
-W (00:00:26.612) NVM: part erase scs
-W (00:00:26.612) NVM: part erase restart
-W (00:00:26.634) NVM: esp_part_write scs
-W (00:00:26.635) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:26.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-I (00:00:27.393) TDRV: result: -0.543000 minus_val 1
-W (00:00:27.393) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:27.394) TDRV: p_tmp1=25.519501 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:27.399) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:27.404) SAC: Temp conv cb Exe
-W (00:00:27.407) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:27.412) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:27.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:27.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-W (00:00:28.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:28.606) TDRV: Temp periodic tmr exp
-W (00:00:28.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:28.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-I (00:00:29.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:29.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:29.367) TDRV: p_tmp1=25.457001 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:29.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:29.378) SAC: Temp conv cb Exe
-W (00:00:29.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:29.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:29.485) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:29.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-W (00:00:30.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:30.606) TDRV: Temp periodic tmr exp
-W (00:00:30.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:30.985) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 7 vl_or 0 vs 25
-I (00:00:31.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:31.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:31.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:31.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:31.378) SAC: Temp conv cb Exe
-W (00:00:31.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:31.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:31.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:31.633) EX: TF: 0 TZ: 19800 Sys_tm:1577836831
-I (00:00:31.634) EX: get time GMT= 1577817031
-W (00:00:31.766) NVM: part erase scs
-W (00:00:31.766) NVM: part erase restart
-W (00:00:31.787) NVM: esp_part_write scs
-W (00:00:31.902) NVM: part erase scs
-W (00:00:31.903) NVM: part erase restart
-W (00:00:31.924) NVM: esp_part_write scs
-W (00:00:31.985) EDRV: hvc 1 nvc 0 lvc 0 V 525335 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:32.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-I (00:00:32.606) TDRV: Temp periodic tmr exp
-W (00:00:32.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:32.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:33.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:33.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:33.368) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:33.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:33.378) SAC: Temp conv cb Exe
-W (00:00:33.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:33.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:33.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-W (00:00:33.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:34.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-I (00:00:34.606) TDRV: Temp periodic tmr exp
-W (00:00:34.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:34.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:35.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:35.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:35.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:35.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:35.378) SAC: Temp conv cb Exe
-W (00:00:35.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:35.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:35.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-W (00:00:35.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:36.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-I (00:00:36.606) TDRV: Temp periodic tmr exp
-W (00:00:36.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:36.923) EX: TF: 0 TZ: 19800 Sys_tm:1577836836
-I (00:00:36.924) EX: get time GMT= 1577817036
-W (00:00:37.040) NVM: part erase scs
-W (00:00:37.041) NVM: part erase restart
-W (00:00:37.062) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-W (00:00:37.062) NVM: esp_part_write scs
-W (00:00:37.178) NVM: part erase scs
-W (00:00:37.178) NVM: part erase restart
-W (00:00:37.199) NVM: esp_part_write scs
-I (00:00:37.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:37.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:37.368) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:37.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:37.378) SAC: Temp conv cb Exe
-W (00:00:37.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:37.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:37.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:37.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-W (00:00:38.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:38.606) TDRV: Temp periodic tmr exp
-W (00:00:38.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:38.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-I (00:00:39.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:39.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:39.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:39.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:39.378) SAC: Temp conv cb Exe
-W (00:00:39.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:39.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:39.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:39.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-W (00:00:40.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:40.606) TDRV: Temp periodic tmr exp
-W (00:00:40.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:40.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-I (00:00:41.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:41.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:41.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:41.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:41.378) SAC: Temp conv cb Exe
-W (00:00:41.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:41.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:41.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:41.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-W (00:00:42.198) EX: TF: 0 TZ: 19800 Sys_tm:1577836842
-I (00:00:42.199) EX: get time GMT= 1577817042
-W (00:00:42.300) NVM: part erase scs
-W (00:00:42.300) NVM: part erase restart
-W (00:00:42.322) NVM: esp_part_write scs
-W (00:00:42.426) NVM: part erase scs
-W (00:00:42.426) NVM: part erase restart
-W (00:00:42.447) NVM: esp_part_write scs
-W (00:00:42.485) EDRV: hvc 1 nvc 0 lvc 0 V 571689 C 0 P 0 pc 0 vl_or 0 vs 25
-I (00:00:42.606) TDRV: Temp periodic tmr exp
-W (00:00:42.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:42.985) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 1 vl_or 0 vs 25
-I (00:00:43.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:43.367) TDRV: B_LUT=26.000000 A_LUT=25.457001
-W (00:00:43.368) TDRV: p_tmp1=25.519501 c_tmp1=25.457001 inv_cnt=0 prv_neg 0.000000
-W (00:00:43.373) TDRV: p_tmp2=25.457001 c_tmp2=25.457001
-W (00:00:43.378) SAC: Temp conv cb Exe
-W (00:00:43.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:43.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:43.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-W (00:00:43.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-W (00:00:44.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-I (00:00:44.606) TDRV: Temp periodic tmr exp
-W (00:00:44.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:44.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-I (00:00:45.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:45.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:45.367) TDRV: p_tmp1=25.457001 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:45.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:45.378) SAC: Temp conv cb Exe
-W (00:00:45.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:45.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:45.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-W (00:00:45.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-W (00:00:46.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-I (00:00:46.606) TDRV: Temp periodic tmr exp
-W (00:00:46.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:46.985) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 9 vl_or 0 vs 25
-I (00:00:47.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:47.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:47.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:47.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:47.378) SAC: Temp conv cb Exe
-W (00:00:47.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:47.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:47.447) EX: TF: 0 TZ: 19800 Sys_tm:1577836847
-I (00:00:47.448) EX: get time GMT= 1577817047
-W (00:00:47.554) NVM: part erase scs
-W (00:00:47.554) NVM: part erase restart
-W (00:00:47.575) NVM: esp_part_write scs
-W (00:00:47.575) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-W (00:00:47.687) NVM: part erase scs
-W (00:00:47.688) NVM: part erase restart
-W (00:00:47.709) NVM: esp_part_write scs
-W (00:00:47.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:48.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-I (00:00:48.606) TDRV: Temp periodic tmr exp
-W (00:00:48.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:48.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:49.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:49.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:49.368) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:49.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:49.378) SAC: Temp conv cb Exe
-W (00:00:49.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:49.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:49.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-W (00:00:49.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:50.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-I (00:00:50.606) TDRV: Temp periodic tmr exp
-W (00:00:50.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:50.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:51.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:51.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:51.367) TDRV: p_tmp1=25.519501 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:51.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:51.378) SAC: Temp conv cb Exe
-W (00:00:51.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:51.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:51.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-W (00:00:51.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:52.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-I (00:00:52.606) TDRV: Temp periodic tmr exp
-W (00:00:52.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:52.709) EX: TF: 0 TZ: 19800 Sys_tm:1577836852
-I (00:00:52.710) EX: get time GMT= 1577817052
-W (00:00:52.830) NVM: part erase scs
-W (00:00:52.830) NVM: part erase restart
-W (00:00:52.852) NVM: esp_part_write scs
-W (00:00:52.960) NVM: part erase scs
-W (00:00:52.960) NVM: part erase restart
-W (00:00:52.981) NVM: esp_part_write scs
-W (00:00:53.000) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-I (00:00:53.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:53.367) TDRV: B_LUT=26.125000 A_LUT=25.582001
-W (00:00:53.368) TDRV: p_tmp1=25.519501 c_tmp1=25.582001 inv_cnt=0 prv_neg 0.000000
-W (00:00:53.373) TDRV: p_tmp2=25.582001 c_tmp2=25.582001
-W (00:00:53.378) SAC: Temp conv cb Exe
-W (00:00:53.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:53.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:53.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:00:53.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-W (00:00:54.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:00:54.606) TDRV: Temp periodic tmr exp
-W (00:00:54.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:54.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-I (00:00:55.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:55.367) TDRV: B_LUT=26.125000 A_LUT=25.582001
-W (00:00:55.367) TDRV: p_tmp1=25.582001 c_tmp1=25.582001 inv_cnt=0 prv_neg 0.000000
-W (00:00:55.373) TDRV: p_tmp2=25.582001 c_tmp2=25.582001
-W (00:00:55.378) SAC: Temp conv cb Exe
-W (00:00:55.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:55.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:55.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-W (00:00:55.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-W (00:00:56.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-I (00:00:56.606) TDRV: Temp periodic tmr exp
-W (00:00:56.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:56.985) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 7 vl_or 0 vs 25
-I (00:00:57.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:57.367) TDRV: B_LUT=26.125000 A_LUT=25.582001
-W (00:00:57.367) TDRV: p_tmp1=25.582001 c_tmp1=25.582001 inv_cnt=0 prv_neg 0.000000
-W (00:00:57.373) TDRV: p_tmp2=25.582001 c_tmp2=25.582001
-W (00:00:57.378) SAC: Temp conv cb Exe
-W (00:00:57.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:57.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:57.485) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:00:57.980) EX: TF: 0 TZ: 19800 Sys_tm:1577836857
-I (00:00:57.981) EX: get time GMT= 1577817057
-W (00:00:58.105) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 9 vl_or 0 vs 25
-W (00:00:58.105) NVM: part erase scs
-W (00:00:58.106) NVM: part erase restart
-W (00:00:58.128) NVM: esp_part_write scs
-W (00:00:58.240) NVM: part erase scs
-W (00:00:58.241) NVM: part erase restart
-W (00:00:58.262) NVM: esp_part_write scs
-W (00:00:58.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 10 vl_or 0 vs 25
-I (00:00:58.606) TDRV: Temp periodic tmr exp
-W (00:00:58.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:00:58.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 0 vl_or 0 vs 25
-I (00:00:59.367) TDRV: result: -0.543000 minus_val 1
-W (00:00:59.367) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:00:59.368) TDRV: p_tmp1=25.582001 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:00:59.373) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:00:59.378) SAC: Temp conv cb Exe
-W (00:00:59.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:00:59.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:00:59.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-W (00:00:59.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 2 vl_or 0 vs 25
-W (00:01:00.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 3 vl_or 0 vs 25
-I (00:01:00.606) TDRV: Temp periodic tmr exp
-W (00:01:00.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:01:00.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 4 vl_or 0 vs 25
-I (00:01:01.367) TDRV: result: -0.543000 minus_val 1
-W (00:01:01.367) TDRV: B_LUT=26.125000 A_LUT=25.582001
-W (00:01:01.367) TDRV: p_tmp1=25.519501 c_tmp1=25.582001 inv_cnt=0 prv_neg 0.000000
-W (00:01:01.373) TDRV: p_tmp2=25.582001 c_tmp2=25.582001
-W (00:01:01.378) SAC: Temp conv cb Exe
-W (00:01:01.381) SAC: Scs Val = 0 Read Sts = 0
-I (00:01:01.386) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:01:01.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 5 vl_or 0 vs 25
-W (00:01:01.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 6 vl_or 0 vs 25
-W (00:01:02.485) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 7 vl_or 0 vs 25
-I (00:01:02.606) TDRV: Temp periodic tmr exp
-W (00:01:02.609) OST: Temperature conv tmr Tmr Strtd Scsfly
-W (00:01:02.985) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 8 vl_or 0 vs 25
-W (00:01:03.262) EX: TF: 0 TZ: 19800 Sys_tm:1577836863
-I (00:01:03.263) EX: get time GMT= 1577817063
-W (00:01:03.385) NVM: part erase scs
-W (00:01:03.385) NVM: part erase restart
-W (00:01:03.406) NVM: esp_part_write scs
-W (00:01:03.511) NVM: part erase scs
-W (00:01:03.511) NVM: part erase restart
-W (00:01:03.533) NVM: esp_part_write scs
-I (00:01:03.538) TDRV: result: -0.543000 minus_val 1
-W (00:01:03.539) TDRV: B_LUT=26.062500 A_LUT=25.519501
-W (00:01:03.539) TDRV: p_tmp1=25.582001 c_tmp1=25.519501 inv_cnt=0 prv_neg 0.000000
-W (00:01:03.544) TDRV: p_tmp2=25.519501 c_tmp2=25.519501
-W (00:01:03.549) SAC: Temp conv cb Exe
-W (00:01:03.553) SAC: Scs Val = 0 Read Sts = 0
-I (00:01:03.557) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
-W (00:01:03.584) EDRV: hvc 1 nvc 0 lvc 0 V 316423 C 0 P 0 pc 0 vl_or 0 vs 25
-W (00:01:03.985) EDRV: hvc 0 nvc 0 lvc 0 V 222687 C 0 P 0 pc 1 vl_or 0 vs 25
-W (00:01:04.485) EDRV: hvc 0 nvc 0 lvc 0 V 222323 C 0 P 0 pc 2 vl_or 0 vs 25
-I (00:01:04.606) TDRV: Temp periodic tmr exp
-W (00:01:04.609) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (12653) smartconfig: T|S-17
+I (12696) smartconfig: T|n-18
+I (12727) smartconfig: T|o-19
+I (12767) smartconfig: T|o-20
+I (12798) smartconfig: T|p-21
+I (12834) smartconfig: T|y-22
+I (12875) smartconfig: T|d-23
+W (00:00:11.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 24
+W (00:00:12.409) EX: TF: 0 TZ: 0 Sys_tm:12
+I (00:00:12.409) EX: get time GMT= 12
+W (00:00:12.516) NVM: part erase scs
+W (00:00:12.516) NVM: part erase restart
+W (00:00:12.539) NVM: esp_part_write scs
+W (00:00:12.539) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 24
+W (00:00:12.655) NVM: part erase scs
+W (00:00:12.655) NVM: part erase restart
+I (00:00:12.656) TDRV: Temp periodic tmr exp
+W (00:00:12.679) NVM: esp_part_write scs
+W (00:00:12.680) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (00:00:12.959) QSND: INTF_MSG to 3 evnt 25 pld 0 len(w) 0 ctx 0 fre_req 0
+W (00:00:12.960) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:12.960) SKT: Pwr Off State_event rcvd event=25
+W (00:00:12.967) SKT: rly : 0 and alrm state: 0 hd 0
+W (00:00:12.972) SKT: PROP_PWR_DTD time not synced
+I (00:00:12.976) APP_ID: latest app id read = 0
+I (00:00:12.980) RLY:  temp rly ret var 0:0
+W (00:00:12.984) EX: TF: 0 TZ: 0 Sys_tm:12
+I (00:00:12.988) EX: get time GMT= 12
+W (00:00:12.991) IMSG: ID 1 RV 0 RSC 0 APPID 0 RSCT 12 QNT 1
+I (00:00:12.997) TXTH: trans_id 0 pld_len 16 intf 19 msg_type 1 pr_snt_scs 0
+W (00:00:13.004) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+I (00:00:13.004) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 25 from intf 3
+W (00:00:13.008) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (00:00:13.021) IMSG: no intf avl to send
+W (00:00:13.179) SMAX: Name tx_process hghwtrmrk 2608
+W (00:00:13.180) SMAX: Name Cntrl_state hghwtrmrk 2568
+I (00:00:13.439) TDRV: result: -0.543000 minus_val 1
+W (00:00:13.439) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:13.440) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:13.445) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:13.450) SAC: Temp conv cb Exe
+W (00:00:13.453) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:13.458) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:13.485) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (14915) smartconfig: T|r-24
+I (14950) smartconfig: T|o-25
+I (15024) smartconfig: T|s-27
+I (15058) smartconfig: T|28-0
+W (00:00:13.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (15203) smartconfig: T|184-4
+I (15341) smartconfig: T|59-7
+I (15385) smartconfig: T|1-9
+I (15456) smartconfig: T|1-11
+I (15567) smartconfig: T|9-14
+W (00:00:14.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (15692) smartconfig: T|S-17
+I (00:00:14.585) TDRV: Temp periodic tmr exp
+W (00:00:14.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (15786) smartconfig: T|o-20
+I (15818) smartconfig: T|p-21
+I (15854) smartconfig: T|y-22
+I (15895) smartconfig: T|d-23
+I (15930) smartconfig: T|r-24
+I (15968) smartconfig: T|o-25
+I (16002) smartconfig: T|p-26
+W (00:00:14.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (16114) smartconfig: T|8-1
+I (16150) smartconfig: T|177-2
+I (16194) smartconfig: T|0-3
+I (16223) smartconfig: T|184-4
+I (16298) smartconfig: T|168-6
+I (16333) smartconfig: T|59-7
+I (16485) smartconfig: T|1-11
+I (00:00:15.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:15.347) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:15.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:15.355) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:15.360) SAC: Temp conv cb Exe
+W (00:00:15.363) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:15.367) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+I (16572) smartconfig: T|6-12
+I (16572) smartconfig: T|0-28-2
+I (16572) smartconfig: T|1-8-4
+I (16572) smartconfig: T|2-177-4
+I (16572) smartconfig: T|3-0-3
+I (16575) smartconfig: T|4-184-5
+I (16578) smartconfig: T|5-192-3
+I (16581) smartconfig: T|6-168-4
+I (16584) smartconfig: T|7-59-4
+I (16586) smartconfig: T|8-12-2
+I (16589) smartconfig: T|9-1-2
+I (16592) smartconfig: T|10-8-3
+I (16595) smartconfig: T|11-1-4
+I (16598) smartconfig: T|12-6-1
+I (16601) smartconfig: T|13-9-2
+I (16604) smartconfig: T|14-9-4
+I (16606) smartconfig: T|15-0-2
+I (16609) smartconfig: T|16-2-3
+I (16612) smartconfig: T|17-S-4
+I (16615) smartconfig: T|18-n-1
+I (16618) smartconfig: T|19-o-3
+I (16621) smartconfig: T|20-o-3
+I (16624) smartconfig: T|21-p-3
+I (16626) smartconfig: T|22-y-4
+I (16629) smartconfig: T|23-d-4
+I (16632) smartconfig: T|24-r-4
+I (16635) smartconfig: T|25-o-4
+I (16638) smartconfig: T|26-p-3
+I (16641) smartconfig: T|27-s-4
+I (16644) smartconfig: T|pswd: 18169902
+I (16647) smartconfig: T|ssid: Snoopydrops
+I (16651) wifi:ic_disable_sniffer
+I (00:00:15.515) SMC: Got SSID and password
+I (00:00:15.519) SMC: SSID:Snoopydrops
+I (00:00:15.522) SMC: PASSWORD:18169902
+I (00:00:15.526) SMC: cellphone_ip:192.168.59.12
+W (00:00:15.553) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:15.554) OST: smartconfig Tmr Strtd Scsfly
+I (16700) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (17208) wifi:state: init -> auth (b0)
+I (17218) wifi:state: auth -> assoc (0)
+W (00:00:16.092) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (17249) wifi:state: assoc -> run (10)
+W (00:00:16.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:16.585) TDRV: Temp periodic tmr exp
+W (00:00:16.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:16.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (00:00:17.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:17.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:17.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:17.354) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:17.359) SAC: Temp conv cb Exe
+W (00:00:17.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:17.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:17.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:17.680) EX: TF: 0 TZ: 0 Sys_tm:17
+I (00:00:17.681) EX: get time GMT= 17
+W (00:00:17.785) NVM: part erase scs
+W (00:00:17.786) NVM: part erase restart
+W (00:00:17.808) NVM: esp_part_write scs
+W (00:00:17.928) NVM: part erase scs
+W (00:00:17.929) NVM: part erase restart
+W (00:00:17.952) NVM: esp_part_write scs
+W (00:00:17.971) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:18.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:18.585) TDRV: Temp periodic tmr exp
+W (00:00:18.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:18.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (20310) wifi:state: run -> init (fc0)
+I (20311) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (20311) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+W (00:00:19.177) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 5
+I (00:00:19.184) SMC: SMRT CNFG RTRY CNT: 0
+I (00:00:19.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:19.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:19.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:19.354) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:19.359) SAC: Temp conv cb Exe
+W (00:00:19.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:19.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:19.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:19.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:20.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (00:00:20.585) TDRV: Temp periodic tmr exp
+W (00:00:20.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:20.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:21.236) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 5
+I (00:00:21.238) SMC: SMRT CNFG RTRY CNT: 1
+I (22384) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (22385) wifi:state: init -> auth (b0)
+I (22404) wifi:state: auth -> assoc (0)
+I (22430) wifi:state: assoc -> run (10)
+I (00:00:21.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:21.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:21.349) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:21.354) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:21.359) SAC: Temp conv cb Exe
+W (00:00:21.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:21.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:21.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (00:00:21.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (00:00:22.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (00:00:22.585) TDRV: Temp periodic tmr exp
+W (00:00:22.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:22.953) EX: TF: 0 TZ: 0 Sys_tm:22
+I (00:00:22.954) EX: get time GMT= 22
+W (00:00:23.060) NVM: part erase scs
+W (00:00:23.060) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:23.060) NVM: part erase restart
+W (00:00:23.085) NVM: esp_part_write scs
+W (00:00:23.205) NVM: part erase scs
+W (00:00:23.205) NVM: part erase restart
+W (00:00:23.229) NVM: esp_part_write scs
+I (00:00:23.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:23.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:23.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:23.354) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:23.359) SAC: Temp conv cb Exe
+W (00:00:23.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:23.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:23.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:23.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 0 vl_or 0 vs 25
+I (25445) wifi:state: run -> init (fc0)
+I (25446) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (25446) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+W (00:00:24.312) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 5
+I (00:00:24.319) SMC: SMRT CNFG RTRY CNT: 2
+W (00:00:24.460) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (00:00:24.585) TDRV: Temp periodic tmr exp
+W (00:00:24.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:24.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:25.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:25.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:25.349) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:25.354) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:25.359) SAC: Temp conv cb Exe
+W (00:00:25.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:25.367) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:25.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:25.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+W (00:00:26.371) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 5
+W (00:00:26.372) OST: smartconfig Tmr Strtd Scsfly
+W (00:00:26.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+I (00:00:26.585) TDRV: Temp periodic tmr exp
+W (00:00:26.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:26.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+I (00:00:27.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:27.347) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:27.348) TDRV: p_tmp1=24.894501 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:27.353) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:27.358) SAC: Temp conv cb Exe
+W (00:00:27.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:27.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:27.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (00:00:27.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:28.229) EX: TF: 0 TZ: 0 Sys_tm:28
+I (00:00:28.229) EX: get time GMT= 28
+W (00:00:28.319) NVM: part erase scs
+W (00:00:28.319) NVM: part erase restart
+W (00:00:28.342) NVM: esp_part_write scs
+W (00:00:28.453) NVM: part erase scs
+W (00:00:28.453) NVM: part erase restart
+I (00:00:28.454) SMC: timer experie in sconfig
+W (00:00:28.477) NVM: esp_part_write scs
+W (00:00:28.477) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:28.478) OST: smartconfig,Tmr is not active,Failed Stop
+W (00:00:28.482) OSTH: D handle:- 0x3ffee828
+W (00:00:28.486) SMC: smartconfig esp_wifi_deauth_sta ESP_ERR_INVALID_ARG: invalid argument
+I (00:00:28.494) SMC: smartconfig esp_wifi_disconnect ESP_OK: succeed
+W (00:00:28.501) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 3
+W (00:00:28.507) WSTAAP: un handled WIFI_EVENT received event_base WIFI_EVENT event_id 3
+I (29654) wifi:flush txq
+I (29656) wifi:stop sw txq
+I (29659) wifi:lmac stop hw txq
+I (00:00:28.522) SMC: after delete  xSCHandle
+I (00:00:28.526) PC: call pairing_softap_config
+I (00:00:28.530) led: B_Led Pin Slctd
+W (00:00:28.534) OST: B Blink Prd Led Tmr,Tmr Stpd Scsfly
+W (00:00:28.539) OST: Time Out Led Tmr,Tmr is not active,Failed Stop
+W (00:00:28.545) OST: B Blink Prd Led Tmr Tmr Strtd Scsfly
+W (00:00:28.550) BLE: ble curr user count 0 
+W (00:00:28.554) WAPSTA: ESP_WIFI_MODE_AP
+W (00:00:28.560) WAPSTA: esp_wifi_set_mode scs
+W (00:00:28.562) WAPSTA: wifi_init_softap finished. SSID:iinv_smartacKO password:mypassword channel:4
+W (00:00:28.575) WAPSTA: esp wifi set config ret scs
+I (29717) wifi:mode : sta (34:98:7a:66:1c:f4) + softAP (34:98:7a:66:1c:f5)
+I (29722) wifi:enable tsf
+I (29727) wifi:Total power save buffer number: 16
+I (29729) wifi:Init max length of beacon: 752/752
+I (29734) wifi:Init max length of beacon: 752/752
+I (00:00:28.598) TDRV: Temp periodic tmr exp
+W (00:00:28.602) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 2
+W (00:00:28.606) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:28.609) WAPSTA: WIFI_EVENT_STA_START config not rcvd
+I (00:00:28.620) WAPSTA: esp wifi start ret scs
+W (00:00:28.622) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 12
+W (00:00:28.630) WSTAAP: un handled WIFI_EVENT received event_base WIFI_EVENT event_id 12
+W (00:00:28.638) WAPSTA: after the wifi_set_config_ap
+I (00:00:28.643) OSTH: C T_N:- tcp_server Size:- 4096 Priority:- 8 Core_id:- 0 handle:- 0x3ffee2b8
+I (00:00:28.651) SMAX: add_thrd_list addr 0x3ffee2b8 thrd_list_cnt 6 indx 5
+W (00:00:28.658) WAPSTA: after create tcp_multi_server_task
+
+  . Loading the server cert. and key...W (00:00:28.667) OST: valid_socket_tmr Tmr creation Scs
+ ok
+  . Seeding the random number generator... ok
+  . Setting up the SSL data.... ok
+  . Bind on https://localhost:3332/ ... ok
+I (00:00:28.685) LOCAL_SSL: listen fd stored 0x3fff0170
+  [ main ]  Waiting for a remote connection:0
+aftr_ssl_accept:57:-1:65224
+W (00:00:28.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:28.978) SMAX: Name tcp_server hghwtrmrk 2332
+I (00:00:29.373) TDRV: result: -0.543000 minus_val 1
+W (00:00:29.374) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:29.374) TDRV: p_tmp1=24.957001 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:29.380) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:29.385) SAC: Temp conv cb Exe
+W (00:00:29.388) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:29.392) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:29.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:29.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:30.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:30.585) TDRV: Temp periodic tmr exp
+W (00:00:30.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:30.959) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+I (00:00:31.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:31.348) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:31.348) TDRV: p_tmp1=24.957001 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:31.353) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:31.358) SAC: Temp conv cb Exe
+W (00:00:31.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:31.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:31.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+W (00:00:31.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:32.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (00:00:32.585) TDRV: Temp periodic tmr exp
+W (00:00:32.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:32.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:33.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:33.347) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:33.348) TDRV: p_tmp1=24.957001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:33.353) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:33.358) SAC: Temp conv cb Exe
+W (00:00:33.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:33.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:33.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:33.477) EX: TF: 0 TZ: 0 Sys_tm:33
+I (00:00:33.477) EX: get time GMT= 33
+W (00:00:33.570) NVM: part erase scs
+W (00:00:33.570) NVM: part erase restart
+W (00:00:33.593) NVM: esp_part_write scs
+W (00:00:33.709) NVM: part erase scs
+W (00:00:33.709) NVM: part erase restart
+W (00:00:33.732) NVM: esp_part_write scs
+W (00:00:33.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:34.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+I (00:00:34.585) TDRV: Temp periodic tmr exp
+W (00:00:34.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:34.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:35.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:35.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:35.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:35.353) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:35.359) SAC: Temp conv cb Exe
+W (00:00:35.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:35.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:35.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:35.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:36.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (00:00:36.585) TDRV: Temp periodic tmr exp
+W (00:00:36.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:36.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (00:00:37.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:37.347) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:37.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:37.353) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:37.358) SAC: Temp conv cb Exe
+W (00:00:37.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:37.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:37.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:37.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (00:00:38.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:38.585) TDRV: Temp periodic tmr exp
+W (00:00:38.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:38.732) EX: TF: 0 TZ: 0 Sys_tm:38
+I (00:00:38.733) EX: get time GMT= 38
+W (00:00:38.836) NVM: part erase scs
+W (00:00:38.836) NVM: part erase restart
+W (00:00:38.859) NVM: esp_part_write scs
+W (00:00:38.981) NVM: part erase scs
+W (00:00:38.981) NVM: part erase restart
+W (00:00:39.005) NVM: esp_part_write scs
+W (00:00:39.005) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (00:00:39.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:39.347) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:39.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:39.353) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:39.358) SAC: Temp conv cb Exe
+W (00:00:39.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:39.367) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:39.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:39.959) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:40.459) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:40.585) TDRV: Temp periodic tmr exp
+W (00:00:40.588) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:40.959) EDRV: hvc 0 nvc 0 lvc 0 V 223786 C 0 P 0 pc 1 vl_or 0 vs 25
+I (00:00:41.347) TDRV: result: -0.543000 minus_val 1
+W (00:00:41.348) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:41.348) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:41.353) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:41.358) SAC: Temp conv cb Exe
+W (00:00:41.362) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:41.366) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:41.459) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:41.959) UART TEST: B_S .factory_reset
+W (00:00:41.959) SKT: Factory Reset Func initiated
+W (00:00:41.960) OST: Periodic Notify Timer,Tmr is not active,Failed Stop
+W (00:00:41.963) OST: PARTIAL_WRITE,Tmr is not active,Failed Stop
+I (00:00:42.969) RLY:  temp rly ret var 0:0
+W (00:00:00.000) SKT: FR Sec 1577836800 LT 1577836800
+W (00:00:00.069) NVM: part erase scs
+W (00:00:00.069) NVM: part erase restart
+W (00:00:00.073) NVM: esp_part_write scs
+W (00:00:00.083) SKT: Reset Count = 327
+W (00:00:00.188) NVM: part erase scs
+W (00:00:00.188) NVM: part erase restart
+W (00:00:00.211) NVM: esp_part_write scs
+W (00:00:00.327) NVM: part erase scs
+W (00:00:00.328) NVM: part erase restart
+W (00:00:00.351) NVM: esp_part_write scs
+W (00:00:00.351) SKT: Lv 160 Hv= 275 pv 180 ed 0
+W (00:00:01.068) EX: TF: 0 TZ: 0 Sys_tm:1577836801
+I (00:00:01.069) EX: get time GMT= 1577836801
+W (00:00:01.176) NVM: part erase scs
+W (00:00:01.176) NVM: part erase restart
+W (00:00:01.199) NVM: esp_part_write scs
+W (00:00:01.314) NVM: part erase scs
+W (00:00:01.314) NVM: part erase restart
+W (00:00:01.337) NVM: esp_part_write scs
+W (00:00:01.354) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 3
+I (45464) wifi:flush txq
+I (45464) wifi:stop sw txq
+W (00:00:01.355) WSTAAP: un handled WIFI_EVENT received event_base WIFI_EVENT event_id 3
+I (45466) wifi:lmac stop hw txq
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5880
+load:0x40078000,len:14332
+ho 0 tail 12 room 4
+load:0x40080400,len:3688
+entry 0x40080678
+I (29) boot: ESP-IDF -129-NOTFOUND 2nd stage bootloader
+I (29) boot: compile time 12:43:36
+I (29) boot: chip revision: 1
+I (29) boot.esp32: SPI Speed      : 40MHz
+I (33) boot.esp32: SPI Mode       : DIO
+I (37) boot.esp32: SPI Flash Size : 4MB
+I (40) boot: Enabling RNG early entropy source...
+I (45) boot: Partition Table:
+I (47) boot: ## Label            Usage          Type ST Offset   Length
+I (54) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (67) boot:  2 nvm_data_1       Unknown data     01 81 00010000 00001000
+I (73) boot:  3 nvm_data_2       Unknown data     01 81 00011000 00001000
+I (80) boot:  4 nvm_rd_only      Unknown data     01 81 00012000 00001000
+I (86) boot:  5 otadata          OTA data         01 00 00013000 00002000
+I (93) boot:  6 ota_0            OTA app          00 10 00020000 00190000
+I (99) boot:  7 ota_1            OTA app          00 11 001b0000 00190000
+I (106) boot: End of partition table
+E (109) boot: ota data partition invalid and no factory, will try all partitions
+I (116) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=49380h (299904) map
+I (237) esp_image: segment 1: paddr=000693a8 vaddr=3ffbdb60 size=05b60h ( 23392) load
+I (247) esp_image: segment 2: paddr=0006ef10 vaddr=40080000 size=01108h (  4360) load
+I (249) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11f34ch (1176396) map
+I (695) esp_image: segment 4: paddr=0018f374 vaddr=40081108 size=186f8h (100088) load
+I (738) esp_image: segment 5: paddr=001a7a74 vaddr=50000000 size=00010h (    16) load
+I (752) boot: Loaded app from partition at offset 0x20000
+I (752) boot: Disabling RNG early entropy source...
+I (762) cpu_start: Pro cpu up.
+I (762) cpu_start: Starting app cpu, entry point is 0x400815d8
+I (748) cpu_start: App cpu up.
+I (776) cpu_start: Pro cpu start user code
+I (776) cpu_start: cpu freq: 240000000
+I (776) cpu_start: Application information:
+I (777) cpu_start: Project name:     sm_skt_dev
+I (782) cpu_start: App version:      2.1
+I (785) cpu_start: ELF file SHA256:  1d7032001dd77166...
+I (790) cpu_start: ESP-IDF:          -129-NOTFOUND
+I (795) heap_init: Initializing. RAM available for dynamic allocation:
+I (801) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM
+I (806) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM
+I (811) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM
+I (817) heap_init: At 3FFD6E18 len 000091E8 (36 KiB): DRAM
+I (822) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (827) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (833) heap_init: At 40099800 len 00006800 (26 KiB): IRAM
+I (839) spi_flash: detected chip: generic
+I (842) spi_flash: flash io: dio
+I (845) esp_core_dump_uart: Init cI (00:00:02.512) OSS: log_sem Semaphore creation Scs
+I (00:00:02.512) OSS: end_idx_sem Semaphore creation Scs
+I (00:00:02.512) NVM: nvm_para_init
+I (00:00:02.514) OSS: NVM_SEM Semaphore creation Scs
+I (00:00:02.519) NVM: Chksum 3620 nvm ch 3624
+W (00:00:02.524) NVM: add=10000 nvm_lbl nvm_data_1  3620 chsmpos 328
+I (00:00:02.529) NVM: size=1000
+W (00:00:02.532) NVM: part rd scs
+I (00:00:02.535) NVM: part rd scs
+E (00:00:02.538) NVM: Retrived Magic num from NVM  == 173
+E (00:00:02.543) NVM: Retrived NVM ver from NVM  == 2
+I (00:00:02.548) NVM: rw_ver_upd 2
+E (00:00:02.551) NVM: nvm rd invld version err nvm_data_1
+W (00:00:02.556) NVM: nvm rd checksum=C0EBAEEC 32 cchk C0EBAEEC
+W (00:00:02.561) NVM: nvm dt rd checksum scs nvm_data_1
+W (00:00:02.566) NVM: add=11000 nvm_lbl nvm_data_2  3620 chsmpos 328
+I (00:00:02.572) NVM: size=1000
+W (00:00:02.575) NVM: part rd scs
+I (00:00:02.579) NVM: part rd scs
+E (00:00:02.581) NVM: Retrived Magic num from NVM  == 173
+E (00:00:02.587) NVM: Retrived NVM ver from NVM  == 2
+I (00:00:02.591) NVM: rw_ver_upd 2
+E (00:00:02.594) NVM: nvm rd invld version err nvm_data_2
+W (00:00:02.600) NVM: nvm rd checksum=C0EBAEEC 32 cchk C0EBAEEC
+W (00:00:02.605) NVM: nvm dt rd checksum scs nvm_data_2
+I (00:00:02.610) NVM: part_1 part rd scs
+I (00:00:02.614) NVM:  part_2  rd scs
+W (00:00:02.617) NVM: part_1_sts 0 part_2_sts 0
+W (00:00:02.621) NVM: vld nvm_dt_1 copied to RAM
+I (00:00:02.626) NVM: cpy_part_dt_to_ram buf_len 3620
+I (00:00:02.631) NVM: part rd scs
+W (00:00:02.634) NVM: add=12000 nvm_lbl nvm_rd_only  1024 chsmpos 97
+I (00:00:02.640) NVM: size=1000
+W (00:00:02.643) NVM: part rd scs
+I (00:00:02.646) NVM: part rd scs
+E (00:00:02.649) NVM: Retrived Magic num from NVM  == 173
+E (00:00:02.654) NVM: Retrived NVM ver from NVM  == 2
+I (00:00:02.659) NVM: ro_ver_upd 2
+E (00:00:02.662) NVM: nvm rd invld version err nvm_rd_only
+W (00:00:02.667) NVM: nvm rd checksum=3512A49D 32 cchk 3512A49D
+W (00:00:02.672) NVM: nvm dt rd checksum scs nvm_rd_only
+I (00:00:02.678) NVM: part_3 part rd scs
+I (00:00:02.681) NVM: cpy_part_dt_to_ram buf_len 1024
+I (00:00:02.686) NVM: part rd scs
+W (00:00:02.689) MENC: CSK 0
+I (00:00:02.692) MENC: nvm ro chksm scs 0
+W (00:00:02.695) MENC: Ser num =SAC00020250731KO
+W (00:00:02.700) OST: Up_time_timer Tmr creation Scs
+W (00:00:02.704) OST: Up_time_timer Tmr Strtd Scsfly
+I (00:00:02.709) CEH: Device ble name 12 iinv_smartac 
+
+I (00:00:02.714) CEH: AP_PROVISION NAME IN BLE iinv_smartac 12
+I (00:00:02.720) CEH: Device name iinv_smartac
+
+W (00:00:02.829) NVM: part erase scs
+W (00:00:02.829) NVM: part erase restart
+W (00:00:02.852) NVM: esp_part_write scs
+W (00:00:02.964) NVM: part erase scs
+W (00:00:02.964) NVM: part erase restart
+W (00:00:02.986) NVM: esp_part_write scs
+I (00:00:02.986) TAG_GEYSER: HDWRE 6 CNGE
+W (00:00:02.987) AP_MN: HWD_TYP 6 HW_VER 6 SW_VER 0
+W (00:00:02.987) AP_MN: rly_gio 27 rld 22 gld 23 bld 26 rly_off_ste_tmr 300 rly_on_off_time 1000 rly_off_on_time 1000 rly_on_ste_tmr600
+W (00:00:02.999) AP_MN: btn_gio 34 btn_glt 50
+I (00:00:03.003) AP_MN: flw_gio 4 flw_ltr_cnt 553
+W (00:00:03.008) AP_MN: temp_gpio 13
+I (00:00:03.011) NVM: RO_NVM_VER 2
+W (00:00:03.014) AP_MN: enrgy_cali_mode 0
+W (00:00:03.018) AP_MN: cf_gio 35 cf1_gio 36 sel_gio 12
+W (00:00:03.023) AP_MN: curr 10609 volt 136062 pwr 1546092
+I (00:00:03.028) OST: mem alloc size is unalgnd 23
+W (00:00:03.032) AP_MN: Time_changes
+W (00:00:03.036) AP_MN: var1: 4294967295
+W (00:00:03.039) AP_MN: var2: 38972
+W (00:00:03.043) AP_MN: var3: 17114
+W (00:00:03.046) AP_MN: var4: 7569
+W (00:00:03.049) AP_MN: var5: 4850
+W (00:00:03.052) AP_MN: var6: 3348
+W (00:00:03.055) AP_MN: var7: 2301
+W (00:00:03.058) AP_MN: var8: 1699
+W (00:00:03.061) AP_MN: var9: 1236
+W (00:00:03.065) AP_MN: var10: 1122
+W (00:00:03.068) AP_MN: var11: 698
+I (00:00:03.073) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (00:00:03.080) OST: power_meter_timer Tmr creation Scs
+I (00:00:03.085) NVM: RO_NVM_VER 2
+I (00:00:03.088) PWRM: time val in lut -1
+I (00:00:03.092) PWRM: time val in lut 38972
+I (00:00:03.096) PWRM: time val in lut 17114
+I (00:00:03.100) PWRM: time val in lut 7569
+I (00:00:03.104) PWRM: time val in lut 4850
+I (00:00:03.108) PWRM: time val in lut 3348
+I (00:00:03.112) PWRM: time val in lut 2301
+I (00:00:03.115) PWRM: time val in lut 1699
+I (00:00:03.119) PWRM: time val in lut 1236
+I (00:00:03.123) PWRM: time val in lut 1122
+I (00:00:03.127) PWRM: time val in lut 698
+I (00:00:03.131) PWRM: time val not in lut  -1
+I (00:00:03.135) PWRM: time val not in lut  38972
+I (00:00:03.140) PWRM: time val not in lut  17114
+I (00:00:03.144) PWRM: time val not in lut  7569
+I (00:00:03.148) PWRM: time val not in lut  4850
+I (00:00:03.153) PWRM: time val not in lut  3348
+I (00:00:03.157) PWRM: time val not in lut  2301
+I (00:00:03.161) PWRM: time val not in lut  1699
+I (00:00:03.166) PWRM: time val not in lut  1236
+I (00:00:03.170) PWRM: time val not in lut  1122
+I (00:00:03.174) PWRM: time val not in lut  698
+I (00:00:03.179) NVM: ro_ver_upd 2
+I (00:00:03.182) NVM: RO_NVM_VER 2
+I (00:00:03.185) OST: mem alloc size is unalgnd 33
+I (00:00:03.189) PWRM: Energy_lut_value 846623
+I (00:00:03.194) PWRM: ref_val_ver_3_new_nvm  846623
+I (00:00:03.198) PWRM: ref_val_ver_3_new_nvm  1297104
+I (00:00:03.203) PWRM: ref_val_ver_3_new_nvm  1370592
+I (00:00:03.208) PWRM: ref_val_ver_3_new_nvm  1406600
+I (00:00:03.213) PWRM: ref_val_ver_3_new_nvm  1264270
+I (00:00:03.217) PWRM: ref_val_ver_3_new_nvm  1275400
+I (00:00:03.222) PWRM: ref_val_ver_3_new_nvm  1283335
+I (00:00:03.227) PWRM: ref_val_ver_3_new_nvm  1289928
+I (00:00:03.232) PWRM: ref_val_ver_3_new_nvm  1286505
+I (00:00:03.236) PWRM: ref_val_ver_3_new_nvm  1289693
+I (00:00:03.241) PWRM: ref_val_ver_3_new_nvm  1274147
+I (00:00:03.246) GDRV: cf_gpio 35 cf1_gpio 36 sel_gpio 12
+I (00:00:03.251) GDRV: pwr_ref_param 1546092 vol_ref_param 136062 curr_ref_param 10609
+I (00:00:03.259) gpio: GPIO[27]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:2 
+I (00:00:03.268)  DRV_GPIO: rly_gpio 27
+I (00:00:03.271) DRV_GPIO: rly_off_ste_tmr 300 rly_on_off_tmr 1000 rly_off_on_tmr 1000 rly_on_ste_tmr 600
+I (00:00:03.281) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:03.290) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:03.299) DRV_GPIO: r_led 22 g_led 23
+W (00:00:03.303) OST: btn_rls_tmr Tmr creation Scs
+W (00:00:03.307) OST: btn_push_tmr Tmr creation Scs
+I (00:00:03.312) gpio: GPIO[34]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (00:00:03.321) GDRV: btn_glitch 50
+W (00:00:03.325) OST: btn_rls_tmr Tmr Strtd Scsfly
+W (00:00:03.329) OST: btn_press_tmr Tmr creation Scs
+W (00:00:03.334) OST: btn_press_tmr Tmr creation Scs
+W (00:00:03.338) OST: btn_press_tmr Tmr creation Scs
+W (00:00:03.343) OST: btn_press_tmr Tmr creation Scs
+W (00:00:03.348) OST: btn_press_tmr Tmr creation Scs
+W (00:00:03.352) OST: btn_press_tmr Tmr creation Scs
+I (00:00:03.357) gpio: GPIO[26]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+W (00:00:03.366) OST: B Blink Prd Led Tmr Tmr creation Scs
+W (00:00:03.371) OST: R Blink Prdc Led Tmr Tmr creation Scs
+W (00:00:03.374) OST: btn_rls_tmr,Tmr is not active,Failed Stop
+W (00:00:03.382) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.388) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.394) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.400) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.406) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.411) OST: btn_press_tmr,Tmr is not active,Failed Stop
+W (00:00:03.417) OST: Conn Prd Led Tmr Tmr creation Scs
+W (00:00:03.422) OST: Time Out Led Tmr Tmr creation Scs
+W (00:00:03.427) GDRV: b_led 26 ,r_led 22
+I (00:00:03.431) SKT: Calibration_mode 0
+W (00:00:03.435) OST: Conn Prd Led Tmr,Tmr is not active,Failed Stop
+I (00:00:03.441) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:03.450) GDRV: temp_gpio 13
+I (00:00:03.453) SKT: Calibration_mode 0
+W (00:00:03.457) MENC: SW_VER 21 HW_VER 2 fty_det.sfw_major_vsn 2 sfw_minor_vsn 1
+W (00:00:03.464) MENC:  hw_mjr_vsn 0 hw_mnr_vsn 6  sw_build_num 68 hw_ty 6
+I (00:00:03.470) AP_MN: Hardware mode
+W (00:00:03.474) AP_MN: Serial num = SAC00020250731KO
+W (00:00:03.479) AP_MN: REV_NUMR :- 18993
+I (00:00:03.482) OSS: frame_tx Semaphore creation Scs
+W (00:00:03.511) AP_MN: Wdt_fl_en
+E (00:00:03.511) PC: pairing wifi_router password
+I (00:00:03.511) PC: pairing wifi_router SSID: password:
+I (00:00:03.512) PC: pairing wifi_router SSID: password:
+W (00:00:03.517) PC: router mac 0
+W (00:00:03.520) PC: router mac 0
+W (00:00:03.523) PC: router mac 0
+W (00:00:03.526) PC: router mac 0
+W (00:00:03.529) PC: router mac 0
+W (00:00:03.532) PC: router mac 0
+W (00:00:03.536) WAPSTA: set_local_mac_addr success 0 
+W (00:00:03.540) WAPSTA: set_local_mac_addr success 0 
+W (00:00:03.545) WAPSTA: set_local_mac_addr success 0 
+W (00:00:03.550) WAPSTA: set_local_mac_addr success 0 
+W (00:00:03.555) WAPSTA: set_local_mac_addr success 0 
+W (00:00:03.560) WAPSTA: set_local_mac_addr success 0 
+I (00:00:03.565) PC: pairing read wifi_init_softap SSID: password: nvm ssid :iinv_smartac
+I (00:00:03.573) PC: pairing read wifi_init_softap SSID:iinv_smartac password:mypassword
+I (00:00:03.581) SKT: Calibration_mode 0
+I (00:00:03.585) PC: read ble name=iinv_smartac
+I (00:00:03.589) PC: ble_adv= gys-dvc-1 strlen= zu
+I (00:00:03.593) CEH: prime mode 0 srvr type 0
+I (00:00:03.598) PC: mdns data=
+I (00:00:03.600) PC: mdns data=esp32-mdns
+I (00:00:03.604) PC: read connectivity_mode_status=0
+I (00:00:03.609) CEH: wifi_ap_mode=0
+I (00:00:03.612) CEH: wifi_sta_mode=0
+I (00:00:03.615) CEH: wifi_ap_sta_mode=0
+I (00:00:03.619) CEH: ble=0
+E (00:00:03.622) WDT: dev reset reason 3
+W (00:00:03.625) WDT: NVM time_zone 0
+W (00:00:03.629) EX: TF: 0 TZ: 0 Sys_tm:1577836803
+I (00:00:03.633) EX: get time GMT= 1577836803
+W (00:00:03.637) WDT: rtc time 1577836803
+W (00:00:03.643) EX: TF: 0 TZ: 0 Sys_tm:1577836803
+I (00:00:03.646) EX: get time GMT= 1577836803
+W (00:00:03.650) EX: bf_rst_time 1577836801 af_rst_time 1577836803 ret 3
+W (00:00:03.656) EX: Upd_time_af_rst= 1577836803
+W (00:00:03.660) EX: SET_TIME:1577836803
+
+W (00:00:03.000) OFL: currt_cnt_init=0
+W (00:00:03.003) OFL: Least_idx_init=0
+W (00:00:03.006) OFL: Read_current_cnt_init=0
+W (00:00:03.011) OFL: Rolbck_flag_init=0
+W (00:00:03.014) OFL: Time_stamp_nit=0
+W (00:00:03.018) IINFO: NO_Partial_ses_hapnd
+I (00:00:03.022) QSND: INTF_MSG to 7 evnt 13 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:03.028) EX: 0
+W (00:00:03.030) OST: alarm_timer Tmr creation Scs
+W (00:00:03.035) ALRM: 0
+W (00:00:03.037) ALRM: 0
+W (00:00:03.039) ALRM: 0
+W (00:00:03.042) ALRM: 0
+W (00:00:03.044) ALRM: 0
+W (00:00:03.046) ALRM: 0
+W (00:00:03.048) ALRM: 0
+W (00:00:03.051) ALRM: 0
+W (00:00:03.053) ALRM: 0
+W (00:00:03.055) ALRM: 0
+W (00:00:03.057) ALRM: 0
+W (00:00:03.060) ALRM: 0
+W (00:00:03.062) ALRM: 0
+W (00:00:03.064) ALRM: 0
+W (00:00:03.067) ALRM: 0
+W (00:00:03.069) ALRM: 0
+W (00:00:03.071) ALRM: alarm_used_cnt 0
+W (00:00:03.075) ALRM: No alarm schedule found
+W (00:00:03.079) ALRM: sorted list count 0
+W (00:00:03.083) EX: TF: 0 TZ: 0 Sys_tm:1577836803
+I (00:00:03.087) EX: get time GMT= 1577836803
+W (00:00:03.091) EX: TF: 0 TZ: 0 Sys_tm:1577836803
+I (00:00:03.096) EX: get time GMT= 1577836803
+I (00:00:03.100) AID: read_app_key_info_from_nvm
+I (00:00:03.104) OST: mem alloc size is unalgnd 10
+W (00:00:03.109) AID: app id read i 0 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.115) AID: app id read i 1 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.121) AID: app id read i 2 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.128) AID: app id read i 3 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.134) AID: app id read i 4 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.141) AID: app id read i 5 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.147) AID: app id read i 6 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.154) AID: app id read i 7 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.160) AID: app id read i 8 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.166) AID: app id read i 9 ptr=0 ptr_tk 0 ptr_ts 0 auth_vfy 0
+W (00:00:03.173) AID: read current_range_app_id 0 vrfy_sts 0
+I (00:00:03.178) AID: read_admin_info_from_nvm
+W (00:00:03.182) MSH: admin 0
+W (00:00:03.185) MSH: admin 0
+W (00:00:03.188) MSH: admin 0
+W (00:00:03.190) MSH: admin 0
+W (00:00:03.193) MSH: admin 0
+W (00:00:03.196) MSH: admin 0
+W (00:00:03.199) MSH: admin 0
+W (00:00:03.201) MSH: admin 0
+W (00:00:03.204) MSH: admin 0
+W (00:00:03.207) MSH: admin 0
+I (00:00:03.209) AP_MN: electl_malfun.electl_malfun_ntfy_en=0
+W (00:00:03.215) NVM: max_flw_time 20 max_vol_usg 30
+W (00:00:03.219) NVM: ntfy_on_chng_only= 1 timesec 5 thrs_cur200 thrs_vol 5 thrs_pwr 50
+W (00:00:03.227) NVM: ntfy_on_chng_only= 1 timesec 5 thrs_temp 5 thrs_flw 500
+W (00:00:03.234) NVM: voltage_self_cal 1
+W (00:00:03.238) OST: enrg_sv_pattrn_tmr Tmr creation Scs
+I (00:00:03.243) SMAX: add_thrd_list addr 0x3ffc9e54 thrd_list_cnt 1 indx 0
+I (00:00:03.243) MDEC: no flow control
+I (00:00:03.253) SMAX: add_thrd_list addr 0x3ffceabc thrd_list_cnt 2 indx 1
+I (00:00:03.260) SMAX: add_thrd_list addr 0x3ffcb238 thrd_list_cnt 3 indx 2
+inside log_server..
+W (00:00:03.267) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.273) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.273) SMAX: Name rx_process hghwtrmrk 3080
+W (00:00:03.278) OST: relay_on_timer Tmr creation Scs
+I (00:00:03.283) SMAX: add_thrd_list addr 0x3ffcc5fc thrd_list_cnt 4 indx 3
+W (00:00:03.287) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.287) SMAX: Name tx_process hghwtrmrk 3632
+I (00:00:03.299) MSH: no flow control
+W (00:00:03.304) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.312) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.312) SMAX: Name log_server hghwtrmrk 1696
+W (00:00:03.317) OST: relay_on_timer Tmr creation Scs
+E (00:00:03.322) SMAX: null thrd err occur
+W (00:00:03.326) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.326) SMAX: Name Cntrl_state hghwtrmrk 2776
+W (00:00:03.335) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.335) OST: con_check_tmr Tmr creation Scs
+W (00:00:03.345) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.354) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.359) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.364) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.369) OST: relay_off_timer Tmr creation Scs
+W (00:00:03.373) OST: relay_on_timer Tmr creation Scs
+W (00:00:03.378) OST: relay_off_timer Tmr creation Scs
+E (00:00:03.383) SKT: Gyser State Handler Factory Details HDWRE Type = 6
+W (00:00:03.389) OST: enrg_con_prdic_tmr Tmr creation Scs
+W (00:00:03.395) GDRV: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 200 high_curr_thrs15
+W (00:00:03.404) GDRV: low_vlt_cons_cnt2  high_vlt_cons_cnt 2 no_volt_cnt 2 high_curr_cn 5
+W (00:00:03.412) GDRV: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+W (00:00:03.418) GDRV: low_vlt_thrs 160000 high_vlt_thrs 275000 no_vlt_thrs 10000 prp_vlt_thrs 180000 low_curr_thrs 200 high_curr_thrs 15000
+W (00:00:03.430) GDRV: high_curr_cnt 5 low_vlt_cnt 2 high_vlt_cnt 2 no_vlt_cnt 2
+W (00:00:03.437) OST: Voltage_prdic_tmr Tmr creation Scs
+W (00:00:03.442) OST: Voltage_prdic_tmr Tmr Strtd Scsfly
+I (00:00:03.447) SKT: energy driver voltage periodic timer  is started
+W (00:00:03.454) OST: On Duration Timer Tmr creation Scs
+W (00:00:03.459) OST: OFF Duration Timer Tmr creation Scs
+W (00:00:03.464) OST: SCH Duration Timer Tmr creation Scs
+W (00:00:03.469) OST: Periodic Notify Timer Tmr creation Scs
+W (00:00:03.474) OST: PARTIAL_WRITE Tmr creation Scs
+W (00:00:03.476) OST: con_check_tmr Tmr Strtd Scsfly
+W (00:00:03.479) OST: INS_ON_OFF Tmr creation Scs
+W (00:00:03.488) OST: Analytics_midnt_tm Tmr creation Scs
+W (00:00:03.493) MSH: total available app id count 0
+W (00:00:03.498) OST: ping_not_tmr Tmr creation Scs
+W (00:00:03.502) IMSG: param 1 auto_on_off 0 sche_override: 0 high_temp_thrs: 0 low_temp_thrs: 0
+W (00:00:03.511) GDRV: low_temp_thresh 24 high_temp_thresh 28
+I (00:00:03.516) GDRV: l_t_thres 24 h_t_thres 28
+W (00:00:03.521) OST: Temperature conv tmr Tmr creation Scs
+W (00:00:03.526) OST: Temperature Prdic tmr Tmr creation Scs
+I (00:00:03.533) TDRV: Find devices:
+I (00:00:03.535) SKT: Calibration_mode 0
+I (00:00:03.560) TDRV: 393de1d4436d4628
+W (00:00:03.560) TDRV: ret===0
+I (00:00:03.567) TDRV: Sngle dev optmstns enabled CRC=1
+I (00:00:03.588) TDRV: Resol set scs Val=1
+W (00:00:03.589) OST: Temperature Prdic tmr Tmr Strtd Scsfly
+I (00:00:03.589) PC: read connectivity_mode_status=0
+I (00:00:03.591) QSND: INTF_MSG to 7 evnt 3 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:03.598) SKT: calling pairing mode
+W (00:00:03.602) EDRV: gl:VOLT=223786
+I (00:00:03.605) SKT: Prev_skt_ste:0 0
+W (00:00:03.609) SKT: gysr_start_time0 relay_status 0  heating_dur 0 hv_lv_ovrr 0 ioesmb 0
+W (00:00:03.617) SKT: pen on sch 0 sch_st time 0 sch dur 0 gysr stop time 0 rly ste chng 0
+
+I (00:00:03.625) SKT: Calibration_mode 0
+W (00:00:03.628) SKT: RLY  0:0,0 0
+
+W (00:00:03.632) SKT: No pending process
+W (00:00:03.632) SMAX: Name Cntrl_state hghwtrmrk 2600
+I (00:00:03.635) SKT: Curr_ste2
+W (00:00:03.643) SKT: Inv Last off time 0 pending_sts 0 off dur 0
+W (00:00:03.649) SKT: Pwr Off State_event rcvd event=13
+I (00:00:03.654) CEH: common events =13
+I (00:00:03.657) CEH: Time not sycned atleast one time
+I (00:00:03.662) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 13 from intf 7
+I (00:00:03.670) PC: pairing_connectivity_event_hdlr rcvd event=3
+I (00:00:03.676) PC: in pairing mode button press
+W (00:00:03.680) OST: Periodic Notify Timer,Tmr is not active,Failed Stop
+I (00:00:03.687) OSTH: C T_N:- pairing Size:- 4096 Priority:- 10 Core_id:- 0 handle:- 0x3ffbad04
+I (00:00:03.687) PC: total_socket=0 0
+I (00:00:03.695) SMAX: add_thrd_list addr 0x3ffbad04 thrd_list_cnt 5 indx 4
+I (00:00:03.698) PC: statr pairing thread api
+I (00:00:03.705) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 3 from intf 7
+I (00:00:03.709) SKT: Calibration_mode 0
+I (00:00:03.920) BTDM_INIT: BT controller compile version [bc2e043]
+I (00:00:03.921) system_api: Base MAC address is not set
+I (00:00:03.921) system_api: read default base MAC address from EFUSE
+I (00:00:03.929) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07
+W (00:00:03.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 24
+W (00:00:04.141) SMAX: Name pairing hghwtrmrk 2124
+W (00:00:04.213) OST: gatts_config_tmr Tmr creation Scs
+W (00:00:04.213) BLE: BLE MAC ADDRESS
+W (00:00:04.214) BLE: 34 98 7A 66 1C  F6 :
+I (00:00:04.214) BLE: reg app id registered, app_id 0055, status 0
+W (00:00:04.215) OST: Pairing_Timer Tmr creation Scs
+I (00:00:04.221) SKT: Calibration_mode 0
+W (00:00:04.225) OST: Pairing_Timer Tmr Strtd Scsfly
+I (00:00:04.229) BLE: pairing flag 1
+I (4382) wifi:wifi driver task: 3ffe91cc, prio:23, stack:6144, core=0W (00:00:04.237) BLE: dev_name_scs 0,dev_name_pair_mode iinv_smartac
+
+I (4407) wifi:wifi firmware version: 4809a2e
+I (4408) wifi:wifi certification version: v7.0
+I (4408) wifi:config NVS flash: enabled
+I (4408) wifi:config nano formating: enabled
+W (00:00:04.264) BLE: create attribute table sucesfuly,the number handle = 11
+I (4412) wifi:Init data frame dynamic rx buffer num: 32
+I (4424) wifi:Init management frame dynamic rx buffer num: 32
+W (00:00:04.280) BLE: SERVICE_START_EVT, status 0, service_handle 40
+I (4429) wifi:Init management short buffer num: 32
+W (00:00:04.290) BLE: advrtsng start scsfly
+I (4440) wifi:Init dynamic tx buffer num: 32
+I (4448) wifi:Init static rx buffer size: 1600
+I (4452) wifi:Init static rx buffer num: 2
+I (4456) wifi:Init dynamic rx buffer num: 32
+I (00:00:04.315) wifi_init: rx ba win: 2
+I (00:00:04.318) wifi_init: tcpip mbox: 16
+I (00:00:04.322) wifi_init: udp mbox: 6
+I (00:00:04.325) wifi_init: tcp mbox: 6
+I (00:00:04.329) wifi_init: tcp tx win: 2440
+I (00:00:04.333) wifi_init: tcp rx win: 2440
+I (00:00:04.337) wifi_init: tcp mss: 536
+I (00:00:04.341) WAPSTA: esp wifi init ret scs
+W (00:00:04.345) OST: sta_retry_timer Tmr creation Scs
+I (00:00:04.350) led: B_Led Pin Slctd
+W (00:00:04.353) OST: B Blink Prd Led Tmr,Tmr is not active,Failed Stop
+W (00:00:04.359) OST: Time Out Led Tmr,Tmr is not active,Failed Stop
+W (00:00:04.366) OST: B Blink Prd Led Tmr Tmr Strtd Scsfly
+I (00:00:04.371) RLY:  temp rly ret var 0:0
+I (00:00:04.375) SMC: in smartconfig_config api
+W (00:00:04.379) OST: smartconfig Tmr creation Scs
+W (00:00:04.383) OST: smartconfig Tmr Strtd Scsfly
+W (00:00:04.390) WAPSTA: esp_wifi_set_mode scs
+I (4540) wifi:mode : sta (34:98:7a:66:1c:f4)
+I (4542) wifi:enable tsf
+I (00:00:04.399) SMC: after init SC wifi
+W (00:00:04.400) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 2
+I (00:00:04.409) OSTH: C T_N:- smartconfig_example_task Size:- 4096 Priority:- 11 Core_id:- 0 handle:- 0x3ffee818
+I (00:00:04.419) SMAX: add_thrd_list addr 0x3ffee818 thrd_list_cnt 6 indx 5
+W (00:00:04.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 24
+I (4621) smartconfig: SC version: V3.0.1
+W (00:00:04.642) SMAX: Name smartconfig_exa hghwtrmrk 3388
+W (00:00:04.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 24
+W (00:00:05.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 24
+I (00:00:05.588) TDRV: Temp periodic tmr exp
+W (00:00:05.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:05.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 24
+I (00:00:06.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:06.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:06.351) TDRV: p_tmp1=0.000000 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:06.357) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:06.362) SAC: Temp conv cb Exe
+W (00:00:06.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:06.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:06.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 24
+W (00:00:06.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 24
+W (00:00:07.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 8 vl_or 0 vs 24
+I (00:00:07.588) TDRV: Temp periodic tmr exp
+W (00:00:07.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:07.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 9 vl_or 0 vs 24
+W (00:00:08.143) EX: TF: 0 TZ: 0 Sys_tm:1577836808
+I (00:00:08.144) EX: get time GMT= 1577836808
+W (00:00:08.247) NVM: part erase scs
+W (00:00:08.247) NVM: part erase restart
+W (00:00:08.270) NVM: esp_part_write scs
+W (00:00:08.386) NVM: part erase scs
+W (00:00:08.386) NVM: part erase restart
+W (00:00:08.410) NVM: esp_part_write scs
+I (00:00:08.417) TDRV: result: -0.543000 minus_val 1
+W (00:00:08.418) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:08.418) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:08.424) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:08.429) SAC: Temp conv cb Exe
+W (00:00:08.432) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:08.436) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:08.463) EDRV: hvc 0 nvc 0 lvc 0 V 256720 C 0 P 0 pc 10 vl_or 0 vs 24
+I (8755) wifi:ic_enable_sniffer
+I (8756) smartconfig: Start to find channel...
+I (00:00:08.612) SMC: Scan done
+I (00:00:08.962) QSND: INTF_MSG to 3 evnt 25 pld 0 len(w) 0 ctx 0 fre_req 0
+W (00:00:08.963) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:08.963) SKT: Pwr Off State_event rcvd event=25
+W (00:00:08.970) SKT: rly : 0 and alrm state: 0 hd 0
+W (00:00:08.975) SKT: PROP_PWR_DTD time not synced
+I (00:00:08.979) APP_ID: latest app id read = 0
+I (00:00:08.983) RLY:  temp rly ret var 0:0
+W (00:00:08.987) EX: TF: 0 TZ: 0 Sys_tm:1577836808
+I (00:00:08.992) EX: get time GMT= 1577836808
+W (00:00:08.996) IMSG: ID 1 RV 0 RSC 0 APPID 0 RSCT 1577836808 QNT 1
+I (00:00:09.002) TXTH: trans_id 0 pld_len 16 intf 19 msg_type 1 pr_snt_scs 0
+W (00:00:09.009) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+I (00:00:09.009) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 25 from intf 3
+W (00:00:09.014) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+W (00:00:09.027) IMSG: no intf avl to send
+W (00:00:09.411) SMAX: Name tx_process hghwtrmrk 2608
+W (00:00:09.411) SMAX: Name Cntrl_state hghwtrmrk 2568
+W (00:00:09.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (00:00:09.588) TDRV: Temp periodic tmr exp
+W (00:00:09.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:09.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:10.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:10.351) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:10.351) TDRV: p_tmp1=24.894501 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:10.357) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:10.362) SAC: Temp conv cb Exe
+W (00:00:10.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:10.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:10.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:10.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+W (00:00:11.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+I (00:00:11.588) TDRV: Temp periodic tmr exp
+W (00:00:11.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:11.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (00:00:12.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:12.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:12.351) TDRV: p_tmp1=24.957001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:12.357) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:12.362) SAC: Temp conv cb Exe
+W (00:00:12.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:12.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:12.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (00:00:12.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:13.414) EX: TF: 0 TZ: 0 Sys_tm:1577836813
+I (00:00:13.415) EX: get time GMT= 1577836813
+W (00:00:13.518) NVM: part erase scs
+W (00:00:13.518) NVM: part erase restart
+W (00:00:13.541) NVM: esp_part_write scs
+W (00:00:13.671) NVM: part erase scs
+W (00:00:13.671) NVM: part erase restart
+W (00:00:13.671) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:13.694) NVM: esp_part_write scs
+I (00:00:13.695) TDRV: Temp periodic tmr exp
+W (00:00:13.701) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:13.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:14.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:14.472) TDRV: result: -0.543000 minus_val 1
+W (00:00:14.473) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:14.473) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:14.479) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:14.484) SAC: Temp conv cb Exe
+W (00:00:14.487) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:14.491) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:14.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:15.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:15.588) TDRV: Temp periodic tmr exp
+W (00:00:15.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:15.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (00:00:16.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:16.351) TDRV: B_LUT=25.375000 A_LUT=24.832001
+W (00:00:16.351) TDRV: p_tmp1=24.894501 c_tmp1=24.832001 inv_cnt=0 prv_neg 0.000000
+W (00:00:16.356) TDRV: p_tmp2=24.832001 c_tmp2=24.832001
+W (00:00:16.361) SAC: Temp conv cb Exe
+W (00:00:16.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:16.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:16.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+W (00:00:16.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:17.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (00:00:17.588) TDRV: Temp periodic tmr exp
+W (00:00:17.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:17.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:18.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:18.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:18.351) TDRV: p_tmp1=24.832001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:18.357) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:18.362) SAC: Temp conv cb Exe
+W (00:00:18.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:18.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:18.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:18.696) EX: TF: 0 TZ: 0 Sys_tm:1577836818
+I (00:00:18.697) EX: get time GMT= 1577836818
+W (00:00:18.785) NVM: part erase scs
+W (00:00:18.785) NVM: part erase restart
+W (00:00:18.808) NVM: esp_part_write scs
+W (00:00:18.909) NVM: part erase scs
+W (00:00:18.909) NVM: part erase restart
+W (00:00:18.932) NVM: esp_part_write scs
+W (00:00:18.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:19.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+I (00:00:19.588) TDRV: Temp periodic tmr exp
+W (00:00:19.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:19.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:20.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:20.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:20.351) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:20.356) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:20.361) SAC: Temp conv cb Exe
+W (00:00:20.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:20.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:20.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:20.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:21.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (00:00:21.588) TDRV: Temp periodic tmr exp
+W (00:00:21.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:21.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (00:00:22.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:22.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:22.351) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:22.357) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:22.362) SAC: Temp conv cb Exe
+W (00:00:22.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:22.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:22.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (00:00:22.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (00:00:23.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (00:00:23.588) TDRV: Temp periodic tmr exp
+W (00:00:23.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:23.934) EX: TF: 0 TZ: 0 Sys_tm:1577836823
+I (00:00:23.935) EX: get time GMT= 1577836823
+W (00:00:24.020) NVM: part erase scs
+W (00:00:24.020) NVM: part erase restart
+W (00:00:24.043) NVM: esp_part_write scs
+W (00:00:24.044) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (00:00:24.162) NVM: part erase scs
+W (00:00:24.162) NVM: part erase restart
+W (00:00:24.187) NVM: esp_part_write scs
+W (00:00:24.188) SMAX: Name log_server hghwtrmrk 1504
+I (00:00:24.351) TDRV: result: -0.543000 minus_val 1
+W (00:00:24.352) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:24.353) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:24.358) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:24.363) SAC: Temp conv cb Exe
+W (00:00:24.366) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:24.370) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:24.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+I (24677) smartconfig: TYPE: ESPTOUCH
+I (24677) smartconfig: T|sniffer on ch:1, snd_ch:0
+I (24677) smartconfig: T|PHONE MAC:8e:ab:39:2f:fa:0d
+I (24679) smartconfig: T|AP MAC:40:3f:8c:b7:6d:38
+I (24683) smartconfig: T|Head Len:82
+I (24686) smartconfig: Found channel on 1-0. Start to get ssid and password...
+I (24693) smartconfig: T|SYNC STATUS
+I (00:00:24.552) SMC: Found channel
+W (00:00:24.554) OST: smartconfig Tmr Strtd Scsfly
+W (00:00:24.559) BLE: stop_ble_advertising
+E (00:00:24.563) PC: BLE STOP IN PAIRING MODE
+W (00:00:24.565) BLE: Stop adv scsfly
+W (00:00:24.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (00:00:25.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:25.588) TDRV: Temp periodic tmr exp
+W (00:00:25.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:25.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (26267) smartconfig: T|46-0
+I (26300) smartconfig: T|11-1
+I (26330) smartconfig: T|164-2
+I (26363) smartconfig: T|0-3
+I (26363) smartconfig: T|SCAN SSID: TP-Link_6D38-with_Internet
+I (26363) smartconfig: T|all len:46,pass len:11
+I (26364) smartconfig: T|scan ap: 1
+I (26396) smartconfig: T|39-4
+I (26429) smartconfig: T|192-5
+I (26463) smartconfig: T|168-6
+I (26497) smartconfig: T|1-7
+I (00:00:26.352) TDRV: result: -0.543000 minus_val 1
+W (00:00:26.353) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:26.353) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:26.360) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:26.366) SAC: Temp conv cb Exe
+W (00:00:26.369) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:26.373) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+I (26551) smartconfig: T|146-8
+I (26563) smartconfig: T|1-9
+I (26599) smartconfig: T|2-10
+W (00:00:26.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (26751) smartconfig: T|5-13
+I (26752) smartconfig: T|6-14
+I (26767) smartconfig: T|7-15
+I (26799) smartconfig: T|8-16
+I (26851) smartconfig: T|9-17
+I (26930) smartconfig: T|8-19
+I (26943) smartconfig: T|T-20
+W (00:00:26.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:27.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (00:00:27.588) TDRV: Temp periodic tmr exp
+W (00:00:27.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (27806) smartconfig: T|46-0
+I (27841) smartconfig: T|11-1
+I (27872) smartconfig: T|164-2
+I (27953) smartconfig: T|0-3
+I (27953) smartconfig: T|39-4
+I (27954) smartconfig: T|39-4
+I (27972) smartconfig: T|192-5
+I (28051) smartconfig: T|168-6
+I (28051) smartconfig: T|1-7
+I (28080) smartconfig: T|146-8
+W (00:00:27.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+I (28151) smartconfig: T|1-9
+I (28152) smartconfig: T|2-10
+I (28179) smartconfig: T|3-11
+I (28252) smartconfig: T|4-12
+I (28252) smartconfig: T|5-13
+I (28253) smartconfig: T|5-13
+I (28280) smartconfig: T|6-14
+I (28333) smartconfig: T|7-15
+I (28345) smartconfig: T|8-16
+I (28411) smartconfig: T|0-18
+I (28411) smartconfig: T|0-46-2
+I (28411) smartconfig: T|1-11-2
+I (28411) smartconfig: T|2-164-2
+I (28411) smartconfig: T|3-0-2
+I (28414) smartconfig: T|4-39-3
+I (28417) smartconfig: T|5-192-2
+I (28420) smartconfig: T|6-168-2
+I (28423) smartconfig: T|7-1-2
+I (28425) smartconfig: T|8-146-2
+I (28428) smartconfig: T|9-1-2
+I (28431) smartconfig: T|10-2-2
+I (28434) smartconfig: T|11-3-1
+I (28437) smartconfig: T|12-4-1
+I (28440) smartconfig: T|13-5-3
+I (28443) smartconfig: T|14-6-2
+I (28446) smartconfig: T|15-7-2
+I (28448) smartconfig: T|16-8-2
+I (28451) smartconfig: T|17-9-1
+I (28454) smartconfig: T|18-0-1
+I (28457) smartconfig: T|19-8-1
+I (28460) smartconfig: T|pswd: 12345678908
+I (28464) smartconfig: T|ssid: TP-Link_6D38-with_Internet
+I (28469) smartconfig: T|bssid: 40:3f:8c:b7:6d:38
+I (28473) wifi:ic_disable_sniffer
+I (00:00:28.331) SMC: Got SSID and password
+I (00:00:28.335) SMC: SSID:TP-Link_6D38-with_Internet
+I (00:00:28.340) SMC: PASSWORD:12345678908
+I (00:00:28.343) SMC: cellphone_ip:192.168.1.146
+I (00:00:28.448) TDRV: result: -0.543000 minus_val 1
+W (00:00:28.448) OST: smartconfig Tmr Strtd Scsfly
+W (00:00:28.449) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:28.452) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+I (28601) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (29122) wifi:state: init -> auth (b0)
+W (00:00:28.979) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:28.980) SAC: Temp conv cb Exe
+W (00:00:28.980) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:28.982) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+I (29129) wifi:state: auth -> assoc (0)
+I (29146) wifi:state: assoc -> run (10)
+W (00:00:29.014) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+I (00:00:29.034) EDRV: Invld Volt 1000000000
+W (00:00:29.034) EDRV: hvc 0 nvc 0 lvc 0 V 0 C 0 P 0 pc 6 vl_or 0 vs 25
+W (00:00:29.189) EX: TF: 0 TZ: 0 Sys_tm:1577836829
+I (00:00:29.190) EX: get time GMT= 1577836829
+W (00:00:29.303) NVM: part erase scs
+W (00:00:29.303) NVM: part erase restart
+W (00:00:29.327) NVM: esp_part_write scs
+W (00:00:29.451) NVM: part erase scs
+W (00:00:29.451) NVM: part erase restart
+W (00:00:29.474) NVM: esp_part_write scs
+I (29634) wifi:connected with TP-Link_6D38-with_Internet, aid = 3, channel 1, BW20, bssid = 40:3f:8c:b7:6d:38
+I (29634) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (29647) wifi:pm start, type: 1
+
+W (00:00:29.503) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 25
+W (00:00:29.506) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 4
+W (00:00:29.509) WAPSTA: 40:
+W (00:00:29.511) WAPSTA: 3F:
+W (00:00:29.514) WAPSTA: 8C:
+W (00:00:29.517) WAPSTA: B7:
+W (00:00:29.519) WAPSTA: 6D:
+W (00:00:29.522) WAPSTA: 38:
+I (29672) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (00:00:29.588) TDRV: Temp periodic tmr exp
+W (00:00:29.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:29.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 8 vl_or 0 vs 25
+I (00:00:30.351) TDRV: result: -0.543000 minus_val 1
+W (00:00:30.352) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:30.352) TDRV: p_tmp1=24.894501 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:30.358) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:30.363) SAC: Temp conv cb Exe
+W (00:00:30.366) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:30.370) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:30.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:30.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+I (00:00:30.979) esp_netif_handlers: sta ip: 192.168.1.147, mask: 255.255.255.0, gw: 192.168.1.1
+W (00:00:30.980) WAPSTA: wifi event rcvd event_base IP_EVENT event_id 0
+W (00:00:30.983) WAPSTA: router cnctn sts ready in ap_sta pass
+W (00:00:30.989) WAPSTA: --signal strength -49
+W (00:00:30.993) WSTAAP: got ip:192.168.1.147
+W (00:00:30.997) WSTAAP: sta ip address in connectivity ===:192 168 1 147
+I (00:00:31.004) WSTAAP: Nvm ip 0 0 0 0 ret 192
+
+W (00:00:31.008) BLE: ble curr user count 0 
+I (00:00:31.012) IMSG: IP ADDR :192 168 1 147
+
+I (00:00:31.016) TXTH: trans_id 0 pld_len 8 intf 18 msg_type 1 pr_snt_scs 0
+I (00:00:31.023) SMC: WiFi Connected to ap
+W (00:00:31.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:31.475) SMAX: Name smartconfig_exa hghwtrmrk 2828
+I (00:00:31.588) TDRV: Temp periodic tmr exp
+W (00:00:31.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:31.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+W (32132) wifi:<ba-add>idx:0 (ifx:0, 40:3f:8c:b7:6d:38), tid:0, ssn:4, winSize:64
+I (00:00:32.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:32.351) TDRV: B_LUT=25.500000 A_LUT=24.957001
+W (00:00:32.352) TDRV: p_tmp1=24.957001 c_tmp1=24.957001 inv_cnt=0 prv_neg 0.000000
+W (00:00:32.359) TDRV: p_tmp2=24.957001 c_tmp2=24.957001
+W (00:00:32.362) SAC: Temp conv cb Exe
+W (00:00:32.365) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:32.369) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:32.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:32.963) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:33.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+I (00:00:33.588) TDRV: Temp periodic tmr exp
+W (00:00:33.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:33.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+I (00:00:34.350) TDRV: result: -0.543000 minus_val 1
+W (00:00:34.351) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:34.352) TDRV: p_tmp1=24.957001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:34.357) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:34.363) SAC: Temp conv cb Exe
+W (00:00:34.366) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:34.370) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+I (00:00:34.377) SMC: **********smart config ack message done**********
+I (00:00:34.384) SMC: smartconfig over
+W (00:00:34.388) OSTH: D handle:- 0
+I (00:00:34.427) SMC: smart_config_over case
+I (00:00:34.428) OSTH: C T_N:- tcp_client Size:- 4096 Priority:- 9 Core_id:- 0 handle:- 0x3ffee818
+I (00:00:34.429) SMAX: add_thrd_list addr 0x3ffee818 thrd_list_cnt 6 indx 5
+I (00:00:34.436) SMC: after create tcp_multi_server_task case
+W (00:00:34.443) OST: smartconfig Tmr Strtd Scsfly
+W (00:00:34.446) CSKT: in client task ip = 192.168.1.146
+I (00:00:34.451) CSKT: Socket created, connecting to 192.168.1.146:55557
+W (00:00:34.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+W (00:00:34.475) EX: TF: 0 TZ: 0 Sys_tm:1577836834
+I (00:00:34.475) EX: get time GMT= 1577836834
+W (00:00:34.585) NVM: part erase scs
+W (00:00:34.585) NVM: part erase restart
+W (00:00:34.608) NVM: esp_part_write scs
+W (00:00:34.734) NVM: part erase scs
+W (00:00:34.734) NVM: part erase restart
+W (00:00:34.758) NVM: esp_part_write scs
+W (00:00:34.759) SMAX: Name tcp_client hghwtrmrk 2652
+W (00:00:34.774) ECY: connected sts : 0 0 10 1
+W (00:00:34.776) IMTRX: TX intf:10 scs_cnt :0 fail_cnt :0
+W (00:00:34.776) IMTRX: RX intf:10 trans_cnt:0 sync_err_cnt:0 chk_sum_err_cnt:0 vld_frm_cnt:0
+I (00:00:34.781) TMRM: tmr crt_scs:49 crt_fl:0 up_scs:26 up_fl:0,
+I (00:00:34.786) TMRM: tmr st_scs:0 st_fl:0 dl_scs:0 dl_fl:0,
+I (00:00:34.792) TMRM: Mem crt_scs:14 crt_fl:0 fre_scs:14 fre_fl:0,
+I (00:00:34.798) CSKT: Successfully connected
+W (00:00:34.802) OST: smartconfig Tmr Strtd Scsfly
+I (00:00:34.957) CSKT: Received 12 bytes from 192.168.1.146:
+I (00:00:34.957) MDEC: rx_len 12
+I (00:00:34.957) IERR: sync byte matched 0x3ffee6ec
+W (00:00:34.959) MDEC: frame_len=12
+W (00:00:34.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 25
+W (00:00:34.969) IINFO: total len 12 proc len 12
+W (00:00:34.973) MDEC: full frame rcvd
+W (00:00:34.973) IINFO: rcvd_frm 10 num_msg 1 trn_id 7 ack_req 0 frm_len 12 sec_mod 0
+W (00:00:34.985) IMSG: rcvd_msg intf 10 msg_id 11 msg_len 0 msg_type 0
+I (00:00:34.985) CSKT: Completed
+I (00:00:34.991) SKT: Calibration_mode 0
+W (00:00:34.997) BLE: 34 98 7A 66 1C  F6 :
+W (00:00:35.001) MENC: 34: 
+W (00:00:35.003) MENC: 98: 
+W (00:00:35.006) MENC: 7A: 
+W (00:00:35.008) MENC: 66: 
+W (00:00:35.011) MENC: 1C: 
+W (00:00:35.013) MENC: F6: 
+W (00:00:35.016) IMSG:  Q fd_hw_mj:0 fd_hw_mr:6 fd_sfw_mj:2 fd_sfw_mr:1 fd_hw_tp:6 max_alrm 16 bld_num 68 ful_sts 0
+W (00:00:35.026) MENC: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (00:00:35.032) TXTH: trans_id 7 pld_len 40 intf 10 msg_type 1 pr_snt_scs 0
+E (00:00:35.039) IMSG: REV_NUMR :- 18993
+E (00:00:35.039) IERR: WSS_NCNT
+I (00:00:35.042) NVM: RO_NVM_VER 2
+W (00:00:35.047) IMSG: send_msg intf 10 msg_id 11 msg_len 56 sec_mode 0 fd 39 pad_len 8 app_id 0 trs_id 7 scs_snt 0
+I (00:00:35.048) PWRM: Vol_ref_parm= 136062
+I (00:00:35.062) PWRM: RVL_3_fd 846623
+I (00:00:35.066) PWRM: RVL_3_fd 1297104
+I (00:00:35.069) PWRM: RVL_3_fd 1370592
+I (00:00:35.073) PWRM: RVL_3_fd 1406600
+I (00:00:35.076) PWRM: RVL_3_fd 1264270
+I (00:00:35.080) PWRM: RVL_3_fd 1275400
+I (00:00:35.084) PWRM: RVL_3_fd 1283335
+I (00:00:35.087) PWRM: RVL_3_fd 1289928
+I (00:00:35.091) PWRM: RVL_3_fd 1286505
+I (00:00:35.094) PWRM: RVL_3_fd 1289693
+I (00:00:35.098) PWRM: RVL_3_fd 1274147
+I (00:00:35.101) MDEC: no flow control
+I (00:00:35.104) CSKT: Received 44 bytes from 192.168.1.146:
+I (00:00:35.110) MDEC: rx_len 44
+I (00:00:35.113) IERR: sync byte matched 0x3ffee6ec
+W (00:00:35.118) MDEC: frame_len=44
+W (00:00:35.121) IINFO: total len 44 proc len 44
+W (00:00:35.125) MDEC: full frame rcvd
+W (00:00:35.125) IINFO: rcvd_frm 10 num_msg 1 trn_id 8 ack_req 1 frm_len 44 sec_mod 0
+I (00:00:35.129) CSKT: Completed
+W (00:00:35.136) IINFO: ack_resp intf 10 trans 8
+I (00:00:35.144) TXTH: trans_id 0 pld_len 8 intf 10 msg_type 0 pr_snt_scs 1
+W (00:00:35.150) IMSG: rcvd_msg intf 10 msg_id 3 msg_len 32 msg_type 1
+E (00:00:35.150) IERR: WSS_NCNT
+W (00:00:35.157) IMSG: srv_prime_mode=1 addr wss://ftp.iinvsys.com:55568 addr_len 27 srv_info_type 4 nvm_srvr 1
+I (00:00:35.169) CEH: prime mode 1 srvr type 4
+I (00:00:35.174) CEH: server_uri_addr=wss://ftp.iinvsys.com:55568
+I (00:00:35.179) QSND: INTF_MSG to 8 evnt 3 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:35.186) MENC: Conn mode in 0:10
+
+W (00:00:35.186) MSH: event_num=3
+I (00:00:35.190) MDEC: no flow control
+W (00:00:35.193) MSH: wifi ble msg hdlr rcvd event=3
+I (00:00:35.201) MSH: MSG_STE_HDLR_THRD2736
+I (00:00:35.205) MSH: no flow control
+I (00:00:35.215) CSKT: Received 16 bytes from 192.168.1.146:
+I (00:00:35.216) MDEC: rx_len 16
+I (00:00:35.217) IERR: sync byte matched 0x3ffee6ec
+W (00:00:35.221) MDEC: frame_len=16
+W (00:00:35.225) IINFO: total len 16 proc len 16
+W (00:00:35.229) MDEC: full frame rcvd
+W (00:00:35.229) IINFO: rcvd_frm 10 num_msg 1 trn_id 9 ack_req 1 frm_len 16 sec_mod 0
+I (00:00:35.232) CSKT: Completed
+W (00:00:35.240) IINFO: ack_resp intf 10 trans 9
+I (00:00:35.247) TXTH: trans_id 0 pld_len 8 intf 10 msg_type 0 pr_snt_scs 1
+W (00:00:35.254) IMSG: rcvd_msg intf 10 msg_id 9 msg_len 4 msg_type 1
+E (00:00:35.259) IERR: WSS_NCNT
+W (00:00:35.260) OST: exit_Timer Tmr creation Scs
+W (00:00:35.267) OST: exit_Timer Tmr Strtd Scsfly
+W (00:00:35.267) SMAX: Name rx_process hghwtrmrk 2472
+I (00:00:35.272) INDEX: in exit pair
+
+W (00:00:35.277) SMAX: Name tx_process hghwtrmrk 2576
+W (00:00:35.280) MENC: conn 15
+W (00:00:35.286) SMAX: Name tcp_client hghwtrmrk 2540
+W (00:00:35.287) IMSG: app id: 0
+W (00:00:35.295) IMSG: idx: 0
+W (00:00:35.298) IMSG: 0
+W (00:00:35.300) IMSG: 1
+W (00:00:35.302) IMSG: 0
+W (00:00:35.305) IMSG: 1
+W (00:00:35.307) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.310) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.314) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.317) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.320) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.324) IMSG: 
+0 : 0 : 0 :0
+E (00:00:35.324) CSKT: recv failed: errno 128 len 0
+W (00:00:35.327) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.332) ECY: connected sts : 1 57 10 0
+W (00:00:35.335) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.339) MENC: cstart:32 cstop:33 totcon:0
+
+W (00:00:35.343) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.348) IMTRX: TX intf:10 scs_cnt :1 fail_cnt :0
+W (00:00:35.351) IMSG: 
+0 : 0 : 0 :0
+W (00:00:35.356) IMTRX: RX intf:10 trans_cnt:3 sync_err_cnt:0 chk_sum_err_cnt:0 vld_frm_cnt:2
+W (00:00:35.359) IMSG: 
+0 : 1 : 0 :1
+I (00:00:35.368) TMRM: tmr crt_scs:50 crt_fl:0 up_scs:28 up_fl:0,
+W (00:00:35.371) IMSG: wifi_ap_mode=0
+
+I (00:00:35.377) TMRM: tmr st_scs:0 st_fl:0 dl_scs:0 dl_fl:0,
+W (00:00:35.380) IMSG: wifi_sta_mode=1
+
+I (00:00:35.386) TMRM: Mem crt_scs:20 crt_fl:0 fre_scs:19 fre_fl:0,
+W (00:00:35.389) IMSG: wifi_ap_sta_mode=0
+
+E (00:00:35.395) CSKT: Shutting down socket and restarting
+W (00:00:35.399) IMSG: ble=1
+
+I (00:00:35.407) IMSG: IN_PENB0 1
+
+W (00:00:35.408) CSKT: client_task_internet closed
+W (00:00:35.411) IMSG: dis_flg 0 en_dis_md 0 ss_hid_fl 0 rot_in 0
+E (00:00:35.415) INDEX: pairing msg 2 times rcvd flag cleared
+I (00:00:35.421) PC: router_info_ssid=TP-Link_6D38-with_Internet
+I (00:00:35.426) CEH: in delete_pair_exit_timer
+I (00:00:35.432) PC: router_info_password=12345678908
+W (00:00:35.436) OST: exit_Timer,Tmr Stpd Scsfly
+I (00:00:35.441) CEH: NVM write ssid_len value=TP-Link_6D38-with_Internet
+W (00:00:35.445) OST: exit_Timer,Tmr Del req for
+I (00:00:35.452) CEH: NVM write password_len value=12345678908
+W (00:00:35.456) OST: Tmr Del scs
+W (00:00:35.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 8 vl_or 0 vs 25
+I (00:00:35.462) PC: nvm read router_info_ssid=TP-Link_6D38-with_Internet
+I (00:00:35.472) CEH: after delete_pairing_time_out
+I (00:00:35.478) PC: nvm read router_info_password=12345678908
+I (00:00:35.483) QSND: INTF_MSG to 8 evnt 9 pld 0x1 len(w) 0 ctx 0 fre_req 0
+W (00:00:35.488) WAPSTA: get_local_sta_mac_addr router mac read success 40 
+W (00:00:35.495) OSTH: D handle:- 0
+W (00:00:35.502) WAPSTA: get_local_sta_mac_addr router mac read success 3f 
+W (00:00:35.502) MSH: event_num=9
+W (00:00:35.512) WAPSTA: get_local_sta_mac_addr router mac read success 8c 
+W (00:00:35.515) MSH: wifi ble msg hdlr rcvd event=9
+W (00:00:35.522) WAPSTA: get_local_sta_mac_addr router mac read success b7 
+I (00:00:35.527) MSH: del smartconfig task
+W (00:00:35.533) WAPSTA: get_local_sta_mac_addr router mac read success 6d 
+I (00:00:35.537) WAPSTA: unreg the events
+W (00:00:35.544) WAPSTA: get_local_sta_mac_addr router mac read success 38 
+I (00:00:35.548) WAPSTA: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+W (00:00:35.554) PC: before write router mac 64
+I (00:00:35.560) WAPSTA: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+W (00:00:35.564) PC: before write router mac 63
+W (00:00:35.572) OST: smartconfig,Tmr Stpd Scsfly
+W (00:00:35.575) PC: before write router mac 140
+W (00:00:35.579) OST: smartconfig,Tmr Del req for
+W (00:00:35.583) PC: before write router mac 183
+I (00:00:35.588) TDRV: Temp periodic tmr exp
+W (00:00:35.592) PC: before write router mac 109
+W (00:00:35.599) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:35.600) PC: before write router mac 56
+W (00:00:35.600) OST: Tmr Del scs
+W (00:00:35.610) PC: after write nvm router mac 64
+W (00:00:35.614) SMC: smartconfig esp_wifi_deauth_sta ESP_ERR_INVALID_ARG: invalid argument
+W (00:00:35.617) PC: after write nvm router mac 63
+I (35772) wifi:state: run -> init (0)W (00:00:35.630) PC: after write nvm router mac 140
+
+W (00:00:35.638) PC: after write nvm router mac 183
+I (35784) wifi:W (00:00:35.643) PC: after write nvm router mac 109
+pm stop, total sleep time: lu us / lu us
+W (00:00:35.649) PC: after write nvm router mac 56
+
+I (00:00:35.657) PC: mdns data=SAC00020250731KO
+W (35802) wifi:<ba-del>idx
+I (00:00:35.661) PC: ble name=SAC00020250731KO
+I (35809) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4I (00:00:35.668) PC: ble password=-1515870811
+
+I (00:00:35.678) CEH: prime mode 1 srvr type 4
+I (00:00:35.680) SMC: smartconfig esp_wifi_disconnect ESP_OK: succeed
+I (00:00:35.682) CEH: server_uri_addr=wss://ftp.iinvsys.com:55568
+I (35836) wifi:flush txq
+I (00:00:35.694) PC: write connectivity_mode_status=1
+I (35842) wifi:stop sw txq
+W (00:00:35.807) NVM: part erase scs
+W (00:00:35.807) NVM: part erase restart
+I (35953) wifi:lmac stop hw txq
+I (00:00:35.808) SMC: after delete  xSCHandle
+W (00:00:35.830) NVM: esp_part_write scs
+I (00:00:35.830) PC: total_socket=0 1
+E (00:00:35.831) SWSKT: !Websocket not enabled!
+W (00:00:35.959) NVM: part erase scs
+W (00:00:35.959) NVM: part erase restart
+W (00:00:35.983) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 9 vl_or 0 vs 25
+W (00:00:35.983) NVM: esp_part_write scs
+W (00:00:35.984) IMSG: S ex_pr_m:1
+I (00:00:35.986) QSND: INTF_MSG to 8 evnt 9 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:35.992) MDEC: no flow control
+I (00:00:36.364) TDRV: result: -0.543000 minus_val 1
+W (00:00:36.365) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:36.365) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:36.371) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:36.376) SAC: Temp conv cb Exe
+W (00:00:36.379) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:36.383) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:36.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+E (00:00:36.959) LOCAL_SSL: iter_cnt 0 ssl_connection_count 0
+I (00:00:36.959) PC: listen_sock=0
+I (00:00:36.960) WAPSTA: unreg the events
+I (00:00:36.961) WAPSTA: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+W (00:00:36.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (00:00:36.967) WAPSTA: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+W (00:00:36.979) WSTAAP: ap_sta esp_wifi_disconnect ESP_ERR_WIFI_NOT_STARTED: WiFi was not started by esp_wifi_start
+W (00:00:36.990) WSTAAP: esp_wifi_stop ESP_OK: succeed
+I (37140) wifi:Deinit lldesc rx mblock:2
+W (00:00:36.999) WSTAAP: esp_wifi_deinit ESP_OK: succeed
+W (00:00:37.003) OST: sta_retry_timer,Tmr is not active,Failed Stop
+W (00:00:37.009) OST: sta_retry_timer,Tmr Del req for
+W (00:00:37.014) OST: Tmr Del scs
+I (00:00:37.017) CEH: in delete_pairing_time_out
+W (00:00:37.021) OST: Pairing_Timer,Tmr Stpd Scsfly
+W (00:00:37.026) OST: Pairing_Timer,Tmr Del req for
+W (00:00:37.030) OST: Tmr Del scs
+I (00:00:37.033) CEH: after delete_pairing_time_out
+I (00:00:37.038) PC: after esp_wifi_stop
+W (00:00:37.042) BLE: advertisement stopped
+W (00:00:37.044) BLE: Stop adv scsfly
+W (37199) BT_APPL: bta_dm_disable BTA_DISABLE_DELAY set to 200 ms
+W (00:00:37.270) BLE: BLE STOPPED
+I (00:00:37.270) QSND: INTF_MSG to 7 evnt 2 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:37.270) MSH: del xtask
+I (00:00:37.271) PC: pairing_connectivity_event_hdlr rcvd event=2
+I (00:00:37.272) MSH: MSG_STE_HDLR_THRD2608
+I (00:00:37.278) PC: in exit pairing mode
+I (00:00:37.281) MSH: no flow control
+I (00:00:37.285) PC: on exit pairing mode
+W (00:00:37.288) MSH: event_num=9
+I (00:00:37.292) QSND: INTF_MSG to 7 evnt 5 pld 0 len(w) 0 ctx 0 fre_req 0
+W (00:00:37.295) MSH: wifi ble msg hdlr rcvd event=9
+I (00:00:37.302) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 2 from intf 7
+I (00:00:37.306) MSH: MSG_STE_HDLR_THRD2608
+I (00:00:37.314) PC: pairing_connectivity_event_hdlr rcvd event=5
+I (00:00:37.318) MSH: no flow control
+I (00:00:37.324) PC: =Switch case PAIRING_SUCCESS=
+I (00:00:37.331) QSND: INTF_MSG to 7 evnt 4 pld 0 len(w) 0 ctx 0 fre_req 0
+I (00:00:37.338) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 5 from intf 7
+I (00:00:37.345) PC: pairing_connectivity_event_hdlr rcvd event=4
+I (00:00:37.351) PC: =Switch case CONNECIVITY_MODE=
+W (00:00:37.356) PC: wifi_ap_mode=0
+
+E (00:00:37.359) SMC: sconfig return 1 smart_config_proc_sts 0
+W (00:00:37.359) PC: wifi_sta_mode=1
+
+I (00:00:37.365) led: B_Led Pin Slctd
+W (00:00:37.368) PC: wifi_ap_sta_mode=0
+
+W (00:00:37.372) OST: B Blink Prd Led Tmr,Tmr Stpd Scsfly
+W (00:00:37.375) PC: ble=1
+
+W (00:00:37.381) OST: Time Out Led Tmr,Tmr is not active,Failed Stop
+I (00:00:37.383) PC: Bef ble start:142456 15
+
+I (00:00:37.389) led: off done
+I (00:00:37.393) PC: =connectivity_mode BLE=
+W (00:00:37.396) led: LED OFF
+I (00:00:37.400) BTDM_INIT: BT controller compile version [bc2e043]
+W (00:00:37.403) OSTH: D handle:- 0
+W (00:00:37.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (00:00:37.588) TDRV: Temp periodic tmr exp
+W (00:00:37.591) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:37.604) OST: gatts_config_tmr Tmr creation Scs
+W (00:00:37.604) BLE: BLE MAC ADDRESS
+W (00:00:37.604) BLE: 34 98 7A 66 1C  F6 :
+I (00:00:37.605) BLE: reg app id registered, app_id 0055, status 0
+I (00:00:37.606) PC: Availble heap bef wifi init98852 65536
+
+I (00:00:37.611) SKT: Calibration_mode 0
+W (00:00:37.616) PC: wifi_ap_mode=0
+
+I (00:00:37.620) BLE: pairing flag 0
+W (00:00:37.623) PC: wifi_sta_mode=1
+
+W (00:00:37.627) BLE: set_name_scs 0,dev_name_conectvity_mode SAC00020250731KO
+W (00:00:37.630) PC: wifi_ap_sta_mode=0
+
+W (37784) BT_BTM: BTM_BleWriteAdvData, Partial data write into ADV
+W (00:00:37.641) PC: ble=1
+
+W (37794) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV
+I (00:00:37.649) PC: =connectivity_mode.wifi_STA_mode=
+W (00:00:37.659) BLE: create attribute table sucesfuly,the number handle = 11
+I (37808) wifi:wifi driver task: 3ffe8b94, prio:23, stack:6144, core=0
+W (00:00:37.673) BLE: SERVICE_START_EVT, status 0, service_handle 40
+W (00:00:37.680) BLE: advrtsng start scsfly
+I (37831) wifi:wifi firmware version: 4809a2e
+I (37833) wifi:wifi certification version: v7.0
+I (37837) wifi:config NVS flash: enabled
+I (37840) wifi:config nano formating: enabled
+I (37845) wifi:Init data frame dynamic rx buffer num: 32
+I (37850) wifi:Init management frame dynamic rx buffer num: 32
+I (37855) wifi:Init management short buffer num: 32
+I (37860) wifi:Init dynamic tx buffer num: 32
+I (37864) wifi:Init static rx buffer size: 1600
+I (37868) wifi:Init static rx buffer num: 2
+I (37872) wifi:Init dynamic rx buffer num: 32
+I (00:00:37.732) wifi_init: rx ba win: 2
+I (00:00:37.734) wifi_init: tcpip mbox: 16
+I (00:00:37.738) wifi_init: udp mbox: 6
+I (00:00:37.742) wifi_init: tcp mbox: 6
+I (00:00:37.745) wifi_init: tcp tx win: 2440
+I (00:00:37.749) wifi_init: tcp rx win: 2440
+I (00:00:37.753) wifi_init: tcp mss: 536
+I (00:00:37.757) WAPSTA: esp wifi init ret scs
+W (00:00:37.761) OST: sta_retry_timer Tmr creation Scs
+W (00:00:37.767) WAPSTA: esp_wifi_set_mode scs
+W (00:00:37.770) WAPSTA: wifi_init_router info. SSID:TP-Link_6D38-with_Internet password:12345678908
+W (00:00:37.797) WAPSTA: esp wifi set config ret success
+I (37945) wifi:mode : sta (34:98:7a:66:1c:f4)
+I (37945) wifi:enable tsf
+I (00:00:37.800) WAPSTA: esp wifi start ret scs
+W (00:00:37.801) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 2
+W (00:00:37.802) WAPSTA: wifi cnct call in the sta fun
+W (00:00:37.808) WAPSTA: WIFI_EVENT_STA_START config not rcvd
+I (37967) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+W (00:00:37.831) SMAX: Name Cntrl_state hghwtrmrk 2008
+I (38548) wifi:state: init -> auth (b0)
+I (38554) wifi:state: auth -> assoc (0)
+I (38562) wifi:state: assoc -> run (10)
+W (00:00:38.418) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:38.427) TDRV: result: -0.543000 minus_val 1
+W (00:00:38.428) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:38.428) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:38.434) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (00:00:38.439) SAC: Temp conv cb Exe
+W (00:00:38.442) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:38.446) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:38.473) EDRV: hvc 1 nvc 0 lvc 0 V 331858 C 0 P 0 pc 0 vl_or 0 vs 25
+W (38770) wifi:<ba-add>idx:0 (ifx:0, 40:3f:8c:b7:6d:38), tid:0, ssn:1, winSize:64
+I (38780) wifi:connected with TP-Link_6D38-with_Internet, aid = 3, channel 1, BW20, bssid = 40:3f:8c:b7:6d:38
+I (38781) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (38794) wifi:pm start, type: 1
+
+W (00:00:38.653) WAPSTA: wifi event rcvd event_base WIFI_EVENT event_id 4
+W (00:00:38.654) WAPSTA: 40:
+W (00:00:38.654) WAPSTA: 3F:
+W (00:00:38.654) WAPSTA: 8C:
+W (00:00:38.657) WAPSTA: B7:
+W (00:00:38.659) WAPSTA: 6D:
+W (00:00:38.662) WAPSTA: 38:
+I (38887) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+W (00:00:38.898) BLE: ESP_GATTS_CONNECT_EVT, conn_id = 0 77200 65536
+I (00:00:38.899) BLE: cnctd sts ble_conn 0, ble_count 1
+I (00:00:38.899) BLE_COMP: 68 c0 02 f5 5f 9a 
+W (00:00:38.903) BLE: reached max limit 1
+W (00:00:38.906) OST: con_check_tmr,Tmr Stpd Scsfly
+W (00:00:38.916) BLE: advrtsng start scsfly
+W (00:00:38.962) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:39.235) BLE: upd_conn params sts = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500
+W (00:00:39.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (00:00:39.588) TDRV: Temp periodic tmr exp
+W (00:00:39.592) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:39.665) BLE: ESP_GATTS_MTU_EVT, MTU 256
+W (00:00:39.665) ECY: connected sts : 0 0 11 1
+W (00:00:39.665) ECY: CONN STS TRUE NTFY
+W (00:00:39.666) IMTRX: TX intf:11 scs_cnt :0 fail_cnt :0
+W (00:00:39.671) IMTRX: RX intf:11 trans_cnt:0 sync_err_cnt:0 chk_sum_err_cnt:0 vld_frm_cnt:0
+I (00:00:39.679) TMRM: tmr crt_scs:52 crt_fl:0 up_scs:31 up_fl:0,
+I (00:00:39.685) TMRM: tmr st_scs:5 st_fl:0 dl_scs:4 dl_fl:0,
+I (00:00:39.690) TMRM: Mem crt_scs:20 crt_fl:0 fre_scs:20 fre_fl:0,
+W (00:00:39.696) BLE: ESP_GATTS_MTU_EVT, MTU 256 0 0
+I (00:00:39.717) BLE: notfy true
+I (00:00:39.770) BLE: data rcvd short write
+W (00:00:39.770) OST: ping_not_tmr Tmr Strtd Scsfly
+I (00:00:39.770) BLE: ping_tmr_strtd
+I (00:00:39.771) MDEC: rx_len 32
+I (00:00:39.774) IERR: sync byte matched 0x3ffeaf66
+W (00:00:39.778) MDEC: frame_len=32
+W (00:00:39.782) IINFO: total len 32 proc len 32
+W (00:00:39.786) MDEC: full frame rcvd
+W (00:00:39.786) IINFO: rcvd_frm 11 num_msg 1 trn_id 10 ack_req 0 frm_len 32 sec_mod 0
+W (00:00:39.797) IMSG: rcvd_msg intf 11 msg_id 39 msg_len 20 msg_type 1
+I (00:00:39.803) SKT: Calibration_mode 0
+I (00:00:39.807) MENC: App lvl sec msg
+I (00:00:39.810) OST: mem alloc size is unalgnd 17
+W (00:00:39.815) MENC: 09 
+W (00:00:39.817) MENC: 3c 
+W (00:00:39.820) MENC: dd 
+W (00:00:39.822) MENC: 04 
+W (00:00:39.825) MENC: 2d 
+W (00:00:39.827) MENC: 7f 
+W (00:00:39.829) MENC: 3d 
+W (00:00:39.832) MENC: 45 
+W (00:00:39.832) EX: TF: 0 TZ: 0 Sys_tm:1577836839
+W (00:00:39.834) MENC: 52 
+I (00:00:39.839) EX: get time GMT= 1577836839
+W (00:00:39.841) MENC: ed 
+W (00:00:39.960) MENC: ec 
+W (00:00:39.960) NVM: part erase scs
+W (00:00:39.960) MENC: bd 
+W (00:00:39.961) NVM: part erase restart
+W (00:00:39.961) MENC: ab 
+W (00:00:39.985) EDRV: hvc 1 nvc 0 lvc 0 V 7559000 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:39.985) MENC: bb 
+W (00:00:39.987) MENC: a7 
+W (00:00:39.988) MENC: a2 
+I (00:00:39.990) esp_netif_handlers: sta ip: 192.168.1.147, mask: 255.255.255.0, gw: 192.168.1.1
+W (00:00:39.990) IMSG: R app_id:0 sec_resp:0
+W (00:00:39.999) WAPSTA: wifi event rcvd event_base IP_EVENT event_id 0
+I (00:00:40.003) TXTH: trans_id 10 pld_len 8 intf 11 msg_type 1 pr_snt_scs 0
+W (00:00:40.009) WAPSTA: router cnctn sts ready in ap_sta pass
+W (00:00:40.016) IMSG: S sec_mod :1 app_id :0 rand:	<�-=ER�콫���
+W (00:00:40.022) WAPSTA: --signal strength -48
+I (00:00:40.028) OST: mem alloc size is unalgnd 34
+W (00:00:40.032) WSTAAP: got ip:192.168.1.147
+W (00:00:40.036) ECY: key w/N`���N�:�q���s�iLI	Cs���SAC00020250731KO 
+***** Sec ctx address 0x3ffeaa78****
+
+W (00:00:40.040) WSTAAP: sta ip address in connectivity ===:192 168 1 147
+W (00:00:40.051) ECY: Upd the conn req
+I (00:00:40.057) WSTAAP: Nvm ip 192 168 1 147 ret -167
+
+I (00:00:40.061) SKT: Calibration_mode 0
+E (00:00:40.061) IERR: WSS_NCNT
+I (00:00:40.069) MDEC: no flow control
+W (00:00:40.072) BLE: mtu 253
+W (00:00:40.072) WAPSTA: cnctd to ap SSID:TP-Link_6D38-with_Internet pass:12345678908 0
+I (00:00:40.078) BLE: payld_len 24
+W (00:00:40.086) WAPSTA: router cnctn sts ready in ap_sta pass
+I (00:00:40.089) BLE: iteration 1
+W (00:00:40.096) WAPSTA: --signal strength -47
+W (00:00:40.098) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:40.102) PC: free hp aftr wifi sta init: 77792:61912
+
+I (00:00:40.107) BLE: config tmr uptd strt
+I (00:00:40.113) PC: =server_provisioning.prime_mode=
+W (00:00:40.119) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:40.121) IMSG: send_msg intf 11 msg_id 39 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 0 trs_id 10 scs_snt 0
+W (00:00:40.126) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:40.126) SWSKT: websocket connection config
+I (00:00:40.141) BLE: gatts config tmr stpd
+I (00:00:40.145) SWSKT: Connecting to wss://ftp.iinvsys.com:55568...
+W (00:00:40.150) BLE: upd_conn params sts = 0, min_int = 0, max_int = 0,conn_int = 39,latency = 0, timeout = 500
+I (00:00:40.156) NVS: Pre-Flashed 0
+W (00:00:40.156) NVM: esp_part_write scs
+I (00:00:40.168) SWSKT: Connecting to wss://ftp.iinvsys.com:55568...
+I (00:00:40.304) SWSKT: DYNCERT DEV CERT_STATUS 0
+I (00:00:40.305) NVS: NVS open success cert_data
+W (00:00:40.305) NVM: part erase scs
+I (00:00:40.308) NVS: NVS size required  success 1521
+W (00:00:40.311) NVM: part erase restart
+W (00:00:40.344) NVM: esp_part_write scs
+W (00:00:40.344) BLE: curr user count 1 index 0
+W (00:00:40.345) BLE: ble curr user count 1 
+I (00:00:40.345) WSTAAP: Ble intf:0
+I (00:00:40.345) NVS: NVS open success cert_data
+I (00:00:40.348) IMSG: IP ADDR :192 168 1 147
+
+I (00:00:40.354) TDRV: result: -0.543000 minus_val 1
+I (00:00:40.357) TXTH: trans_id 0 pld_len 8 intf 11 msg_type 1 pr_snt_scs 1
+W (00:00:40.362) TDRV: B_LUT=25.437500 A_LUT=24.894501
+I (00:00:40.369) IMSG: IP ADDR :192 168 1 147
+
+W (00:00:40.373) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+I (00:00:40.378) TXTH: trans_id 0 pld_len 8 intf 18 msg_type 1 pr_snt_scs 0
+W (00:00:40.386) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+E (00:00:40.386) IERR: WSS_NCNT
+W (00:00:40.396) SAC: Temp conv cb Exe
+W (00:00:40.399) BLE: mtu 253
+W (00:00:40.403) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:40.408) BLE: data rcvd short write
+I (00:00:40.410) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:40.413) OST: ping_not_tmr Tmr Strtd Scsfly
+I (00:00:40.413) BLE: payld_len 24
+I (00:00:40.425) BLE: ping_tmr_strtd
+I (00:00:40.428) BLE: iteration 1
+I (00:00:40.432) MDEC: rx_len 24
+W (00:00:40.435) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:40.438) IERR: sync byte matched 0x3ffeafa6
+I (00:00:40.443) BLE: config tmr uptd strt
+W (00:00:40.447) MDEC: frame_len=24
+W (00:00:40.452) IMSG: send_msg intf 11 msg_id 68 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 0 trs_id 0 scs_snt 1
+W (00:00:40.462) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (00:00:40.462) IINFO: total len 24 proc len 24
+I (00:00:40.462) NVS: NVS size required  success 1704
+W (00:00:40.476) MDEC: full frame rcvd
+W (00:00:40.476) IINFO: rcvd_frm 11 num_msg 1 trn_id 11 ack_req 0 frm_len 24 sec_mod 1
+W (00:00:40.487) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:40.493) IMSG: rcvd_msg intf 11 msg_id 13 msg_len 8 msg_type 1
+W (00:00:40.496) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:40.502) SKT: Calibration_mode 0
+I (00:00:40.507) BLE: gatts config tmr stpd
+I (00:00:40.511) MENC: app id msg rcvd
+I (00:00:40.511) SWSKT: client cert size:1704
+I (00:00:40.518) QSND: INTF_MSG to 8 evnt 13 pld 0x3ffbae50 len(w) 3 ctx 0 fre_req 1
+I (00:00:40.523) NVS: NVS open success cert_data
+W (00:00:40.530) IMSG: S tok_key:33 app_id:1 act_sts:1
+W (00:00:40.535) MSH: event_num=13
+W (00:00:40.539) IMSG: S rem_req:1 usr_typ:1
+W (00:00:40.542) MSH: wifi ble msg hdlr rcvd event=13
+I (00:00:40.546) MDEC: no flow control
+I (00:00:40.552) AID: app id sts trans 11 intf 11
+I (00:00:40.552) NVS: NVS size required  success 3243
+W (00:00:40.559) AID: app id actn_cmd 1 set_app_key 1 usr_type 1 tkn key 33 app_id 1
+W (00:00:40.571) AID: avl_pos -1 avl_mty_idx 0 del_idx -1 alrdy_avl_pos -1
+I (00:00:40.578) MSH: least_idx_pos = -1 value 0
+I (00:00:40.582) AID: avlble_empty_index 0 *token_key 33 *app_id 1
+W (00:00:40.589) EX: TF: 0 TZ: 0 Sys_tm:1577836840
+I (00:00:40.591) SWSKT: Key cert size:3243
+I (00:00:40.592) EX: get time GMT= 1577836840
+W (00:00:40.600) AID: new *token_key 1577836840 *app_id 1
+I (00:00:40.602) SWSKT: web socket return value = 0
+I (00:00:40.606) ADMIN: total prime user cnt = 0
+I (00:00:40.610) PC: free hp aftr wifi init & svr: 65252:61912
+
+I (00:00:40.614) ADMIN: set the admin for app id 1 token key 1577836840 success
+
+  . Loading the server cert. and key...I (00:00:40.628) AID: store_admin_info_to_nvm
+W (00:00:40.631) OST: valid_socket_tmr Tmr creation Scs
+I (00:00:40.635) MSH: admin 1
+I (00:00:40.642) MSH: admin 0
+I (00:00:40.645) MSH: admin 0
+I (00:00:40.645) PC: free hp aftr wifi init & svr & ssl svr: 65404:61912
+
+ ok
+  . Seeding the random number generator...I (00:00:40.648) MSH: admin 0
+ ok
+  . Setting up the SSL data.... ok
+  . Bind on https://localhost:3332/ ...I (00:00:40.664) MSH: admin 0
+ ok
+I (00:00:40.672) LOCAL_SSL: listen fd stored 0x3ffd24a0
+  [ main ]  Waiting for a remote connection:0
+aftr_ssl_accept:58:-1:61652
+I (00:00:40.683) MSH: admin 0
+I (00:00:40.685) MSH: admin 0
+I (00:00:40.689) MSH: admin 0
+I (00:00:40.691) MSH: admin 0
+I (00:00:40.694) MSH: admin 0
+I (00:00:40.696) AID: tkey:1577836840 a_id:1 actnsts:1
+I (00:00:40.701) AID: store_app_key_info_to_nvm
+I (00:00:40.705) OST: mem alloc size is unalgnd 10
+W (00:00:40.710) AID: app id write i 0 ptr=1 ptr_tk 1577836840 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.718) AID: app id write i 1 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.726) AID: app id write i 2 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.733) AID: app id write i 3 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.741) AID: app id write i 4 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (00:00:40.741) SMAX: add_thrd_list addr 0x3ffd1358 thrd_list_cnt 5 indx 4
+W (00:00:40.749) AID: app id write i 5 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.758) mdns: mdns hostname set to: [swh-mdns-0731KO]:47124
+W (00:00:40.763) AID: app id write i 6 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.777) AID: app id write i 7 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.784) AID: app id write i 8 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.794) AID: app id write i 9 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+W (00:00:40.799) AID: write current_range_app_id 1 auth_vrfy_sts 0
+W (00:00:40.916) NVM: part erase scs
+W (00:00:40.916) NVM: part erase restart
+W (00:00:40.917) TAG: Ret: 0 34684
+
+W (00:00:40.940) NVM: esp_part_write scs
+I (00:00:40.940) PC: free hp aftr wifi init & svr & ssl_svr & mdns: 34684:33956
+
+I (00:00:40.941) WIFI_TX_PWR: nvm read tx power value 0
+W (00:00:41.065) NVM: part erase scs
+W (00:00:41.065) NVM: part erase restart
+I (00:00:41.066) WIFI_TX_PWR: tx power read 80
+W (00:00:41.089) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:41.089) NVM: esp_part_write scs
+I (00:00:41.091) AID: store_admin_info_to_nvm
+I (00:00:41.096) MSH: admin 1
+I (00:00:41.099) MSH: admin 0
+I (00:00:41.101) MSH: admin 0
+I (00:00:41.104) MSH: admin 0
+I (00:00:41.106) MSH: admin 0
+I (00:00:41.109) MSH: admin 0
+I (00:00:41.112) MSH: admin 0
+I (00:00:41.114) MSH: admin 0
+I (00:00:41.117) MSH: admin 0
+I (00:00:41.120) MSH: admin 0
+W (00:00:41.123) IMSG: R tkey:1577836840 appid:1 sts:1 fullsts:0
+I (00:00:41.128) TXTH: trans_id 11 pld_len 12 intf 11 msg_type 1 pr_snt_scs 2
+E (00:00:41.136) IERR: WSS_NCNT
+W (00:00:41.138) BLE: mtu 253
+I (00:00:41.140) BLE: payld_len 24
+I (00:00:41.144) BLE: iteration 1
+W (00:00:41.147) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:41.152) BLE: config tmr uptd strt
+W (00:00:41.156) IMSG: send_msg intf 11 msg_id 13 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 0 trs_id 11 scs_snt 2
+W (00:00:41.159) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:41.170) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:41.175) BLE: gatts config tmr stpd
+I (00:00:41.179) MSH: MSG_STE_HDLR_THRD2480
+I (00:00:41.183) QMEM: mem clr = 13
+I (00:00:41.186) MSH: no flow control
+I (00:00:41.190) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 4 from intf 7
+W (00:00:41.190) SMAX: Name rx_process hghwtrmrk 2456
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[39362]: 
+    Q: *U* SAC00020250731KO._http._tcp.local. ANY IN
+    Q: *U* swh-mdns-0731KO...local. ANY IN
+    S: SAC00020250731KO._http._tcp.local. SRV IN 120 [8] 0 0 80 swh-mdns-0731KO.local.
+    S: swh-mdns-0731KO.local. A IN 120 [4] 192.168.1.147
+W (00:00:41.231) SMAX: Name tx_process hghwtrmrk 2496
+W (00:00:41.232) SMAX: Name mbedtls_tcp_ser hghwtrmrk 2284
+W (00:00:41.238) SMAX: Name rx_process hghwtrmrk 2424
+W (00:00:41.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+I (00:00:41.530) BLE: data rcvd short write
+W (00:00:41.531) OST: ping_not_tmr Tmr Strtd Scsfly
+I (00:00:41.531) BLE: ping_tmr_strtd
+I (00:00:41.531) MDEC: rx_len 56
+I (00:00:41.534) IERR: sync byte matched 0x3fff4152
+W (00:00:41.539) MDEC: frame_len=56
+W (00:00:41.543) IINFO: total len 56 proc len 56
+W (00:00:41.546) MDEC: full frame rcvd
+W (00:00:41.546) IINFO: rcvd_frm 11 num_msg 1 trn_id 13 ack_req 0 frm_len 56 sec_mod 1
+W (00:00:41.558) IMSG: rcvd_msg intf 11 msg_id 35 msg_len 28 msg_type 1
+I (00:00:41.564) SKT: Calibration_mode 0
+W (00:00:41.567) IMSG: S loc_tok:1577836840 Epc_tim:1753966478 app id:1 prm_sts:1
+
+I (00:00:41.575) QSND: INTF_MSG to 8 evnt 35 pld 0x3fff3450 len(w) 8 ctx 0 fre_req 1
+I (00:00:41.582) MDEC: no flow control
+W (00:00:41.586) MSH: event_num=35
+I (00:00:41.588) TDRV: Temp periodic tmr exp
+W (00:00:41.593) MSH: wifi ble msg hdlr rcvd event=35
+W (00:00:41.596) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (00:00:41.603) MSH: token_key 1577836840 app_id 1 timestamp 1753966478 ser_no SAC00020250731KO
+I (00:00:41.611) AID: store_app_key_info_to_nvm
+I (00:00:41.616) OST: mem alloc size is unalgnd 10
+W (00:00:41.620) AID: app id write i 0 ptr=1 ptr_tk 1577836840 ptr_ts 1753966478 vrfy_sts 1 vrfy_flag 1
+W (00:00:41.629) AID: app id write i 1 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.637) AID: app id write i 2 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.644) AID: app id write i 3 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.652) AID: app id write i 4 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.659) AID: app id write i 5 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.667) AID: app id write i 6 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.675) AID: app id write i 7 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.682) AID: app id write i 8 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.690) AID: app id write i 9 ptr=0 ptr_tk 0 ptr_ts 0 vrfy_sts 1 vrfy_flag 0
+W (00:00:41.697) AID: write current_range_app_id 1 auth_vrfy_sts 1
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[39862]: 
+    Q: SAC00020250731KO._http._tcp.local. ANY IN
+    Q: swh-mdns-0731KO...local. ANY IN
+    S: SAC00020250731KO._http._tcp.local. SRV IN 120 [8] 0 0 80 swh-mdns-0731KO.local.
+    S: swh-mdns-0731KO.local. A IN 120 [4] 192.168.1.147
+W (00:00:41.833) NVM: part erase scs
+W (00:00:41.833) NVM: part erase restart
+W (00:00:41.858) NVM: esp_part_write scs
+W (00:00:41.970) NVM: part erase scs
+W (00:00:41.971) NVM: part erase restart
+W (00:00:42.003) EDRV: hvc 1 nvc 0 lvc 0 V 2473854 C 0 P 0 pc 0 vl_or 0 vs 25
+W (00:00:42.005) NVM: esp_part_write scs
+W (00:00:42.005) MSH: 0 : 1 : 0 :1
+W (00:00:42.007) MSH: nvm var in auth: a
+W (00:00:42.010) MSH: Sr_sts:0 sr_no SAC00020250731KO dsr_nu SAC00020250731KO sts_code 2
+
+W (00:00:42.020) IMSG: R aut_sts:1 2
+I (00:00:42.021) TXTH: trans_id 13 pld_len 8 intf 11 msg_type 1 pr_snt_scs 3
+E (00:00:42.029) IERR: WSS_NCNT
+W (00:00:42.031) BLE: mtu 253
+I (00:00:42.034) BLE: payld_len 24
+I (00:00:42.037) BLE: iteration 1
+W (00:00:42.040) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:42.045) BLE: config tmr uptd strt
+W (00:00:42.050) IMSG: send_msg intf 11 msg_id 35 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 0 trs_id 13 scs_snt 3
+W (00:00:42.052) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:42.064) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:42.068) BLE: gatts config tmr stpd
+W (00:00:42.072) MSH: Auth_success
+W (00:00:42.075) IMSG: app_id 1 idx 0 rm_flg_chk 11
+W (00:00:42.080) IMSG: Usr_based_flg 0 2 8
+W (00:00:42.084) IMSG: idx 0
+W (00:00:42.087) IMSG: Usr_based_FF_flg 0 flag_chk 0
+I (00:00:42.091) QSND: INTF_MSG to 7 evnt 0 pld 0xb len(w) 0 ctx 0 fre_req 0
+W (00:00:42.098) MENC: get conn_Med=255
+I (00:00:42.101) MSH: get_sta_info_intf data
+E (00:00:42.105) WAPSTA: router connection success not sent
+W (00:00:42.111) MENC: set conn_Med=255
+E (00:00:42.114) WAPSTA: router connection intf store 1
+I (00:00:42.119) MSH: MSG_STE_HDLR_THRD2480
+I (00:00:42.124) QMEM: mem clr = 35
+I (00:00:42.126) MSH: no flow control
+W (00:00:42.130) SKT: Pwr Off State_event rcvd event=0
+I (00:00:42.135) CEH: common events =0
+E (00:00:42.138) OTATK: curr_seg_num 0 app_id 0 app_build_num 0 
+W (00:00:42.144) OTATK: prev_ver 0.00 0 0 cur_ver 2.10 uplod_bin_len 0 bin_size 0 bin_upd_flg 0
+W (00:00:42.152) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.157) EX: get time GMT= 1577836842
+E (00:00:42.161) OTATK: not ota initiated appid
+I (00:00:42.165) CEH: c_cnt 1 
+W (00:00:42.168) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.172) EX: get time GMT= 1577836842
+I (00:00:42.176) CEH: tm_year 120 forced_time_sync_flag 1
+W (00:00:42.182) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.186) EX: get time GMT= 1577836842
+I (00:00:42.190) CEH: dpot 1577836842
+
+W (00:00:42.194) IMSG: Q pow_sts:0 tim_sync:1 rly_sts:0 intf: 19
+I (00:00:42.199) TXTH: trans_id 0 pld_len 12 intf 19 msg_type 1 pr_snt_scs 0
+W (00:00:42.206) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (00:00:42.211) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+E (00:00:42.217) IERR: WSS_NCNT
+W (00:00:42.220) BLE: mtu 253
+I (00:00:42.222) BLE: payld_len 24
+I (00:00:42.225) BLE: iteration 1
+W (00:00:42.228) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:42.233) BLE: config tmr uptd strt
+W (00:00:42.239) IMSG: send_msg intf 11 msg_id 16 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1 trs_id 1 scs_snt 4
+W (00:00:42.241) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:42.252) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:42.257) BLE: gatts config tmr stpd
+I (00:00:42.265) BLE: data rcvd short write
+W (00:00:42.265) OST: ping_not_tmr Tmr Strtd Scsfly
+I (00:00:42.269) BLE: ping_tmr_strtd
+I (00:00:42.272) MDEC: rx_len 72
+I (00:00:42.275) IERR: sync byte matched 0x3fff835a
+W (00:00:42.280) MDEC: frame_len=72
+W (00:00:42.284) IINFO: total len 72 proc len 72
+W (00:00:42.287) MDEC: full frame rcvd
+W (00:00:42.287) IINFO: rcvd_frm 11 num_msg 10 trn_id 14 ack_req 0 frm_len 72 sec_mod 1
+I (00:00:42.291) BLE: data rcvd short write
+W (00:00:42.299) IMSG: rcvd_msg intf 11 msg_id 26 msg_len 8 msg_type 1
+W (00:00:42.303) OST: ping_not_tmr Tmr Strtd Scsfly
+W (00:00:42.309) IMSG: off_time_stamp 0
+I (00:00:42.313) BLE: ping_tmr_strtd
+I (00:00:42.317) QSND: INTF_MSG to 8 evnt 26 pld 0x3fff149c len(w) 3 ctx 0 fre_req 1
+I (00:00:42.320) MDEC: rx_len 24
+W (00:00:42.328) IMSG: rcvd_msg intf 11 msg_id 48 msg_len 4 msg_type 0
+I (00:00:42.331) IERR: sync byte matched 0x3fff78ca
+I (00:00:42.337) IMSG: param 1 auto_on_off 0 sch_override: 0 h_temp_thrs: 28 l_temp_thrs: 24
+W (00:00:42.342) MDEC: frame_len=24
+I (00:00:42.350) IMSG: HTR_STR 0 PARM 2
+I (00:00:42.357) IMSG: MX_CUR 0 PARM 3 
+W (00:00:42.357) IINFO: total len 24 proc len 24
+I (00:00:42.362) TDRV: result: -0.543000 minus_val 1
+W (00:00:42.365) MDEC: full frame rcvd
+W (00:00:42.369) TDRV: B_LUT=25.437500 A_LUT=24.894501
+I (00:00:42.373) BLE: data rcvd short write
+W (00:00:42.378) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:42.381) OST: ping_not_tmr Tmr Strtd Scsfly
+W (00:00:42.389) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+I (00:00:42.393) BLE: ping_tmr_strtd
+W (00:00:42.398) SAC: Temp conv cb Exe
+I (00:00:42.402) MDEC: rx_len 24
+W (00:00:42.405) SAC: Scs Val = 0 Read Sts = 0
+I (00:00:42.408) IERR: sync byte matched 0x3fff835a
+I (00:00:42.412) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (00:00:42.417) MDEC: frame_len=24
+I (00:00:42.417) IMSG: LED 0 PARM 4
+W (00:00:42.428) IINFO: total len 24 proc len 24
+W (00:00:42.435) MDEC: full frame rcvd
+W (00:00:42.439) IMSG: det: 1 4 
+
+I (00:00:42.442) IMSG: param :1 ptr[4] 1 ptr[5] 0  ptr[6] 28 ptr[7] 24
+I (00:00:42.448) TXTH: trans_id 14 pld_len 8 intf 11 msg_type 1 pr_snt_scs 5
+W (00:00:42.455) IMSG: det: 4 4 
+
+I (00:00:42.458) IMSG: ptr[4]: 4 ptr[5] : 0 ptr[6] 165 ptr[7] 165
+W (00:00:42.463) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+I (00:00:42.463) TXTH: trans_id 14 pld_len 8 intf 11 msg_type 1 pr_snt_scs 5
+E (00:00:42.463) IERR: WSS_NCNT
+W (00:00:42.477) IMSG: rcvd_msg intf 11 msg_id 47 msg_len 4 msg_type 0
+W (00:00:42.480) BLE: mtu 253
+W (00:00:42.486) IMSG: Q_param_id 1 param_size16 
+
+W (00:00:42.494) BLE: curr user count 1 index 0
+W (00:00:42.498) BLE: ble curr user count 1 
+W (00:00:42.502) LOCAL_SSL: curr user count 0 index 0
+W (00:00:42.502) TAG_INTF_MTRX: HP_FR 37404 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (00:00:42.502) BLE: payld_len 24
+I (00:00:42.516) RLY:  temp rly ret var 0:0
+W (00:00:42.524) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.528) EX: get time GMT= 1577836842
+I (00:00:42.528) BLE: iteration 1
+W (00:00:42.532) IMSG: param_id 1 vol_vl 223418  cur_vl 0 pwr_vol 0 
+W (00:00:42.541) OST: gatts_config_tmr Tmr Strtd Scsfly
+W (00:00:42.541) IMSG: skt_per_time 1577836842
+I (00:00:42.546) BLE: config tmr uptd strt
+I (00:00:42.550) SKT: Calibration_mode 0
+W (00:00:42.557) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (00:00:42.558) TXTH: trans_id 0 pld_len 20 intf 11 msg_type 1 pr_snt_scs 5
+W (00:00:42.562) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:42.574) BLE: gatts config tmr stpd
+W (00:00:42.574) IMSG: send_msg intf 11 msg_id 48 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 14 scs_snt 5
+I (00:00:42.579) TDRV: result: -0.543000 minus_val 1
+W (00:00:42.593) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (00:00:42.598) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (00:00:42.605) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+E (00:00:42.605) IERR: WSS_NCNT
+W (00:00:42.610) IMSG: param_id 2 temp 24894  skt_per_time  1577836842 
+W (00:00:42.613) BLE: mtu 253
+I (00:00:42.619) SKT: Calibration_mode 0
+I (00:00:42.626) TXTH: trans_id 0 pld_len 16 intf 11 msg_type 1 pr_snt_scs 6
+W (00:00:42.632) IMSG: Q_param_id 2 param_size12 
+
+W (00:00:42.637) IMSG: Q param_id 2 temp 24894  skt_per_time  1577836842 
+I (00:00:42.643) TXTH: trans_id 14 pld_len 16 intf 11 msg_type 1 pr_snt_scs 6
+I (00:00:42.643) BLE: payld_len 24
+W (00:00:42.650) IMSG: rcvd_msg intf 11 msg_id 46 msg_len 4 msg_type 0
+I (00:00:42.660) IMSG: S_ER 0
+I (00:00:42.662) RLY:  temp rly ret var 0:0
+I (00:00:42.662) BLE: iteration 1
+W (00:00:42.666) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.674) EX: get time GMT= 1577836842
+W (00:00:42.678) IMSG: Q ID 1 RV 0 RSC 0 APPID 1 RSCT 1577836842 QNT 0
+I (00:00:42.684) TXTH: trans_id 14 pld_len 16 intf 11 msg_type 1 pr_snt_scs 6
+W (00:00:42.684) OST: gatts_config_tmr Tmr Strtd Scsfly
+W (00:00:42.691) IMSG: Q ID 3 LSUT 0
+I (00:00:42.699) BLE: config tmr uptd strt
+I (00:00:42.699) TXTH: trans_id 14 pld_len 12 intf 11 msg_type 1 pr_snt_scs 6
+W (00:00:42.706) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:42.710) IERR: Q NCDS ID 0 not found
+W (00:00:42.715) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (00:00:42.719) IMSG: rcvd_msg intf 11 msg_id 68 msg_len 0 msg_type 0
+I (00:00:42.723) BLE: gatts config tmr stpd
+W (00:00:42.730) IMSG: IP_ADDR 192.168.1.147
+I (00:00:42.738) TXTH: trans_id 14 pld_len 8 intf 11 msg_type 1 pr_snt_scs 6
+W (00:00:42.744) IMSG: rcvd_msg intf 11 msg_id 11 msg_len 0 msg_type 0
+I (00:00:42.751) SKT: Calibration_mode 0
+W (00:00:42.751) IMSG: send_msg intf 11 msg_id 48 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 14 scs_snt 6
+W (00:00:42.754) BLE: 34 98 7A 66 1C  F6 :
+E (00:00:42.765) IERR: WSS_NCNT
+W (00:00:42.768) MENC: 34: 
+W (00:00:42.774) MENC: 98: 
+W (00:00:42.776) MENC: 7A: 
+W (00:00:42.779) MENC: 66: 
+W (00:00:42.781) BLE: mtu 253
+W (00:00:42.781) MENC: 1C: 
+W (00:00:42.786) MENC: F6: 
+W (00:00:42.789) IMSG:  Q fd_hw_mj:0 fd_hw_mr:6 fd_sfw_mj:2 fd_sfw_mr:1 fd_hw_tp:6 max_alrm 16 bld_num 68 ful_sts 0
+W (00:00:42.799) MENC: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (00:00:42.805) TXTH: trans_id 14 pld_len 40 intf 11 msg_type 1 pr_snt_scs 7
+E (00:00:42.812) IMSG: REV_NUMR :- 18993
+I (00:00:42.812) BLE: payld_len 40
+I (00:00:42.815) NVM: RO_NVM_VER 2
+I (00:00:42.822) PWRM: Vol_ref_parm= 136062
+I (00:00:42.825) PWRM: RVL_3_fd 846623
+I (00:00:42.829) PWRM: RVL_3_fd 1297104
+I (00:00:42.832) PWRM: RVL_3_fd 1370592
+I (00:00:42.836) PWRM: RVL_3_fd 1406600
+I (00:00:42.840) PWRM: RVL_3_fd 1264270
+I (00:00:42.843) PWRM: RVL_3_fd 1275400
+I (00:00:42.847) PWRM: RVL_3_fd 1283335
+I (00:00:42.850) BLE: iteration 1
+I (00:00:42.850) PWRM: RVL_3_fd 1289928
+I (00:00:42.857) PWRM: RVL_3_fd 1286505
+I (00:00:42.860) PWRM: RVL_3_fd 1289693
+I (00:00:42.864) PWRM: RVL_3_fd 1274147
+W (00:00:42.868) IMSG: rcvd_msg intf 11 msg_id 61 msg_len 0 msg_type 0
+W (00:00:42.874) IMSG: Low Volt 160 High Volt 275 En_dis 0
+I (00:00:42.879) TXTH: trans_id 14 pld_len 8 intf 11 msg_type 1 pr_snt_scs 7
+W (00:00:42.886) IMSG: rcvd_msg intf 11 msg_id 69 msg_len 0 msg_type 0
+W (00:00:42.892) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:42.892) IMSG: EN SV MODE EN_MO 0 IN_DUR 0 OF_DUR 0 ON_DUR 0 LT 0 HT 0
+I (00:00:42.904) TXTH: trans_id 14 pld_len 12 intf 11 msg_type 1 pr_snt_scs 7
+W (00:00:42.911) IMSG: rcvd_msg intf 11 msg_id 49 msg_len 8 msg_type 1
+W (00:00:42.917) MENC: Prdc_ntfy_ctrl_rcvd
+W (00:00:42.921) IMSG: S prm_ID:1 pr_t_sec:5 nt_on_chn:1 th_vol_vl:5 th_cur_vl:200 th_pow_vl:50
+I (00:00:42.921) BLE: config tmr uptd strt
+I (00:00:42.929) QSND: INTF_MSG to 8 evnt 21 pld 0 len(w) 0 ctx 0 fre_req 0
+W (00:00:42.936) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:42.940) IMSG: rcvd_msg intf 11 msg_id 14 msg_len 0 msg_type 0
+W (00:00:42.945) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (00:00:42.951) IMSG: $ ssid TP-Link_6D38-with_Internet pwd 12345678908
+I (00:00:42.956) BLE: gatts config tmr stpd
+W (00:00:42.962) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+W (00:00:42.962) WAPSTA: ssid_len: 32 :26
+W (00:00:42.962) IMSG: send_msg intf 11 msg_id 47 msg_len 40 sec_mode 1 fd 0 pad_len 12 app_id 1 trs_id 0 scs_snt 7
+W (00:00:42.980) WAPSTA: app_id idx:1 0
+E (00:00:42.988) IERR: WSS_NCNT
+W (00:00:42.990) EX: TF: 0 TZ: 0 Sys_tm:1577836842
+I (00:00:42.998) EX: get time GMT= 1577836842
+W (00:00:43.002) WAPSTA: arp 1 drp 1 ff 0 wfct 1577836842 sc 0 rssi-47 ssidlen 32 26 flag_chk 0 rtr_rt 1 proc 0
+I (00:00:43.011) TXTH: trans_id 14 pld_len 48 intf 11 msg_type 1 pr_snt_scs 8
+W (00:00:43.011) BLE: mtu 253
+I (00:00:43.018) MDEC: no flow control
+W (00:00:43.024) IINFO: rcvd_frm 11 num_msg 1 trn_id 12 ack_req 0 frm_len 24 sec_mod 1
+I (00:00:43.024) BLE: payld_len 24
+W (00:00:43.033) IMSG: rcvd_msg intf 11 msg_id 36 msg_len 8 msg_type 1
+I (00:00:43.042) BLE: iteration 1
+W (00:00:43.042) IMSG: S loc_tok:1577836840 app_id:1
+W (00:00:43.045) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.049) QSND: INTF_MSG to 8 evnt 36 pld 0x3fff8750 len(w) 3 ctx 0 fre_req 1
+I (00:00:43.062) MDEC: no flow control
+W (00:00:43.065) IINFO: rcvd_frm 11 num_msg 1 trn_id 15 ack_req 0 frm_len 24 sec_mod 1
+W (00:00:43.073) IMSG: rcvd_msg intf 11 msg_id 17 msg_len 8 msg_type 1
+W (00:00:43.079) IMSG: S cur_t 1753966479 tim_z 19800 z_fla 0 tm_zn_nt_avial 0 da_lig_sa 0
+I (00:00:43.087) QSND: INTF_MSG to 8 evnt 17 pld 0x3fff424c len(w) 3 ctx 0 fre_req 1
+I (00:00:43.094) MDEC: no flow control
+I (00:00:43.094) BLE: config tmr uptd strt
+W (00:00:43.103) IMSG: send_msg intf 11 msg_id 47 msg_len 24 sec_mode 1 fd 0 pad_len 0 app_id 1 trs_id 0 scs_snt 8
+W (00:00:43.105) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.117) IERR: WSS_NCNT
+W (00:00:43.117) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (00:00:43.119) BLE: mtu 253
+I (00:00:43.124) BLE: gatts config tmr stpd
+I (00:00:43.127) BLE: payld_len 24
+I (00:00:43.134) BLE: iteration 1
+W (00:00:43.137) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.142) BLE: config tmr uptd strt
+W (00:00:43.147) IMSG: send_msg intf 11 msg_id 47 msg_len 24 sec_mode 1 fd 0 pad_len 0 app_id 1 trs_id 14 scs_snt 9
+W (00:00:43.148) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.161) IERR: WSS_NCNT
+W (00:00:43.161) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.168) BLE: gatts config tmr stpd
+W (00:00:43.168) BLE: mtu 253
+I (00:00:43.175) BLE: payld_len 24
+I (00:00:43.178) BLE: iteration 1
+W (00:00:43.181) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.186) BLE: config tmr uptd strt
+W (00:00:43.190) IMSG: send_msg intf 11 msg_id 46 msg_len 24 sec_mode 1 fd 0 pad_len 0 app_id 1 trs_id 14 scs_snt 10
+W (00:00:43.192) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:43.205) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.210) BLE: gatts config tmr stpd
+E (00:00:43.210) IERR: WSS_NCNT
+W (00:00:43.216) BLE: mtu 253
+I (00:00:43.219) BLE: payld_len 24
+I (00:00:43.222) BLE: iteration 1
+W (00:00:43.225) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.230) BLE: config tmr uptd strt
+W (00:00:43.235) IMSG: send_msg intf 11 msg_id 46 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1 trs_id 14 scs_snt 11
+W (00:00:43.237) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.249) IERR: WSS_NCNT
+W (00:00:43.249) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.257) BLE: gatts config tmr stpd
+W (00:00:43.257) BLE: mtu 253
+I (00:00:43.263) BLE: payld_len 24
+I (00:00:43.266) BLE: iteration 1
+W (00:00:43.269) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.274) BLE: config tmr uptd strt
+W (00:00:43.280) IMSG: send_msg intf 11 msg_id 68 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 14 scs_snt 12
+W (00:00:43.283) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.293) IERR: WSS_NCNT
+W (00:00:43.293) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.301) BLE: gatts config tmr stpd
+W (00:00:43.301) BLE: mtu 253
+I (00:00:43.307) BLE: payld_len 56
+I (00:00:43.310) BLE: iteration 1
+W (00:00:43.314) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.318) BLE: config tmr uptd strt
+W (00:00:43.324) IMSG: send_msg intf 11 msg_id 11 msg_len 56 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 14 scs_snt 13
+W (00:00:43.325) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:43.337) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.342) BLE: gatts config tmr stpd
+E (00:00:43.342) IERR: WSS_NCNT
+W (00:00:43.349) BLE: mtu 253
+I (00:00:43.352) BLE: payld_len 24
+I (00:00:43.355) BLE: iteration 1
+W (00:00:43.358) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.363) BLE: config tmr uptd strt
+W (00:00:43.368) IMSG: send_msg intf 11 msg_id 61 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 14 scs_snt 14
+W (00:00:43.369) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.381) IERR: WSS_NCNT
+W (00:00:43.381) OST: gatts_config_tmr,Tmr Stpd Scsfly
+W (00:00:43.384) BLE: mtu 253
+I (00:00:43.389) BLE: gatts config tmr stpd
+I (00:00:43.392) BLE: payld_len 24
+I (00:00:43.399) BLE: iteration 1
+W (00:00:43.402) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.407) BLE: config tmr uptd strt
+W (00:00:43.413) IMSG: send_msg intf 11 msg_id 69 msg_len 24 sec_mode 1 fd 0 pad_len 4 app_id 1 trs_id 14 scs_snt 15
+W (00:00:43.414) BLE: ESP_GATTS_CONF_EVT, status = 0
+E (00:00:43.421) IERR: WSS_NCNT
+W (00:00:43.426) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.433) BLE: gatts config tmr stpd
+W (00:00:43.433) BLE: mtu 253
+I (00:00:43.440) BLE: payld_len 56
+I (00:00:43.443) BLE: iteration 1
+W (00:00:43.446) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.451) BLE: config tmr uptd strt
+W (00:00:43.456) IMSG: send_msg intf 11 msg_id 14 msg_len 56 sec_mode 1 fd 0 pad_len 0 app_id 1 trs_id 14 scs_snt 16
+W (00:00:43.462) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+W (00:00:43.462) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:43.477) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.481) BLE: gatts config tmr stpd
+W (00:00:43.485) MSH: event_num=26
+W (00:00:43.488) MSH: wifi ble msg hdlr rcvd event=26
+I (00:00:43.493) MSH: offline_time_stamp 0
+W (00:00:43.497) MSH: refrh_ses_bit 0
+W (00:00:43.500) OFL: last_rcvd_time_stamp 0
+W (00:00:43.504) OFL: update_app_time 0 off_app_id 1
+
+W (00:00:43.509) OFL: update_refresh_ses_stop_bit 0
+
+I (00:00:43.514) MSH: MSG_STE_HDLR_THRD2480
+I (00:00:43.518) QMEM: mem clr = 26
+I (00:00:43.521) MSH: no flow control
+W (00:00:43.526) MSH: event_num=21
+W (00:00:43.528) MSH: wifi ble msg hdlr rcvd event=21
+I (00:00:43.532) MSH: skt_periodic_para
+W (00:00:43.536) OST: Periodic Notify Timer Tmr Strtd Scsfly
+I (00:00:43.542) MSH: MSG_STE_HDLR_THRD2480
+I (00:00:43.545) MSH: no flow control
+W (00:00:43.549) MSH: event_num=36
+W (00:00:43.552) MSH: wifi ble msg hdlr rcvd event=36
+I (00:00:43.557) ADM: admin id sts trans 12 intf 11
+W (00:00:43.561) ADM: recv data admin set remove 1 token 1577836840 appid 1
+I (00:00:43.568) ADMIN: set the admin for app id 1 token key 1577836840 success
+I (00:00:43.575) AID: store_admin_info_to_nvm
+I (00:00:43.579) MSH: admin 1
+I (00:00:43.582) MSH: admin 0
+I (00:00:43.584) MSH: admin 0
+I (00:00:43.587) MSH: admin 0
+I (00:00:43.588) TDRV: Temp periodic tmr exp
+I (00:00:43.594) MSH: admin 0
+I (00:00:43.596) MSH: admin 0
+W (00:00:43.597) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (00:00:43.604) MSH: admin 0
+I (00:00:43.607) MSH: admin 0
+I (00:00:43.610) MSH: admin 0
+I (00:00:43.612) MSH: admin 0
+I (00:00:43.615) ADM: dev admin set scs - msg len = 4
+W (00:00:43.620) IMSG: R adm_sts: 1 app_id1
+I (00:00:43.624) TXTH: trans_id 12 pld_len 8 intf 11 msg_type 1 pr_snt_scs 17
+E (00:00:43.631) IERR: WSS_NCNT
+W (00:00:43.634) BLE: mtu 253
+I (00:00:43.636) BLE: payld_len 24
+I (00:00:43.639) BLE: iteration 1
+W (00:00:43.642) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (00:00:43.647) BLE: config tmr uptd strt
+W (00:00:43.652) IMSG: send_msg intf 11 msg_id 36 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 12 scs_snt 17
+W (00:00:43.654) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (00:00:43.666) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (00:00:43.671) BLE: gatts config tmr stpd
+I (00:00:43.675) MSH: MSG_STE_HDLR_THRD2464
+I (00:00:43.679) QMEM: mem clr = 36
+I (00:00:43.682) MSH: no flow control
+W (00:00:43.685) MSH: event_num=17
+W (00:00:43.689) MSH: wifi ble msg hdlr rcvd event=17
+W (00:00:43.693) EX: TF: 0 TZ: 0 Sys_tm:1577836843
+I (00:00:43.698) EX: get time GMT= 1577836843
+W (00:00:43.702) EX: TF: 0 TZ: 0 Sys_tm:1577836843
+I (00:00:43.706) EX: get time GMT= 1577836843
+W (00:00:43.710) EX: reboot_GMT = 1577836843 msg17_GMT = 1753966479 dev_GMT 1577836843 Tdiff 176129636 tm_zn_fg 0
+W (00:00:43.721) EX: Alarm currt time:1753966479
+
+I (00:00:43.725) CEH: set_skt_periodic_data.notify_on_change_only 1 sec 5
+W (00:00:43.817) NVM: part erase scs
+W (00:00:43.817) NVM: part erase restart
+W (00:00:43.840) NVM: esp_part_write scs
+W (00:00:43.841) CEH: conn_recv_from yes 11 bit_map_connection_sts 2048 prev_set_bits 0
+W (00:00:43.841) OST: Periodic Notify Timer Tmr Strtd Scsfly
+W (00:00:43.963) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 4 vl_or 0 vs 25
+W (00:00:43.965) NVM: part erase scs
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[42126]: 
+    Q: SAC00020250731KO._http._tcp.local. ANY IN
+    Q: swh-mdns-0731KO...local. ANY IN
+    S: SAC00020250731KO._http._tcp.local. SRV IN 120 [24] 0 0 80 swh-mdns-0731KO.local.
+    S: swh-mdns-0731KO.local. A IN 120 [4] 192.168.1.147
+W (00:00:43.997) NVM: part erase restart
+W (00:00:44.070) NVM: esp_part_write scs
+W (00:00:44.071) OST: alarm_timer,Tmr is not active,Failed Stop
+W (00:00:44.071) EX: SET_TIME:1753986279
+
+I (18:24:39.000) MSH: time synced
+W (18:24:39.002) MSH: tm_zn_intf 11 available_tm_zone_flg 1
+I (18:24:39.006) ALRM: no tmr active
+I (18:24:39.009) QSND: INTF_MSG to 7 evnt 11 pld 0 len(w) 0 ctx 0 fre_req 0
+I (18:24:39.016) EX: 1
+I (18:24:39.018) QSND: INTF_MSG to 7 evnt 12 pld 0x3ffcaf2c len(w) 0 ctx 0 fre_req 1
+W (18:24:39.025) SKT: gysr_start_time0 relay_status 0  heating_dur 0 hv_lv_ovrr 0
+W (18:24:39.032) SKT: pen on sch 0 sch_st time 0 sch dur 0 gysr stop time 0 rly ste chng 0
+
+I (18:24:39.041) SKT: Calibration_mode 0
+W (18:24:39.044) SKT: RLY:0:0,0
+
+W (18:24:39.047) MSH: Wdt_fl_dis
+I (18:24:39.050) MSH: MSG_STE_HDLR_THRD2464
+I (18:24:39.054) QMEM: mem clr = 17
+I (18:24:39.057) MSH: no flow control
+W (18:24:39.057) SMAX: Name rx_process hghwtrmrk 2152
+W (18:24:39.066) SMAX: Name tx_process hghwtrmrk 2336
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[42417]: AUTHORITATIVE
+    A: _services._dns-sd._udp.local. PTR IN 4500 [18] ._http._tcp.local.
+    A: _http._tcp.local. PTR IN 4500 [35] SAC00020250731KO._http._tcp.local.
+    A: SAC00020250731KO._http._tcp.local. SRV IN FLUSH 120 [29] 0 0 80 swh-mdns-0731KO.local.
+    A: SAC00020250731KO._http._tcp.local. TXT IN FLUSH 4500 [30] p=password; u=user; board=esp32
+    A: swh-mdns-0731KO.local. A IN FLUSH 120 [4] 192.168.1.147
+I (18:24:39.288) TDRV: result: -0.543000 minus_val 1
+W (18:24:39.289) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:39.289) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:39.295) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:39.300) SAC: Temp conv cb Exe
+W (18:24:39.303) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:39.307) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:39.387) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (18:24:39.387) DC: NVM-READ: DYN-CERT: cert_status: 0 error_type: 0 error_code: 0
+W (18:24:39.443) DC: DYN-CERT NOTIFY - PARING CONNECTIVITY
+W (18:24:39.444) IMSG: DC-NOTIFY dyn_cert_status:0 dyn_cert_err_type:0 dyn_cert_error_code:0 
+W (18:24:39.520) IMSG: srvr_type 1 dc_srvr_ver_num 1 cert_ver_num 1
+I (18:24:39.521) TXTH: trans_id 0 pld_len 8 intf 19 msg_type 1 pr_snt_scs 0
+W (18:24:39.528) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (18:24:39.533) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+E (18:24:39.539) IERR: WSS_NCNT
+W (18:24:39.541) BLE: mtu 253
+I (18:24:39.544) BLE: payld_len 24
+I (18:24:39.547) BLE: iteration 1
+W (18:24:39.550) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:24:39.555) BLE: config tmr uptd strt
+W (18:24:39.561) IMSG: send_msg intf 11 msg_id 34 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 2 scs_snt 18
+W (18:24:39.563) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (18:24:39.574) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:24:39.579) BLE: gatts config tmr stpd
+I (18:24:39.625) BLE: data rcvd short write
+W (18:24:39.625) OST: ping_not_tmr Tmr Strtd Scsfly
+I (18:24:39.626) BLE: ping_tmr_strtd
+I (18:24:39.626) MDEC: rx_len 24
+I (18:24:39.629) IERR: sync byte matched 0x3fff795a
+W (18:24:39.633) MDEC: frame_len=24
+W (18:24:39.637) IINFO: total len 24 proc len 24
+W (18:24:39.641) MDEC: full frame rcvd
+W (18:24:39.641) IINFO: rcvd_frm 11 num_msg 1 trn_id 16 ack_req 0 frm_len 24 sec_mod 1
+W (18:24:39.653) IMSG: rcvd_msg intf 11 msg_id 11 msg_len 0 msg_type 0
+I (18:24:39.658) SKT: Calibration_mode 0
+W (18:24:39.662) BLE: 34 98 7A 66 1C  F6 :
+W (18:24:39.666) MENC: 34: 
+W (18:24:39.668) MENC: 98: 
+W (18:24:39.671) MENC: 7A: 
+W (18:24:39.673) MENC: 66: 
+W (18:24:39.676) MENC: 1C: 
+W (18:24:39.678) MENC: F6: 
+W (18:24:39.681) IMSG:  Q fd_hw_mj:0 fd_hw_mr:6 fd_sfw_mj:2 fd_sfw_mr:1 fd_hw_tp:6 max_alrm 16 bld_num 68 ful_sts 0
+W (18:24:39.691) MENC: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (18:24:39.697) TXTH: trans_id 16 pld_len 40 intf 11 msg_type 1 pr_snt_scs 19
+E (18:24:39.704) IMSG: REV_NUMR :- 18993
+I (18:24:39.709) NVM: RO_NVM_VER 2
+I (18:24:39.711) PWRM: Vol_ref_parm= 136062
+I (18:24:39.714) PWRM: RVL_3_fd 846623
+E (18:24:39.714) IERR: WSS_NCNT
+I (18:24:39.718) PWRM: RVL_3_fd 1297104
+I (18:24:39.724) PWRM: RVL_3_fd 1370592
+W (18:24:39.728) BLE: mtu 253
+I (18:24:39.728) PWRM: RVL_3_fd 1406600
+I (18:24:39.734) PWRM: RVL_3_fd 1264270
+I (18:24:39.738) PWRM: RVL_3_fd 1275400
+I (18:24:39.741) PWRM: RVL_3_fd 1283335
+I (18:24:39.745) BLE: payld_len 56
+I (18:24:39.745) PWRM: RVL_3_fd 1289928
+I (18:24:39.751) PWRM: RVL_3_fd 1286505
+I (18:24:39.755) PWRM: RVL_3_fd 1289693
+I (18:24:39.759) PWRM: RVL_3_fd 1274147
+I (18:24:39.762) MDEC: no flow control
+I (18:24:39.762) BLE: iteration 1
+W (18:24:39.769) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:24:39.774) BLE: config tmr uptd strt
+W (18:24:39.779) IMSG: send_msg intf 11 msg_id 11 msg_len 56 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 16 scs_snt 19
+W (18:24:39.781) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (18:24:39.792) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:24:39.797) BLE: gatts config tmr stpd
+I (18:24:39.801) OFL: prtl_cmprsr_ses_flg 0
+W (18:24:39.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (18:24:39.888) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 0 from intf 7
+W (18:24:39.892) SAC: SAC rcvd event=11
+I (18:24:39.895) SAC: default case 11
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[43621]: AUTHORITATIVE
+W (18:24:40.388) SKT: Pwr Off State_event rcvd event=11
+    A: _services._dns-sd._udp.local. PTR IN 4500 [18] I (18:24:40.390) CEH: common events =11
+E (18:24:40.398) CEH: geyser time resync 1 3
+._http._tcp.local.
+    A: _http._tcp.local. PTR IN 4500 [25] SAC00020250731KO._http._tcp.local.
+    A: SAC00020250731KO._http._tcp.local. SRV IN FLUSH 120 [29] 0 0 80 swh-mdns-0731KO.local.
+    A: SAC00020250731KO._http._tcp.local. TXT IN FLUSH 4500 [30] p=password; u=user; board=esp32
+    A: swh-mdns-0731KO.local. A IN FLUSH 120 [4] 192.168.1.147
+W (18:24:40.402) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 7 vl_or 0 vs 25
+W (18:24:40.402) OFL: store indx in else
+W (18:24:40.447) OFL: invld cur_cnt 0 cur_idx_cnt_timetrac 0 not match. no act needed
+W (18:24:40.451) SKT: gysr_start_time0 relay_status 0  heating_dur 0 hv_lv_ovrr 0 ioesmb 0
+W (18:24:40.459) SKT: pen on sch 0 sch_st time 0 sch dur 0 gysr stop time 0 rly ste chng 0
+
+I (18:24:40.467) SKT: Calibration_mode 0
+W (18:24:40.495) SKT: RLY  0:0,0 0
+
+W (18:24:40.495) SKT: No pending process
+W (18:24:40.495) SKT: Inv Last off time 0 pending_sts 0 off dur 0
+I (18:24:40.513) TDRV: Temp periodic tmr exp
+I (18:24:40.514) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 11 from intf 7
+W (18:24:40.515) SKT: Pwr Off State_event rcvd event=12
+W (18:24:40.517) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (18:24:40.520) CEH: common events =12
+I (18:24:40.593) CEH: TIME_SYNC_RES trans_id  15 intf 11
+W (18:24:40.593) IMSG: R sync_resp 1
+I (18:24:40.594) TXTH: trans_id 15 pld_len 8 intf 11 msg_type 1 pr_snt_scs 20
+E (18:24:40.601) IERR: WSS_NCNT
+W (18:24:40.603) BLE: mtu 253
+I (18:24:40.606) BLE: payld_len 24
+I (18:24:40.609) BLE: iteration 1
+W (18:24:40.612) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:24:40.617) BLE: config tmr uptd strt
+W (18:24:40.624) IMSG: send_msg intf 11 msg_id 17 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 15 scs_snt 20
+W (18:24:40.624) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (18:24:40.636) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:24:40.641) BLE: gatts config tmr stpd
+W (18:24:40.645) OFL: get_app_offline_time 0
+
+W (18:24:40.693) OFL: get_refresh_ses_stop_bit 0
+
+W (18:24:40.693) OFL: last_rcvd_time_stamp 0
+I (18:24:40.693) OFL: Mem allocated Memory address = 0x3fff9b8c
+I (18:24:40.699) OFL:  app req time 0
+W (18:24:40.702) OFL: no_ses_happend
+W (18:24:40.705) OFL: read_req_indx 255
+W (18:24:40.709) OFL: update_app_time 0 off_app_id 1
+
+W (18:24:40.714) OFL: update_refresh_ses_stop_bit 0
+
+W (18:24:40.718) OST: Analytics_midnt_tm Tmr Strtd Scsfly
+I (18:24:40.723) CEH: Upd_mignt_tmr: 20120 1753986280
+I (18:24:40.728) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 12 from intf 135
+W (18:24:40.887) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 8 vl_or 0 vs 25
+I (18:24:41.284) TDRV: result: -0.543000 minus_val 1
+W (18:24:41.285) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:41.285) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:41.291) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:41.296) SAC: Temp conv cb Exe
+W (18:24:41.299) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:41.303) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:41.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+
+TX[0][0]: To: 224.0.0.251:5353, Packet[44716]: AUTHORITATIVE
+    A: _services._dns-sd._udp.local. PTR IN 4500 [18] ._http._tcp.local.
+    A: _http._tcp.local. PTR IN 4500 [25] SAC00020250731KO._http._tcp.local.
+    A: SAC00020250731KO._http._tcp.local. SRV IN FLUSH 120 [29] 0 0 80 swh-mdns-0731KO.local.
+    A: SAC00020250731KO._http._tcp.local. TXT IN FLUSH 4500 [30] p=password; u=user; board=esp32
+    A: swh-mdns-0731KO.local. A IN FLUSH 120 [4] 192.168.1.147
+W (18:24:41.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (18:24:42.387) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 0 vl_or 0 vs 25
+I (18:24:42.513) TDRV: Temp periodic tmr exp
+W (18:24:42.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:42.583) EX: TF: 0 TZ: 19800 Sys_tm:1753986282
+I (18:24:42.583) EX: get time GMT= 1753966482
+W (18:24:42.685) NVM: part erase scs
+W (18:24:42.685) NVM: part erase restart
+W (18:24:42.708) NVM: esp_part_write scs
+W (18:24:42.829) NVM: part erase scs
+W (18:24:42.829) NVM: part erase restart
+W (18:24:42.852) NVM: esp_part_write scs
+W (18:24:42.887) EDRV: hvc 1 nvc 0 lvc 0 V 296431 C 0 P 0 pc 0 vl_or 0 vs 25
+I (18:24:43.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:43.276) TDRV: B_LUT=25.375000 A_LUT=24.832001
+W (18:24:43.276) TDRV: p_tmp1=24.894501 c_tmp1=24.832001 inv_cnt=0 prv_neg 0.000000
+W (18:24:43.281) TDRV: p_tmp2=24.832001 c_tmp2=24.832001
+W (18:24:43.287) SAC: Temp conv cb Exe
+W (18:24:43.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:43.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:43.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (18:24:43.765) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (18:24:43.794) SKT: Pwr Off State_event rcvd event=30
+W (18:24:43.795) BLE: curr user count 1 index 0
+W (18:24:43.795) BLE: ble curr user count 1 
+W (18:24:43.796) LOCAL_SSL: curr user count 0 index 0
+W (18:24:43.796) TAG_INTF_MTRX: HP_FR 34148 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 0
+I (18:24:43.818) RLY:  temp rly ret var 0:0
+W (18:24:43.819) EX: TF: 0 TZ: 19800 Sys_tm:1753986283
+I (18:24:43.820) EX: get time GMT= 1753966483
+I (18:24:43.834) TDRV: result: -0.543000 minus_val 1
+W (18:24:43.835) TDRV: B_LUT=25.375000 A_LUT=24.832001
+W (18:24:43.835) TDRV: p_tmp1=24.832001 c_tmp1=24.832001 inv_cnt=0 prv_neg 0.000000
+W (18:24:43.841) TDRV: p_tmp2=24.832001 c_tmp2=24.832001
+W (18:24:43.844) SWSKT: WEBSKT_EVENT_CNCTD:38772
+W (18:24:43.850) ECY: connected sts : 0 0 18 1
+W (18:24:43.854) ECY: CONN STS TRUE NTFY
+W (18:24:43.858) IMTRX: TX intf:18 scs_cnt :0 fail_cnt :0
+W (18:24:43.863) IMTRX: RX intf:18 trans_cnt:0 sync_err_cnt:0 chk_sum_err_cnt:0 vld_frm_cnt:0
+I (18:24:43.871) TMRM: tmr crt_scs:53 crt_fl:0 up_scs:66 up_fl:0,
+I (18:24:43.877) TMRM: tmr st_scs:26 st_fl:0 dl_scs:4 dl_fl:0,
+I (18:24:43.883) TMRM: Mem crt_scs:112 crt_fl:0 fre_scs:110 fre_fl:0,
+W (18:24:43.890) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+I (18:24:43.890) SKT: Calibration_mode 0
+W (18:24:43.899) BLE: 34 98 7A 66 1C  F6 :
+W (18:24:43.903) MENC: 34: 
+W (18:24:43.905) MENC: 98: 
+W (18:24:43.908) MENC: 7A: 
+W (18:24:43.910) MENC: 66: 
+W (18:24:43.913) MENC: 1C: 
+W (18:24:43.915) MENC: F6: 
+W (18:24:43.918) IMSG:  Q fd_hw_mj:0 fd_hw_mr:6 fd_sfw_mj:2 fd_sfw_mr:1 fd_hw_tp:6 max_alrm 16 bld_num 68 ful_sts 0
+W (18:24:43.928) MENC: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (18:24:43.934) TXTH: trans_id 0 pld_len 40 intf 18 msg_type 1 pr_snt_scs 0
+E (18:24:43.941) IMSG: REV_NUMR :- 18993
+I (18:24:43.944) NVM: RO_NVM_VER 2
+I (18:24:43.947) PWRM: Vol_ref_parm= 136062
+I (18:24:43.951) PWRM: RVL_3_fd 846623
+I (18:24:43.955) PWRM: RVL_3_fd 1297104
+I (18:24:43.958) PWRM: RVL_3_fd 1370592
+I (18:24:43.962) PWRM: RVL_3_fd 1406600
+I (18:24:43.965) PWRM: RVL_3_fd 1264270
+I (18:24:43.969) PWRM: RVL_3_fd 1275400
+I (18:24:43.973) PWRM: RVL_3_fd 1283335
+I (18:24:43.976) PWRM: RVL_3_fd 1289928
+I (18:24:43.980) PWRM: RVL_3_fd 1286505
+I (18:24:43.983) PWRM: RVL_3_fd 1289693
+I (18:24:43.987) PWRM: RVL_3_fd 1274147
+I (18:24:43.987) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (18:24:44.000) IMSG: DC-NOTIFY dyn_cert_status:1 dyn_cert_err_type:0 dyn_cert_error_code:0 
+W (18:24:44.006) IMSG: srvr_type 1 dc_srvr_ver_num 1 cert_ver_num 1
+I (18:24:44.012) TXTH: trans_id 0 pld_len 8 intf 19 msg_type 1 pr_snt_scs 0
+W (18:24:44.027) IMSG: send_msg intf 18 msg_id 11 msg_len 56 sec_mode 0 fd 3FFEAABC pad_len 8 app_id 253 trs_id 0 scs_snt 0
+W (18:24:44.030) SNFY: !get_srvr_ntfy_sts SRVR_NO_NTFY
+W (18:24:44.035) SNFY: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+E (18:24:44.040) IERR: WSS_NCNT
+W (18:24:44.043) BLE: mtu 253
+I (18:24:44.046) BLE: payld_len 24
+I (18:24:44.049) BLE: iteration 1
+W (18:24:44.052) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:24:44.057) BLE: config tmr uptd strt
+W (18:24:44.062) IMSG: send_msg intf 11 msg_id 34 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 3 scs_snt 21
+W (18:24:44.063) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (18:24:44.071) IMSG: wss data not sent to the server msg_id 34
+W (18:24:44.075) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:24:44.086) BLE: gatts config tmr stpd
+W (18:24:44.117) SWSKT: Total payload length=20, data_len=20, current payload offset=0
+
+I (18:24:44.117) MDEC: rx_len 20
+I (18:24:44.118) IERR: sync byte matched 0x3fff09fc
+W (18:24:44.122) MDEC: frame_len=20
+W (18:24:44.125) IINFO: total len 20 proc len 20
+W (18:24:44.129) IINFO: rcvd_frm 18 num_msg 1 trn_id 5 ack_req 0 frm_len 20 sec_mod 0
+W (18:24:44.130) MDEC: full frame rcvd
+W (18:24:44.137) IMSG: rcvd_msg intf 18 msg_id 41 msg_len 8 msg_type 1
+W (18:24:44.147) SNFY: set_srvr_ntfy_sts SRVR_NTFY_EN
+W (18:24:44.151) SNFY: !set_srvr_ntfy_sts 1
+I (18:24:44.155) QSND: INTF_MSG to 7 evnt 0 pld 0x12 len(w) 0 ctx 0 fre_req 0
+W (18:24:44.162) IMSG: S ntfy 3 pres 0 bitmap 15732580 
+
+
+W (18:24:44.162) SKT: Pwr Off State_event rcvd event=0
+I (18:24:44.167) MDEC: no flow control
+I (18:24:44.172) CEH: common events =0
+E (18:24:44.179) OTATK: curr_seg_num 0 app_id 0 app_build_num 0 
+W (18:24:44.185) OTATK: prev_ver 0.00 0 0 cur_ver 2.10 uplod_bin_len 0 bin_size 0 bin_upd_flg 0
+W (18:24:44.193) EX: TF: 0 TZ: 19800 Sys_tm:1753986284
+I (18:24:44.198) EX: get time GMT= 1753966484
+I (18:24:44.205) BLE: data rcvd short write
+W (18:24:44.206) OST: ping_not_tmr Tmr Strtd Scsfly
+I (18:24:44.211) BLE: ping_tmr_strtd
+I (18:24:44.214) MDEC: rx_len 24
+I (18:24:44.217) IERR: sync byte matched 0x3fff845e
+W (18:24:44.221) MDEC: frame_len=24
+W (18:24:44.225) IINFO: total len 24 proc len 24
+W (18:24:44.229) MDEC: full frame rcvd
+W (18:24:44.229) IINFO: rcvd_frm 11 num_msg 1 trn_id 17 ack_req 0 frm_len 24 sec_mod 1
+E (18:24:44.233) OTATK: not ota initiated appid
+W (18:24:44.241) IMSG: rcvd_msg intf 11 msg_id 11 msg_len 0 msg_type 0
+I (18:24:44.244) CEH: c_cnt 2 
+I (18:24:44.251) SKT: Calibration_mode 0
+W (18:24:44.254) EX: TF: 0 TZ: 19800 Sys_tm:1753986284
+W (18:24:44.257) BLE: 34 98 7A 66 1C  F6 :
+I (18:24:44.262) EX: get time GMT= 1753966484
+W (18:24:44.266) MENC: 34: 
+I (18:24:44.270) CEH: tm_year 125 forced_time_sync_flag 0
+W (18:24:44.272) MENC: 98: 
+W (18:24:44.277) EX: TF: 0 TZ: 19800 Sys_tm:1753986284
+W (18:24:44.280) MENC: 7A: 
+I (18:24:44.285) EX: get time GMT= 1753966484
+W (18:24:44.287) MENC: 66: 
+I (18:24:44.291) CEH: dpot 1753966484
+
+W (18:24:44.294) MENC: 1C: 
+I (18:24:44.297) CEH: set_skt_periodic_data.notify_on_change_only 1 sec 5
+W (18:24:44.300) MENC: F6: 
+W (18:24:44.307) CEH: conn_recv_from yes 18 bit_map_connection_sts 264192 prev_set_bits 2048
+I (18:24:44.317) OFL: prtl_cmprsr_ses_flg 0
+W (18:24:44.317) IMSG:  Q fd_hw_mj:0 fd_hw_mr:6 fd_sfw_mj:2 fd_sfw_mr:1 fd_hw_tp:6 max_alrm 16 bld_num 68 ful_sts 0
+I (18:24:44.321) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 0 from intf 7
+W (18:24:44.331) MENC: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (18:24:44.344) TXTH: trans_id 17 pld_len 40 intf 11 msg_type 1 pr_snt_scs 22
+E (18:24:44.351) IMSG: REV_NUMR :- 18993
+E (18:24:44.352) IERR: WSS_NCNT
+I (18:24:44.355) NVM: RO_NVM_VER 2
+W (18:24:44.358) BLE: mtu 253
+I (18:24:44.361) PWRM: Vol_ref_parm= 136062
+I (18:24:44.364) BLE: payld_len 56
+I (18:24:44.368) PWRM: RVL_3_fd 846623
+I (18:24:44.371) BLE: iteration 1
+I (18:24:44.374) PWRM: RVL_3_fd 1297104
+W (18:24:44.377) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:24:44.381) PWRM: RVL_3_fd 1370592
+W (18:24:44.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+I (18:24:44.387) BLE: config tmr uptd strt
+I (18:24:44.396) PWRM: RVL_3_fd 1406600
+W (18:24:44.402) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (18:24:44.403) PWRM: RVL_3_fd 1264270
+W (18:24:44.408) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:24:44.412) PWRM: RVL_3_fd 1275400
+I (18:24:44.417) BLE: gatts config tmr stpd
+I (18:24:44.420) PWRM: RVL_3_fd 1283335
+W (18:24:44.420) IMSG: send_msg intf 11 msg_id 11 msg_len 56 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 17 scs_snt 22
+I (18:24:44.428) PWRM: RVL_3_fd 1289928
+I (18:24:44.441) PWRM: RVL_3_fd 1286505
+I (18:24:44.445) PWRM: RVL_3_fd 1289693
+I (18:24:44.449) PWRM: RVL_3_fd 1274147
+I (18:24:44.452) MDEC: no flow control
+I (18:24:44.513) TDRV: Temp periodic tmr exp
+W (18:24:44.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:44.888) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (18:24:45.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:45.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:45.276) TDRV: p_tmp1=24.832001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:45.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:45.287) SAC: Temp conv cb Exe
+W (18:24:45.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:45.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:45.387) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 5 vl_or 0 vs 25
+W (18:24:45.888) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 6 vl_or 0 vs 25
+W (18:24:46.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (18:24:46.513) TDRV: Temp periodic tmr exp
+W (18:24:46.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:46.889) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (18:24:47.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:47.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:47.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:47.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:47.287) SAC: Temp conv cb Exe
+W (18:24:47.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:47.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:47.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (18:24:47.859) EX: TF: 0 TZ: 19800 Sys_tm:1753986287
+I (18:24:47.859) EX: get time GMT= 1753966487
+W (18:24:47.964) NVM: part erase scs
+W (18:24:47.964) NVM: part erase restart
+W (18:24:47.987) NVM: esp_part_write scs
+W (18:24:47.987) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+W (18:24:48.118) NVM: part erase scs
+W (18:24:48.118) NVM: part erase restart
+W (18:24:48.142) NVM: esp_part_write scs
+W (18:24:48.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (18:24:48.513) TDRV: Temp periodic tmr exp
+W (18:24:48.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (18:24:48.765) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (18:24:48.765) SKT: Pwr Off State_event rcvd event=30
+W (18:24:48.766) BLE: curr user count 1 index 0
+W (18:24:48.770) BLE: ble curr user count 1 
+W (18:24:48.774) LOCAL_SSL: curr user count 0 index 0
+W (18:24:48.774) TAG_INTF_MTRX: HP_FR 38728 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 1
+I (18:24:48.789) RLY:  temp rly ret var 0:0
+W (18:24:48.793) EX: TF: 0 TZ: 19800 Sys_tm:1753986288
+I (18:24:48.798) EX: get time GMT= 1753966488
+I (18:24:48.811) TDRV: result: -0.543000 minus_val 1
+W (18:24:48.811) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:48.812) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:48.819) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+I (18:24:48.824) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (18:24:48.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (18:24:49.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:49.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:49.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:49.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:49.287) SAC: Temp conv cb Exe
+W (18:24:49.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:49.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:49.387) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
+W (18:24:49.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+W (18:24:50.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+I (18:24:50.513) TDRV: Temp periodic tmr exp
+W (18:24:50.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:50.888) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+I (18:24:51.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:51.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:51.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:51.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:51.287) SAC: Temp conv cb Exe
+W (18:24:51.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:51.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:51.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+W (18:24:51.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (18:24:52.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+I (18:24:52.513) TDRV: Temp periodic tmr exp
+W (18:24:52.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:52.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (18:24:53.152) EX: TF: 0 TZ: 19800 Sys_tm:1753986293
+I (18:24:53.152) EX: get time GMT= 1753966493
+W (18:24:53.256) NVM: part erase scs
+W (18:24:53.256) NVM: part erase restart
+W (18:24:53.279) NVM: esp_part_write scs
+W (18:24:53.409) NVM: part erase scs
+W (18:24:53.409) NVM: part erase restart
+W (18:24:53.433) NVM: esp_part_write scs
+I (18:24:53.443) TDRV: result: -0.543000 minus_val 1
+W (18:24:53.444) TDRV: B_LUT=25.375000 A_LUT=24.832001
+W (18:24:53.445) TDRV: p_tmp1=24.894501 c_tmp1=24.832001 inv_cnt=0 prv_neg 0.000000
+W (18:24:53.450) TDRV: p_tmp2=24.832001 c_tmp2=24.832001
+W (18:24:53.455) SAC: Temp conv cb Exe
+W (18:24:53.458) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:53.463) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:53.490) EDRV: hvc 0 nvc 0 lvc 0 V 263176 C 0 P 0 pc 10 vl_or 0 vs 25
+I (18:24:53.765) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (18:24:53.765) SKT: Pwr Off State_event rcvd event=30
+W (18:24:53.766) BLE: curr user count 1 index 0
+W (18:24:53.770) BLE: ble curr user count 1 
+W (18:24:53.774) LOCAL_SSL: curr user count 0 index 0
+W (18:24:53.774) TAG_INTF_MTRX: HP_FR 38708 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 1
+I (18:24:53.789) RLY:  temp rly ret var 0:0
+W (18:24:53.793) EX: TF: 0 TZ: 19800 Sys_tm:1753986293
+I (18:24:53.798) EX: get time GMT= 1753966493
+I (18:24:53.811) TDRV: result: -0.543000 minus_val 1
+W (18:24:53.811) TDRV: B_LUT=25.375000 A_LUT=24.832001
+W (18:24:53.812) TDRV: p_tmp1=24.832001 c_tmp1=24.832001 inv_cnt=0 prv_neg 0.000000
+W (18:24:53.819) TDRV: p_tmp2=24.832001 c_tmp2=24.832001
+I (18:24:53.824) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (18:24:53.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+W (18:24:54.300) SWSKT: Total payload length=0, data_len=0, current payload offset=0
+
+W (18:24:54.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+I (18:24:54.513) TDRV: Temp periodic tmr exp
+W (18:24:54.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (60091) wifi:<ba-add>idx:1 (ifx:0, 40:3f:8c:b7:6d:38), tid:6, ssn:0, winSize:64
+W (18:24:54.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (18:24:55.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:55.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:55.276) TDRV: p_tmp1=24.832001 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:55.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:55.287) SAC: Temp conv cb Exe
+W (18:24:55.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:55.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:55.388) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 3 vl_or 0 vs 25
+W (18:24:55.690) SWSKT: Total payload length=0, data_len=0, current payload offset=0
+
+W (18:24:55.889) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+W (18:24:56.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+I (18:24:56.513) TDRV: Temp periodic tmr exp
+W (18:24:56.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:24:56.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (18:24:57.275) TDRV: result: -0.543000 minus_val 1
+W (18:24:57.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:57.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:57.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:57.287) SAC: Temp conv cb Exe
+W (18:24:57.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:57.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:57.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+W (18:24:57.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (18:24:58.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (18:24:58.443) EX: TF: 0 TZ: 19800 Sys_tm:1753986298
+I (18:24:58.443) EX: get time GMT= 1753966498
+W (18:24:58.545) NVM: part erase scs
+W (18:24:58.546) NVM: part erase restart
+W (18:24:58.568) NVM: esp_part_write scs
+I (18:24:58.568) TDRV: Temp periodic tmr exp
+W (18:24:58.685) NVM: part erase scs
+W (18:24:58.685) NVM: part erase restart
+W (18:24:58.709) NVM: esp_part_write scs
+W (18:24:58.710) OST: Temperature conv tmr Tmr Strtd Scsfly
+I (18:24:58.765) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (18:24:58.765) SKT: Pwr Off State_event rcvd event=30
+W (18:24:58.766) BLE: curr user count 1 index 0
+W (18:24:58.770) BLE: ble curr user count 1 
+W (18:24:58.774) LOCAL_SSL: curr user count 0 index 0
+W (18:24:58.774) TAG_INTF_MTRX: HP_FR 37372 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 1
+I (18:24:58.789) RLY:  temp rly ret var 0:0
+W (18:24:58.793) EX: TF: 0 TZ: 19800 Sys_tm:1753986298
+I (18:24:58.798) EX: get time GMT= 1753966498
+I (18:24:58.811) TDRV: result: -0.543000 minus_val 1
+W (18:24:58.812) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:58.812) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:58.819) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+I (18:24:58.824) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (18:24:58.887) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 10 vl_or 0 vs 25
+W (18:24:59.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (18:24:59.469) TDRV: result: -0.543000 minus_val 1
+W (18:24:59.470) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:24:59.470) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:24:59.476) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:24:59.481) SAC: Temp conv cb Exe
+W (18:24:59.484) SAC: Scs Val = 0 Read Sts = 0
+I (18:24:59.488) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:24:59.887) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 1 vl_or 0 vs 25
+W (18:25:00.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 2 vl_or 0 vs 25
+I (18:25:00.513) TDRV: Temp periodic tmr exp
+W (18:25:00.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:25:00.887) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 3 vl_or 0 vs 25
+I (18:25:01.275) TDRV: result: -0.543000 minus_val 1
+W (18:25:01.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:25:01.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:25:01.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:25:01.287) SAC: Temp conv cb Exe
+W (18:25:01.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:25:01.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:25:01.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 4 vl_or 0 vs 25
+W (18:25:01.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 5 vl_or 0 vs 25
+W (18:25:02.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 6 vl_or 0 vs 25
+I (18:25:02.513) TDRV: Temp periodic tmr exp
+W (18:25:02.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:25:02.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 7 vl_or 0 vs 25
+I (18:25:03.275) TDRV: result: -0.543000 minus_val 1
+W (18:25:03.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:25:03.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:25:03.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:25:03.287) SAC: Temp conv cb Exe
+W (18:25:03.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:25:03.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:25:03.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 8 vl_or 0 vs 25
+W (18:25:03.719) EX: TF: 0 TZ: 19800 Sys_tm:1753986303
+I (18:25:03.719) EX: get time GMT= 1753966503
+W (18:25:03.825) NVM: part erase scs
+I (18:25:03.826) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+W (18:25:03.826) NVM: part erase restart
+W (18:25:03.826) SKT: Pwr Off State_event rcvd event=30
+W (18:25:03.850) NVM: esp_part_write scs
+W (18:25:03.850) PCNT: GPt 108987 Gsp 107394 SPt 111515 SnPt 17572  Qdp 0 ocnt 1736 pos 93062 nc 17 ws 1 ltc 120 wtc 0 mlocFl 0 hpFl 0 rhp 38664 bleC 0 mlscnt 0 Rev_ 18993
+W (18:25:03.972) NVM: part erase scs
+W (18:25:03.972) BLE: curr user count 1 index 0
+W (18:25:03.975) NVM: part erase restart
+W (18:25:03.980) BLE: ble curr user count 1 
+W (18:25:04.006) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 9 vl_or 0 vs 25
+W (18:25:04.006) LOCAL_SSL: curr user count 0 index 0
+W (18:25:04.006) NVM: esp_part_write scs
+W (18:25:04.006) TAG_INTF_MTRX: HP_FR 38664 HP_L_FR 16384 ST_FR 8184 ST-OCC 8 0 BLE_cnt 1 STA_cnt 0 Remote_cnt 1
+I (18:25:04.027) RLY:  temp rly ret var 0:0
+W (18:25:04.028) EX: TF: 0 TZ: 19800 Sys_tm:1753986304
+I (18:25:04.033) EX: get time GMT= 1753966504
+I (18:25:04.046) TDRV: result: -0.543000 minus_val 1
+W (18:25:04.046) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:25:04.047) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:25:04.054) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+I (18:25:04.059) SKT: Gys_hdlr_ent_exit GCstate 2 UCstate 0 Event proc 30 from intf 7
+W (18:25:04.206) MSH: ping_tmr_exp
+E (18:25:04.206) MSH: cnt_ping:1
+I (18:25:04.207) IMSG: 04 04 04 04 04 04 04 04 04 04 04 03 04 04 04 04 
+I (18:25:04.207) IMSG: 04 
+W (18:25:04.210) BLE: curr user count 1 index 0
+W (18:25:04.214) BLE: ble curr user count 1 
+W (18:25:04.218) BLE: curr user count 1 index 0
+W (18:25:04.222) BLE: ble curr user count 1 
+I (18:25:04.226) TST_MSG: Ble intf:0
+I (18:25:04.230) TXTH: trans_id 0 pld_len 8 intf 11 msg_type 1 pr_snt_scs 23
+E (18:25:04.237) IERR: WSS_NCNT
+W (18:25:04.239) BLE: mtu 253
+I (18:25:04.242) BLE: payld_len 24
+I (18:25:04.245) BLE: iteration 1
+W (18:25:04.248) OST: gatts_config_tmr Tmr Strtd Scsfly
+I (18:25:04.253) BLE: config tmr uptd strt
+W (18:25:04.258) IMSG: send_msg intf 11 msg_id 42 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 1 trs_id 0 scs_snt 23
+W (18:25:04.260) BLE: ESP_GATTS_CONF_EVT, status = 0
+W (18:25:04.272) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (18:25:04.277) BLE: gatts config tmr stpd
+W (18:25:04.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 10 vl_or 0 vs 25
+I (18:25:04.436) BLE: data rcvd short write
+W (18:25:04.436) OST: ping_not_tmr Tmr Strtd Scsfly
+I (18:25:04.436) BLE: ping_tmr_strtd
+I (18:25:04.437) MDEC: rx_len 24
+I (18:25:04.440) IERR: sync byte matched 0x3fff845e
+W (18:25:04.444) MDEC: frame_len=24
+W (18:25:04.448) IINFO: total len 24 proc len 24
+W (18:25:04.452) MDEC: full frame rcvd
+W (18:25:04.452) IINFO: rcvd_frm 11 num_msg 1 trn_id 18 ack_req 0 frm_len 24 sec_mod 1
+W (18:25:04.463) IMSG: rcvd_msg intf 11 msg_id 42 msg_len 4 msg_type 1
+I (18:25:04.469) QSND: INTF_MSG to 8 evnt 42 pld 0x3fff3f44 len(w) 2 ctx 0 fre_req 1
+W (18:25:04.477) MSH: event_num=42
+I (18:25:04.477) MDEC: no flow control
+W (18:25:04.480) MSH: wifi ble msg hdlr rcvd event=42
+W (18:25:04.488) TEST_MSG: type:5,num:255
+I (18:25:04.492) MSH: MSG_STE_HDLR_THRD2464
+I (18:25:04.496) QMEM: mem clr = 42
+I (18:25:04.499) MSH: no flow control
+I (18:25:04.513) TDRV: Temp periodic tmr exp
+W (18:25:04.516) OST: Temperature conv tmr Tmr Strtd Scsfly
+W (18:25:04.887) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 0 vl_or 0 vs 25
+I (18:25:05.275) TDRV: result: -0.543000 minus_val 1
+W (18:25:05.276) TDRV: B_LUT=25.437500 A_LUT=24.894501
+W (18:25:05.276) TDRV: p_tmp1=24.894501 c_tmp1=24.894501 inv_cnt=0 prv_neg 0.000000
+W (18:25:05.282) TDRV: p_tmp2=24.894501 c_tmp2=24.894501
+W (18:25:05.287) SAC: Temp conv cb Exe
+W (18:25:05.290) SAC: Scs Val = 0 Read Sts = 0
+I (18:25:05.294) SAC: Thres Comparison Executed Gysr Temp State 42 Low Temp State 0
+W (18:25:05.387) EDRV: hvc 0 nvc 0 lvc 0 V 223418 C 0 P 0 pc 1 vl_or 0 vs 25
+W (18:25:05.730) SWSKT: Total payload length=0, data_len=0, current payload offset=0
+
+W (18:25:05.887) EDRV: hvc 0 nvc 0 lvc 0 V 223052 C 0 P 0 pc 2 vl_or 0 vs 25
