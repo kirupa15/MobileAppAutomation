@@ -2,6 +2,7 @@ package pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -224,6 +225,31 @@ public class DeviceMenuPage extends GenericWrappers{
 	
 	@FindBy(xpath = "//*[@resource-id='Add_Devices_ButtonText']")
 	private WebElement addDeviceButton;
+	@FindBy(xpath = "//android.widget.EditText[@text=\"1\"]")
+	private WebElement defaultHr_one_Devicesettings;
+	@FindBy(xpath = "//android.widget.EditText[@text=\"20\"]")
+	private WebElement defaultMin_Devicesettings;
+	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
+	private WebElement backbuttonDevicesettings;
+	@FindBy(xpath = "//*[@resource-id='DurMinusBtn1']")
+	private WebElement Durationhourbutton;
+	@FindBy(xpath = "//*[@resource-id='DurMinusBtn2']")
+	private WebElement Durationminbutton;
+	@FindBy(xpath = "//*[@resource-id='DurationForON_Ok_Button']")
+	private WebElement clickokdurationON;
+	@FindBy(xpath = "//*[@resource-id='Header']")
+	private WebElement DevicesettingsHeading;
+	@FindBy(xpath = "//*[@resource-id='lowInputthreshold']")
+	private WebElement thresholdValueLowInput;
+	@FindBy(xpath = "//*[@resource-id='highthresholdInput']")
+	private WebElement thresholdValueHighInput;
+	@FindBy(xpath = "//*[@resource-id='DeviceSetting_AutoONtemperature']")
+	private WebElement highvoltageconfiguration;
+	
+	private WebElement devicenameDeviceSettingsPage(int no) {
+		return driver.findElement(By.xpath("//android.widget.EditText[@text='"+no+"']"));
+		
+	}
 	
 	public DeviceMenuPage(AndroidDriver driver) {
 		this.driver = driver;
@@ -526,6 +552,55 @@ public class DeviceMenuPage extends GenericWrappers{
 				
 			}
 		}
+	
 		
+		public void ReduceDurationminbutton() {
+			int j=20;
+			clickbyXpath(Durationhourbutton, "Duration hour button");
+			for (int i = 0; i < 19; i++) {
+				System.out.println("Value of j= "+j);
+				if (devicenameDeviceSettingsPage(j).isDisplayed()) {
+					clickbyXpath(Durationminbutton, "Duration min button");
+					j--;
+				}else {
+					System.out.println("Minutes value set to 1min" );
+				}
+			}
+			clickbyXpath(clickokdurationON, "OKbutton_Duration for ON");
+			verifyTextContainsByXpath(DevicesettingsHeading, "Device Settings", "Device Settings Header");
+			backnavigation();
+			
+		}
+		public void backnavigation() {
+
+			  clickbyXpath(backbuttonDevicesettings, "clicking on back button");
+		}
+		public void checkLowVoltDefautvalue_devicesettings() {
+			clickLowVoltagebutton();
+			clickbyXpath(EnableToogleSwtich, "Toggle switch");
+			verifyTextContainsByXpath(thresholdValueLowInput, "160", "Low input threshold value");
+			clickbyXpath(EnableToogleSwtich, "Toggle switch");
+			
+		}
+		public void checkHighVoltDefautvalue_devicesettings() {
+			clickHighVoltagebutton();
+			clickbyXpath(EnableToogleSwtich, "Toggle switch");
+			verifyTextContainsByXpath(thresholdValueHighInput, "275", "Hig input threshold value");
+			clickbyXpath(EnableToogleSwtich, "Toggle switch");
+			
+		}
+		public void checkDurationforOnDefautvalue_devicesettings() {
+			clickDurationForONButton();
+//			clickbyXpath(DurationforOnToggle, "Toggle switch");
+			verifyTextContainsByXpath(defaultHr_one_Devicesettings, "1", "Default hr value in Device Settings");
+			verifyTextContainsByXpath(defaultMin_Devicesettings, "20", "Default min value in Device Settings");
+			
+		}
+		public void clickLowVoltagebutton() {
+			clickbyXpath(lowvoltageconfiguration, "LowVoltage configuration");
+					}
+					public void clickHighVoltagebutton() {
+						clickbyXpath(highvoltageconfiguration, "HighVoltage configuration");
+					}
 		
 }

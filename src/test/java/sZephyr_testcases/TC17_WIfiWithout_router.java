@@ -6,11 +6,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.AddDevicePage;
+import pages.Analytics;
 import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.OTA_Status_monitor;
 import pages.OtpPage;
+import pages.Schedularpage;
 import pages.SignInPage;
 import pages.SignUpPage;
 import pages.StoreLogPage;
@@ -31,6 +33,8 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 	OTA_Status_monitor ota_Status_monitor;
 	SignUpPage signuppage;	
 	StoreLogPage logpage;
+	Analytics analyticspage;
+	Schedularpage schedulepage;
 
 	@BeforeClass
 	public void startTestCase() {
@@ -39,10 +43,10 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 	}
 
 
-	@Test(priority = 16,groups = {"skip"})
+	@Test(priority = 16)
 	public void TC17_WifiWithoutRouter_CONNECTIVITY() throws Exception {
 		initAndriodDriver();
-		pairBlewithoutRouter();
+		WifiWithoutRouter_CONNECTIVITY();
 
 
 	}
@@ -51,36 +55,36 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 
 
 
-	public void pairBlewithoutRouter() throws Exception {
+	public void WifiWithoutRouter_CONNECTIVITY() throws Exception {
 		adddevicepage= new AddDevicePage(driver);
 		homepage = new HomePage(driver);
 		devicemenupage= new DeviceMenuPage(driver);
 		szephyrinfoPage= new Szephyr_info_Page(driver);
 		logpage= new StoreLogPage(driver);
-
+		analyticspage = new Analytics(driver);
+		schedulepage = new Schedularpage(driver);
+		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 			readwrite.openPort();
 
-
-			adddevicepage.pair(5);
+			adddevicepage.pair(4);
+			Thread.sleep(3000);
 			adddevicepage.clickNextButtonsZephyrInfo();
 			adddevicepage.clickBleokbutton();
-//			adddevicepage.checkdevicedetailstoast();
 			adddevicepage.clickSubmitButtonDeviceSetting();
 			adddevicepage.checkdevicesettingstoast();
-			
+
 			adddevicepage.bleConnectivityCheck();
 			homepage.clickONOFFButton();
 
-
-			//CONNECTIVITY_MOD_3_TC_2///     STA_Kill and Open
+			// CONNECTIVITY_MOD_3_TC_2/// STA_Kill and Open
 			homepage.clickONOFFButton();
 			homepage.clickONOFFButton();
 			homepage.getCurrentvalue();
 			homepage.getVoltvalue();
 			homepage.getPowervalue();
-			
+
 			homepage.killandopen();
 			adddevicepage.ClickOkButtonBLEpopUP();
 			adddevicepage.bleConnectivityCheck();
@@ -89,11 +93,23 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 			homepage.getVoltvalue();
 			homepage.getPowervalue();
 			
-			 homepage.clickMenuBarButton();
-				devicemenupage.clickMenuBarRemoveDevice();
-				devicemenupage.clickRemoveDevicePopupYesButton();
-				adddevicepage.checkdeviceremovedtoast();
-				devicemenupage.AddDevicePagedisplayed();
+			analyticspage.navigateAnalyticsPage();
+			analyticspage.getenergydurationvalue();
+			closeApp();
+			readwrite.write("button_press\r");
+			Thread.sleep(1 * 60 * 1000);
+			readwrite.write("button_press\r");
+			openapp();
+			
+			analyticspage.navigateAnalyticsPage();
+			analyticspage.checkenrgyduration(1);
+			schedulepage.backToHomepage();
+			
+			homepage.clickMenuBarButton();
+			devicemenupage.clickMenuBarRemoveDevice();
+			devicemenupage.clickRemoveDevicePopupYesButton();
+			adddevicepage.checkdeviceremovedtoast();
+			devicemenupage.AddDevicePagedisplayed();
 			readwrite.closePort();
 		}
 		catch (Exception e) {

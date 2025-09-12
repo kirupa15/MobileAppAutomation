@@ -286,6 +286,8 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement remoteNonConnectivity;
 	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
 	private WebElement removeDevice;
+	@FindBy(xpath = "//android.widget.TextView[@text=\"CANCEL\"]")
+	private WebElement BLECANCELpopup;
 	
 	private WebElement devicenameDeviceSettingsPage(String username) {
 		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
@@ -792,7 +794,7 @@ public class AddDevicePage extends GenericWrappers {
 				startPairingButton();
 				readwrite.write("factory_reset\r");
 
-			    blepermissioncancelpopup();
+			    blepermissionCANCELpopup();
 				Thread.sleep(5000);
 //				locationPopUpPermission();
 //				nearByPermission();
@@ -823,16 +825,16 @@ public class AddDevicePage extends GenericWrappers {
 					driver.activateApp(packages); // Bring it back
 
 				}
+				
 				Thread.sleep(5000);
 				blepermissionokpopup();
-				turnOnBT();
 				waitForNextBtn();
 				break;
 
 			default:
 				System.out.println("Pairing not done");
 				break;
-			}
+				}
 
 		} else {
 
@@ -873,8 +875,8 @@ public class AddDevicePage extends GenericWrappers {
 
 			Thread.sleep(3000);
 			WebElement element = driver.findElement(MobileBy.AndroidUIAutomator(
-					"new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\""
-							+ serialno + "\"))"));
+				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().textContains(\"" + serialno + "\"))"));
+
 			wait.until(ExpectedConditions.visibilityOf(element));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
@@ -894,11 +896,14 @@ public class AddDevicePage extends GenericWrappers {
 				System.out.println("Already password saved ");
 			}
 
+			turnOnBT();
 			if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 				driver.activateApp(packages); // Bring it back
 				// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 			}
+			
+			
 			if (isElementDisplayedCheck(Blepopup_afterpairing)) {
 
 				clickbyXpath(Blepopup_afterpairing, "oK button of Ble alert pop-up");
@@ -933,7 +938,7 @@ public class AddDevicePage extends GenericWrappers {
 		
 	}
 	
-	private void blepermissionokpopup() throws Exception {
+	public void blepermissionokpopup() throws Exception {
 		if (isElementDisplayedCheck(BleOKpopup)) {
 			BleOKpopup.click();
 			Thread.sleep(2000);
@@ -1056,4 +1061,16 @@ public void TurnOffmobiledata() throws Exception {
 	
 	Runtime.getRuntime().exec("adb shell svc data enable");
 }
+private void blepermissionCANCELpopup() throws Exception {
+	if (isElementDisplayedCheck(BLECANCELpopup)) {
+		BLECANCELpopup.click();
+		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
+			driver.activateApp(packages); // Bring it back
+			Thread.sleep(2000);
+		}
+	} else {
+		System.out.println("Alert pop-up not displayed");
+	}
+}
+
 }
