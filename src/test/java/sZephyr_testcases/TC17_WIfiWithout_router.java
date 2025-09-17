@@ -68,7 +68,7 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 		try {
 			readwrite.openPort();
 
-			adddevicepage.pair(4);
+			adddevicepage.pair(5);
 			Thread.sleep(3000);
 			adddevicepage.clickNextButtonsZephyrInfo();
 			adddevicepage.clickBleokbutton();
@@ -104,6 +104,7 @@ public class TC17_WIfiWithout_router extends MobileAppWrappers {
 			analyticspage.navigateAnalyticsPage();
 			analyticspage.checkenrgyduration(1);
 			schedulepage.backToHomepage();
+			
 			
 			homepage.clickMenuBarButton();
 			devicemenupage.clickMenuBarRemoveDevice();
