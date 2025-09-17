@@ -13,10 +13,9 @@
       </run>
     </groups>
     
-   <classes>
-      <class name="sZephyr_testcases.TC16_WifiWithRouter_CONNECTIVITY"/>
-      <class name="sZephyr_testcases.TC17_WifiWithoutRouter_CONNECTIVITY"/>
-</classes>
+   <packages> 
+   <package name="sZephyr_testcases"></package>
+   </packages>
     
   </test> <!-- Test -->
 </suite> <!-- Suite -->
