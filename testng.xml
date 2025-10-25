@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+    <listener class-name="utils.RetryListener" />
+    <listener class-name="utils.ResultListener"/>
+</listeners>
   <test thread-count="5" name="Test">
-    <classes>
-      <class name="sZephyr_testcases.TC31_Schedular"/>
-      <class name="sZephyr_testcases.TC14_BleWithRouter"/>
-      <class name="sZephyr_testcases.TC16_WifiWithRouter"/>
-      <class name="sZephyr_testcases.TC22_DeviceSettings"/>
-      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig"/>
-      <class name="sZephyr_testcases.TC29_Schedular"/>
-    </classes>
+  
+   <groups>
+      <run>
+        <exclude name="skip"/>
+      </run>
+    </groups>
+    
+   <packages> 
+   <package name="sZephyr_testcases"></package>
+   </packages>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->
