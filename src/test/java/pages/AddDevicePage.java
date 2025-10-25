@@ -742,6 +742,7 @@ public class AddDevicePage extends GenericWrappers {
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
 					unregistereddevicepopup();
 					retrypagecheck(mode);
+					blepermissionokpopup();
 				}
 				blepermissionokpopup();
 				

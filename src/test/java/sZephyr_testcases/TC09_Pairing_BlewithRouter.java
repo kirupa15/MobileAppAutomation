@@ -29,7 +29,7 @@ public class TC09_Pairing_BlewithRouter extends MobileAppWrappers {
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC09 - Pairing BLE With Router";
-		testDescription = "After pairing check ";
+		testDescription = "If already Signin skip signin and  check Ble with router pairing else Signin and check pairing ";
 	}
 	
 

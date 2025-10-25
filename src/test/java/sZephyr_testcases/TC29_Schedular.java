@@ -80,7 +80,7 @@ public class TC29_Schedular extends MobileAppWrappers {
 		schedulepage.createSchedules(5, 3, 1);//mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
 		schedulepage.backToHomepage();
 		
-		Thread.sleep(9*60*1000);//set thread values based on schedule duration kept .
+		Thread.sleep(10*60*1000);//set thread values based on schedule duration kept .
 		analytics.navigateAnalyticsPage();
 		analytics.checkenrgyduration(3);
 		schedulepage.backToHomepage();
