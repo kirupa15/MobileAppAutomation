@@ -72,7 +72,7 @@ public class StoreLogPage extends GenericWrappers{
 		public void storeLogToDownloads() throws IOException {
 			turnOnBT();
 			killAndReopenApp();
-			if (isElementDisplayedCheck(menuBarButton)) {
+			if (isElementDisplayedCheck(menuBarButton,10)) {
 				
 				clickbyXpath(menuBarButton, " Menu Bar ");
 				clickbyXpath(shareLogbtn, "ShareLog Button");

@@ -63,25 +63,25 @@ public class TC10_Pairing_SmartConfig extends MobileAppWrappers {
 		homepage.clickONOFFButton();
 //		homepage.VerifyOFFdesc();
 		
-//		homepage.clickMenuBarButton();
-//		devicemenupage.clickMenuBarRemoveDevice();
-//		devicemenupage.clickRemoveDevicePopupYesButton();
-//		adddevicepage.checkdeviceremovedtoast();
-//		devicemenupage.AddDevicePagedisplayed();
-//		
-//		adddevicepage.pair(3);
-//		
-//		adddevicepage.clickNextButtonsZephyrInfo();
-//		adddevicepage.clickBleokbutton();
-////		adddevicepage.checkdevicedetailstoast();
-//		adddevicepage.clickSubmitButtonDeviceSetting();
-//		adddevicepage.checkdevicesettingstoast();
-//		
-//		Thread.sleep(8000);
-//		homepage.clickONOFFButton();
-////		homepage.VerifyONdesc();
-//		Thread.sleep(2000);
-//		homepage.clickONOFFButton();
+		homepage.clickMenuBarButton();
+		devicemenupage.clickMenuBarRemoveDevice();
+		devicemenupage.clickRemoveDevicePopupYesButton();
+		adddevicepage.checkdeviceremovedtoast();
+		devicemenupage.AddDevicePagedisplayed();
+		
+		adddevicepage.pair(3);
+		
+		adddevicepage.clickNextButtonsZephyrInfo();
+		adddevicepage.clickBleokbutton();
+//		adddevicepage.checkdevicedetailstoast();
+		adddevicepage.clickSubmitButtonDeviceSetting();
+		adddevicepage.checkdevicesettingstoast();
+		
+		Thread.sleep(8000);
+		homepage.clickONOFFButton();
+//		homepage.VerifyONdesc();
+		Thread.sleep(2000);
+		homepage.clickONOFFButton();
 //		homepage.VerifyOFFdesc();
 				
 		homepage.clickMenuBarButton();

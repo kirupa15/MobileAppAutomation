@@ -77,7 +77,7 @@ public class HomePage extends GenericWrappers{
 	}
 	
 	public void clickONOFFButton() {
-		expWaitforPairing(deviceONOFFButton);
+		expWaitTillElementDisplay(deviceONOFFButton,10);
 		clickbyXpath(deviceONOFFButton, " Device ON OFF Button ");
 	}
 	
@@ -94,7 +94,7 @@ public class HomePage extends GenericWrappers{
 	
 
 	 public void clicksharcelog() {
-		expWaitforPairing(sharelog);
+		 expWaitTillElementDisplay(sharelog,10);
 		clickbyXpath(sharelog, " sharelog button ");
 	 }
 	 
@@ -176,7 +176,7 @@ public class HomePage extends GenericWrappers{
 	   
 	   public void checkBLEConnectivity() {
 		   try {
-			  expWait(bleSymbol);
+			   expWaitTillElementDisplay(bleSymbol,10);
 			  if(bleSymbol.isDisplayed()) {
 				   utils.Reporter.reportStep("BLE Connectivity is etsablished Successfully.", "PASS");
 			   }
@@ -187,7 +187,7 @@ public class HomePage extends GenericWrappers{
 	   
 	   public void checkTempSensorWorking() {
 		   try {
-			  expWait(tempDegree);
+			   expWaitTillElementDisplay(tempDegree,10);
 			  if(tempDegree.isDisplayed()) {
 				   utils.Reporter.reportStep("Temperature Sensor working fine and shows current temp: "+tempDegree.getText(), "PASS");
 			   }

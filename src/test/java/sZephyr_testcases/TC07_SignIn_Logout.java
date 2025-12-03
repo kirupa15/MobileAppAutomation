@@ -54,7 +54,7 @@ public class TC07_SignIn_Logout extends MobileAppWrappers {
 		try {
 		readwrite.openPort();
 		
-		signuppage.uninstall_reinstall();
+//		signuppage.uninstall_reinstall();
 		landingpage.clickSignInButton();
 		loginpage.enterUserName( loadProp("USERNAME"));
 		loginpage.clickSignInButton();

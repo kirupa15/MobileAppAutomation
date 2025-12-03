@@ -328,7 +328,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void locationPopUpPermission() throws InterruptedException {
-		if (isElementDisplayedCheck(locationPopUp)) {
+		if (isElementDisplayedCheck(locationPopUp,10)) {
 			clickbyXpath(locationPopUp, "Location pop-up");
 		} else {
 			System.out.println("not asked for precise or approx location");
@@ -337,7 +337,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void nearByPermission() throws InterruptedException {
-		if (isElementDisplayedCheck(nearByPermisson)) {
+		if (isElementDisplayedCheck(nearByPermisson,10)) {
 
 			clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  ");
 		}
@@ -385,7 +385,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void ClickBrandName() {
-		expWaitforPairing(ClickBrandName);
+		expWaitTillElementDisplay(ClickBrandName,10);
 		clickbyXpath(ClickBrandName, " Ac Brand Name ");
 	}
 
@@ -419,7 +419,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void cancelButton() throws Exception {
-		expWaitforPairing(cancelButton);
+		expWaitTillElementDisplay(cancelButton,10);
 		clickbyXpathwithoutReport(cancelButton, " Wifi cancel Button ");
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp(packages); // Bring it back
@@ -427,7 +427,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void ClickOkButtonBLEpopUP() throws Exception {
-		expWaitforPairing(ClickOkButtonBLEpopUP);
+		expWaitTillElementDisplay(ClickOkButtonBLEpopUP,10);
 		clickbyXpathwithoutReport(ClickOkButtonBLEpopUP, " Ok Ble Button ");
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp(packages); // Bring it back
@@ -443,15 +443,15 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void clickBlePermissionOkbutton() {
-		expWaitforPairing(blePermissionOkButton);
+		expWaitTillElementDisplay(blePermissionOkButton,10);
 		clickbyXpath(blePermissionOkButton, " Ble Popup Cancel Button ");
 	}
 
 	public void verifyAddDevicePage(String title) {
-		if( isElementDisplayedCheck(addDeviceButton)){
+		if( isElementDisplayedCheck(addDeviceButton,10)){
 			
 			verifyTextContainsByXpath(addDeviceButton, title, " ADD device Page ");
-		}else if (isElementDisplayedCheck(devicenameDeviceSettingsPage(usernameinApp))) {
+		}else if (isElementDisplayedCheck(devicenameDeviceSettingsPage(usernameinApp),10)) {
 			verifyTextContainsByXpath(devicenameDeviceSettingsPage(usernameinApp),usernameinApp , "username");
 
 		}else {
@@ -527,14 +527,14 @@ public class AddDevicePage extends GenericWrappers {
 	public void aCBrandNameClick()
 
 	{
-		expWaitforPairing(ACBrandNameClick);
+		expWaitTillElementDisplay(ACBrandNameClick,10);
 		clickbyXpath(ACBrandNameClick, "Acbrandname");
 	}
 
 	public void aCBrandNameCarrierclick()
 
 	{
-		expWaitforPairing(ACBrandNameCarrier);
+		expWaitTillElementDisplay(ACBrandNameCarrier,10);
 		clickbyXpath(ACBrandNameCarrier, "Acbrandname");
 	}
 
@@ -626,7 +626,7 @@ public class AddDevicePage extends GenericWrappers {
 		 */	
 		
 		try {
-			if(isElementDisplayedCheck(signInButton)) {
+			if(isElementDisplayedCheck(signInButton,10)) {
 				landingpage.clickSignInButton();
 				loginpage.enterUserName(userName);
 				loginpage.clickSignInButton();
@@ -670,7 +670,7 @@ public class AddDevicePage extends GenericWrappers {
 	public void proceedToAddDevice(int mode) throws Exception {
 		
 
-		if (isElementDisplayedCheck(addDeviceButton)) {
+		if (isElementDisplayedCheck(addDeviceButton,10)) {
 
 			clickAddDeviceButton();
 			checkBoxPairing();
@@ -685,13 +685,12 @@ public class AddDevicePage extends GenericWrappers {
 //				locationPopUpPermission();
 //				nearByPermission();
 
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 				clickWifiCancelButton();
 //				blepermissionokpopup();
           
-				Thread.sleep(30000);
 				
-				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
+				if(!isElementDisplayedCheck(sZephyrInfoNextButton,30)) {
 					blepermissionokpopup();
 					unregistereddevicepopup();
 					retrypagecheck(mode);
@@ -708,10 +707,9 @@ public class AddDevicePage extends GenericWrappers {
 				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 				clickEnterButton();
-				Thread.sleep(30000);
-				if(!isElementDisplayedCheck(sZephyrInfoNextButton))  {
+				if(!isElementDisplayedCheck(sZephyrInfoNextButton,30))  {
 					blepermissionokpopup();
 					unregistereddevicepopup();
 					retrypagecheck(mode);
@@ -728,7 +726,7 @@ public class AddDevicePage extends GenericWrappers {
 
 				readwrite.write("factory_reset\r");
 				blepermissionokpopup();
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 				enterWiFiPassword(wifiPassword);
 				clickEnterButton();
 				
@@ -739,7 +737,7 @@ public class AddDevicePage extends GenericWrappers {
 				
 				Thread.sleep(30000);
 				
-				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
+				if(!isElementDisplayedCheck(sZephyrInfoNextButton,30)) {
 					unregistereddevicepopup();
 					retrypagecheck(mode);
 					blepermissionokpopup();
@@ -767,9 +765,8 @@ public class AddDevicePage extends GenericWrappers {
 				Thread.sleep(5000);
 				clickEnterButton();
 
-				Thread.sleep(5*20*1000);
 				
-				if(!isElementDisplayedCheck(devicewifipop_upOK)) {
+				if(!isElementDisplayedCheck(devicewifipop_upOK,100)) {
 
 					blepermissionokpopup();
 					unregistereddevicepopup();
@@ -780,7 +777,7 @@ public class AddDevicePage extends GenericWrappers {
 				homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 				
 				Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
-				if(isElementDisplayedCheck(devicewifipop_upOK))  {
+				if(isElementDisplayedCheck(devicewifipop_upOK,20))  {
 					
 					clickbyXpath(devicewifipop_upOK, "Cliked on not connected with router pop-up");
 				}
@@ -811,9 +808,9 @@ public class AddDevicePage extends GenericWrappers {
 //				}
 
 				clickWifiCancelButton();
-				Thread.sleep(5*20*1000);
+//				Thread.sleep(5*20*1000);
 
-				if(!isElementDisplayedCheck(devicewifipop_upOK))  {
+				if(!isElementDisplayedCheck(devicewifipop_upOK,100))  {
 					blepermissionokpopup();
 					unregistereddevicepopup();
 					retrypagecheck(mode);
@@ -846,13 +843,13 @@ public class AddDevicePage extends GenericWrappers {
 			devicemenupage.clickMenuBarRemoveDevice();
 			devicemenupage.clickRemoveDevicePopupYesButton();
 			Thread.sleep(2000);//or5000
-			if (isElementDisplayedCheck(deviceofflinealertTitle)) {
+			if (isElementDisplayedCheck(deviceofflinealertTitle,20)) {
 				String text = deviceofflinealertTitle.getText();
 				System.out.println(text + "  Alert pop-up displayed");
 				clickbyXpath(alertok, "Alert ok button");
 				proceedToAddDevice(mode);
 
-			} else if (isElementDisplayedCheck(buttonPressAlert)) {
+			} else if (isElementDisplayedCheck(buttonPressAlert,20)) {
 				String text = buttonPressAlert.getText();
 				System.out.println(text + "  Alert pop-up displayed");
 				clickbyXpath(alertok, "Alert ok button");
@@ -867,7 +864,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	
 	private void connectwithmobilewifipage() throws Exception {
-		if (isElementDisplayedCheck(devicewifipop_upOK)) {
+		if (isElementDisplayedCheck(devicewifipop_upOK,10)) {
 			clickbyXpath(devicewifipop_upOK, "click on Device wifi OK popup");
 			
 			Runtime.getRuntime().exec("adb shell am force-stop com.android.settings");
@@ -881,12 +878,12 @@ public class AddDevicePage extends GenericWrappers {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
-			if (isElementDisplayedCheck(enterpasswordwifipge)) {
+			if (isElementDisplayedCheck(enterpasswordwifipge,10)) {
 				entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
 				hidekeyboard();
 
 				clickbyXpath(connectbuttonWifipage, "connect button");
-			} else if (isElementDisplayedCheck(enterpasswordwifipgehighversion
+			} else if (isElementDisplayedCheck(enterpasswordwifipgehighversion,10
 					)) {
 
 				entervaluebyXpath(enterpasswordwifipge, "wifipage password", "mypassword");
@@ -905,7 +902,7 @@ public class AddDevicePage extends GenericWrappers {
 			}
 			
 			
-			if (isElementDisplayedCheck(Blepopup_afterpairing)) {
+			if (isElementDisplayedCheck(Blepopup_afterpairing,10)) {
 
 				clickbyXpath(Blepopup_afterpairing, "oK button of Ble alert pop-up");
 			}
@@ -918,7 +915,7 @@ public class AddDevicePage extends GenericWrappers {
 		
 	}
 	private void unregistereddevicepopup() {
-		if (isElementDisplayedCheck(unregisteredpopup)) {
+		if (isElementDisplayedCheck(unregisteredpopup,10)) {
 
 			clickbyXpath(alertpopup, "alertokpop-up");
 		}
@@ -940,7 +937,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 	
 	public void blepermissionokpopup() throws Exception {
-		if (isElementDisplayedCheck(BleOKpopup)) {
+		if (isElementDisplayedCheck(BleOKpopup,10)) {
 			BleOKpopup.click();
 			Thread.sleep(2000);
 			checkappinforeground();
@@ -951,7 +948,7 @@ public class AddDevicePage extends GenericWrappers {
 		
 	}
 	private void blepermissioncancelpopup() throws Exception {
-		if (isElementDisplayedCheck(BLEcancelpopup)) {
+		if (isElementDisplayedCheck(BLEcancelpopup,10)) {
 			BLEcancelpopup.click();
 			if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 				driver.activateApp(packages); // Bring it back
@@ -1025,12 +1022,12 @@ public void removingDevice() throws InterruptedException {
 				devicemenupage.clickRemoveDevicePopupYesButton();
 				checkdeviceremovedtoast();
 				Thread.sleep(2000);//or5000
-				if (isElementDisplayedCheck(deviceofflinealertTitle)) {
+				if (isElementDisplayedCheck(deviceofflinealertTitle,10)) {
 					String text = deviceofflinealertTitle.getText();
 					System.out.println(text + "  Alert pop-up displayed");
 					clickbyXpath(alertok, "Alert ok button");
 
-				} else if (isElementDisplayedCheck(buttonPressAlert)) {
+				} else if (isElementDisplayedCheck(buttonPressAlert,10)) {
 					String text = buttonPressAlert.getText();
 					System.out.println(text + "  Alert pop-up displayed");
 					clickbyXpath(alertok, "Alert ok button");
@@ -1063,7 +1060,7 @@ public void TurnOffmobiledata() throws Exception {
 	Runtime.getRuntime().exec("adb shell svc data enable");
 }
 private void blepermissionCANCELpopup() throws Exception {
-	if (isElementDisplayedCheck(BLECANCELpopup)) {
+	if (isElementDisplayedCheck(BLECANCELpopup,10)) {
 		BLECANCELpopup.click();
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp(packages); // Bring it back

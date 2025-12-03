@@ -1,45 +1,1243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="8" ignored="8" total="48" passed="27" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-24T19:22:28 IST" name="Default suite" finished-at="2025-10-24T19:40:16 IST" duration-ms="1068143">
+  <suite started-at="2025-12-03T19:30:52 IST" name="Suite" finished-at="2025-12-03T22:12:00 IST" duration-ms="9667312">
     <groups>
     </groups>
-    <test started-at="2025-10-24T19:22:28 IST" name="Default test" finished-at="2025-10-24T19:40:16 IST" duration-ms="1068143">
-      <class name="sZephyr_testcases.TC29_Schedular">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:22:28 IST" name="beforeSuite" finished-at="2025-10-24T19:22:28 IST" duration-ms="403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:22:28 IST" name="beforeTest" finished-at="2025-10-24T19:22:28 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:22:28 IST" name="startTestCase" finished-at="2025-10-24T19:22:28 IST" duration-ms="1" status="PASS">
+    <test started-at="2025-12-03T19:30:52 IST" name="Test" finished-at="2025-12-03T22:12:00 IST" duration-ms="9667312">
+      <class name="sZephyr_testcases.TC22_DeviceSettings">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:38:07 IST" name="startTestCase" finished-at="2025-12-03T20:38:07 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:22:28 IST" name="beforeMethod" finished-at="2025-10-24T19:22:28 IST" duration-ms="2" status="PASS">
+        <test-method retried="true" signature="TC22_DeviceSettings_Pairing_Time_Settings_change()[pri:21, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:38:07 IST" name="TC22_DeviceSettings_Pairing_Time_Settings_change" finished-at="2025-12-03T20:41:14 IST" duration-ms="186638" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC22_DeviceSettings_Pairing_Time_Settings_change -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:38:07 IST" name="beforeMethod" finished-at="2025-12-03T20:38:07 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC29_Schedular_Smartconfig_app_close()[pri:28, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:22:28 IST" name="TC29_Schedular_Smartconfig_app_close" finished-at="2025-10-24T19:40:16 IST" duration-ms="1067475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC29_Schedular_Smartconfig_app_close -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:40:16 IST" name="afterMethod" finished-at="2025-10-24T19:40:16 IST" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:41:14 IST" name="afterMethod" finished-at="2025-12-03T20:41:14 IST" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:40:16 IST" name="afterTest" finished-at="2025-10-24T19:40:16 IST" duration-ms="0" status="PASS">
+        <test-method signature="TC22_DeviceSettings_Pairing_Time_Settings_change()[pri:21, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:41:14 IST" name="TC22_DeviceSettings_Pairing_Time_Settings_change" finished-at="2025-12-03T20:44:52 IST" duration-ms="217792" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC22_DeviceSettings_Pairing_Time_Settings_change -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:41:14 IST" name="beforeMethod" finished-at="2025-12-03T20:41:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC22_DeviceSettings@50313382]" started-at="2025-12-03T20:44:52 IST" name="afterMethod" finished-at="2025-12-03T20:44:52 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC22_DeviceSettings -->
+      <class name="sZephyr_testcases.TC29_Schedular">
+        <test-method signature="TC29_Schedular_Smartconfig_app_close()[pri:28, instance:sZephyr_testcases.TC29_Schedular@329dbdbf]" started-at="2025-12-03T21:23:55 IST" name="TC29_Schedular_Smartconfig_app_close" finished-at="2025-12-03T21:39:58 IST" duration-ms="963186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC29_Schedular_Smartconfig_app_close -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC29_Schedular@329dbdbf]" started-at="2025-12-03T21:23:55 IST" name="startTestCase" finished-at="2025-12-03T21:23:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC29_Schedular@329dbdbf]" started-at="2025-12-03T21:23:55 IST" name="beforeMethod" finished-at="2025-12-03T21:23:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC29_Schedular@329dbdbf]" started-at="2025-12-03T21:39:58 IST" name="afterMethod" finished-at="2025-12-03T21:39:59 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC29_Schedular -->
+      <class name="sZephyr_testcases.TC02_SignUp">
+        <test-method signature="TC02_SignUp_with_already_registered_username()[pri:1, instance:sZephyr_testcases.TC02_SignUp@3e44f2a5]" started-at="2025-12-03T19:33:22 IST" name="TC02_SignUp_with_already_registered_username" finished-at="2025-12-03T19:34:04 IST" duration-ms="42133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_SignUp_with_already_registered_username -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC02_SignUp@3e44f2a5]" started-at="2025-12-03T19:33:22 IST" name="beforeMethod" finished-at="2025-12-03T19:33:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC02_SignUp@3e44f2a5]" started-at="2025-12-03T19:33:22 IST" name="startTestCase" finished-at="2025-12-03T19:33:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC02_SignUp@3e44f2a5]" started-at="2025-12-03T19:34:04 IST" name="afterMethod" finished-at="2025-12-03T19:34:07 IST" duration-ms="3007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC02_SignUp -->
+      <class name="sZephyr_testcases.TC03_SignUp">
+        <test-method signature="TC03_SignUp_Try_to_Sign_Up_with_new_username()[pri:2, instance:sZephyr_testcases.TC03_SignUp@295cf707]" started-at="2025-12-03T19:34:07 IST" name="TC03_SignUp_Try_to_Sign_Up_with_new_username" finished-at="2025-12-03T19:34:50 IST" duration-ms="43050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_SignUp_Try_to_Sign_Up_with_new_username -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC03_SignUp@295cf707]" started-at="2025-12-03T19:34:07 IST" name="startTestCase" finished-at="2025-12-03T19:34:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC03_SignUp@295cf707]" started-at="2025-12-03T19:34:07 IST" name="beforeMethod" finished-at="2025-12-03T19:34:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC03_SignUp@295cf707]" started-at="2025-12-03T19:34:50 IST" name="afterMethod" finished-at="2025-12-03T19:34:51 IST" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC03_SignUp -->
+      <class name="sZephyr_testcases.TC06_SignIn_SuccessFlow">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC06_SignIn_SuccessFlow@463fd068]" started-at="2025-12-03T19:36:20 IST" name="startTestCase" finished-at="2025-12-03T19:36:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC06_During_SignUp_or_SignIn_enter_valid_OTP()[pri:5, instance:sZephyr_testcases.TC06_SignIn_SuccessFlow@463fd068]" started-at="2025-12-03T19:36:20 IST" name="TC06_During_SignUp_or_SignIn_enter_valid_OTP" finished-at="2025-12-03T19:36:59 IST" duration-ms="39456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_During_SignUp_or_SignIn_enter_valid_OTP -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC06_SignIn_SuccessFlow@463fd068]" started-at="2025-12-03T19:36:20 IST" name="beforeMethod" finished-at="2025-12-03T19:36:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC06_SignIn_SuccessFlow@463fd068]" started-at="2025-12-03T19:36:59 IST" name="afterMethod" finished-at="2025-12-03T19:37:00 IST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC06_SignIn_SuccessFlow -->
+      <class name="sZephyr_testcases.TC17_WIfiWithout_router">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC17_WIfiWithout_router@589da3f3]" started-at="2025-12-03T20:19:48 IST" name="startTestCase" finished-at="2025-12-03T20:19:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC17_WifiWithoutRouter_CONNECTIVITY()[pri:16, instance:sZephyr_testcases.TC17_WIfiWithout_router@589da3f3]" started-at="2025-12-03T20:19:48 IST" name="TC17_WifiWithoutRouter_CONNECTIVITY" finished-at="2025-12-03T20:25:41 IST" duration-ms="352625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC17_WifiWithoutRouter_CONNECTIVITY -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC17_WIfiWithout_router@589da3f3]" started-at="2025-12-03T20:19:48 IST" name="beforeMethod" finished-at="2025-12-03T20:19:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC17_WIfiWithout_router@589da3f3]" started-at="2025-12-03T20:25:41 IST" name="afterMethod" finished-at="2025-12-03T20:25:41 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC17_WIfiWithout_router -->
+      <class name="sZephyr_testcases.TC10_Pairing_SmartConfig">
+        <test-method retried="true" signature="TC10_Pairing_in_SmartConfig_Mode()[pri:9, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:46:23 IST" name="TC10_Pairing_in_SmartConfig_Mode" finished-at="2025-12-03T19:49:54 IST" duration-ms="210626" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_Pairing_in_SmartConfig_Mode -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:46:23 IST" name="beforeMethod" finished-at="2025-12-03T19:46:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:46:23 IST" name="startTestCase" finished-at="2025-12-03T19:46:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:49:54 IST" name="afterMethod" finished-at="2025-12-03T19:49:54 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC10_Pairing_in_SmartConfig_Mode()[pri:9, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:49:54 IST" name="TC10_Pairing_in_SmartConfig_Mode" finished-at="2025-12-03T19:53:28 IST" duration-ms="213896" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_Pairing_in_SmartConfig_Mode -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:49:54 IST" name="beforeMethod" finished-at="2025-12-03T19:49:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079]" started-at="2025-12-03T19:53:28 IST" name="afterMethod" finished-at="2025-12-03T19:53:29 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC10_Pairing_SmartConfig -->
+      <class name="sZephyr_testcases.TC04_SignIn_Flow">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC04_SignIn_Flow@1130520d]" started-at="2025-12-03T19:34:51 IST" name="startTestCase" finished-at="2025-12-03T19:34:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC04_SignIn_Flow@1130520d]" started-at="2025-12-03T19:34:51 IST" name="beforeMethod" finished-at="2025-12-03T19:34:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC04_SignIn_Try_to_SignIn_with_unregistered_username()[pri:3, instance:sZephyr_testcases.TC04_SignIn_Flow@1130520d]" started-at="2025-12-03T19:34:51 IST" name="TC04_SignIn_Try_to_SignIn_with_unregistered_username" finished-at="2025-12-03T19:35:26 IST" duration-ms="35097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_SignIn_Try_to_SignIn_with_unregistered_username -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC04_SignIn_Flow@1130520d]" started-at="2025-12-03T19:35:26 IST" name="afterMethod" finished-at="2025-12-03T19:35:26 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC04_SignIn_Flow -->
+      <class name="sZephyr_testcases.TC09_Pairing_BlewithRouter">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:40:27 IST" name="startTestCase" finished-at="2025-12-03T19:40:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method retried="true" signature="TC09_Pairing_BLE_With_Router()[pri:8, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:40:27 IST" name="TC09_Pairing_BLE_With_Router" finished-at="2025-12-03T19:42:57 IST" duration-ms="149700" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:98)
+at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09_Pairing_BLE_With_Router -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:40:27 IST" name="beforeMethod" finished-at="2025-12-03T19:40:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:42:57 IST" name="afterMethod" finished-at="2025-12-03T19:42:57 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC09_Pairing_BLE_With_Router()[pri:8, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:42:57 IST" name="TC09_Pairing_BLE_With_Router" finished-at="2025-12-03T19:46:22 IST" duration-ms="205221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09_Pairing_BLE_With_Router -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:42:57 IST" name="beforeMethod" finished-at="2025-12-03T19:42:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7]" started-at="2025-12-03T19:46:22 IST" name="afterMethod" finished-at="2025-12-03T19:46:23 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC09_Pairing_BlewithRouter -->
+      <class name="sZephyr_testcases.TC01_Accounts_Info">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC01_Accounts_Info@748741cb]" started-at="2025-12-03T19:30:52 IST" name="startTestCase" finished-at="2025-12-03T19:30:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC01_Accounts_Info@748741cb]" started-at="2025-12-03T19:30:52 IST" name="beforeMethod" finished-at="2025-12-03T19:30:52 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_01_Account_Info_page_check()[pri:0, instance:sZephyr_testcases.TC01_Accounts_Info@748741cb]" started-at="2025-12-03T19:30:52 IST" name="TC_01_Account_Info_page_check" finished-at="2025-12-03T19:33:21 IST" duration-ms="148827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Account_Info_page_check -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC01_Accounts_Info@748741cb]" started-at="2025-12-03T19:33:21 IST" name="afterMethod" finished-at="2025-12-03T19:33:22 IST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC01_Accounts_Info -->
+      <class name="sZephyr_testcases.TC31_Schedular">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC31_Schedular@20d7d6fb]" started-at="2025-12-03T21:47:35 IST" name="beforeMethod" finished-at="2025-12-03T21:47:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC31_Schedular@20d7d6fb]" started-at="2025-12-03T21:47:35 IST" name="startTestCase" finished-at="2025-12-03T21:47:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC31_Schedular_BLEWithoutRouter_App_close_mode()[pri:30, instance:sZephyr_testcases.TC31_Schedular@20d7d6fb]" started-at="2025-12-03T21:47:35 IST" name="TC31_Schedular_BLEWithoutRouter_App_close_mode" finished-at="2025-12-03T22:02:16 IST" duration-ms="880463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC31_Schedular_BLEWithoutRouter_App_close_mode -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC31_Schedular@20d7d6fb]" started-at="2025-12-03T22:02:16 IST" name="afterMethod" finished-at="2025-12-03T22:02:17 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC31_Schedular -->
+      <class name="sZephyr_testcases.TC23_Analytics">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC23_Analytics@1cb346ea]" started-at="2025-12-03T20:44:52 IST" name="startTestCase" finished-at="2025-12-03T20:44:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC_23_Analytics_BLE_withoutRouter_App_Open()[pri:22, instance:sZephyr_testcases.TC23_Analytics@1cb346ea]" started-at="2025-12-03T20:44:52 IST" name="TC_23_Analytics_BLE_withoutRouter_App_Open" finished-at="2025-12-03T20:47:20 IST" duration-ms="147177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_23_Analytics_BLE_withoutRouter_App_Open -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC23_Analytics@1cb346ea]" started-at="2025-12-03T20:44:52 IST" name="beforeMethod" finished-at="2025-12-03T20:44:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC23_Analytics@1cb346ea]" started-at="2025-12-03T20:47:20 IST" name="afterMethod" finished-at="2025-12-03T20:47:20 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC23_Analytics -->
+      <class name="sZephyr_testcases.TC16_WifiWithRouter">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:09:10 IST" name="startTestCase" finished-at="2025-12-03T20:09:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method retried="true" signature="TC16_WifiWithRouter_CONNECTIVITY()[pri:15, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:09:10 IST" name="TC16_WifiWithRouter_CONNECTIVITY" finished-at="2025-12-03T20:13:05 IST" duration-ms="235415" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:119)
+at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_WifiWithRouter_CONNECTIVITY -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:09:10 IST" name="beforeMethod" finished-at="2025-12-03T20:09:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:13:05 IST" name="afterMethod" finished-at="2025-12-03T20:13:05 IST" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC16_WifiWithRouter_CONNECTIVITY()[pri:15, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:13:05 IST" name="TC16_WifiWithRouter_CONNECTIVITY" finished-at="2025-12-03T20:19:48 IST" duration-ms="402250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_WifiWithRouter_CONNECTIVITY -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:13:05 IST" name="beforeMethod" finished-at="2025-12-03T20:13:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC16_WifiWithRouter@1cd629b3]" started-at="2025-12-03T20:19:48 IST" name="afterMethod" finished-at="2025-12-03T20:19:48 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC16_WifiWithRouter -->
+      <class name="sZephyr_testcases.TC05_SignIn_Valid_User">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC05_SignIn_Valid_User@5f77d0f9]" started-at="2025-12-03T19:35:26 IST" name="startTestCase" finished-at="2025-12-03T19:35:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC05_SignIn_Valid_User@5f77d0f9]" started-at="2025-12-03T19:35:26 IST" name="beforeMethod" finished-at="2025-12-03T19:35:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP()[pri:4, instance:sZephyr_testcases.TC05_SignIn_Valid_User@5f77d0f9]" started-at="2025-12-03T19:35:26 IST" name="TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP" finished-at="2025-12-03T19:36:19 IST" duration-ms="52571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC05_SignIn_Valid_User@5f77d0f9]" started-at="2025-12-03T19:36:19 IST" name="afterMethod" finished-at="2025-12-03T19:36:20 IST" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC05_SignIn_Valid_User -->
+      <class name="sZephyr_testcases.TC19_DeviceSettings">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC19_DeviceSettings@4a00d9cf]" started-at="2025-12-03T20:29:35 IST" name="startTestCase" finished-at="2025-12-03T20:29:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC19_DeviceSettings_Add_Router()[pri:18, instance:sZephyr_testcases.TC19_DeviceSettings@4a00d9cf]" started-at="2025-12-03T20:29:35 IST" name="TC19_DeviceSettings_Add_Router" finished-at="2025-12-03T20:32:10 IST" duration-ms="155674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC19_DeviceSettings_Add_Router -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC19_DeviceSettings@4a00d9cf]" started-at="2025-12-03T20:29:35 IST" name="beforeMethod" finished-at="2025-12-03T20:29:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC19_DeviceSettings@4a00d9cf]" started-at="2025-12-03T20:32:10 IST" name="afterMethod" finished-at="2025-12-03T20:32:11 IST" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC19_DeviceSettings -->
+      <class name="sZephyr_testcases.TC14_BleWithRouter">
+        <test-method signature="TC14_BlewithRouter_CONNECTIVITY()[pri:13, instance:sZephyr_testcases.TC14_BleWithRouter@5456afaa]" started-at="2025-12-03T19:57:17 IST" name="TC14_BlewithRouter_CONNECTIVITY" finished-at="2025-12-03T20:02:14 IST" duration-ms="296133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_BlewithRouter_CONNECTIVITY -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC14_BleWithRouter@5456afaa]" started-at="2025-12-03T19:57:17 IST" name="startTestCase" finished-at="2025-12-03T19:57:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC14_BleWithRouter@5456afaa]" started-at="2025-12-03T19:57:17 IST" name="beforeMethod" finished-at="2025-12-03T19:57:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC14_BleWithRouter@5456afaa]" started-at="2025-12-03T20:02:14 IST" name="afterMethod" finished-at="2025-12-03T20:02:14 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC14_BleWithRouter -->
+      <class name="sZephyr_testcases.TC25_Analytics">
+        <test-method retried="true" signature="TC_25_Analytics_SmartConfig_Mode()[pri:24, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:53:44 IST" name="TC_25_Analytics_SmartConfig_Mode" finished-at="2025-12-03T20:59:06 IST" duration-ms="322331" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_25_Analytics_SmartConfig_Mode -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:53:44 IST" name="startTestCase" finished-at="2025-12-03T20:53:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:53:44 IST" name="beforeMethod" finished-at="2025-12-03T20:53:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:59:06 IST" name="afterMethod" finished-at="2025-12-03T20:59:07 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:59:07 IST" name="beforeMethod" finished-at="2025-12-03T20:59:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_25_Analytics_SmartConfig_Mode()[pri:24, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T20:59:07 IST" name="TC_25_Analytics_SmartConfig_Mode" finished-at="2025-12-03T21:03:10 IST" duration-ms="243897" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:83)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_25_Analytics_SmartConfig_Mode -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC25_Analytics@14a50707]" started-at="2025-12-03T21:03:10 IST" name="afterMethod" finished-at="2025-12-03T21:03:11 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC25_Analytics -->
+      <class name="sZephyr_testcases.Longrun_voltvalue">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:sZephyr_testcases.Longrun_voltvalue@23202fce]" started-at="2025-12-03T19:30:52 IST" name="beforeSuite" finished-at="2025-12-03T19:30:52 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:sZephyr_testcases.Longrun_voltvalue@23202fce]" started-at="2025-12-03T19:30:52 IST" name="beforeTest" finished-at="2025-12-03T19:30:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:sZephyr_testcases.Longrun_voltvalue@23202fce]" started-at="2025-12-03T22:12:00 IST" name="afterTest" finished-at="2025-12-03T22:12:00 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:sZephyr_testcases.TC29_Schedular@7283d3eb]" started-at="2025-10-24T19:40:16 IST" name="afterSuite" finished-at="2025-10-24T19:40:17 IST" duration-ms="325" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:sZephyr_testcases.Longrun_voltvalue@23202fce]" started-at="2025-12-03T22:12:00 IST" name="afterSuite" finished-at="2025-12-03T22:12:00 IST" duration-ms="644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- sZephyr_testcases.TC29_Schedular -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- sZephyr_testcases.Longrun_voltvalue -->
+      <class name="sZephyr_testcases.TC34_sZephyr_Info">
+        <test-method signature="TC34_Szephyr_Info_check()[pri:33, instance:sZephyr_testcases.TC34_sZephyr_Info@479cbee5]" started-at="2025-12-03T22:07:01 IST" name="TC34_Szephyr_Info_check" finished-at="2025-12-03T22:09:23 IST" duration-ms="142669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC34_Szephyr_Info_check -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC34_sZephyr_Info@479cbee5]" started-at="2025-12-03T22:07:01 IST" name="beforeMethod" finished-at="2025-12-03T22:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC34_sZephyr_Info@479cbee5]" started-at="2025-12-03T22:07:01 IST" name="startTestCase" finished-at="2025-12-03T22:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC34_sZephyr_Info@479cbee5]" started-at="2025-12-03T22:09:23 IST" name="afterMethod" finished-at="2025-12-03T22:09:24 IST" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC34_sZephyr_Info -->
+      <class name="sZephyr_testcases.TC28_Schedular">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC28_Schedular@e3c0e40]" started-at="2025-12-03T21:13:54 IST" name="startTestCase" finished-at="2025-12-03T21:13:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC28_Schedular_SmartConfig_Mode()[pri:27, instance:sZephyr_testcases.TC28_Schedular@e3c0e40]" started-at="2025-12-03T21:13:54 IST" name="TC28_Schedular_SmartConfig_Mode" finished-at="2025-12-03T21:23:54 IST" duration-ms="599988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC28_Schedular_SmartConfig_Mode -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC28_Schedular@e3c0e40]" started-at="2025-12-03T21:13:54 IST" name="beforeMethod" finished-at="2025-12-03T21:13:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC28_Schedular@e3c0e40]" started-at="2025-12-03T21:23:54 IST" name="afterMethod" finished-at="2025-12-03T21:23:55 IST" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC28_Schedular -->
+      <class name="sZephyr_testcases.TC33_Ble_Factory_Reset">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC33_Ble_Factory_Reset@11d8ae8b]" started-at="2025-12-03T22:05:05 IST" name="startTestCase" finished-at="2025-12-03T22:05:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC33_Ble_Factory_Reset@11d8ae8b]" started-at="2025-12-03T22:05:05 IST" name="beforeMethod" finished-at="2025-12-03T22:05:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC33_BleWithoutRouter_Factory_Reset()[pri:32, instance:sZephyr_testcases.TC33_Ble_Factory_Reset@11d8ae8b]" started-at="2025-12-03T22:05:05 IST" name="TC33_BleWithoutRouter_Factory_Reset" finished-at="2025-12-03T22:07:00 IST" duration-ms="114847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC33_BleWithoutRouter_Factory_Reset -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC33_Ble_Factory_Reset@11d8ae8b]" started-at="2025-12-03T22:07:00 IST" name="afterMethod" finished-at="2025-12-03T22:07:01 IST" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC33_Ble_Factory_Reset -->
+      <class name="sZephyr_testcases.TC15_SmartConfig">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC15_SmartConfig@6692b6c6]" started-at="2025-12-03T20:02:14 IST" name="startTestCase" finished-at="2025-12-03T20:02:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC15_SmartConfig@6692b6c6]" started-at="2025-12-03T20:02:14 IST" name="beforeMethod" finished-at="2025-12-03T20:02:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC15_SmartConfig_CONNECTIVITY()[pri:14, instance:sZephyr_testcases.TC15_SmartConfig@6692b6c6]" started-at="2025-12-03T20:02:14 IST" name="TC15_SmartConfig_CONNECTIVITY" finished-at="2025-12-03T20:09:09 IST" duration-ms="414843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15_SmartConfig_CONNECTIVITY -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC15_SmartConfig@6692b6c6]" started-at="2025-12-03T20:09:09 IST" name="afterMethod" finished-at="2025-12-03T20:09:10 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC15_SmartConfig -->
+      <class name="sZephyr_testcases.TC08_Pairing_BlewithoutRouter">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@1b266842]" started-at="2025-12-03T19:38:30 IST" name="startTestCase" finished-at="2025-12-03T19:38:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC08_Pairing_BLE_Without_Router()[pri:7, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@1b266842]" started-at="2025-12-03T19:38:30 IST" name="TC08_Pairing_BLE_Without_Router" finished-at="2025-12-03T19:40:26 IST" duration-ms="116713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08_Pairing_BLE_Without_Router -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@1b266842]" started-at="2025-12-03T19:38:30 IST" name="beforeMethod" finished-at="2025-12-03T19:38:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC08_Pairing_BlewithoutRouter@1b266842]" started-at="2025-12-03T19:40:26 IST" name="afterMethod" finished-at="2025-12-03T19:40:27 IST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC08_Pairing_BlewithoutRouter -->
+      <class name="sZephyr_testcases.TC20_DeviceSettings">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC20_DeviceSettings@6736fa8d]" started-at="2025-12-03T20:32:11 IST" name="beforeMethod" finished-at="2025-12-03T20:32:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC20_DeviceSettings@6736fa8d]" started-at="2025-12-03T20:32:11 IST" name="startTestCase" finished-at="2025-12-03T20:32:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC20_DeviceSettings_Remove_Router()[pri:19, instance:sZephyr_testcases.TC20_DeviceSettings@6736fa8d]" started-at="2025-12-03T20:32:11 IST" name="TC20_DeviceSettings_Remove_Router" finished-at="2025-12-03T20:35:40 IST" duration-ms="209251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC20_DeviceSettings_Remove_Router -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC20_DeviceSettings@6736fa8d]" started-at="2025-12-03T20:35:40 IST" name="afterMethod" finished-at="2025-12-03T20:35:41 IST" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC20_DeviceSettings -->
+      <class name="sZephyr_testcases.TC07_SignIn_Logout">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:00 IST" name="startTestCase" finished-at="2025-12-03T19:37:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method retried="true" signature="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working()[pri:6, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:00 IST" name="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working" finished-at="2025-12-03T19:37:46 IST" duration-ms="45916" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:00 IST" name="beforeMethod" finished-at="2025-12-03T19:37:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:46 IST" name="afterMethod" finished-at="2025-12-03T19:37:46 IST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working()[pri:6, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:46 IST" name="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working" finished-at="2025-12-03T19:38:29 IST" duration-ms="42659" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:37:46 IST" name="beforeMethod" finished-at="2025-12-03T19:37:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC07_SignIn_Logout@895e367]" started-at="2025-12-03T19:38:29 IST" name="afterMethod" finished-at="2025-12-03T19:38:30 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC07_SignIn_Logout -->
+      <class name="sZephyr_testcases.TC13_BlewithoutRouter">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC13_BlewithoutRouter@bb9e6dc]" started-at="2025-12-03T19:53:29 IST" name="beforeMethod" finished-at="2025-12-03T19:53:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC13_BlewithoutRouter@bb9e6dc]" started-at="2025-12-03T19:53:29 IST" name="startTestCase" finished-at="2025-12-03T19:53:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC13_BlewithoutRouter_CONNECTIVITY()[pri:12, instance:sZephyr_testcases.TC13_BlewithoutRouter@bb9e6dc]" started-at="2025-12-03T19:53:29 IST" name="TC13_BlewithoutRouter_CONNECTIVITY" finished-at="2025-12-03T19:57:17 IST" duration-ms="227932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13_BlewithoutRouter_CONNECTIVITY -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC13_BlewithoutRouter@bb9e6dc]" started-at="2025-12-03T19:57:17 IST" name="afterMethod" finished-at="2025-12-03T19:57:17 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC13_BlewithoutRouter -->
+      <class name="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03@39d76cb5]" started-at="2025-12-03T20:25:41 IST" name="startTestCase" finished-at="2025-12-03T20:25:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC18_UI_Check_sZephyr_Info_values()[pri:17, instance:sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03@39d76cb5]" started-at="2025-12-03T20:25:41 IST" name="TC18_UI_Check_sZephyr_Info_values" finished-at="2025-12-03T20:29:34 IST" duration-ms="232659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_UI_Check_sZephyr_Info_values -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03@39d76cb5]" started-at="2025-12-03T20:25:41 IST" name="beforeMethod" finished-at="2025-12-03T20:25:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03@39d76cb5]" started-at="2025-12-03T20:29:34 IST" name="afterMethod" finished-at="2025-12-03T20:29:35 IST" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03 -->
+      <class name="sZephyr_testcases.TC30_Schedular">
+        <test-method signature="TC30_Schedular_BLE_without_router()[pri:29, instance:sZephyr_testcases.TC30_Schedular@7354b8c5]" started-at="2025-12-03T21:39:59 IST" name="TC30_Schedular_BLE_without_router" finished-at="2025-12-03T21:47:35 IST" duration-ms="455989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC30_Schedular_BLE_without_router -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC30_Schedular@7354b8c5]" started-at="2025-12-03T21:39:59 IST" name="startTestCase" finished-at="2025-12-03T21:39:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC30_Schedular@7354b8c5]" started-at="2025-12-03T21:39:59 IST" name="beforeMethod" finished-at="2025-12-03T21:39:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC30_Schedular@7354b8c5]" started-at="2025-12-03T21:47:35 IST" name="afterMethod" finished-at="2025-12-03T21:47:35 IST" duration-ms="685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC30_Schedular -->
+      <class name="sZephyr_testcases.TC24_Analytics">
+        <test-method retried="true" signature="TC_24_Analytics_BLE_without_Router_App_Close()[pri:23, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:47:20 IST" name="TC_24_Analytics_BLE_without_Router_App_Close" finished-at="2025-12-03T20:49:56 IST" duration-ms="155314" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:77)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC24_Analytics.pairBlewithoutRouter(TC24_Analytics.java:71)
+at sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close(TC24_Analytics.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_24_Analytics_BLE_without_Router_App_Close -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:47:20 IST" name="beforeMethod" finished-at="2025-12-03T20:47:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:47:20 IST" name="startTestCase" finished-at="2025-12-03T20:47:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:49:56 IST" name="afterMethod" finished-at="2025-12-03T20:49:56 IST" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_24_Analytics_BLE_without_Router_App_Close()[pri:23, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:49:56 IST" name="TC_24_Analytics_BLE_without_Router_App_Close" finished-at="2025-12-03T20:53:43 IST" duration-ms="226890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_24_Analytics_BLE_without_Router_App_Close -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:49:56 IST" name="beforeMethod" finished-at="2025-12-03T20:49:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC24_Analytics@4c012563]" started-at="2025-12-03T20:53:43 IST" name="afterMethod" finished-at="2025-12-03T20:53:44 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC24_Analytics -->
+      <class name="sZephyr_testcases.TC32_Factory_Reset">
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC32_Factory_Reset@4ef782af]" started-at="2025-12-03T22:02:17 IST" name="startTestCase" finished-at="2025-12-03T22:02:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC32_FactoryReset_check()[pri:31, instance:sZephyr_testcases.TC32_Factory_Reset@4ef782af]" started-at="2025-12-03T22:02:17 IST" name="TC32_FactoryReset_check" finished-at="2025-12-03T22:05:04 IST" duration-ms="167725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC32_FactoryReset_check -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC32_Factory_Reset@4ef782af]" started-at="2025-12-03T22:02:17 IST" name="beforeMethod" finished-at="2025-12-03T22:02:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC32_Factory_Reset@4ef782af]" started-at="2025-12-03T22:05:04 IST" name="afterMethod" finished-at="2025-12-03T22:05:05 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC32_Factory_Reset -->
+      <class name="sZephyr_testcases.TC21_DeviceSettings">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC21_DeviceSettings@52815fa3]" started-at="2025-12-03T20:35:41 IST" name="beforeMethod" finished-at="2025-12-03T20:35:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC21_DeviceSettings@52815fa3]" started-at="2025-12-03T20:35:41 IST" name="startTestCase" finished-at="2025-12-03T20:35:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method signature="TC21_DeviceSettings_LED_Quite_Mode()[pri:20, instance:sZephyr_testcases.TC21_DeviceSettings@52815fa3]" started-at="2025-12-03T20:35:41 IST" name="TC21_DeviceSettings_LED_Quite_Mode" finished-at="2025-12-03T20:38:06 IST" duration-ms="145301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC21_DeviceSettings_LED_Quite_Mode -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC21_DeviceSettings@52815fa3]" started-at="2025-12-03T20:38:06 IST" name="afterMethod" finished-at="2025-12-03T20:38:07 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC21_DeviceSettings -->
+      <class name="sZephyr_testcases.TC26_Analytics">
+        <test-method retried="true" signature="TC_26_Analytics_Smartconfig_App_close()[pri:25, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:03:11 IST" name="TC_26_Analytics_Smartconfig_App_close" finished-at="2025-12-03T21:08:33 IST" duration-ms="321695" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_26_Analytics_Smartconfig_App_close -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:03:11 IST" name="startTestCase" finished-at="2025-12-03T21:03:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:03:11 IST" name="beforeMethod" finished-at="2025-12-03T21:03:11 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:08:33 IST" name="afterMethod" finished-at="2025-12-03T21:08:33 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="TC_26_Analytics_Smartconfig_App_close()[pri:25, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:08:33 IST" name="TC_26_Analytics_Smartconfig_App_close" finished-at="2025-12-03T21:13:54 IST" duration-ms="320358" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[FAILED]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: FAILED
+at utils.Reporter.reportStep(Reporter.java:50)
+at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_26_Analytics_Smartconfig_App_close -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:08:33 IST" name="beforeMethod" finished-at="2025-12-03T21:08:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC26_Analytics@4d518b32]" started-at="2025-12-03T21:13:54 IST" name="afterMethod" finished-at="2025-12-03T21:13:54 IST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC26_Analytics -->
+      <class name="sZephyr_testcases.TC36_ESMmode">
+        <test-method signature="TC36_ESM_mode_button_check()[pri:34, instance:sZephyr_testcases.TC36_ESMmode@2b72cb8a]" started-at="2025-12-03T22:09:24 IST" name="TC36_ESM_mode_button_check" finished-at="2025-12-03T22:11:59 IST" duration-ms="155080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC36_ESM_mode_button_check -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:sZephyr_testcases.TC36_ESMmode@2b72cb8a]" started-at="2025-12-03T22:09:24 IST" name="startTestCase" finished-at="2025-12-03T22:09:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:sZephyr_testcases.TC36_ESMmode@2b72cb8a]" started-at="2025-12-03T22:09:24 IST" name="beforeMethod" finished-at="2025-12-03T22:09:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:sZephyr_testcases.TC36_ESMmode@2b72cb8a]" started-at="2025-12-03T22:11:59 IST" name="afterMethod" finished-at="2025-12-03T22:12:00 IST" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sZephyr_testcases.TC36_ESMmode -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

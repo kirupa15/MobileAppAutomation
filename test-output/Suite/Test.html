@@ -55,15 +55,15 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>27/5/8</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 24 15:45:02 IST 2025</td>
+<td>Started on:</td><td>Wed Dec 03 19:30:52 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>3379 seconds (3379157 ms)</td>
+<tr><td>Total time:</td><td>9667 seconds (9667312 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
-<td>Excluded groups:</td><td></td>
+<td>Excluded groups:</td><td>skip </td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
@@ -76,70 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sZephyr_testcases.TC29_Schedular.TC29_Schedular_Smartconfig_app_close()'><b>TC29_Schedular_Smartconfig_app_close</b><br>Test class: sZephyr_testcases.TC29_Schedular</td>
+<td title='sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change()'><b>TC22_DeviceSettings_Pairing_Time_Settings_change</b><br>Test class: sZephyr_testcases.TC22_DeviceSettings</td>
 <td><div><pre>java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.fail(GenericWrappers.java:1044)
-	at sZephyr_testcases.TC29_Schedular.TC29_Schedular_Smartconfig_app_close(TC29_Schedular.java:103)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610744096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace610744096'><pre>java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.fail(GenericWrappers.java:1044)
-	at sZephyr_testcases.TC29_Schedular.TC29_Schedular_Smartconfig_app_close(TC29_Schedular.java:103)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>946</td>
-<td>sZephyr_testcases.TC29_Schedular@13df2a8c</td></tr>
-<tr>
-<td title='sZephyr_testcases.TC31_Schedular.TC31_Schedular_BLEWithoutRouter_App_close_mode()'><b>TC31_Schedular_BLEWithoutRouter_App_close_mode</b><br>Test class: sZephyr_testcases.TC31_Schedular</td>
-<td><div><pre>java.lang.RuntimeException: FAILED
-	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:238)
-	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:78)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
 	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
 	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
-	at sZephyr_testcases.TC31_Schedular.TC31_Schedular_BLEWithoutRouter_App_close_mode(TC31_Schedular.java:95)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985235978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1985235978'><pre>java.lang.RuntimeException: FAILED
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace523696791", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace523696791'><pre>java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:238)
-	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:78)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
 	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
 	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
-	at sZephyr_testcases.TC31_Schedular.TC31_Schedular_BLEWithoutRouter_App_close_mode(TC31_Schedular.java:95)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -161,28 +122,34 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>957</td>
-<td>sZephyr_testcases.TC31_Schedular@4c5ae43b</td></tr>
+<td>217</td>
+<td>sZephyr_testcases.TC22_DeviceSettings@50313382</td></tr>
 <tr>
-<td title='sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY()'><b>TC16_WifiWithRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC16_WifiWithRouter</td>
+<td title='sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close()'><b>TC_26_Analytics_Smartconfig_App_close</b><br>Test class: sZephyr_testcases.TC26_Analytics</td>
 <td><div><pre>java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.fail(GenericWrappers.java:1044)
-	at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:120)
-	at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace644323208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace644323208'><pre>java.lang.RuntimeException: FAILED
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace518599547", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace518599547'><pre>java.lang.RuntimeException: FAILED
 	at utils.Reporter.reportStep(Reporter.java:50)
-	at wrappers.GenericWrappers.fail(GenericWrappers.java:1044)
-	at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:120)
-	at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -204,8 +171,151 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>294</td>
-<td>sZephyr_testcases.TC16_WifiWithRouter@4808bc9b</td></tr>
+<td>320</td>
+<td>sZephyr_testcases.TC26_Analytics@4d518b32</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode()'><b>TC10_Pairing_in_SmartConfig_Mode</b><br>Test class: sZephyr_testcases.TC10_Pairing_SmartConfig</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1017021094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1017021094'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>213</td>
+<td>sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working()'><b>TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</b><br>Test class: sZephyr_testcases.TC07_SignIn_Logout</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace45733040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace45733040'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>42</td>
+<td>sZephyr_testcases.TC07_SignIn_Logout@895e367</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode()'><b>TC_25_Analytics_SmartConfig_Mode</b><br>Test class: sZephyr_testcases.TC25_Analytics</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:83)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271998505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271998505'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:83)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>243</td>
+<td>sZephyr_testcases.TC25_Analytics@14a50707</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -216,20 +326,537 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change()'><b>TC22_DeviceSettings_Pairing_Time_Settings_change</b><br>Test class: sZephyr_testcases.TC22_DeviceSettings</td>
+<td title='sZephyr_testcases.TC15_SmartConfig.TC15_SmartConfig_CONNECTIVITY()'><b>TC15_SmartConfig_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC15_SmartConfig</td>
 <td></td>
-<td>462</td>
-<td>sZephyr_testcases.TC22_DeviceSettings@70e38ce1</td></tr>
+<td>414</td>
+<td>sZephyr_testcases.TC15_SmartConfig@6692b6c6</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC17_WIfiWithout_router.TC17_WifiWithoutRouter_CONNECTIVITY()'><b>TC17_WifiWithoutRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC17_WIfiWithout_router</td>
+<td></td>
+<td>352</td>
+<td>sZephyr_testcases.TC17_WIfiWithout_router@589da3f3</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC06_SignIn_SuccessFlow.TC06_During_SignUp_or_SignIn_enter_valid_OTP()'><b>TC06_During_SignUp_or_SignIn_enter_valid_OTP</b><br>Test class: sZephyr_testcases.TC06_SignIn_SuccessFlow</td>
+<td></td>
+<td>39</td>
+<td>sZephyr_testcases.TC06_SignIn_SuccessFlow@463fd068</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC02_SignUp.TC02_SignUp_with_already_registered_username()'><b>TC02_SignUp_with_already_registered_username</b><br>Test class: sZephyr_testcases.TC02_SignUp</td>
+<td></td>
+<td>42</td>
+<td>sZephyr_testcases.TC02_SignUp@3e44f2a5</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03.TC18_UI_Check_sZephyr_Info_values()'><b>TC18_UI_Check_sZephyr_Info_values</b><br>Test class: sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03</td>
+<td></td>
+<td>232</td>
+<td>sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03@39d76cb5</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC31_Schedular.TC31_Schedular_BLEWithoutRouter_App_close_mode()'><b>TC31_Schedular_BLEWithoutRouter_App_close_mode</b><br>Test class: sZephyr_testcases.TC31_Schedular</td>
+<td></td>
+<td>880</td>
+<td>sZephyr_testcases.TC31_Schedular@20d7d6fb</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC04_SignIn_Flow.TC04_SignIn_Try_to_SignIn_with_unregistered_username()'><b>TC04_SignIn_Try_to_SignIn_with_unregistered_username</b><br>Test class: sZephyr_testcases.TC04_SignIn_Flow</td>
+<td></td>
+<td>35</td>
+<td>sZephyr_testcases.TC04_SignIn_Flow@1130520d</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close()'><b>TC_24_Analytics_BLE_without_Router_App_Close</b><br>Test class: sZephyr_testcases.TC24_Analytics</td>
+<td></td>
+<td>226</td>
+<td>sZephyr_testcases.TC24_Analytics@4c012563</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC13_BlewithoutRouter.TC13_BlewithoutRouter_CONNECTIVITY()'><b>TC13_BlewithoutRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC13_BlewithoutRouter</td>
+<td></td>
+<td>227</td>
+<td>sZephyr_testcases.TC13_BlewithoutRouter@bb9e6dc</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC20_DeviceSettings.TC20_DeviceSettings_Remove_Router()'><b>TC20_DeviceSettings_Remove_Router</b><br>Test class: sZephyr_testcases.TC20_DeviceSettings</td>
+<td></td>
+<td>209</td>
+<td>sZephyr_testcases.TC20_DeviceSettings@6736fa8d</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC01_Accounts_Info.TC_01_Account_Info_page_check()'><b>TC_01_Account_Info_page_check</b><br>Test class: sZephyr_testcases.TC01_Accounts_Info</td>
+<td></td>
+<td>148</td>
+<td>sZephyr_testcases.TC01_Accounts_Info@748741cb</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY()'><b>TC16_WifiWithRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC16_WifiWithRouter</td>
+<td></td>
+<td>402</td>
+<td>sZephyr_testcases.TC16_WifiWithRouter@1cd629b3</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC23_Analytics.TC_23_Analytics_BLE_withoutRouter_App_Open()'><b>TC_23_Analytics_BLE_withoutRouter_App_Open</b><br>Test class: sZephyr_testcases.TC23_Analytics</td>
+<td></td>
+<td>147</td>
+<td>sZephyr_testcases.TC23_Analytics@1cb346ea</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC03_SignUp.TC03_SignUp_Try_to_Sign_Up_with_new_username()'><b>TC03_SignUp_Try_to_Sign_Up_with_new_username</b><br>Test class: sZephyr_testcases.TC03_SignUp</td>
+<td></td>
+<td>43</td>
+<td>sZephyr_testcases.TC03_SignUp@295cf707</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC21_DeviceSettings.TC21_DeviceSettings_LED_Quite_Mode()'><b>TC21_DeviceSettings_LED_Quite_Mode</b><br>Test class: sZephyr_testcases.TC21_DeviceSettings</td>
+<td></td>
+<td>145</td>
+<td>sZephyr_testcases.TC21_DeviceSettings@52815fa3</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC28_Schedular.TC28_Schedular_SmartConfig_Mode()'><b>TC28_Schedular_SmartConfig_Mode</b><br>Test class: sZephyr_testcases.TC28_Schedular</td>
+<td></td>
+<td>599</td>
+<td>sZephyr_testcases.TC28_Schedular@e3c0e40</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC30_Schedular.TC30_Schedular_BLE_without_router()'><b>TC30_Schedular_BLE_without_router</b><br>Test class: sZephyr_testcases.TC30_Schedular</td>
+<td></td>
+<td>455</td>
+<td>sZephyr_testcases.TC30_Schedular@7354b8c5</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router()'><b>TC09_Pairing_BLE_With_Router</b><br>Test class: sZephyr_testcases.TC09_Pairing_BlewithRouter</td>
+<td></td>
+<td>205</td>
+<td>sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC05_SignIn_Valid_User.TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP()'><b>TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</b><br>Test class: sZephyr_testcases.TC05_SignIn_Valid_User</td>
+<td></td>
+<td>52</td>
+<td>sZephyr_testcases.TC05_SignIn_Valid_User@5f77d0f9</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC34_sZephyr_Info.TC34_Szephyr_Info_check()'><b>TC34_Szephyr_Info_check</b><br>Test class: sZephyr_testcases.TC34_sZephyr_Info</td>
+<td></td>
+<td>142</td>
+<td>sZephyr_testcases.TC34_sZephyr_Info@479cbee5</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC36_ESMmode.TC36_ESM_mode_button_check()'><b>TC36_ESM_mode_button_check</b><br>Test class: sZephyr_testcases.TC36_ESMmode</td>
+<td></td>
+<td>155</td>
+<td>sZephyr_testcases.TC36_ESMmode@2b72cb8a</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC32_Factory_Reset.TC32_FactoryReset_check()'><b>TC32_FactoryReset_check</b><br>Test class: sZephyr_testcases.TC32_Factory_Reset</td>
+<td></td>
+<td>167</td>
+<td>sZephyr_testcases.TC32_Factory_Reset@4ef782af</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC19_DeviceSettings.TC19_DeviceSettings_Add_Router()'><b>TC19_DeviceSettings_Add_Router</b><br>Test class: sZephyr_testcases.TC19_DeviceSettings</td>
+<td></td>
+<td>155</td>
+<td>sZephyr_testcases.TC19_DeviceSettings@4a00d9cf</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC33_Ble_Factory_Reset.TC33_BleWithoutRouter_Factory_Reset()'><b>TC33_BleWithoutRouter_Factory_Reset</b><br>Test class: sZephyr_testcases.TC33_Ble_Factory_Reset</td>
+<td></td>
+<td>114</td>
+<td>sZephyr_testcases.TC33_Ble_Factory_Reset@11d8ae8b</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC08_Pairing_BlewithoutRouter.TC08_Pairing_BLE_Without_Router()'><b>TC08_Pairing_BLE_Without_Router</b><br>Test class: sZephyr_testcases.TC08_Pairing_BlewithoutRouter</td>
+<td></td>
+<td>116</td>
+<td>sZephyr_testcases.TC08_Pairing_BlewithoutRouter@1b266842</td></tr>
 <tr>
 <td title='sZephyr_testcases.TC14_BleWithRouter.TC14_BlewithRouter_CONNECTIVITY()'><b>TC14_BlewithRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC14_BleWithRouter</td>
 <td></td>
-<td>471</td>
-<td>sZephyr_testcases.TC14_BleWithRouter@2ca26d77</td></tr>
+<td>296</td>
+<td>sZephyr_testcases.TC14_BleWithRouter@5456afaa</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC29_Schedular.TC29_Schedular_Smartconfig_app_close()'><b>TC29_Schedular_Smartconfig_app_close</b><br>Test class: sZephyr_testcases.TC29_Schedular</td>
+<td></td>
+<td>963</td>
+<td>sZephyr_testcases.TC29_Schedular@329dbdbf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY()'><b>TC16_WifiWithRouter_CONNECTIVITY</b><br>Test class: sZephyr_testcases.TC16_WifiWithRouter</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:119)
+	at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600035247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600035247'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:119)
+	at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>235</td>
+<td>sZephyr_testcases.TC16_WifiWithRouter@1cd629b3</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode()'><b>TC_25_Analytics_SmartConfig_Mode</b><br>Test class: sZephyr_testcases.TC25_Analytics</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace985478457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace985478457'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>322</td>
+<td>sZephyr_testcases.TC25_Analytics@14a50707</td></tr>
 <tr>
 <td title='sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode()'><b>TC10_Pairing_in_SmartConfig_Mode</b><br>Test class: sZephyr_testcases.TC10_Pairing_SmartConfig</td>
-<td></td>
-<td>242</td>
-<td>sZephyr_testcases.TC10_Pairing_SmartConfig@2ca923bb</td></tr>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace576557994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576557994'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>210</td>
+<td>sZephyr_testcases.TC10_Pairing_SmartConfig@42b3b079</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change()'><b>TC22_DeviceSettings_Pairing_Time_Settings_change</b><br>Test class: sZephyr_testcases.TC22_DeviceSettings</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace327887996", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace327887996'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>186</td>
+<td>sZephyr_testcases.TC22_DeviceSettings@50313382</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close()'><b>TC_26_Analytics_Smartconfig_App_close</b><br>Test class: sZephyr_testcases.TC26_Analytics</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace906512399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906512399'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>321</td>
+<td>sZephyr_testcases.TC26_Analytics@4d518b32</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working()'><b>TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</b><br>Test class: sZephyr_testcases.TC07_SignIn_Logout</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1397187309", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1397187309'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>45</td>
+<td>sZephyr_testcases.TC07_SignIn_Logout@895e367</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close()'><b>TC_24_Analytics_BLE_without_Router_App_Close</b><br>Test class: sZephyr_testcases.TC24_Analytics</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:77)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC24_Analytics.pairBlewithoutRouter(TC24_Analytics.java:71)
+	at sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close(TC24_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407423363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace407423363'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:77)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC24_Analytics.pairBlewithoutRouter(TC24_Analytics.java:71)
+	at sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close(TC24_Analytics.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>155</td>
+<td>sZephyr_testcases.TC24_Analytics@4c012563</td></tr>
+<tr>
+<td title='sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router()'><b>TC09_Pairing_BLE_With_Router</b><br>Test class: sZephyr_testcases.TC09_Pairing_BlewithRouter</td>
+<td><div><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:98)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1767304024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1767304024'><pre>java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:98)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>149</td>
+<td>sZephyr_testcases.TC09_Pairing_BlewithRouter@7a3793c7</td></tr>
 </table><p>
 </body>
 </html>

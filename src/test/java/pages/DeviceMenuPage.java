@@ -264,7 +264,13 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 
 	public void clickResetDeviceButton() {
-		clickbyXpath(resetDeviceButtom, "Reset Button clicked successfully ");
+		if (isElementDisplayedCheck(resetDeviceButtom,10)) {
+			clickbyXpath(resetDeviceButtom, "Reset Button clicked successfully ");
+			}else {
+				scroll2();
+				clickbyXpath(resetDeviceButtom, "Reset Button clicked successfully ");
+				
+			}
 	}
 	
 	public void clickResetConfirmationYesButton() {	
@@ -398,12 +404,12 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 	
 	public void ClickOkButtonBLEpopUP() {
-		expWaitforPairing(ClickOkButtonBLEpopUP);
+		expWaitTillElementDisplay(ClickOkButtonBLEpopUP,10);
 		clickbyXpath(ClickOkButtonBLEpopUP, " Click OK  Bluetooth Button Popup ");
 	}
 	
 	public void ClickCancelWifi() {
-		expWaitforPairing(ClickCancelWifi);
+		expWaitTillElementDisplay(ClickCancelWifi,10);
 		clickbyXpath(ClickCancelWifi, " Click Cancel Wifi Popup ");
 	}
 	public void clickRemoveRouterButton() {	
@@ -482,14 +488,14 @@ public class DeviceMenuPage extends GenericWrappers{
 		}	
 		
 		public void shellAllowpopup() {	
-			if (isElementDisplayedCheck(shellallow)) {
+			if (isElementDisplayedCheck(shellallow,10)) {
 //				expWait(shellallow);
 				clickbyXpath(shellallow, " allow shell ");
 			}
 			
 		}
 		public void shellDenypopup() {
-			if (isElementDisplayedCheck(shelldeny)) {
+			if (isElementDisplayedCheck(shelldeny,10)) {
 				clickbyXpath(shelldeny, " deny shell ");
 				
 			} 
@@ -515,7 +521,7 @@ public class DeviceMenuPage extends GenericWrappers{
 
 			driver.findElement(MobileBy.AndroidUIAutomator(
 				    "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Router Details\"))"));
-			if (isElementDisplayedCheck(addRouterButton)) {
+			if (isElementDisplayedCheck(addRouterButton,10)) {
 				clickbyXpath(addRouterButton, "Add router button ");
 				enterWiFiPassword(wifiPassword);
 				clickAddRouterCheckBox();
@@ -527,7 +533,7 @@ public class DeviceMenuPage extends GenericWrappers{
 				clickRemoveRouterRemoveButton();
 				
 				clickDevicesettingsbackButton();
-			}else if (isElementDisplayedCheck(removeRouterButton)) {
+			}else if (isElementDisplayedCheck(removeRouterButton,10)) {
 				clickbyXpath(removeRouterButton, "Remove router button ");
 				clickRemoveRouterCancelButton();
 				clickbyXpath(removeRouterButton, "Remove router button ");

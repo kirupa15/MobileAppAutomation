@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1960342765\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\QA Automation\Desktop\Automation_new\MobileAppAutomation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,234 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">40 methods, 5 failed,  8 skipped,  27 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC07_SignIn_Logout" class="method navigator-link" hash-for-method="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC10_Pairing_SmartConfig" class="method navigator-link" hash-for-method="TC10_Pairing_in_SmartConfig_Mode">TC10_Pairing_in_SmartConfig_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC22_DeviceSettings" class="method navigator-link" hash-for-method="TC22_DeviceSettings_Pairing_Time_Settings_change">TC22_DeviceSettings_Pairing_Time_Settings_change</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC25_Analytics" class="method navigator-link" hash-for-method="TC_25_Analytics_SmartConfig_Mode">TC_25_Analytics_SmartConfig_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC26_Analytics" class="method navigator-link" hash-for-method="TC_26_Analytics_Smartconfig_App_close">TC_26_Analytics_Smartconfig_App_close</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC07_SignIn_Logout" class="method navigator-link" hash-for-method="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC09_Pairing_BlewithRouter" class="method navigator-link" hash-for-method="TC09_Pairing_BLE_With_Router">TC09_Pairing_BLE_With_Router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC10_Pairing_SmartConfig" class="method navigator-link" hash-for-method="TC10_Pairing_in_SmartConfig_Mode">TC10_Pairing_in_SmartConfig_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC16_WifiWithRouter" class="method navigator-link" hash-for-method="TC16_WifiWithRouter_CONNECTIVITY">TC16_WifiWithRouter_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC22_DeviceSettings" class="method navigator-link" hash-for-method="TC22_DeviceSettings_Pairing_Time_Settings_change">TC22_DeviceSettings_Pairing_Time_Settings_change</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC24_Analytics" class="method navigator-link" hash-for-method="TC_24_Analytics_BLE_without_Router_App_Close">TC_24_Analytics_BLE_without_Router_App_Close</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC25_Analytics" class="method navigator-link" hash-for-method="TC_25_Analytics_SmartConfig_Mode">TC_25_Analytics_SmartConfig_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC26_Analytics" class="method navigator-link" hash-for-method="TC_26_Analytics_Smartconfig_App_close">TC_26_Analytics_Smartconfig_App_close</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="sZephyr_testcases.TC29_Schedular" class="method navigator-link" hash-for-method="TC29_Schedular_Smartconfig_app_close">TC29_Schedular_Smartconfig_app_close</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC02_SignUp" class="method navigator-link" hash-for-method="TC02_SignUp_with_already_registered_username">TC02_SignUp_with_already_registered_username</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC03_SignUp" class="method navigator-link" hash-for-method="TC03_SignUp_Try_to_Sign_Up_with_new_username">TC03_SignUp_Try_to_Sign_Up_with_new_username</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC04_SignIn_Flow" class="method navigator-link" hash-for-method="TC04_SignIn_Try_to_SignIn_with_unregistered_username">TC04_SignIn_Try_to_SignIn_with_unregistered_username</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC05_SignIn_Valid_User" class="method navigator-link" hash-for-method="TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP">TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC06_SignIn_SuccessFlow" class="method navigator-link" hash-for-method="TC06_During_SignUp_or_SignIn_enter_valid_OTP">TC06_During_SignUp_or_SignIn_enter_valid_OTP</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC08_Pairing_BlewithoutRouter" class="method navigator-link" hash-for-method="TC08_Pairing_BLE_Without_Router">TC08_Pairing_BLE_Without_Router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC09_Pairing_BlewithRouter" class="method navigator-link" hash-for-method="TC09_Pairing_BLE_With_Router">TC09_Pairing_BLE_With_Router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC13_BlewithoutRouter" class="method navigator-link" hash-for-method="TC13_BlewithoutRouter_CONNECTIVITY">TC13_BlewithoutRouter_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC14_BleWithRouter" class="method navigator-link" hash-for-method="TC14_BlewithRouter_CONNECTIVITY">TC14_BlewithRouter_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC15_SmartConfig" class="method navigator-link" hash-for-method="TC15_SmartConfig_CONNECTIVITY">TC15_SmartConfig_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC16_WifiWithRouter" class="method navigator-link" hash-for-method="TC16_WifiWithRouter_CONNECTIVITY">TC16_WifiWithRouter_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC17_WIfiWithout_router" class="method navigator-link" hash-for-method="TC17_WifiWithoutRouter_CONNECTIVITY">TC17_WifiWithoutRouter_CONNECTIVITY</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03" class="method navigator-link" hash-for-method="TC18_UI_Check_sZephyr_Info_values">TC18_UI_Check_sZephyr_Info_values</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC19_DeviceSettings" class="method navigator-link" hash-for-method="TC19_DeviceSettings_Add_Router">TC19_DeviceSettings_Add_Router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC20_DeviceSettings" class="method navigator-link" hash-for-method="TC20_DeviceSettings_Remove_Router">TC20_DeviceSettings_Remove_Router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC21_DeviceSettings" class="method navigator-link" hash-for-method="TC21_DeviceSettings_LED_Quite_Mode">TC21_DeviceSettings_LED_Quite_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC28_Schedular" class="method navigator-link" hash-for-method="TC28_Schedular_SmartConfig_Mode">TC28_Schedular_SmartConfig_Mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC29_Schedular" class="method navigator-link" hash-for-method="TC29_Schedular_Smartconfig_app_close">TC29_Schedular_Smartconfig_app_close</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC30_Schedular" class="method navigator-link" hash-for-method="TC30_Schedular_BLE_without_router">TC30_Schedular_BLE_without_router</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC31_Schedular" class="method navigator-link" hash-for-method="TC31_Schedular_BLEWithoutRouter_App_close_mode">TC31_Schedular_BLEWithoutRouter_App_close_mode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC32_Factory_Reset" class="method navigator-link" hash-for-method="TC32_FactoryReset_check">TC32_FactoryReset_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC33_Ble_Factory_Reset" class="method navigator-link" hash-for-method="TC33_BleWithoutRouter_Factory_Reset">TC33_BleWithoutRouter_Factory_Reset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC34_sZephyr_Info" class="method navigator-link" hash-for-method="TC34_Szephyr_Info_check">TC34_Szephyr_Info_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC36_ESMmode" class="method navigator-link" hash-for-method="TC36_ESM_mode_button_check">TC36_ESM_mode_button_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC01_Accounts_Info" class="method navigator-link" hash-for-method="TC_01_Account_Info_page_check">TC_01_Account_Info_page_check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC23_Analytics" class="method navigator-link" hash-for-method="TC_23_Analytics_BLE_withoutRouter_App_Open">TC_23_Analytics_BLE_withoutRouter_App_Open</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sZephyr_testcases.TC24_Analytics" class="method navigator-link" hash-for-method="TC_24_Analytics_BLE_without_Router_App_Close">TC_24_Analytics_BLE_without_Router_App_Close</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +330,627 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sZephyr_testcases.TC26_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_26_Analytics_Smartconfig_App_close">
+                  </a> <!-- TC_26_Analytics_Smartconfig_App_close -->
+                  <span class="method-name">TC_26_Analytics_Smartconfig_App_close</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sZephyr_testcases.TC22_DeviceSettings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC22_DeviceSettings_Pairing_Time_Settings_change">
+                  </a> <!-- TC22_DeviceSettings_Pairing_Time_Settings_change -->
+                  <span class="method-name">TC22_DeviceSettings_Pairing_Time_Settings_change</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sZephyr_testcases.TC25_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_25_Analytics_SmartConfig_Mode">
+                  </a> <!-- TC_25_Analytics_SmartConfig_Mode -->
+                  <span class="method-name">TC_25_Analytics_SmartConfig_Mode</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:83)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sZephyr_testcases.TC07_SignIn_Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working">
+                  </a> <!-- TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working -->
+                  <span class="method-name">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">sZephyr_testcases.TC10_Pairing_SmartConfig</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_Pairing_in_SmartConfig_Mode">
+                  </a> <!-- TC10_Pairing_in_SmartConfig_Mode -->
+                  <span class="method-name">TC10_Pairing_in_SmartConfig_Mode</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC26_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_26_Analytics_Smartconfig_App_close">
+                  </a> <!-- TC_26_Analytics_Smartconfig_App_close -->
+                  <span class="method-name">TC_26_Analytics_Smartconfig_App_close</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC26_Analytics.pairBlewithoutRouter(TC26_Analytics.java:78)
+	at sZephyr_testcases.TC26_Analytics.TC_26_Analytics_Smartconfig_App_close(TC26_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC24_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_24_Analytics_BLE_without_Router_App_Close">
+                  </a> <!-- TC_24_Analytics_BLE_without_Router_App_Close -->
+                  <span class="method-name">TC_24_Analytics_BLE_without_Router_App_Close</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:77)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC24_Analytics.pairBlewithoutRouter(TC24_Analytics.java:71)
+	at sZephyr_testcases.TC24_Analytics.TC_24_Analytics_BLE_without_Router_App_Close(TC24_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC22_DeviceSettings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC22_DeviceSettings_Pairing_Time_Settings_change">
+                  </a> <!-- TC22_DeviceSettings_Pairing_Time_Settings_change -->
+                  <span class="method-name">TC22_DeviceSettings_Pairing_Time_Settings_change</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC22_DeviceSettings.pairBlewithoutRouter(TC22_DeviceSettings.java:114)
+	at sZephyr_testcases.TC22_DeviceSettings.TC22_DeviceSettings_Pairing_Time_Settings_change(TC22_DeviceSettings.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC25_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_25_Analytics_SmartConfig_Mode">
+                  </a> <!-- TC_25_Analytics_SmartConfig_Mode -->
+                  <span class="method-name">TC_25_Analytics_SmartConfig_Mode</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC25_Analytics.pairBlewithoutRouter(TC25_Analytics.java:77)
+	at sZephyr_testcases.TC25_Analytics.TC_25_Analytics_SmartConfig_Mode(TC25_Analytics.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC07_SignIn_Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working">
+                  </a> <!-- TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working -->
+                  <span class="method-name">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC07_SignIn_Logout.TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working(TC07_SignIn_Logout.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC10_Pairing_SmartConfig</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_Pairing_in_SmartConfig_Mode">
+                  </a> <!-- TC10_Pairing_in_SmartConfig_Mode -->
+                  <span class="method-name">TC10_Pairing_in_SmartConfig_Mode</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC10_Pairing_SmartConfig.TC10_Pairing_in_SmartConfig_Mode(TC10_Pairing_SmartConfig.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC09_Pairing_BlewithRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_Pairing_BLE_With_Router">
+                  </a> <!-- TC09_Pairing_BLE_With_Router -->
+                  <span class="method-name">TC09_Pairing_BLE_With_Router</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.pairBlewithoutRouter(TC09_Pairing_BlewithRouter.java:98)
+	at sZephyr_testcases.TC09_Pairing_BlewithRouter.TC09_Pairing_BLE_With_Router(TC09_Pairing_BlewithRouter.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">sZephyr_testcases.TC16_WifiWithRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC16_WifiWithRouter_CONNECTIVITY">
+                  </a> <!-- TC16_WifiWithRouter_CONNECTIVITY -->
+                  <span class="method-name">TC16_WifiWithRouter_CONNECTIVITY</span>
+                  <div class="stack-trace">java.lang.RuntimeException: FAILED
+	at utils.Reporter.reportStep(Reporter.java:50)
+	at wrappers.GenericWrappers.clickbyXpath(GenericWrappers.java:240)
+	at pages.StoreLogPage.storeLogToDownloads(StoreLogPage.java:79)
+	at pages.StoreLogPage.takeAppLog(StoreLogPage.java:124)
+	at pages.StoreLogPage.CollectLogOnFailure(StoreLogPage.java:166)
+	at sZephyr_testcases.TC16_WifiWithRouter.WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:119)
+	at sZephyr_testcases.TC16_WifiWithRouter.TC16_WifiWithRouter_CONNECTIVITY(TC16_WifiWithRouter.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC34_sZephyr_Info</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC34_Szephyr_Info_check">
+                  </a> <!-- TC34_Szephyr_Info_check -->
+                  <span class="method-name">TC34_Szephyr_Info_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC33_Ble_Factory_Reset</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC33_BleWithoutRouter_Factory_Reset">
+                  </a> <!-- TC33_BleWithoutRouter_Factory_Reset -->
+                  <span class="method-name">TC33_BleWithoutRouter_Factory_Reset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC31_Schedular</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC31_Schedular_BLEWithoutRouter_App_close_mode">
+                  </a> <!-- TC31_Schedular_BLEWithoutRouter_App_close_mode -->
+                  <span class="method-name">TC31_Schedular_BLEWithoutRouter_App_close_mode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC05_SignIn_Valid_User</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP">
+                  </a> <!-- TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP -->
+                  <span class="method-name">TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC32_Factory_Reset</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC32_FactoryReset_check">
+                  </a> <!-- TC32_FactoryReset_check -->
+                  <span class="method-name">TC32_FactoryReset_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC24_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_24_Analytics_BLE_without_Router_App_Close">
+                  </a> <!-- TC_24_Analytics_BLE_without_Router_App_Close -->
+                  <span class="method-name">TC_24_Analytics_BLE_without_Router_App_Close</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC30_Schedular</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC30_Schedular_BLE_without_router">
+                  </a> <!-- TC30_Schedular_BLE_without_router -->
+                  <span class="method-name">TC30_Schedular_BLE_without_router</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC04_SignIn_Flow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC04_SignIn_Try_to_SignIn_with_unregistered_username">
+                  </a> <!-- TC04_SignIn_Try_to_SignIn_with_unregistered_username -->
+                  <span class="method-name">TC04_SignIn_Try_to_SignIn_with_unregistered_username</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC23_Analytics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_23_Analytics_BLE_withoutRouter_App_Open">
+                  </a> <!-- TC_23_Analytics_BLE_withoutRouter_App_Open -->
+                  <span class="method-name">TC_23_Analytics_BLE_withoutRouter_App_Open</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC01_Accounts_Info</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_Account_Info_page_check">
+                  </a> <!-- TC_01_Account_Info_page_check -->
+                  <span class="method-name">TC_01_Account_Info_page_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC17_WIfiWithout_router</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC17_WifiWithoutRouter_CONNECTIVITY">
+                  </a> <!-- TC17_WifiWithoutRouter_CONNECTIVITY -->
+                  <span class="method-name">TC17_WifiWithoutRouter_CONNECTIVITY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC36_ESMmode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC36_ESM_mode_button_check">
+                  </a> <!-- TC36_ESM_mode_button_check -->
+                  <span class="method-name">TC36_ESM_mode_button_check</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_UI_Check_sZephyr_Info_values">
+                  </a> <!-- TC18_UI_Check_sZephyr_Info_values -->
+                  <span class="method-name">TC18_UI_Check_sZephyr_Info_values</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC20_DeviceSettings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC20_DeviceSettings_Remove_Router">
+                  </a> <!-- TC20_DeviceSettings_Remove_Router -->
+                  <span class="method-name">TC20_DeviceSettings_Remove_Router</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC15_SmartConfig</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15_SmartConfig_CONNECTIVITY">
+                  </a> <!-- TC15_SmartConfig_CONNECTIVITY -->
+                  <span class="method-name">TC15_SmartConfig_CONNECTIVITY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_Pairing_BLE_Without_Router">
+                  </a> <!-- TC08_Pairing_BLE_Without_Router -->
+                  <span class="method-name">TC08_Pairing_BLE_Without_Router</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC13_BlewithoutRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13_BlewithoutRouter_CONNECTIVITY">
+                  </a> <!-- TC13_BlewithoutRouter_CONNECTIVITY -->
+                  <span class="method-name">TC13_BlewithoutRouter_CONNECTIVITY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC21_DeviceSettings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC21_DeviceSettings_LED_Quite_Mode">
+                  </a> <!-- TC21_DeviceSettings_LED_Quite_Mode -->
+                  <span class="method-name">TC21_DeviceSettings_LED_Quite_Mode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC28_Schedular</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC28_Schedular_SmartConfig_Mode">
+                  </a> <!-- TC28_Schedular_SmartConfig_Mode -->
+                  <span class="method-name">TC28_Schedular_SmartConfig_Mode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">sZephyr_testcases.TC29_Schedular</span>
@@ -132,126 +964,1624 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC06_SignIn_SuccessFlow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06_During_SignUp_or_SignIn_enter_valid_OTP">
+                  </a> <!-- TC06_During_SignUp_or_SignIn_enter_valid_OTP -->
+                  <span class="method-name">TC06_During_SignUp_or_SignIn_enter_valid_OTP</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC02_SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_SignUp_with_already_registered_username">
+                  </a> <!-- TC02_SignUp_with_already_registered_username -->
+                  <span class="method-name">TC02_SignUp_with_already_registered_username</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC14_BleWithRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14_BlewithRouter_CONNECTIVITY">
+                  </a> <!-- TC14_BlewithRouter_CONNECTIVITY -->
+                  <span class="method-name">TC14_BlewithRouter_CONNECTIVITY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC19_DeviceSettings</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC19_DeviceSettings_Add_Router">
+                  </a> <!-- TC19_DeviceSettings_Add_Router -->
+                  <span class="method-name">TC19_DeviceSettings_Add_Router</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC03_SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC03_SignUp_Try_to_Sign_Up_with_new_username">
+                  </a> <!-- TC03_SignUp_Try_to_Sign_Up_with_new_username -->
+                  <span class="method-name">TC03_SignUp_Try_to_Sign_Up_with_new_username</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC09_Pairing_BlewithRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_Pairing_BLE_With_Router">
+                  </a> <!-- TC09_Pairing_BLE_With_Router -->
+                  <span class="method-name">TC09_Pairing_BLE_With_Router</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">sZephyr_testcases.TC16_WifiWithRouter</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC16_WifiWithRouter_CONNECTIVITY">
+                  </a> <!-- TC16_WifiWithRouter_CONNECTIVITY -->
+                  <span class="method-name">TC16_WifiWithRouter_CONNECTIVITY</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\QA Automation\AppData\Local\Temp\testng-eclipse-1960342765\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\QA Automation\Desktop\Automation_new\MobileAppAutomation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.RetryListener&quot;/&gt;
+    &lt;listener class-name=&quot;utils.ResultListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;exclude name=&quot;skip&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;sZephyr_testcases&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;sZephyr_testcases.Longrun_voltvalue&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.ProdDeviceCheck&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC01_Accounts_Info&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC02_SignUp&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC03_SignUp&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC04_SignIn_Flow&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC05_SignIn_Valid_User&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC06_SignIn_SuccessFlow&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC07_SignIn_Logout&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC08_Pairing_BlewithoutRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC09_Pairing_BlewithRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC10_Pairing_SmartConfig&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC11_Pairing_WifiwithRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC12_Pairing_WifiwithoutRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC13_BlewithoutRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC14_BleWithRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC15_SmartConfig&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC16_WifiWithRouter&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC17_WIfiWithout_router&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC19_DeviceSettings&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC20_DeviceSettings&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC21_DeviceSettings&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC22_DeviceSettings&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC23_Analytics&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC24_Analytics&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC25_Analytics&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC26_Analytics&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC27_Analytics&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC28_Schedular&quot;/&gt;
       &lt;class name=&quot;sZephyr_testcases.TC29_Schedular&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC30_Schedular&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC31_Schedular&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC32_Factory_Reset&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC33_Ble_Factory_Reset&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC34_sZephyr_Info&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC35_OTA_TC_01_BLE&quot;/&gt;
+      &lt;class name=&quot;sZephyr_testcases.TC36_ESMmode&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (38 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(40);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC29_Schedular_Smartconfig_app_close')
 data.setCell(0, 2, 'sZephyr_testcases.TC29_Schedular')
-data.setCell(0, 3, 1067475);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 963186);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC31_Schedular_BLEWithoutRouter_App_close_mode')
+data.setCell(1, 2, 'sZephyr_testcases.TC31_Schedular')
+data.setCell(1, 3, 880463);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC28_Schedular_SmartConfig_Mode')
+data.setCell(2, 2, 'sZephyr_testcases.TC28_Schedular')
+data.setCell(2, 3, 599988);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC30_Schedular_BLE_without_router')
+data.setCell(3, 2, 'sZephyr_testcases.TC30_Schedular')
+data.setCell(3, 3, 455989);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC15_SmartConfig_CONNECTIVITY')
+data.setCell(4, 2, 'sZephyr_testcases.TC15_SmartConfig')
+data.setCell(4, 3, 414843);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC16_WifiWithRouter_CONNECTIVITY')
+data.setCell(5, 2, 'sZephyr_testcases.TC16_WifiWithRouter')
+data.setCell(5, 3, 402250);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC17_WifiWithoutRouter_CONNECTIVITY')
+data.setCell(6, 2, 'sZephyr_testcases.TC17_WIfiWithout_router')
+data.setCell(6, 3, 352625);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_25_Analytics_SmartConfig_Mode')
+data.setCell(7, 2, 'sZephyr_testcases.TC25_Analytics')
+data.setCell(7, 3, 322331);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_26_Analytics_Smartconfig_App_close')
+data.setCell(8, 2, 'sZephyr_testcases.TC26_Analytics')
+data.setCell(8, 3, 321695);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_26_Analytics_Smartconfig_App_close')
+data.setCell(9, 2, 'sZephyr_testcases.TC26_Analytics')
+data.setCell(9, 3, 320358);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC14_BlewithRouter_CONNECTIVITY')
+data.setCell(10, 2, 'sZephyr_testcases.TC14_BleWithRouter')
+data.setCell(10, 3, 296133);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC_25_Analytics_SmartConfig_Mode')
+data.setCell(11, 2, 'sZephyr_testcases.TC25_Analytics')
+data.setCell(11, 3, 243897);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC16_WifiWithRouter_CONNECTIVITY')
+data.setCell(12, 2, 'sZephyr_testcases.TC16_WifiWithRouter')
+data.setCell(12, 3, 235415);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC18_UI_Check_sZephyr_Info_values')
+data.setCell(13, 2, 'sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03')
+data.setCell(13, 3, 232659);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC13_BlewithoutRouter_CONNECTIVITY')
+data.setCell(14, 2, 'sZephyr_testcases.TC13_BlewithoutRouter')
+data.setCell(14, 3, 227932);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_24_Analytics_BLE_without_Router_App_Close')
+data.setCell(15, 2, 'sZephyr_testcases.TC24_Analytics')
+data.setCell(15, 3, 226890);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC22_DeviceSettings_Pairing_Time_Settings_change')
+data.setCell(16, 2, 'sZephyr_testcases.TC22_DeviceSettings')
+data.setCell(16, 3, 217792);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC10_Pairing_in_SmartConfig_Mode')
+data.setCell(17, 2, 'sZephyr_testcases.TC10_Pairing_SmartConfig')
+data.setCell(17, 3, 213896);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC10_Pairing_in_SmartConfig_Mode')
+data.setCell(18, 2, 'sZephyr_testcases.TC10_Pairing_SmartConfig')
+data.setCell(18, 3, 210626);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC20_DeviceSettings_Remove_Router')
+data.setCell(19, 2, 'sZephyr_testcases.TC20_DeviceSettings')
+data.setCell(19, 3, 209251);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC09_Pairing_BLE_With_Router')
+data.setCell(20, 2, 'sZephyr_testcases.TC09_Pairing_BlewithRouter')
+data.setCell(20, 3, 205221);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC22_DeviceSettings_Pairing_Time_Settings_change')
+data.setCell(21, 2, 'sZephyr_testcases.TC22_DeviceSettings')
+data.setCell(21, 3, 186638);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC32_FactoryReset_check')
+data.setCell(22, 2, 'sZephyr_testcases.TC32_Factory_Reset')
+data.setCell(22, 3, 167725);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC19_DeviceSettings_Add_Router')
+data.setCell(23, 2, 'sZephyr_testcases.TC19_DeviceSettings')
+data.setCell(23, 3, 155674);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC_24_Analytics_BLE_without_Router_App_Close')
+data.setCell(24, 2, 'sZephyr_testcases.TC24_Analytics')
+data.setCell(24, 3, 155314);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC36_ESM_mode_button_check')
+data.setCell(25, 2, 'sZephyr_testcases.TC36_ESMmode')
+data.setCell(25, 3, 155080);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TC09_Pairing_BLE_With_Router')
+data.setCell(26, 2, 'sZephyr_testcases.TC09_Pairing_BlewithRouter')
+data.setCell(26, 3, 149700);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC_01_Account_Info_page_check')
+data.setCell(27, 2, 'sZephyr_testcases.TC01_Accounts_Info')
+data.setCell(27, 3, 148827);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TC_23_Analytics_BLE_withoutRouter_App_Open')
+data.setCell(28, 2, 'sZephyr_testcases.TC23_Analytics')
+data.setCell(28, 3, 147177);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TC21_DeviceSettings_LED_Quite_Mode')
+data.setCell(29, 2, 'sZephyr_testcases.TC21_DeviceSettings')
+data.setCell(29, 3, 145301);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TC34_Szephyr_Info_check')
+data.setCell(30, 2, 'sZephyr_testcases.TC34_sZephyr_Info')
+data.setCell(30, 3, 142669);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TC08_Pairing_BLE_Without_Router')
+data.setCell(31, 2, 'sZephyr_testcases.TC08_Pairing_BlewithoutRouter')
+data.setCell(31, 3, 116713);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'TC33_BleWithoutRouter_Factory_Reset')
+data.setCell(32, 2, 'sZephyr_testcases.TC33_Ble_Factory_Reset')
+data.setCell(32, 3, 114847);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP')
+data.setCell(33, 2, 'sZephyr_testcases.TC05_SignIn_Valid_User')
+data.setCell(33, 3, 52571);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working')
+data.setCell(34, 2, 'sZephyr_testcases.TC07_SignIn_Logout')
+data.setCell(34, 3, 45916);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'TC03_SignUp_Try_to_Sign_Up_with_new_username')
+data.setCell(35, 2, 'sZephyr_testcases.TC03_SignUp')
+data.setCell(35, 3, 43050);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working')
+data.setCell(36, 2, 'sZephyr_testcases.TC07_SignIn_Logout')
+data.setCell(36, 3, 42659);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'TC02_SignUp_with_already_registered_username')
+data.setCell(37, 2, 'sZephyr_testcases.TC02_SignUp')
+data.setCell(37, 3, 42133);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'TC06_During_SignUp_or_SignIn_enter_valid_OTP')
+data.setCell(38, 2, 'sZephyr_testcases.TC06_SignIn_SuccessFlow')
+data.setCell(38, 3, 39456);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'TC04_SignIn_Try_to_SignIn_with_unregistered_username')
+data.setCell(39, 2, 'sZephyr_testcases.TC04_SignIn_Flow')
+data.setCell(39, 3, 35097);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 hours</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">151 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC34_sZephyr_Info</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC26_Analytics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC11_Pairing_WifiwithRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">TC11_Pairing_in_Wifiwithrouter_mode</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC33_Ble_Factory_Reset</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC31_Schedular</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC12_Pairing_WifiwithoutRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">TC12_Pairing_in_Wifiwithoutrouter_Mode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC05_SignIn_Valid_User</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC32_Factory_Reset</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC24_Analytics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC30_Schedular</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC07_SignIn_Logout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC04_SignIn_Flow</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC23_Analytics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC17_WIfiWithout_router</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC01_Accounts_Info</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC36_ESMmode</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC20_DeviceSettings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC15_SmartConfig</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC22_DeviceSettings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC27_Analytics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">TC_27_Analytics_Wifi_with_Router</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC13_BlewithoutRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC21_DeviceSettings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC28_Schedular</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.ProdDeviceCheck</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC06_SignIn_SuccessFlow</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC29_Schedular</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC02_SignUp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC14_BleWithRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC25_Analytics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC19_DeviceSettings</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC03_SignUp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC10_Pairing_SmartConfig</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC35_OTA_TC_01_BLE</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC09_Pairing_BlewithRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">sZephyr_testcases.TC16_WifiWithRouter</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">sZephyr_testcases.TC29_Schedular</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">sZephyr_testcases.Longrun_voltvalue</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">408 ms</span>
+                <span class="method-start">669 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC01_Accounts_Info</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startTestCase</span>
-                <span class="method-start">417 ms</span>
+                <span class="method-start">681 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">425 ms</span>
+                <span class="method-start">688 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC29_Schedular_Smartconfig_app_close</span>
-                <span class="method-start">428 ms</span>
+                <span class="method-name">TC_01_Account_Info_page_check</span>
+                <span class="method-start">692 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">1067906 ms</span>
+                <span class="method-start">149522 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC02_SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">150145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">150145 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC02_SignUp_with_already_registered_username</span>
+                <span class="method-start">150145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">192279 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC03_SignUp</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC03_SignUp_Try_to_Sign_Up_with_new_username</span>
+                <span class="method-start">195287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">195287 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">195287 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">238338 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC04_SignIn_Flow</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">239043 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">239043 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC04_SignIn_Try_to_SignIn_with_unregistered_username</span>
+                <span class="method-start">239044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">274142 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC05_SignIn_Valid_User</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">274753 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">274754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC05_Try_to_SignIn_into_app_with_Validuserdetails_but_invalidOTP</span>
+                <span class="method-start">274755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">327326 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC06_SignIn_SuccessFlow</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">328078 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">328079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC06_During_SignUp_or_SignIn_enter_valid_OTP</span>
+                <span class="method-start">328079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">367536 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC07_SignIn_Logout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">368219 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">368220 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</span>
+                <span class="method-start">368220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">414137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC07_Logout_After_Login_Pair_with_device_and_logout_from_device_is_working</span>
+                <span class="method-start">414668 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">414668 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">457328 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC08_Pairing_BlewithoutRouter</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">458008 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">458009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC08_Pairing_BLE_Without_Router</span>
+                <span class="method-start">458009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">574724 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC09_Pairing_BlewithRouter</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">575280 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC09_Pairing_BLE_With_Router</span>
+                <span class="method-start">575281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">575281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">724983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC09_Pairing_BLE_With_Router</span>
+                <span class="method-start">725589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">725589 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">930811 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC10_Pairing_SmartConfig</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">931457 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">931457 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC10_Pairing_in_SmartConfig_Mode</span>
+                <span class="method-start">931457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1142084 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1142695 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC10_Pairing_in_SmartConfig_Mode</span>
+                <span class="method-start">1142695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1356592 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC13_BlewithoutRouter</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1357197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">1357197 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC13_BlewithoutRouter_CONNECTIVITY</span>
+                <span class="method-start">1357198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1585131 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC14_BleWithRouter</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">1585817 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC14_BlewithRouter_CONNECTIVITY</span>
+                <span class="method-start">1585817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1585817 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">1881950 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC15_SmartConfig</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">1882515 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">1882515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC15_SmartConfig_CONNECTIVITY</span>
+                <span class="method-start">1882516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">2297360 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC16_WifiWithRouter</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">2297974 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">2297975 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC16_WifiWithRouter_CONNECTIVITY</span>
+                <span class="method-start">2297975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">2533391 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC16_WifiWithRouter_CONNECTIVITY</span>
+                <span class="method-start">2533890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">2533890 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">2936140 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC17_WIfiWithout_router</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">2936697 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC17_WifiWithoutRouter_CONNECTIVITY</span>
+                <span class="method-start">2936699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">2936699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3289326 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC18_UI_CONNECTIVITY_MOD_0_TC_01_TO_03</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">3289881 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3289882 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_UI_Check_sZephyr_Info_values</span>
+                <span class="method-start">3289882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3522541 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC19_DeviceSettings</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">3523157 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3523158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC19_DeviceSettings_Add_Router</span>
+                <span class="method-start">3523158 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3678833 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC20_DeviceSettings</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3679409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">3679409 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC20_DeviceSettings_Remove_Router</span>
+                <span class="method-start">3679410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3888662 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC21_DeviceSettings</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">3889354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">3889354 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC21_DeviceSettings_LED_Quite_Mode</span>
+                <span class="method-start">3889355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4034657 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC22_DeviceSettings</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">4035318 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4035319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC22_DeviceSettings_Pairing_Time_Settings_change</span>
+                <span class="method-start">4035319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4221958 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4222487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC22_DeviceSettings_Pairing_Time_Settings_change</span>
+                <span class="method-start">4222487 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4440280 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC23_Analytics</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">4440904 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4440905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_23_Analytics_BLE_withoutRouter_App_Open</span>
+                <span class="method-start">4440905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4588082 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC24_Analytics</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4588687 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">4588687 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_24_Analytics_BLE_without_Router_App_Close</span>
+                <span class="method-start">4588687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4744001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC_24_Analytics_BLE_without_Router_App_Close</span>
+                <span class="method-start">4744537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4744537 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4971428 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC25_Analytics</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">4971966 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_25_Analytics_SmartConfig_Mode</span>
+                <span class="method-start">4971966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4971966 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">5294298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5294939 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_25_Analytics_SmartConfig_Mode</span>
+                <span class="method-start">5294940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">5538838 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC26_Analytics</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC_26_Analytics_Smartconfig_App_close</span>
+                <span class="method-start">5539370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">5539370 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5539370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">5861066 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">5861614 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_26_Analytics_Smartconfig_App_close</span>
+                <span class="method-start">5861614 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">6181973 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC28_Schedular</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">6182590 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6182591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC28_Schedular_SmartConfig_Mode</span>
+                <span class="method-start">6182591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">6782580 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC29_Schedular</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">6783236 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">6783236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC29_Schedular_Smartconfig_app_close</span>
+                <span class="method-start">6783236 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">7746423 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC30_Schedular</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC30_Schedular_BLE_without_router</span>
+                <span class="method-start">7747108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">7747108 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">7747108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">8203098 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC31_Schedular</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">8203783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">8203783 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC31_Schedular_BLEWithoutRouter_App_close_mode</span>
+                <span class="method-start">8203784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9084247 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC32_Factory_Reset</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">9085015 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC32_FactoryReset_check</span>
+                <span class="method-start">9085017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9085017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9252743 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC33_Ble_Factory_Reset</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">9253337 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9253337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC33_BleWithoutRouter_Factory_Reset</span>
+                <span class="method-start">9253338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9368185 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC34_sZephyr_Info</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9368947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">9368947 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC34_Szephyr_Info_check</span>
+                <span class="method-start">9368947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9511617 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.TC36_ESMmode</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">9512297 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC36_ESM_mode_button_check</span>
+                <span class="method-start">9512297 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9512297 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9667377 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">sZephyr_testcases.Longrun_voltvalue</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">1068547 ms</span>
+                <span class="method-start">9667976 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">1068564 ms</span>
+                <span class="method-start">9668016 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

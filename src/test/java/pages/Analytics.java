@@ -58,7 +58,7 @@ public class Analytics  extends GenericWrappers {
 	String oldvalue;
 	public String getenergydurationvalue() {
 
-        expWait(enrgyDurationmin);
+		expWaitTillElementDisplay(enrgyDurationmin,10);
 		 oldvalue = enrgyDurationmin.getText();
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
@@ -96,7 +96,7 @@ public class Analytics  extends GenericWrappers {
 	
 	public boolean checkenrgyduration(int value) throws Exception {
 	    boolean bReturn = false;
-	    expshortWaittwenty(enrgyDurationmin);
+	    expWaitTillElementDisplay(enrgyDurationmin,10);
 
 	    int expectedValue = extractMinutes(oldvalue) + value;
 	    System.out.println("Expected value: " + expectedValue);

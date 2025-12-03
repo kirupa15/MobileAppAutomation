@@ -26,6 +26,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -229,7 +231,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpath(WebElement xpath, String button) {
 		boolean bReturn = false;
 		try {
-			expshortWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -244,7 +246,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpathwithoutReport(WebElement xpath, String button) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -278,7 +280,7 @@ public class GenericWrappers {
 	public boolean selectById(WebElement id, int value, String fieldName) {
 		boolean bReturn = false;
 		try {
-			expWait(id);
+			expWaitTillElementDisplay(id,10);
 			new Select(id).selectByIndex(value);
 			Reporter.reportStep("The element with id: " + fieldName + " is selected with value :" + value, "PASS");
 
@@ -293,7 +295,7 @@ public class GenericWrappers {
 	public boolean entervaluebyXpath(WebElement xpath, String fieldname, String value) {
 		boolean bReturn = false;
 		try {
-			expshortWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.sendKeys(value);
 			Reporter.reportStep(fieldname + " field is entered with value : " + value, "PASS");
 
@@ -306,7 +308,7 @@ public class GenericWrappers {
 	public boolean entertoiFrame(WebElement xpath, String fName) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			WebElement frame = xpath;
 			driver.switchTo().frame(frame);
 			Reporter.reportStep("iframe " + fName + " entered successfully", "PASS");
@@ -321,7 +323,7 @@ public class GenericWrappers {
 	public boolean selectByVisibleText(WebElement xpath, String fieldName) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			List<WebElement> size = new Select(xpath).getOptions();
 			for (WebElement s : size) {
 				if (s.isEnabled()) {
@@ -340,7 +342,7 @@ public class GenericWrappers {
 	public boolean verifyTextContainsByXpath(WebElement xpath, String text, String field) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			String sText = xpath.getText();
 			System.out.println(sText);
 			if (sText.trim().contains(text)) {
@@ -358,7 +360,7 @@ public class GenericWrappers {
 	public boolean verifyTextContainsByXpath_Toast(WebElement xpath, String text, String field) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			String sText = xpath.getText();
 			System.out.println(sText);
 			if (sText.trim().contains(text)) {
@@ -386,55 +388,30 @@ public class GenericWrappers {
 
 	}
 
-	public static void expWait(WebElement xpath) {
-		try {
-
-			WebDriverWait wait = new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-
-
-
-		}
-
-	}
-	public static void expshortWait(WebElement xpath) {
+	public static boolean expWaitTillElementDisplay(WebElement xpath,int seconds) {
+		boolean bReturn = false;
 		try {
 			
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			WebDriverWait wait = new WebDriverWait(driver,seconds);
+	        wait.pollingEvery(Duration.ofMillis(500));
+	        wait.ignoring(NoSuchElementException.class);
+	        wait.ignoring(StaleElementReferenceException.class);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
+			bReturn = true;
 		} catch (Exception e) {
 			System.out.println(e);
 			
 			
 			
 		}
-		
-	}
-	public static void expshortWaittwenty(WebElement xpath) {
-		try {
-			
-			WebDriverWait wait = new WebDriverWait(driver,20);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-			
-			
-			
-		}
+		return bReturn;
 		
 	}
 
-	public void expWaitforPairing(WebElement xpath) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-		}
 
-	}
+
+
+
 
 
 
@@ -664,14 +641,14 @@ public class GenericWrappers {
 			try {
 				WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
 				WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
-				if (isElementDisplayedCheck(enterPasswordField)) {
+				if (isElementDisplayedCheck(enterPasswordField,10)) {
 					// Enter the WiFi password
 					enterValueByXpathwifipage(enterPasswordField, "Wi-Fi password", wifiPassword);
 
 					// Click on the connect button
 					WebElement connectButton = driver.findElement(MobileBy.xpath("//android.widget.Button[@text=\"Connect\"]")); 
 					// Replace with the actual XPath
-					if (isElementDisplayedCheck(connectButton)) {
+					if (isElementDisplayedCheck(connectButton,10)) {
 						
 						clickbyXpath(connectButton, "Connect button");
 						
@@ -679,10 +656,10 @@ public class GenericWrappers {
 
 				}
 				
-				else if (isElementDisplayedCheck(enterPasswordFieldOnePlus)) {
+				else if (isElementDisplayedCheck(enterPasswordFieldOnePlus,10)) {
 					enterValueByXpathwifipage(enterPasswordFieldOnePlus, "Wi-Fi password", wifiPassword);
 					WebElement savebutton = driver.findElement(MobileBy.xpath("//android.widget.TextView[@resource-id=\"com.oplus.wirelesssettings:id/menu_save\"]")); 
-				 if (isElementDisplayedCheck(savebutton)) {
+				 if (isElementDisplayedCheck(savebutton,10)) {
 					clickbyXpath(savebutton, "save button");
 					
 					Thread.sleep(3000);
@@ -708,7 +685,7 @@ public class GenericWrappers {
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element,String Field) {
 		try {
-			expshortWait(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -726,7 +703,7 @@ public class GenericWrappers {
 	}
 	public boolean isElementDisplayednext(WebElement element,String Field) {
 		try {
-			expshortWaittwenty(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			
 			if (element.isDisplayed()) {
 				
@@ -800,7 +777,7 @@ public class GenericWrappers {
 	public boolean connectivitycheck(WebElement element,String field) {
 
 		try {
-			expWait(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -819,7 +796,7 @@ public class GenericWrappers {
 	}
 	public boolean isiconDisplayed(WebElement element,String field) {
 		try {
-			expWaitforPairing(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -1045,9 +1022,9 @@ public class GenericWrappers {
     	 throw new RuntimeException(e);
 	}
     
-    public boolean isElementDisplayedCheck(WebElement element) {
+    public boolean isElementDisplayedCheck(WebElement element,int checktime) {
         try {
-        	expshortWait(element);
+        	expWaitTillElementDisplay(element,checktime);
         	
             return element.isDisplayed();
         } catch (NoSuchElementException | StaleElementReferenceException e) {
@@ -1101,7 +1078,20 @@ public class GenericWrappers {
          
      }
  }
-	
+ public void scroll2() {
+		int startX = driver.manage().window().getSize().getWidth() / 8;
+		int startY = driver.manage().window().getSize().getHeight() / 2;
+		PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+		Sequence scroll = new Sequence(finger, 0);
+		int endY = (int) (driver.manage().window().getSize().getHeight());
+		scroll.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
+		scroll.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+		scroll.addAction(
+				finger.createPointerMove(Duration.ofMillis(500), PointerInput.Origin.viewport(), startX, 0));
+		scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+		driver.perform(List.of(scroll));
+
+}
  
  
 }
